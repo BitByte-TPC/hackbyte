@@ -1,0 +1,18 @@
+// @import url(../../../public/fonts/groupe.otf);
+
+.heroContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.heroText {
+  font-family: "GROUPE";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 175px;
+  color: #bdd2eb;
+  margin: 0;
+}
