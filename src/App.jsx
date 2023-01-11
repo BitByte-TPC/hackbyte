@@ -1,11 +1,16 @@
 import "./App.scss";
 import CanvasThree from "./components/CanvasThree";
-import { HeroSection } from "./components/HeroSection";
+import { Routes, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import About from "./pages/About";
 function App() {
   return (
     <div className='App'>
       <CanvasThree />
-      <HeroSection />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='about' element={<About />} />
+      </Routes>
     </div>
   );
 }

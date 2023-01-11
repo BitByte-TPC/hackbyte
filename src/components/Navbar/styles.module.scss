@@ -1,0 +1,23 @@
+.container {
+  position: absolute;
+  bottom: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 130px;
+  a {
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 36px;
+    letter-spacing: 0em;
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: #bdd2eb;
+    }
+  }
+}
