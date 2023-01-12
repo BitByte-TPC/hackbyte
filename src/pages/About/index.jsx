@@ -1,8 +1,10 @@
 import React from "react";
-import { HeroSection } from "../../components/HeroSection";
-import Navbar from "../../components/Navbar";
+import Header from "../../components/Header";
+
 import styles from "./styles.module.scss";
 const About = () => {
-  return <div className={styles.container}></div>;
+  return <div className={styles.container}>
+    <Header/>
+  </div>;
 };
 export default About;

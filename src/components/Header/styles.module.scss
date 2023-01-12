@@ -1,0 +1,29 @@
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.5rem 5rem;
+
+    .logo{
+        width: 6rem;
+    }
+
+    .links{
+        display: flex; 
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 0px;
+        gap: 4rem;
+
+        a{
+            font-family: Poppins;
+            font-style: normal;
+            font-size: 18px;
+            font-weight: 300;
+            line-height: 27px;
+            letter-spacing: 0em;
+            color: #919191;
+            text-decoration: none;
+        }
+    }
+}
