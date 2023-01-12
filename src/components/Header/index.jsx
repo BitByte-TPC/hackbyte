@@ -19,9 +19,8 @@ const Header = () => {
         <Link to='/'>PRIZES</Link>
         <Link to='/'>SPONSORS</Link>
       </div>
-      <div>
+      <div className={styles.icon}>
         <img
-          className={styles.icon}
           src={HamBurgerIcon} 
           alt="" 
         />
