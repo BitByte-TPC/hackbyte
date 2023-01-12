@@ -60,7 +60,7 @@ export default function CanvasThree() {
       <directionalLight position={[2, -5, 7]} intensity={1} />
       <ambientLight intensity={1.5} />
       <Suspense fallback={null}>
-        <SphereMain />
+        {location.pathname == "/" && <SphereMain />}
         <Sparkles count={200} scale={[30, 30, 30]} size={2} speed={2.5} />
       </Suspense>
       <OrbitControls dampingFactor={0.15} enableZoom={false} />
