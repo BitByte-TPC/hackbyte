@@ -1,37 +1,53 @@
-import React, { Suspense } from "react";
+import React, { Suspense ,useState} from "react";
 import { useRef } from "react";
-import { Canvas, useFrame } from "@react-three/fiber";
-import { OrbitControls, useTexture, Sphere, Sparkles } from "@react-three/drei";
+import { Canvas, useFrame,extend } from "@react-three/fiber";
+import { OrbitControls, useTexture, Sphere, Sparkles, shaderMaterial } from "@react-three/drei";
 import maptexture from "../../assets/textures/earth.jpg";
-import disptexture from "../../assets/textures/park_dirt_disp_4k.jpg";
+import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
 import { useLocation } from "react-router-dom";
+import { AdditiveBlending, BackSide } from "three";
 
 export default function CanvasThree() {
   const canvasRef = useRef(null);
   const location = useLocation(); // use this to show earth only on homepage
+
   function SphereMain() {
     const colorTexture = useTexture({
       map: maptexture,
-      displacementMap: disptexture,
+      displacementMap: disptexture
     });
     const sph = useRef(null);
-    useFrame(() => {
+
+    const vertexShader = `varying vec3 vertexNormal;
+    void main() {vertexNormal = normalize(normalMatrix * normal);
+    gl_Position = (projectionMatrix * modelViewMatrix * vec4( position, 1.0 ));  
+    }`;
+    const fragmentShader = `varying vec3 vertexNormal;
+    void main(){float intensity = pow(0.5 - dot(vertexNormal,vec3(0,0,1.0)),2.4);
+    gl_FragColor = vec4(0.1,0.0,1.0,1.0)* intensity;}`;
+
+    useFrame((e) => {
       sph.current.rotation.y += 0.001;
       sph.current.rotation.x += 0.002;
     });
-    // console.log(location.pathname);
+
     return (
-      <Sphere ref={sph} args={[2.5, 100, 100]}>
-        <meshStandardMaterial
-          transparent
-          opacity={0.8}
-          roughness={1}
-          metalness={0}
-          {...colorTexture}
-          displacementScale={0.5}
-        />
-      </Sphere>
+      <group ref={sph}>
+        <Sphere args={[3.5,100,100]}>
+          <shaderMaterial vertexShader={vertexShader} side={BackSide} fragmentShader={fragmentShader} blending={AdditiveBlending} />
+        </Sphere>
+        <Sphere  args={[2.5, 100, 100]} >
+          <meshStandardMaterial
+            transparent
+            opacity={0.8}
+            roughness={1}
+            metalness={0}
+            {...colorTexture}
+            displacementScale={0.7}
+          />
+        </Sphere>
+      </group>
     );
   }
 
@@ -41,14 +57,7 @@ export default function CanvasThree() {
       ref={canvasRef}
       camera={{ position: [0, 0, 7] }}
     >
-      <directionalLight position={[0, 0, -7]} intensity={1} />
-      <spotLight
-        position={[-2, -3, 5]}
-        angle={0.1}
-        color={"red"}
-        intensity={1.5}
-        penumbra={1}
-      />
+      <directionalLight position={[2, -5, 7]} intensity={1} />
       <ambientLight intensity={1.5} />
       <Suspense fallback={null}>
         <SphereMain />
