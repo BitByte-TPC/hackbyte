@@ -1,0 +1,29 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+
+  .title {
+    position: relative;
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(72px, 10vw, 180px);
+    line-height: 240px;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgba(189, 210, 235, 0.25);
+  }
+
+  .subHeading {
+    position: absolute;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 28px);
+    line-height: 42px;
+    letter-spacing: 0.3em;
+    color: #ffffff;
+  }
+}

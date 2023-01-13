@@ -3,20 +3,23 @@
   margin: 0;
   padding: 0;
 }
+body {
+  overflow: none;
+}
 
 ::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
+  width: 6px;
+  height: 6px;
 }
 
 scrollbar {
-    width: 6px;
-    height: 6px;
+  width: 6px;
+  height: 6px;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: rgba(127, 125, 125, 0.4);
-    border-radius: 10px;
+  background-color: rgba(127, 125, 125, 0.4);
+  border-radius: 10px;
 }
 
 scrollbar-thumb {

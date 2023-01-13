@@ -6,13 +6,37 @@
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+
+  .heroText {
+    font-family: "GROUPE";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(48px, 10vw, 120px);
+    color: #bdd2eb;
+    padding: 0 4rem;
+    margin: 0;
+    user-select: none;
+  }
+
+  .heroSubText {
+    color: #bdd2eb;
+    font-family: GROUPE;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28px;
+    letter-spacing: 0.3em;
+    user-select: none;
+  }
 }
 
-.heroText {
-  font-family: "GROUPE";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 120px;
-  color: #bdd2eb;
-  margin: 0;
+@media only screen and (max-width: 600px) {
+  .heroContainer {
+    padding: 1rem;
+    .heroText {
+      margin-bottom: 1rem;
+    }
+    .heroSubText {
+      letter-spacing: 0.1rem;
+    }
+  }
 }
