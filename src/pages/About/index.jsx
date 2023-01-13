@@ -5,6 +5,8 @@ import Photo_1 from "../../assets/Photo-1.jpg";
 import Photo_2 from "../../assets/Photo-2.jpg";
 import Photo_3 from "../../assets/Photo-3.jpg";
 import Photo_4 from "../../assets/Photo-4.jpg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+
 import PageHeading from "../../components/PageHeading";
 
 const About = () => {
@@ -26,16 +28,36 @@ const About = () => {
         <p>Past Events Gallery</p>
         <div className={styles.photos}>
           <div className={styles.photo}>
-            <img src={Photo_1} alt='' />
+            <LazyLoadImage
+              src={Photo_1}
+              alt=''
+              effect='blur'
+              placeholderSrc={Photo_1}
+            />
           </div>
           <div className={styles.photo}>
-            <img src={Photo_2} alt='' />
+            <LazyLoadImage
+              src={Photo_2}
+              alt=''
+              effect='blur'
+              placeholderSrc={Photo_2}
+            />
           </div>
           <div className={styles.photo}>
-            <img src={Photo_3} alt='' />
+            <LazyLoadImage
+              src={Photo_3}
+              alt=''
+              effect='blur'
+              placeholderSrc={Photo_3}
+            />
           </div>
           <div className={styles.photo}>
-            <img src={Photo_4} alt='' />
+            <LazyLoadImage
+              src={Photo_4}
+              alt=''
+              effect='blur'
+              placeholderSrc={Photo_4}
+            />
           </div>
         </div>
       </div>

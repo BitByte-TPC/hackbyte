@@ -5,19 +5,22 @@
   transform: translateX(-50%);
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   padding: 0px;
   gap: 130px;
   a {
-    font-family: Poppins;
+    font-family: "GROUPE";
     font-size: 24px;
     font-weight: 300;
     line-height: 36px;
     letter-spacing: 0em;
-    color: #ffffff;
+    color: #919191;
     text-decoration: none;
+    width: max-content;
+    transition: 0.3s ease-in-out;
     &:hover {
-      color: #bdd2eb;
+      color: #fff;
     }
   }
 }

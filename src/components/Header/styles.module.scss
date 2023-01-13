@@ -18,7 +18,7 @@
     gap: 2.5rem;
 
     a {
-      font-family: Poppins;
+      font-family: "GROUPE";
       font-style: normal;
       font-size: 18px;
       font-weight: 300;
@@ -26,6 +26,10 @@
       letter-spacing: 0em;
       color: #919191;
       text-decoration: none;
+      transition: 0.3s ease-in-out;
+      &:hover {
+        color: #fff;
+      }
     }
   }
 
@@ -39,9 +43,17 @@
 @media only screen and (max-width: 600px) {
   .container {
     padding: 2.5rem 2rem 0 2rem;
+    .logo {
+      width: 4rem;
+    }
     .nav {
       display: none;
       visibility: hidden;
+    }
+    .icon {
+      img {
+        width: 1.5rem;
+      }
     }
   }
 }

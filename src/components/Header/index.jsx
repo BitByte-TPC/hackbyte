@@ -14,8 +14,8 @@ const Header = () => {
           <Link to='/'>HOME</Link>
           <Link to='/about'>ABOUT</Link>
           <Link to='/faq'>FAQS</Link>
-          <Link to='/'>PRIZES</Link>
-          <Link to='/'>SPONSORS</Link>
+          <Link to='/prizes'>PRIZES</Link>
+          <Link to='/sponsor-us'>SPONSOR US</Link>
         </div>
       )}
       <div className={styles.icon}>

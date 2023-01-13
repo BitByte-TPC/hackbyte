@@ -1,0 +1,22 @@
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  max-height: fit-content;
+  overflow-y: scroll;
+
+  p {
+    max-width: 1000px;
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: clamp(12px, 2vw, 20px);
+    line-height: 36px;
+    width: 1000px;
+    margin: 1rem auto;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.65);
+  }
+}
