@@ -1,13 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./styles.module.scss";
+
 const Accordion = (props) => {
-  const [active, setActive] = useState(false);
+  const [active, setActive] = useState(props.index == 0 ? true : false);
   const content = useRef(null);
   const [height, setHeight] = useState("0px");
 
   useEffect(() => {
-    console.log("Height for ", props.title, ": ", height);
-  }, [height]);
+    setHeight(active ? `${content.current.scrollHeight}px` : "0px");
+  }, []);
 
   function toggleAccordion() {
     setActive(!active);
@@ -20,8 +21,10 @@ const Accordion = (props) => {
         className={`${styles.accordion} ${active ? styles.active : ""}`}
         onClick={toggleAccordion}
       >
+        <div className={styles.icon}>
+          <span className={styles.accordionIcon}>{active ? "-" : "+"}</span>
+        </div>
         <p className={styles.accordionTitle}>{props.title}</p>
-        <span style={{ marginLeft: "20px" }}>{active ? "-" : "+"}</span>
       </div>
       <div
         ref={content}
