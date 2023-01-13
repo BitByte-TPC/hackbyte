@@ -1,0 +1,63 @@
+.accordionSection{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-inline: 5rem;
+    margin: 2rem 0;
+
+    .accordion{
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        border: none;
+        outline: none;
+        transition: background-color 0.3s ease-in-out;
+
+        .icon{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 24px;
+            height: 24px;
+            background: #FFFFFF;
+            border-radius: 50%;
+
+            .accordionIcon{
+                font-size: 1.5rem;
+                font-weight: 1000;
+            }
+        }
+
+        .accordionTitle{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.2rem;
+            line-height: 30px;
+            margin-left: 1.5rem;
+            color: rgba(255, 255, 255, 0.8);
+        }
+    }
+
+    .accordionContent{
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        transition: max-height 0.3s ease-in-out;
+        padding-inline: 3rem;
+        margin-top: 0.8rem;
+
+        .accordionText{
+            max-width: 1000px;
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-size: 1.2rem;
+            line-height: 32px;
+        
+            color: rgba(255, 255, 255, 0.5);
+        }
+    }
+}

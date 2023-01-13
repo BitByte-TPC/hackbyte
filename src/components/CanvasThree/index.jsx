@@ -1,7 +1,13 @@
-import React, { Suspense ,useState} from "react";
+import React, { Suspense, useState } from "react";
 import { useRef } from "react";
-import { Canvas, useFrame,extend } from "@react-three/fiber";
-import { OrbitControls, useTexture, Sphere, Sparkles, shaderMaterial } from "@react-three/drei";
+import { Canvas, useFrame, extend } from "@react-three/fiber";
+import {
+  OrbitControls,
+  useTexture,
+  Sphere,
+  Sparkles,
+  shaderMaterial,
+} from "@react-three/drei";
 import maptexture from "../../assets/textures/earth.jpg";
 import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
@@ -15,7 +21,7 @@ export default function CanvasThree() {
   function SphereMain() {
     const colorTexture = useTexture({
       map: maptexture,
-      displacementMap: disptexture
+      displacementMap: disptexture,
     });
     const sph = useRef(null);
 
@@ -25,7 +31,7 @@ export default function CanvasThree() {
     }`;
     const fragmentShader = `varying vec3 vertexNormal;
     void main(){float intensity = pow(0.5 - dot(vertexNormal,vec3(0,0,1.0)),2.4);
-    gl_FragColor = vec4(0.1,0.0,1.0,1.0)* intensity;}`;
+    gl_FragColor = vec4(0.1,0.0,1.0,0.75)* intensity;}`;
 
     useFrame((e) => {
       sph.current.rotation.y += 0.001;
@@ -34,13 +40,18 @@ export default function CanvasThree() {
 
     return (
       <group ref={sph}>
-        <Sphere args={[3.5,100,100]}>
-          <shaderMaterial vertexShader={vertexShader} side={BackSide} fragmentShader={fragmentShader} blending={AdditiveBlending} />
+        <Sphere args={[3.5, 100, 100]}>
+          <shaderMaterial
+            vertexShader={vertexShader}
+            side={BackSide}
+            fragmentShader={fragmentShader}
+            blending={AdditiveBlending}
+          />
         </Sphere>
-        <Sphere  args={[2.5, 100, 100]} >
+        <Sphere args={[2.5, 100, 100]}>
           <meshStandardMaterial
             transparent
-            opacity={0.8}
+            opacity={0.85}
             roughness={1}
             metalness={0}
             {...colorTexture}
