@@ -1,12 +1,11 @@
-import React, { Suspense, useState } from "react";
+import React from "react";
 import { useRef } from "react";
-import { Canvas, useFrame, extend } from "@react-three/fiber";
+import { Canvas, useFrame} from "@react-three/fiber";
 import {
   OrbitControls,
   useTexture,
   Sphere,
   Sparkles,
-  shaderMaterial,
   Html,
 } from "@react-three/drei";
 import maptexture from "../../assets/textures/earth.jpg";
@@ -14,7 +13,6 @@ import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
 import { useLocation } from "react-router-dom";
 import { AdditiveBlending, BackSide } from "three";
-import Loading from "../Loading";
 import { HeroSection } from "../HeroSection";
 
 export default function CanvasThree() {
@@ -36,7 +34,7 @@ export default function CanvasThree() {
     void main(){float intensity = pow(0.5 - dot(vertexNormal,vec3(0,0,1.0)),2.4);
     gl_FragColor = vec4(0.1,0.0,1.0,0.75)* intensity;}`;
 
-    useFrame((e) => {
+    useFrame(() => {
       sph.current.rotation.y += 0.001;
       sph.current.rotation.x += 0.002;
     });
@@ -77,18 +75,10 @@ export default function CanvasThree() {
 
       {location.pathname == "/" && (
         <>
-          <Suspense
-            fallback={
-              <Html>
-                <Loading />
-              </Html>
-            }
-          >
-            <SphereMain />
-            <Html>
-              <HeroSection />
-            </Html>
-          </Suspense>
+          <SphereMain />
+          <Html>
+            <HeroSection />
+          </Html>
         </>
       )}
 
