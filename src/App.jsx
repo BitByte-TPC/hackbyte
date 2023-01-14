@@ -9,15 +9,15 @@ import SponsorUs from "./pages/SponsorUs";
 import NotFound from "./pages/NotFound";
 function App() {
   return (
-    <div className='App'>
+    <div className="App">
       <CanvasThree />
       <Routes>
-        <Route path='/' element={<Home />} />
-        <Route path='about' element={<About />} />
-        <Route path='faq' element={<FAQ />} />
-        <Route path='prizes' element={<Prizes />} />
-        <Route path='sponsor-us' element={<SponsorUs />} />
-        <Route path='*' element={<NotFound />} />
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="faq" element={<FAQ />} />
+        <Route path="prizes" element={<Prizes />} />
+        <Route path="sponsor-us" element={<SponsorUs />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </div>
   );
