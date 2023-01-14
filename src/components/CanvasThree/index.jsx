@@ -7,12 +7,15 @@ import {
   Sphere,
   Sparkles,
   shaderMaterial,
+  Html,
 } from "@react-three/drei";
 import maptexture from "../../assets/textures/earth.jpg";
 import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
 import { useLocation } from "react-router-dom";
 import { AdditiveBlending, BackSide } from "three";
+import Loading from "../Loading";
+import { HeroSection } from "../HeroSection";
 
 export default function CanvasThree() {
   const canvasRef = useRef(null);
@@ -68,12 +71,27 @@ export default function CanvasThree() {
       ref={canvasRef}
       camera={{ position: [0, 0, 7] }}
     >
+      <Sparkles count={200} scale={[30, 30, 30]} size={2} speed={2.5} />
       <directionalLight position={[2, -5, 7]} intensity={1} />
       <ambientLight intensity={1.5} />
-      <Suspense fallback={null}>
-        {location.pathname == "/" && <SphereMain />}
-        <Sparkles count={200} scale={[30, 30, 30]} size={2} speed={2.5} />
-      </Suspense>
+
+      {location.pathname == "/" && (
+        <>
+          <Suspense
+            fallback={
+              <Html>
+                <Loading />
+              </Html>
+            }
+          >
+            <SphereMain />
+            <Html>
+              <HeroSection />
+            </Html>
+          </Suspense>
+        </>
+      )}
+
       <OrbitControls dampingFactor={0.15} enableZoom={false} />
     </Canvas>
   );

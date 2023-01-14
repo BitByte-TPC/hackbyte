@@ -9,7 +9,6 @@ const Home = () => {
       <div className={styles.header}>
         <Header />
       </div>
-      <HeroSection />
       <Navbar />
     </div>
   );
