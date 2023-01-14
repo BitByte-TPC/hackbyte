@@ -7,7 +7,15 @@
   max-height: fit-content;
   overflow-y: scroll;
 
-  .accordian{
+  .accordian {
     margin-top: 3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    .accordian {
+      margin-top: 0rem !important;
+    }
   }
 }

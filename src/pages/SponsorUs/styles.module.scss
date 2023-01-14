@@ -6,6 +6,7 @@
   height: 100vh;
   max-height: fit-content;
   overflow-y: scroll;
+  padding: 1rem;
 
   p {
     max-width: 1000px;
@@ -14,8 +15,7 @@
     font-weight: 400;
     font-size: clamp(12px, 2vw, 20px);
     line-height: 36px;
-    width: 1000px;
-    margin: 1rem auto;
+    margin: 0.5rem auto;
     text-align: center;
     color: rgba(255, 255, 255, 0.65);
   }
