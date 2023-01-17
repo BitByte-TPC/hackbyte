@@ -46,6 +46,7 @@ export default function CanvasThree() {
         setRadius2(2.5);
       }
     })  
+
     useFrame(() => {
       sph.current.rotation.y += 0.001;
       sph.current.rotation.x += 0.002;
