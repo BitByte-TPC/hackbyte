@@ -1,22 +1,11 @@
-.container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  max-height: fit-content;
-  overflow-y: scroll;
-  padding: 1rem;
-
-  p {
-    max-width: 1000px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(12px, 2vw, 20px);
-    line-height: 36px;
-    margin: 0.5rem auto;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.65);
-  }
+p {
+  max-width: 1000px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 20px);
+  line-height: 36px;
+  margin: 0.5rem auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
 }

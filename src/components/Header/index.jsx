@@ -16,13 +16,57 @@ const Header = () => {
 
   return (
     <>
-      { 
+      {
         <div className={`${styles.menu} ${active && styles.menuVisible}`}>
-          <Link to='/'>HOME</Link>
-          <Link to='/about'>ABOUT</Link>
-          <Link to='/faq'>FAQS</Link>
-          <Link to='/prizes'>PRIZES</Link>
-          <Link to='/sponsor-us'>SPONSOR US</Link>
+          <Link
+            to='/'
+            onClick={() => {
+              setIsMenuOpen(false);
+              setActive(false);
+            }}
+            style={location.pathname == "/" ? { color: "#fff" } : {}}
+          >
+            HOME
+          </Link>
+          <Link
+            to='/about'
+            onClick={() => {
+              setIsMenuOpen(false);
+              setActive(false);
+            }}
+            style={location.pathname == "/about" ? { color: "#fff" } : {}}
+          >
+            ABOUT
+          </Link>
+          <Link
+            to='/faq'
+            onClick={() => {
+              setIsMenuOpen(false);
+              setActive(false);
+            }}
+            style={location.pathname == "/faq" ? { color: "#fff" } : {}}
+          >
+            FAQS
+          </Link>
+          <Link
+            to='/prizes'
+            onClick={() => {
+              setIsMenuOpen(false);
+              setActive(false);
+            }}
+          >
+            PRIZES
+          </Link>
+          <Link
+            to='/sponsor-us'
+            onClick={() => {
+              setIsMenuOpen(false);
+              setActive(false);
+            }}
+            style={location.pathname == "/sponsor-us" ? { color: "#fff" } : {}}
+          >
+            SPONSOR US
+          </Link>
         </div>
       }
       <div className={styles.container}>
@@ -36,11 +80,9 @@ const Header = () => {
             <Link to='/sponsor-us'>SPONSOR US</Link>
           </div>
         )}
-        <div 
+        <div
           className={styles.hamburger}
-          id = {
-            active ? styles.active : null
-          }
+          id={active ? styles.active : null}
           onClick={handleMenu}
         >
           {/* <img src={HamBurgerIcon} alt='' onClick={handleMenu}/> */}

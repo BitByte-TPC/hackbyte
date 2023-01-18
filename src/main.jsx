@@ -8,9 +8,9 @@ import { BrowserRouter } from "react-router-dom";
 // const App = lazy(() => import("./App"));
 import App from "./App";
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
-    <Suspense fallback={<Loading />}>
-      <App />
-    </Suspense>
-  </BrowserRouter>
+  // <BrowserRouter>
+  <Suspense fallback={<Loading />}>
+    <App />
+  </Suspense>
+  // {/* </BrowserRouter> */}
 );

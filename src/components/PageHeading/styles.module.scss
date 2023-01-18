@@ -15,6 +15,9 @@
     text-transform: uppercase;
     color: rgba(189, 210, 235, 0.25);
   }
+  .titleSmall {
+    font-size: clamp(38px, 10vw, 140px);
+  }
 
   .subHeading {
     position: absolute;

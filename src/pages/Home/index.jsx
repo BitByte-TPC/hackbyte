@@ -9,7 +9,8 @@ const Home = () => {
       <div className={styles.header}>
         <Header />
       </div>
-      <Navbar />
+      <HeroSection />
+      {/* <Navbar /> */}
     </div>
   );
 };

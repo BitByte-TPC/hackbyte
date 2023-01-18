@@ -1,0 +1,54 @@
+.primaryContainer {
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 15px;
+  gap: 6px;
+  width: auto;
+  min-width: 11rem;
+  border-radius: 4px;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  img {
+    width: 20px;
+    height: 20px;
+  }
+  span {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-decoration: none;
+    text-align: left;
+  }
+  &:hover {
+    transform: translateY(-2px);
+  }
+}
+
+.secondaryContainer {
+  background-color: transparent;
+  padding: 10px 15px;
+  width: auto;
+  min-width: 10rem;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  color: #fff;
+  box-shadow: 2px 2px 2px 0px #000;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  span {
+    font-family: "Inter", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+  &:hover {
+    transform: translateY(-2px);
+  }
+}

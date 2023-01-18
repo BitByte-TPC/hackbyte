@@ -1,21 +1,9 @@
-.container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  max-height: fit-content;
-  overflow-y: scroll;
-
-  .accordian {
-    margin-top: 3rem;
-  }
+.accordian {
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 600px) {
-  .container {
-    .accordian {
-      margin-top: 0rem !important;
-    }
+  .accordian {
+    margin-top: 0rem !important;
   }
 }
