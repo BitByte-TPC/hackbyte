@@ -1,39 +1,28 @@
-.container {
+.main {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  max-height: fit-content;
-  overflow-y: scroll;
-  .main {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  p {
-    font-family: "Poppins";
-    font-style: normal;
-    margin: 0 auto;
-    font-weight: 400;
-    font-size: clamp(12px, 2vw, 20px);
-    line-height: 36px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.65);
-  }
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+p {
+  font-family: "Poppins";
+  font-style: normal;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: clamp(12px, 2vw, 20px);
+  line-height: 36px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.65);
 }
 
 @media screen and (max-width: 600px) {
-  .container {
-    .main {
-      position: relative;
-      top: 0;
-      left: 0;
-      transform: translate(0, 0);
-    }
-    p {
-      font-size: 0.8rem;
-    }
+  .main {
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
+  }
+  p {
+    font-size: 0.8rem;
   }
 }

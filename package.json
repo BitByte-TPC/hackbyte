@@ -12,6 +12,7 @@
     "@react-three/drei": "9.32",
     "@react-three/fiber": "8.8",
     "drei": "^2.2.21",
+    "framer-motion": "^8.5.0",
     "gsap": "^3.11.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",

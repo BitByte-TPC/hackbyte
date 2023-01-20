@@ -1,6 +1,6 @@
 import React from "react";
-import { useRef ,useState} from "react";
-import { Canvas, useFrame} from "@react-three/fiber";
+import { useRef, useState, useEffect } from "react";
+import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
   OrbitControls,
   useTexture,
@@ -21,13 +21,16 @@ export default function CanvasThree() {
   const location = useLocation(); // use this to show earth only on homepage
 
   function SphereMain() {
+    const state = useThree();
     const colorTexture = useTexture({
       map: maptexture,
       displacementMap: disptexture,
     });
     const sph = useRef(null);
-    const [Radius1, setRadius1] = window.innerWidth <= 700 ? useState(2.1) : useState(3.5);
-    const [Radius2, setRadius2] = window.innerWidth <= 700 ? useState(1.5) : useState(2.5);
+    const [Radius1, setRadius1] =
+      window.innerWidth <= 700 ? useState(3.5) : useState(4.5);
+    const [Radius2, setRadius2] =
+      window.innerWidth <= 700 ? useState(2.5) : useState(3);
 
     const vertexShader = `varying vec3 vertexNormal;
     void main() {vertexNormal = normalize(normalMatrix * normal);
@@ -35,21 +38,32 @@ export default function CanvasThree() {
     }`;
     const fragmentShader = `varying vec3 vertexNormal;
     void main(){float intensity = pow(0.5 - dot(vertexNormal,vec3(0,0,1.0)),2.4);
-    gl_FragColor = vec4(0.1,0.0,1.0,0.75)* intensity;}`;
+    gl_FragColor = vec4(0.1,0.0,1.0,0.65)* intensity;}`;
 
-    window.addEventListener('resize',()=>{
+    useEffect(() => {
+      state.camera.position.set(15, 15, 15);
+      gsap.to(state.camera.position, {
+        duration: 2.5,
+        delay: 0,
+        z: 7,
+        x: 0,
+        y: 0,
+        ease: "Power3.easeOut",
+      });
+    }, []);
+
+    window.addEventListener("resize", () => {
       if (window.innerWidth <= 700) {
-        setRadius1(2.1);
-        setRadius2(1.5)
-      } else {
         setRadius1(3.5);
         setRadius2(2.5);
+      } else {
+        setRadius1(4.5);
+        setRadius2(3);
       }
-    })  
+    });
 
     useFrame(() => {
-      sph.current.rotation.y += 0.001;
-      sph.current.rotation.x += 0.002;
+      sph.current.rotation.y += 0.002;
     });
 
     return (
@@ -81,7 +95,6 @@ export default function CanvasThree() {
       className={styles.canvas}
       ref={canvasRef}
       camera={{ position: [15, 15, 15] }}
-      onCreated={(state)=>{gsap.to(state.camera.position,{duration:2.5,delay:0,z:7,x:0,y:0, ease:'Power3.easeOut'})}}
     >
       <Sparkles count={200} scale={[30, 30, 30]} size={2} speed={2.5} />
       <directionalLight position={[2, -5, 7]} intensity={1} />
@@ -90,13 +103,17 @@ export default function CanvasThree() {
       {location.pathname == "/" && (
         <>
           <SphereMain />
-          <Html>
+          {/* <Html>
             <HeroSection />
-          </Html>
+          </Html> */}
         </>
       )}
 
-      <OrbitControls dampingFactor={0.15} enableZoom={false} enablePan={false}/>
+      <OrbitControls
+        dampingFactor={0.15}
+        enableZoom={false}
+        enablePan={false}
+      />
     </Canvas>
   );
 }

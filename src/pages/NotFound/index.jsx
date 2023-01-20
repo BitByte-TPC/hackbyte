@@ -1,9 +1,10 @@
 import Header from "../../components/Header";
+import PageContainer from "../../components/PageContainer";
 import PageHeading from "../../components/PageHeading";
 import styles from "./styles.module.scss";
 const NotFound = () => {
   return (
-    <div className={styles.container}>
+    <PageContainer>
       <Header />
       <div className={styles.main}>
         <PageHeading title='404' subHeading='Page not found' />
@@ -12,7 +13,7 @@ const NotFound = () => {
           more to explore.
         </p>
       </div>
-    </div>
+    </PageContainer>
   );
 };
 
