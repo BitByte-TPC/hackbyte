@@ -6,13 +6,13 @@
   margin: 2rem 0;
 
   .accordion {
-    cursor: pointer;
-    display: flex;
-    justify-content: flex-start;
+    display: grid;
+    grid-template-columns: 1fr 25fr;
     align-items: center;
     border: none;
     outline: none;
     transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
 
     .icon {
       display: flex;
@@ -25,7 +25,7 @@
 
       .accordionIcon {
         font-size: 1.5rem;
-        font-weight: 1000;
+        font-weight: 500;
       }
     }
 
@@ -35,7 +35,8 @@
       font-weight: 400;
       font-size: 1.2rem;
       line-height: 30px;
-      margin-left: 1.5rem;
+      margin-left: 0rem;
+      text-align: left;
       color: rgba(255, 255, 255, 0.8);
     }
   }
@@ -67,8 +68,15 @@
 
     .accordion {
       width: 100%;
+      gap: 1rem;
+
       .icon {
-        padding: 2px;
+        width: 20px;
+        height: 20px; 
+
+        .accordionIcon{
+          padding: 4px;
+        }
       }
       .accordionTitle {
         font-size: 1rem;

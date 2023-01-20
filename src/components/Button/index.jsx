@@ -3,7 +3,9 @@ const Button = ({ type, icon, text, ...others }) => {
   if (type === "primary")
     return (
       <button className={styles.primaryContainer} {...others}>
-        <img src={icon} alt='icon' />
+        {icon && (
+          <img src={icon} alt='icon' />
+        )}
         <span>{text}</span>
       </button>
     );
