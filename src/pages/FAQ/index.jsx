@@ -32,19 +32,14 @@ const FAQ = () => {
   ];
 
   return (
-    <motion.div
-      animate={{
-        opacity: 1,
-      }}
-      initial={{
-        opacity: 0,
-      }}
-      exit={{
-        opacity: 0,
-      }}
-    >
-      <PageContainer>
+    <PageContainer>
         <Header />
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={{ opacity: 1, y: 0 }}
+          // exit={{ y: 100 }}
+          transition={{delay: 0.3, duration: 0.7}}
+        >
         <PageHeading title='FAQs' subHeading='Frequently Asked Questions' />
         <div className={styles.accordian}>
           {data.map((item, index) => (
@@ -56,8 +51,8 @@ const FAQ = () => {
             />
           ))}
         </div>
-      </PageContainer>
-    </motion.div>
+      </motion.div>
+    </PageContainer>
   );
 };
 export default FAQ;

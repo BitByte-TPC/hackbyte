@@ -6,23 +6,18 @@ import { motion } from "framer-motion";
 
 const Prizes = () => {
   return (
-    <motion.div
-      animate={{
-        opacity: 1,
-      }}
-      initial={{
-        opacity: 0,
-      }}
-      exit={{
-        opacity: 0,
-      }}
-    >
-      <PageContainer>
+    <PageContainer>
         <Header />
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}  
+          animate={{ opacity: 1, y: 0 }}
+          // exit={{ y: -100 }}
+          transition={{delay: 0.3, duration: 0.7}}
+        >
         <PageHeading title='PRIZES' subHeading='What you can get' />
         <h1>To be declared soon</h1>
-      </PageContainer>
-    </motion.div>
+      </motion.div>
+    </PageContainer>
   );
 };
 export default Prizes;

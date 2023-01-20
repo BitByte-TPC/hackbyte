@@ -85,7 +85,6 @@ const Header = () => {
           id={active ? styles.active : null}
           onClick={handleMenu}
         >
-          {/* <img src={HamBurgerIcon} alt='' onClick={handleMenu}/> */}
           <span className={styles.line}></span>
           <span className={styles.line}></span>
           <span className={styles.line}></span>
