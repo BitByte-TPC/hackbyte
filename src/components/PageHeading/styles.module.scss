@@ -9,16 +9,12 @@
     font-family: "Lato";
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(48px, 10vw, 160px);
+    font-size: clamp(48px, 16vw, 160px);
     line-height: 200px;
     letter-spacing: 0.2em;
     text-transform: uppercase;
     color: rgba(189, 210, 235, 0.25);
   }
-  .titleSmall {
-    font-size: clamp(38px, 10vw, 140px);
-  }
-
   .subHeading {
     position: absolute;
     font-family: "Poppins";
@@ -28,5 +24,18 @@
     line-height: 42px;
     letter-spacing: 0.3em;
     color: #ffffff;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    .title {
+      font-size: clamp(24px, 16vw, 80px);
+      line-height: 150px;
+    }
+    .subHeading {
+      font-size: clamp(8px, 3vw, 14px);
+      line-height: 21px;
+    }
   }
 }

@@ -8,18 +8,17 @@ import Photo_4 from "../../assets/Photo-4.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import PageHeading from "../../components/PageHeading";
 import PageContainer from "../../components/PageContainer";
-import { pageVariants, transition } from "../../utils/animations";
 
 const About = () => {
   return (
     <PageContainer>
-        <Header />
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          // exit={{ y: 100 }}
-          transition={{delay: 0.3, duration: 0.7}}
-        >
+      <Header />
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.7 }}
+        className={styles.container}
+      >
         <PageHeading title='ABOUT' subHeading='What is Hackbyte?' />
         <div className={styles.text}>
           <p>

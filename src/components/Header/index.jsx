@@ -2,12 +2,11 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.svg";
-import HamBurgerIcon from "../../assets/HamBurger.svg";
-
 const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [active, setActive] = useState(false);
+  const [activemenus, setActiveMenus] = useState(location.pathname);
 
   const handleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
@@ -24,7 +23,7 @@ const Header = () => {
               setIsMenuOpen(false);
               setActive(false);
             }}
-            style={location.pathname == "/" ? { color: "#fff" } : {}}
+            style={activemenus == "/" ? { color: "#fff" } : {}}
           >
             HOME
           </Link>
@@ -34,7 +33,7 @@ const Header = () => {
               setIsMenuOpen(false);
               setActive(false);
             }}
-            style={location.pathname == "/about" ? { color: "#fff" } : {}}
+            style={activemenus == "/about" ? { color: "#fff" } : {}}
           >
             ABOUT
           </Link>
@@ -44,7 +43,7 @@ const Header = () => {
               setIsMenuOpen(false);
               setActive(false);
             }}
-            style={location.pathname == "/faq" ? { color: "#fff" } : {}}
+            style={activemenus == "/faq" ? { color: "#fff" } : {}}
           >
             FAQS
           </Link>
@@ -54,6 +53,7 @@ const Header = () => {
               setIsMenuOpen(false);
               setActive(false);
             }}
+            style={activemenus == "/prizes" ? { color: "#fff" } : {}}
           >
             PRIZES
           </Link>
@@ -63,7 +63,7 @@ const Header = () => {
               setIsMenuOpen(false);
               setActive(false);
             }}
-            style={location.pathname == "/sponsor-us" ? { color: "#fff" } : {}}
+            style={activemenus == "/sponsor-us" ? { color: "#fff" } : {}}
           >
             SPONSOR US
           </Link>
@@ -73,11 +73,33 @@ const Header = () => {
         <img className={styles.logo} src={Logo} alt='' />
         {location.pathname !== "/" && (
           <div className={styles.nav}>
-            <Link to='/'>HOME</Link>
-            <Link to='/about'>ABOUT</Link>
-            <Link to='/faq'>FAQS</Link>
-            <Link to='/prizes'>PRIZES</Link>
-            <Link to='/sponsor-us'>SPONSOR US</Link>
+            <Link to='/' style={activemenus == "/" ? { color: "#fff" } : {}}>
+              HOME
+            </Link>
+            <Link
+              to='/about'
+              style={activemenus == "/about" ? { color: "#fff" } : {}}
+            >
+              ABOUT
+            </Link>
+            <Link
+              to='/faq'
+              style={activemenus == "/faq" ? { color: "#fff" } : {}}
+            >
+              FAQS
+            </Link>
+            <Link
+              to='/prizes'
+              style={activemenus == "/prizes" ? { color: "#fff" } : {}}
+            >
+              PRIZES
+            </Link>
+            <Link
+              to='/sponsor-us'
+              style={activemenus == "/sponsor-us" ? { color: "#fff" } : {}}
+            >
+              SPONSOR US
+            </Link>
           </div>
         )}
         <div

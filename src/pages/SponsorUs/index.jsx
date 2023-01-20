@@ -4,16 +4,16 @@ import PageHeading from "../../components/PageHeading";
 import styles from "./styles.module.scss";
 import { motion } from "framer-motion";
 import Button from "../../components/Button";
+import brochureIcon from "../../assets/brochure.svg";
 const SponsorUs = () => {
   return (
     <PageContainer>
-        <Header />
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          // exit={{ y: -100 }}
-          transition={{delay: 0.3, duration: 0.7}}
-        >
+      <Header />
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 0.3, duration: 0.7 }}
+      >
         <PageHeading title='SPONSOR' subHeading='How you can help?' />
         <p>
           HackByte is the IIITDMJ's student-run hackathon, which centers on
@@ -27,8 +27,9 @@ const SponsorUs = () => {
           <Button
             type='primary'
             text='Download Brochure'
+            icon={brochureIcon}
             onClick={() => {
-              navigate("/sponsor-us");
+              window.open("http://bit.ly/hackbyte23-brochure", "_blank");
             }}
           />
         </div>
