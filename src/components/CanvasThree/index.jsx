@@ -6,21 +6,19 @@ import {
   useTexture,
   Sphere,
   Sparkles,
-  Html,
-  Cloud
+  Cloud,
 } from "@react-three/drei";
 import maptexture from "../../assets/textures/earth.jpg";
 import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
 import { useLocation } from "react-router-dom";
-import { AdditiveBlending, BackSide, Clock } from "three";
-import { HeroSection } from "../HeroSection";
+import { AdditiveBlending, BackSide } from "three";
 import gsap from "gsap";
 
 export default function CanvasThree() {
   const canvasRef = useRef(null);
   const location = useLocation(); // use this to show earth only on homepage
-  const [cloudOpacity, setcloudOpacity] = useState(0)
+  const [cloudOpacity, setcloudOpacity] = useState(0);
   function SphereMain() {
     const state = useThree();
     const colorTexture = useTexture({
@@ -55,8 +53,8 @@ export default function CanvasThree() {
 
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 700) {
-        setRadius1(3.2);
-        setRadius2(2.2);
+        setRadius1(2.8);
+        setRadius2(1.8);
       } else {
         setRadius1(4.3);
         setRadius2(2.8);
@@ -65,7 +63,7 @@ export default function CanvasThree() {
 
     useFrame((state) => {
       sph.current.rotation.y += 0.003;
-      sph.current.position.z = 0.6*Math.sin(state.clock.elapsedTime)
+      sph.current.position.z = 0.6 * Math.sin(state.clock.elapsedTime);
     });
 
     return (
@@ -91,10 +89,10 @@ export default function CanvasThree() {
       </group>
     );
   }
-  useEffect(()=>{
-    location.pathname === '/' ? setcloudOpacity(0) : setcloudOpacity(0.15)
-  },[location.pathname])
-  
+  useEffect(() => {
+    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.175);
+  }, [location.pathname]);
+
   return (
     <Canvas
       className={styles.canvas}
@@ -104,13 +102,16 @@ export default function CanvasThree() {
       <Sparkles count={200} scale={[30, 30, 30]} size={2} speed={2.5} />
       <directionalLight position={[2, -5, 7]} intensity={1} />
       <ambientLight intensity={1.5} />
-      <Cloud speed={1} opacity={cloudOpacity} color="#2160a3" />
+      <Cloud
+        speed={0.75}
+        opacity={cloudOpacity}
+        color='#2160a3'
+        depth={-1}
+        depthTest
+      />
       {location.pathname == "/" && (
         <>
           <SphereMain />
-          {/* <Html>
-            <HeroSection />
-          </Html> */}
         </>
       )}
 

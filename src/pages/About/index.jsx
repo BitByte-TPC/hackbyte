@@ -8,6 +8,8 @@ import Photo_4 from "../../assets/Photo-4.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import PageHeading from "../../components/PageHeading";
 import PageContainer from "../../components/PageContainer";
+import hb from "../../assets/HB.svg";
+import Button from "../../components/Button";
 
 const About = () => {
   return (
@@ -22,13 +24,33 @@ const About = () => {
         <PageHeading title='ABOUT' subHeading='What is Hackbyte?' />
         <div className={styles.text}>
           <p>
-            HackByte is the IIITDMJ's student-run hackathon, which centers on
-            bringing developers and problem solvers from different foundations
-            together and enables them to develop projects that can bring out an
-            impact. The hackathon gives a fun yet challenging way to gain
-            knowledge around various technologies and gives a lot more
-            opportunities to utilize them within
+            Hackbyte is the annual hackathon of IIIT Jabalpur and is organised
+            by the student-run programming club of the institute. This will
+            bring together developers and problem solvers from diverse
+            backgrounds to collaborate on innovative projects. The event offers
+            a unique and challenging learning experience for participants,
+            providing them the opportunity to work with the latest technologies
+            and expand their skills.
           </p>
+        </div>
+        <div className={styles.opportunity}>
+          <div className={styles.innerFlex}>
+            <div className={styles.left}>
+              <h2>Opportunities for Participants</h2>
+              <p>
+                Participants will have the opportunity to work on projects in
+                teams, and the best projects will be awarded prizes, including
+                domain-specific prizes. In addition to the hackathon, we will be
+                hosting workshops, mentorship sessions, and networking
+                opportunities for participants to connect with industry
+                professionals and developer communities from around the world.
+              </p>
+              <Button type='primary' text='Sponsor Us' icon='' />
+            </div>
+            <div className={styles.right}>
+              <img src={hb} width='400px' />
+            </div>
+          </div>
         </div>
         <div className={styles.gallery}>
           <p>Past Events Gallery</p>

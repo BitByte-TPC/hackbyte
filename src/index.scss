@@ -4,9 +4,11 @@
   padding: 0;
 }
 body {
-  overflow: none;
+  overflow: hidden;
 }
-
+canvas {
+  overflow: hidden;
+}
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;

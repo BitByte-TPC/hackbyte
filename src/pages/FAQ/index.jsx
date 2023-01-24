@@ -8,38 +8,45 @@ import { motion } from "framer-motion";
 const FAQ = () => {
   const data = [
     {
-      title: "HackByte is the IIITDMJ's student-run hackathon?",
+      title: "What is HackByte?",
       content:
-        "which centers on bringing developers and problem solvers rom different foundations together and enables them to develop projects that can bring out an impact. The hackathon gives a fun yet challenging way to gain knowledge around various technologiesn and gives a lot more opportunities to utilize them within.",
+        "HackByte is an annual student-run hackathon organized by The Programming Club at IIIT JABALPUR. The event brings together developers and problem solvers from diverse backgrounds to collaborate on innovative projects, providing a unique and challenging learning experience for participants.",
     },
     {
-      title: "What is the theme of HackByte 2021?",
+      title: "When and where will HackByte be held",
+      content: "HackByte will be held on 25th-26th March at IIITDM Jabalpur.",
+    },
+    {
+      title: "Who can participate in HackByte?",
       content:
-        "The theme of HackByte 2021 is 'Sustainable Development Goals'. The Sustainable Development Goals (SDGs) are a collection of 17 global goals set by the United Nations in 2015 to be achieved by 2030. The SDGs are an urgent call for action by all countries - developed and developing - in a global partnership. They recognize that ending poverty and other deprivations must go hand-in-hand with strategies that improve health and education, reduce inequality, and spur economic growth - all while tackling climate change and working to preserve our oceans and forests.",
+        " HackByte is open to all individuals, including students, developers, and problem solvers from diverse backgrounds. The event is designed to be inclusive, and we welcome participation from individuals of all skill levels. The hackathon will be held in both online and offline mode, providing flexibility and accessibility for all participants, regardless of location.",
     },
     {
-      title: "What is the duration of HackByte 2021?",
-      content: "The duration of HackByte 2021 is 24 hours.",
+      title: "Can I form a team for HackByte?",
+      content:
+        "Yes, participants are welcome to form teams for the hackathon. Team size can vary, but usually, teams consist of 2-4 members.",
     },
     {
-      title: "What is the date of HackByte 2021?",
-      content: "The date of HackByte 2021 is 27th February 2021.",
+      title: "Is Hackbyte online or offline?",
+      content:
+        "Hackbyte is a hybrid hackathon, so you can also participate online by submitting your project via Devfolio",
     },
     {
-      title: "What is the time of HackByte 2021?",
-      content: "The time of HackByte 2021 is 10:00 AM.",
+      title: " How can my company get involved in HackByte?",
+      content:
+        "Companies can get involved in HackByte by becoming a sponsor of the event. Sponsors will have the opportunity to showcase their products and services to a highly engaged and motivated audience of tech-savvy students. Additionally, sponsors will be given priority according to the level of sponsorship and have the opportunity to advertise any events or competitions they plan to host on our social media channels and in offline sessions.",
     },
   ];
 
   return (
     <PageContainer>
-        <Header />
-        <motion.div
-          initial={{ opacity: 0, y: 100 }}
-          animate={{ opacity: 1, y: 0 }}
-          // exit={{ y: 100 }}
-          transition={{delay: 0.3, duration: 0.7}}
-        >
+      <Header />
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={{ opacity: 1, y: 0 }}
+        // exit={{ y: 100 }}
+        transition={{ delay: 0.3, duration: 0.7 }}
+      >
         <PageHeading title='FAQs' subHeading='Frequently Asked Questions' />
         <div className={styles.accordian}>
           {data.map((item, index) => (
