@@ -8,6 +8,7 @@ import {
   Sparkles,
   Cloud,
 } from "@react-three/drei";
+import cloud from "../../assets/cloud.png";
 import maptexture from "../../assets/textures/earth.jpg";
 import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
@@ -15,7 +16,7 @@ import { useLocation } from "react-router-dom";
 import { AdditiveBlending, BackSide } from "three";
 import gsap from "gsap";
 
-export default function CanvasThree() {
+export default function CanvasThree({ setIsLoading }) {
   const canvasRef = useRef(null);
   const location = useLocation(); // use this to show earth only on homepage
   const [cloudOpacity, setcloudOpacity] = useState(0);
@@ -68,7 +69,12 @@ export default function CanvasThree() {
 
     return (
       <group ref={sph}>
-        <Sphere args={[Radius1, 100, 100]}>
+        <Sphere
+          args={[Radius1, 100, 100]}
+          onAfterRender={() => {
+            setIsLoading(false);
+          }}
+        >
           <shaderMaterial
             vertexShader={vertexShader}
             side={BackSide}
@@ -108,6 +114,7 @@ export default function CanvasThree() {
         color='#2160a3'
         depth={-1}
         depthTest
+        texture={cloud}
       />
       {location.pathname == "/" && (
         <>

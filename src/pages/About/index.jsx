@@ -8,7 +8,8 @@ import Photo_4 from "../../assets/Photo-4.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import PageHeading from "../../components/PageHeading";
 import PageContainer from "../../components/PageContainer";
-import hb from "../../assets/HB.svg";
+import man from "../../assets/man1.png";
+import devfolio from "../../assets/devfolio.svg";
 import Button from "../../components/Button";
 
 const About = () => {
@@ -45,10 +46,14 @@ const About = () => {
                 opportunities for participants to connect with industry
                 professionals and developer communities from around the world.
               </p>
-              <Button type='primary' text='Sponsor Us' icon='' />
+              <Button
+                type='primary'
+                text='Apply with devfolio'
+                icon={devfolio}
+              />
             </div>
             <div className={styles.right}>
-              <img src={hb} width='400px' />
+              <img src={man} width='400px' />
             </div>
           </div>
         </div>
