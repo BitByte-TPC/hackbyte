@@ -60,14 +60,10 @@ p {
     }
   }
 }
-p {
-  font-size: 1rem;
-}
-
 @media only screen and (max-width: 600px) {
   .sponsorUs {
     p {
-      font-size: 1rem;
+      font-size: 1rem !important;
     }
     button {
       padding: 1rem 2rem !important;

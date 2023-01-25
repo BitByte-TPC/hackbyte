@@ -44,7 +44,11 @@ export default function CanvasThree({ setIsLoading }) {
     );
   }
 
-  function SphereMain() {
+  function SphereMain({ isRender }) {
+    if (!isRender) {
+      setIsLoading(false);
+      return null;
+    }
     const colorTexture = useTexture({
       map: maptexture,
       displacementMap: disptexture,
@@ -125,10 +129,10 @@ export default function CanvasThree({ setIsLoading }) {
       <ambientLight intensity={1.5} />
       <Cloud speed={1} opacity={cloudOpacity} texture={cloud} color='#2160a3' />
       <CloudMain />
-      {location.pathname == "/" && (
-        <>
-          <SphereMain />
-        </>
+      {location.pathname == "/" ? (
+        <SphereMain isRender={true} />
+      ) : (
+        <SphereMain isRender={false} />
       )}
 
       <OrbitControls
