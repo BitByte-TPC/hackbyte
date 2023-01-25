@@ -33,6 +33,9 @@ const SponsorUs = () => {
             }}
           />
         </div>
+        <div className={styles.whowithus}>
+          <h2>Who are with us?</h2>
+        </div>
       </motion.div>
     </PageContainer>
   );

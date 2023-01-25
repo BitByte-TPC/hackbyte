@@ -1,50 +1,46 @@
-.about {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-
-  .outertxt {
-    position: relative;
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(72px, 10vw, 180px);
-    line-height: 240px;
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    color: rgba(189, 210, 235, 0.25);
-  }
-
-  .innertxt {
-    position: absolute;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(12px, 2vw, 28px);
-    line-height: 42px;
-    letter-spacing: 0.3em;
-    color: #ffffff;
-  }
+p {
+  font-size: clamp(18px, 2vw, 20px);
 }
-
-.text {
+.opportunity {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
-  margin-top: 2rem;
-  padding: 0 2rem;
-
-  p {
-    max-width: 1000px;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 400;
-    font-size: clamp(12px, 2vw, 20px);
-    line-height: 36px;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.65);
+  margin: 4rem 0 2rem 0;
+  border-radius: 10px;
+  padding: 10px;
+  .innerFlex {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+  }
+  .left {
+    max-width: 800px;
+    h2 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 60px;
+      letter-spacing: 0.15em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    p {
+      text-align: left;
+      padding-left: 0;
+      margin: 1.5rem 0;
+    }
+    button {
+      padding-left: -2px;
+    }
+  }
+  .right {
+    img {
+      width: 17rem;
+    }
   }
 }
 
@@ -108,6 +104,38 @@
         img {
           width: 100%;
           height: 100%;
+        }
+      }
+    }
+  }
+  .opportunity {
+    margin-top: 1rem;
+    .innerFlex {
+      width: 100%;
+      padding: 0.5rem;
+      .left {
+        order: 2;
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 0.5rem;
+        }
+        p {
+          padding-right: 0;
+          margin: 0 0 1rem 0;
+          text-align: center;
+        }
+      }
+      .right {
+        order: 1;
+        text-align: center;
+        padding-left: 1.5rem;
+        img {
+          width: 80%;
         }
       }
     }

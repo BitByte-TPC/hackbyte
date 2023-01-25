@@ -1,4 +1,4 @@
-.menu{
+.menu {
   position: absolute;
   width: 0;
   height: 100vh;
@@ -12,8 +12,8 @@
   opacity: 0;
   z-index: 1;
 
-  a{
-    font-family: "GROUPE";
+  a {
+    font-family: "Inter";
     font-style: normal;
     font-size: 24px;
     margin-bottom: 2rem;
@@ -23,7 +23,7 @@
     color: #919191;
     text-decoration: none;
     transition: 0.3s ease-in-out;
-  
+
     &:hover {
       color: #fff;
     }
@@ -33,17 +33,18 @@
   width: 100vw;
   visibility: visible;
   opacity: 1;
+  position: fixed;
 }
 .container {
   display: flex;
   justify-content: space-between;
   width: 100vw;
   align-items: center;
-  padding: 2.5rem 5rem 0 5rem;
+  padding: 2rem 5rem 0 5rem;
   user-select: none;
 
   .logo {
-    width: 6rem;
+    width: 5rem;
   }
 
   .nav {
@@ -54,7 +55,7 @@
     gap: 2.5rem;
 
     a {
-      font-family: "GROUPE";
+      font-family: "Inter";
       font-style: normal;
       font-size: 18px;
       font-weight: 300;
@@ -91,7 +92,7 @@
     }
   }
 
-  #active{
+  #active {
     -webkit-transition: all 0.3s ease-in-out;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -102,7 +103,7 @@
     -ms-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    
+
     .line:nth-child(1) {
       -webkit-transition-delay: 0.3s;
       -o-transition-delay: 0.3s;
@@ -142,14 +143,14 @@
     .hamburger {
       width: 2rem;
 
-      .line{
+      .line {
         width: 1.5rem;
         height: 2px;
         margin: 3px auto;
       }
     }
 
-    #active{
+    #active {
       .line:nth-child(1) {
         -webkit-transform: translateY(8px);
         -ms-transform: translateY(8px);

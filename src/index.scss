@@ -4,9 +4,11 @@
   padding: 0;
 }
 body {
-  overflow: none;
+  overflow: hidden;
 }
-
+canvas {
+  overflow: hidden;
+}
 ::-webkit-scrollbar {
   width: 6px;
   height: 6px;
@@ -25,10 +27,6 @@ scrollbar {
 scrollbar-thumb {
   background-color: rgba(127, 125, 125, 0.4);
   border-radius: 10px;
-}
-@font-face {
-  font-family: "GROUPE";
-  src: local("GROUPE"), url(./assets/fonts/groupe.otf) format("opentype");
 }
 body {
   margin: 0;

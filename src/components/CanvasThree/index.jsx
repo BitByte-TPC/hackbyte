@@ -6,10 +6,9 @@ import {
   useTexture,
   Sphere,
   Sparkles,
-  Html,
   Cloud,
 } from "@react-three/drei";
-import cloud from '../../assets/cloud.png'
+import cloud from "../../assets/cloud.png";
 import maptexture from "../../assets/textures/earth.jpg";
 import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
@@ -17,7 +16,7 @@ import { useLocation } from "react-router-dom";
 import { AdditiveBlending, BackSide, Vector3 } from "three";
 import { HeroSection } from "../HeroSection";
 
-export default function CanvasThree() {
+export default function CanvasThree({ setIsLoading }) {
   const canvasRef = useRef(null);
   const location = useLocation(); // use this to show earth only on homepage
   const [cloudOpacity, setcloudOpacity] = useState(0)
@@ -43,8 +42,8 @@ export default function CanvasThree() {
     
     window.addEventListener("resize", () => {
       if (window.innerWidth <= 700) {
-        setRadius1(3.2);
-        setRadius2(2.2);
+        setRadius1(2.8);
+        setRadius2(1.8);
       } else {
         setRadius1(4);
         setRadius2(2.5);
@@ -59,7 +58,12 @@ export default function CanvasThree() {
 
     return (
       <group ref={sph}>
-        <Sphere args={[Radius1, 100, 100]}>
+        <Sphere
+          args={[Radius1, 100, 100]}
+          onAfterRender={() => {
+            setIsLoading(false);
+          }}
+        >
           <shaderMaterial
             vertexShader={vertexShader}
             side={BackSide}
@@ -80,10 +84,10 @@ export default function CanvasThree() {
       </group>
     );
   }
-  useEffect(()=>{
-    location.pathname === '/' ? setcloudOpacity(0) : setcloudOpacity(0.15)
-  },[location.pathname])
-  
+  useEffect(() => {
+    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.175);
+  }, [location.pathname]);
+
   return (
     <Canvas
       className={styles.canvas}
@@ -98,10 +102,6 @@ export default function CanvasThree() {
       {location.pathname == "/" && (
         <>
           <SphereMain />
-          
-          {/* <Html>
-            <HeroSection />
-          </Html> */}
         </>
       )}
 
