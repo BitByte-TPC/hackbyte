@@ -18,7 +18,7 @@ p {
   margin-top: 3rem;
 }
 
-.whowithus {
+.sponsorUs {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -26,15 +26,84 @@ p {
   margin: 4rem 0 2rem 0;
   border-radius: 10px;
   padding: 10px;
+  .innerFlex {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    padding: 0 4rem;
+  }
+  .left {
+    max-width: 800px;
+    h2 {
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: clamp(24px, 4vw, 34px);
+      line-height: 60px;
+      letter-spacing: 0.15em;
+      text-align: left;
+      color: rgba(255, 255, 255, 0.6);
+    }
+    p {
+      text-align: left;
+      padding-left: 0;
+      margin: 1.5rem 0;
+    }
+    button {
+      padding-left: -2px;
+    }
+  }
+  .right {
+    img {
+      width: 17rem;
+    }
+  }
+}
+p {
+  font-size: 1rem;
+}
 
-  h2 {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: 0.15em;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
+@media only screen and (max-width: 600px) {
+  .sponsorUs {
+    p {
+      font-size: 1rem;
+    }
+    button {
+      padding: 1rem 2rem !important;
+      span {
+        font-size: 1.2rem !important;
+      }
+    }
+    .innerFlex {
+      width: 100%;
+      padding: 0.5rem;
+      .left {
+        order: 2;
+        display: flex;
+        margin-top: 1rem;
+        flex-direction: column;
+        align-items: center;
+        h2 {
+          font-size: 1.8rem;
+          text-align: center;
+          line-height: 40px;
+          margin-bottom: 1.5rem;
+        }
+        p {
+          padding-right: 0;
+          margin: 0 0 1rem 0;
+          text-align: center;
+        }
+      }
+      .right {
+        order: 1;
+        text-align: center;
+        padding-left: 1.5rem;
+        img {
+          width: 80%;
+        }
+      }
+    }
   }
 }

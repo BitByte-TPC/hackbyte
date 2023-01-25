@@ -20,7 +20,7 @@
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: clamp(12px, 2vw, 28px);
+    font-size: clamp(12px, 4vw, 28px);
     line-height: 42px;
     letter-spacing: 0.3em;
     color: #ffffff;
@@ -29,6 +29,7 @@
 
 @media only screen and (max-width: 600px) {
   .container {
+    margin-top: 2rem;
     .title {
       font-size: clamp(24px, 16vw, 80px);
       line-height: 150px;

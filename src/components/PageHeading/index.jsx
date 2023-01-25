@@ -4,13 +4,13 @@ const PageHeading = ({ title, subHeading }) => {
   const { pathname } = useLocation();
   return (
     <div className={styles.container}>
-      <p
+      <span
         className={`${styles.title} ${
           pathname.length > 6 ? styles.titleSmall : ""
         }`}
       >
         {title}
-      </p>
+      </span>
       <p className={styles.subHeading}>{subHeading}</p>
     </div>
   );
