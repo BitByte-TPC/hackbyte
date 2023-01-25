@@ -90,7 +90,20 @@ p {
 }
 @media only screen and (max-width: 600px) {
   .text {
+    p {
+      font-size: 0.95rem !important;
+    }
     margin-top: -1rem;
+  }
+  .opportunity{
+    .left{
+      h2{
+        font-size: 1.7rem;
+      }
+      p{
+        font-size: 0.95rem;
+      }
+    }
   }
   .gallery {
     p {
