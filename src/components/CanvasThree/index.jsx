@@ -74,11 +74,11 @@ export default function CanvasThree({ setIsLoading }) {
     });
 
     useFrame((state) => {
-      sph.current.rotation.y += 0.002;
+      sph.current.rotation.y += 0.003;
       sph.current.position.z = 0.6 * Math.sin(state.clock.elapsedTime);
       sph.current.position.lerp(
-        new Vector3(state.mouse.x * 0.5, state.mouse.y * 0.3, 5),
-        0.025
+        new Vector3(state.mouse.x * 0.5, state.mouse.y * 0.3, 7),
+        0.03
       );
     });
 
@@ -124,6 +124,7 @@ export default function CanvasThree({ setIsLoading }) {
       <directionalLight position={[2, -5, 7]} intensity={1} />
       <ambientLight intensity={1.5} />
       <Cloud speed={1} opacity={cloudOpacity} texture={cloud} color='#2160a3' />
+      <CloudMain />
       {location.pathname == "/" && (
         <>
           <SphereMain />
