@@ -1,7 +1,7 @@
 # hackbyte
 The official website for Hackbyte (annual hackathon of IIITDM Jabalpur).
 
-[hackbyte.netlify.app](https://hackbyte.netlify.app)
+[hackbyte23.live](https://hackbyte23.live)
 
 ## Tech Stack
 - React (vite) 
