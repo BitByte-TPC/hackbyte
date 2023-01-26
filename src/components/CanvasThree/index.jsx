@@ -74,8 +74,6 @@ export default function CanvasThree({ setIsLoading }) {
       } else {
         setRadius1(4);
         setRadius2(2.5);
-      }
-    });
 
     useFrame((state) => {
       sph.current.rotation.y += 0.003;
@@ -140,6 +138,7 @@ export default function CanvasThree({ setIsLoading }) {
         enableZoom={false}
         enablePan={false}
         enableRotate={false}
+
       />
     </Canvas>
   );
