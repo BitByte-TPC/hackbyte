@@ -35,6 +35,18 @@ p {
   }
   .left {
     max-width: 800px;
+    .logos{
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      gap: 2.5rem;
+      margin:1.5rem 0 3rem 0;
+      flex-wrap: wrap;
+      img{
+        border-radius: 50%;
+        width: clamp(15px,5rem,160px);
+      }
+    }
     h2 {
       font-family: "Lato";
       font-style: normal;
@@ -44,24 +56,30 @@ p {
       letter-spacing: 0.15em;
       text-align: left;
       color: rgba(255, 255, 255, 0.6);
+      margin-bottom: 2rem;
     }
     p {
       text-align: left;
       padding-left: 0;
-      margin: 1.5rem 0;
+      span{ 
+        font-weight: 500;
+        color: white; 
+      }
     }
     button {
-      padding-left: -2px;
+      padding: 15px 30px;
+      margin-bottom: 1.5rem;
     }
   }
   .right {
     img {
-      width: 17rem;
+      width: 20rem;
     }
   }
 }
 @media only screen and (max-width: 600px) {
   .sponsorUs {
+    margin-top: 2rem;
     p {
       font-size: 1rem !important;
     }
@@ -80,6 +98,14 @@ p {
         margin-top: 1rem;
         flex-direction: column;
         align-items: center;
+        .logos{
+          gap: 2rem ;
+          justify-content: center;
+          img{
+            width: 5rem;
+          }
+        }
+        
         h2 {
           font-size: 1.8rem;
           text-align: center;
@@ -94,10 +120,12 @@ p {
       }
       .right {
         order: 1;
-        text-align: center;
+        display: flex;
+        justify-content: center;
         padding-left: 1.5rem;
+        width: 100%;
         img {
-          width: 80%;
+          width: 60%;
         }
       }
     }

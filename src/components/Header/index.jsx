@@ -71,7 +71,9 @@ const Header = () => {
         </div>
       }
       <div className={styles.container}>
-        <img className={styles.logo} src={hb} alt='' />
+        <Link to='/'>
+          <img className={styles.logo} src={hb} alt='' />
+        </Link>
         {location.pathname !== "/" && (
           <div className={styles.nav}>
             <Link to='/' style={activemenus == "/" ? { color: "#fff" } : {}}>

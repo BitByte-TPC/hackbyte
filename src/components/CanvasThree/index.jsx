@@ -74,7 +74,8 @@ export default function CanvasThree({ setIsLoading }) {
       } else {
         setRadius1(4);
         setRadius2(2.5);
-
+      } 
+    });  
     useFrame((state) => {
       sph.current.rotation.y += 0.003;
       sph.current.position.z = 0.6 * Math.sin(state.clock.elapsedTime);
@@ -113,7 +114,7 @@ export default function CanvasThree({ setIsLoading }) {
     );
   }
   useEffect(() => {
-    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.175);
+    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.15);
   }, [location.pathname]);
 
   return (
