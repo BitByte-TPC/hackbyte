@@ -3,7 +3,7 @@
   flex-direction: column;
   width: 100%;
   padding-inline: 5rem;
-  margin: 2rem 0;
+  margin: 1rem 0;
 
   .accordion {
     display: grid;
@@ -20,7 +20,8 @@
       align-items: center;
       width: 24px;
       height: 24px;
-      background: #ffffff;
+      background-color: #133551;
+      color: #fff;
       border-radius: 50%;
       margin-top: 6px;
 
@@ -37,6 +38,7 @@
       font-size: 1.2rem;
       line-height: 30px;
       margin-left: 0rem;
+      padding-left: 0;
       text-align: left;
       color: rgba(255, 255, 255, 0.8);
     }

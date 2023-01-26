@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.svg";
+import hb from "../../assets/HB.svg";
 const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -70,7 +71,9 @@ const Header = () => {
         </div>
       }
       <div className={styles.container}>
-        <img className={styles.logo} src={Logo} alt='' />
+        <Link to='/'>
+          <img className={styles.logo} src={hb} alt='' />
+        </Link>
         {location.pathname !== "/" && (
           <div className={styles.nav}>
             <Link to='/' style={activemenus == "/" ? { color: "#fff" } : {}}>

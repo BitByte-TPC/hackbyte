@@ -1,5 +1,6 @@
 .primaryContainer {
-  background-color: #fff;
+  background-color: #133551;
+  color: #fff;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -8,7 +9,8 @@
   gap: 6px;
   width: auto;
   min-width: 10rem;
-  border-radius: 2px;
+  border-radius: 4px;
+  border: none;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   img {
@@ -17,8 +19,8 @@
   }
   span {
     font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
@@ -30,24 +32,45 @@
 
 .secondaryContainer {
   background-color: transparent;
-  padding: 10px 15px;
+  padding: 8px 15px;
   width: auto;
   min-width: 10rem;
-  border: 1px solid #fff;
-  border-radius: 2px;
+  border: 0.05px solid #fff;
+  border-radius: 4px;
   color: #fff;
-  box-shadow: 2px 2px 2px 0px #000;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   span {
     font-family: "Inter", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
   }
   &:hover {
     transform: translateY(-2px);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .primaryContainer {
+    min-width: 7rem;
+    img {
+      width: 20px;
+      height: 20px;
+    }
+    span {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+  .secondaryContainer {
+    min-width: 8rem;
+
+    span {
+      font-size: 14px;
+      line-height: 16px;
+    }
   }
 }
