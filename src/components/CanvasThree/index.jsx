@@ -40,7 +40,13 @@ export default function CanvasThree({ setIsLoading }) {
       state.camera.position.set(0, 0, 7);
     }
     return (
-      <Cloud speed={1} opacity={cloudOpacity} texture={cloud} color='#2160a3' />
+      <Cloud
+        speed={1}
+        opacity={cloudOpacity}
+        texture={cloud}
+        color='#696969
+'
+      />
     );
   }
 
@@ -74,8 +80,8 @@ export default function CanvasThree({ setIsLoading }) {
       } else {
         setRadius1(4);
         setRadius2(2.5);
-      } 
-    });  
+      }
+    });
     useFrame((state) => {
       sph.current.rotation.y += 0.003;
       sph.current.position.z = 0.6 * Math.sin(state.clock.elapsedTime);
@@ -114,7 +120,7 @@ export default function CanvasThree({ setIsLoading }) {
     );
   }
   useEffect(() => {
-    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.15);
+    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.1);
   }, [location.pathname]);
 
   return (
@@ -139,7 +145,6 @@ export default function CanvasThree({ setIsLoading }) {
         enableZoom={false}
         enablePan={false}
         enableRotate={false}
-
       />
     </Canvas>
   );
