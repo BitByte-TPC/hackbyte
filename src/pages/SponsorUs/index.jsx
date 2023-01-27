@@ -10,11 +10,6 @@ import devfolioLogo from "../../assets/devfolio_logo.png";
 import replitLogo from "../../assets/replit_logo.png";
 import polygonLogo from "../../assets/polygon_logo.png";
 
-import man from "../../assets/man2.png";
-import devfolioLogo from "../../assets/devfolio_logo.png"
-import replitLogo from "../../assets/replit_logo.png"
-import polygonLogo from "../../assets/polygon_logo.png"
-
 const SponsorUs = () => {
   return (
     <PageContainer>
