@@ -113,6 +113,9 @@ function CanvasThree({ setIsLoading, onHome }) {
       </group>
     );
   }
+  useEffect(() => {
+    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.15);
+  }, [location.pathname]);
 
   useEffect(() => {
     onHome == true ? setcloudOpacity(0) : setcloudOpacity(0.1);
