@@ -1,4 +1,4 @@
-import React from "react";
+import React,{memo} from "react";
 import { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
@@ -12,41 +12,43 @@ import cloud from "../../assets/cloud.png";
 import maptexture from "../../assets/textures/earth.jpg";
 import disptexture from "../../assets/textures/disp2.jpg";
 import styles from "./styles.module.scss";
-import { useLocation } from "react-router-dom";
 import { AdditiveBlending, BackSide, Vector3 } from "three";
-import { HeroSection } from "../HeroSection";
 import gsap from "gsap";
 
-export default function CanvasThree({ setIsLoading }) {
-  const canvasRef = useRef(null);
-  const location = useLocation(); // use this to show earth only on homepage
-  const [cloudOpacity, setcloudOpacity] = useState(0);
-
-  function CloudMain() {
-    const state = useThree();
-    if (location.pathname == "/") {
-      useEffect(() => {
-        state.camera.position.set(15, 15, 15);
-        gsap.to(state.camera.position, {
-          duration: 2.5,
-          delay: 0,
-          z: 7,
-          x: 0,
-          y: 0,
-          ease: "Power3.easeOut",
-        });
-      }, []);
+function CloudMain({onHome, cloudOpacity}){
+  const state = useThree();
+  useEffect(()=>{
+    if (onHome) {
+      state.camera.position.set(15, 15, 15);
+      gsap.to(state.camera.position, {
+        duration: 2.5,
+        delay: 0,
+        z: 7,
+        x: 0,
+        y: 0,
+        ease: "Power3.easeOut",
+      });
     } else {
       state.camera.position.set(0, 0, 7);
     }
-    return (
-      <Cloud speed={1} opacity={cloudOpacity} texture={cloud} color='#2160a3' />
-    );
-  }
+  },[onHome])
+  
+  return (
+    <Cloud
+      speed={1}
+      opacity={cloudOpacity}
+      texture={cloud}
+      color="696969"
+    />
+  );
+}
+
+function CanvasThree({ setIsLoading, onHome }) {
+  const canvasRef = useRef(null);
+  const [cloudOpacity, setcloudOpacity] = useState(0);
 
   function SphereMain({ isRender }) {
     if (!isRender) {
-      setIsLoading(false);
       return null;
     }
     const colorTexture = useTexture({
@@ -74,8 +76,8 @@ export default function CanvasThree({ setIsLoading }) {
       } else {
         setRadius1(4);
         setRadius2(2.5);
-      } 
-    });  
+      }
+    });
     useFrame((state) => {
       sph.current.rotation.y += 0.003;
       sph.current.position.z = 0.6 * Math.sin(state.clock.elapsedTime);
@@ -89,9 +91,6 @@ export default function CanvasThree({ setIsLoading }) {
       <group ref={sph}>
         <Sphere
           args={[Radius1, 100, 100]}
-          onAfterRender={() => {
-            setIsLoading(false);
-          }}
         >
           <shaderMaterial
             vertexShader={vertexShader}
@@ -117,18 +116,22 @@ export default function CanvasThree({ setIsLoading }) {
     location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.15);
   }, [location.pathname]);
 
+  useEffect(() => {
+    onHome == true ? setcloudOpacity(0) : setcloudOpacity(0.1);
+  }, [onHome]);
+
   return (
     <Canvas
       className={styles.canvas}
       ref={canvasRef}
       camera={{ position: [15, 15, 15] }}
+      onCreated={()=>{setIsLoading(false)}}
     >
       <Sparkles count={250} scale={[30, 30, 30]} size={2} speed={2.5} />
       <directionalLight position={[2, -5, 7]} intensity={1} />
       <ambientLight intensity={1.5} />
-      <Cloud speed={1} opacity={cloudOpacity} texture={cloud} color='#2160a3' />
-      <CloudMain />
-      {location.pathname == "/" ? (
+      <CloudMain onHome={onHome} cloudOpacity={cloudOpacity} />
+      {onHome ? (
         <SphereMain isRender={true} />
       ) : (
         <SphereMain isRender={false} />
@@ -139,8 +142,9 @@ export default function CanvasThree({ setIsLoading }) {
         enableZoom={false}
         enablePan={false}
         enableRotate={false}
-
       />
     </Canvas>
   );
 }
+
+export default memo(CanvasThree);

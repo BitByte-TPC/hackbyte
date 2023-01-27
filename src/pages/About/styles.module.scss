@@ -153,10 +153,11 @@ p {
       }
       .right {
         order: 1;
-        text-align: center;
-        padding-left: 1.5rem;
+        display: flex;
+        justify-content: center;
+        width:100%;
         img {
-          width: 80%;
+          max-width: 12rem;
         }
       }
     }
