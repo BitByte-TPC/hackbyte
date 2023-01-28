@@ -45,8 +45,6 @@ function CloudMain({onHome, cloudOpacity}){
 
 function CanvasThree({ setIsLoading, onHome }) {
   const canvasRef = useRef(null);
-  const [cloudOpacity, setcloudOpacity] = useState(0);
-
   function SphereMain({ isRender }) {
     if (!isRender) {
       return null;
@@ -112,13 +110,6 @@ function CanvasThree({ setIsLoading, onHome }) {
       </group>
     );
   }
-  useEffect(() => {
-    location.pathname === "/" ? setcloudOpacity(0) : setcloudOpacity(0.15);
-  }, [location.pathname]);
-
-  useEffect(() => {
-    onHome == true ? setcloudOpacity(0) : setcloudOpacity(0.1);
-  }, [onHome]);
 
   return (
     <Canvas
@@ -130,11 +121,16 @@ function CanvasThree({ setIsLoading, onHome }) {
       <Sparkles count={250} scale={[30, 30, 30]} size={2} speed={2.5} />
       <directionalLight position={[2, -5, 7]} intensity={1} />
       <ambientLight intensity={1.5} />
-      <CloudMain onHome={onHome} cloudOpacity={cloudOpacity} />
       {onHome ? (
-        <SphereMain isRender={true} />
+        <>
+          <CloudMain onHome={onHome} cloudOpacity={0} />
+          <SphereMain isRender={true} />
+        </>
       ) : (
-        <SphereMain isRender={false} />
+        <>
+          <CloudMain onHome={onHome} cloudOpacity={0.1} />
+          <SphereMain isRender={false} />
+        </>
       )}
 
       <OrbitControls
