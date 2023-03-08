@@ -14,7 +14,7 @@ const FAQ = () => {
     },
     {
       title: "When and where will HackByte be held",
-      content: "HackByte will be held on 25th-26th March at IIITDM Jabalpur.",
+      content: "HackByte will be held on 7-9 April at IIITDM Jabalpur.",
     },
     {
       title: "Who can participate in HackByte?",

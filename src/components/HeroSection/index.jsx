@@ -2,7 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import heading from "../../assets/headingText.svg";
 import Button from "../Button";
-// import devfolioIcon from "../../assets/devfolio.svg";
+import devfolioIcon from "../../assets/devfolio.svg";
 import sponsorIcon from "../../assets/sponsor-icon.svg";
 import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
@@ -20,8 +20,8 @@ export const HeroSection = () => {
       <div className={styles.cta}>
         <Button
           type='primary'
-          text='Sponsor Us'
-          icon={sponsorIcon}
+          text='Apply with Devfolio'
+          icon={devfolioIcon}
           onClick={() => {
             navigate("/sponsor-us");
           }}
