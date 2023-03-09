@@ -1,3 +1,4 @@
+import React from "react";
 import { motion } from "framer-motion";
 import Header from "../../components/Header";
 import styles from "./styles.module.scss";
@@ -13,6 +14,16 @@ import devfolio from "../../assets/devfolio.svg";
 import Button from "../../components/Button";
 
 const About = () => {
+  React.useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://apply.devfolio.co/v2/sdk.js';
+    script.async = true;
+    script.defer = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    }
+}, []);
   return (
     <PageContainer>
       <Header />
@@ -46,11 +57,12 @@ const About = () => {
                 opportunities for participants to connect with industry
                 professionals and developer communities from around the world.
               </p>
-              <Button
-                type='primary'
-                text='Apply with devfolio'
-                icon={devfolio}
-              />
+              <div 
+                className={`apply-button`} 
+                data-hackathon-slug="hackbyte" 
+                data-button-theme="light"
+                style={{"width": "22px"}}
+              ></div>
             </div>
             <div className={styles.right}>
               <img src={man} width='400px' />
