@@ -39,12 +39,12 @@ const Header = () => {
             ABOUT
           </Link>
           <Link
-            to='/faq'
+            to='/events'
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
             }}
-            style={activemenus == "/faq" ? { color: "#fff" } : {}}
+            style={activemenus == "/events" ? { color: "#fff" } : {}}
           >
             EVENTS
           </Link>
@@ -59,12 +59,12 @@ const Header = () => {
             PRIZES
           </Link>
           <Link
-            to='/sponsor-us'
+            to='/sponsors'
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
             }}
-            style={activemenus == "/sponsor-us" ? { color: "#fff" } : {}}
+            style={activemenus == "/sponsors" ? { color: "#fff" } : {}}
           >
             SPONSORS
           </Link>
@@ -86,8 +86,8 @@ const Header = () => {
               ABOUT
             </Link>
             <Link
-              to='/faq'
-              style={activemenus == "/faq" ? { color: "#fff" } : {}}
+              to='/events'
+              style={activemenus == "/events" ? { color: "#fff" } : {}}
             >
               EVENTS
             </Link>
@@ -98,8 +98,8 @@ const Header = () => {
               PRIZES
             </Link>
             <Link
-              to='/sponsor-us'
-              style={activemenus == "/sponsor-us" ? { color: "#fff" } : {}}
+              to='/sponsors'
+              style={activemenus == "/sponsors" ? { color: "#fff" } : {}}
             >
               SPONSORS
             </Link>

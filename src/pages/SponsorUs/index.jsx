@@ -20,23 +20,6 @@ const SponsorUs = () => {
         transition={{ delay: 0.3, duration: 0.7 }}
       >
         <PageHeading title='SPONSOR' subHeading='HACKBYTE SPONSORS' />
-        {/* <p>
-          We are excited to announce that we have onboarded leading
-          sponsors such as Devfolio, Replit, Polygon and more.
-        </p> */}
-        {/* <div className={styles.btn}>
-          <Button
-            type='primary'
-            text='Download Brochure'
-            icon={brochureIcon}
-            onClick={() => {
-              window.open("http://bit.ly/hackbyte23-brochure", "_blank");
-            }}
-          />
-        </div> */}
-
-
-
         <div className={styles.sponsorUs}>
           <div className={styles.innerFlex}>
             <div className={styles.left}>
@@ -78,7 +61,7 @@ const SponsorUs = () => {
           <div className={styles.contact}>
             <div className={styles.text}>
               <p>As a sponsor, your organization will be highlighted on all of
-                our social media channels and given priority</p>
+                our social media channels.</p>
             </div>
             <div className={styles.button}>
               <Button

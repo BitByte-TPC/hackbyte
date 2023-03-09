@@ -31,24 +31,18 @@ export const HeroSection = () => {
       <img src={heading} alt='heading' className={styles.heading} />
       <p className={styles.heroSubText}>WE THINK TO INNOVATE</p>
       <div className={styles.cta}>
-        <Button
-          type='primary'
-          text='Apply with Devfolio'
-          icon={devfolioIcon}
-          onClick={() => {
-            navigate("/sponsor-us");
-          }}
-        />
-        {/* <div className={styles.devfolioApplyButton}
+        <div
+          className={`apply-button`}
           data-hackathon-slug="hackbyte"
-          data-button-theme="light">
-        </div> */}
+          data-button-theme="light"
+          style={{ "width": "22px" }}
+        ></div>
         <Button
           type='secondary'
           text='Join Discord'
           icon={discordIcon}
           onClick={() => {
-            navigate("/#");
+            window.open("https://bit.ly/hackbyte-discord", "_blank");
           }}
         />
       </div>

@@ -16,16 +16,6 @@ import FAQ from "../FAQ";
 
 
 const About = () => {
-  React.useEffect(() => {
-    const script = document.createElement('script');
-    script.src = 'https://apply.devfolio.co/v2/sdk.js';
-    script.async = true;
-    script.defer = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    }
-  }, []);
   return (
     <PageContainer>
       <Header />
@@ -63,12 +53,6 @@ const About = () => {
                 opportunities for participants to connect with industry
                 professionals and developer communities from around the world.
               </p>
-              <div
-                className={`apply-button`}
-                data-hackathon-slug="hackbyte"
-                data-button-theme="light"
-                style={{ "width": "22px" }}
-              ></div>
             </div>
             {/* <div className={styles.right}>
               <img src={man} width='400px' />
