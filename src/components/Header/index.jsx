@@ -46,7 +46,7 @@ const Header = () => {
             }}
             style={activemenus == "/faq" ? { color: "#fff" } : {}}
           >
-            FAQS
+            EVENTS
           </Link>
           <Link
             to='/prizes'
@@ -66,7 +66,7 @@ const Header = () => {
             }}
             style={activemenus == "/sponsor-us" ? { color: "#fff" } : {}}
           >
-            SPONSOR US
+            SPONSORS
           </Link>
         </div>
       }
@@ -89,7 +89,7 @@ const Header = () => {
               to='/faq'
               style={activemenus == "/faq" ? { color: "#fff" } : {}}
             >
-              FAQS
+              EVENTS
             </Link>
             <Link
               to='/prizes'
@@ -101,7 +101,7 @@ const Header = () => {
               to='/sponsor-us'
               style={activemenus == "/sponsor-us" ? { color: "#fff" } : {}}
             >
-              SPONSOR US
+              SPONSORS
             </Link>
           </div>
         )}

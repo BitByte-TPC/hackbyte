@@ -12,6 +12,8 @@ import PageContainer from "../../components/PageContainer";
 import man from "../../assets/man1.png";
 import devfolio from "../../assets/devfolio.svg";
 import Button from "../../components/Button";
+import FAQ from "../FAQ";
+
 
 const About = () => {
   React.useEffect(() => {
@@ -23,7 +25,7 @@ const About = () => {
     return () => {
       document.body.removeChild(script);
     }
-}, []);
+  }, []);
   return (
     <PageContainer>
       <Header />
@@ -36,7 +38,11 @@ const About = () => {
         <PageHeading title='ABOUT' subHeading='What is Hackbyte?' />
         <div className={styles.text}>
           <p>
-            Hackbyte is the annual hackathon of IIIT Jabalpur and is organised
+            Hackbyte is the annual hackathon of IIIT Jabalpur taking place from
+            <span style={{
+              color: "#fff",
+              fontWeight: "bold",
+            }}>7th to 9th April</span> and is organised
             by the student-run programming club of the institute. This will
             bring together developers and problem solvers from diverse
             backgrounds to collaborate on innovative projects. The event offers
@@ -57,16 +63,16 @@ const About = () => {
                 opportunities for participants to connect with industry
                 professionals and developer communities from around the world.
               </p>
-              <div 
-                className={`apply-button`} 
-                data-hackathon-slug="hackbyte" 
+              <div
+                className={`apply-button`}
+                data-hackathon-slug="hackbyte"
                 data-button-theme="light"
-                style={{"width": "22px"}}
+                style={{ "width": "22px" }}
               ></div>
             </div>
-            <div className={styles.right}>
+            {/* <div className={styles.right}>
               <img src={man} width='400px' />
-            </div>
+            </div> */}
           </div>
         </div>
         <div className={styles.gallery}>
@@ -106,6 +112,8 @@ const About = () => {
             </div>
           </div>
         </div>
+        {/* FAQ SECTION */}
+        <FAQ />
       </motion.div>
     </PageContainer>
   );

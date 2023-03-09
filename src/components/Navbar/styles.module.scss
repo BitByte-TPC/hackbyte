@@ -12,7 +12,7 @@
   a {
     font-family: "Inter";
     font-size: 24px;
-    font-weight: 300;
+    font-weight: 500;
     line-height: 36px;
     letter-spacing: 0em;
     color: #919191;
@@ -29,5 +29,10 @@
   .container {
     display: none;
     visibility: hidden;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .container {
+    gap: 60px;
   }
 }
