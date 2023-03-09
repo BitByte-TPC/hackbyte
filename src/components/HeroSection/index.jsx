@@ -34,8 +34,8 @@ export const HeroSection = () => {
         <div
           className={`apply-button`}
           data-hackathon-slug="hackbyte"
-          data-button-theme="light"
-          style={{ "width": "22px" }}
+          data-button-theme="dark-inverted"
+          style={{ "width": "18px" }}
         ></div>
         <Button
           type='secondary'
