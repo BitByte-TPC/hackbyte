@@ -73,20 +73,24 @@ const SponsorUs = () => {
                   <img src={replitLogo} />
                 </div>
               </div>
-
-
             </div>
           </div>
-          <div className={styles.right}>
-            <Button
-              type='primary'
-              text='Contact Us'
-              icon={brochureIcon}
-              style={{ padding: "0.8rem 2rem" }}
-              onClick={() => {
-                window.open("mailto:theprogclub@iiitdmj.ac.in", "_blank");
-              }}
-            />
+          <div className={styles.contact}>
+            <div className={styles.text}>
+              <p>As a sponsor, your organization will be highlighted on all of
+                our social media channels and given priority</p>
+            </div>
+            <div className={styles.button}>
+              <Button
+                type='primary'
+                text='Contact Us'
+                icon={brochureIcon}
+                style={{ padding: "0.8rem 2rem" }}
+                onClick={() => {
+                  window.open("mailto:theprogclub@iiitdmj.ac.in", "_blank");
+                }}
+              />
+            </div>
           </div>
         </div>
       </motion.div>

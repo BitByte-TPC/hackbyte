@@ -97,6 +97,26 @@
   //   }
   // }
 }
+.contact {
+  width: 80%;
+  display: flex;
+  .text {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      padding-left: 0;
+      span{ 
+        font-weight: 500;
+        color: white; 
+      }
+    }
+  }
+
+}
 @media only screen and (max-width: 600px) {
   .sponsorUs {
     margin-top: 2rem;

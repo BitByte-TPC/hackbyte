@@ -39,10 +39,10 @@ const About = () => {
         <div className={styles.text}>
           <p>
             Hackbyte is the annual hackathon of IIIT Jabalpur taking place from
-            <span style={{
+             <span style={{
               color: "#fff",
               fontWeight: "bold",
-            }}>7th to 9th April</span> and is organised
+            }}> 7th to 9th April</span> and is organised
             by the student-run programming club of the institute. This will
             bring together developers and problem solvers from diverse
             backgrounds to collaborate on innovative projects. The event offers
