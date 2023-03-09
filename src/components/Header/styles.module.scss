@@ -71,7 +71,7 @@
   }
 
   .hamburger {
-    display: flex;
+    display: none;
     flex-direction: column;
     width: 5rem;
     z-index: 2;
@@ -142,6 +142,7 @@
     }
     .hamburger {
       width: 2rem;
+      display: flex;
 
       .line {
         width: 1.5rem;

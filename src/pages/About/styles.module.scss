@@ -1,6 +1,14 @@
 p {
   font-size: clamp(18px, 2vw, 20px);
 }
+.text {
+  width: 80%;
+  margin: 0 auto;
+  p {
+    text-align: center;
+    font-size: clamp(18px, 2vw, 20px);
+  }  
+}
 .opportunity {
   display: flex;
   flex-direction: column;
@@ -12,7 +20,7 @@ p {
   .innerFlex {
     display: flex;
     justify-content: space-between;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     padding: 0 4rem;
   }
@@ -25,11 +33,11 @@ p {
       font-size: clamp(24px, 4vw, 34px);
       line-height: 60px;
       letter-spacing: 0.15em;
-      text-align: left;
+      text-align: center;
       color: rgba(255, 255, 255, 0.6);
     }
     p {
-      text-align: left;
+      text-align: center;
       padding-left: 0;
       margin: 1.5rem 0;
     }

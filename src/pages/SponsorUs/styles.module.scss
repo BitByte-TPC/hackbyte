@@ -1,15 +1,15 @@
-p {
-  max-width: 1000px;
-  font-family: "Poppins";
-  font-style: normal;
-  font-weight: 400;
-  font-size: clamp(12px, 2vw, 20px);
-  line-height: 36px;
-  margin: 0.5rem auto;
-  text-align: center;
-  color: rgba(255, 255, 255, 0.65);
-  padding: 0.25rem 1.5rem;
-}
+// p {
+//   width: 1000px;
+//   font-family: "Poppins";
+//   font-style: normal;
+//   font-weight: 400;
+//   font-size: clamp(12px, 2vw, 20px);
+//   line-height: 36px;
+//   margin: 0.5rem auto;
+//   text-align: center;
+//   color: rgba(255, 255, 255, 0.65);
+//   padding: 2rem 1.5rem;
+// }
 
 .btn {
   display: flex;
@@ -23,7 +23,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 4rem 0 2rem 0;
+  // margin: 4rem 0 2rem 0;
   border-radius: 10px;
   padding: 10px;
   .innerFlex {
@@ -34,18 +34,38 @@ p {
     padding: 0 4rem;
   }
   .left {
-    max-width: 800px;
+    max-width: 1000px;
+    p {
+      margin-bottom: 6.5rem;
+    }
     .logos{
       display: flex;
       flex-direction: row;
-      justify-content: flex-start;
+      justify-content: space-between;
       gap: 2.5rem;
       margin:1.5rem 0 3rem 0;
       flex-wrap: wrap;
-      img{
-        border-radius: 50%;
-        width: clamp(15px,5rem,160px);
+      .sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 1.5rem;
+        background-color: #1E1E1E;
+        border-radius: 10px;
+        &:hover{
+          background-color: #2E2E2E;
+          cursor: pointer;
+        }
+        img{
+          width: 15rem;
+        }
       }
+      // img{
+      //   border-radius: 50%;
+      //   width: clamp(15px,5rem,160px);
+      // }
     }
     h2 {
       font-family: "Lato";
@@ -59,7 +79,7 @@ p {
       margin-bottom: 2rem;
     }
     p {
-      text-align: left;
+      text-align: center;
       padding-left: 0;
       span{ 
         font-weight: 500;
@@ -71,13 +91,45 @@ p {
       margin-bottom: 1.5rem;
     }
   }
-  .right {
-    img {
-      width: 20rem;
+  // .right {
+  //   img {
+  //     width: 20rem;
+  //   }
+  // }
+}
+.contact {
+  margin: 3rem ;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-direction: row;
+  .text {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    p {
+      text-align: center;
+      padding-left: 0;
+      span{ 
+        font-weight: 500;
+        color: white; 
+      }
     }
   }
+
 }
 @media only screen and (max-width: 600px) {
+  .contact {
+    flex-direction: column;
+    gap: 1rem;
+    .text {
+      width: 100%;
+    }
+  }
   .sponsorUs {
     margin-top: 2rem;
     p {
@@ -95,7 +147,7 @@ p {
       .left {
         order: 2;
         display: flex;
-        margin-top: 1rem;
+        // margin-top: 1rem;
         flex-direction: column;
         align-items: center;
         .logos{

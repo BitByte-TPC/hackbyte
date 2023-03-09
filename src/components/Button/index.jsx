@@ -12,6 +12,9 @@ const Button = ({ type, icon, text, ...others }) => {
   else if (type === "secondary")
     return (
       <button className={styles.secondaryContainer} {...others}>
+        {icon && (
+          <img src={icon} alt='icon' />
+        )}
         <span>{text}</span>
       </button>
     );

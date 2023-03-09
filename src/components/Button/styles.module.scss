@@ -1,6 +1,6 @@
 .primaryContainer {
-  background-color: #133551;
-  color: #fff;
+  background-color: #fff;
+  color: #273339;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,7 +20,7 @@
   span {
     font-family: "Inter", sans-serif;
     font-size: 16px;
-    font-weight: 400;
+    font-weight: 600;
     line-height: 22px;
     letter-spacing: 0em;
     text-align: left;
@@ -33,6 +33,11 @@
 .secondaryContainer {
   background-color: transparent;
   padding: 8px 15px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 6px;
+  align-items: center;
   width: auto;
   min-width: 10rem;
   border: 0.05px solid #fff;
@@ -40,6 +45,10 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+  img {
+    width: 20px;
+    height: 20px;
+  }
   span {
     font-family: "Inter", sans-serif;
     font-size: 16px;

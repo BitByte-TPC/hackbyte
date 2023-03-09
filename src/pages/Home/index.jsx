@@ -2,6 +2,7 @@ import React from "react";
 import { HeroSection } from "../../components/HeroSection";
 import Header from "../../components/Header";
 import styles from "./styles.module.scss";
+import Navbar from "../../components/Navbar";
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <Header />
       </div>
       <HeroSection />
+      <Navbar />
     </div>
   );
 };
