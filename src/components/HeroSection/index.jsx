@@ -32,19 +32,18 @@ export const HeroSection = () => {
       <p className={styles.heroSubText}>WE THINK TO INNOVATE</p>
       <div className={styles.cta}>
         <div
-          className={`apply-button`}
+          className={`apply-button ${styles.devfolioBtn}`}
           data-hackathon-slug="hackbyte"
           data-button-theme="dark-inverted"
-          style={{ "width": "18px" }}
         ></div>
-        <Button
+        {/* <Button
           type='secondary'
           text='Join Discord'
           icon={discordIcon}
           onClick={() => {
             window.open("https://bit.ly/hackbyte-discord", "_blank");
           }}
-        />
+        /> */}
       </div>
     </motion.div>
   );

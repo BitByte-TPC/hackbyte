@@ -6,9 +6,10 @@ import { motion } from "framer-motion";
 import Button from "../../components/Button";
 import brochureIcon from "../../assets/brochure.svg";
 import man from "../../assets/man2.png";
-import devfolioLogo from "../../assets/devfolio_logo_s.svg";
-import replitLogo from "../../assets/replit_logo_s.svg";
-import polygonLogo from "../../assets/polygon_logo_s.svg";
+import devfolioLogo from "../../assets/Devfolio_Logo-White.svg";
+import replitLogo from "../../assets/logo-light-text-bg.svg";
+import polygonLogo from "../../assets/Polygon_Logo-White.svg";
+import solanaLogo from "../../assets/Solana_Dark.svg"
 
 const SponsorUs = () => {
   return (
@@ -40,17 +41,11 @@ const SponsorUs = () => {
                 <div className={styles.sponsor}>
                   <img src={polygonLogo} />
                 </div>
-                <div className={styles.sponsor}>
-                  <img src={replitLogo} />
-                </div>
               </div>
               <h2>SILVER SPONSORS</h2>
               <div className={styles.logos}>
                 <div className={styles.sponsor}>
-                  <img src={devfolioLogo} />
-                </div>
-                <div className={styles.sponsor}>
-                  <img src={polygonLogo} />
+                  <img src={solanaLogo} />
                 </div>
                 <div className={styles.sponsor}>
                   <img src={replitLogo} />
