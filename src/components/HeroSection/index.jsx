@@ -32,9 +32,10 @@ export const HeroSection = () => {
       <p className={styles.heroSubText}>WE THINK TO INNOVATE</p>
       <div className={styles.cta}>
         <div
-          className={`apply-button ${styles.devfolioBtn}`}
+          className={`apply-button`}
           data-hackathon-slug="hackbyte"
           data-button-theme="dark-inverted"
+          style={{height:"44px", width:"15rem"}}
         ></div>
         {/* <Button
           type='secondary'
