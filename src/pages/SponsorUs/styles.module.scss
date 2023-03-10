@@ -50,13 +50,10 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 0.5rem;
-        padding: 1.5rem;
-        background-color: #1E1E1E;
+        gap: 1rem;
         border-radius: 10px;
         margin-top: 2rem;
         &:hover{
-          background-color: #2E2E2E;
           cursor: pointer;
         }
         img{
@@ -71,12 +68,12 @@
     h2 {
       font-family: "Lato";
       font-style: normal;
-      font-weight: 400;
+      font-weight: 800;
       font-size: clamp(24px, 4vw, 34px);
       line-height: 60px;
       letter-spacing: 0.15em;
-      text-align: left;
-      color: rgba(255, 255, 255, 0.6);
+      text-align: center;
+      color: rgba(255, 255, 255, 0.966);
       margin-bottom: 2rem;
     }
     p {

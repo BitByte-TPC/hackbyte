@@ -111,6 +111,7 @@ const Header = () => {
         <div className={styles.navbar_right}>
           <div className={styles.discordBtn}
           >
+            <a href="https://bit.ly/hackbyte-discord" target="blank">
             <Button
               type='secondary'
               text='Join Discord'
@@ -119,13 +120,15 @@ const Header = () => {
                 window.open("https://bit.ly/hackbyte-discord", "_blank");
               }}
             />
+            </a>
           </div>
           <div className={styles.discordIcon}>
+            <a href="https://bit.ly/hackbyte-discord">
             <img src={discordIcon} alt="" 
               onClick={()=>{
                 window.open("https://bit.ly/hackbyte-discord", "_blank");
               }}
-            />
+            /></a>
           </div>
 
           <div

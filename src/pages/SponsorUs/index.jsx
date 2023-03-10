@@ -35,21 +35,28 @@ const SponsorUs = () => {
 
               <h2>GOLD SPONSORS</h2>
               <div className={styles.logos}>
-                <div className={styles.sponsor}>
-                  <img src={devfolioLogo} />
-                </div>
-                <div className={styles.sponsor}>
-                  <img src={polygonLogo} />
-                </div>
+                <a href="https://devfolio.co/" target="blank">
+                  <div className={styles.sponsor}>
+                    <img src={devfolioLogo} />
+                  </div>
+                </a>
+                <a href="https://polygon.technology/">
+                  <div className={styles.sponsor}>
+                    <img src={polygonLogo} />
+                  </div></a>
               </div>
               <h2>SILVER SPONSORS</h2>
               <div className={styles.logos}>
-                <div className={styles.sponsor}>
-                  <img src={solanaLogo} />
-                </div>
-                <div className={styles.sponsor}>
-                  <img src={replitLogo} />
-                </div>
+                <a href="https://solana.com/">
+                  <div className={styles.sponsor}>
+                    <img src={solanaLogo} />
+                  </div>
+                </a>
+                <a href="https://filecoin.io/">
+                  <div className={styles.sponsor}>
+                    <img src={replitLogo} />
+                  </div>
+                </a>
               </div>
             </div>
           </div>
