@@ -10,7 +10,13 @@
     z-index: -1;
     -webkit-user-drag: none;
   }
-
+  .devfolioBtn {
+    button {
+      padding:"0 16px";
+      max-width: "15rem";
+      font-size: "1rem";
+    }
+  }
   .heroSubText {
     z-index: -1;
     color: #bdd2eb;

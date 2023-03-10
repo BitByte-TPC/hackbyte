@@ -1,0 +1,47 @@
+.container {
+    background-color: #BDD2EB;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 500;
+    p {
+        color: #000;
+        div {
+            font-weight: 300;
+            display:inline;
+            background-color: #000;
+            color: #fff;
+            margin: 0 5px;
+            border-radius: 5px;
+            padding: 0 5px;
+        }
+    }
+    p:nth-child(2){
+        display: none;
+    }
+    .cross {
+        margin-right: 2rem;
+        :hover{
+            cursor: pointer;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .container {
+        height: 3rem;
+        p {
+            display: none;
+            font-size: 1.2rem !important;
+            div {
+                font-size: 1.2rem !important;
+                border-radius: 5px;
+                padding: 0 5px;
+            }
+        }
+        p:nth-child(2){
+            display: flex;
+        }
+    }
+}

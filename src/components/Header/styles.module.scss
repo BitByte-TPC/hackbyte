@@ -69,7 +69,16 @@
       }
     }
   }
-
+  .navbar_right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    .discordIcon {
+      display: none;
+    }
+  }
   .hamburger {
     display: none;
     flex-direction: column;
@@ -139,6 +148,30 @@
     .nav {
       display: none;
       visibility: hidden;
+    }
+    .navbar_right {
+      gap: 2rem;
+      .discordIcon {
+        display: block;
+        background-color: transparent;
+        display: flex;
+        padding: 5px 5px;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        // border: 0.05px solid #fff;
+        // border-radius: 4px;
+        color: #fff;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        img {
+          width: 35px;
+          height: 35px;
+        }
+      }
+      .discordBtn {
+        display: none;
+      }
     }
     .hamburger {
       width: 2rem;

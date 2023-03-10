@@ -3,6 +3,9 @@ import styles from "./styles.module.scss";
 import { Link, useLocation } from "react-router-dom";
 import Logo from "../../assets/Logo.svg";
 import hb from "../../assets/HB.svg";
+import discordIcon from "../../assets/discord_logo.svg";
+import Button from "../Button";
+
 const Header = () => {
   const location = useLocation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -105,14 +108,35 @@ const Header = () => {
             </Link>
           </div>
         )}
-        <div
-          className={styles.hamburger}
-          id={active ? styles.active : null}
-          onClick={handleMenu}
-        >
-          <span className={styles.line}></span>
-          <span className={styles.line}></span>
-          <span className={styles.line}></span>
+        <div className={styles.navbar_right}>
+          <div className={styles.discordBtn}
+          >
+            <Button
+              type='secondary'
+              text='Join Discord'
+              icon={discordIcon}
+              onClick={() => {
+                window.open("https://bit.ly/hackbyte-discord", "_blank");
+              }}
+            />
+          </div>
+          <div className={styles.discordIcon}>
+            <img src={discordIcon} alt="" 
+              onClick={()=>{
+                window.open("https://bit.ly/hackbyte-discord", "_blank");
+              }}
+            />
+          </div>
+
+          <div
+            className={styles.hamburger}
+            id={active ? styles.active : null}
+            onClick={handleMenu}
+          >
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+            <span className={styles.line}></span>
+          </div>
         </div>
       </div>
     </>

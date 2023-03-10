@@ -41,8 +41,8 @@
     .logos{
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      gap: 2.5rem;
+      justify-content: space-around;
+      // gap: 15rem;
       margin:1.5rem 0 3rem 0;
       flex-wrap: wrap;
       .sponsor {
@@ -54,6 +54,7 @@
         padding: 1.5rem;
         background-color: #1E1E1E;
         border-radius: 10px;
+        margin-top: 2rem;
         &:hover{
           background-color: #2E2E2E;
           cursor: pointer;
@@ -153,6 +154,13 @@
         .logos{
           gap: 2rem ;
           justify-content: center;
+          .sponsor {
+            gap: 1rem;
+            padding: 1rem;
+            img{
+              width: 10rem;
+            }
+          }
           img{
             width: 5rem;
           }

@@ -9,8 +9,6 @@ import Photo_4 from "../../assets/Photo-4.jpg";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import PageHeading from "../../components/PageHeading";
 import PageContainer from "../../components/PageContainer";
-import man from "../../assets/man1.png";
-import devfolio from "../../assets/devfolio.svg";
 import Button from "../../components/Button";
 import FAQ from "../FAQ";
 
@@ -29,11 +27,14 @@ const About = () => {
         <div className={styles.text}>
           <p>
             Hackbyte is the annual hackathon of IIIT Jabalpur taking place from
-             <span style={{
+            <span style={{
               color: "#fff",
               fontWeight: "bold",
             }}> 7th to 9th April</span> and is organised
-            by the student-run programming club of the institute. This will
+            by <span style={{
+              color: "#fff",
+              fontWeight: "bold",
+            }}> The Programming Club (TPC)</span> run by students of our institute. This will
             bring together developers and problem solvers from diverse
             backgrounds to collaborate on innovative projects. The event offers
             a unique and challenging learning experience for participants,
@@ -97,7 +98,9 @@ const About = () => {
           </div>
         </div>
         {/* FAQ SECTION */}
-        <FAQ />
+        <div className={styles.faq}>
+          <FAQ />
+        </div>
       </motion.div>
     </PageContainer>
   );
