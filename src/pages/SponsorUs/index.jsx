@@ -58,6 +58,19 @@ const SponsorUs = () => {
                   </div>
                 </a>
               </div>
+              <h2>MEDIA SPONSORS</h2>
+              {/* <div className={styles.logos}>
+                <a href="https://solana.com/">
+                  <div className={styles.sponsor}>
+                    <img src={solanaLogo} />
+                  </div>
+                </a>
+                <a href="https://filecoin.io/">
+                  <div className={styles.sponsor}>
+                    <img src={replitLogo} />
+                  </div>
+                </a>
+              </div> */}
             </div>
           </div>
           <div className={styles.contact}>
