@@ -10,6 +10,7 @@ import devfolioLogo from "../../assets/Devfolio_Logo-White.svg";
 import replitLogo from "../../assets/logo-light-text-bg.svg";
 import polygonLogo from "../../assets/Polygon_Logo-White.svg";
 import solanaLogo from "../../assets/Solana_Dark.svg"
+import beeceptorLogo from "../../assets/beeceptor-logo-vector 1.svg"
 
 const SponsorUs = () => {
   return (
@@ -43,7 +44,13 @@ const SponsorUs = () => {
                 <a href="https://polygon.technology/">
                   <div className={styles.sponsor}>
                     <img src={polygonLogo} />
-                  </div></a>
+                  </div>
+                </a>
+                <a href="https://beeceptor.com/">
+                  <div className={styles.sponsor}>
+                    <img src={beeceptorLogo}/>
+                  </div>
+                </a>
               </div>
               <h2>SILVER SPONSORS</h2>
               <div className={styles.logos}>
