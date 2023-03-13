@@ -13,6 +13,7 @@ import solanaLogo from "../../assets/Solana_Dark.svg";
 import beeceptorLogo from "../../assets/beeceptor-logo-vector 1.svg";
 import fuelerLogo from "../../assets/fueler_logo 1.svg";
 import fileCoinLogo from "../../assets/Filecoin Coloured White Text-1.svg";
+import eduBardLogo from "../../assets/edubard.png";
 
 const SponsorUs = () => {
   return (
@@ -89,13 +90,13 @@ const SponsorUs = () => {
               <h2>
                 MEDIA <span>SPONSORS</span>{" "}
               </h2>
-              {/* <div className={styles.logos}>
-                <a href="https://filecoin.io/">
+              <div className={styles.logos}>
+                <a href="https://edubard.in/">
                   <div className={styles.sponsor}>
-                    <img src={fileCoinLogo} />
+                    <img src={eduBardLogo} />
                   </div>
                 </a>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className={styles.contact}>
