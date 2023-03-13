@@ -38,6 +38,7 @@ const index = () => {
             </div>
           </p>
           <p>
+            Starts In 
             <div>
               <span>{days}d :</span>
               <span>{hours}h :</span>

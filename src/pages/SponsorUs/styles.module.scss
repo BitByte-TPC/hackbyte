@@ -43,28 +43,31 @@
       flex-direction: row;
       justify-content: space-around;
       // gap: 15rem;
-      margin:1.5rem 0 3rem 0;
       flex-wrap: wrap;
-      .sponsor {
+      margin:1.5rem 0 3rem 0;
+      a {
         display: flex;
-        // flex-direction: column;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         gap: 2rem;
         // border-radius: 10px;
-        margin-top: 2.5rem;
+        margin-top: 1rem;
         margin-left: 2rem;
         &:hover{
           cursor: pointer;
         }
         img{
           width: 15rem;
+          height: 5rem;
         }
       }
-      // img{
-      //   border-radius: 50%;
-      //   width: clamp(15px,5rem,160px);
-      // }
+      .sponsor {
+        transition: 0.3s;
+        &:hover{
+          transform: translate(0, -10px);
+        }
+      }
     }
     h2 {
       font-family: "Lato";
@@ -76,6 +79,9 @@
       text-align: center;
       color: rgba(255, 255, 255, 0.966);
       margin-bottom: 2rem;
+      span {
+        color: #205781;
+      }
     }
     p {
       text-align: center;
@@ -150,25 +156,52 @@
         flex-direction: column;
         align-items: center;
         .logos{
-          gap: 2rem ;
+          // gap: 2rem;
           justify-content: center;
-          .sponsor {
+          align-items: center;
+          margin: 0;
+          a {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             gap: 1rem;
-            padding: 1rem;
+            // border-radius: 10px;
+            margin-top: 1rem;
+            margin-left: 2rem;
+            .sponsor {
+              transition: 0.3s;
+              &:hover{
+                transform: translate(0, -10px);
+              }
+            }
+            &:hover{
+              cursor: pointer;
+            }
             img{
               width: 10rem;
+              height: 7rem;
             }
           }
-          img{
-            width: 5rem;
-          }
+          // .sponsor {
+          //   gap: 1rem;
+          //   padding: 1rem;
+          //   img{
+          //     width: 10rem;
+          //     height: 5rem;
+          //   }
+          // }
+          // img{
+          //   width: 5rem;
+          // }
         }
         
         h2 {
           font-size: 1.8rem;
           text-align: center;
           line-height: 40px;
-          margin-bottom: 1.5rem;
+          // margin-bottom: 1.5rem;
+          margin-top: 2rem;
         }
         p {
           padding-right: 0;

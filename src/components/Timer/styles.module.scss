@@ -4,9 +4,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    font-weight: 500;
+    // font-weight: 300;
     p {
         color: #000;
+        font-weight: 300;
+
         div {
             font-weight: 300;
             display:inline;
@@ -14,7 +16,10 @@
             color: #fff;
             margin: 0 5px;
             border-radius: 5px;
-            padding: 0 5px;
+            padding: 0 10px;
+            span {
+                font-weight: 200;
+            }
         }
     }
     p:nth-child(2){
@@ -34,10 +39,14 @@
         p {
             display: none;
             font-size: 1.2rem !important;
+            font-weight: 400;
             div {
                 font-size: 1.2rem !important;
                 border-radius: 5px;
                 padding: 0 5px;
+                span {
+                    font-weight: 400;
+                }
             }
         }
         p:nth-child(2){

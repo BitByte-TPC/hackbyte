@@ -9,8 +9,11 @@ import man from "../../assets/man2.png";
 import devfolioLogo from "../../assets/Devfolio_Logo-White.svg";
 import replitLogo from "../../assets/logo-light-text-bg.svg";
 import polygonLogo from "../../assets/Polygon_Logo-White.svg";
-import solanaLogo from "../../assets/Solana_Dark.svg"
-import beeceptorLogo from "../../assets/beeceptor-logo-vector 1.svg"
+import solanaLogo from "../../assets/Solana_Dark.svg";
+import beeceptorLogo from "../../assets/beeceptor-logo-vector 1.svg";
+import fuelerLogo from "../../assets/fueler_logo 1.svg";
+import fileCoinLogo from "../../assets/Filecoin Coloured White Text-1.svg";
+import eduBardLogo from "../../assets/edubard.png";
 
 const SponsorUs = () => {
   return (
@@ -21,7 +24,7 @@ const SponsorUs = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        <PageHeading title='SPONSOR' subHeading='HACKBYTE SPONSORS' />
+        <PageHeading title="SPONSOR" subHeading="HACKBYTE SPONSORS" />
         <div className={styles.sponsorUs}>
           <div className={styles.innerFlex}>
             <div className={styles.left}>
@@ -34,7 +37,9 @@ const SponsorUs = () => {
                 audience of tech-savvy students.
               </p>
 
-              <h2>GOLD SPONSORS</h2>
+              <h2>
+                GOLD <span>SPONSORS</span>
+              </h2>
               <div className={styles.logos}>
                 <a href="https://devfolio.co/" target="blank">
                   <div className={styles.sponsor}>
@@ -48,47 +53,63 @@ const SponsorUs = () => {
                 </a>
                 <a href="https://beeceptor.com/">
                   <div className={styles.sponsor}>
-                    <img src={beeceptorLogo}/>
+                    <img src={beeceptorLogo} />
                   </div>
                 </a>
               </div>
-              <h2>SILVER SPONSORS</h2>
+              <h2>
+                SILVER <span>SPONSORS</span>
+              </h2>
               <div className={styles.logos}>
                 <a href="https://solana.com/">
                   <div className={styles.sponsor}>
                     <img src={solanaLogo} />
                   </div>
                 </a>
-                <a href="https://filecoin.io/">
+                <a href="https://replit.com//">
                   <div className={styles.sponsor}>
                     <img src={replitLogo} />
+                  </div>
+                </a>
+                <a href="https://filecoin.io/">
+                  <div className={styles.sponsor}>
+                    <img src={fileCoinLogo} />
                   </div>
                 </a>
               </div>
-              <h2>MEDIA SPONSORS</h2>
-              {/* <div className={styles.logos}>
-                <a href="https://solana.com/">
+              <h2>
+                BRONZE <span>SPONSORS</span>
+              </h2>
+              <div className={styles.logos}>
+                <a href="https://fueler.io/">
                   <div className={styles.sponsor}>
-                    <img src={solanaLogo} />
+                    <img src={fuelerLogo} />
                   </div>
                 </a>
-                <a href="https://filecoin.io/">
+              </div>
+              <h2>
+                MEDIA <span>SPONSORS</span>{" "}
+              </h2>
+              <div className={styles.logos}>
+                <a href="https://edubard.in/">
                   <div className={styles.sponsor}>
-                    <img src={replitLogo} />
+                    <img src={eduBardLogo} />
                   </div>
                 </a>
-              </div> */}
+              </div>
             </div>
           </div>
           <div className={styles.contact}>
             <div className={styles.text}>
-              <p>As a sponsor, your organization will be highlighted on all of
-                our social media channels.</p>
+              <p>
+                As a sponsor, your organization will be highlighted on all of
+                our social media channels.
+              </p>
             </div>
             <div className={styles.button}>
               <Button
-                type='primary'
-                text='Contact Us'
+                type="primary"
+                text="Contact Us"
                 icon={brochureIcon}
                 style={{ padding: "0.8rem 2rem" }}
                 onClick={() => {
