@@ -1,10 +1,10 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Logo from "../../assets/logo.png";
-import Img1 from "../../assets/mailIcon.png";
-import Img2 from "../../assets/twitterIcon.png";
-import Img3 from "../../assets/youtubeIcon.png";
-import Img4 from "../../assets/linkedinIcon.png";
+import Img1 from "../../assets/mailIcon.svg";
+import Img2 from "../../assets/twitter_icon.svg";
+import Img3 from "../../assets/youtubeIcon.svg";
+import Img4 from "../../assets/linkedin_icon.svg";
 
 const Footer = () => {
   return (
@@ -36,19 +36,23 @@ const Footer = () => {
         <a href="/sponsors">Our Sponsors</a>
         <a href="/prizes">Prizes and Perks</a>
         <a href="/events">Timeline and Events</a>
-        <a href="#">Team behind this</a>
+        <a href="/team">Team behind this</a>
       </div>
       <div className={styles.resources}>
         <h2>Resources and Links</h2>
-        <a href="#">Hackathon Brouchure</a>
-        <a href="#">Devfolio HackByte Page</a>
-        <a href="#">Discord Link</a>
+        <a href="https://drive.google.com/file/d/1PvgeaNBSaISvDuUwTH_Cs0JPSi-8EzBG/view">
+          Hackathon Brouchure
+        </a>
+        <a href="https://hackbyte.devfolio.co/">Devfolio HackByte Page</a>
+        <a href="https://bit.ly/hackbyte-discord">Discord Link</a>
       </div>
       <div className={styles.clubdetails}>
         <h2>TPC and BitByte</h2>
-        <a href="#">TPC Website</a>
-        <a href="#">Team behind all this</a>
-        <a href="#">About IIIT Jabalpur</a>
+        <a href="https://www.iiitdmj.ac.in/webix.iiitdmj.ac.in/#/">
+          TPC Website
+        </a>
+        <a href="/team">Team behind all this</a>
+        <a href="https://www.iiitdmj.ac.in/">About IIIT Jabalpur</a>
       </div>
     </div>
   );

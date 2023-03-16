@@ -27,7 +27,7 @@ const index = () => {
     showTimer && (
       <>
         <div className={styles.container}>
-          <p className={styles.details}>
+          <div className={styles.details}>
             Hackbyte will be starts in
             <div className={styles.time}>
               <span> {days}d :</span>
@@ -35,7 +35,16 @@ const index = () => {
               <span> {minutes}m :</span>
               <span> {seconds}s</span>
             </div>
-          </p>
+          </div>
+          <div className={styles.data}>
+            Starts in
+            <div className={styles.time}>
+              <span> {days}d :</span>
+              <span> {hours}h :</span>
+              <span> {minutes}m :</span>
+              <span> {seconds}s</span>
+            </div>
+          </div>
         </div>
         <div
           className={styles.cross}

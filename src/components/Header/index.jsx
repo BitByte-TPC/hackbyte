@@ -70,6 +70,16 @@ const Header = () => {
           >
             SPONSORS
           </Link>
+          <Link
+            to="/team"
+            onClick={() => {
+              setIsMenuOpen(false);
+              setActive(false);
+            }}
+            style={activemenus == "/team" ? { color: "#fff" } : {}}
+          >
+            TEAM
+          </Link>
         </div>
       }
       <div className={styles.container}>
@@ -104,6 +114,12 @@ const Header = () => {
               style={activemenus == "/sponsors" ? { color: "#fff" } : {}}
             >
               SPONSORS
+            </Link>
+            <Link
+              to="/team"
+              style={activemenus == "/team" ? { color: "#fff" } : {}}
+            >
+              TEAM
             </Link>
           </div>
         )}
