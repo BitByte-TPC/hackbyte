@@ -1,0 +1,53 @@
+.memberCard{
+    width: 18rem;
+    padding: 1rem;
+
+    .content{
+        display: flex;
+        flex-direction: column;
+
+        img{
+            width: 16rem;
+            height: 17.75rem;
+        }
+
+        .details{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 0.5rem;
+
+            .name{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 22px;
+                text-align: center;
+                letter-spacing: 0.1em;
+                color: #FFFFFF;
+            }
+
+            .description{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 16px;
+                color: #727272;
+            }
+
+            .social{
+                display: flex;
+                justify-content: center;
+                gap: 1.5rem;
+                padding-inline: 1rem;
+                margin-top: 1rem;
+
+                img{
+                    width: 30px;
+                    height: 30px;
+                }
+            }
+        }
+    }
+}

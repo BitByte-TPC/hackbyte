@@ -1,12 +1,9 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import heading from "../../assets/headingText.svg";
-import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
 export const HeroSection = () => {
-  const navigate = useNavigate();
-
   React.useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://apply.devfolio.co/v2/sdk.js";

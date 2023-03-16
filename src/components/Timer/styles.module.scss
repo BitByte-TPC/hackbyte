@@ -27,7 +27,12 @@
             }
         }
     }
-    p:nth-child(2){
+
+    .data {
+        display: none;
+    }
+
+    .time:nth-child(2){
         display: none;
     }
 }
@@ -46,21 +51,41 @@
 @media only screen and (max-width: 600px) {
     .container {
         height: 3rem;
-        p {
+
+        .details {
             display: none;
-            font-size: 1.2rem !important;
+        }
+
+        .data{
+            display: block;
+            font-family: poppins;
+            font-size: clamp(18px, 2vw, 20px);
             font-weight: 400;
-            div {
-                font-size: 1.2rem !important;
+            line-height: 36px;
+            text-align: center;
+            color: #000;
+
+            .time {
+                display: inline;
+                background-color: #000;
+                font-weight: 300;
+                color: #fff;
+                margin: 0 5px;
                 border-radius: 5px;
                 padding: 0 5px;
+        
                 span {
-                    font-weight: 400;
+                    font-weight: 200;
                 }
             }
         }
-        p:nth-child(2){
+
+        .time:nth-child(2){
             display: flex;
         }
+    }
+
+    .cross{
+        top: 15px;
     }
 }

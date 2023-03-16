@@ -29,10 +29,10 @@ const Event = () => {
                 <h2>10th March</h2>
               </div>
               <p className={styles.event}>REGISTRAION BEGINS</p>
-              <p className={styles.link}>
+              <a href="https://hackbyte.devfolio.co/" className={styles.link}>
                 Register here
                 <img src={Arrow} alt="" />
-              </p>
+              </a>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
