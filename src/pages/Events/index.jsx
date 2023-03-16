@@ -4,6 +4,7 @@ import Header from "../../components/Header";
 import styles from "./styles.module.scss";
 import PageHeading from "../../components/PageHeading";
 import PageContainer from "../../components/PageContainer";
+import Footer from "../../components/Footer";
 import Arrow from "../../assets/arrow.png";
 
 const Event = () => {
@@ -109,6 +110,7 @@ const Event = () => {
             <p className={styles.event}>Results Announcment</p>
           </div>
         </div>
+        <Footer />
       </motion.div>
     </PageContainer>
   );

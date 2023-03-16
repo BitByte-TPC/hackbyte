@@ -75,6 +75,13 @@
     align-items: center;
     justify-content: center;
     gap: 2.5rem;
+
+    .discordBtn{
+      a{
+        text-decoration: none;
+      }
+    }
+
     .discordIcon {
       display: none;
     }
@@ -151,6 +158,7 @@
     }
     .navbar_right {
       gap: 2rem;
+
       .discordIcon {
         display: block;
         background-color: transparent;
@@ -159,8 +167,6 @@
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        // border: 0.05px solid #fff;
-        // border-radius: 4px;
         color: #fff;
         cursor: pointer;
         transition: all 0.2s ease-in-out;

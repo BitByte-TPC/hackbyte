@@ -1,228 +1,119 @@
-// p {
-//   width: 1000px;
-//   font-family: "Poppins";
-//   font-style: normal;
-//   font-weight: 400;
-//   font-size: clamp(12px, 2vw, 20px);
-//   line-height: 36px;
-//   margin: 0.5rem auto;
-//   text-align: center;
-//   color: rgba(255, 255, 255, 0.65);
-//   padding: 2rem 1.5rem;
-// }
-
-.btn {
+.content {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
+  max-width: 1000px;
+  margin: 1rem auto;
+
+  .text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.55);
+    text-align: center;
+    font-size: clamp(18px, 2vw, 20px);
+  }
 }
 
-.sponsorUs {
+.sponsors{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  // margin: 4rem 0 2rem 0;
-  border-radius: 10px;
-  padding: 10px;
-  .innerFlex {
+  margin-top: 4rem;
+
+  h2 {
+    font-family: "Lato";
+    font-style: normal;
+    font-weight: 800;
+    font-size: clamp(24px, 4vw, 34px);
+    line-height: 60px;
+    letter-spacing: 0.15em;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.966);
+
+    span {
+      color: #205781;
+    }
+  }
+
+  .links{
     display: flex;
-    justify-content: space-between;
-    justify-content: flex-start;
-    flex-wrap: wrap;
-    padding: 0 4rem;
-  }
-  .left {
-    max-width: 1000px;
-    p {
-      margin-bottom: 6.5rem;
-    }
-    .logos{
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      // gap: 15rem;
-      flex-wrap: wrap;
-      margin:1.5rem 0 3rem 0;
-      a {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2rem;
-        // border-radius: 10px;
-        margin-top: 1rem;
-        margin-left: 3rem;
-        &:hover{
-          cursor: pointer;
-        }
-        img{
-          width: 17rem;
-          height: 5rem;
-          margin-top: 1rem;
-        }
+    justify-content: space-around;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+
+    a{
+      transition: 0.3s;
+      &:hover{
+        transform: translate(0, -10px);
       }
-      .sponsor {
-        transition: 0.3s;
-        &:hover{
-          transform: translate(0, -10px);
-        }
+
+      img {
+        width: 18rem;
+        height: 5rem;
       }
-    }
-    h2 {
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 800;
-      font-size: clamp(24px, 4vw, 34px);
-      line-height: 60px;
-      letter-spacing: 0.15em;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.966);
-      margin-top: 5.5rem;
-      margin-bottom: 2rem;
-      span {
-        color: #205781;
-      }
-    }
-    p {
-      text-align: center;
-      padding-left: 0;
-      span{ 
-        font-weight: 500;
-        color: white; 
-      }
-    }
-    button {
-      padding: 15px 30px;
-      margin-bottom: 1.5rem;
     }
   }
-  // .right {
-  //   img {
-  //     width: 20rem;
-  //   }
-  // }
 }
-.contact {
-  margin: 3rem ;
-  width: 80%;
+
+.contact{
   display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 2rem;
-  flex-direction: row;
-  .text {
+  align-items: flex-start;
+  gap: 4rem;
+  margin: 5rem 0 2rem 0;
+
+  .details{
     width: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    p {
-      text-align: center;
-      padding-left: 0;
-      span{ 
-        font-weight: 500;
-        color: white; 
+    .text{
+      font-family: 'Poppins';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+@media only screen and (max-width: 600px){
+  .content{
+    padding-inline: 1rem;
+    .text{
+      font-size: 1rem; 
+    }
+  }
+
+  .sponsors{
+    margin-top: 2rem;
+    .links{
+      flex-direction: column;
+      gap: 1rem;
+
+      a{
+        img{
+          width: 12rem;
+          height: 5rem;
+        }
       }
     }
   }
 
-}
-@media only screen and (max-width: 600px) {
-  .contact {
+  .contact{
     flex-direction: column;
-    gap: 1rem;
-    .text {
+    align-items: center;
+    gap: 2rem;
+    margin: 2rem 0;
+
+    .details{
       width: 100%;
-    }
-  }
-  .sponsorUs {
-    // margin-top: 2rem;
-    p {
-      font-size: 1rem !important;
-    }
-    button {
-      padding: 1rem 2rem !important;
-      span {
-        font-size: 1.2rem !important;
-      }
-    }
-    .innerFlex {
-      width: 100%;
-      padding: 0.5rem;
-      .left {
-        order: 2;
-        display: flex;
-        // margin-top: 1rem;
-        flex-direction: column;
-        align-items: center;
-        .logos{
-          // gap: 2rem;
-          justify-content: center;
-          align-items: center;
-          margin: 0 0 1.5rem 0;
-          a {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1rem;
-            // border-radius: 10px;
-            margin: 1rem 0 1rem 0rem;
-            // margin-top: 0rem;
-            // margin-bottom: 1rem;
-            // margin-left: 3rem;
-            padding: 0rem 3rem;
-            .sponsor {
-              transition: 0.3s;
-              img {
-                width: 12rem;
-                height: 5rem;
-              }
-              &:hover{
-                transform: translate(0, -10px);
-              }
-            }
-            &:hover{
-              cursor: pointer;
-            }
-          }
-          // .sponsor {
-          //   gap: 1rem;
-          //   padding: 1rem;
-          //   img{
-          //     width: 10rem;
-          //     height: 5rem;
-          //   }
-          // }
-          // img{
-          //   width: 5rem;
-          // }
-        }
-        
-        h2 {
-          font-size: 1.8rem;
-          text-align: center;
-          line-height: 40px;
-          margin-bottom: 1.5rem;
-          margin-top: 2rem;
-        }
-        p {
-          padding-right: 0;
-          margin: 0 0 1rem 0;
-          text-align: center;
-        }
-      }
-      .right {
-        order: 1;
-        display: flex;
-        justify-content: center;
-        padding-left: 1.5rem;
-        width: 100%;
-        img {
-          width: 60%;
-        }
+      padding-inline: 0.5rem;
+      .text{
+        font-size: 1.2rem;
+        text-align: center;
       }
     }
   }

@@ -1,24 +1,23 @@
-p {
-  font-size: clamp(18px, 2vw, 20px);
-}
-.faq {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem 0 2rem 0;
-  border-radius: 10px;
-  padding: 10px;
-}
-
-.text {
+.content {
   max-width: 800px;
-  margin: 5rem auto;
-  p {
+  margin: 1rem auto;  
+
+  .text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 500;
+    line-height: 36px;
+    color: rgba(255, 255, 255, 0.55);
     text-align: center;
     font-size: clamp(18px, 2vw, 20px);
+
+    .detail{
+      color: #fff;
+      font: bold;
+    }
   }
 }
+
 .opportunity {
   display: flex;
   flex-direction: column;
@@ -27,37 +26,39 @@ p {
   margin: 4rem 0 2rem 0;
   border-radius: 10px;
   padding: 10px;
-  .innerFlex {
+
+  .details {
     display: flex;
     justify-content: space-between;
     justify-content: center;
     flex-wrap: wrap;
     padding: 0 4rem;
-  }
-  .left {
-    max-width: 800px;
-    h2 {
-      font-family: "Lato";
-      font-style: normal;
-      font-weight: 400;
-      font-size: clamp(24px, 4vw, 34px);
-      line-height: 60px;
-      letter-spacing: 0.15em;
-      text-align: center;
-      color: rgba(255, 255, 255, 0.6);
-    }
-    p {
-      text-align: center;
-      padding-left: 0;
-      margin: 1.5rem 0;
-    }
-    button {
-      padding-left: -2px;
-    }
-  }
-  .right {
-    img {
-      width: 15rem;
+
+    .container {
+      max-width: 800px;
+
+      h2 {
+        font-family: "Lato";
+        font-style: normal;
+        font-weight: 400;
+        font-size: clamp(24px, 4vw, 34px);
+        line-height: 60px;
+        letter-spacing: 0.15em;
+        text-align: center;
+        color: rgba(255, 255, 255, 0.6);
+      }
+
+      .textdetails {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 500;
+        line-height: 36px;
+        color: rgba(255, 255, 255, 0.55);
+        text-align: center;
+        font-size: clamp(18px, 2vw, 20px);
+        padding-left: 0;
+        margin: 1.5rem 0;
+      }
     }
   }
 }
@@ -71,7 +72,7 @@ p {
   border-radius: 10px;
   padding: 10px;
 
-  p {
+  .heading {
     font-family: "Lato";
     font-style: normal;
     font-weight: 400;
@@ -106,40 +107,37 @@ p {
     }
   }
 }
+
+.faq {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem 0 2rem 0;
+  border-radius: 10px;
+  padding: 10px;
+}
+
 @media only screen and (max-width: 600px) {
-  .text {
+  .content {
     width: 90%;
     margin: 1rem auto;
-    p {
+
+    text {
       font-size: 1rem !important;
     }
-    // margin-top: -1rem;
   }
-  .opportunity {
-    .left {
-      h2 {
-        font-size: 1.7rem;
-      }
-      p {
-        margin-top: 1rem !important;
-        font-size: 1rem !important;
-      }
-      button {
-        padding: 1rem 2rem;
-        span {
-          font-size: 1.4rem;
-        }
-      }
-    }
-  }
+
   .gallery {
-    p {
+    .heading {
       font-size: 1.7rem;
     }
+
     .photos {
       grid-template-columns: repeat(1, 1fr);
       column-gap: 4rem;
       row-gap: 1rem;
+
       .photo {
         img {
           width: 100%;
@@ -148,12 +146,13 @@ p {
       }
     }
   }
+  
   .opportunity {
     margin-top: 1rem;
-    .innerFlex {
+    .details {
       width: 100%;
       padding: 0.5rem;
-      .left {
+      .container {
         order: 2;
         display: flex;
         margin-top: 1rem;
@@ -164,19 +163,10 @@ p {
           line-height: 40px;
           margin-bottom: 0.5rem;
         }
-        p {
+        .textdetails {
           padding-right: 0;
           margin: 0 0 1rem 0;
           text-align: center;
-        }
-      }
-      .right {
-        order: 1;
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        img {
-          max-width: 12rem;
         }
       }
     }

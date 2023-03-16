@@ -1,9 +1,8 @@
 import React, { useState } from "react";
 import styles from "./styles.module.scss";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../../assets/Logo.svg";
 import hb from "../../assets/HB.svg";
-import discordIcon from "../../assets/discord_logo.svg";
+import discordIcon from "../../assets/Discord_Logo.svg";
 import Button from "../Button";
 
 const Header = () => {
@@ -22,7 +21,7 @@ const Header = () => {
       {
         <div className={`${styles.menu} ${active && styles.menuVisible}`}>
           <Link
-            to='/'
+            to="/"
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
@@ -32,7 +31,7 @@ const Header = () => {
             HOME
           </Link>
           <Link
-            to='/about'
+            to="/about"
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
@@ -42,7 +41,7 @@ const Header = () => {
             ABOUT
           </Link>
           <Link
-            to='/events'
+            to="/events"
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
@@ -52,7 +51,7 @@ const Header = () => {
             EVENTS
           </Link>
           <Link
-            to='/prizes'
+            to="/prizes"
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
@@ -62,7 +61,7 @@ const Header = () => {
             PRIZES
           </Link>
           <Link
-            to='/sponsors'
+            to="/sponsors"
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
@@ -74,34 +73,34 @@ const Header = () => {
         </div>
       }
       <div className={styles.container}>
-        <Link to='/'>
-          <img className={styles.logo} src={hb} alt='' />
+        <Link to="/">
+          <img className={styles.logo} src={hb} alt="" />
         </Link>
         {location.pathname !== "/" && (
           <div className={styles.nav}>
-            <Link to='/' style={activemenus == "/" ? { color: "#fff" } : {}}>
+            <Link to="/" style={activemenus == "/" ? { color: "#fff" } : {}}>
               HOME
             </Link>
             <Link
-              to='/about'
+              to="/about"
               style={activemenus == "/about" ? { color: "#fff" } : {}}
             >
               ABOUT
             </Link>
             <Link
-              to='/events'
+              to="/events"
               style={activemenus == "/events" ? { color: "#fff" } : {}}
             >
               EVENTS
             </Link>
             <Link
-              to='/prizes'
+              to="/prizes"
               style={activemenus == "/prizes" ? { color: "#fff" } : {}}
             >
               PRIZES
             </Link>
             <Link
-              to='/sponsors'
+              to="/sponsors"
               style={activemenus == "/sponsors" ? { color: "#fff" } : {}}
             >
               SPONSORS
@@ -109,26 +108,28 @@ const Header = () => {
           </div>
         )}
         <div className={styles.navbar_right}>
-          <div className={styles.discordBtn}
-          >
+          <div className={styles.discordBtn}>
             <a href="https://bit.ly/hackbyte-discord" target="blank">
-            <Button
-              type='secondary'
-              text='Join Discord'
-              icon={discordIcon}
-              onClick={() => {
-                window.open("https://bit.ly/hackbyte-discord", "_blank");
-              }}
-            />
+              <Button
+                type="secondary"
+                text="Join Discord"
+                icon={discordIcon}
+                onClick={() => {
+                  window.open("https://bit.ly/hackbyte-discord", "_blank");
+                }}
+              />
             </a>
           </div>
           <div className={styles.discordIcon}>
             <a href="https://bit.ly/hackbyte-discord">
-            <img src={discordIcon} alt="" 
-              onClick={()=>{
-                window.open("https://bit.ly/hackbyte-discord", "_blank");
-              }}
-            /></a>
+              <img
+                src={discordIcon}
+                alt=""
+                onClick={() => {
+                  window.open("https://bit.ly/hackbyte-discord", "_blank");
+                }}
+              />
+            </a>
           </div>
 
           <div

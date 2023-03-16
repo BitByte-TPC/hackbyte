@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
-import styles from "./styles.module.scss"
-import X_Icon from "../../assets/close-line-icon.svg"
+import React, { useEffect, useState } from "react";
+import styles from "./styles.module.scss";
+import X_Icon from "../../assets/close_icon.svg";
+
 const index = () => {
-
   const [showTimer, setShowTimer] = useState(true);
-
   const [days, setDays] = useState(0);
   const [hours, setHours] = useState(0);
   const [minutes, setMinutes] = useState(0);
@@ -21,45 +20,41 @@ const index = () => {
   };
   useEffect(() => {
     const interval = setInterval(() => getTime(deadline), 1000);
-
     return () => clearInterval(interval);
   }, []);
 
   return (
-    showTimer &&
-    <div className={styles.container}>
-          <p>
-            Hackbyte will be started in
-            <div>
+    showTimer && (
+      <>
+        <div className={styles.container}>
+          <p className={styles.details}>
+            Hackbyte will be starts in
+            <div className={styles.time}>
               <span> {days}d :</span>
               <span> {hours}h :</span>
               <span> {minutes}m :</span>
               <span> {seconds}s</span>
             </div>
           </p>
-          <p>
-            Starts In 
-            <div>
-              <span>{days}d :</span>
-              <span>{hours}h :</span>
-              <span>{minutes}m :</span>
-              <span>{seconds}s</span>
-            </div>
-          </p>
-          <div className={styles.cross}
-            onClick={() => {
-              setShowTimer(false)
+        </div>
+        <div
+          className={styles.cross}
+          onClick={() => {
+            setShowTimer(false);
+          }}
+        >
+          <img
+            src={X_Icon}
+            alt="X"
+            style={{
+              width: "16px",
+              height: "16px",
             }}
-          >
-            <img src={X_Icon} alt="X"
-              style={{
-                width: "16px",
-                height: "16px"
-              }}
-            />
-          </div>
-    </div>
-  )
-}
+          />
+        </div>
+      </>
+    )
+  );
+};
 
-export default index
+export default index;
