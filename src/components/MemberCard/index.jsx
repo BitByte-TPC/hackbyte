@@ -9,7 +9,7 @@ const MemberCard = ({ name, position, urlname }) => {
   return (
     <div className={styles.memberCard}>
       <div className={styles.content}>
-        <img src={`images/${urlname}.png`} alt="" />
+        <img src={`images/${urlname}.webp`} alt="" />
         <div className={styles.details}>
           <h2 className={styles.name}>{name}</h2>
           <p className={styles.description}>{position}</p>
