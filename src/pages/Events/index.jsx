@@ -47,9 +47,9 @@ const Event = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.left}`}>
+          <div className={`${styles.container} ${styles.right}`}>
             <div class={styles.content}>
-              <div className={styles.date} style={{ background: "#4C7B5C" }}>
+              <div className={styles.date} style={{ background: "#7B4C4C" }}>
                 <h2>1st April, 6:00PM</h2>
               </div>
               <p className={styles.event}>Solana Session</p>
@@ -59,9 +59,9 @@ const Event = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.right}`}>
+          <div className={`${styles.container} ${styles.left}`}>
             <div class={styles.content}>
-              <div className={styles.date} style={{ background: "#7B4C4C" }}>
+              <div className={styles.date} style={{ background: "#4C7B5C" }}>
                 <h2>1st April, 6:30PM</h2>
               </div>
               <p className={styles.event}>Replit Session</p>
