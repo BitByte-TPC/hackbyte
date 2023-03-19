@@ -38,21 +38,9 @@ const Event = () => {
           <div className={`${styles.container} ${styles.left}`}>
             <div class={styles.content}>
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>1st April, 3:00PM</h2>
+                <h2>1st April, 11:30AM</h2>
               </div>
               <p className={styles.event}>Devfolio session</p>
-              <p className={styles.link}>
-                Meet link here
-                <img src={Arrow} alt="" />
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.container} ${styles.right}`}>
-            <div class={styles.content}>
-              <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>1st April, 6:00PM</h2>
-              </div>
-              <p className={styles.event}>Replit Session</p>
               <p className={styles.link}>
                 Meet link here
                 <img src={Arrow} alt="" />
@@ -62,9 +50,21 @@ const Event = () => {
           <div className={`${styles.container} ${styles.left}`}>
             <div class={styles.content}>
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>1st April, 9:00PM</h2>
+                <h2>1st April, 6:00PM</h2>
               </div>
               <p className={styles.event}>Solana Session</p>
+              <p className={styles.link}>
+                Meet link here
+                <img src={Arrow} alt="" />
+              </p>
+            </div>
+          </div>
+          <div className={`${styles.container} ${styles.right}`}>
+            <div class={styles.content}>
+              <div className={styles.date} style={{ background: "#7B4C4C" }}>
+                <h2>1st April, 6:30PM</h2>
+              </div>
+              <p className={styles.event}>Replit Session</p>
               <p className={styles.link}>
                 Meet link here
                 <img src={Arrow} alt="" />
@@ -102,7 +102,7 @@ const Event = () => {
           <div className={`${styles.container} ${styles.left}`}>
             <div class={styles.content}>
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>9th April</h2>
+                <h2>9th April, 6:00PM</h2>
               </div>
               <p className={styles.event}>Facebook Developer Club Session</p>
             </div>
