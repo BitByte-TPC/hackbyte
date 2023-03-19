@@ -2,9 +2,9 @@ import React from "react";
 import styles from "./styles.module.scss";
 import Logo from "../../assets/logo.png";
 import Img1 from "../../assets/mailIcon.svg";
-import Img2 from "../../assets/twitter_icon.svg";
+import Img2 from "../../assets/twitterIcon.svg";
 import Img3 from "../../assets/youtubeIcon.svg";
-import Img4 from "../../assets/linkedin_icon.svg";
+import Img4 from "../../assets/linkedinIcon.svg";
 
 const Footer = () => {
   return (

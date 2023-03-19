@@ -28,7 +28,7 @@ const Event = () => {
               <div className={styles.date} style={{ background: "#4C4C7B" }}>
                 <h2>10th March</h2>
               </div>
-              <p className={styles.event}>REGISTRAION BEGINS</p>
+              <p className={styles.event}>REGISTRATION BEGINS</p>
               <a href="https://hackbyte.devfolio.co/" className={styles.link}>
                 Register here
                 <img src={Arrow} alt="" />
@@ -38,34 +38,9 @@ const Event = () => {
           <div className={`${styles.container} ${styles.left}`}>
             <div class={styles.content}>
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>31st March</h2>
+                <h2>1st April, 3:00PM</h2>
               </div>
-              <p className={styles.event}>Facebook Dev Club Inauguration</p>
-              <p className={styles.link}>
-                Meet link here
-                <img src={Arrow} alt="" />
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.container} ${styles.right}`}>
-            <div class={styles.content}>
-              <div className={styles.date} style={{ background: "#7B684C" }}>
-                <h2>1st April</h2>
-              </div>
-              <p className={styles.event}>Replit, Solana and speaker session</p>
-              <p className={styles.link}>
-                Meet link here
-                <img src={Arrow} alt="" />
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.container} ${styles.left}`}>
-            <div class={styles.content}>
-              <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>7th April</h2>
-              </div>
-              <p className={styles.event}>HACKBYTE Opening Ceremony</p>
-              <p className={styles.description}>Problem statement revealed</p>
+              <p className={styles.event}>Devfolio session</p>
               <p className={styles.link}>
                 Meet link here
                 <img src={Arrow} alt="" />
@@ -75,9 +50,53 @@ const Event = () => {
           <div className={`${styles.container} ${styles.right}`}>
             <div class={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>8th April</h2>
+                <h2>1st April, 6:00PM</h2>
               </div>
-              <p className={styles.event}>Mini Event</p>
+              <p className={styles.event}>Replit Session</p>
+              <p className={styles.link}>
+                Meet link here
+                <img src={Arrow} alt="" />
+              </p>
+            </div>
+          </div>
+          <div className={`${styles.container} ${styles.left}`}>
+            <div class={styles.content}>
+              <div className={styles.date} style={{ background: "#4C7B5C" }}>
+                <h2>1st April, 9:00PM</h2>
+              </div>
+              <p className={styles.event}>Solana Session</p>
+              <p className={styles.link}>
+                Meet link here
+                <img src={Arrow} alt="" />
+              </p>
+            </div>
+          </div>
+          <div className={`${styles.container} ${styles.right}`}>
+            <div class={styles.content}>
+              <div className={styles.date} style={{ background: "#7B4C4C" }}>
+                <h2>7th April, 6:00PM</h2>
+              </div>
+              <p className={styles.event}>HACKBYTE Opening Ceremony</p>
+            </div>
+          </div>
+          <div className={`${styles.container} ${styles.left}`}>
+            <div class={styles.content}>
+              <div className={styles.date} style={{ background: "#4C7B5C" }}>
+                <h2>8th April, 3:00PM</h2>
+              </div>
+              <p className={styles.event}>API 101 Postman session</p>
+              <p className={styles.link}>
+                Meet link here
+                <img src={Arrow} alt="" />
+              </p>
+            </div>
+          </div>
+          <div className={`${styles.container} ${styles.right}`}>
+            <div class={styles.content}>
+              <div className={styles.date} style={{ background: "#7B4C4C" }}>
+                <h2>8th April, 6:00PM</h2>
+              </div>
+              <p className={styles.event}>Mini Events</p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
@@ -85,11 +104,15 @@ const Event = () => {
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
                 <h2>9th April</h2>
               </div>
+              <p className={styles.event}>Facebook Developer Club Session</p>
+            </div>
+          </div>
+          <div className={`${styles.container} ${styles.right}`}>
+            <div class={styles.content}>
+              <div className={styles.date} style={{ background: "#7B4C4C" }}>
+                <h2>9th April, 6:00PM</h2>
+              </div>
               <p className={styles.event}>HACKBYTE Closing Ceremony</p>
-              <p className={styles.link}>
-                Meet link here
-                <img src={Arrow} alt="" />
-              </p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right} ${styles.last}`}>
@@ -104,7 +127,7 @@ const Event = () => {
         </div>
         <div class={styles.results}>
           <div className={styles.content}>
-            <div className={styles.date} style={{ background: "#7B4C4C" }}>
+            <div className={styles.date} style={{ background: "#4C4C7B" }}>
               <h2>15th April</h2>
             </div>
             <p className={styles.event}>Results Announcment</p>
