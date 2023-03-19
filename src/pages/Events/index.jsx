@@ -28,7 +28,7 @@ const Event = () => {
               <div className={styles.date} style={{ background: "#4C4C7B" }}>
                 <h2>10th March</h2>
               </div>
-              <p className={styles.event}>REGISTRAION BEGINS</p>
+              <p className={styles.event}>REGISTRATION BEGINS</p>
               <a href="https://hackbyte.devfolio.co/" className={styles.link}>
                 Register here
                 <img src={Arrow} alt="" />

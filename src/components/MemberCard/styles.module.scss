@@ -43,6 +43,16 @@
                 padding-inline: 1rem;
                 margin-top: 1rem;
 
+                a{
+                    text-decoration: none;
+
+                    &:hover{
+                        img{
+                            filter: invert(1);
+                        }
+                    }
+                }
+
                 img{
                     width: 30px;
                     height: 30px;
