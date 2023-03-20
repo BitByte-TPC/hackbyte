@@ -33,7 +33,7 @@ export const HeroSection = () => {
           style={{ height: "44px", width: "15rem" }}
         ></div>
         <Button text="Register For Offline" type='secondary' link="offline-registration" style={{
-          width: '50%',
+          width: '30%',
         }}/>
       </div>
     </motion.div>
