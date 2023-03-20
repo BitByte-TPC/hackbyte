@@ -15,15 +15,19 @@ import Footer from '../../components/Footer'
         <div className={styles.container}>
           <div className={styles.content}>
            <p className={styles.text}>
-          Please note that in order to participate in the IIIT Jabalpur hackathon, <span className={styles.detail}>it is mandatory to fill out the registration form.</span> This is necessary for us to arrange accommodation during the event and to have your contact details on file. Participants who have not filled out the form will only be able to participate in the hackathon in online mode
+          Please note that in order to participate in the HackByte 2023 in offline mode , <span className={styles.detail}>it is mandatory to fill out the offline registration form given below.</span> This form helps us in keeping track of the offline registrations . Participants who have not filled out the offline registration form will not be allowed to attend the hackathon in offline mode .
           </p>
           <div className={styles.buttonContainer}>
-          <Button type="primary" text="Fill the form" icon={formIcon} link={undefined} />
+            <a href="https://forms.gle/jRS97rmFhSH18Fxu7" target='_blank'>
+              <span>
+                Fill the form
+              </span>
+            </a>
             </div>
         </div>
         </div>
         <div className={styles.section}>
-          <h1 className={styles.heading}>Live the experience offline at IIIT Jabalpur</h1>
+          <h1 className={styles.heading}>Live the HackByte-2023 experience offline at IIIT Jabalpur</h1>
           <div className={styles.cardContainer}>
             <div className={styles.card}>
               <h2>Workshops and Sessions</h2>
@@ -54,10 +58,10 @@ import Footer from '../../components/Footer'
           <h1 className={styles.heading}>Steps to register offline</h1>
           <div className={styles.steps}>
             <h3><span>1.</span>Register on devfolio along with your team. Look for the hackathon registration link on the website or  <a href="https://hackbyte.devfolio.co/" target='_blank'>Click here</a></h3>
-            <h3><span>2.</span>After registering for the hackathon, fill out the Google form to attend the hackathon offline. <a href="">Click here</a></h3>
+            <h3><span>2.</span>After registering for the hackathon, fill out the offline registration form . <a href="https://forms.gle/jRS97rmFhSH18Fxu7" target='_blank'>Click here</a></h3>
             <h3><span>3.</span>The registration form requests your contact information, the name of your team, and the necessary information about each team member. Please be sure to accurately and completely fill out the form. Note: Only one team member should complete the form.</h3>
             <h3><span>4.</span>You will be given the choice between two packages, one of which includes food coupons and the other which does not. The prices for each can be found in the form.</h3>
-            <h3><span>5.</span>Attend the check-in on the day of the hackathon to get your Id-card and any other pertinent information. Bring a copy of your registration confirmation with you.</h3>
+            <h3><span>5.</span>Check-in on the day of the hackathon to get your Id-card and any other pertinent information.</h3>
           </div>
         </div>
         <Footer />

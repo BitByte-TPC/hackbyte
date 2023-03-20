@@ -130,6 +130,7 @@ const Header = () => {
                 type="secondary"
                 text="Join Discord"
                 icon={discordIcon}
+                style={{ width: "150px" }}
                 onClick={() => {
                   window.open("https://bit.ly/hackbyte-discord", "_blank");
                 }}

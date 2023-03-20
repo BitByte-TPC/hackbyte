@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 const Button = ({ type, icon, text, link, ...others }) => {
   if (type === "primary")
     return (
-      <Link className={styles.primaryContainer} to={link ? link : ''} {...others}>
+      <Link className={styles.primaryContainer} to={link ? link : null} {...others}>
         {icon && (
           <img src={icon} alt='icon' />
         )}
