@@ -44,5 +44,11 @@
   justify-content: center;
   gap: 20%;
   margin-top: 2rem;
+  img {
+    &:hover {
+      cursor: pointer;
+      filter: invert(1);
+    }
+  }
   
 }
