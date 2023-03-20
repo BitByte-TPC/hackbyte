@@ -28,7 +28,7 @@ const index = () => {
       <>
         <div className={styles.container}>
           <div className={styles.details}>
-            Hackbyte will be starts in
+            Hackbyte will be started in
             <div className={styles.time}>
               <span> {days}d :</span>
               <span> {hours}h :</span>

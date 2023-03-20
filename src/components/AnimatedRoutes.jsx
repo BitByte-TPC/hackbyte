@@ -7,6 +7,7 @@ import Prizes from "../pages/Prizes";
 import SponsorUs from "../pages/SponsorUs";
 import Team from "../pages/Team";
 import NotFound from "../pages/NotFound";
+import Speakers from "../pages/Speakers";
 import OfflineRegistration from "../pages/OfflineRegistration";
 
 export const AnimatedRoutes = () => {
@@ -21,6 +22,7 @@ export const AnimatedRoutes = () => {
         <Route path="sponsors" element={<SponsorUs />} />
         <Route path="offline-registration" element={<OfflineRegistration />} />
         <Route path="team" element={<Team />} />
+        <Route path="speakers" element={<Speakers />} />
         <Route path="*" element={<NotFound />} />
       </Routes>
     </AnimatePresence>

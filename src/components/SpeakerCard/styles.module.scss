@@ -1,0 +1,54 @@
+.container {
+  width: 24rem;
+  height: 32rem;
+  background-color: white;
+  border-radius: 16px;
+  font-family: "Poppins";
+}
+
+.imgContainer {
+  width: 100%;
+  height: 70%;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 16px 16px 0 0;
+  }
+}
+
+.content {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #262626;
+  border-radius: 0 0 16px 16px;
+}
+
+.text {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  padding-top: 1rem;
+
+}
+
+.social {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  gap: 20%;
+  margin-top: 2rem;
+  img {
+    &:hover {
+      cursor: pointer;
+      filter: invert(1);
+    }
+  }
+  
+}
