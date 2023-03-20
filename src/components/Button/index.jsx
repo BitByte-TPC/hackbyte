@@ -1,22 +1,23 @@
 import styles from "./styles.module.scss";
-const Button = ({ type, icon, text, ...others }) => {
+import { Link } from "react-router-dom";
+const Button = ({ type, icon, text, link, ...others }) => {
   if (type === "primary")
     return (
-      <button className={styles.primaryContainer} {...others}>
+      <Link className={styles.primaryContainer} to={link ? link : null} {...others}>
         {icon && (
           <img src={icon} alt='icon' />
         )}
         <span>{text}</span>
-      </button>
+      </Link>
     );
   else if (type === "secondary")
     return (
-      <button className={styles.secondaryContainer} {...others}>
+      <Link className={styles.secondaryContainer} to={link ? link : ''} {...others}>
         {icon && (
           <img src={icon} alt='icon' />
         )}
         <span>{text}</span>
-      </button>
+      </Link>
     );
   else return <></>;
 };

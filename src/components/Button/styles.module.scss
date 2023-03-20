@@ -1,4 +1,5 @@
 .primaryContainer {
+  text-decoration: none;
   background-color: #fff;
   color: #273339;
   display: flex;
@@ -31,15 +32,16 @@
 }
 
 .secondaryContainer {
+  text-decoration: none;
   background-color: transparent;
   padding: 8px 15px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   gap: 6px;
-  align-items: center;
-  width: auto;
+  width: 100%;
   min-width: 10rem;
+  align-items: center;
   border: 0.05px solid #fff;
   border-radius: 4px;
   color: #fff;
@@ -64,7 +66,6 @@
 
 @media only screen and (max-width: 600px) {
   .primaryContainer {
-    min-width: 7rem;
     img {
       width: 20px;
       height: 20px;
@@ -75,8 +76,7 @@
     }
   }
   .secondaryContainer {
-    min-width: 8rem;
-
+    min-width: 100%;
     span {
       font-size: 14px;
       line-height: 16px;

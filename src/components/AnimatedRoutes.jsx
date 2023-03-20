@@ -8,6 +8,7 @@ import SponsorUs from "../pages/SponsorUs";
 import Team from "../pages/Team";
 import NotFound from "../pages/NotFound";
 import Speakers from "../pages/Speakers";
+import OfflineRegistration from "../pages/OfflineRegistration";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -19,6 +20,7 @@ export const AnimatedRoutes = () => {
         <Route path="events" element={<Events />} />
         <Route path="prizes" element={<Prizes />} />
         <Route path="sponsors" element={<SponsorUs />} />
+        <Route path="offline-registration" element={<OfflineRegistration />} />
         <Route path="team" element={<Team />} />
         <Route path="speakers" element={<Speakers />} />
         <Route path="*" element={<NotFound />} />
