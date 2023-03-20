@@ -15,13 +15,7 @@ import Footer from '../../components/Footer'
         <div className={styles.container}>
           <div className={styles.content}>
            <p className={styles.text}>
-            Hackbyte is the annual hackathon of IIIT Jabalpur taking place from
-            <span className={styles.detail}> 7th to 9th April</span> and is
-            organised by
-            <span className={styles.detail}> The Programming Club (TPC)</span>{" "}
-            run by students of our institute. This will bring together
-            developers and problem solvers from diverse backgrounds to
-            collaborate on innovative projects.
+          Please note that in order to participate in the IIIT Jabalpur hackathon, <span className={styles.detail}>it is mandatory to fill out the registration form.</span> This is necessary for us to arrange accommodation during the event and to have your contact details on file. Participants who have not filled out the form will only be able to participate in the hackathon in online mode
           </p>
           <div className={styles.buttonContainer}>
           <Button type="primary" text="Fill the form" icon={formIcon} link={undefined} />
@@ -34,7 +28,7 @@ import Footer from '../../components/Footer'
             <div className={styles.card}>
               <h2>Workshops and Sessions</h2>
               <p>The chance to attend additional sessions, like the ones led by Sandeep Jain and Anchal Mishra, can offer beneficial chances for skill development and learn from subject-matter experts</p>
-              <Link to="speakers">
+              <Link to="/speakers">
                 See speakers
               </Link>
             </div>

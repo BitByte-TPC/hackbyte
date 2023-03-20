@@ -15,6 +15,7 @@
     color: rgba(255, 255, 255, 0.55);
     text-align: center;
     font-size: clamp(18px, 2vw, 20px);
+    margin-bottom: 1rem;
 
     .detail{
       color: #fff;
@@ -58,7 +59,7 @@
          a {
           font-family: 'Poppins';
           text-decoration: none;
-          color: #fff;
+          color: #bdd2eb;
         }
       }
     }
@@ -87,7 +88,7 @@
       a {
         font-family: 'Poppins';
         text-decoration: none;
-        color: #ffffff9e;
+        color: #bdd2eb;
         &:hover {
           color: #fff;
         }

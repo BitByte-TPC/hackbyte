@@ -32,7 +32,9 @@ export const HeroSection = () => {
           data-button-theme="dark-inverted"
           style={{ height: "44px", width: "15rem" }}
         ></div>
-        <Button text="Register For Offline" type='secondary' link="offline-registration" />
+        <Button text="Register For Offline" type='secondary' link="offline-registration" style={{
+          width: '50%',
+        }}/>
       </div>
     </motion.div>
   );
