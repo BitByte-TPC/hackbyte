@@ -2,6 +2,7 @@ import React from "react";
 import styles from "./styles.module.scss";
 import heading from "../../assets/headingText.svg";
 import { motion } from "framer-motion";
+import Button from "../Button";
 
 export const HeroSection = () => {
   React.useEffect(() => {
@@ -31,6 +32,7 @@ export const HeroSection = () => {
           data-button-theme="dark-inverted"
           style={{ height: "44px", width: "15rem" }}
         ></div>
+        <Button text="Register For Offline" type='secondary' link="offline-registration" />
       </div>
     </motion.div>
   );
