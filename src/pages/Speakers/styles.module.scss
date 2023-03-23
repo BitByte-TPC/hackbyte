@@ -1,9 +1,10 @@
 .speakerContainer {
+  width: 80%;
+  margin: 5rem auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 1rem;
-  margin: 5rem 5rem 10rem 5rem;
   flex-wrap: wrap;
-  gap: 2rem;
+  gap: 4rem;
   align-items: center;
 }

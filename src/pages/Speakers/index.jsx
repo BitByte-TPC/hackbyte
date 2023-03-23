@@ -8,15 +8,15 @@ import styles from "./styles.module.scss";
 import SpeakerCard from "../../components/SpeakerCard";
 
 const SpeakersData = [
-  {
-    name: "Sandeep Jain",
-    urlname: "sandeep",
-    designation: "Founder & CEO at GeeksforGeeks",
-    linkedinHandle: "https://www.linkedin.com/in/sandeep-jain-b3940815/",
-    twitterHandle:
-      "https://twitter.com/sandeep_jain?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
-    instagramHandle: "https://www.secure.instagram.com/sandeep_gfg/",
-  },
+  // {
+  //   name: "Sandeep Jain",
+  //   urlname: "sandeep",
+  //   designation: "Founder & CEO at GeeksforGeeks",
+  //   linkedinHandle: "https://www.linkedin.com/in/sandeep-jain-b3940815/",
+  //   twitterHandle:
+  //     "https://twitter.com/sandeep_jain?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor",
+  //   instagramHandle: "https://www.secure.instagram.com/sandeep_gfg/",
+  // },
   {
     name: "Aanchal Mishra",
     urlname: "aanchal",
@@ -44,7 +44,7 @@ function Speakers() {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        <PageHeading title="SPEAKERS" subHeading="Event Speakers" />
+        <PageHeading title="SPEAKERS" subHeading="EVENT SPEAKERS" />
         <div className={styles.speakerContainer}>
           {SpeakersData.map((speaker) => (
             <SpeakerCard speaker={speaker} key={speaker.name} />
