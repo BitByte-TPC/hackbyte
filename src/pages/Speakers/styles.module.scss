@@ -71,8 +71,9 @@
 
 @media screen and (max-width: 600px){
   .wrapper{
-    max-width: 100%;
+    width: 100%;
     padding-inline: 1rem;
+    
     img{
       width: 100%;
     }
