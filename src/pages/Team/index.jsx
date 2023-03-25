@@ -32,7 +32,7 @@ const technicalTeam = [
   {
     urlname: "aksh",
     name: "Aksh Bansal",
-    position: "Technical Core Member",
+    position: "Technical Lead",
     linkedinHandle: "https://www.linkedin.com/in/aksh-bansal-0a1073200/",
     twitterHandle: "#",
     instagramHandle: "#",
@@ -41,7 +41,7 @@ const technicalTeam = [
   {
     urlname: "akshat",
     name: "Akshat Nema",
-    position: "Technical Core Member",
+    position: "Community Lead",
     linkedinHandle: "https://www.linkedin.com/in/akshat-nema/",
     twitterHandle: "#",
     instagramHandle: "#",
@@ -59,7 +59,7 @@ const technicalTeam = [
   {
     urlname: "prajjwal",
     name: "Prajjwal Kapoor",
-    position: "Technical Core Member",
+    position: "Web Lead",
     linkedinHandle: "https://www.linkedin.com/in/prajjwal-kapoor/",
     twitterHandle: "https://twitter.com/the_prajjwal",
     instagramHandle: "https://www.instagram.com/prajjwal.kapoor/",
@@ -68,7 +68,7 @@ const technicalTeam = [
   {
     urlname: "vansh",
     name: "Vansh Mittal",
-    position: "Technical Core Member",
+    position: "Web Core",
     linkedinHandle: "https://www.linkedin.com/in/vansh-mittal-21869922a/",
     twitterHandle: "https://twitter.com/mittalvansh_11",
     instagramHandle: "https://www.instagram.com/mittalvansh11/",
@@ -77,7 +77,7 @@ const technicalTeam = [
   {
     urlname: "chinmay",
     name: "Chinmay Joshi",
-    position: "Technical Core Member",
+    position: "Web Core",
     linkedinHandle: "https://www.linkedin.com/in/chinmay-r-joshi/",
     twitterHandle: "#",
     instagramHandle: "https://www.instagram.com/jawhawk160/",
@@ -135,6 +135,15 @@ const publicRelationTeam = [
     githubHandle: "https://github.com/TushirSahu",
   },
   {
+    urlname: "tushar",
+    name: "Tushar Jain",
+    position: "Event Management",
+    linkedinHandle: "https://www.linkedin.com/in/tushar-jain4/",
+    twitterHandle: "https://twitter.com/TusharJ84868317",
+    instagramHandle: "https://www.instagram.com/tushar_._4/",
+    githubHandle: "https://github.com/Tusharjain123",
+  },
+  {
     urlname: "aryan",
     name: "Aryan Sharma",
     position: "Event Management",
@@ -151,15 +160,6 @@ const publicRelationTeam = [
     twitterHandle: "https://twitter.com/raman_c27",
     instagramHandle: "https://www.instagram.com/chaudhary_raman27/",
     githubHandle: "https://github.com/ChaudharyRaman",
-  },
-  {
-    urlname: "tushar",
-    name: "Tushar Jain",
-    position: "Event Management",
-    linkedinHandle: "https://www.linkedin.com/in/tushar-jain4/",
-    twitterHandle: "https://twitter.com/TusharJ84868317",
-    instagramHandle: "https://www.instagram.com/tushar_._4/",
-    githubHandle: "https://github.com/Tusharjain123",
   },
   {
     urlname: "samyak",
