@@ -34,6 +34,23 @@
             margin-top: 0.5rem;
         }
 
+        .contact{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 0.5rem;
+            margin-top: 1rem;
+
+            .contact_num{
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 15px;
+                line-height: 22px;
+                color: #727272;
+            }
+        }
+
         .social {
             display: flex;
             justify-content: center;

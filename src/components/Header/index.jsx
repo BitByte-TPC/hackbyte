@@ -51,14 +51,14 @@ const Header = () => {
             EVENTS
           </Link>
           <Link
-            to="/prizes"
+            to="/speakers"
             onClick={() => {
               setIsMenuOpen(false);
               setActive(false);
             }}
-            style={activemenus == "/prizes" ? { color: "#fff" } : {}}
+            style={activemenus == "/speakers" ? { color: "#fff" } : {}}
           >
-            PRIZES
+            SPEAKERS
           </Link>
           <Link
             to="/sponsors"
@@ -104,10 +104,10 @@ const Header = () => {
               EVENTS
             </Link>
             <Link
-              to="/prizes"
-              style={activemenus == "/prizes" ? { color: "#fff" } : {}}
+              to="/speakers"
+              style={activemenus == "/speakers" ? { color: "#fff" } : {}}
             >
-              PRIZES
+              SPEAKERS
             </Link>
             <Link
               to="/sponsors"

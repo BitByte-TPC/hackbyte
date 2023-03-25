@@ -5,6 +5,7 @@ import Img1 from "../../assets/mailIcon.svg";
 import Img2 from "../../assets/twitterIcon.svg";
 import Img3 from "../../assets/youtubeIcon.svg";
 import Img4 from "../../assets/linkedinIcon.svg";
+import PhoneIcon from "../../assets/phone_icon.svg";
 
 const Footer = () => {
   return (
@@ -15,6 +16,10 @@ const Footer = () => {
           <h2>The Programming Club</h2>
         </div>
         <p className={styles.college}>IIIT Jabalpur</p>
+        <div className={styles.contact}>
+          <img src={PhoneIcon} alt="" />
+          <p className={styles.contact_num}>+91 8779608702</p>
+        </div>
         <div className={styles.social}>
           <a href="mailto:theprogclub@iiitdmj.ac.in">
             <img src={Img1} alt="" />
