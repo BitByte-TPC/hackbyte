@@ -1,8 +1,9 @@
 .wrapper{
-  max-width: 80%;
-  height: 100%;
-  margin: 0 auto;
-  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin: 1rem auto;
 
   .text{
     font-family: 'Poppins';
