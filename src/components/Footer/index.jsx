@@ -49,7 +49,7 @@ const Footer = () => {
           Hackathon Brouchure
         </a>
         <a href="https://hackbyte.devfolio.co/">Devfolio HackByte Page</a>
-        <a href="https://bit.ly/hackbyte-discord">Discord Link</a>
+        <a href="https://discord.gg/4696xNnJ7n">Discord Link</a>
       </div>
       <div className={styles.clubdetails}>
         <h2>TPC and BitByte</h2>

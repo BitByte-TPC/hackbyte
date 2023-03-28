@@ -125,25 +125,25 @@ const Header = () => {
         )}
         <div className={styles.navbar_right}>
           <div className={styles.discordBtn}>
-            <a href="https://bit.ly/hackbyte-discord" target="blank">
+            <a href="https://discord.gg/4696xNnJ7n" target="blank">
               <Button
                 type="secondary"
                 text="Join Discord"
                 icon={discordIcon}
                 style={{ width: "150px" }}
                 onClick={() => {
-                  window.open("https://bit.ly/hackbyte-discord", "_blank");
+                  window.open("https://discord.gg/4696xNnJ7n", "_blank");
                 }}
               />
             </a>
           </div>
           <div className={styles.discordIcon}>
-            <a href="https://bit.ly/hackbyte-discord">
+            <a href="https://discord.gg/4696xNnJ7n">
               <img
                 src={discordIcon}
                 alt=""
                 onClick={() => {
-                  window.open("https://bit.ly/hackbyte-discord", "_blank");
+                  window.open("https://discord.gg/4696xNnJ7n", "_blank");
                 }}
               />
             </a>
