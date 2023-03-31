@@ -42,7 +42,7 @@ const Event = () => {
               </div>
               <p className={styles.event}>Devfolio session</p>
               <p className={styles.link}>
-                Meet link here
+               <a href="https://youtube.com/live/nplshrJUpGQ?feature=share" className={styles.link} target="_blank"> Meet link here</a>
                 <img src={Arrow} alt="" />
               </p>
             </div>
@@ -54,7 +54,7 @@ const Event = () => {
               </div>
               <p className={styles.event}>Solana Session</p>
               <p className={styles.link}>
-                Meet link here
+               <a href="https://youtube.com/live/uWicCiC86yE?feature=share" className={styles.link} target="_blank"> Meet link here</a>
                 <img src={Arrow} alt="" />
               </p>
             </div>
@@ -66,7 +66,7 @@ const Event = () => {
               </div>
               <p className={styles.event}>Replit Session</p>
               <p className={styles.link}>
-                Meet link here
+                <a href="https://youtube.com/live/W0IwvSm2qz8?feature=share" className={styles.link} target="_blank"> Meet link here</a>
                 <img src={Arrow} alt="" />
               </p>
             </div>
