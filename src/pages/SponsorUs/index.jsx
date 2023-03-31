@@ -11,6 +11,8 @@ import polygonLogo from "../../assets/Polygon_Logo.svg";
 import solanaLogo from "../../assets/Solana_Logo.svg";
 import beeceptorLogo from "../../assets/Beeceptor_Logo.svg";
 import fuelerLogo from "../../assets/Fueler_Logo.svg";
+import neuneticsLogo from "../../assets/Neunetics_Logo.svg";
+import verbwireLogo from "../../assets/Verbwire_Logo.svg";
 import fileCoinLogo from "../../assets/Filecoin_Logo.svg";
 import eduBardLogo from "../../assets/Edubard_Logo.png";
 import Footer from "../../components/Footer";
@@ -64,6 +66,9 @@ const SponsorUs = () => {
             <a href="https://filecoin.io/">
               <img src={fileCoinLogo} />
             </a>
+            <a href="https://www.verbwire.com/">
+              <img src={verbwireLogo} />
+            </a>
           </div>
         </div>
         <div className={styles.sponsors}>
@@ -73,6 +78,9 @@ const SponsorUs = () => {
           <div className={styles.links}>
             <a href="https://fueler.io/">
               <img src={fuelerLogo} />
+            </a>
+            <a href="https://neunetics.com/">
+              <img src={neuneticsLogo} />
             </a>
           </div>
         </div>

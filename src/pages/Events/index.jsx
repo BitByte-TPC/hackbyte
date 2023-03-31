@@ -41,10 +41,13 @@ const Event = () => {
                 <h2>1st April, 11:30AM</h2>
               </div>
               <p className={styles.event}>Devfolio session</p>
-              <p className={styles.link}>
+              <a
+                href="https://meet.google.com/ywe-gtpp-zga?hs=224"
+                className={styles.link}
+              >
                 Meet link here
                 <img src={Arrow} alt="" />
-              </p>
+              </a>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
@@ -53,10 +56,13 @@ const Event = () => {
                 <h2>1st April, 6:00PM</h2>
               </div>
               <p className={styles.event}>Solana Session</p>
-              <p className={styles.link}>
+              <a
+                href="https://meet.google.com/caz-bsxc-ixd?hs=224"
+                className={styles.link}
+              >
                 Meet link here
                 <img src={Arrow} alt="" />
-              </p>
+              </a>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
@@ -65,10 +71,13 @@ const Event = () => {
                 <h2>1st April, 6:30PM</h2>
               </div>
               <p className={styles.event}>Replit Session</p>
-              <p className={styles.link}>
+              <a
+                href="https://meet.google.com/bgr-tjgf-gss?hs=224"
+                className={styles.link}
+              >
                 Meet link here
                 <img src={Arrow} alt="" />
-              </p>
+              </a>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
