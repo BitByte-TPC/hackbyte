@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import styles from "./styles.module.scss";
-import Poster from "../../assets/Sandeep_Jain_Poster.svg";
+import Poster from "../../assets/Sandeep_Jain_Poster.webp";
 import PageHeading from "../../components/PageHeading";
 import Header from "../../components/Header";
 import PageContainer from "../../components/PageContainer";
