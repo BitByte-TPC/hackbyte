@@ -41,13 +41,17 @@ const Event = () => {
                 <h2>1st April, 11:30AM</h2>
               </div>
               <p className={styles.event}>Devfolio session</p>
-              <a
-                href="https://meet.google.com/ywe-gtpp-zga?hs=224"
-                className={styles.link}
-              >
-                Meet link here
+              <p className={styles.link}>
+                <a
+                  href="https://youtube.com/live/nplshrJUpGQ?feature=share"
+                  className={styles.link}
+                  target="_blank"
+                >
+                  {" "}
+                  Meet link here
+                </a>
                 <img src={Arrow} alt="" />
-              </a>
+              </p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
@@ -56,13 +60,17 @@ const Event = () => {
                 <h2>1st April, 6:00PM</h2>
               </div>
               <p className={styles.event}>Solana Session</p>
-              <a
-                href="https://meet.google.com/caz-bsxc-ixd?hs=224"
-                className={styles.link}
-              >
-                Meet link here
+              <p className={styles.link}>
+                <a
+                  href="https://youtube.com/live/uWicCiC86yE?feature=share"
+                  className={styles.link}
+                  target="_blank"
+                >
+                  {" "}
+                  Meet link here
+                </a>
                 <img src={Arrow} alt="" />
-              </a>
+              </p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
@@ -71,13 +79,17 @@ const Event = () => {
                 <h2>1st April, 6:30PM</h2>
               </div>
               <p className={styles.event}>Replit Session</p>
-              <a
-                href="https://meet.google.com/bgr-tjgf-gss?hs=224"
-                className={styles.link}
-              >
-                Meet link here
+              <p className={styles.link}>
+                <a
+                  href="https://youtube.com/live/W0IwvSm2qz8?feature=share"
+                  className={styles.link}
+                  target="_blank"
+                >
+                  {" "}
+                  Meet link here
+                </a>
                 <img src={Arrow} alt="" />
-              </a>
+              </p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
