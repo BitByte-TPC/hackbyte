@@ -50,6 +50,9 @@ const SponsorUs = () => {
             <a href="https://beeceptor.com/">
               <img src={beeceptorLogo} />
             </a>
+            <a href="https://www.verbwire.com/">
+              <img src={verbwireLogo} />
+            </a>
           </div>
         </div>
         <div className={styles.sponsors}>
@@ -65,9 +68,6 @@ const SponsorUs = () => {
             </a>
             <a href="https://filecoin.io/">
               <img src={fileCoinLogo} />
-            </a>
-            <a href="https://www.verbwire.com/">
-              <img src={verbwireLogo} />
             </a>
           </div>
         </div>

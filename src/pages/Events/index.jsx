@@ -41,10 +41,14 @@ const Event = () => {
                 <h2>1st April, 11:30AM</h2>
               </div>
               <p className={styles.event}>Devfolio session</p>
-              <p className={styles.link}>
-              <a href="https://youtube.com/live/nplshrJUpGQ?feature=share" className={styles.link} target="_blank"> Meet link here</a>
+              <a
+                href="https://youtube.com/live/nplshrJUpGQ?feature=share"
+                className={styles.link}
+                target="_blank"
+              >
+                Meet link here
                 <img src={Arrow} alt="" />
-              </p>
+              </a>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
@@ -53,10 +57,15 @@ const Event = () => {
                 <h2>1st April, 6:00PM</h2>
               </div>
               <p className={styles.event}>Solana Session</p>
-              <p className={styles.link}>
-              <a href="https://youtube.com/live/uWicCiC86yE?feature=share" className={styles.link} target="_blank"> Meet link here</a>
+              <a
+                href="https://youtube.com/live/uWicCiC86yE?feature=share"
+                className={styles.link}
+                target="_blank"
+              >
+                {" "}
+                Meet link here
                 <img src={Arrow} alt="" />
-              </p>
+              </a>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
@@ -65,10 +74,15 @@ const Event = () => {
                 <h2>1st April, 6:30PM</h2>
               </div>
               <p className={styles.event}>Replit Session</p>
-              <p className={styles.link}>
-              <a href="https://youtube.com/live/W0IwvSm2qz8?feature=share" className={styles.link} target="_blank"> Meet link here</a>
+              <a
+                href="https://youtube.com/live/W0IwvSm2qz8?feature=share"
+                className={styles.link}
+                target="_blank"
+              >
+                {" "}
+                Meet link here
                 <img src={Arrow} alt="" />
-              </p>
+              </a>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>

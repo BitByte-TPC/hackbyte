@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "./styles.module.scss";
 import Logo from "../../assets/logo.png";
+import { Link } from "react-router-dom";
 import Img1 from "../../assets/mailIcon.svg";
 import Img2 from "../../assets/twitterIcon.svg";
 import Img3 from "../../assets/youtubeIcon.svg";
@@ -37,11 +38,11 @@ const Footer = () => {
       </div>
       <div className={styles.site}>
         <h2>HackByte</h2>
-        <a href="/about">About hackathon</a>
-        <a href="/sponsors">Our Sponsors</a>
-        <a href="/prizes">Prizes and Perks</a>
-        <a href="/events">Timeline and Events</a>
-        <a href="/team">Team behind this</a>
+        <Link to="/about">About hackathon</Link>
+        <Link to="/sponsors">Our Sponsors</Link>
+        <Link to="/prizes">Prizes and Perks</Link>
+        <Link to="/events">Timeline and Events</Link>
+        <Link to="/team">Team behind this</Link>
       </div>
       <div className={styles.resources}>
         <h2>Resources and Links</h2>
