@@ -77,7 +77,7 @@ const Event = () => {
               </div>
               <p className={styles.event}>API 101 Postman session</p>
               <p className={styles.name}>
-                By Aanchal Mishra(Developer Advocate, Postman)
+                By Aanchal Mishra, Developer Advocate, Postman
               </p>
             </div>
           </div>
@@ -86,7 +86,7 @@ const Event = () => {
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
                 <h2>8th April, 7:30PM-8:00PM</h2>
               </div>
-              <p className={styles.event}>No Light Events</p>
+              <p className={styles.event}>No Light Event</p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
@@ -95,7 +95,9 @@ const Event = () => {
                 <h2>9th April, 10:30AM-1:00PM</h2>
               </div>
               <p className={styles.event}>Startup Diaries</p>
-              <p className={styles.name}>By Sandeep Jain</p>
+              <p className={styles.name}>
+                By Sandeep Jain, Founder of GeeksforGeeks
+              </p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
@@ -116,7 +118,9 @@ const Event = () => {
                 <h2>9th April, 6:00PM-7:30PM</h2>
               </div>
               <p className={styles.event}>Facebook Developer Club Session</p>
-              <p className={styles.name}>By Mrinal Jain</p>
+              <p className={styles.name}>
+                By Mrinal Jain, Community Manager at Facebook
+              </p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
