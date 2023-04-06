@@ -1,9 +1,5 @@
-import Header from "../../components/Header";
-import PageHeading from "../../components/PageHeading";
 import Accordian from "../../components/Accordion";
 import styles from "./styles.module.scss";
-import PageContainer from "../../components/PageContainer";
-import { motion } from "framer-motion";
 
 const FAQ = () => {
   const data = [
@@ -29,7 +25,7 @@ const FAQ = () => {
     {
       title: "Can I form a team for HackByte?",
       content:
-        "Yes, participants are welcome to form teams for the hackathon. Team size can vary, but usually, teams consist of 1-3 members.",
+        "Yes, participants are welcome to form teams for the hackathon. Team size can vary, but usually, teams consist of 1-4 members.",
     },
     {
       title: "Is Hackbyte online or offline?",

@@ -1,4 +1,4 @@
-import React,{memo} from "react";
+import React, { memo } from "react";
 import { useRef, useState, useEffect } from "react";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
 import {
@@ -8,16 +8,16 @@ import {
   Sparkles,
   Cloud,
 } from "@react-three/drei";
-import cloud from "../../assets/cloud.png";
-import maptexture from "../../assets/textures/earth.jpg";
-import disptexture from "../../assets/textures/disp2.jpg";
+import cloud from "../../assets/cloud.webp";
+import maptexture from "../../assets/textures/earth.webp";
+import disptexture from "../../assets/textures/disp.webp";
 import styles from "./styles.module.scss";
 import { AdditiveBlending, BackSide, Vector3 } from "three";
 import gsap from "gsap";
 
-function CloudMain({onHome, cloudOpacity}){
+function CloudMain({ onHome, cloudOpacity }) {
   const state = useThree();
-  useEffect(()=>{
+  useEffect(() => {
     if (onHome) {
       state.camera.position.set(15, 15, 15);
       gsap.to(state.camera.position, {
@@ -31,15 +31,10 @@ function CloudMain({onHome, cloudOpacity}){
     } else {
       state.camera.position.set(0, 0, 7);
     }
-  },[onHome])
-  
+  }, [onHome]);
+
   return (
-    <Cloud
-      speed={1}
-      opacity={cloudOpacity}
-      texture={cloud}
-      color="696969"
-    />
+    <Cloud speed={1} opacity={cloudOpacity} texture={cloud} color="#696969" />
   );
 }
 
@@ -87,9 +82,7 @@ function CanvasThree({ setIsLoading, onHome }) {
 
     return (
       <group ref={sph}>
-        <Sphere
-          args={[Radius1, 100, 100]}
-        >
+        <Sphere args={[Radius1, 100, 100]}>
           <shaderMaterial
             vertexShader={vertexShader}
             side={BackSide}
@@ -116,7 +109,9 @@ function CanvasThree({ setIsLoading, onHome }) {
       className={styles.canvas}
       ref={canvasRef}
       camera={{ position: [15, 15, 15] }}
-      onCreated={()=>{setIsLoading(false)}}
+      onCreated={() => {
+        setIsLoading(false);
+      }}
     >
       <Sparkles count={250} scale={[30, 30, 30]} size={2} speed={2.5} />
       <directionalLight position={[2, -5, 7]} intensity={1} />

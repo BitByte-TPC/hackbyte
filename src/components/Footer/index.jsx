@@ -42,10 +42,12 @@ const Footer = () => {
         <Link to="/sponsors">Our Sponsors</Link>
         <Link to="/prizes">Prizes and Perks</Link>
         <Link to="/events">Timeline and Events</Link>
-        <Link to="/team">Team behind this</Link>
       </div>
       <div className={styles.resources}>
         <h2>Resources and Links</h2>
+        <a href="https://docs.google.com/document/d/1jQTyncuzg4cUZ3YoPSrLcQQlbJAHhehjxP2dRAE0RHY/edit">
+          Code of Conduct
+        </a>
         <a href="https://drive.google.com/file/d/1PvgeaNBSaISvDuUwTH_Cs0JPSi-8EzBG/view">
           Hackathon Brouchure
         </a>
@@ -57,7 +59,7 @@ const Footer = () => {
         <a href="https://www.iiitdmj.ac.in/webix.iiitdmj.ac.in/#/">
           TPC Website
         </a>
-        <a href="/team">Team behind all this</a>
+        <Link to="/team">Team behind all this</Link>
         <a href="https://www.iiitdmj.ac.in/">About IIIT Jabalpur</a>
       </div>
     </div>
