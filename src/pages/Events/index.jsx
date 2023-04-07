@@ -62,15 +62,26 @@ const Event = () => {
           <div className={`${styles.container} ${styles.left}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>8th April, 11:00AM-12:00PM</h2>
+                <h2>8th April, 11:00AM-11:30AM</h2>
               </div>
               <p className={styles.event}>How to win Hackathons?</p>
               <p className={styles.name}>
-                Session by Mr Abhishek Srivastav, Winner of S.I.H
+                Session by Mr Abhishek Srivastava, Winner of S.I.H
               </p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
+            <div className={styles.content}>
+              <div className={styles.date} style={{ background: "#7B4C4C" }}>
+                <h2>8th April, 11:30AM-12:00PM</h2>
+              </div>
+              <p className={styles.event}>Importance of Diversity in STEM</p>
+              <p className={styles.name}>
+                Session by Arni Khare, Founding President of GirlUp Jabalpur
+              </p>
+            </div>
+          </div>
+          <div className={`${styles.container} ${styles.left}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
                 <h2>8th April, 3:00PM-5:00PM</h2>
@@ -81,7 +92,7 @@ const Event = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.left}`}>
+          <div className={`${styles.container} ${styles.right}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
                 <h2>8th April, 7:30PM-8:00PM</h2>
@@ -89,7 +100,7 @@ const Event = () => {
               <p className={styles.event}>No Light Event</p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.right}`}>
+          <div className={`${styles.container} ${styles.left}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
                 <h2>9th April, 10:30AM-1:00PM</h2>
@@ -100,7 +111,7 @@ const Event = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.left}`}>
+          <div className={`${styles.container} ${styles.right}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
                 <h2>9th April, 3:00PM-6:00PM</h2>
@@ -112,7 +123,7 @@ const Event = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.right}`}>
+          <div className={`${styles.container} ${styles.left}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
                 <h2>9th April, 6:00PM-7:30PM</h2>
@@ -123,7 +134,7 @@ const Event = () => {
               </p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.left}`}>
+          <div className={`${styles.container} ${styles.right}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
                 <h2>9th April, 7:30PM-8:00PM</h2>
@@ -131,7 +142,7 @@ const Event = () => {
               <p className={styles.event}>HACKBYTE Closing Ceremony</p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.right} ${styles.last}`}>
+          <div className={`${styles.container} ${styles.left} ${styles.last}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
                 <h2>15th April</h2>
