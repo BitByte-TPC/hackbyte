@@ -26,35 +26,23 @@ const Event = () => {
           <div className={`${styles.container} ${styles.right}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#4C4C7B" }}>
-                <h2>10th March</h2>
+                <h2>1st March (tentative)</h2>
               </div>
-              <p className={styles.event}>REGISTRATION BEGINS</p>
-              <a href="https://hackbyte.devfolio.co/" className={styles.link}>
-                Register here
-                <img src={Arrow} alt="" />
-              </a>
+              <p className={styles.event}>ROUND 1 BEGINS</p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.left}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>1st April, 12:30PM</h2>
+                <h2>1Oth March (tentative)</h2>
               </div>
-              <p className={styles.event}>Devfolio session</p>
-              <a
-                href="https://www.youtube.com/live/qlzZOl43xRs?feature=share"
-                className={styles.link}
-                target="_blank"
-              >
-                Meet link here
-                <img src={Arrow} alt="" />
-              </a>
+              <p className={styles.event}>ROUND 1 RESULT</p>
             </div>
           </div>
           <div className={`${styles.container} ${styles.right}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>7th April, 4:30PM</h2>
+                <h2>5th April (tentative)</h2>
               </div>
               <p className={styles.event}>HACKBYTE Opening Ceremony</p>
             </div>
@@ -62,59 +50,15 @@ const Event = () => {
           <div className={`${styles.container} ${styles.left}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>8th April, 11:00AM-11:30AM</h2>
-              </div>
-              <p className={styles.event}>How to win Hackathons?</p>
-              <p className={styles.name}>
-                Session by Mr Abhishek Srivastava, Winner of S.I.H
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.container} ${styles.right}`}>
-            <div className={styles.content}>
-              <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>8th April, 11:30AM-12:00PM</h2>
-              </div>
-              <p className={styles.event}>Importance of Diversity in STEM</p>
-              <p className={styles.name}>
-                Session by Arni Khare, Founding President of GirlUp Jabalpur
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.container} ${styles.left}`}>
-            <div className={styles.content}>
-              <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>8th April, 3:00PM-5:00PM</h2>
-              </div>
-              <p className={styles.event}>API 101 Postman session</p>
-              <p className={styles.name}>
-                By Aanchal Mishra, Developer Advocate, Postman
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.container} ${styles.right}`}>
-            <div className={styles.content}>
-              <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>8th April, 7:30PM-8:00PM</h2>
+                <h2>6th April (tentative)</h2>
               </div>
               <p className={styles.event}>No Light Event</p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.left}`}>
-            <div className={styles.content}>
-              <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>9th April, 10:30AM-1:00PM</h2>
-              </div>
-              <p className={styles.event}>Startup Diaries</p>
-              <p className={styles.name}>
-                By Sandeep Jain, Founder of GeeksforGeeks
-              </p>
-            </div>
-          </div>
           <div className={`${styles.container} ${styles.right}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>9th April, 3:00PM-6:00PM</h2>
+                <h2>7th April (tentative)</h2>
               </div>
               <p className={styles.event}>PitchByte</p>
               <p className={styles.description}>
@@ -125,27 +69,16 @@ const Event = () => {
           </div>
           <div className={`${styles.container} ${styles.left}`}>
             <div className={styles.content}>
-              <div className={styles.date} style={{ background: "#4C7B5C" }}>
-                <h2>9th April, 6:00PM-7:30PM</h2>
-              </div>
-              <p className={styles.event}>Facebook Developer Club Session</p>
-              <p className={styles.name}>
-                By Mrinal Jain, Community Manager at Facebook
-              </p>
-            </div>
-          </div>
-          <div className={`${styles.container} ${styles.right}`}>
-            <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>9th April, 7:30PM-8:00PM</h2>
+                <h2>7th April (tentative)</h2>
               </div>
               <p className={styles.event}>HACKBYTE Closing Ceremony</p>
             </div>
           </div>
-          <div className={`${styles.container} ${styles.left} ${styles.last}`}>
+          <div className={`${styles.container} ${styles.right} ${styles.last}`}>
             <div className={styles.content}>
               <div className={styles.date} style={{ background: "#7B4C4C" }}>
-                <h2>15th April</h2>
+                <h2>15th April (tentative)</h2>
               </div>
               <p className={styles.event}>Results Announcment</p>
             </div>
@@ -155,7 +88,7 @@ const Event = () => {
         <div className={styles.results}>
           <div className={styles.content}>
             <div className={styles.date} style={{ background: "#4C4C7B" }}>
-              <h2>15th April</h2>
+              <h2>15th April (tentative)</h2>
             </div>
             <p className={styles.event}>Results Announcment</p>
           </div>

@@ -4,39 +4,45 @@ import styles from "./styles.module.scss";
 const FAQ = () => {
   const data = [
     {
-      title: "What is HackByte?",
+      title: "How many team members do I need ?",
       content:
-        "HackByte is an annual student-run hackathon organized by The Programming Club at IIIT JABALPUR. The event brings together developers and problem solvers from diverse backgrounds to collaborate on innovative projects, providing a unique and challenging learning experience for participants.",
+        "You can participate individually or in teams of 3 to 5 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
     },
     {
-      title: "When and where will HackByte be held",
-      content: "HackByte will be held on 7th-9th April at IIITDM Jabalpur.",
+      title: "Will the Hackathon be in person or online ?",
+      content: "The Status Code 0 hackathon will be conducted in complete offline/in person mode.",
     },
     {
-      title: "Who can participate in HackByte?",
+      title: "How much are the participation fees?",
       content:
-        " HackByte is open to all individuals, including students, developers, and problem solvers from diverse backgrounds. The event is designed to be inclusive, and we welcome participation from individuals of all skill levels. The hackathon will be held in both online and offline mode, providing flexibility and accessibility for all participants, regardless of location.",
+        "Participation is absolutely free inclusive of resources.",
     },
     {
-      title: "How do I register for HackByte?",
+      title: "What are the prerequisites to participate in this hackathon ?",
       content:
-        "You can register for HackByte by visiting the event website and filling out the devfolio RSVP form. Additional information and instructions is provided on the website regarding this.",
+        "No prerequisites are required to participate in this hackathon. This event is open to participants of all skill levels.",
     },
     {
-      title: "Can I form a team for HackByte?",
+      title: "How do I register ?",
       content:
-        "Yes, participants are welcome to form teams for the hackathon. Team size can vary, but usually, teams consist of 1-4 members.",
+        "Register your team @ Devfolio",
     },
     {
-      title: "Is Hackbyte online or offline?",
+      title: "What is the venue for Status Code 0 ?",
       content:
-        "Hackbyte is a hybrid hackathon, so you can also participate online by submitting your project via Devfolio",
+        "Computer Center, IIITDM Jabalpur.",
     },
     {
       title:
-        " What kind of support is offered to participants during HackByte?",
+        "Is the food and accommodation provided free of charge or are there any associated costs ?",
       content:
-        " Participants will have access to workshops, mentorship sessions, and networking opportunities with industry professionals and developer communities from around the world. Additionally, participants will have access to internet and other resources during the event.",
+        "We've got you covered when it comes to food, water, and coffee – they're on us. However, any additional snacks can be purchased separately. As for accommodation, we will provide arrangements similar to those found in other hackathons, which typically involve a set of mattresses in a common hall.",
+    },
+    {
+      title:
+        "Can my friend join our team after we have already submitted the application for review ?",
+      content:
+        "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team. For more information, please refer to devfolio's guide: How To Add Team Members.",
     },
   ];
 

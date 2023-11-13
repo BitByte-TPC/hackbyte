@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./styles.module.scss";
-import heading from "../../assets/headingText.svg";
+import heading from "../../assets/headingText.png";
 import { motion } from "framer-motion";
 
 export const HeroSection = () => {
@@ -24,14 +24,6 @@ export const HeroSection = () => {
     >
       <img src={heading} alt="heading" className={styles.heading} />
       <p className={styles.heroSubText}>WE THINK TO INNOVATE</p>
-      <div className={styles.cta}>
-        <div
-          className={`apply-button`}
-          data-hackathon-slug="hackbyte"
-          data-button-theme="dark-inverted"
-          style={{ height: "44px", width: "15rem" }}
-        ></div>
-      </div>
     </motion.div>
   );
 };

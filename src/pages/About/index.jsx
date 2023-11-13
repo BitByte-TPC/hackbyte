@@ -24,8 +24,8 @@ const About = () => {
         <PageHeading title="ABOUT" subHeading="What is Hackbyte?" />
         <div className={styles.content}>
           <p className={styles.text}>
-            Hackbyte is the annual hackathon of IIIT Jabalpur taking place from
-            <span className={styles.detail}> 7th to 9th April</span> and is
+            Hackbyte is the annual hackathon of IIIT Jabalpur taking place in
+            <span className={styles.detail}> April(tentative)</span> and is
             organised by{" "}
             <span className={styles.detail}> The Programming Club (TPC)</span>{" "}
             run by students of our institute. This will bring together
@@ -48,43 +48,6 @@ const About = () => {
                 opportunities for participants to connect with industry
                 professionals and developer communities from around the world.
               </p>
-            </div>
-          </div>
-        </div>
-        <div className={styles.gallery}>
-          <p className={styles.heading}>Past Events Gallery</p>
-          <div className={styles.photos}>
-            <div className={styles.photo}>
-              <LazyLoadImage
-                src={Photo_1}
-                alt=""
-                effect="blur"
-                placeholderSrc={Photo_1}
-              />
-            </div>
-            <div className={styles.photo}>
-              <LazyLoadImage
-                src={Photo_2}
-                alt=""
-                effect="blur"
-                placeholderSrc={Photo_2}
-              />
-            </div>
-            <div className={styles.photo}>
-              <LazyLoadImage
-                src={Photo_3}
-                alt=""
-                effect="blur"
-                placeholderSrc={Photo_3}
-              />
-            </div>
-            <div className={styles.photo}>
-              <LazyLoadImage
-                src={Photo_4}
-                alt=""
-                effect="blur"
-                placeholderSrc={Photo_4}
-              />
             </div>
           </div>
         </div>
