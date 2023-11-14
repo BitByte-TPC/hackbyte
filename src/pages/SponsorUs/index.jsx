@@ -26,7 +26,7 @@ const SponsorUs = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        <PageHeading title="SPONSOR" subHeading="HACKBYTE SPONSORS" />
+        <PageHeading title="SPONSOR" subHeading="PAST HACKBYTE SPONSORS" />
         <div className={styles.content}>
           <p className={styles.text}>
             We are excited to announce that we have onboarded leading sponsors

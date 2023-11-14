@@ -63,51 +63,6 @@
   }
 }
 
-.gallery {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin: 4rem 0 2rem 0;
-  border-radius: 10px;
-  padding: 10px;
-
-  .heading {
-    font-family: "Lato";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 60px;
-    letter-spacing: 0.15em;
-    text-align: center;
-    color: rgba(255, 255, 255, 0.6);
-  }
-
-  .photos {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    row-gap: 40px;
-    column-gap: 60px;
-    border-radius: 10px;
-    margin-top: 2rem;
-
-    .photo {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border: 2px solid rgba(255, 255, 255, 0.4);
-      border-radius: 10px;
-      padding: 8px;
-
-      img {
-        width: 24rem;
-        height: 18rem;
-        border-radius: 8px;
-      }
-    }
-  }
-}
-
 .faq {
   display: flex;
   flex-direction: column;

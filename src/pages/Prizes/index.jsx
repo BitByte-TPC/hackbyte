@@ -23,13 +23,13 @@ const Prizes = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3, duration: 0.7 }}
       >
-        <PageHeading title="PRIZES" subHeading="What you can get" />
+        <PageHeading title="PRIZES" subHeading="Discover our past prizes" />
         <div className={styles.wrapper}>
           <p className={styles.heading}>Prize Pool Worth</p>
           <p className={styles.prizepool}>₹ 4 Lakhs +</p>
 
           <div className={styles.sponsors}>
-            <p className={styles.header}>Prizes by our sponsors</p>
+            <p className={styles.header}>Past Prizes from our sponsors</p>
             <div className={styles.prizeSection}>
               <div className={styles.prizeCard}>
                 <img src={prizeTag} className={styles.tag} />
