@@ -5,15 +5,15 @@ import styles from "./styles.module.scss";
 import PageHeading from "../../components/PageHeading";
 import PageContainer from "../../components/PageContainer";
 import Footer from "../../components/Footer";
-import img1 from "../../assets/gallery/img1.jpg";
-import img2 from "../../assets/gallery/img2.jpg";
-import img3 from "../../assets/gallery/img3.jpg";
-import img4 from "../../assets/gallery/img4.jpg";
-import img6 from "../../assets/gallery/img6.jpg";
-import img7 from "../../assets/gallery/img7.jpg";
-import img9 from "../../assets/gallery/img9.jpg";
-import img11 from "../../assets/gallery/img11.jpg";
-import img13 from "../../assets/gallery/img13.jpg";
+import img1 from "../../assets/gallery/img1.webp";
+import img2 from "../../assets/gallery/img2.webp";
+import img3 from "../../assets/gallery/img3.webp";
+import img4 from "../../assets/gallery/img4.webp";
+import img6 from "../../assets/gallery/img6.webp";
+import img7 from "../../assets/gallery/img7.webp";
+import img9 from "../../assets/gallery/img9.webp";
+import img11 from "../../assets/gallery/img11.webp";
+import img13 from "../../assets/gallery/img13.webp";
 
 const Gallery = () => {
   return (
