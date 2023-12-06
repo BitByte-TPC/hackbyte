@@ -14,6 +14,7 @@ import img7 from "../../assets/gallery/img7.webp";
 import img9 from "../../assets/gallery/img9.webp";
 import img11 from "../../assets/gallery/img11.webp";
 import img13 from "../../assets/gallery/img13.webp";
+import banner from "../../assets/gallery/banner.webp";
 
 const Gallery = () => {
   return (
@@ -68,6 +69,18 @@ const Gallery = () => {
                 <img src={img2} alt="" />
               </div>
             </div>
+          </div>
+        </div>
+
+        <div className={styles.title}>
+          <h2>
+            COMMITTEE <span>CREW</span>
+          </h2>
+        </div>
+
+        <div className={styles.bannercontainer}>
+          <div className={styles.banner}>
+            <img src={banner} alt="" />
           </div>
         </div>
         <Footer />
