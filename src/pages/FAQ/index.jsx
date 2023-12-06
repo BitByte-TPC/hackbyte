@@ -10,7 +10,7 @@ const FAQ = () => {
     },
     {
       title: "Will the Hackathon be in person or online ?",
-      content: "The Status Code 0 hackathon will be conducted in complete offline/in person mode.",
+      content: "HackByte will be conducted in complete offline/in person mode.",
     },
     {
       title: "How much are the participation fees?",
@@ -25,10 +25,10 @@ const FAQ = () => {
     {
       title: "How do I register ?",
       content:
-        "Register your team @ Devfolio",
+        "Pre-registration will be opening in January 2024",
     },
     {
-      title: "What is the venue for Status Code 0 ?",
+      title: "What is the venue for HackByte 2.0 ?",
       content:
         "Computer Center, IIITDM Jabalpur.",
     },
@@ -42,7 +42,7 @@ const FAQ = () => {
       title:
         "Can my friend join our team after we have already submitted the application for review ?",
       content:
-        "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team. For more information, please refer to devfolio's guide: How To Add Team Members.",
+        "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team.",
     },
   ];
 
