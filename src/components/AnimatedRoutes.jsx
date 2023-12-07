@@ -8,6 +8,7 @@ import SponsorUs from "../pages/SponsorUs";
 import Team from "../pages/Team";
 import NotFound from "../pages/NotFound";
 import OfflineRegistration from "../pages/OfflineRegistration";
+import Gallery from "../pages/Gallery";
 
 export const AnimatedRoutes = () => {
   const location = useLocation();
@@ -17,6 +18,7 @@ export const AnimatedRoutes = () => {
         <Route path="/" element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="events" element={<Events />} />
+        <Route path="gallery" element={<Gallery />} />
         <Route path="prizes" element={<Prizes />} />
         <Route path="sponsors" element={<SponsorUs />} />
         <Route path="offline-registration" element={<OfflineRegistration />} />
