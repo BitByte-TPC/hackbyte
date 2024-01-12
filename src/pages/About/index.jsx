@@ -2,11 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import Header from "../../components/Header";
 import styles from "./styles.module.scss";
-import Photo_1 from "../../assets/Photo-1.webp";
-import Photo_2 from "../../assets/Photo-2.webp";
-import Photo_3 from "../../assets/Photo-3.webp";
-import Photo_4 from "../../assets/Photo-4.webp";
-import { LazyLoadImage } from "react-lazy-load-image-component";
 import PageHeading from "../../components/PageHeading";
 import PageContainer from "../../components/PageContainer";
 import Footer from "../../components/Footer";
@@ -35,12 +30,17 @@ const About = () => {
             opportunity to work with the latest technologies and expand their
             skills.
           </p>
-          <div className={styles.newsletter}>
+          <div
+            className={styles.newsletter}
+            onLoad={() => {
+              document;
+            }}
+          >
             <iframe
               src="https://bitbyte.substack.com/embed"
               width="480"
               height="150"
-              style={{ border: "1px solid #EEE" }}
+              style={{ background: "transparent" }}
               frameBorder="0"
               scrolling="no"
             ></iframe>

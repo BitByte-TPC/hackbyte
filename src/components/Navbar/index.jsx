@@ -5,12 +5,7 @@ import styles from "./styles.module.scss";
 const Navbar = () => {
   return (
     <div className={styles.container}>
-      <Link
-        to="/"
-        style={{
-          color: "#fff",
-        }}
-      >
+      <Link to="/" style={{ color: "#fff" }}>
         HOME
       </Link>
       <Link to="/about">ABOUT</Link>

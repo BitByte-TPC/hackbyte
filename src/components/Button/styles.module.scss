@@ -14,10 +14,12 @@
   border: none;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
+
   img {
     width: 20px;
     height: 20px;
   }
+
   span {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -26,6 +28,7 @@
     letter-spacing: 0em;
     text-align: left;
   }
+
   &:hover {
     transform: translateY(-2px);
   }
@@ -47,10 +50,12 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.2s ease-in-out;
+
   img {
     width: 20px;
     height: 20px;
   }
+
   span {
     font-family: "Inter", sans-serif;
     font-size: 16px;
@@ -59,6 +64,7 @@
     letter-spacing: 0em;
     text-align: left;
   }
+
   &:hover {
     transform: translateY(-2px);
   }
@@ -70,6 +76,7 @@
       width: 20px;
       height: 20px;
     }
+
     span {
       font-size: 14px;
       line-height: 16px;
