@@ -19,19 +19,19 @@ const Footer = () => {
         <p className={styles.college}>IIIT Jabalpur</p>
         <div className={styles.contact}>
           <img src={PhoneIcon} alt="" />
-          <p className={styles.contact_num}>+91 8779608702</p>
+          <p className={styles.contact_num}>+91 89498 47292</p>
         </div>
         <div className={styles.social}>
           <a href="mailto:theprogclub@iiitdmj.ac.in">
             <img src={Img1} alt="" />
           </a>
-          <a href="https://twitter.com/HackbyteTPC">
+          <a href="https://twitter.com/BitByte_IIITDMJ" target="_blank">
             <img src={Img2} alt="" />
           </a>
-          <a href="https://www.youtube.com/@theprogrammingclubiiitdmj6156">
+          <a href="https://www.youtube.com/channel/UCJl5pJUMxHzypPk9j40-2pg" target="_blank">
             <img src={Img3} alt="" />
           </a>
-          <a href="https://www.linkedin.com/company/bitbyte-tpc/">
+          <a href="https://www.linkedin.com/company/bitbyte-tpc/" target="_blank" >
             <img src={Img4} alt="" />
           </a>
         </div>
@@ -45,22 +45,22 @@ const Footer = () => {
       </div>
       <div className={styles.resources}>
         <h2>Resources and Links</h2>
-        <a href="https://docs.google.com/document/d/1jQTyncuzg4cUZ3YoPSrLcQQlbJAHhehjxP2dRAE0RHY/edit">
+        <a href="https://docs.google.com/document/d/1jQTyncuzg4cUZ3YoPSrLcQQlbJAHhehjxP2dRAE0RHY/edit" target="_blank">
           Code of Conduct
         </a>
-        <a href="https://drive.google.com/file/d/1PvgeaNBSaISvDuUwTH_Cs0JPSi-8EzBG/view">
+        <a href="https://drive.google.com/file/d/1PvgeaNBSaISvDuUwTH_Cs0JPSi-8EzBG/view" target="_blank">
           Hackathon Brouchure
         </a>
-        <a href="https://hackbyte.devfolio.co/">Devfolio HackByte Page</a>
-        <a href="https://discord.gg/4696xNnJ7n">Discord Link</a>
+        <a href="https://hackbyte.devfolio.co/" target="_blank">Devfolio HackByte Page</a>
+        <a href="https://discord.gg/4696xNnJ7n" target="_blank">Discord Link</a>
       </div>
       <div className={styles.clubdetails}>
         <h2>TPC and BitByte</h2>
-        <a href="https://www.iiitdmj.ac.in/webix.iiitdmj.ac.in/#/">
+        <a href="https://www.iiitdmj.ac.in/webix.iiitdmj.ac.in/#/" target="_blank">
           TPC Website
         </a>
         <Link to="/team">Team behind all this</Link>
-        <a href="https://www.iiitdmj.ac.in/">About IIIT Jabalpur</a>
+        <a href="https://www.iiitdmj.ac.in/" target="_blank">About IIIT Jabalpur</a>
       </div>
     </div>
   );
