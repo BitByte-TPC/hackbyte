@@ -35,6 +35,16 @@ const About = () => {
             opportunity to work with the latest technologies and expand their
             skills.
           </p>
+          <div className={styles.newsletter}>
+            <iframe
+              src="https://bitbyte.substack.com/embed"
+              width="480"
+              height="150"
+              style={{ border: "1px solid #EEE" }}
+              frameBorder="0"
+              scrolling="no"
+            ></iframe>
+          </div>
         </div>
         <div className={styles.opportunity}>
           <div className={styles.details}>
