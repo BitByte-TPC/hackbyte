@@ -1,21 +1,11 @@
-import "./App.scss";
-import { BrowserRouter } from "react-router-dom";
-import AnimatedRoutes from "./components/AnimatedRoutes";
-import { useState, useEffect } from "react";
-import Loading from "./components/Loading";
-import CanvasRoute from "./components/CanvasRoute";
+import "./App.css";
 
-const App = () => {
-  const [isLoading, setIsLoading] = useState(true);
-
+function App() {
   return (
-    <BrowserRouter>
-      <div className="App">
-        <CanvasRoute setIsLoading={setIsLoading} />
-        {isLoading ? <Loading /> : <AnimatedRoutes />}
-      </div>
-    </BrowserRouter>
+    <>
+      <h1>Hackbyte</h1>
+    </>
   );
-};
+}
 
 export default App;

@@ -1,35 +1,8 @@
-# hackbyte
-The official website for Hackbyte (annual hackathon of IIITDM Jabalpur).
+# React + Vite
 
-[hackbyte23.live](https://hackbyte23.live)
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Tech Stack
-- React (vite) 
-- threejs
+Currently, two official plugins are available:
 
-## How to setup?
-- Fork the repository
-
-- Clone the forked repository
-
-```bash
-  git clone https://github.com/<your-username>/hackbyte
-```
-
-- Go to the project directory
-
-```bash
-  cd hackbyte
-```
-
-- Install dependencies
-
-```bash
-  npm install
-```
-
-- Start the web app
-
-```bash
-  npm run dev
-```
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
