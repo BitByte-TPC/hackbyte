@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import backgroundImg from "../../assets/background.png";
 import { Link } from "react-router-dom";
 import classes from "./index.module.css";
 
@@ -25,7 +26,7 @@ export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
-    <div className="container max-w-6xl mx-auto p-6 md:p-4">
+    <>
       <nav className="flex items-center justify-center font-[600] text-[#7A7A7A]">
         <div
           className="hidden h-10 md:flex md:justify-center md:items-center md:space-x-10 
@@ -55,16 +56,22 @@ export default function Navbar() {
       <div
         id="menu"
         className={`absolute top-0 bottom-0 left-0 ${
-          isMenuOpen ? "flex" : "hidden"
-        } flex-col self-end w-full min-h-screen py-1 pt-40 pl-12 space-y-8 text-lg 
-        text-[#7A7A7A] bg-black font-medium uppercase`}
+          isMenuOpen ? "block" : "hidden"
+        } w-full min-h-screen py-1 pt-40 px-8 bg-cover bg-center`}
+        style={{ backgroundImage: `url(${backgroundImg})` }}
       >
-        {navigationItems.map(({ label, href }) => (
-          <a key={label} href={href} className="hover:text-[#F5F5F5]">
-            {label}
-          </a>
-        ))}
+        <div
+          className="flex flex-col self-end space-y-8 text-lg text-[#7A7A7A] 
+          font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] bg-[#171717]
+          bg-opacity-60"
+        >
+          {navigationItems.map(({ label, href }) => (
+            <a key={label} href={href} className="hover:text-[#F5F5F5]">
+              {label}
+            </a>
+          ))}
+        </div>
       </div>
-    </div>
+    </>
   );
 }

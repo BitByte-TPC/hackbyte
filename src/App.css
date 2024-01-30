@@ -4,3 +4,23 @@
   padding: 0;
   font-family: "Clash Grotesk", sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(127, 125, 125, 0.5);
+  border-radius: 10px;
+}
+
+scrollbar-thumb {
+  background-color: rgba(127, 125, 125, 0.5);
+  border-radius: 10px;
+}
