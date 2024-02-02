@@ -5,7 +5,7 @@ import classes from "./index.module.css";
 
 const navigationItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "#" },
+  { label: "About", href: "/about" },
   { label: "Partners", href: "#" },
   { label: "Schedule", href: "#" },
   { label: "Team", href: "#" },
