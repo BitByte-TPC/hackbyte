@@ -24,7 +24,7 @@ export default function About() {
       >
         <Navbar />
         <div className="flex-col justify-start items-center py-16 inline-flex">
-          <div className="w-full flex flex-col justify-start items-start gap-3 sm:px-8">
+          <div className="w-full flex flex-col justify-start items-start gap-3 md:px-20">
             <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
               Nice to meet you
             </p>
@@ -33,23 +33,21 @@ export default function About() {
                 className="self-stretch max-w-[651px] text-white text-4xl sm:text-5xl 
                   font-medium font-['Clash Grotesk'] leading-[50px] tracking-tighter"
               >
-                Our mission is to increase the GDP of your startup
+                We aim to nurture thriving innovation
               </p>
               <p
                 className="max-w-[384px] self-stretch text-gray-200 text-xl 
                 font-normal font-['Inter'] leading-[30px]"
               >
-                Untitled is a technology company that builds infrastructure for
-                your startup, so you don't have to. Businesses of every
-                size—from new startups to public companies—use our software to
-                manage their businesses.
+                Embark on an enriching voyage with HackByte, where the fusion of
+                tech expertise and boundless innovation unfolds.
               </p>
             </div>
           </div>
         </div>
 
         <div className="flex-col justify-start items-center py-16 inline-flex">
-          <div className="justify-start items-center gap-24 px-2 md:px-8 md:inline-flex">
+          <div className="justify-start items-center gap-24 px-2 md:px-20 md:inline-flex">
             <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
               <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
                 <div className="flex-col justify-start items-center gap-3 grow shrink basis-0 inline-flex">
@@ -57,19 +55,19 @@ export default function About() {
                     className="self-stretch text-center text-white text-5xl 
                     md:text-6xl font-semibold font-['Inter'] leading-[72px]"
                   >
-                    400+
+                    1500+
                   </p>
                   <p
                     className="self-stretch text-center text-white text-lg 
                     font-semibold font-['Inter'] leading-7"
                   >
-                    Projects completed
+                    Registrations
                   </p>
                   <p
                     className="self-stretch text-center text-gray-200 text-base 
                     font-normal font-['Inter'] leading-normal"
                   >
-                    We've helped build over 400 amazing projects.
+                    1500+ registrations from across the country.
                   </p>
                 </div>
                 <div className="flex-col justify-start items-center gap-3 grow shrink basis-0 inline-flex">
@@ -77,19 +75,19 @@ export default function About() {
                     className="self-stretch text-center text-white text-5xl 
                     md:text-6xl font-semibold font-['Inter'] leading-[72px]"
                   >
-                    600%
+                    500+
                   </p>
                   <p
                     className="self-stretch text-center text-white text-lg
                     font-semibold font-['Inter'] leading-7"
                   >
-                    Return on investment
+                    Offline Participants
                   </p>
                   <p
                     className="self-stretch text-center text-gray-200 text-base 
                     font-normal font-['Inter'] leading-normal"
                   >
-                    Our customers have reported an average of ~600% ROI.
+                    500+ participants joined the offline hackathon!
                   </p>
                 </div>
               </div>
@@ -99,19 +97,19 @@ export default function About() {
                     className="self-stretch text-center text-white text-5xl 
                     md:text-6xl font-semibold font-['Inter'] leading-[72px]"
                   >
-                    10k
+                    100+
                   </p>
                   <p
                     className="self-stretch text-center text-white text-lg 
                     font-semibold font-['Inter'] leading-7"
                   >
-                    Global downloads
+                    Volunteers
                   </p>
                   <p
                     className="self-stretch text-center text-gray-200 text-base 
                     font-normal font-['Inter'] leading-normal"
                   >
-                    Our free UI kit has been downloaded over 10k times.
+                    To help you, get the best out of HackByte
                   </p>
                 </div>
                 <div className="flex-col justify-start items-center gap-3 grow shrink basis-0 inline-flex">
@@ -119,19 +117,19 @@ export default function About() {
                     className="self-stretch text-center text-white text-5xl 
                     md:text-6xl font-semibold font-['Inter'] leading-[72px]"
                   >
-                    200+
+                    120+
                   </p>
                   <p
                     className="self-stretch text-center text-white text-lg 
                     font-semibold font-['Inter'] leading-7"
                   >
-                    5-star reviews
+                    Projects
                   </p>
                   <p
                     className="self-stretch text-center text-gray-200 text-base 
                     font-normal font-['Inter'] leading-normal"
                   >
-                    We're proud of our 5-star rating with over 200 reviews.
+                    Innovative submissions from various domains.
                   </p>
                 </div>
               </div>
@@ -143,28 +141,28 @@ export default function About() {
         </div>
       </div>
 
-      <div className="w-full flex-col justify-start items-center gap-16 py-16 sm:py-24 bg-white">
-        <div className="flex flex-col justify-start items-start gap-12 px-4 sm:px-16">
+      <div className="w-full flex-col justify-start items-center gap-16 py-16 md:py-24 bg-white">
+        <div className="flex flex-col justify-start items-start gap-12 px-4 md:px-20">
           <div className="w-full flex flex-col justify-start items-center gap-5">
             <div className="flex flex-col justify-start items-start gap-3">
               <p
                 className="self-stretch text-center text-violet-700 text-sm 
                 md:text-base font-semibold font-['Inter'] leading-normal"
               >
-                Our values
+                Opportunities for Participants
               </p>
               <p
                 className="text-center text-gray-900 text-3xl 
                 md:text-4xl font-medium font-['Clash Grotesk'] leading-[44px]"
               >
-                We're an ambitious and smart team with a shared mission
+                Why participate in Hackbyte?
               </p>
             </div>
             <p
               className="text-center text-slate-600 text-lg md:text-xl 
               font-normal font-['Inter'] leading-[30px]"
             >
-              Our shared values keep us connected and guide us as one team.
+              HackByte 2.0 promises a wonderful experience to the participants.
             </p>
           </div>
 
@@ -177,14 +175,14 @@ export default function About() {
                     className="self-stretch text-center text-gray-900 text-lg 
                     md:text-xl font-semibold font-['Inter'] leading-[30px]"
                   >
-                    Share team inboxes
+                    Collaborate and skill up
                   </p>
                   <p
                     className="self-stretch text-center text-slate-600 text-base 
                     font-normal font-['Inter'] leading-normal"
                   >
-                    Whether you have a team of 2 or 200, our shared team inboxes
-                    keep everyone on the same page and in the loop.
+                    Connect with people, form a team , learn new skills and
+                    develop amazing projects!
                   </p>
                 </div>
               </div>
@@ -195,14 +193,14 @@ export default function About() {
                     className="self-stretch text-center text-gray-900 text-lg 
                     md:text-xl font-semibold font-['Inter'] leading-[30px]"
                   >
-                    Deliver instant answers
+                    Exciting Prices
                   </p>
                   <p
                     className="self-stretch text-center text-slate-600 text-base
                     font-normal font-['Inter'] leading-normal"
                   >
-                    An all-in-one customer service platform that helps you
-                    balance everything your customers need to be happy.
+                    Top 3 teams plus best projects of each domain will win
+                    prizes which will disclosed soon!
                   </p>
                 </div>
               </div>
@@ -213,15 +211,14 @@ export default function About() {
                     className="self-stretch text-center text-gray-900 text-lg 
                     md:text-xl font-semibold font-['Inter'] leading-[30px]"
                   >
-                    Manage your team with reports
+                    Engaging Workshops
                   </p>
                   <p
                     className="self-stretch text-center text-slate-600 text-base
                     font-normal font-['Inter'] leading-normal"
                   >
-                    Measure what matters with Untitled's easy-to-use reports.
-                    You can filter, export, and drilldown on the data in a
-                    couple clicks.
+                    Technical workshops and events like no-light event will keep
+                    the participants engaged throughout.
                   </p>
                 </div>
               </div>
@@ -234,15 +231,14 @@ export default function About() {
                     className="self-stretch text-center text-gray-900 text-lg
                      md:text-xl font-semibold font-['Inter'] leading-[30px]"
                   >
-                    Connect with customers
+                    Mentorship sessions
                   </p>
                   <p
                     className="self-stretch text-center text-slate-600 text-base 
                     font-normal font-['Inter'] leading-normal"
                   >
-                    Solve a problem or close a sale in real-time with chat. If
-                    no one is available, customers are seamlessly routed to
-                    email without confusion.
+                    Get mentorship and guidance from prominent technocrats of
+                    industry.
                   </p>
                 </div>
               </div>
@@ -253,15 +249,14 @@ export default function About() {
                     className="self-stretch text-center text-gray-900 text-lg 
                     md:text-xl font-semibold font-['Inter'] leading-[30px]"
                   >
-                    Connect the tools you already use
+                    Recruitment offers
                   </p>
                   <p
                     className="self-stretch text-center text-slate-600 text-base
                      font-normal font-['Inter'] leading-normal"
                   >
-                    Explore 100+ integrations that make your day-to-day workflow
-                    more efficient and familiar. Plus, our extensive developer
-                    tools.
+                    Best performers will get recruitment offers from prestigious
+                    companies.
                   </p>
                 </div>
               </div>
@@ -272,15 +267,14 @@ export default function About() {
                     className="self-stretch text-center text-gray-900 text-lg 
                     md:text-xl font-semibold font-['Inter'] leading-[30px]"
                   >
-                    Our people make the difference
+                    Expand network
                   </p>
                   <p
                     className="self-stretch text-center text-slate-600 text-base 
                     font-normal font-['Inter'] leading-normal"
                   >
-                    We're an extension of your customer service team, and all of
-                    our resources are free. Chat to our friendly team 24/7 when
-                    you need help.
+                    Connect with industry professionals and recruiters and other
+                    teams to learn and grow more.
                   </p>
                 </div>
               </div>
@@ -291,7 +285,7 @@ export default function About() {
 
       <div
         className="bg-[#EBB323] w-full h-full flex flex-col md:flex-row justify-between 
-        items-center px-4 md:px-20 lg:px-10 xl:px-36 pt-10 pb-28 lg:pb-48 xl:pb-40"
+        items-center px-4 md:px-20 xl:px-36 pt-10 pb-28 lg:pb-48 xl:pb-40"
       >
         <div className="flex flex-col justify-center items-center max-w-lg">
           <div className="flex flex-col gap-8">
@@ -318,7 +312,7 @@ export default function About() {
                   className=" text-black text-base md:text-lg font-normal 
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
                 >
-                  Leverage automation to move fast
+                  Get updates about your application status
                 </p>
               </div>
               <div className="flex gap-3 sm:gap-4 items-center">
@@ -327,7 +321,7 @@ export default function About() {
                   className=" text-black text-base md:text-lg font-normal 
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
                 >
-                  Always give customers a human to chat to
+                  Get notified for exciting events!
                 </p>
               </div>
               <div className="flex gap-3 sm:gap-4 items-center">
@@ -336,7 +330,7 @@ export default function About() {
                   className=" text-black text-base md:text-lg font-normal 
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
                 >
-                  Automate customer support and close leads faster
+                  Be the first ones to register for HackByte 2.0
                 </p>
               </div>
             </div>
@@ -397,7 +391,7 @@ export default function About() {
         </div>
         <div
           className="flex flex-col justify-between gap-20 md:flex-row px-6 
-          lg:px-10 xl:px-20 py-20"
+          md:px-20 py-20"
         >
           <p
             className="max-w-3xl text-6xl lg:text-9xl xl:text-[10rem] 

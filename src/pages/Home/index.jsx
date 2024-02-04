@@ -61,7 +61,7 @@ export default function Home() {
         <img
           src={hackByteLogo}
           alt="HackByte Logo"
-          className="max-w-[35rem] min-w-[15rem] w-[80%] 2xl:max-w-[45rem]"
+          className="max-w-[32rem] min-w-[15rem] w-[75%] 2xl:max-w-[40rem]"
         />
       </div>
 
