@@ -15,7 +15,7 @@ const navigationItems = [
 const NavItem = ({ label, href }) => (
   <div className="group">
     <Link to={href}>
-      <p className="text-lg">{label}</p>
+      <p className="text-lg md:text-base lg:text-lg text-center">{label}</p>
     </Link>
     <div className="mx-2"></div>
   </div>
