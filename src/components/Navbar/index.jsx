@@ -1,7 +1,6 @@
 import React, { useState } from "react";
-import backgroundImg from "../../assets/background.png";
-import { Link } from "react-router-dom";
 import classes from "./index.module.css";
+import { Link } from "react-router-dom";
 
 const navigationItems = [
   { label: "Home", href: "/" },
@@ -58,7 +57,7 @@ export default function Navbar() {
         className={`absolute top-0 bottom-0 left-0 ${
           isMenuOpen ? "block" : "hidden"
         } w-full min-h-screen py-1 pt-40 px-8 bg-cover bg-center`}
-        style={{ backgroundImage: `url(${backgroundImg})` }}
+        style={{ backgroundImage: "url(/background.png)" }}
       >
         <div
           className="flex flex-col self-end space-y-8 text-lg text-[#7A7A7A] 
@@ -66,9 +65,9 @@ export default function Navbar() {
           bg-opacity-60"
         >
           {navigationItems.map(({ label, href }) => (
-            <a key={label} href={href} className="hover:text-[#F5F5F5]">
+            <Link to={href} key={label} className="hover:text-[#F5F5F5]">
               {label}
-            </a>
+            </Link>
           ))}
         </div>
       </div>

@@ -1,10 +1,6 @@
 import React from "react";
-import { Button } from "@/components/ui/button";
-import backgroundImg from "../../assets/background.png";
 import Navbar from "@/components/Navbar";
-import hackByteLogo from "../../assets/hackbyteLogo.png";
-import tpcLogo from "../../assets/tpcLogo.svg";
-import iiitdmjLogo from "../../assets/iiitdmjLogo.svg";
+import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 
 export default function Home() {
@@ -13,7 +9,7 @@ export default function Home() {
       className="flex flex-col justify-around w-full min-h-screen 
         bg-cover bg-no-repeat p-4 md:px-12 md:py-8"
       style={{
-        backgroundImage: `url(${backgroundImg})`,
+        backgroundImage: "url(/background.webp)",
         backgroundAttachment: "fixed",
       }}
     >
@@ -45,7 +41,7 @@ export default function Home() {
           <Button
             size="sm"
             className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium uppercase 
-                    p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black"
+                p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black"
             style={{
               boxShadow:
                 "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
@@ -59,7 +55,7 @@ export default function Home() {
 
       <div className="flex items-center justify-center my-12 lg:my-4">
         <img
-          src={hackByteLogo}
+          src="/hackbyteLogo.png"
           alt="HackByte Logo"
           className="max-w-[32rem] min-w-[15rem] w-[75%] 2xl:max-w-[40rem]"
         />
@@ -80,7 +76,7 @@ export default function Home() {
             >
               <div className="flex justify-center items-center gap-4">
                 <img
-                  src={tpcLogo}
+                  src="/tpcLogo.svg"
                   alt="TPC Logo"
                   className="w-[4rem] h-[2.125rem]"
                 />
@@ -97,7 +93,7 @@ export default function Home() {
             >
               <div className="flex justify-center items-center">
                 <img
-                  src={iiitdmjLogo}
+                  src="/iiitdmjLogo.svg"
                   alt="IIITDMJ Logo"
                   className="w-[5.5rem] h-[2rem]"
                 />

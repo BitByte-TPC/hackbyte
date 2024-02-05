@@ -2,17 +2,6 @@ import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
-import about_bg from "@/assets/aboutPage/about_bg.png";
-import heroImage from "@/assets/aboutPage/heroImage.png";
-import img1 from "@/assets/aboutPage/img1.svg";
-import img2 from "@/assets/aboutPage/img2.svg";
-import img3 from "@/assets/aboutPage/img3.svg";
-import img4 from "@/assets/aboutPage/img4.svg";
-import img5 from "@/assets/aboutPage/img5.svg";
-import img6 from "@/assets/aboutPage/img6.svg";
-import checkIcon from "@/assets/aboutPage/checkIcon.png";
-import featureImage from "@/assets/aboutPage/featureImage.png";
-import getInTouchImage from "@/assets/aboutPage/getInTouchImage.svg";
 
 export default function About() {
   return (
@@ -20,7 +9,7 @@ export default function About() {
       <div
         className="flex flex-col justify-around w-full min-h-screen 
           bg-cover bg-no-repeat p-4 md:px-12 md:py-8"
-        style={{ backgroundImage: `url(${about_bg})` }}
+        style={{ backgroundImage: `url(/aboutPage/about_bg.webp)` }}
       >
         <Navbar />
         <div className="flex-col justify-start items-center py-16 inline-flex">
@@ -135,7 +124,7 @@ export default function About() {
               </div>
             </div>
             <div className="mt-12 sm:mt-0">
-              <img className="w-full h-auto" src={heroImage} />
+              <img className="w-full h-auto" src="/aboutPage/about_img1.png" />
             </div>
           </div>
         </div>
@@ -169,7 +158,10 @@ export default function About() {
           <div className="flex-col justify-start items-start gap-16 inline-flex">
             <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
               <div className="flex-1 flex-col justify-start items-center gap-5 inline-flex">
-                <img className="w-10 h-10 md:w-12 md:h-12" src={img1} />
+                <img
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  src="/aboutPage/img1.svg"
+                />
                 <div className="self-stretch flex flex-col justify-start items-center gap-2">
                   <p
                     className="self-stretch text-center text-gray-900 text-lg 
@@ -187,7 +179,10 @@ export default function About() {
                 </div>
               </div>
               <div className="flex-1 flex-col justify-start items-center gap-5 inline-flex">
-                <img className="w-10 h-10 md:w-12 md:h-12" src={img2} />
+                <img
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  src="/aboutPage/img2.svg"
+                />
                 <div className="self-stretch flex flex-col justify-start items-center gap-2">
                   <p
                     className="self-stretch text-center text-gray-900 text-lg 
@@ -205,7 +200,10 @@ export default function About() {
                 </div>
               </div>
               <div className="flex-1 flex-col justify-start items-center gap-5 inline-flex">
-                <img className="w-10 h-10 md:w-12 md:h-12" src={img3} />
+                <img
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  src="/aboutPage/img3.svg"
+                />
                 <div className="self-stretch flex flex-col justify-start items-center gap-2">
                   <p
                     className="self-stretch text-center text-gray-900 text-lg 
@@ -225,7 +223,10 @@ export default function About() {
             </div>
             <div className="flex flex-col self-stretch justify-start items-start gap-8 sm:flex-row">
               <div className="flex-1 flex-col justify-start items-center gap-5 inline-flex">
-                <img className="w-10 h-10 md:w-12 md:h-12" src={img4} />
+                <img
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  src="/aboutPage/img4.svg"
+                />
                 <div className="self-stretch flex flex-col justify-start items-center gap-2">
                   <p
                     className="self-stretch text-center text-gray-900 text-lg
@@ -243,7 +244,10 @@ export default function About() {
                 </div>
               </div>
               <div className="flex-1 flex-col justify-start items-center gap-5 inline-flex">
-                <img className="w-10 h-10 md:w-12 md:h-12" src={img5} />
+                <img
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  src="/aboutPage/img5.svg"
+                />
                 <div className="self-stretch flex flex-col justify-start items-center gap-2">
                   <p
                     className="self-stretch text-center text-gray-900 text-lg 
@@ -261,7 +265,10 @@ export default function About() {
                 </div>
               </div>
               <div className="flex-1 flex-col justify-start items-center gap-5 inline-flex">
-                <img className="w-10 h-10 md:w-12 md:h-12" src={img6} />
+                <img
+                  className="w-10 h-10 md:w-12 md:h-12"
+                  src="/aboutPage/img6.svg"
+                />
                 <div className="self-stretch flex flex-col justify-start items-center gap-2">
                   <p
                     className="self-stretch text-center text-gray-900 text-lg 
@@ -307,7 +314,7 @@ export default function About() {
 
             <div className="flex flex-col gap-5 sm:pl-4">
               <div className="flex gap-3 sm:gap-4 items-center">
-                <img className="w-7 h-7" src={checkIcon} alt="" />
+                <img className="w-7 h-7" src="/aboutPage/checkIcon.svg" />
                 <p
                   className=" text-black text-base md:text-lg font-normal 
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
@@ -316,7 +323,7 @@ export default function About() {
                 </p>
               </div>
               <div className="flex gap-3 sm:gap-4 items-center">
-                <img className="w-7 h-7" src={checkIcon} alt="" />
+                <img className="w-7 h-7" src="/aboutPage/checkIcon.svg" />
                 <p
                   className=" text-black text-base md:text-lg font-normal 
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
@@ -325,7 +332,7 @@ export default function About() {
                 </p>
               </div>
               <div className="flex gap-3 sm:gap-4 items-center">
-                <img className="w-7 h-7" src={checkIcon} alt="" />
+                <img className="w-7 h-7" src="/aboutPage/checkIcon.svg" />
                 <p
                   className=" text-black text-base md:text-lg font-normal 
                   font-['Inter'] leading-6 sm:leading-7 tracking-tight"
@@ -339,7 +346,7 @@ export default function About() {
 
         <div className="max-w-xl flex justify-center items-center mb-16 sm:mb-0">
           <div className="max-w-md">
-            <img className="" src={featureImage} alt="" />
+            <img className="" src="/aboutPage/about_img2.png" />
           </div>
         </div>
       </div>
@@ -405,7 +412,7 @@ export default function About() {
 
           <img
             className="w-44 h-44 lg:h-60 lg:w-60"
-            src={getInTouchImage}
+            src="/aboutPage/getInTouchImage.svg"
             alt=""
           />
         </div>
