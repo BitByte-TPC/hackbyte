@@ -57,7 +57,7 @@ export default function Navbar() {
         className={`absolute top-0 bottom-0 left-0 ${
           isMenuOpen ? "block" : "hidden"
         } w-full min-h-screen py-1 pt-40 px-8 bg-cover bg-center`}
-        style={{ backgroundImage: "url(/background.png)" }}
+        style={{ backgroundImage: "url(/background.webp)" }}
       >
         <div
           className="flex flex-col self-end space-y-8 text-lg text-[#7A7A7A] 
