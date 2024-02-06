@@ -9,12 +9,14 @@ export default function Home() {
   return (
     <>
       <div className="w-full min-h-screen">
-        <Image
-          src={backgroundImg}
-          alt="Background Image"
-          fill={true}
-          priority
-        />
+        <div className="fixed top-0 left-0 w-full h-full z-0">
+          <Image
+            src={backgroundImg}
+            alt="Background Image"
+            fill={true}
+            priority
+          />
+        </div>
         <div
           className="relative flex flex-col justify-around w-full 
         h-screen z-1 p-4 md:px-12 md:py-8"
