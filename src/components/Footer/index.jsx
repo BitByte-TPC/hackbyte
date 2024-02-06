@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <div className="bg-[#000000] flex flex-col px-4 md:px-10 xl:px-28">
       <hr className="border-[#808080] mb-12" />
-      <div className="flex flex-col md:flex-row gap-12 justify-between items-start">
+      <div className="flex flex-col lg:flex-row gap-12 justify-between items-start">
         <div className="w-full md:w-auto flex items-center flex-wrap mb-6 sm:mb-0 gap-8 sm:gap-10">
           {navigationItems.map(({ label, href }) => (
             <Link
