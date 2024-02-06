@@ -56,13 +56,12 @@ export default function Navbar() {
         id="menu"
         className={`absolute top-0 bottom-0 left-0 ${
           isMenuOpen ? "block" : "hidden"
-        } w-full min-h-screen py-1 pt-40 px-8 bg-cover bg-center`}
-        style={{ backgroundImage: "url(/background.webp)" }}
+        } w-full min-h-screen py-1 pt-40 px-8 backdrop-blur-lg`}
       >
         <div
-          className="flex flex-col self-end space-y-8 text-lg text-[#7A7A7A] 
-          font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] bg-[#171717]
-          bg-opacity-60"
+          className="flex flex-col self-end space-y-8 text-lg text-[#9d9d9d] 
+          font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] bg-[#090909]
+          bg-opacity-80"
         >
           {navigationItems.map(({ label, href }) => (
             <Link to={href} key={label} className="hover:text-[#F5F5F5]">
