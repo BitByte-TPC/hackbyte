@@ -1,136 +1,141 @@
-import React from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import backgroundImg from "@/public/background.webp";
+import Image from "next/image";
 
 export default function About() {
   return (
     <>
-      <div
-        className="flex flex-col justify-around w-full min-h-screen 
-          bg-cover bg-no-repeat p-4 md:px-12 md:py-8"
-        style={{ backgroundImage: `url(/background.webp)` }}
-      >
-        <Navbar />
-        <div className="flex-col justify-start items-center py-16 inline-flex">
-          <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
-            <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
-              Nice to meet you
-            </p>
-            <div className="w-full flex flex-col justify-between md:flex-row gap-4">
-              <p
-                className="self-stretch max-w-xl  text-white text-4xl md:text-3xl lg:text-[2.5rem] xl:text-5xl  
+      <div className="relative flex flex-col justify-around w-full min-h-screen">
+        <Image
+          src={backgroundImg}
+          alt="Background Image"
+          fill={true}
+          priority
+        />
+        <div className="relative z-1 w-full p-4 md:px-12 md:py-8">
+          <Navbar />
+          <div className="w-full flex-col justify-start items-center py-16 inline-flex">
+            <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
+              <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
+                Nice to meet you
+              </p>
+              <div className="w-full flex flex-col justify-between md:flex-row gap-4">
+                <p
+                  className="self-stretch max-w-xl  text-white text-4xl md:text-3xl lg:text-[2.5rem] xl:text-5xl  
                   font-medium font-['Clash Grotesk'] leading-[50px] tracking-tighter"
-              >
-                We aim to nurture thriving innovation
-              </p>
-              <p
-                className="max-w-sm md:max-w-[15rem] lg:max-w-xs xl:max-w-sm self-stretch text-gray-200 text-xl md:text-base lg:text-xl 
+                >
+                  We aim to nurture thriving innovation
+                </p>
+                <p
+                  className="max-w-sm md:max-w-[15rem] lg:max-w-xs xl:max-w-sm self-stretch text-gray-200 text-xl md:text-base lg:text-xl 
                 font-normal font-['Inter'] leading-[30px]"
-              >
-                Embark on an enriching voyage with HackByte, where the fusion of
-                tech expertise and boundless innovation unfolds.
-              </p>
+                >
+                  Embark on an enriching voyage with HackByte, where the fusion
+                  of tech expertise and boundless innovation unfolds.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div className="flex-col justify-start items-center py-16 inline-flex">
-          <div className="justify-start items-center gap-24 md:gap-12 xl:gap-24 px-2 md:px-0 xl:px-10 md:inline-flex">
-            <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
-              <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
-                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl md:text-3xl 
+          <div className="flex-col justify-start items-center py-16 inline-flex">
+            <div className="justify-start items-center gap-24 md:gap-12 xl:gap-24 px-2 md:px-0 xl:px-10 md:inline-flex">
+              <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
+                <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
+                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                    <p
+                      className="self-stretch text-center text-white text-5xl md:text-3xl 
                     lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    1500+
-                  </p>
-                  <p
-                    className="self-stretch text-center text-white text-lg md:text-sm lg:text-lg 
+                    >
+                      1500+
+                    </p>
+                    <p
+                      className="self-stretch text-center text-white text-lg md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
-                  >
-                    Registrations
-                  </p>
-                  <p
-                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
+                    >
+                      Registrations
+                    </p>
+                    <p
+                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
                     font-normal font-['Inter'] leading-normal"
-                  >
-                    1500+ registrations from across the country.
-                  </p>
-                </div>
-                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl md:text-3xl 
+                    >
+                      1500+ registrations from across the country.
+                    </p>
+                  </div>
+                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                    <p
+                      className="self-stretch text-center text-white text-5xl md:text-3xl 
                     lg:text-[3.25rem] 
                      xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    500+
-                  </p>
-                  <p
-                    className="self-stretch text-center text-white md:text-sm lg:text-lg 
+                    >
+                      500+
+                    </p>
+                    <p
+                      className="self-stretch text-center text-white md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
-                  >
-                    Offline Participants
-                  </p>
-                  <p
-                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
+                    >
+                      Offline Participants
+                    </p>
+                    <p
+                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
                     font-normal font-['Inter'] leading-normal"
-                  >
-                    500+ participants joined the offline hackathon!
-                  </p>
+                    >
+                      500+ participants joined the offline hackathon!
+                    </p>
+                  </div>
                 </div>
-              </div>
-              <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
-                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl 
+                <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
+                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                    <p
+                      className="self-stretch text-center text-white text-5xl 
                     md:text-4xl 
                     lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    100+
-                  </p>
-                  <p
-                    className="self-stretch text-center text-white md:text-sm lg:text-lg 
+                    >
+                      100+
+                    </p>
+                    <p
+                      className="self-stretch text-center text-white md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
-                  >
-                    Volunteers
-                  </p>
-                  <p
-                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
+                    >
+                      Volunteers
+                    </p>
+                    <p
+                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
                     font-normal font-['Inter'] leading-normal"
-                  >
-                    To help you, get the best out of HackByte
-                  </p>
-                </div>
-                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl 
+                    >
+                      To help you, get the best out of HackByte
+                    </p>
+                  </div>
+                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                    <p
+                      className="self-stretch text-center text-white text-5xl 
                     md:text-4xl 
                     lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    120+
-                  </p>
-                  <p
-                    className="self-stretch text-center text-white md:text-sm lg:text-lg 
+                    >
+                      120+
+                    </p>
+                    <p
+                      className="self-stretch text-center text-white md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
-                  >
-                    Projects
-                  </p>
-                  <p
-                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base
+                    >
+                      Projects
+                    </p>
+                    <p
+                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base
                     font-normal font-['Inter'] leading-normal"
-                  >
-                    Innovative submissions from various domains.
-                  </p>
+                    >
+                      Innovative submissions from various domains.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div className="mt-12 sm:mt-0">
-              <img
-                className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
-                src="/aboutPage/about_img1.png"
-              />
+              <div className="mt-12 sm:mt-0">
+                <img
+                  className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
+                  src="/aboutPage/about_img1.png"
+                />
+              </div>
             </div>
           </div>
         </div>

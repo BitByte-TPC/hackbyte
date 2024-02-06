@@ -1,5 +1,4 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 import {
   TwitterLogoIcon,
   InstagramLogoIcon,
@@ -30,7 +29,7 @@ const Footer = () => {
         <div className="w-full md:w-auto flex items-center flex-wrap mb-6 sm:mb-0 gap-8 sm:gap-10">
           {navigationItems.map(({ label, href }) => (
             <Link
-              to={href !== "#" ? href : null}
+              href={href}
               key={label}
               className="text-white text-lg font-normal font-['Clash Grotesk'] leading-5 md:leading-normal tracking-wide md:tracking-tight hover:text-stone-400 relative after:content-[''] after:bg-stone-400 after:h-[1px] after:w-0 after:left-0 after:bottom-[-4px] after:absolute after:duration-300 hover:after:w-full"
             >

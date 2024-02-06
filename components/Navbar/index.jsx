@@ -1,6 +1,8 @@
-import React, { useState } from "react";
+"use client";
+
+import { useState } from "react";
 import classes from "./index.module.css";
-import { Link } from "react-router-dom";
+import Link from "next/link";
 
 const navigationItems = [
   { label: "Home", href: "/" },
@@ -14,7 +16,7 @@ const navigationItems = [
 
 const NavItem = ({ label, href }) => (
   <div className="group">
-    <Link to={href}>
+    <Link href={href}>
       <p className="text-lg md:text-base lg:text-lg text-center">{label}</p>
     </Link>
     <div className="mx-2"></div>
@@ -64,7 +66,7 @@ export default function Navbar() {
           bg-opacity-80"
         >
           {navigationItems.map(({ label, href }) => (
-            <Link to={href} key={label} className="hover:text-[#F5F5F5]">
+            <Link href={href} key={label} className="hover:text-[#F5F5F5]">
               {label}
             </Link>
           ))}
