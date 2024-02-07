@@ -1,13 +1,60 @@
+"use client";
+
+import { useState } from "react";
+import Image from "next/image";
+import { db } from "../firebase/config";
+import { collection, addDoc } from "firebase/firestore";
+import { ToastContainer, toast } from "react-toastify";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Button } from "@/components/ui/button";
 import backgroundImg from "@/public/background.webp";
-import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function About() {
+  const [email, setEmail] = useState("");
+  const dbInstance = collection(db, "subscribers");
+
+  function notify(message) {
+    toast(message, {
+      position: "bottom-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      progress: undefined,
+    });
+  }
+
+  const handleSubscribe = async (e) => {
+    e.preventDefault();
+
+    if (!email) {
+      notify("Please enter your email address");
+      return;
+    }
+
+    // Email format validation using regex
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      notify("Please enter a valid email address");
+      return;
+    }
+
+    try {
+      await addDoc(dbInstance, {
+        email,
+        timestamp: new Date(),
+      });
+      notify("Subscribed successfully!");
+      setEmail("");
+    } catch (error) {
+      console.error("Error subscribing:", error.message);
+      notify("An error occurred. Please try again later.");
+    }
+  };
+
   return (
     <>
       <div className="relative flex flex-col justify-around w-full min-h-screen">
+        <ToastContainer />
         <Image
           src={backgroundImg}
           alt="Background Image"
@@ -397,12 +444,15 @@ export default function About() {
                 <input
                   type="text"
                   placeholder="Enter your email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                   className="w-full py-3 px-3.5 bg-[#ffffff] rounded-lg text-gray-500 
                     border-2 border-[#D0D5DD] focus:outline-purple-300 focus:text-gray-900"
                 />
               </div>
               <Button
                 size="sm"
+                onClick={handleSubscribe}
                 className="w-full lg:w-32 flex justify-center items-center bg-black 
                   text-white text-[1.125rem] font-medium p-6 rounded-none 
                   hover:bg-black hover:text-white"
