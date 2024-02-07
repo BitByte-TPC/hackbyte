@@ -11,7 +11,7 @@ const navigationItems = [
   { label: "Schedule", href: "#" },
   { label: "Team", href: "#" },
   { label: "FAQs", href: "#" },
-  { label: "Contact Us", href: "#" },
+  { label: "Contact", href: "#" },
 ];
 
 const NavItem = ({ label, href }) => (
