@@ -1,5 +1,4 @@
 "use client";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
 
@@ -35,9 +34,8 @@ export default function NotFound() {
           </p>
 
           <div class="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
-            <Button
+            <button
               onClick={() => router.back()}
-              size="sm"
               class="flex items-center justify-center w-1/2 px-5 py-2 text-sm 
                 text-gray-700 transition-colors duration-200 bg-white border 
                 rounded-lg gap-x-2 sm:w-auto hover:bg-gray-100"
@@ -58,16 +56,15 @@ export default function NotFound() {
               </svg>
 
               <span>Go back</span>
-            </Button>
+            </button>
 
-            <Button
-              size="sm"
+            <button
               class="w-1/2 px-5 py-2 text-sm tracking-wide text-white 
                 transition-colors duration-200 bg-blue-500 rounded-lg 
                 shrink-0 sm:w-auto hover:bg-blue-600"
             >
               <Link href="/">Take me home</Link>
-            </Button>
+            </button>
           </div>
         </div>
       </div>

@@ -50,7 +50,7 @@ export default function Home() {
             }}
           >
             Explore Challenge
-            <ArrowTopRightIcon />
+            <ArrowTopRightIcon className="w-5 h-5 ml-1" />
           </Button>
         </div>
       </div>
