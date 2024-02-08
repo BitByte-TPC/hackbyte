@@ -9,6 +9,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import backgroundImg from "@/public/background.webp";
 import { Button } from "@/components/ui/button";
+import Loading from "@/components/Loader";
+import { Suspense } from "react";
 
 export default function About() {
   const [email, setEmail] = useState("");
@@ -52,7 +54,7 @@ export default function About() {
   };
 
   return (
-    <>
+    <Suspense fallback={<Loading />}>
       <div className="relative flex flex-col justify-around w-full min-h-screen">
         <ToastContainer />
         <Image
@@ -488,6 +490,6 @@ export default function About() {
         </div>
       </div>
       <Footer />
-    </>
+    </Suspense>
   );
 }

@@ -3,9 +3,12 @@ import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import hackbyteLogo from "@/public/hackbyteLogo.png";
 import Image from "next/image";
+import Loading from "@/components/Loader";
+import { Suspense } from "react";
 
 export default function Home() {
   return (
+    <Suspense fallback={<Loading />}>
     <div
       className="flex flex-col justify-around min-h-screen
         bg-cover bg-no-repeat p-4 md:px-12 md:py-8"
@@ -114,5 +117,6 @@ export default function Home() {
         </div>
       </div>
     </div>
+    </Suspense>
   );
 }
