@@ -18,18 +18,17 @@ export default function Home() {
       <Navbar />
       <div className="flex flex-wrap justify-between items-center gap-4 lg:gap-0">
         <div className="flex flex-col items-start w-full lg:w-1/2">
-          <p
+          {/* <p
             className="text-[#FAF8ED] text-[1.25rem] font-medium uppercase 
                 lg:text-[1.5rem]"
           >
             This year&apos;s theme :{" "}
-          </p>
+          </p> */}
           <p
             className="text-[#FAF8ED] text-[2.375rem] font-medium leading-[1.2] 
                 lg:leading-[1.1] lg:text-[3rem]"
           >
-            Digital Anonymity
-            <br /> Unleashed
+            This year&apos;s theme <br /> unveils in April ...
           </p>
         </div>
         <div className="flex flex-col items-start gap-3 w-full lg:items-end lg:w-1/2">
