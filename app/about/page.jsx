@@ -65,8 +65,9 @@ export default function About() {
           <Navbar />
           <div className="w-full flex-col justify-start items-center py-16 inline-flex">
             <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
-              <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
-                Nice to meet you
+              <p className="text-gray-200 text-4xl md:text-3xl lg:text-[2.5rem] xl:text-5xl  
+                  font-bold font-['Inter']">
+                Nice to meet you!
               </p>
               <div className="w-full flex flex-col justify-between md:flex-row gap-4">
                 <p
@@ -180,7 +181,7 @@ export default function About() {
               <div className="mt-12 sm:mt-0">
                 <img
                   className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
-                  src="/aboutPage/about_img1.png"
+                  src="/aboutPage/AboutPageImage1.jpg"
                 />
               </div>
             </div>
@@ -359,14 +360,13 @@ export default function About() {
                 className=" text-black text-4xl lg:text-5xl font-medium 
                 font-['Clash Grotesk'] leading-[2.75rem] tracking-tighter"
               >
-                Share team inboxes
+                Join our mailing list !
               </p>
               <p
                 className="max-w-[30rem] text-black text-base md:text-sm lg:text-lg 
                 font-normal font-['Inter'] leading-6 sm:leading-7 tracking-tight"
               >
-                Whether you have a team of 2 or 200, our shared team inboxes
-                keep everyone on the same page and in the loop.
+                To stay up-to-date with HackByte 2.0, consider subscribing to our mailing list. Helps us share important updates right away with hackers and enthusiasts alike !
               </p>
             </div>
 
