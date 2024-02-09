@@ -40,7 +40,7 @@ const Gallery = () => {
               <div>
                 <Image
                   src={img6}
-                  alt="1"
+                  alt="img6"
                   className="w-full h-full rounded-xl object-cover"
                   priority
                 />
@@ -48,14 +48,14 @@ const Gallery = () => {
               <div>
                 <Image
                   src={img7}
-                  alt="2"
+                  alt="img7"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
               <div>
                 <Image
                   src={img5}
-                  alt="3"
+                  alt="img5"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
@@ -65,21 +65,21 @@ const Gallery = () => {
               <div>
                 <Image
                   src={img8}
-                  alt="4"
+                  alt="img8"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
               <div>
                 <Image
                   src={img9}
-                  alt="5"
+                  alt="img9"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
               <div>
                 <Image
                   src={img4}
-                  alt="6"
+                  alt="img4"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
@@ -89,21 +89,21 @@ const Gallery = () => {
               <div>
                 <Image
                   src={img1}
-                  alt="7"
+                  alt="img1"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
               <div>
                 <Image
                   src={img3}
-                  alt="8"
+                  alt="img3"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
               <div>
                 <Image
                   src={img2}
-                  alt="9"
+                  alt="img2"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
@@ -124,7 +124,7 @@ const Gallery = () => {
           <div className="flex justify-center items-center">
             <Image
               src={banner}
-              alt="10"
+              alt="banner"
               className="w-full xl:w-[80%] h-full rounded-xl object-cover"
             />
           </div>

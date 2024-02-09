@@ -98,7 +98,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex-col justify-start items-center py-16 inline-flex">
+          <div className="w-full flex-col justify-start items-center py-16 inline-flex">
             <div className="justify-start items-center gap-24 md:gap-12 xl:gap-24 px-2 md:px-0 xl:px-10 md:inline-flex">
               <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
                 <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
