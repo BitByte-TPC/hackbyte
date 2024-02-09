@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Image from "next/image";
 import { db } from "../firebase/config";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -40,10 +40,22 @@ export default function About() {
     }
 
     try {
+      // Check if the email already exists in the database
+      const querySnapshot = await getDocs(
+        query(dbInstance, where("email", "==", email))
+      );
+
+      if (!querySnapshot.empty) {
+        notify("Email already subscribed");
+        return;
+      }
+
+      // If the email doesn't exist, add it to the database
       await addDoc(dbInstance, {
         email,
         timestamp: new Date(),
       });
+
       notify("Subscribed successfully!");
       setEmail("");
     } catch (error) {
@@ -88,7 +100,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex-col justify-start items-center py-16 inline-flex">
+          <div className="w-full flex-col justify-start items-center py-16 inline-flex">
             <div className="justify-start items-center gap-24 md:gap-12 xl:gap-24 px-2 md:px-0 xl:px-10 md:inline-flex">
               <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
                 <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
@@ -362,13 +374,15 @@ export default function About() {
                 className=" text-black text-4xl lg:text-5xl font-medium 
                 font-['Clash Grotesk'] leading-[2.75rem] tracking-tighter"
               >
-                Join our mailing list !
+                Join our mailing list!
               </p>
               <p
                 className="max-w-[30rem] text-black text-base md:text-sm lg:text-lg 
                 font-normal font-['Inter'] leading-6 sm:leading-7 tracking-tight"
               >
-                To stay up-to-date with HackByte 2.0, consider subscribing to our mailing list. Helps us share important updates right away with hackers and enthusiasts alike !
+                To stay up-to-date with HackByte 2.0, consider subscribing to
+                our mailing list. Helps us share important updates right away
+                with hackers and enthusiasts alike !
               </p>
             </div>
 
