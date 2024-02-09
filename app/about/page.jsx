@@ -9,10 +9,11 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import backgroundImg from "@/public/background.webp";
 import { Button } from "@/components/ui/button";
-import AboutPageImage1 from "@/public/aboutPage/AboutPageImage1.webp";
+import aboutImg1 from "@/public/aboutPage/about_img1.webp";
 
 export default function About() {
   const [email, setEmail] = useState("");
+  const [bgImgLoaded, setBgImgLoaded] = useState(false);
   const dbInstance = collection(db, "subscribers");
 
   function notify(message) {
@@ -66,20 +67,26 @@ export default function About() {
 
   return (
     <>
-      <div className="relative flex flex-col justify-around w-full min-h-screen">
+      <div
+        className={`relative flex flex-col justify-around w-full min-h-screen ${
+          bgImgLoaded ? "" : "bg-black"
+        }`}
+      >
         <ToastContainer />
         <Image
           src={backgroundImg}
           alt="Background Image"
           fill={true}
+          onLoad={() => {
+            setBgImgLoaded(true);
+          }}
           priority
         />
         <div className="relative z-1 w-full p-4 md:px-12 md:py-8">
           <Navbar />
           <div className="w-full flex-col justify-start items-center py-16 inline-flex">
             <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
-              <p className="text-gray-200 text-4xl md:text-3xl lg:text-[2.5rem] xl:text-5xl  
-                  font-bold font-['Inter']">
+              <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
                 Nice to meet you!
               </p>
               <div className="w-full flex flex-col justify-between md:flex-row gap-4">
@@ -193,9 +200,10 @@ export default function About() {
               </div>
               <div className="mt-12 sm:mt-0">
                 <Image
-                  src={AboutPageImage1}
+                  src={aboutImg1}
                   className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
                   alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
