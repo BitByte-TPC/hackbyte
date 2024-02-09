@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -6,11 +5,11 @@ import img1 from "@/public/galleryPage/img1.webp";
 import img2 from "@/public/galleryPage/img2.webp";
 import img3 from "@/public/galleryPage/img3.webp";
 import img4 from "@/public/galleryPage/img4.webp";
+import img5 from "@/public/galleryPage/img5.webp";
 import img6 from "@/public/galleryPage/img6.webp";
 import img7 from "@/public/galleryPage/img7.webp";
+import img8 from "@/public/galleryPage/img8.webp";
 import img9 from "@/public/galleryPage/img9.webp";
-import img11 from "@/public/galleryPage/img11.webp";
-import img13 from "@/public/galleryPage/img13.webp";
 import banner from "@/public/galleryPage/banner.webp";
 
 const Gallery = () => {
@@ -18,11 +17,10 @@ const Gallery = () => {
     <>
       <div
         className="flex flex-col justify-around min-h-screen bg-black
-        bg-cover bg-no-repeat p-4 md:px-12 md:py-8"
+          p-4 md:px-12 md:py-8"
         style={{
           backgroundImage: "url(/galleryPage/gridbg.svg)",
           backgroundAttachment: "fixed",
-          backgroundPositionY: "bottom",
         }}
       >
         <Navbar />
@@ -41,7 +39,7 @@ const Gallery = () => {
             <div className="flex flex-col gap-5">
               <div>
                 <Image
-                  src={img7}
+                  src={img6}
                   alt="1"
                   className="w-full h-full rounded-xl object-cover"
                   priority
@@ -49,14 +47,14 @@ const Gallery = () => {
               </div>
               <div>
                 <Image
-                  src={img9}
+                  src={img7}
                   alt="2"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
               <div>
                 <Image
-                  src={img6}
+                  src={img5}
                   alt="3"
                   className="w-full h-full rounded-xl object-cover"
                 />
@@ -66,14 +64,14 @@ const Gallery = () => {
             <div className="flex flex-col gap-5">
               <div>
                 <Image
-                  src={img11}
+                  src={img8}
                   alt="4"
                   className="w-full h-full rounded-xl object-cover"
                 />
               </div>
               <div>
                 <Image
-                  src={img13}
+                  src={img9}
                   alt="5"
                   className="w-full h-full rounded-xl object-cover"
                 />
