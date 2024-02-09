@@ -10,6 +10,7 @@ export default function Home() {
       className="flex flex-col justify-around min-h-screen
         bg-cover bg-no-repeat p-4 md:px-12 md:py-8"
       style={{
+        backgroundColor: "#000",
         backgroundImage: "url(/background.webp)",
         backgroundAttachment: "fixed",
         backgroundPositionY: "bottom",
