@@ -13,7 +13,6 @@ export default function Home() {
         backgroundColor: "#000",
         backgroundImage: "url(/background.webp)",
         backgroundAttachment: "fixed",
-        backgroundPositionY: "bottom",
       }}
     >
       <Navbar />
@@ -59,7 +58,7 @@ export default function Home() {
         <Image
           src={hackbyteLogo}
           alt="HackByte Logo"
-          className="max-w-[32rem] min-w-[15rem] w-[75%] 2xl:max-w-[40rem]"
+          className="max-w-[30rem] min-w-[15rem] w-[70%] 2xl:max-w-[40rem] brightness-120"
           priority
         />
       </div>

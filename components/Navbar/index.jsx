@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import classes from "./index.module.css";
 import Link from "next/link";
 
@@ -14,25 +15,35 @@ const navigationItems = [
   { label: "Contact", href: "#" },
 ];
 
-const NavItem = ({ label, href }) => (
-  <div className="group">
-    <Link href={href}>
-      <p className="text-lg md:text-base lg:text-lg text-center">{label}</p>
-    </Link>
-    <div className="mx-2"></div>
-  </div>
-);
+const NavItem = ({ label, href }) => {
+  const pathname = usePathname();
+
+  return (
+    <div
+      className={`group text-[#9A9A9A] ${
+        pathname === href
+          ? "bg-[#FFFFFF1A] py-2 px-6 rounded-full transition-all"
+          : ""
+      }`}
+    >
+      <Link href={href}>
+        <p className="text-lg md:text-base lg:text-lg text-center">{label}</p>
+      </Link>
+      <div className="mx-2"></div>
+    </div>
+  );
+};
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   return (
     <>
-      <nav className="flex items-center justify-center font-[600] text-[#7A7A7A]">
+      <nav className="flex items-center justify-center font-[600]">
         <div
           className="hidden h-10 md:flex md:justify-center md:items-center md:space-x-10 
-            px-12 py-8 rounded-full border border-solid border-gray-800 
-            bg-opacity-60 backdrop-blur-md"
+            px-6 py-8 rounded-full border-2 border-solid border-gray-800 
+            bg-opacity-60 backdrop-blur-xl drop-shadow-lg"
         >
           {navigationItems.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
