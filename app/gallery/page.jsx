@@ -21,14 +21,13 @@ const Gallery = () => {
     <>
       <div
         className="flex flex-col justify-around min-h-screen bg-black
-          p-4 md:px-12 md:py-8"
+          p-4 lg:px-12 md:py-8 mb-0 sm:mb-8 xl:mb-0"
         style={{
           backgroundImage: "url(/galleryPage/gridbg.svg)",
           backgroundAttachment: "fixed",
         }}
       >
         <Navbar />
-        <div />
         <div className="flex flex-col justify-center items-center my-8 xl:my-16">
           <div
             className="text-[#FAF8ED] text-[2.375rem] text-center font-medium leading-[1.2] 

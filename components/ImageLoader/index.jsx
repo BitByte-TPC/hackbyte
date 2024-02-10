@@ -9,7 +9,7 @@ const ImageSkeleton = ({ height }) => {
       <div
         className={`flex items-center justify-center w-56 h-56 sm:w-48 sm:h-48 lg:w-60 lg:h-60 xl:h-[${
           height ? 550 : 250
-        }px] xl:w-[420px]  bg-[#222222] rounded`}
+        }px] xl:w-[380px]  bg-[#222222] rounded-xl`}
       >
         <ImageIcon className="w-10 h-10 text-[#333333]" />
       </div>
@@ -19,8 +19,8 @@ const ImageSkeleton = ({ height }) => {
 
 export default function ImageLoading() {
   return (
-    <div className="max-w-8xl mx-auto py-10">
-      <div className="flex flex-col gap-5 md:flex-row px-4">
+    <div className="max-w-[85rem] mx-auto py-10">
+      <div className="flex flex-col gap-5 md:flex-row px-2">
         <div className="flex flex-col gap-5">
           <ImageSkeleton height={false} />
           <ImageSkeleton height={false} />
