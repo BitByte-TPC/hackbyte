@@ -4,7 +4,7 @@ import ComingSoon from "@/components/ComingSoon";
 export default function FAQ() {
   return (
     <div
-      className="flex flex-col min-h-fit
+      className="flex flex-col min-h-screen md:min-h-fit
         bg-cover p-4 md:px-12 md:pt-8"
       style={{
         backgroundColor: "#000",
