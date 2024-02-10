@@ -3,8 +3,8 @@ import dynamic from "next/dynamic";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import banner from "@/public/galleryPage/banner.jpg";
-import ImageLoading from "../../components/Loaders/Imageloader";
-import BannerLoading from "../../components/Loaders/BannerLoader";
+import ImageLoading from "../../components/ImageLoader";
+import BannerLoading from "../../components/BannerLoader";
 
 const GridImage = dynamic(
   () => import("@/components/ImageGrid").then((module) => module.GridImage),
