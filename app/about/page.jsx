@@ -68,7 +68,7 @@ export default function About() {
   return (
     <>
       <div
-        className={`relative flex flex-col justify-around w-full min-h-screen ${
+        className={`relative flex flex-col w-full min-h-fit ${
           bgImgLoaded ? "" : "bg-black"
         }`}
       >
@@ -201,9 +201,13 @@ export default function About() {
               <div className="mt-12 sm:mt-0">
                 <Image
                   src={aboutImg1}
-                  className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
                   alt=""
-                  loading="lazy"
+                  width={600}
+                  height={400}
+                  className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
+                  placeholder="blur"
+                  layout="responsive"
+                  priority
                 />
               </div>
             </div>
