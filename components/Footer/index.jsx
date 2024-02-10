@@ -3,10 +3,11 @@ import {
   TwitterLogoIcon,
   InstagramLogoIcon,
   LinkedInLogoIcon,
+  DiscordLogoIcon,
 } from "@radix-ui/react-icons";
 
 const SocialMediaIcon = ({ Icon, href }) => (
-  <a href={href}>
+  <a href={href} target="_blank">
     <Icon className="w-7 h-7 text-white transition ease-in-out delay-150 hover:scale-125 duration-300" />
   </a>
 );
@@ -38,9 +39,10 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex gap-6">
-          <SocialMediaIcon href="#" Icon={InstagramLogoIcon} />
-          <SocialMediaIcon href="#" Icon={TwitterLogoIcon} />
-          <SocialMediaIcon href="#" Icon={LinkedInLogoIcon} />
+          <SocialMediaIcon href="https://www.instagram.com/hackbyte.tpc/" Icon={InstagramLogoIcon} />
+          <SocialMediaIcon href="https://twitter.com/HackbyteTPC"  Icon={TwitterLogoIcon} />
+          <SocialMediaIcon href="https://www.linkedin.com/company/bitbyte-tpc/" Icon={LinkedInLogoIcon} />
+          <SocialMediaIcon href="https://discord.gg/NTueHjdPn8" Icon={DiscordLogoIcon}/>
         </div>
       </div>
       <p className="text-stone-400 text-lg font-normal font-['Clash Grotesk'] leading-normal tracking-tight pt-12 mb-8">
