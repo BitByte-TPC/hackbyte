@@ -3,15 +3,17 @@
 import { useState } from "react";
 import Image from "next/image";
 import { db } from "../firebase/config";
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import backgroundImg from "@/public/background.webp";
 import { Button } from "@/components/ui/button";
+import aboutImg1 from "@/public/aboutPage/about_img1.webp";
 
 export default function About() {
   const [email, setEmail] = useState("");
+  const [bgImgLoaded, setBgImgLoaded] = useState(false);
   const dbInstance = collection(db, "subscribers");
 
   function notify(message) {
@@ -39,10 +41,22 @@ export default function About() {
     }
 
     try {
+      // Check if the email already exists in the database
+      const querySnapshot = await getDocs(
+        query(dbInstance, where("email", "==", email))
+      );
+
+      if (!querySnapshot.empty) {
+        notify("Email already subscribed");
+        return;
+      }
+
+      // If the email doesn't exist, add it to the database
       await addDoc(dbInstance, {
         email,
         timestamp: new Date(),
       });
+
       notify("Subscribed successfully!");
       setEmail("");
     } catch (error) {
@@ -53,12 +67,19 @@ export default function About() {
 
   return (
     <>
-      <div className="relative flex flex-col justify-around w-full min-h-screen">
+      <div
+        className={`relative flex flex-col justify-around w-full min-h-screen ${
+          bgImgLoaded ? "" : "bg-black"
+        }`}
+      >
         <ToastContainer />
         <Image
           src={backgroundImg}
           alt="Background Image"
           fill={true}
+          onLoad={() => {
+            setBgImgLoaded(true);
+          }}
           priority
         />
         <div className="relative z-1 w-full p-4 md:px-12 md:py-8">
@@ -66,7 +87,7 @@ export default function About() {
           <div className="w-full flex-col justify-start items-center py-16 inline-flex">
             <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
               <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
-                Nice to meet you
+                Nice to meet you!
               </p>
               <div className="w-full flex flex-col justify-between md:flex-row gap-4">
                 <p
@@ -86,7 +107,7 @@ export default function About() {
             </div>
           </div>
 
-          <div className="flex-col justify-start items-center py-16 inline-flex">
+          <div className="w-full flex-col justify-start items-center py-16 inline-flex">
             <div className="justify-start items-center gap-24 md:gap-12 xl:gap-24 px-2 md:px-0 xl:px-10 md:inline-flex">
               <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
                 <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
@@ -178,9 +199,11 @@ export default function About() {
                 </div>
               </div>
               <div className="mt-12 sm:mt-0">
-                <img
+                <Image
+                  src={aboutImg1}
                   className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
-                  src="/aboutPage/about_img1.png"
+                  alt=""
+                  loading="lazy"
                 />
               </div>
             </div>
@@ -359,14 +382,15 @@ export default function About() {
                 className=" text-black text-4xl lg:text-5xl font-medium 
                 font-['Clash Grotesk'] leading-[2.75rem] tracking-tighter"
               >
-                Share team inboxes
+                Join our mailing list!
               </p>
               <p
                 className="max-w-[30rem] text-black text-base md:text-sm lg:text-lg 
                 font-normal font-['Inter'] leading-6 sm:leading-7 tracking-tight"
               >
-                Whether you have a team of 2 or 200, our shared team inboxes
-                keep everyone on the same page and in the loop.
+                To stay up-to-date with HackByte 2.0, consider subscribing to
+                our mailing list. Helps us share important updates right away
+                with hackers and enthusiasts alike !
               </p>
             </div>
 
