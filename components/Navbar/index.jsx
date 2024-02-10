@@ -9,10 +9,10 @@ const navigationItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Schedule", href: "#" },
-  { label: "Team", href: "#" },
-  { label: "FAQs", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Schedule", href: "/schedule" },
+  { label: "Team", href: "/team" },
+  { label: "FAQs", href: "/faq" },
+  { label: "Contact", href: "/contact" },
 ];
 
 const NavItem = ({ label, href }) => {

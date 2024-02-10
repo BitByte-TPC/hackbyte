@@ -7,7 +7,7 @@ import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
 import { ToastContainer, toast } from "react-toastify";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import backgroundImg from "@/public/background.webp";
+import backgroundImg from "@/public/background.png";
 import { Button } from "@/components/ui/button";
 import aboutImg1 from "@/public/aboutPage/about_img1.webp";
 

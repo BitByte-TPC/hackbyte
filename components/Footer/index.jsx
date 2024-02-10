@@ -16,11 +16,11 @@ const Footer = () => {
   const navigationItems = [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Partners", href: "#" },
-    { label: "Schedule", href: "#" },
-    { label: "Team", href: "#" },
-    { label: "FAQs", href: "#" },
-    { label: "Contact Us", href: "#" },
+    { label: "Gallery", href: "/gallery" },
+    { label: "Schedule", href: "/schedule" },
+    { label: "Team", href: "/team" },
+    { label: "FAQs", href: "/faq" },
+    { label: "Contact Us", href: "/contact" },
   ];
 
   return (
@@ -39,10 +39,22 @@ const Footer = () => {
           ))}
         </div>
         <div className="flex gap-6">
-          <SocialMediaIcon href="https://www.instagram.com/hackbyte.tpc/" Icon={InstagramLogoIcon} />
-          <SocialMediaIcon href="https://twitter.com/HackbyteTPC"  Icon={TwitterLogoIcon} />
-          <SocialMediaIcon href="https://www.linkedin.com/company/bitbyte-tpc/" Icon={LinkedInLogoIcon} />
-          <SocialMediaIcon href="https://discord.gg/NTueHjdPn8" Icon={DiscordLogoIcon}/>
+          <SocialMediaIcon
+            href="https://www.instagram.com/hackbyte.tpc/"
+            Icon={InstagramLogoIcon}
+          />
+          <SocialMediaIcon
+            href="https://twitter.com/HackbyteTPC"
+            Icon={TwitterLogoIcon}
+          />
+          <SocialMediaIcon
+            href="https://www.linkedin.com/company/bitbyte-tpc/"
+            Icon={LinkedInLogoIcon}
+          />
+          <SocialMediaIcon
+            href="https://discord.gg/NTueHjdPn8"
+            Icon={DiscordLogoIcon}
+          />
         </div>
       </div>
       <p className="text-stone-400 text-lg font-normal font-['Clash Grotesk'] leading-normal tracking-tight pt-12 mb-8">
