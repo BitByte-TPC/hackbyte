@@ -198,15 +198,12 @@ export default function About() {
                   </div>
                 </div>
               </div>
-              <div className="mt-12 sm:mt-0">
+              <div className="mt-12 sm:mt-0 min-w-[20rem] md:min-w-[25rem] lg:min-w-[30rem] xl:min-w-[35rem]">
                 <Image
                   src={aboutImg1}
                   alt=""
-                  width={600}
-                  height={400}
                   className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
                   placeholder="blur"
-                  layout="responsive"
                   priority
                 />
               </div>
