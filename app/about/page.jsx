@@ -1,212 +1,143 @@
-"use client";
-
-import { useState } from "react";
 import Image from "next/image";
-import { db } from "../firebase/config";
-import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
-import { ToastContainer, toast } from "react-toastify";
+import aboutImg1 from "@/public/aboutPage/about_img1.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import backgroundImg from "@/public/background.png";
-import { Button } from "@/components/ui/button";
-import aboutImg1 from "@/public/aboutPage/about_img1.webp";
+import NewsLetter from "@/components/NewsLetter";
 
 export default function About() {
-  const [email, setEmail] = useState("");
-  const [bgImgLoaded, setBgImgLoaded] = useState(false);
-  const dbInstance = collection(db, "subscribers");
-
-  function notify(message) {
-    toast(message, {
-      position: "bottom-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      progress: undefined,
-    });
-  }
-
-  const handleSubscribe = async (e) => {
-    e.preventDefault();
-
-    if (!email) {
-      notify("Please enter your email address");
-      return;
-    }
-
-    // Email format validation using regex
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-      notify("Please enter a valid email address");
-      return;
-    }
-
-    try {
-      // Check if the email already exists in the database
-      const querySnapshot = await getDocs(
-        query(dbInstance, where("email", "==", email))
-      );
-
-      if (!querySnapshot.empty) {
-        notify("Email already subscribed");
-        return;
-      }
-
-      // If the email doesn't exist, add it to the database
-      await addDoc(dbInstance, {
-        email,
-        timestamp: new Date(),
-      });
-
-      notify("Subscribed successfully!");
-      setEmail("");
-    } catch (error) {
-      console.error("Error subscribing:", error.message);
-      notify("An error occurred. Please try again later.");
-    }
-  };
-
   return (
     <>
       <div
-        className={`relative flex flex-col w-full min-h-fit ${
-          bgImgLoaded ? "" : "bg-black"
-        }`}
+        className="flex flex-col min-h-fit bg-cover p-4 md:px-12 md:py-8"
+        style={{
+          backgroundColor: "#000",
+          backgroundImage: "url(/background.png)",
+          backgroundAttachment: "fixed",
+        }}
       >
-        <ToastContainer />
-        <Image
-          src={backgroundImg}
-          alt="Background Image"
-          fill={true}
-          onLoad={() => {
-            setBgImgLoaded(true);
-          }}
-          priority
-        />
-        <div className="relative z-1 w-full p-4 md:px-12 md:py-8">
-          <Navbar />
-          <div className="w-full flex-col justify-start items-center py-16 inline-flex">
-            <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
-              <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
-                Nice to meet you!
-              </p>
-              <div className="w-full flex flex-col justify-between md:flex-row gap-4">
-                <p
-                  className="self-stretch max-w-xl  text-white text-4xl md:text-3xl lg:text-[2.5rem] xl:text-5xl  
+        <Navbar />
+        <div className="w-full flex-col justify-start items-center py-16 inline-flex">
+          <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
+            <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
+              Nice to meet you!
+            </p>
+            <div className="w-full flex flex-col justify-between md:flex-row gap-4">
+              <p
+                className="self-stretch max-w-xl  text-white text-4xl md:text-3xl lg:text-[2.5rem] xl:text-5xl  
                   font-medium font-['Clash Grotesk'] leading-[50px] tracking-tighter"
-                >
-                  We aim to nurture thriving innovation
-                </p>
-                <p
-                  className="max-w-sm md:max-w-[15rem] lg:max-w-xs xl:max-w-sm self-stretch text-gray-200 text-xl md:text-base lg:text-xl 
+              >
+                We aim to nurture thriving innovation
+              </p>
+              <p
+                className="max-w-sm md:max-w-[15rem] lg:max-w-xs xl:max-w-sm self-stretch text-gray-200 text-xl md:text-base lg:text-xl 
                 font-normal font-['Inter'] leading-[30px]"
-                >
-                  Embark on an enriching voyage with HackByte, where the fusion
-                  of tech expertise and boundless innovation unfolds.
-                </p>
-              </div>
+              >
+                Embark on an enriching voyage with HackByte, where the fusion of
+                tech expertise and boundless innovation unfolds.
+              </p>
             </div>
           </div>
+        </div>
 
-          <div className="w-full flex-col justify-start items-center py-16 inline-flex">
-            <div className="justify-start items-center gap-24 md:gap-12 xl:gap-24 px-2 md:px-0 xl:px-10 md:inline-flex">
-              <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
-                <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
-                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                    <p
-                      className="self-stretch text-center text-white text-5xl md:text-3xl 
+        <div className="w-full flex-col justify-start items-center py-16 inline-flex">
+          <div className="justify-start items-center gap-24 md:gap-12 xl:gap-24 px-2 md:px-0 xl:px-10 md:inline-flex">
+            <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
+              <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
+                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                  <p
+                    className="self-stretch text-center text-white text-5xl md:text-3xl 
                     lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                    >
-                      1500+
-                    </p>
-                    <p
-                      className="self-stretch text-center text-white text-lg md:text-sm lg:text-lg 
+                  >
+                    1500+
+                  </p>
+                  <p
+                    className="self-stretch text-center text-white text-lg md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
-                    >
-                      Registrations
-                    </p>
-                    <p
-                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
+                  >
+                    Registrations
+                  </p>
+                  <p
+                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
                     font-normal font-['Inter'] leading-normal"
-                    >
-                      1500+ registrations from across the country.
-                    </p>
-                  </div>
-                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                    <p
-                      className="self-stretch text-center text-white text-5xl md:text-3xl 
+                  >
+                    1500+ registrations from across the country.
+                  </p>
+                </div>
+                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                  <p
+                    className="self-stretch text-center text-white text-5xl md:text-3xl 
                     lg:text-[3.25rem] 
                      xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                    >
-                      500+
-                    </p>
-                    <p
-                      className="self-stretch text-center text-white md:text-sm lg:text-lg 
+                  >
+                    500+
+                  </p>
+                  <p
+                    className="self-stretch text-center text-white md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
-                    >
-                      Offline Participants
-                    </p>
-                    <p
-                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
+                  >
+                    Offline Participants
+                  </p>
+                  <p
+                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
                     font-normal font-['Inter'] leading-normal"
-                    >
-                      500+ participants joined the offline hackathon!
-                    </p>
-                  </div>
-                </div>
-                <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
-                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                    <p
-                      className="self-stretch text-center text-white text-5xl 
-                    md:text-4xl 
-                    lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                    >
-                      100+
-                    </p>
-                    <p
-                      className="self-stretch text-center text-white md:text-sm lg:text-lg 
-                    font-semibold font-['Inter'] leading-7"
-                    >
-                      Volunteers
-                    </p>
-                    <p
-                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
-                    font-normal font-['Inter'] leading-normal"
-                    >
-                      To help you, get the best out of HackByte
-                    </p>
-                  </div>
-                  <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                    <p
-                      className="self-stretch text-center text-white text-5xl 
-                    md:text-4xl 
-                    lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                    >
-                      120+
-                    </p>
-                    <p
-                      className="self-stretch text-center text-white md:text-sm lg:text-lg 
-                    font-semibold font-['Inter'] leading-7"
-                    >
-                      Projects
-                    </p>
-                    <p
-                      className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base
-                    font-normal font-['Inter'] leading-normal"
-                    >
-                      Innovative submissions from various domains.
-                    </p>
-                  </div>
+                  >
+                    500+ participants joined the offline hackathon!
+                  </p>
                 </div>
               </div>
-              <div className="mt-12 sm:mt-0 min-w-[20rem] md:min-w-[25rem] lg:min-w-[30rem] xl:min-w-[35rem]">
-                <Image
-                  src={aboutImg1}
-                  alt=""
-                  className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
-                  placeholder="blur"
-                  priority
-                />
+              <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
+                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                  <p
+                    className="self-stretch text-center text-white text-5xl 
+                    md:text-4xl 
+                    lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
+                  >
+                    100+
+                  </p>
+                  <p
+                    className="self-stretch text-center text-white md:text-sm lg:text-lg 
+                    font-semibold font-['Inter'] leading-7"
+                  >
+                    Volunteers
+                  </p>
+                  <p
+                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base 
+                    font-normal font-['Inter'] leading-normal"
+                  >
+                    To help you, get the best out of HackByte
+                  </p>
+                </div>
+                <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
+                  <p
+                    className="self-stretch text-center text-white text-5xl 
+                    md:text-4xl 
+                    lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
+                  >
+                    120+
+                  </p>
+                  <p
+                    className="self-stretch text-center text-white md:text-sm lg:text-lg 
+                    font-semibold font-['Inter'] leading-7"
+                  >
+                    Projects
+                  </p>
+                  <p
+                    className="self-stretch text-center text-gray-200 text-base md:text-xs lg:text-base
+                    font-normal font-['Inter'] leading-normal"
+                  >
+                    Innovative submissions from various domains.
+                  </p>
+                </div>
               </div>
+            </div>
+            <div className="mt-12 sm:mt-0 min-w-[20rem] md:min-w-[25rem] lg:min-w-[30rem] xl:min-w-[35rem]">
+              <Image
+                src={aboutImg1}
+                alt=""
+                className="w-full md:max-w-xs lg:max-w-sm xl:max-w-xl h-auto"
+                placeholder="blur"
+                priority
+              />
             </div>
           </div>
         </div>
@@ -444,53 +375,7 @@ export default function About() {
       </div>
 
       <div className="relative bg-[#000000] w-full h-full flex flex-col justify-end pt-48 md:pt-60 lg:pt-80">
-        <div className="absolute top-[-9rem] sm:top-[-6rem] w-full flex justify-center">
-          <div
-            className="w-full flex flex-col justify-between items-start gap-8 
-            sm:w-[80%] mx-4 px-3 py-10 md:p-10 lg:p-16 bg-gray-50 rounded-2xl shadow md:flex-row"
-          >
-            <div className="max-w-xl flex-col justify-start items-start gap-3 inline-flex">
-              <div
-                className="self-stretch text-gray-900 text-3xl md:text-2xl lg:text-3xl 
-                font-medium font-['Clash Grotesk'] leading-8"
-              >
-                Join our newsletter
-              </div>
-              <div
-                className="self-stretch text-slate-600 text-lg md:text-base lg:text-xl 
-              font-normal font-['Inter'] leading-[1.75rem]"
-              >
-                Sign up for the very best tutorials and the latest news.
-              </div>
-            </div>
-
-            <div className="flex flex-col justify-start items-start gap-4 lg:flex-row w-full xl:max-w-md">
-              <div className="w-full md:max-w-lg flex-col justify-start items-start gap-1.5 inline-flex">
-                <input
-                  type="text"
-                  placeholder="Enter your email"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="w-full py-3 px-3.5 bg-[#ffffff] rounded-lg text-gray-500 
-                    border-2 border-[#D0D5DD] focus:outline-purple-300 focus:text-gray-900"
-                />
-              </div>
-              <Button
-                size="sm"
-                onClick={handleSubscribe}
-                className="w-full lg:w-32 flex justify-center items-center bg-black 
-                  text-white text-[1.125rem] font-medium p-6 rounded-none 
-                  hover:bg-black hover:text-white"
-                style={{
-                  boxShadow:
-                    "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
-                }}
-              >
-                Subscribe
-              </Button>
-            </div>
-          </div>
-        </div>
+        <NewsLetter />
         <div
           className="flex flex-col justify-between gap-20 md:flex-row px-6 
           md:px-8 xl:px-20 py-20"
