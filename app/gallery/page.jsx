@@ -6,6 +6,14 @@ import banner from "@/public/galleryPage/banner.jpg";
 import ImageLoading from "../../components/ImageLoader";
 import BannerLoading from "../../components/BannerLoader";
 
+export const metadata = {
+  title: "Gallery | HackByte",
+  description:
+    "Explore the gallery showcasing memorable moments from past HackByte events at IIITDMJ. View images and photos from previous hackathons and experience the innovation and excitement of the coding community.",
+  keywords:
+    "Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech, Gallery, Photos, Videos, Past Events, Previous Events",
+};
+
 const GridImage = dynamic(
   () => import("@/components/ImageGrid").then((module) => module.GridImage),
   { loading: () => <ImageLoading />, ssr: false }
@@ -21,7 +29,7 @@ const Gallery = () => {
     <>
       <div
         className="flex flex-col justify-around min-h-screen bg-black
-          p-4 lg:px-12 md:py-8 mb-0 sm:mb-8 xl:mb-0"
+          p-4 lg:px-12 md:py-8 mb-0"
         style={{
           backgroundImage: "url(/galleryPage/gridbg.svg)",
           backgroundAttachment: "fixed",
@@ -33,7 +41,7 @@ const Gallery = () => {
             className="text-[#FAF8ED] text-[2.375rem] text-center font-medium leading-[1.2] 
                 lg:leading-[1.1] lg:text-[3rem]"
           >
-            2024 (HACKBYTE 2.0)
+            2023 (HACKBYTE)
           </div>
         </div>
 

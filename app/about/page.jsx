@@ -4,6 +4,13 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NewsLetter from "@/components/NewsLetter";
 
+export const metadata = {
+  title: "About | HackByte",
+  description:
+    "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
+  keywords: "Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech",
+};
+
 export default function About() {
   return (
     <>
