@@ -393,8 +393,8 @@ export default function About() {
       <div className="relative bg-[#000000] w-full h-full flex flex-col justify-end pt-48 md:pt-60 lg:pt-80">
         <NewsLetter />
         <div
-          className="flex flex-col justify-between gap-20 md:flex-row px-6 
-          md:px-8 xl:px-20 py-20"
+          className="flex flex-col justify-between gap-20 md:flex-row 
+            px-6 md:px-8 xl:px-20 py-20"
         >
           <p
             className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-9xl xl:text-[10rem] 
