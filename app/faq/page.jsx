@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import ComingSoon from "@/components/ComingSoon";
 
+export const metadata = {
+  title: "FAQ | HackByte",
+};
+
 export default function FAQ() {
   return (
     <div

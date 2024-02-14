@@ -9,6 +9,15 @@ export const metadata = {
   description:
     "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
   keywords: "Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech",
+  openGraph: {
+    title: "About | HackByte",
+    description:
+      "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
+    url: "https://hackbyte.in/about",
+    siteName: "HackByte - IIITDMJ Hackathon",
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 export default function About() {
@@ -399,7 +408,7 @@ export default function About() {
 
           <img
             className="w-44 h-44 lg:h-60 lg:w-60"
-            src="/aboutPage/getInTouchImage.svg"
+            src="/getInTouchImage.svg"
             alt=""
           />
         </div>

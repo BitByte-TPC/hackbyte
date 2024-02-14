@@ -1,6 +1,10 @@
 import Navbar from "@/components/Navbar";
 import ComingSoon from "@/components/ComingSoon";
 
+export const metadata = {
+  title: "Schedule | HackByte",
+};
+
 export default function Schedule() {
   return (
     <div
