@@ -17,6 +17,8 @@ export const metadata = {
     description:
       "Explore the gallery showcasing memorable moments from past HackByte events at IIITDMJ. View images and photos from previous hackathons and experience the innovation and excitement of the coding community.",
     url: "https://hackbyte.in/gallery",
+    images:
+      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",
