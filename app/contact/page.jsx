@@ -24,17 +24,16 @@ export default function Contact() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-        p-4 md:py-8 md:px-0 "
+          p-4 md:pt-8 md:pb-64 md:px-0"
       >
         <Navbar />
-
         <div
           className="w-full h-full flex flex-col px-4 
-          md:px-8 xl:px-20 2xl:px-40 gap-24 pt-4 md:pt-20"
+            md:px-8 xl:px-20 2xl:px-40 gap-24 pt-4 md:pt-20"
         >
           <div
             className="flex flex-col justify-between items-start sm:items-center 
-          gap-12 md:gap-0 md:flex-row"
+              gap-12 md:gap-0 md:flex-row"
           >
             <div className="flex flex-col items-start gap-8">
               <p
@@ -47,8 +46,8 @@ export default function Contact() {
               </p>
               <p
                 className="w-full text-[#C3C3C3] font-['Inter'] font-normal 
-              text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 
-              2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
+                  text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 
+                  2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
               >
                 Hacker Experience is what we prioritize! Have questions, need
                 assistance, or just want to connect? Feel free to reach out!

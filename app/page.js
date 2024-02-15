@@ -2,13 +2,25 @@ import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import hackbyteLogo from "@/public/hackbyteLogo.png";
+import {
+  TwitterLogoIcon,
+  InstagramLogoIcon,
+  LinkedInLogoIcon,
+  DiscordLogoIcon,
+} from "@radix-ui/react-icons";
 import Image from "next/image";
+
+const SocialMediaIcon = ({ Icon, href }) => (
+  <a href={href} target="_blank">
+    <Icon className="w-7 h-7 text-white transition ease-in-out delay-150 hover:scale-125 duration-300" />
+  </a>
+);
 
 export default function Home() {
   return (
     <div
       className="flex flex-col justify-around min-h-screen
-        bg-cover p-4 md:px-12 md:py-8"
+        bg-cover p-4 md:px-12 md:py-4"
       style={{
         backgroundColor: "#000",
         backgroundImage: "url(/background.png)",
@@ -16,14 +28,8 @@ export default function Home() {
       }}
     >
       <Navbar />
-      <div className="flex flex-wrap justify-between items-center pt-16 xl:pt-0 gap-4 lg:gap-0">
+      <div className="flex flex-wrap justify-between items-center pt-16 gap-4 xl:pt-4 lg:gap-0">
         <div className="flex flex-col items-start w-full lg:w-1/2">
-          {/* <p
-            className="text-[#FAF8ED] text-[1.25rem] font-medium uppercase 
-                lg:text-[1.5rem]"
-          >
-            This year&apos;s theme :{" "}
-          </p> */}
           <p
             className="text-[#FAF8ED] text-[2.375rem] font-medium leading-[1.2] 
                 lg:leading-[1.1] lg:text-[3rem]"
@@ -103,14 +109,28 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hidden lg:flex lg:flex-col lg:items-end lg:max-w-[24rem] xl:max-w-md">
+        <div className="hidden lg:flex flex-col items-end gap-4 lg:max-w-[24rem] xl:max-w-md">
           <p className="text-[#FAF8ED] text-[1rem] xl:text-[1.125rem] font-[600] text-right">
             HackByte: Empower Your Digital Odyssey!
           </p>
-          <p className="text-[#FAF8ED] text-[1rem] xl:text-[1.125rem] font-normal text-right uppercase">
-            Embark on an enriching voyage with HackByte, where the fusion of
-            tech expertise and boundless innovation unfolds.
-          </p>
+          <div className="flex gap-6">
+            <SocialMediaIcon
+              href="https://www.instagram.com/hackbyte.tpc/"
+              Icon={InstagramLogoIcon}
+            />
+            <SocialMediaIcon
+              href="https://twitter.com/HackbyteTPC"
+              Icon={TwitterLogoIcon}
+            />
+            <SocialMediaIcon
+              href="https://www.linkedin.com/company/bitbyte-tpc/"
+              Icon={LinkedInLogoIcon}
+            />
+            <SocialMediaIcon
+              href="https://discord.gg/NTueHjdPn8"
+              Icon={DiscordLogoIcon}
+            />
+          </div>
         </div>
       </div>
     </div>
