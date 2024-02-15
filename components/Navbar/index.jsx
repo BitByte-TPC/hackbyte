@@ -41,7 +41,7 @@ export default function Navbar() {
     <>
       <nav className="flex items-center justify-center font-[600]">
         <div
-          className="hidden h-10 md:flex md:justify-center md:items-center md:space-x-10 
+          className="hidden h-10 lg:flex lg:justify-center lg:items-center lg:space-x-10 
             px-6 py-8 rounded-full border-2 border-solid border-gray-800 
             bg-opacity-60 backdrop-blur-xl drop-shadow-lg"
         >
@@ -49,11 +49,24 @@ export default function Navbar() {
             <NavItem key={label} label={label} href={href} />
           ))}
         </div>
-        <div className="md:hidden flex items-center justify-end w-full">
+        <a
+          id="mlh-trust-badge"
+          className="block absolute max-w-[65px] min-w-[60px] right-[60px] md:right-[100px] lg:right-[60px] xl:right-[100px] top-0 w-[10%] z-10000"
+          href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
+            alt="Major League Hacking 2024 Hackathon Season"
+            className="w-full"
+          />
+        </a>
+
+        <div className="flex items-center justify-end w-full lg:hidden">
           <button
             id="menu-btn"
             type="button"
-            className={`z-40 hamburger md:hidden focus:outline-none ${
+            className={`z-40 hamburger lg:hidden focus:outline-none ${
               isMenuOpen ? classes.open : ""
             } ${classes.hamburger}`}
             onClick={() => setMenuOpen(!isMenuOpen)}

@@ -16,7 +16,7 @@ export default function Home() {
       }}
     >
       <Navbar />
-      <div className="flex flex-wrap justify-between items-center gap-4 lg:gap-0">
+      <div className="flex flex-wrap justify-between items-center pt-16 xl:pt-0 gap-4 lg:gap-0">
         <div className="flex flex-col items-start w-full lg:w-1/2">
           {/* <p
             className="text-[#FAF8ED] text-[1.25rem] font-medium uppercase 
