@@ -28,8 +28,8 @@ export default function Contact() {
       >
         <Navbar />
         <div
-          className="w-full h-full flex flex-col px-4 
-            md:px-8 xl:px-20 2xl:px-40 gap-24 pt-4 md:pt-20"
+          className="w-full h-full flex flex-col gap-24 px-4 pt-20 
+            md:px-8 xl:px-20 2xl:px-40"
         >
           <div
             className="flex flex-col justify-between items-start sm:items-center 

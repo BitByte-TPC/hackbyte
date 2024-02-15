@@ -64,7 +64,7 @@ export default function Home() {
         <Image
           src={hackbyteLogo}
           alt="HackByte Logo"
-          className="max-w-[30rem] min-w-[15rem] w-[70%] 2xl:max-w-[40rem] brightness-120"
+          className="max-w-[30rem] min-w-[15rem] w-[70%] 2xl:max-w-[32rem] brightness-120"
           priority
         />
       </div>

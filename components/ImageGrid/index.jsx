@@ -3,11 +3,11 @@ import img1 from "@/public/galleryPage/img1.webp";
 import img2 from "@/public/galleryPage/img2.webp";
 import img3 from "@/public/galleryPage/img3.webp";
 import img4 from "@/public/galleryPage/img4.webp";
-import img5 from "@/public/galleryPage/img5.webp";
+import img5 from "@/public/galleryPage/img5.jpg";
 import img6 from "@/public/galleryPage/img6.webp";
 import img7 from "@/public/galleryPage/img7.webp";
-import img8 from "@/public/galleryPage/img8.webp";
-import img9 from "@/public/galleryPage/img9.webp";
+import img8 from "@/public/galleryPage/img8.jpg";
+import img9 from "@/public/galleryPage/img9.jpg";
 
 const GridImage = () => {
   return (

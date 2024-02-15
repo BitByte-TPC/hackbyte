@@ -47,7 +47,7 @@ const Gallery = () => {
         }}
       >
         <Navbar />
-        <div className="flex flex-col justify-center items-center my-8 xl:my-16">
+        <div className="flex flex-col justify-center items-center pt-20">
           <div
             className="text-[#FAF8ED] text-[2.375rem] text-center font-medium leading-[1.2] 
                 lg:leading-[1.1] lg:text-[3rem]"
