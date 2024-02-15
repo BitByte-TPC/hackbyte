@@ -15,11 +15,6 @@ export const metadata = {
       "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
     url: "https://hackbyte.in/about",
     siteName: "HackByte - IIITDMJ Hackathon",
-    images: [
-      {
-        url: "/opengraph-image.jpg",
-      },
-    ],
     type: "website",
     locale: "en_US",
   },

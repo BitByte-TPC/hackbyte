@@ -12,11 +12,6 @@ export const metadata = {
       "Connect with us at HackByte! Reach out for assistance, questions, or just to say hello. Find information on reaching IIIT Jabalpur, including travel options.",
     url: "https://hackbyte.in/contact",
     siteName: "HackByte - IIITDMJ Hackathon",
-    images: [
-      {
-        url: "/opengraph-image.jpg",
-      },
-    ],
     type: "website",
     locale: "en_US",
   },
