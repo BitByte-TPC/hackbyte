@@ -18,6 +18,11 @@ export const metadata = {
       "Explore the gallery showcasing memorable moments from past HackByte events at IIITDMJ. View images and photos from previous hackathons and experience the innovation and excitement of the coding community.",
     url: "https://hackbyte.in/gallery",
     siteName: "HackByte - IIITDMJ Hackathon",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+      },
+    ],
     type: "website",
     locale: "en_US",
   },

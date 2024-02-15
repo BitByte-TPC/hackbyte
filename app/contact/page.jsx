@@ -12,6 +12,11 @@ export const metadata = {
       "Connect with us at HackByte! Reach out for assistance, questions, or just to say hello. Find information on reaching IIIT Jabalpur, including travel options.",
     url: "https://hackbyte.in/contact",
     siteName: "HackByte - IIITDMJ Hackathon",
+    images: [
+      {
+        url: "/opengraph-image.jpg",
+      },
+    ],
     type: "website",
     locale: "en_US",
   },
@@ -66,7 +71,7 @@ export default function Contact() {
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3174.631325012539!2d80.02390068793628!3d23.17681212828739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981a94397365dd3%3A0x5f9aeb812c2678c9!2sIIITDM%20Jabalpur!5e0!3m2!1sen!2sin!4v1696615484249!5m2!1sen!2sin"
-              className="w-full h-full md:h-[25rem] border-0 rounded-2xl"
+              className="w-full h-full md:h-[25rem] border-0"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
