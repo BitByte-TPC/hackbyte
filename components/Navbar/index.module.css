@@ -1,14 +1,14 @@
 .hamburger {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   cursor: pointer;
   transition: all 0.25s;
-  position: relative; 
-  border: 1.5px solid #9d9d9d; 
-  border-radius: 2rem; 
-  display: flex;
-  padding: .6rem 1.3rem; 
-  align-items: flex-end;
-  row-gap: 0.31rem; 
-  flex-direction: column;
+  border: 1.5px solid #9d9d9d;
+  border-radius: 2rem;
+  padding: 0.6rem 1.3rem;
+  row-gap: 0.31rem;
 }
 
 .hamburgerTop,
@@ -23,7 +23,7 @@
   transition: all 0.5s;
 }
 
-.hamburgerBottom{
+.hamburgerBottom {
   width: calc(100% - 8px);
 }
 .open {
@@ -33,12 +33,13 @@
 }
 
 .open .hamburgerTop {
-  transform: translateY(4px) rotate(45deg); 
+  transform: translateY(4px) rotate(45deg);
 }
 
 .open .hamburgerMiddle {
   transform: translateY(-4px) rotate(-45deg);
 }
+
 .open .hamburgerBottom {
   display: none;
 }
