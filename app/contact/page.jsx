@@ -39,7 +39,7 @@ export default function Contact() {
               <p
                 className="max-w-[50rem] 2xl:max-w-[60rem] text-6xl text-[#F5F0D8] font-normal 
                 tracking-tighter md:text-[5.5rem] lg:text-9xl xl:text-[10rem] md:leading-[5rem] 
-                lg:leading-[7rem] xl:leading-[8rem] 2xl:leading-[10rem] md:tracking-[-0.2rem]"
+                lg:leading-[7rem] xl:leading-[10rem] md:tracking-[-0.2rem]"
               >
                 How can we
                 <br /> help you?

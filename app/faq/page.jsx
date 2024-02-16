@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Image from "next/image";
 import badgebundle from "@/public/badgebundle.svg";
 import {
   Accordion,
@@ -8,9 +7,22 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import Footer from "@/components/Footer";
+import Image from "next/image";
 
 export const metadata = {
   title: "FAQ | HackByte",
+  description: "Frequently asked questions about HackByte.",
+  keywords: "FAQ, HackByte, IIITDMJ, Hackathon",
+  openGraph: {
+    title: "FAQ | HackByte",
+    description: "Frequently asked questions about HackByte.",
+    url: "https://hackbyte.in/faq",
+    images:
+      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+    siteName: "HackByte - IIITDMJ Hackathon",
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 export default function FAQ() {
@@ -59,15 +71,22 @@ export default function FAQ() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          p-4 md:pt-8 md:px-0"
+          p-4 md:pt-8 md:pb-48 lg:px-0"
       >
         <Navbar />
         <div className="flex justify-between pt-16 md:pt-12 md:pl-8 xl:pl-20">
           <div className="flex flex-col items-start gap-8">
-            <div className="max-w-[840px] text-[#f5f0d8] text-[4rem] md:text-[8rem] lg:text-[120px] xl:text-[160px] font-[500px] md:font-[450px] leading-[5rem] md:leading-[100%] tracking-tighter md:tracking-normal">
+            <div
+              className="max-w-[840px] text-[#f5f0d8] text-[4rem] font-normal 
+                leading-[5rem] tracking-tighter md:text-[8rem] lg:text-[6rem] 
+                xl:text-[9.5rem] md:leading-[100%] md:tracking-normal"
+            >
               Everything you need to know!
             </div>
-            <div className="max-w-[700px] text-[#c3c3c3] font-['Inter'] text-xl md:text-2xl font-normal leading-[2.125rem]">
+            <div
+              className="max-w-[650px] xl:max-w-[700px] text-[#c3c3c3] font-['Inter'] 
+              text-xl font-normal leading-[2.125rem] md:text-2xl"
+            >
               Let us help you become even greater at what you do. Fill out the
               following form and we will get back to you in the next 24 hours.
             </div>
@@ -76,13 +95,19 @@ export default function FAQ() {
           <Image
             src={badgebundle}
             alt=""
-            className="lg:w-80 lg:h-[400px] xl:w-[400px] xl:h-[520px] hidden lg:block"
+            className="hidden lg:w-80 lg:h-[400px] xl:w-[400px] xl:h-[520px] lg:block"
           />
         </div>
 
-        <div className="flex flex-col md:flex-row gap-12 md:gap-24 md:px-8 pt-16 pb-8 md:py-24 md:pb-0 self-center">
-          <div className="flex gap-5 flex-col">
-            <div className="max-w-[448px] text-white text-3xl md:text-4xl font-medium leading-[44px]">
+        <div
+          className="flex flex-col md:flex-row self-center gap-12 md:gap-16 lg:gap-24 
+            pt-16 pb-8 md:px-8 xl:px-20 md:pt-24 md:pb-0"
+        >
+          <div className="flex flex-col gap-5">
+            <div
+              className="max-w-[448px] text-white text-3xl md:text-4xl 
+              font-medium leading-[44px]"
+            >
               FAQs
             </div>
             <div className="max-w-[448px]">
@@ -99,10 +124,16 @@ export default function FAQ() {
             {data.map((item, index) => (
               <Accordion key={index} type="single" collapsible>
                 <AccordionItem value={`item-${index}`} className="py-4 md:p-8">
-                  <AccordionTrigger className="max-w-[592px] text-white text-2xl font-medium font-['Clash Grotesk'] leading-7">
+                  <AccordionTrigger
+                    className="max-w-[592px] text-white text-2xl 
+                    font-medium leading-7"
+                  >
                     {item.title}
                   </AccordionTrigger>
-                  <AccordionContent className="max-w-[592px] text-gray-200 text-lg font-normal font-['Inter'] leading-7">
+                  <AccordionContent
+                    className="max-w-[592px] text-gray-200 text-lg 
+                      font-normal font-['Inter'] leading-7"
+                  >
                     {item.content}
                   </AccordionContent>
                 </AccordionItem>
