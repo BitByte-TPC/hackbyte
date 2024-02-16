@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import CircleAnimation from "@/components/CircleAnimation";
 
 export const metadata = {
   title: "FAQ | HackByte",
@@ -158,11 +159,7 @@ export default function FAQ() {
             <br /> Odyssey!
           </p>
 
-          <img
-            className="w-44 h-44 lg:h-60 lg:w-60"
-            src="/getInTouchImage.svg"
-            alt=""
-          />
+          <CircleAnimation />
         </div>
       </div>
       <Footer />
