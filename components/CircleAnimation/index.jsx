@@ -19,9 +19,9 @@ const CircleAnimation = () => {
   }, []);
 
   return (
-    <div className={`${styles.rotatingContainer} w-80 overflow-hidden`}>
-      <div className="w-full h-full flex justify-center align-middle">
-        <img src={images[currentIndex]} alt="" />
+    <div className="overflow-hidden flex justify-center items-center">
+      <div className={`${styles.rotatingContainer}`}>
+        <img src={images[currentIndex]} alt="" className="w-44 lg:w-80" />
       </div>
     </div>
   );
