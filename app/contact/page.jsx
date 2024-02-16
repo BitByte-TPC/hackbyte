@@ -24,7 +24,7 @@ export default function Contact() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          p-4 md:pt-8 md:pb-64 md:px-0"
+          p-4 md:pt-8 md:pb-64 lg:px-0"
       >
         <Navbar />
         <div

@@ -1,73 +1,81 @@
-"use client";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
+import { Button } from "@/components/ui/button";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 export default function NotFound() {
-  const router = useRouter();
-
   return (
-    <section class="bg-white">
-      <div class="container flex items-center min-h-screen px-6 py-12 mx-auto">
-        <div class="flex flex-col items-center max-w-sm mx-auto text-center">
-          <p class="p-3 text-sm font-medium text-blue-500 rounded-full bg-blue-50">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              class="w-6 h-6"
+    <>
+      <div
+        class="bg-[#101010] flex flex-col min-h-fit
+        p-4 md:pt-8 md:pb-48 lg:px-0"
+      >
+        <Navbar />
+        <div
+          className="flex flex-col items-start gap-12 xl:gap-16 px-4 pt-20 
+          md:px-8 lg:px-20 2xl:px-40 lg:pt-12"
+        >
+          <div className="flex flex-col items-start gap-6 max-w-full lg:max-w-[80%]">
+            <div
+              className="flex items-center rounded-[2.5rem] border border-[#D1CAC7] 
+              py-3 px-4 md:py-4"
             >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M12 9v3.75m9-.75a9 9 0 11-18 0 9 9 0 0118 0zm-9 3.75h.008v.008H12v-.008z"
-              />
-            </svg>
-          </p>
-          <h1 class="mt-3 text-2xl font-semibold text-gray-800 md:text-3xl">
-            Page not found
-          </h1>
-          <p class="mt-4 text-gray-500">
-            The page you are looking for doesn't exist. Here are some helpful
-            links:
-          </p>
-
-          <div class="flex items-center w-full mt-6 gap-x-3 shrink-0 sm:w-auto">
-            <button
-              onClick={() => router.back()}
-              class="flex items-center justify-center w-1/2 px-5 py-2 text-sm 
-                text-gray-700 transition-colors duration-200 bg-white border 
-                rounded-lg gap-x-2 sm:w-auto hover:bg-gray-100"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="w-5 h-5 rtl:rotate-180"
+              <p
+                className="text-[#AD9C94] font-['Inter'] font-normal 
+              text-[1.125rem] md:text-[1.25rem]"
               >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  d="M6.75 15.75L3 12m0 0l3.75-3.75M3 12h18"
-                />
-              </svg>
-
-              <span>Go back</span>
-            </button>
-
-            <button
-              class="w-1/2 px-5 py-2 text-sm tracking-wide text-white 
-                transition-colors duration-200 bg-blue-500 rounded-lg 
-                shrink-0 sm:w-auto hover:bg-blue-600"
+                ERROR 404
+              </p>
+            </div>
+            <p
+              className="text-[#F5F0D8] font-normal text-[3rem] leading-[4rem] 
+              xl:leading-[5.5rem] xl:text-[5rem]"
             >
-              <Link href="/">Take me home</Link>
-            </button>
+              Sorry, but the page you are looking for might have been removed or
+              is temporarily unavailable.
+            </p>
           </div>
+
+          <Link href="/">
+            <Button
+              size="sm"
+              className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium
+              p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black"
+              style={{
+                boxShadow:
+                  "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
+              }}
+            >
+              BACK TO HOME
+              <ArrowTopRightIcon className="w-5 h-5 ml-1" />
+            </Button>
+          </Link>
         </div>
       </div>
-    </section>
+      <div className="bg-black w-full h-full py-24 lg:py-40">
+        <div
+          className="flex flex-col justify-between gap-20 md:flex-row 
+          px-4 md:px-8 xl:px-20 2xl:px-40"
+        >
+          <p
+            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-9xl xl:text-[10rem] 
+              text-white font-normal font-['Clash Grotesk'] md:leading-[8rem] 
+                lg:leading-[10rem] tracking-tighter md:tracking-[-0.2rem]"
+          >
+            Empower
+            <br /> Your Digital
+            <br /> Odyssey!
+          </p>
+
+          <img
+            className="w-44 h-44 lg:h-60 lg:w-60"
+            src="/getInTouchImage.svg"
+            alt=""
+          />
+        </div>
+      </div>
+      <Footer />
+    </>
   );
 }
