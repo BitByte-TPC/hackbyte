@@ -4,6 +4,8 @@ import { useState } from "react";
 import { usePathname } from "next/navigation";
 import classes from "./index.module.css";
 import Link from "next/link";
+import Image from "next/image";
+import HBMobileLogo from "@/public/HBMobileLogo.svg";
 
 const navigationItems = [
   { label: "Home", href: "/" },
@@ -39,7 +41,13 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center justify-center font-[600]">
+      <nav className="flex items-center md:p-5 lg:p-0 lg:justify-center font-[600]">
+        <Image
+          src={HBMobileLogo}
+          alt="Hackathon-Mobile-Logo"
+          className="h-12 w-24 lg:hidden"
+          priority
+        />
         <div
           className="hidden h-10 lg:flex lg:justify-center lg:items-center lg:space-x-10 
             px-6 py-8 rounded-full border-2 border-solid border-gray-800 
