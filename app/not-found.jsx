@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
+import CircleAnimation from "@/components/CircleAnimation";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
@@ -59,7 +60,7 @@ export default function NotFound() {
           px-4 md:px-8 xl:px-20 2xl:px-40"
         >
           <p
-            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-9xl xl:text-[10rem] 
+            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
               text-white font-normal font-['Clash Grotesk'] md:leading-[8rem] 
                 lg:leading-[10rem] tracking-tighter md:tracking-[-0.2rem]"
           >
@@ -68,11 +69,7 @@ export default function NotFound() {
             <br /> Odyssey!
           </p>
 
-          <img
-            className="w-44 h-44 lg:h-60 lg:w-60"
-            src="/getInTouchImage.svg"
-            alt=""
-          />
+          <CircleAnimation />
         </div>
       </div>
       <Footer />

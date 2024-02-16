@@ -1,17 +1,22 @@
 "use client";
-import { useEffect, useState } from "react";
-import styles from "./circle-animate.module.css";
 
-const images = ["/2.0.svg", "/arrow.svg", "/arrow-1.svg", "globe.svg"];
+import { useState, useEffect } from "react";
+import styles from "./index.module.css";
 
-const CircleAnimation = () => {
+const images = [
+  "/footer/img1.svg",
+  "/footer/img2.svg",
+  "/footer/img3.svg",
+  "/footer/img4.svg",
+];
+
+export default function CircleAnimation() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
     const rotationInterval = setInterval(() => {
-      // Change the image every 2 seconds (adjust as needed)
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000);
+    }, 4000);
 
     return () => {
       clearInterval(rotationInterval);
@@ -19,12 +24,14 @@ const CircleAnimation = () => {
   }, []);
 
   return (
-    <div className="overflow-hidden flex justify-center items-center">
+    <div className="flex items-start">
       <div className={`${styles.rotatingContainer}`}>
-        <img src={images[currentIndex]} alt="" className="w-44 lg:w-80" />
+        <img
+          src={images[currentIndex]}
+          alt="Footer Image"
+          className="w-44 lg:w-52 xl:w-72"
+        />
       </div>
     </div>
   );
-};
-
-export default CircleAnimation;
+}

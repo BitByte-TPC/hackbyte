@@ -6,9 +6,9 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
 import Image from "next/image";
-import CircleAnimation from "@/components/CircleAnimation";
 
 export const metadata = {
   title: "FAQ | HackByte",
@@ -150,7 +150,7 @@ export default function FAQ() {
           px-4 md:px-8 xl:px-20 2xl:px-40"
         >
           <p
-            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-9xl xl:text-[10rem] 
+            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
               text-white font-normal font-['Clash Grotesk'] md:leading-[8rem] 
                 lg:leading-[10rem] tracking-tighter md:tracking-[-0.2rem]"
           >
