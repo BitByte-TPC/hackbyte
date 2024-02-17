@@ -45,18 +45,20 @@ export default function Home() {
             — Round 1 kicks off at
             <br /> 5 April 2024, IIIT Jabalpur
           </p>
-          <Button
-            size="sm"
-            className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium uppercase 
+          <a href="https://hackbyte2.devfolio.co/" target="_blank">
+            <Button
+              size="sm"
+              className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium uppercase 
                 p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black"
-            style={{
-              boxShadow:
-                "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
-            }}
-          >
-            Explore Challenge
-            <ArrowTopRightIcon className="w-5 h-5 ml-1" />
-          </Button>
+              style={{
+                boxShadow:
+                  "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
+              }}
+            >
+              Register Now
+              <ArrowTopRightIcon className="w-5 h-5 ml-1" />
+            </Button>
+          </a>
         </div>
       </div>
 
