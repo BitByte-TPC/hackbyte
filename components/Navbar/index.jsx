@@ -59,7 +59,8 @@ export default function Navbar() {
         </div>
         <a
           id="mlh-trust-badge"
-          className="block absolute max-w-[65px] min-w-[60px] right-[100px] md:right-[120px] lg:right-[60px] xl:right-[100px] top-0 w-[10%] z-10000"
+          className="block absolute top-0 w-[10%] z-10000 max-w-[65px] md:max-w-[80px] lg:max-w-[65px] 
+            min-w-[60px] right-[100px] md:right-[150px] lg:right-[60px] xl:right-[100px]"
           href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
           target="_blank"
         >
