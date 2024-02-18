@@ -149,7 +149,7 @@ export default function About() {
                 </div>
               </div>
             </div>
-            <div className="mt-12 sm:mt-0 min-w-[20rem] md:min-w-[25rem] lg:min-w-[30rem] xl:min-w-[35rem]">
+            <div className="mt-12 sm:mt-0 min-w-[20rem] lg:min-w-[25rem] xl:min-w-[35rem]">
               <Image
                 src={aboutImg1}
                 alt=""
