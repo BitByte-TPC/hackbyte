@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CircleAnimation from "@/components/CircleAnimation";
+import TextAnimation from "@/components/TextAnimation";
 
 export const metadata = {
   title: "Contact | HackByte",
@@ -37,14 +38,7 @@ export default function Contact() {
               gap-12 md:gap-0 md:flex-row"
           >
             <div className="flex flex-col items-start gap-8">
-              <p
-                className="max-w-[50rem] 2xl:max-w-[60rem] text-6xl text-[#F5F0D8] font-normal 
-                tracking-tighter md:text-[5.5rem] lg:text-9xl xl:text-[10rem] md:leading-[5rem] 
-                lg:leading-[7rem] xl:leading-[10rem] md:tracking-[-0.2rem]"
-              >
-                How can we
-                <br /> help you?
-              </p>
+              <TextAnimation text="How can we <br> help you? " />
               <p
                 className="w-full text-[#C3C3C3] font-['Inter'] font-normal 
                   text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 

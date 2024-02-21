@@ -3,6 +3,7 @@ import aboutImg1 from "@/public/aboutPage/about_img1.webp";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NewsLetter from "@/components/NewsLetter";
+import CountAnimation from "@/components/CountAnimation";
 import CircleAnimation from "@/components/CircleAnimation";
 
 export const metadata = {
@@ -63,12 +64,7 @@ export default function About() {
             <div className="flex-col justify-start items-start gap-16 grow shrink basis-0 inline-flex">
               <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
                 <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl md:text-3xl 
-                    lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    1500+
-                  </p>
+                  <CountAnimation targetValue={1500} />
                   <p
                     className="self-stretch text-center text-white text-lg md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
@@ -83,13 +79,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl md:text-3xl 
-                    lg:text-[3.25rem] 
-                     xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    500+
-                  </p>
+                  <CountAnimation targetValue={500} />
                   <p
                     className="self-stretch text-center text-white md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
@@ -106,13 +96,7 @@ export default function About() {
               </div>
               <div className="flex flex-col self-stretch justify-start items-start gap-8 md:flex-row">
                 <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl 
-                    md:text-4xl 
-                    lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    100+
-                  </p>
+                  <CountAnimation targetValue={100} />
                   <p
                     className="self-stretch text-center text-white md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
@@ -127,13 +111,7 @@ export default function About() {
                   </p>
                 </div>
                 <div className="flex-col justify-start items-center gap-3 w-full inline-flex">
-                  <p
-                    className="self-stretch text-center text-white text-5xl 
-                    md:text-4xl 
-                    lg:text-[3.25rem] xl:text-6xl font-semibold font-['Inter'] leading-[72px]"
-                  >
-                    120+
-                  </p>
+                  <CountAnimation targetValue={120} />
                   <p
                     className="self-stretch text-center text-white md:text-sm lg:text-lg 
                     font-semibold font-['Inter'] leading-7"
