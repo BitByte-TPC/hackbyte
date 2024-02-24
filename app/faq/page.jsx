@@ -72,9 +72,8 @@ export default function FAQ() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          p-4 md:pt-8 md:pb-48 lg:px-0"
+          p-4 md:pb-48 lg:px-0 md:pt-24 pt-16"
       >
-        <Navbar />
         <div className="flex justify-between pt-16 md:pt-12 md:pl-8 xl:pl-20">
           <div className="flex flex-col items-start gap-8">
             <div

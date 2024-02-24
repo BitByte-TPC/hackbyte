@@ -6,6 +6,7 @@ import classes from "./index.module.css";
 import Link from "next/link";
 import Image from "next/image";
 import HBMobileLogo from "@/public/HBMobileLogo.svg";
+import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
   { label: "Home", href: "/" },
@@ -22,12 +23,21 @@ const NavItem = ({ label, href }) => {
 
   return (
     <div
-      className={`group text-[#9A9A9A] ${
-        pathname === href
-          ? "bg-[#FFFFFF1A] py-2 px-6 rounded-full transition-all"
-          : ""
+      className={`group relative text-[#9A9A9A] py-2 rounded-full px-6 transition-all ease-in-out  focus-visible:outline-2 ${
+        pathname === href ? "" : "hover:bg-[#FFFFFF10]"
       }`}
     >
+      <AnimatePresence initial={false} mode="wait">
+        {pathname === href && (
+          <motion.span
+            layoutId="bubble"
+            className="absolute inset-0 z-10 bg-[#FFFFFF1A]  mix-blend-difference"
+            style={{ borderRadius: 9999 }}
+            transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
+            key={label}
+          />
+        )}
+      </AnimatePresence>
       <Link href={href}>
         <p className="text-lg md:text-base lg:text-lg text-center">{label}</p>
       </Link>
@@ -41,7 +51,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="flex items-center md:p-5 lg:p-0 lg:justify-center font-[600]">
+      <nav className="absolute w-full px-4 pt-8 flex items-center lg:justify-center font-[600] ">
         <Image
           src={HBMobileLogo}
           alt="Hackathon-Mobile-Logo"
@@ -49,9 +59,9 @@ export default function Navbar() {
           priority
         />
         <div
-          className="hidden h-10 lg:flex lg:justify-center lg:items-center lg:space-x-10 
-            px-6 py-8 rounded-full border-2 border-solid border-gray-800 
-            bg-opacity-60 backdrop-blur-xl drop-shadow-lg"
+          className="hidden h-10 lg:flex lg:justify-center lg:items-center 
+            px-3 py-8 rounded-full border-2 border-solid border-gray-800 
+            bg-opacity-60 backdrop-blur-xl"
         >
           {navigationItems.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
@@ -99,7 +109,12 @@ export default function Navbar() {
           bg-opacity-80"
         >
           {navigationItems.map(({ label, href }) => (
-            <Link href={href} key={label} className="hover:text-[#F5F5F5]">
+            <Link
+              href={href}
+              key={label}
+              className="hover:text-[#F5F5F5]"
+              onClick={() => setMenuOpen(false)}
+            >
               {label}
             </Link>
           ))}
