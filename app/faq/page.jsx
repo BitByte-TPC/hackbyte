@@ -35,19 +35,19 @@ export default function FAQ() {
     {
       title: "How many team members do I need ?",
       content:
-        "You can participate individually or in teams of 3 to 5 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
+        "You can participate individually or in teams of 2 to 4 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
     },
     {
       title: "How much are the participation fees?",
-      content: "Participation is absolutely free inclusive of resources.",
+      content: "Participation is absolutely free inclusive of food and accomodation. Isnt that great? So register ASAP!!",
     },
     {
       title: "Will the Hackathon be in person or online ?",
-      content: "HackByte will be conducted in complete offline/in person mode.",
+      content: "HackByte will be conducted in complete offline/in-person mode.",
     },
     {
       title: "What is the venue for HackByte 2.0 ?",
-      content: "Computer Center, IIITDM Jabalpur.",
+      content: "IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
     },
     {
       title: "What are the prerequisites to participate in this hackathon ?",
