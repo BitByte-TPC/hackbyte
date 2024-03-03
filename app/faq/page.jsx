@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import badgebundle from "@/public/badgebundle.svg";
 import {
   Accordion,
@@ -39,7 +38,8 @@ export default function FAQ() {
     },
     {
       title: "How much are the participation fees?",
-      content: "Participation is absolutely free inclusive of food and accomodation. Isnt that great? So register ASAP!!",
+      content:
+        "Participation is absolutely free inclusive of food and accomodation. Isnt that great? So register ASAP!!",
     },
     {
       title: "Will the Hackathon be in person or online ?",
@@ -47,7 +47,8 @@ export default function FAQ() {
     },
     {
       title: "What is the venue for HackByte 2.0 ?",
-      content: "IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
+      content:
+        "IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
     },
     {
       title: "What are the prerequisites to participate in this hackathon ?",
@@ -96,6 +97,7 @@ export default function FAQ() {
             src={badgebundle}
             alt=""
             className="hidden lg:w-80 lg:h-[400px] xl:w-[400px] xl:h-[520px] lg:block"
+            priority
           />
         </div>
 

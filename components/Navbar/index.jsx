@@ -13,7 +13,7 @@ const navigationItems = [
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Schedule", href: "/schedule" },
-  { label: "Team", href: "/team" },
+  { label: "Humans", href: "/humans" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
 ];
@@ -23,7 +23,8 @@ const NavItem = ({ label, href }) => {
 
   return (
     <div
-      className={`group relative text-[#9A9A9A] py-2 rounded-full px-6 transition-all ease-in-out  focus-visible:outline-2 ${
+      className={`group relative text-[#9A9A9A] font-[600] px-6 py-2 
+      rounded-full transition-all ease-in-out focus-visible:outline-2 ${
         pathname === href ? "" : "hover:bg-[#FFFFFF10]"
       }`}
     >
@@ -51,7 +52,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="absolute w-full px-4 pt-8 flex items-center lg:justify-center font-[600] ">
+      <nav className="absolute w-full flex items-center lg:justify-center px-4 pt-8">
         <Image
           src={HBMobileLogo}
           alt="Hackathon-Mobile-Logo"
@@ -61,7 +62,7 @@ export default function Navbar() {
         <div
           className="hidden h-10 lg:flex lg:justify-center lg:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
-            bg-opacity-60 backdrop-blur-xl"
+            bg-opacity-60 backdrop-blur-xl space-x-2"
         >
           {navigationItems.map(({ label, href }) => (
             <NavItem key={label} label={label} href={href} />
@@ -69,8 +70,8 @@ export default function Navbar() {
         </div>
         <a
           id="mlh-trust-badge"
-          className="block absolute top-0 w-[10%] z-10000 max-w-[65px] md:max-w-[80px] lg:max-w-[65px] 
-            min-w-[60px] right-[100px] md:right-[150px] lg:right-[60px] xl:right-[100px]"
+          className="block absolute top-0 w-[10%] z-10000 max-w-[65px] min-w-[60px] 
+            right-[100px] md:right-[120px] lg:right-[30px] xl:right-[100px]"
           href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
           target="_blank"
         >

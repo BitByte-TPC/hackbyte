@@ -1,6 +1,5 @@
 import React from "react";
 import dynamic from "next/dynamic";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import banner from "@/public/galleryPage/banner.jpg";
 import ImageLoading from "../../components/ImageLoader";
