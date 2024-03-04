@@ -1,13 +1,4 @@
-"use client";
-import { useState } from "react";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuItem,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
-import { ChevronDownIcon, CheckIcon } from "@radix-ui/react-icons";
 import SponsorCard from "@/components/ui/cards";
 
 import mlh from "@/public/partnersPage/mlh.svg";
@@ -85,49 +76,9 @@ const InKindSponsors = () => {
 };
 
 const Partners = () => {
-  const [selectedTab, setSelectedTab] = useState("Sponsors");
-
-  const handleTabChange = (category) => {
-    setSelectedTab(category);
-  };
   return (
     <>
       <div className="bg-[#101010] flex flex-col items-center min-h-screen sm:px-20 px-4 py-52">
-        {window.innerWidth <= 500 ? (
-          <>
-            <DropdownMenu>
-              <DropdownMenuTrigger className="bg-[#353535] text-white w-full p-4 text-xl outline-none flex justify-between">
-                Sponsors
-                <ChevronDownIcon className="w-6 h-6" />
-              </DropdownMenuTrigger>
-              <DropdownMenuContent className="w-76 text-white border-none">
-                <DropdownMenuItem
-                  className="p-3 text-xl bg-[#353535] hover:bg-[#333333] flex justify-between"
-                  onClick={() => handleTabChange("Sponsors")}
-                >
-                  Sponsors
-                  {selectedTab == "Sponsors" && (
-                    <CheckIcon className="h-6 w-8 text-white" />
-                  )}
-                </DropdownMenuItem>
-                <DropdownMenuItem
-                  className="p-3 text-xl bg-[#353535] hover:bg-[#333333] flex justify-between"
-                  onClick={() => handleTabChange("Inkind")}
-                >
-                  In Kind Sponsors
-                  {selectedTab == "InKind" && (
-                    <CheckIcon className="h-6 w-8 text-white" />
-                  )}
-                </DropdownMenuItem>
-              </DropdownMenuContent>
-            </DropdownMenu>
-            {selectedTab === "Sponsors" ? (
-              <NormalSponsors />
-            ) : (
-              <InKindSponsors />
-            )}
-          </>
-        ) : (
           <Tabs
             defaultValue="Sponsors"
             className="flex flex-col justify-center items-center text-white"
@@ -135,13 +86,13 @@ const Partners = () => {
             <TabsList className="mb-16">
               <TabsTrigger
                 value="Sponsors"
-                className="p-4 w-60 text-2xl leading-7"
+                className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:w-36 min-[300px]:text-lg sm:text-2xl text-xl leading-7"
               >
                 Sponsors
               </TabsTrigger>
               <TabsTrigger
                 value="InKind Sponsors"
-                className="p-4 w-60 text-2xl leading-7"
+                className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:w-36 min-[300px]:text-lg sm:text-2xl text-xl leading-7"
               >
                 In Kind Sponsors
               </TabsTrigger>
@@ -153,7 +104,6 @@ const Partners = () => {
               <InKindSponsors />
             </TabsContent>
           </Tabs>
-        )}
       </div>
 
       <div className="bg-black w-full h-full py-24 lg:py-40">
