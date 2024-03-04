@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import CircleAnimation from "@/components/CircleAnimation";
@@ -10,9 +9,8 @@ export default function NotFound() {
     <>
       <div
         class="bg-[#101010] flex flex-col min-h-fit
-        p-4 md:pt-8 md:pb-48 lg:px-0"
+        p-4 md:pb-64 lg:px-0 md:pt-24 pt-16"
       >
-        <Navbar />
         <div
           className="flex flex-col items-start gap-12 xl:gap-16 px-4 pt-20 
           md:px-8 lg:px-20 2xl:px-40 lg:pt-12"

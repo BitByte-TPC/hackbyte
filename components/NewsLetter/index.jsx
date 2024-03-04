@@ -78,7 +78,7 @@ export default function NewsLetter() {
               className="self-stretch text-slate-600 text-lg md:text-base lg:text-xl 
               font-normal font-['Inter'] leading-[1.75rem]"
             >
-              Sign up for the very best tutorials and the latest news.
+              Sign up to receive updates on our latest events.
             </div>
           </div>
 

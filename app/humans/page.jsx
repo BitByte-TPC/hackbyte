@@ -1,8 +1,7 @@
-import Navbar from "@/components/Navbar";
 import ComingSoon from "@/components/ComingSoon";
 
 export const metadata = {
-  title: "Team | HackByte",
+  title: "Humans | HackByte",
 };
 
 export default function Team() {
