@@ -4,10 +4,11 @@ import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 const SponsorCard = ({sponsor, category, sponsorimgsrc}) => {
   return (
     <>
-      <div className="max-w-sm bg-[#1B1B1B] hover:bg-[#353535] rounded-lg shadow text-white ">
+      <div className="w-[295px] min-w-[321px]:w-[306px] xl:w-[350px] bg-[#1B1B1B] hover:bg-[#353535] rounded-lg shadow text-white ">
         <Image
-          className="rounded-t-lg w-full outline-none"
+          className="rounded-t-lg w-[306px] xl:w-[350px] outline-none"
           src={sponsorimgsrc}
+          placeholder="blur"
           alt=""
         />
         <div className="flex justify-between items-start p-6">

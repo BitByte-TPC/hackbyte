@@ -1,15 +1,15 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SponsorCard from "@/components/ui/cards";
 
-import mlh from "@/public/partnersPage/mlh.svg";
-import github from "@/public/partnersPage/github.svg";
-import postman from "@/public/partnersPage/postman.svg";
-import godspeed from "@/public/partnersPage/godspeed.svg";
-import devfolio from "@/public/partnersPage/devfolio.svg";
-import edubard from "@/public/partnersPage/edubard.svg";
-import bobble from "@/public/partnersPage/bobble.svg";
-import wolfram from "@/public/partnersPage/wolfram.svg";
-import balsamiq from "@/public/partnersPage/balsamiq.svg";
+import mlh from "@/public/partnersPage/mlh.webp";
+import github from "@/public/partnersPage/github.webp";
+import postman from "@/public/partnersPage/postman.webp";
+import godspeed from "@/public/partnersPage/godspeed.webp";
+import devfolio from "@/public/partnersPage/devfolio.webp";
+import edubard from "@/public/partnersPage/edubard.webp";
+import bobble from "@/public/partnersPage/bobble.webp";
+import wolfram from "@/public/partnersPage/wolfram.webp";
+import balsamiq from "@/public/partnersPage/balsamiq.webp";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
@@ -17,7 +17,7 @@ import Footer from "@/components/Footer";
 const NormalSponsors = () => {
   return (
     <>
-      <div className="flex flex-wrap justify-center gap-8 pt-8">
+      <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
         <SponsorCard
           sponsor={"MLH"}
           category={"Platform Partner"}
@@ -50,7 +50,7 @@ const NormalSponsors = () => {
 
 const InKindSponsors = () => {
   return (
-    <div className="flex flex-wrap justify-center gap-8 pt-8">
+    <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
       <SponsorCard
         sponsor={"Bobble Fan Store"}
         category={"Merch Partner"}
@@ -78,21 +78,21 @@ const InKindSponsors = () => {
 const Partners = () => {
   return (
     <>
-      <div className="bg-[#101010] flex flex-col items-center min-h-screen sm:px-20 px-4 py-52">
+      <div className="bg-[#101010] flex flex-col items-center min-h-screen lg:px-20 px-4 py-52">
           <Tabs
             defaultValue="Sponsors"
             className="flex flex-col justify-center items-center text-white"
           >
-            <TabsList className="mb-16">
+            <TabsList className="mb-16 w-[19rem] min-w-[321px]:w-80 sm:w-[488px]">
               <TabsTrigger
                 value="Sponsors"
-                className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:w-36 min-[300px]:text-lg sm:text-2xl text-xl leading-7"
+                className="sm:p-4 p-2 sm:w-60 w-40  min-[300px]:text-lg sm:text-2xl text-xl leading-7"
               >
                 Sponsors
               </TabsTrigger>
               <TabsTrigger
                 value="InKind Sponsors"
-                className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:w-36 min-[300px]:text-lg sm:text-2xl text-xl leading-7"
+                className="sm:p-4 p-2 sm:w-60 w-40  min-[300px]:text-lg sm:text-2xl text-xl leading-7"
               >
                 In Kind Sponsors
               </TabsTrigger>
