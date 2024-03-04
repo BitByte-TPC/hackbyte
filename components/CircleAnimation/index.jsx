@@ -16,7 +16,7 @@ export default function CircleAnimation() {
   useEffect(() => {
     const rotationInterval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 4000);
+    }, 2000);
 
     return () => {
       clearInterval(rotationInterval);

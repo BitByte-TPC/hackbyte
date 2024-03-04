@@ -1,6 +1,5 @@
 import Image from "next/image";
 import aboutImg1 from "@/public/aboutPage/about_img1.webp";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NewsLetter from "@/components/NewsLetter";
 import CircleAnimation from "@/components/CircleAnimation";
