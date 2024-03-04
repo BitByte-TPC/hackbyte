@@ -12,7 +12,7 @@ const navigationItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
-  { label: "Schedule", href: "/schedule" },
+  { label: "Partners", href: "/partners" },
   { label: "Humans", href: "/humans" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
