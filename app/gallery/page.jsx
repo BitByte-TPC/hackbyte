@@ -38,8 +38,8 @@ const Gallery = () => {
   return (
     <>
       <div
-        className="flex flex-col justify-around min-h-screen bg-black md:pt-24 pt-16
-          p-4 lg:px-12 md:py-8 mb-0"
+        className="flex flex-col justify-around min-h-screen bg-black 
+        md:pt-24 pt-16 p-4 lg:px-12 md:py-8 mb-0"
         style={{
           backgroundImage: "url(/galleryPage/gridbg.svg)",
           backgroundAttachment: "fixed",

@@ -13,6 +13,7 @@ const navigationItems = [
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Partners", href: "/partners" },
+  { label: "Prizes", href: "/prizes" },
   { label: "Humans", href: "/humans" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
@@ -71,7 +72,7 @@ export default function Navbar() {
         <a
           id="mlh-trust-badge"
           className="block absolute top-0 w-[10%] z-10000 max-w-[65px] min-w-[60px] 
-            right-[100px] md:right-[120px] lg:right-[30px] xl:right-[100px]"
+            right-[100px] md:right-[120px] lg:right-[30px] xl:right-[80px]"
           href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
           target="_blank"
         >

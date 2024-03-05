@@ -53,6 +53,11 @@ const NormalSponsors = () => {
           sponsorimgsrc={postman}
         />
         <SponsorCard
+          sponsor={"Bobble Fan Store"}
+          category={"Merch Partner"}
+          sponsorimgsrc={bobble}
+        />
+        <SponsorCard
           sponsor={"Godspeed Systems"}
           category={"Silver Sponsor"}
           sponsorimgsrc={godspeed}
@@ -70,11 +75,6 @@ const NormalSponsors = () => {
 const InKindSponsors = () => {
   return (
     <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
-      <SponsorCard
-        sponsor={"Bobble Fan Store"}
-        category={"Merch Partner"}
-        sponsorimgsrc={bobble}
-      />
       <SponsorCard
         sponsor={"Balsamiq"}
         category={"Community Sponsor"}
@@ -99,7 +99,7 @@ const Partners = () => {
     <>
       <div
         className="bg-[#101010] flex flex-col items-center min-h-screen 
-          lg:px-20 px-4 py-52"
+          lg:px-20 px-4 py-48"
       >
         <Tabs
           defaultValue="Sponsors"
