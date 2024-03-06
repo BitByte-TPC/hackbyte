@@ -41,31 +41,37 @@ const NormalSponsors = () => {
           sponsor={"MLH"}
           category={"Platform Partner"}
           sponsorimgsrc={mlh}
+          site="https://mlh.io"
         />
         <SponsorCard
           sponsor={"Github"}
           category={"Gold Sponsor"}
           sponsorimgsrc={github}
+          site="https://github.com"
         />
         <SponsorCard
           sponsor={"Postman"}
           category={"Gold Sponsor"}
           sponsorimgsrc={postman}
+          site="https://community.postman.com"
         />
         <SponsorCard
           sponsor={"Bobble Fan Store"}
           category={"Merch Partner"}
           sponsorimgsrc={bobble}
+          site="https://fanstore.bobble.ai"
         />
         <SponsorCard
           sponsor={"Godspeed Systems"}
           category={"Silver Sponsor"}
           sponsorimgsrc={godspeed}
+          site="https://godspeed.systems"
         />
         <SponsorCard
           sponsor={"Devfolio"}
           category={"Platform Partner"}
           sponsorimgsrc={devfolio}
+          site="https://devfolio.co"
         />
       </div>
     </>
@@ -79,16 +85,19 @@ const InKindSponsors = () => {
         sponsor={"Balsamiq"}
         category={"Community Sponsor"}
         sponsorimgsrc={balsamiq}
+        site="https://balsamiq.com"
       />
       <SponsorCard
         sponsor={"Edubard"}
         category={"Media Partner"}
         sponsorimgsrc={edubard}
+        site="https://edubard.in"
       />
       <SponsorCard
         sponsor={"Wolfram"}
         category={"Community Sponsor"}
         sponsorimgsrc={wolfram}
+        site="https://www.wolfram.com/wolfram-one/"
       />
     </div>
   );
