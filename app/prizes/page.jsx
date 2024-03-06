@@ -47,7 +47,11 @@ const prizesData = [
 
 function PrizeCard({ position, type, amount, image }) {
   return (
-    <div className="flex flex-col items-start p-6 gap-8 bg-[#272727]">
+    <div
+      className={`flex flex-col items-start p-6 gap-8 bg-[#272727] ${
+        position === "1st" && "order-[-1] md:order-[0]"
+      }`}
+    >
       <Image src={image} alt={`${type} Cup`} placeholder="blur" />
       <div className="w-full flex flex-col items-center">
         <p className="text-[#fff] text-[2rem] font-[500]">{`${position}-${type}`}</p>
