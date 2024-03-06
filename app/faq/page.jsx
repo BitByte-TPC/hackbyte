@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/accordion";
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
+import TextAnimation from "@/components/TextAnimation";
 import Image from "next/image";
 
 export const metadata = {
@@ -77,13 +78,7 @@ export default function FAQ() {
       >
         <div className="flex justify-between pt-16 md:pt-12 md:pl-8 xl:pl-20">
           <div className="flex flex-col items-start gap-8">
-            <div
-              className="max-w-[840px] text-[#f5f0d8] text-[4rem] font-normal 
-                leading-[5rem] tracking-tighter md:text-[8rem] lg:text-[6rem] 
-                xl:text-[9.5rem] md:leading-[100%] md:tracking-normal"
-            >
-              Everything you need to know!
-            </div>
+            <TextAnimation text={"Everything <br> you need to know!"} />
             <div
               className="max-w-[650px] xl:max-w-[700px] text-[#c3c3c3] font-['Inter'] 
               text-xl font-normal leading-[2.125rem] md:text-2xl"
