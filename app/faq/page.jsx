@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import badgebundle from "@/public/badgebundle.svg";
 import {
   Accordion,
@@ -36,19 +35,21 @@ export default function FAQ() {
     {
       title: "How many team members do I need ?",
       content:
-        "You can participate individually or in teams of 3 to 5 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
+        "You can participate individually or in teams of 2 to 4 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
     },
     {
       title: "How much are the participation fees?",
-      content: "Participation is absolutely free inclusive of resources.",
+      content:
+        "Participation is absolutely free inclusive of food and accomodation. Isnt that great? So register ASAP!!",
     },
     {
       title: "Will the Hackathon be in person or online ?",
-      content: "HackByte will be conducted in complete offline/in person mode.",
+      content: "HackByte will be conducted in complete offline/in-person mode.",
     },
     {
       title: "What is the venue for HackByte 2.0 ?",
-      content: "Computer Center, IIITDM Jabalpur.",
+      content:
+        "IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
     },
     {
       title: "What are the prerequisites to participate in this hackathon ?",
@@ -73,9 +74,8 @@ export default function FAQ() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          p-4 md:pt-8 md:pb-48 lg:px-0"
+          p-4 md:pb-48 lg:px-0 md:pt-24 pt-16"
       >
-        <Navbar />
         <div className="flex justify-between pt-16 md:pt-12 md:pl-8 xl:pl-20">
           <div className="flex flex-col items-start gap-8">
             <TextAnimation text={"Everything <br> you need to know!"} />
@@ -92,6 +92,7 @@ export default function FAQ() {
             src={badgebundle}
             alt=""
             className="hidden lg:w-80 lg:h-[400px] xl:w-[400px] xl:h-[520px] lg:block"
+            priority
           />
         </div>
 

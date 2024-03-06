@@ -2,6 +2,7 @@ import "./globals.css";
 import Script from "next/script";
 import "react-toastify/dist/ReactToastify.css";
 import "./clash_grotesk.css";
+import Navbar from "@/components/Navbar";
 
 export const metadata = {
   title: "HackByte - IIITDMJ Hackathon",
@@ -39,7 +40,10 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body>{children}</body>
+      <body>
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }

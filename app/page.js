@@ -20,14 +20,13 @@ export default function Home() {
   return (
     <div
       className="flex flex-col justify-around min-h-screen
-        bg-cover p-4 md:px-12 md:py-4"
+        bg-cover pt-20 md:pt-32 p-4 md:px-12 md:py-4"
       style={{
         backgroundColor: "#000",
         backgroundImage: "url(/background.png)",
         backgroundAttachment: "fixed",
       }}
     >
-      <Navbar />
       <div className="flex flex-wrap justify-between items-center pt-16 gap-4 xl:pt-4 lg:gap-0">
         <div className="flex flex-col items-start w-full lg:w-1/2">
           <p

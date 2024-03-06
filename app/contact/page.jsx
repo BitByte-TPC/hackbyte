@@ -1,4 +1,3 @@
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CircleAnimation from "@/components/CircleAnimation";
 import TextAnimation from "@/components/TextAnimation";
@@ -26,9 +25,8 @@ export default function Contact() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          p-4 md:pt-8 md:pb-64 lg:px-0"
+          p-4 md:pb-64 lg:px-0 md:pt-24 pt-16"
       >
-        <Navbar />
         <div
           className="w-full h-full flex flex-col gap-24 px-4 pt-20 
             md:px-8 xl:px-20 2xl:px-40"

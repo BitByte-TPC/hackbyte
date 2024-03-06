@@ -1,6 +1,5 @@
 import Image from "next/image";
 import aboutImg1 from "@/public/aboutPage/about_img1.webp";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import NewsLetter from "@/components/NewsLetter";
 import CountAnimation from "@/components/CountAnimation";
@@ -28,14 +27,13 @@ export default function About() {
   return (
     <>
       <div
-        className="flex flex-col min-h-fit bg-cover p-4 md:px-12 md:py-8"
+        className="flex flex-col min-h-fit bg-cover p-4 md:px-12 md:py-8 md:pt-24 pt-16"
         style={{
           backgroundColor: "#000",
           backgroundImage: "url(/background.png)",
           backgroundAttachment: "fixed",
         }}
       >
-        <Navbar />
         <div className="w-full flex-col justify-start items-center py-16 inline-flex">
           <div className="w-full flex flex-col justify-start items-start gap-3 lg:px-8 xl:px-20">
             <p className="text-gray-200 text-xs sm:text-base font-semibold font-['Inter']">
