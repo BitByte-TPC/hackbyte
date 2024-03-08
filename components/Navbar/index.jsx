@@ -53,23 +53,15 @@ export default function Navbar() {
   return (
     <>
       <nav className="absolute w-full flex items-center lg:justify-center px-4 pt-8">
-        <Image
-          src={HBMobileLogo}
-          alt="Hackathon-Mobile-Logo"
-          className="h-12 w-24 lg:hidden"
-          priority
-        />
-        <div className="hidden lg:block">
-          <Link href="/">
-              <Image
-                src={HBMobileLogo}
-                alt="HackByte Logo"
-                className="block absolute h-16 w-40 top-9
-                  left-[100px] md:left-[100px] lg:left-[10px] xl:left-[30px]"
-                priority
-              />
-          </Link>
-        </div>
+        <Link href="/">
+          <Image
+            src={HBMobileLogo}
+            alt="HackByte Logo"
+            className="block absolute h-12 w-24 top-7 lg:h-16 lg:w-40 lg:top-9
+              lg:left-[10px] xl:left-[30px]"
+            priority
+          />
+        </Link>
         <div
           className="hidden h-10 lg:flex lg:justify-center lg:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
@@ -120,14 +112,6 @@ export default function Navbar() {
           font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] bg-[#090909]
           bg-opacity-80"
         >
-          <Link 
-            href="/"
-            key="Home"
-            className="hover:text-[#F5F5F5]"
-            onClick={() => setMenuOpen(false)}
-          > 
-            Home
-          </Link>
           {navigationItems.map(({ label, href }) => (
             <Link
               href={href}
