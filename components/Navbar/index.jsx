@@ -9,7 +9,6 @@ import HBMobileLogo from "@/public/HBMobileLogo.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
-  { label: "Home", href: "/" },
   { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Partners", href: "/partners" },
@@ -60,6 +59,17 @@ export default function Navbar() {
           className="h-12 w-24 lg:hidden"
           priority
         />
+        <div className="hidden lg:block">
+          <Link href="/">
+              <Image
+                src={HBMobileLogo}
+                alt="HackByte Logo"
+                className="block absolute h-16 w-40 top-9
+                  left-[100px] md:left-[100px] lg:left-[10px] xl:left-[30px]"
+                priority
+              />
+          </Link>
+        </div>
         <div
           className="hidden h-10 lg:flex lg:justify-center lg:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
@@ -110,6 +120,14 @@ export default function Navbar() {
           font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] bg-[#090909]
           bg-opacity-80"
         >
+          <Link 
+            href="/"
+            key="Home"
+            className="hover:text-[#F5F5F5]"
+            onClick={() => setMenuOpen(false)}
+          > 
+            Home
+          </Link>
           {navigationItems.map(({ label, href }) => (
             <Link
               href={href}
