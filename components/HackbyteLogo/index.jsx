@@ -44,8 +44,8 @@ const HackbyteLogo = () => {
         id="canvasContainer"
         ref={containerRef}
         data-grid="30"
-        data-mouse="0.3"
-        data-strength="0.2"
+        data-mouse="0.25"
+        data-strength="0.18"
       >
         <img
           src={"/hackbyte.png"}
