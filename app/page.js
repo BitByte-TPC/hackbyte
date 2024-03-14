@@ -1,7 +1,6 @@
 import Navbar from "@/components/Navbar";
 import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
-import hackbyteLogo from "@/public/hackbyteLogo.png";
 import {
   TwitterLogoIcon,
   InstagramLogoIcon,
@@ -9,6 +8,7 @@ import {
   DiscordLogoIcon,
 } from "@radix-ui/react-icons";
 import Image from "next/image";
+import { HackbyteLogo } from "@/components/HackbyteLogo";
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
@@ -22,8 +22,8 @@ export default function Home() {
       className="flex flex-col justify-around min-h-screen
         bg-cover pt-20 md:pt-32 p-4 md:px-12 md:py-4"
       style={{
-        backgroundColor: "#000",
-        backgroundImage: "url(/background.png)",
+        // backgroundColor: "#000",
+        // backgroundImage: "url(/background.png)",
         backgroundAttachment: "fixed",
       }}
     >
@@ -61,14 +61,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="flex items-center justify-center my-12 xl:my-4">
-        <Image
-          src={hackbyteLogo}
-          alt="HackByte Logo"
-          className="max-w-[30rem] min-w-[15rem] w-[70%] 2xl:max-w-[32rem] brightness-120"
-          priority
-        />
-      </div>
+      <HackbyteLogo />
 
       <div className="flex items-center justify-between gap-4 mt-8 xl:mt-4">
         <div className="flex flex-col items-start gap-2">

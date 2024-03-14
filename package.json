@@ -23,7 +23,8 @@
     "react-dom": "^18",
     "react-toastify": "^10.0.4",
     "tailwind-merge": "^2.2.1",
-    "tailwindcss-animate": "^1.0.7"
+    "tailwindcss-animate": "^1.0.7",
+    "three": "^0.136.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
