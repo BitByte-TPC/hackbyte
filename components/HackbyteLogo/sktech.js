@@ -1,5 +1,4 @@
 import * as THREE from "three";
-import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
 const fragment = `
 uniform float time;
 uniform float progress;
@@ -124,12 +123,10 @@ export default class Sketch {
   }
 
   setupResize() {
-    console.log("setup resize");
     window.addEventListener("resize", this.resize.bind(this));
   }
 
   resize() {
-    console.log("resize");
     this.width = this.container.offsetWidth;
     this.height = this.container.offsetHeight;
     this.renderer.setSize(this.width, this.height);
@@ -156,7 +153,6 @@ export default class Sketch {
   }
 
   regenerateGrid() {
-    console.log("regenerate grid");
     this.size = this.settings.grid;
     const width = this.size;
     const height = this.size;
@@ -249,8 +245,6 @@ export default class Sketch {
 
           let power = (maxDist * 1.5) / Math.sqrt(distance);
           power = clamp(power, 0, 10);
-          // if(distance <this.size/32) power = 1;
-          // power = 1;
 
           data[index] += this.settings.strength * 100 * this.mouse.vX * power;
           data[index + 1] -=
@@ -265,11 +259,14 @@ export default class Sketch {
   }
 
   render() {
-    if (!this.isPlaying) return;
+    if (!this.isPlaying || this.container.offsetWidth <= 1240) {
+      if (this.container.contains(this.renderer.domElement)) {
+        this.container.removeChild(this.renderer.domElement);
+      }
+      return;
+    }
     this.time += 0.05;
     this.updateDataTexture();
-    // this.controls.update();
-
     this.material.uniforms.time.value = this.time;
     requestAnimationFrame(this.render.bind(this));
     this.renderer.render(this.scene, this.camera);
