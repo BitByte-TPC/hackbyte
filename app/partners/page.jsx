@@ -83,12 +83,6 @@ const normalSponsorsData = [
     site: "https://nextgenglobalhub.github.io/opensourcecohort/",
   },
   {
-    sponsor: "Finlatics",
-    category: "Community Sponsor",
-    sponsorimgsrc: Finlatics,
-    site: "https://www.finlatics.com/",
-  },
-  {
     sponsor: "Auth0",
     category: "Track Sponsor",
     sponsorimgsrc: Auth0,
@@ -132,6 +126,12 @@ const inKindSponsorsData = [
     category: "Community Sponsor",
     sponsorimgsrc: Mongodb,
     site: "https://www.mongodb.com/",
+  },
+  {
+    sponsor: "Finlatics",
+    category: "Community Sponsor",
+    sponsorimgsrc: Finlatics,
+    site: "https://www.finlatics.com/",
   },
 ];
 

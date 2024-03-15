@@ -94,20 +94,18 @@ export default function NewsLetter() {
                     border-2 border-[#D0D5DD] focus:outline-purple-300 focus:text-gray-900"
               />
             </div>
-            <motion.button whileTap={{ scale: 0.85 }} >
-              <Button
-                size="sm"
-                onClick={handleSubscribe}
-                className="w-full lg:w-32 flex justify-center items-center bg-black 
-                    text-white text-[1.125rem] font-medium p-6 rounded-none 
+            <motion.button
+              className="w-full lg:w-32 flex justify-center items-center bg-black 
+                    text-white text-[1.125rem] font-medium px-8 py-3 rounded-none 
                     hover:bg-black hover:text-white"
-                style={{
-                  boxShadow:
-                    "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
-                }}
-              >
-                Subscribe
-              </Button>
+              style={{
+                boxShadow:
+                  "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
+              }}
+              whileTap={{ scale: 0.85 }}
+              onClick={handleSubscribe}
+            >
+              Subscribe
             </motion.button>
           </div>
         </div>
