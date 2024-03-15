@@ -48,7 +48,7 @@ export default function Home() {
             <Button
               size="sm"
               className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium uppercase 
-                p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black"
+                p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 transition-transform ease-in-out duration-300"
               style={{
                 boxShadow:
                   "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
