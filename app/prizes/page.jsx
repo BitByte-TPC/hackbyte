@@ -5,6 +5,7 @@ import img1 from "@/public/prizesPage/img1.png";
 import img2 from "@/public/prizesPage/img2.png";
 import Image from "next/image";
 
+import { PrizeCard } from "@/components/PrizeCard";
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
 
@@ -44,22 +45,6 @@ const prizesData = [
     image: bronzeCup,
   },
 ];
-
-function PrizeCard({ position, type, amount, image }) {
-  return (
-    <div
-      className={`flex flex-col items-start p-6 gap-8 bg-[#272727] ${
-        position === "1st" && "order-[-1] md:order-[0]"
-      }`}
-    >
-      <Image src={image} alt={`${type} Cup`} placeholder="blur" />
-      <div className="w-full flex flex-col items-center">
-        <p className="text-[#fff] text-[2rem] font-[500]">{`${position}-${type}`}</p>
-        <p className="text-[#D1CAC7] text-[1.5rem] font-normal">Win {amount}</p>
-      </div>
-    </div>
-  );
-}
 
 export default function Prizes() {
   return (
