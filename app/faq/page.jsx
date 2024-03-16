@@ -1,14 +1,14 @@
-import badgebundle from "@/public/badgebundle.svg";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import Image from "next/image";
+import TextAnimation from "@/components/TextAnimation";
+import badgebundle from "@/public/badgebundle.png";
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
-import TextAnimation from "@/components/TextAnimation";
-import Image from "next/image";
 
 export const metadata = {
   title: "FAQ | HackByte",

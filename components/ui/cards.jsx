@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -25,22 +25,28 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
         viewport={{ once: true }}
       >
         <a href={site} target="_blank" rel="noreferrer">
-          <div className="w-[295px] min-w-[306px] xl:w-[350px] bg-[#1B1B1B] hover:bg-[#353535] rounded-lg shadow text-white">
+          <div
+            className="w-[295px] min-w-[306px] xl:w-[350px] bg-[#1B1B1B] 
+              hover:bg-[#353535] shadow text-white rounded-[1rem]"
+          >
             <Image
-              className="rounded-t-lg w-[306px] h-[181px] xl:w-[350px] xl:h-[207px] outline-none"
               src={sponsorimgsrc}
+              className="rounded-t-[1rem] w-[306px] h-[181px] xl:w-[350px] 
+                xl:h-[207px] outline-none"
               placeholder="blur"
-              alt=""
             />
             <div className="flex justify-between items-start p-6">
               <div className="flex flex-col gap-2">
                 <p className="sm:text-2xl text-xl">{sponsor}</p>
-                <p className="text-[#C3C3C3] sm:text-2xl text-xl  leading-9 font-[Inter]">
+                <p className="text-[#C3C3C3] sm:text-2xl text-xl leading-9 font-[Inter]">
                   {category}
                 </p>
               </div>
               <div className="hover:bg-[#1B1B1B] mt-1 p-1">
-                <ArrowRightIcon className="w-6 h-6 p-[2px] hover:-rotate-45 transition-transform duration-300 ease-in-out" />
+                <ArrowRightIcon
+                  className="w-6 h-6 p-[2px] hover:-rotate-45 
+                    transition-transform duration-300 ease-in-out"
+                />
               </div>
             </div>
           </div>

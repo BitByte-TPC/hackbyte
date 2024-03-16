@@ -60,7 +60,7 @@ export default function Contact() {
             </p>
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3174.631325012539!2d80.02390068793628!3d23.17681212828739!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981a94397365dd3%3A0x5f9aeb812c2678c9!2sIIITDM%20Jabalpur!5e0!3m2!1sen!2sin!4v1696615484249!5m2!1sen!2sin"
-              className="w-full h-full md:h-[25rem] border-0"
+              className="w-full h-full md:h-[25rem] border-0 rounded-[1rem]"
               allowFullScreen=""
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
@@ -68,7 +68,14 @@ export default function Contact() {
           </div>
 
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
-            <div className="flex flex-col items-start p-6 gap-8 bg-[rgba(249,250,251,0.10)]">
+            <div
+              className="flex flex-col items-start p-6 gap-8 
+                rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
+              style={{
+                background:
+                  "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
+              }}
+            >
               <img src="/contactPage/trainIcon.svg" alt="By Train" />
               <div className="flex flex-col items-start gap-3">
                 <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
@@ -81,7 +88,14 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex flex-col items-start p-6 gap-8 bg-[rgba(249,250,251,0.10)]">
+            <div
+              className="flex flex-col items-start p-6 gap-8 
+                rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
+              style={{
+                background:
+                  "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
+              }}
+            >
               <img src="/contactPage/planeIcon.svg" alt="By Flight" />
               <div className="flex flex-col items-start gap-5">
                 <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
@@ -98,7 +112,14 @@ export default function Contact() {
               </div>
             </div>
 
-            <div className="flex flex-col items-start p-6 gap-8 bg-[rgba(249,250,251,0.10)]">
+            <div
+              className="flex flex-col items-start p-6 gap-8 
+                rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
+              style={{
+                background:
+                  "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
+              }}
+            >
               <img src="/contactPage/busIcon.svg" alt="By Bus" />
               <div className="flex flex-col items-start gap-5">
                 <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
