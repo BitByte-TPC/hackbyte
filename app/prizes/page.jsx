@@ -5,10 +5,8 @@ import bestGirls from "@/public/prizesPage/best_girls.png";
 import adobeLogo from "@/public/prizesPage/adobeLogo.svg";
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
 import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
-
-// Leaf Images
-import leftLeaf from "@/public/prizesPage/left_leaf.svg";
-import rightLeaf from "@/public/prizesPage/right_leaf.svg";
+import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
+import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
 
 import Image from "next/image";
 import CircleAnimation from "@/components/CircleAnimation";
@@ -37,30 +35,46 @@ const sponsorData = [
   {
     logo: adobeLogo,
     alt: "Adobe",
-    price: "15k",
     title: "Most Creative Adobe Express Add-On",
+    supportText: "Wacom Wireless Drawing Tablet & JBL Go3 Speaker",
     description:
       "Adobe Express is an AI-first, all-in-one content creation app that makes it fast, easy and fun to design and share videos, images, PDFs, flyers, TikToks, logos and more. Best of all, it's free to get started.",
   },
   {
     logo: mongodbLogo,
     alt: "MongoDB",
-    price: "25k",
     title: "Best Use of MongoDB Atlas",
+    supportText: "M5GO IoT Starter Kit",
     description:
       "MongoDB Atlas takes the leading modern database and makes it accessible in the cloud! Get started with a $50 credit for students or sign up for the Atlas free forever tier (no credit card required).",
   },
   {
     logo: godaddyLogo,
     alt: "GoDaddy",
-    price: "10k",
     title: "Best Domain Name from GoDaddy Registry",
+    supportText: "Hack from Home Kit",
     description:
       "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit!",
   },
+  {
+    logo: auth0Logo,
+    alt: "Auth0",
+    title: "Best Use of Auth0",
+    supportText: "Wireless Headphones & Battery Pack",
+    description:
+      "Secure your applications with Auth0's hassle-free features like social sign-in and Multi-Factor Authentication. No credit card needed, try it free for up to 7,000 users. Plus, enter to win wireless headphones and battery packs for your team by using Auth0 APIs!",
+  },
+  {
+    logo: taipyLogo,
+    alt: "Taipy",
+    title: "Best Use of Taipy",
+    supportText: "Wireless Headphones",
+    description:
+      "Taipy empowers Python developers with rapid web app creation, simplifying UI design and backend integration. Win Wireless Headphones & website feature by incorporating Taipy into your hackathon project!",
+  },
 ];
 
-const SponsorCard = ({ logo, alt, price, title, description }) => (
+const SponsorCard = ({ logo, alt, title, supportText, description }) => (
   <div
     className="flex flex-col items-center gap-6 md:gap-12 p-4 rounded-[1rem] 
       border border-[rgba(255,255,255,0.5)] md:p-8"
@@ -71,22 +85,9 @@ const SponsorCard = ({ logo, alt, price, title, description }) => (
   >
     <Image src={logo} alt={alt} />
 
-    <div className="flex justify-center items-center gap-0">
-      <Image src={leftLeaf} alt="" />
+    <div className="flex flex-col items-start gap-4">
       <p
-        className="text-white text-center font-medium text-[4.5rem]"
-        style={{
-          textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
-        }}
-      >
-        {price}
-      </p>
-      <Image src={rightLeaf} alt="" />
-    </div>
-
-    <div className="flex flex-col items-center gap-4">
-      <p
-        className="font-[500] text-[1.25rem] md:text-[1.5rem] text-center"
+        className="font-[500] text-[1.25rem] md:text-[1.5rem] text-left leading-8"
         style={{
           background:
             "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
@@ -98,12 +99,17 @@ const SponsorCard = ({ logo, alt, price, title, description }) => (
         {title}
       </p>
 
-      <p
-        className="text-[#EAECF0] font-[Inter] text-center text-[1rem] 
+      <div className="flex flex-col items-start gap-1">
+        <p className="text-white font-semibold text-[1rem] md:text-[1.125rem]">
+          {supportText}
+        </p>
+        <p
+          className="text-[#EAECF0] font-[Inter] text-left text-[1rem] 
           md:[1.125rem] font-normal"
-      >
-        {description}
-      </p>
+        >
+          {description}
+        </p>
+      </div>
     </div>
   </div>
 );
@@ -113,7 +119,7 @@ export default function Prizes() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          px-4 md:px-16 lg:px-20 2xl:px-48 py-40"
+          px-4 md:px-10 lg:px-20 2xl:px-48 py-40"
       >
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex flex-col items-center gap-4">
