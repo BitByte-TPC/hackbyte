@@ -5,6 +5,8 @@ import bestGirls from "@/public/prizesPage/best_girls.png";
 import adobeLogo from "@/public/prizesPage/adobeLogo.svg";
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
 import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
+import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
+import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
 
 import Image from "next/image";
 import CircleAnimation from "@/components/CircleAnimation";
@@ -35,36 +37,51 @@ const sponsorData = [
   {
     logo: adobeLogo,
     alt: "Adobe",
-    price: "15k",
     title: "Most Creative Adobe Express Add-On",
+    supportText: "Wacom Wireless Drawing Tablet & JBL Go3 Speaker",
     description:
       "Adobe Express is an AI-first, all-in-one content creation app that makes it fast, easy and fun to design and share videos, images, PDFs, flyers, TikToks, logos and more. Best of all, it's free to get started.",
   },
   {
     logo: mongodbLogo,
     alt: "MongoDB",
-    price: "25k",
     title: "Best Use of MongoDB Atlas",
+    supportText: "M5GO IoT Starter Kit",
     description:
       "MongoDB Atlas takes the leading modern database and makes it accessible in the cloud! Get started with a $50 credit for students or sign up for the Atlas free forever tier (no credit card required).",
   },
   {
     logo: godaddyLogo,
     alt: "GoDaddy",
-    price: "10k",
     title: "Best Domain Name from GoDaddy Registry",
+    supportText: "Hack from Home Kit",
     description:
       "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit!",
   },
+  {
+    logo: auth0Logo,
+    alt: "Auth0",
+    title: "Best Use of Auth0",
+    supportText: "Wireless Headphones & Battery Pack",
+    description:
+      "Secure your applications with Auth0's hassle-free features like social sign-in and Multi-Factor Authentication. No credit card needed, try it free for up to 7,000 users. Plus, enter to win wireless headphones and battery packs for your team by using Auth0 APIs!",
+  },
+  {
+    logo: taipyLogo,
+    alt: "Taipy",
+    title: "Best Use of Taipy",
+    supportText: "Wireless Headphones",
+    description:
+      "Taipy empowers Python developers with rapid web app creation, simplifying UI design and backend integration. Win Wireless Headphones & website feature by incorporating Taipy into your hackathon project!",
+  },
 ];
-
 
 export default function Prizes() {
   return (
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          px-4 md:px-16 lg:px-20 2xl:px-48 py-40"
+          px-4 md:px-10 lg:px-20 2xl:px-48 py-40"
       >
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex flex-col items-center gap-4">
