@@ -2,7 +2,6 @@ import bestBeginner from "@/public/prizesPage/best_beginner.png";
 import bestGirls from "@/public/prizesPage/best_girls.png";
 
 // Sponsor Logos
-import adobeLogo from "@/public/prizesPage/adobeLogo.svg";
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
 import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
 import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
@@ -34,14 +33,6 @@ export const metadata = {
 };
 
 const sponsorData = [
-  {
-    logo: adobeLogo,
-    alt: "Adobe",
-    title: "Most Creative Adobe Express Add-On",
-    supportText: "Wacom Wireless Drawing Tablet & JBL Go3 Speaker",
-    description:
-      "Adobe Express is an AI-first, all-in-one content creation app that makes it fast, easy and fun to design and share videos, images, PDFs, flyers, TikToks, logos and more. Best of all, it's free to get started.",
-  },
   {
     logo: mongodbLogo,
     alt: "MongoDB",
@@ -113,7 +104,8 @@ export default function Prizes() {
               <PrizeCard
                 amount="25K"
                 category="1st prize- Gold"
-                bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
+                default_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
+                hover_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
               />
             </div>
 
@@ -121,12 +113,14 @@ export default function Prizes() {
               <PrizeCard
                 amount="15K"
                 category="2nd prize- Silver"
-                bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+                default_bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+                hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
               />
               <PrizeCard
                 amount="10K"
                 category="3rd prize- Bronze"
-                bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+                default_bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+                hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
               />
             </div>
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
@@ -206,7 +200,7 @@ export default function Prizes() {
               xl:grid-cols-3 pt-8 md:pt-16"
           >
             {sponsorData.map((sponsor, index) => (
-              <TSPrizeCard key={index} {...sponsor} />
+              <TSPrizeCard key={index} index={index} {...sponsor} />
             ))}
           </div>
         </div>

@@ -44,7 +44,7 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
           <Tilt options={defaultOptions}>
             <div
               className="w-[295px] min-w-[306px] xl:w-[350px]  
-              shadow text-white rounded-[1rem]"
+              shadow text-white rounded-[1rem] border border-[#FFFAEF]"
               style={{
                 "--default-gradient": defaultGradient,
                 "--hover-gradient": hoverGradient,
