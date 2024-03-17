@@ -6,13 +6,11 @@ import adobeLogo from "@/public/prizesPage/adobeLogo.svg";
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
 import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
 
-// Leaf Images
-import leftLeaf from "@/public/prizesPage/left_leaf.svg";
-import rightLeaf from "@/public/prizesPage/right_leaf.svg";
-
 import Image from "next/image";
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
+import PrizeCard from "@/components/PrizeCard";
+import TSPrizeCard from "@/components/TSPrizeCard";
 
 export const metadata = {
   title: "Prizes | HackByte",
@@ -60,53 +58,6 @@ const sponsorData = [
   },
 ];
 
-const SponsorCard = ({ logo, alt, price, title, description }) => (
-  <div
-    className="flex flex-col items-center gap-6 md:gap-12 p-4 rounded-[1rem] 
-      border border-[rgba(255,255,255,0.5)] md:p-8"
-    style={{
-      background:
-        "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
-    }}
-  >
-    <Image src={logo} alt={alt} />
-
-    <div className="flex justify-center items-center gap-0">
-      <Image src={leftLeaf} alt="" />
-      <p
-        className="text-white text-center font-medium text-[4.5rem]"
-        style={{
-          textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
-        }}
-      >
-        {price}
-      </p>
-      <Image src={rightLeaf} alt="" />
-    </div>
-
-    <div className="flex flex-col items-center gap-4">
-      <p
-        className="font-[500] text-[1.25rem] md:text-[1.5rem] text-center"
-        style={{
-          background:
-            "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
-          backgroundClip: "text",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
-      >
-        {title}
-      </p>
-
-      <p
-        className="text-[#EAECF0] font-[Inter] text-center text-[1rem] 
-          md:[1.125rem] font-normal"
-      >
-        {description}
-      </p>
-    </div>
-  </div>
-);
 
 export default function Prizes() {
   return (
@@ -142,71 +93,24 @@ export default function Prizes() {
 
           <div className="flex flex-col gap-6 md:gap-8">
             <div className="grid grid-cols-1">
-              <div
-                className="flex flex-col justify-center items-center py-[7.25rem] 
-                  rounded-[1rem] border border-[#FFFAEF]"
-                style={{
-                  background:
-                    "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)",
-                }}
-              >
-                <p
-                  className="text-white font-[500] text-[7rem] leading-[8rem] 
-                    md:text-[10rem] md:leading-[10rem]"
-                >
-                  25k
-                </p>
-                <p
-                  className="text-[rgba(255,255,255,0.66)] font-[500] font-[Inter] 
-                    text-[1.5rem] md:text-[2rem]"
-                >
-                  1st Prize- Gold
-                </p>
-              </div>
+              <PrizeCard
+                amount="25K"
+                category="1st prize- Gold"
+                bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
+              />
             </div>
+
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
-              <div
-                className="flex flex-col justify-center items-center py-[7.25rem] 
-                  rounded-[1rem] border border-[#FFFAEF]"
-                style={{
-                  background:
-                    "radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
-                }}
-              >
-                <p
-                  className="text-white font-[500] text-[7rem] leading-[8rem] 
-                    md:text-[10rem] md:leading-[10rem]"
-                >
-                  15k
-                </p>
-                <p
-                  className="text-[rgba(255,255,255,0.66)] font-[500] font-[Inter] 
-                    text-[1.5rem] md:text-[2rem]"
-                >
-                  2nd Prize- Silver
-                </p>
-              </div>
-              <div
-                className="flex flex-col justify-center items-center py-[7.25rem] 
-                  rounded-[1rem] border border-[#FFFAEF]"
-                style={{
-                  background:
-                    "radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
-                }}
-              >
-                <p
-                  className="text-white font-[500] text-[7rem] leading-[8rem] 
-                    md:text-[10rem] md:leading-[10rem]"
-                >
-                  10k
-                </p>
-                <p
-                  className="text-[rgba(255,255,255,0.66)] font-[500] font-[Inter] 
-                    text-[1.5rem] md:text-[2rem]"
-                >
-                  3rd Prize- Bronze
-                </p>
-              </div>
+              <PrizeCard
+                amount="15K"
+                category="2nd prize- Silver"
+                bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+              />
+              <PrizeCard
+                amount="10K"
+                category="3rd prize- Bronze"
+                bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+              />
             </div>
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
               <div
@@ -285,7 +189,7 @@ export default function Prizes() {
               xl:grid-cols-3 pt-8 md:pt-16"
           >
             {sponsorData.map((sponsor, index) => (
-              <SponsorCard key={index} {...sponsor} />
+              <TSPrizeCard key={index} {...sponsor} />
             ))}
           </div>
         </div>
