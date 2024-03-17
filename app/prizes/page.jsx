@@ -2,7 +2,6 @@ import bestBeginner from "@/public/prizesPage/best_beginner.png";
 import bestGirls from "@/public/prizesPage/best_girls.png";
 
 // Sponsor Logos
-import adobeLogo from "@/public/prizesPage/adobeLogo.svg";
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
 import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
 import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
@@ -11,6 +10,8 @@ import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
 import Image from "next/image";
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
+import PrizeCard from "@/components/PrizeCard";
+import TSPrizeCard from "@/components/TSPrizeCard";
 
 export const metadata = {
   title: "Prizes | HackByte",
@@ -32,14 +33,6 @@ export const metadata = {
 };
 
 const sponsorData = [
-  {
-    logo: adobeLogo,
-    alt: "Adobe",
-    title: "Most Creative Adobe Express Add-On",
-    supportText: "Wacom Wireless Drawing Tablet & JBL Go3 Speaker",
-    description:
-      "Adobe Express is an AI-first, all-in-one content creation app that makes it fast, easy and fun to design and share videos, images, PDFs, flyers, TikToks, logos and more. Best of all, it's free to get started.",
-  },
   {
     logo: mongodbLogo,
     alt: "MongoDB",
@@ -73,46 +66,6 @@ const sponsorData = [
       "Taipy empowers Python developers with rapid web app creation, simplifying UI design and backend integration. Win Wireless Headphones & website feature by incorporating Taipy into your hackathon project!",
   },
 ];
-
-const SponsorCard = ({ logo, alt, title, supportText, description }) => (
-  <div
-    className="flex flex-col items-center gap-6 md:gap-12 p-4 rounded-[1rem] 
-      border border-[rgba(255,255,255,0.5)] md:p-8"
-    style={{
-      background:
-        "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
-    }}
-  >
-    <Image src={logo} alt={alt} />
-
-    <div className="flex flex-col items-start gap-4">
-      <p
-        className="font-[500] text-[1.25rem] md:text-[1.5rem] text-left leading-8"
-        style={{
-          background:
-            "linear-gradient(80deg, #D06D30 6.67%, #FFD887 28.13%, #FFDCAD 64.87%, #FAB858 95.66%)",
-          backgroundClip: "text",
-          WebkitBackgroundClip: "text",
-          WebkitTextFillColor: "transparent",
-        }}
-      >
-        {title}
-      </p>
-
-      <div className="flex flex-col items-start gap-1">
-        <p className="text-white font-semibold text-[1rem] md:text-[1.125rem]">
-          {supportText}
-        </p>
-        <p
-          className="text-[#EAECF0] font-[Inter] text-left text-[1rem] 
-          md:[1.125rem] font-normal"
-        >
-          {description}
-        </p>
-      </div>
-    </div>
-  </div>
-);
 
 export default function Prizes() {
   return (
@@ -148,71 +101,27 @@ export default function Prizes() {
 
           <div className="flex flex-col gap-6 md:gap-8">
             <div className="grid grid-cols-1">
-              <div
-                className="flex flex-col justify-center items-center py-[7.25rem] 
-                  rounded-[1rem] border border-[#FFFAEF]"
-                style={{
-                  background:
-                    "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)",
-                }}
-              >
-                <p
-                  className="text-white font-[500] text-[7rem] leading-[8rem] 
-                    md:text-[10rem] md:leading-[10rem]"
-                >
-                  25k
-                </p>
-                <p
-                  className="text-[rgba(255,255,255,0.66)] font-[500] font-[Inter] 
-                    text-[1.5rem] md:text-[2rem]"
-                >
-                  1st Prize- Gold
-                </p>
-              </div>
+              <PrizeCard
+                amount="25K"
+                category="1st prize- Gold"
+                default_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
+                hover_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
+              />
             </div>
+
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
-              <div
-                className="flex flex-col justify-center items-center py-[7.25rem] 
-                  rounded-[1rem] border border-[#FFFAEF]"
-                style={{
-                  background:
-                    "radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
-                }}
-              >
-                <p
-                  className="text-white font-[500] text-[7rem] leading-[8rem] 
-                    md:text-[10rem] md:leading-[10rem]"
-                >
-                  15k
-                </p>
-                <p
-                  className="text-[rgba(255,255,255,0.66)] font-[500] font-[Inter] 
-                    text-[1.5rem] md:text-[2rem]"
-                >
-                  2nd Prize- Silver
-                </p>
-              </div>
-              <div
-                className="flex flex-col justify-center items-center py-[7.25rem] 
-                  rounded-[1rem] border border-[#FFFAEF]"
-                style={{
-                  background:
-                    "radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
-                }}
-              >
-                <p
-                  className="text-white font-[500] text-[7rem] leading-[8rem] 
-                    md:text-[10rem] md:leading-[10rem]"
-                >
-                  10k
-                </p>
-                <p
-                  className="text-[rgba(255,255,255,0.66)] font-[500] font-[Inter] 
-                    text-[1.5rem] md:text-[2rem]"
-                >
-                  3rd Prize- Bronze
-                </p>
-              </div>
+              <PrizeCard
+                amount="15K"
+                category="2nd prize- Silver"
+                default_bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+                hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
+              />
+              <PrizeCard
+                amount="10K"
+                category="3rd prize- Bronze"
+                default_bg="radial-gradient(148.8% 129.29% at 94.87% 3.94%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)"
+                hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
+              />
             </div>
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
               <div
@@ -291,7 +200,7 @@ export default function Prizes() {
               xl:grid-cols-3 pt-8 md:pt-16"
           >
             {sponsorData.map((sponsor, index) => (
-              <SponsorCard key={index} {...sponsor} />
+              <TSPrizeCard key={index} index={index} {...sponsor} />
             ))}
           </div>
         </div>

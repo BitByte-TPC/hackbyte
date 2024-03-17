@@ -1,9 +1,6 @@
-import React from "react";
-import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
 import banner from "@/public/galleryPage/banner.jpg";
-import ImageLoading from "../../components/ImageLoader";
-import BannerLoading from "../../components/BannerLoader";
+import { GridImage, BannerImage } from "@/components/ImageGrid";
 
 export const metadata = {
   title: "Gallery | HackByte",
@@ -23,16 +20,6 @@ export const metadata = {
     locale: "en_US",
   },
 };
-
-const GridImage = dynamic(
-  () => import("@/components/ImageGrid").then((module) => module.GridImage),
-  { loading: () => <ImageLoading />, ssr: false }
-);
-
-const BannerImage = dynamic(
-  () => import("@/components/ImageGrid").then((module) => module.BannerImage),
-  { loading: () => <BannerLoading />, ssr: false }
-);
 
 const Gallery = () => {
   return (
