@@ -12,7 +12,7 @@ export default function TextAnimation({ text }) {
           animate={{ opacity: 1 }}
           transition={{
             duration: 0.25,
-            delay: i / 10
+            delay: i / 10,
           }}
           key={i}
           className="max-w-[840px] text-[#f5f0d8] text-[4rem] font-normal 

@@ -1,4 +1,5 @@
 "use client";
+
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
@@ -21,6 +22,7 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
     "radial-gradient(100% at center, #363636 100%, #1A1A1A 27%)";
   const hoverGradient =
     "radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)";
+
   return (
     <>
       <motion.div
@@ -44,7 +46,7 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
           <Tilt options={defaultOptions}>
             <div
               className="w-[295px] min-w-[306px] xl:w-[350px]  
-              shadow text-white rounded-[1rem] border border-[#FFFAEF]"
+                shadow text-white rounded-[1rem]"
               style={{
                 "--default-gradient": defaultGradient,
                 "--hover-gradient": hoverGradient,
@@ -59,10 +61,13 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
               <Image
                 src={sponsorimgsrc}
                 className="rounded-t-[1rem] w-[306px] h-[181px] xl:w-[350px] 
-                xl:h-[207px] outline-none"
+                  xl:h-[207px] outline-none"
                 placeholder="blur"
               />
-              <div className="flex justify-between items-start p-6">
+              <div
+                className="flex justify-between items-start p-6 rounded-b-[1rem] 
+                  border border-[#FFFAEF]"
+              >
                 <div className="flex flex-col gap-2">
                   <p className="sm:text-2xl text-xl">{sponsor}</p>
                   <p className="text-[#C3C3C3] sm:text-2xl text-xl leading-9 font-[Inter]">

@@ -1,5 +1,4 @@
 "use client";
-import React from "react";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 
@@ -19,21 +18,20 @@ const PrizeCard = ({ amount, category, default_bg, hover_bg }) => {
   return (
     <>
       <motion.div
-      initial={{
-        opacity: 0,
+        initial={{
+          opacity: 0,
         }}
         whileInView={{
-            opacity: 1,
-            transition: {
-                duration: 1,
-            },
-            
+          opacity: 1,
+          transition: {
+            duration: 1,
+          },
         }}
       >
         <Tilt options={defaultOptions}>
           <div
             className="flex flex-col justify-center items-center py-[7.25rem] 
-      rounded-[1rem] border border-[#FFFAEF]"
+              rounded-[1rem] border border-[#FFFAEF]"
             style={{
               "--default-gradient": default_bg,
               "--hover-gradient": hover_bg,
@@ -48,13 +46,13 @@ const PrizeCard = ({ amount, category, default_bg, hover_bg }) => {
           >
             <p
               className="text-white font-[500] text-[7rem] leading-[8rem] 
-        md:text-[10rem] md:leading-[10rem]"
+                md:text-[10rem] md:leading-[10rem]"
             >
               {amount}
             </p>
             <p
               className="text-[rgba(255,255,255,0.66)] font-[500] font-[Inter] 
-        text-[1.5rem] md:text-[2rem]"
+                text-[1.5rem] md:text-[2rem]"
             >
               {category}
             </p>

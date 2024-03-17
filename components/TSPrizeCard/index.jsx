@@ -4,7 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 
-const TSPrizeCard = ({index, logo, alt, title, supportText, description }) => {
+const TSPrizeCard = ({ index, logo, alt, title, supportText, description }) => {
   const defaultOptions = {
     reverse: false,
     max: 10,
@@ -44,11 +44,15 @@ const TSPrizeCard = ({index, logo, alt, title, supportText, description }) => {
         <Tilt options={defaultOptions}>
           <div
             className="flex flex-col items-center gap-6 md:gap-12 p-4 rounded-[1rem] 
-      border border-[rgba(255,255,255,0.5)] md:p-8 lg:min-h-[490px]"
+              border border-[rgba(255,255,255,0.5)] md:p-8 lg:min-h-[490px]"
             style={{
               "--default-gradient": defaultGradient,
               "--hover-gradient": hoverGradient,
               background: "var(--default-gradient)",
+              userSelect: "none",
+              WebkitUserSelect: "none",
+              MozUserSelect: "none",
+              msUserSelect: "none",
             }}
             onMouseEnter={(e) =>
               (e.target.style.background = "var(--hover-gradient)")
@@ -78,8 +82,8 @@ const TSPrizeCard = ({index, logo, alt, title, supportText, description }) => {
                   {supportText}
                 </p>
                 <p
-                  className="text-[#EAECF0] font-[Inter] text-left text-[1rem] 
-      md:[1.125rem] font-normal"
+                  className="text-[#EAECF0] font-[Inter] font-normal text-left 
+                    text-[1rem] md:[1.125rem]"
                 >
                   {description}
                 </p>
