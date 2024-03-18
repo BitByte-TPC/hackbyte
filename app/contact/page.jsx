@@ -29,14 +29,14 @@ export default function Contact() {
       >
         <div
           className="w-full h-full flex flex-col gap-24 px-4 pt-20 
-            md:px-8 xl:px-20 2xl:px-40"
+            md:px-8 lg:px-16 xl:px-20 2xl:px-40"
         >
           <div
             className="flex flex-col justify-between items-start sm:items-center 
               gap-12 md:gap-0 md:flex-row"
           >
             <div className="flex flex-col items-start gap-8">
-              <TextAnimation text="How can we <br> help you? " />
+              <TextAnimation text="How can we help you? " />
               <p
                 className="w-full text-[#C3C3C3] font-['Inter'] font-normal 
                   text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 
@@ -48,7 +48,7 @@ export default function Contact() {
             </div>
 
             <img
-              className="w-44 h-44 xl:h-60 xl:w-60"
+              className="w-44 h-44 md:hidden lg:block xl:h-60 xl:w-60"
               src="/getInTouchImage.svg"
               alt="Get in touch"
             />

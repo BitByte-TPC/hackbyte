@@ -1,3 +1,4 @@
+import { HackbyteLogo } from "@/components/HackbyteLogo";
 import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import {
@@ -6,7 +7,6 @@ import {
   LinkedInLogoIcon,
   DiscordLogoIcon,
 } from "@radix-ui/react-icons";
-import { HackbyteLogo } from "@/components/HackbyteLogo";
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
@@ -39,8 +39,8 @@ export default function Home() {
             className="text-[#FAF8ED] text-[1.25rem] font-medium text-left 
               lg:text-right lg:text-[1.5rem]"
           >
-            — Round 1 kicks off at
-            <br /> 5 April 2024, IIIT Jabalpur
+            Join us at IIIT Jabalpur
+            <br /> for a full in-person experience.
           </p>
           <a href="https://hackbyte2.devfolio.co/" target="_blank">
             <Button
