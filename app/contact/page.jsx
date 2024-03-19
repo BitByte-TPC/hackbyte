@@ -83,7 +83,7 @@ export default function Contact() {
               />
               <div className="flex flex-col items-start gap-3">
                 <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
-                  By train
+                  By Train
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
                   Book tickets from IRCTC : The campus is 10kms from the Railway

@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SponsorCard from "@/components/ui/cards";
 
 import mlh from "@/public/partnersPage/mlh.webp";
-import github from "@/public/partnersPage/github.webp";
+import github from "@/public/partnersPage/github.png";
 import postman from "@/public/partnersPage/postman.webp";
 import godspeed from "@/public/partnersPage/godspeed.webp";
 import devfolio from "@/public/partnersPage/devfolio.webp";
@@ -47,10 +47,10 @@ const normalSponsorsData = [
     site: "https://mlh.io",
   },
   {
-    sponsor: "Github",
+    sponsor: "GitHub",
     category: "Gold Sponsor",
     sponsorimgsrc: github,
-    site: "https://github.com",
+    site: "https://gh.io/hackbyte2",
   },
   {
     sponsor: "Postman",
