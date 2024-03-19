@@ -46,27 +46,27 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
           <Tilt options={defaultOptions}>
             <div
               className="w-[295px] min-w-[306px] xl:w-[350px]  
-                shadow text-white rounded-[1rem]"
+                shadow text-white rounded-[8px]"
               style={{
                 "--default-gradient": defaultGradient,
                 "--hover-gradient": hoverGradient,
               }}
               onMouseEnter={(e) =>
-                (e.target.style.background = "var(--hover-gradient)")
+                (e.currentTarget.style.background = "var(--hover-gradient)")
               }
               onMouseLeave={(e) =>
-                (e.target.style.background = "var(--default-gradient)")
+                (e.currentTarget.style.background = "var(--default-gradient)")
               }
             >
               <Image
                 src={sponsorimgsrc}
-                className="rounded-t-[1rem] w-[306px] h-[181px] xl:w-[350px] 
+                className="rounded-t-[8px] w-[306px] h-[181px] xl:w-[350px] 
                   xl:h-[207px] outline-none"
                 placeholder="blur"
               />
               <div
-                className="flex justify-between items-start p-6 rounded-b-[1rem] 
-                  border border-[#FFFAEF]"
+                className="flex justify-between items-start p-6 rounded-b-[8px] 
+                  border-b border-x border-[#FFFAEF]"
               >
                 <div className="flex flex-col gap-2">
                   <p className="sm:text-2xl text-xl">{sponsor}</p>

@@ -76,7 +76,11 @@ export default function Contact() {
                   "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
               }}
             >
-              <img src="/contactPage/trainIcon.svg" alt="By Train" />
+              <img
+                src="/contactPage/trainIcon.svg"
+                alt="By Train"
+                className=" hover:scale-110 hover:rotate-[360deg] transition-all duration-1000 ease-in-out"
+              />
               <div className="flex flex-col items-start gap-3">
                 <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By train
@@ -96,7 +100,11 @@ export default function Contact() {
                   "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
               }}
             >
-              <img src="/contactPage/planeIcon.svg" alt="By Flight" />
+              <img
+                src="/contactPage/planeIcon.svg"
+                alt="By Flight"
+                className=" hover:scale-110 hover:rotate-[360deg] transition-all duration-1000 ease-in-out"
+              />
               <div className="flex flex-col items-start gap-5">
                 <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Air
@@ -120,7 +128,11 @@ export default function Contact() {
                   "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
               }}
             >
-              <img src="/contactPage/busIcon.svg" alt="By Bus" />
+              <img
+                src="/contactPage/busIcon.svg"
+                alt="By Bus"
+                className=" hover:scale-110 hover:rotate-[360deg] transition-all duration-1000 ease-in-out"
+              />
               <div className="flex flex-col items-start gap-5">
                 <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Bus

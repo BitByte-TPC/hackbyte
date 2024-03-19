@@ -43,7 +43,7 @@ const TSPrizeCard = ({ index, logo, alt, title, supportText, description }) => {
       >
         <Tilt options={defaultOptions}>
           <div
-            className="flex flex-col items-center gap-6 md:gap-12 p-4 rounded-[1rem] 
+            className="flex flex-col items-center gap-6 md:gap-12 p-4 rounded-[8px] 
               border border-[rgba(255,255,255,0.5)] md:p-8 lg:min-h-[490px]"
             style={{
               "--default-gradient": defaultGradient,
@@ -55,10 +55,10 @@ const TSPrizeCard = ({ index, logo, alt, title, supportText, description }) => {
               msUserSelect: "none",
             }}
             onMouseEnter={(e) =>
-              (e.target.style.background = "var(--hover-gradient)")
+              (e.currentTarget.style.background = "var(--hover-gradient)")
             }
             onMouseLeave={(e) =>
-              (e.target.style.background = "var(--default-gradient)")
+              (e.currentTarget.style.background = "var(--default-gradient)")
             }
           >
             <Image src={logo} alt={alt} />

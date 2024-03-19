@@ -126,7 +126,7 @@ export default function Prizes() {
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
               <div
                 className="flex flex-col items-center gap-12 px-8 py-6 
-                  md:flex-row md:px-6 rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
+                  md:flex-row md:px-6 rounded-[8px] border border-[rgba(255,255,255,0.5)]"
                 style={{
                   background:
                     "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",
@@ -152,7 +152,7 @@ export default function Prizes() {
               </div>
               <div
                 className="flex flex-col items-center gap-12 px-8 py-6 
-                  md:flex-row md:px-6 rounded-[1rem] border border-[rgba(255,255,255,0.5)]"
+                  md:flex-row md:px-6 rounded-[8px] border border-[rgba(255,255,255,0.5)]"
                 style={{
                   background:
                     "radial-gradient(371.89% 134.33% at 3.21% 1.26%, rgba(255, 255, 255, 0.07) 0%, rgba(217, 217, 217, 0.00) 100%)",

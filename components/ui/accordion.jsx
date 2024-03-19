@@ -5,15 +5,29 @@ import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import { PlusCircledIcon, MinusCircledIcon } from "@radix-ui/react-icons";
 
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 const Accordion = AccordionPrimitive.Root;
 
 const AccordionItem = React.forwardRef(({ className, ...props }, ref) => (
-  <AccordionPrimitive.Item
-    ref={ref}
-    className={cn(" data-[state=open]:bg-[#353535]", className)}
-    {...props}
-  />
+  <>
+    <motion.div
+      whileHover={{
+        scale: 1.02,
+        transition: {
+          duration: 0.6,
+          repeat: Infinity,
+          repeatType: "reverse",
+        },
+      }}
+    >
+      <AccordionPrimitive.Item
+        ref={ref}
+        className={cn(" data-[state=open]:bg-[#353535]", className)}
+        {...props}
+      />
+    </motion.div>
+  </>
 ));
 AccordionItem.displayName = "AccordionItem";
 
