@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import banner from "@/public/galleryPage/banner.jpg";
 import { GridImage, BannerImage } from "@/components/ImageGrid";
@@ -24,6 +25,7 @@ export const metadata = {
 const Gallery = () => {
   return (
     <>
+      <Navbar />
       <div
         className="flex flex-col justify-around min-h-screen bg-black 
         md:pt-24 pt-16 p-4 lg:px-12 md:py-8 mb-0"

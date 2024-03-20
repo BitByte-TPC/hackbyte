@@ -9,6 +9,7 @@ import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
 
 import Image from "next/image";
 import CircleAnimation from "@/components/CircleAnimation";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import PrizeCard from "@/components/PrizeCard";
 import TSPrizeCard from "@/components/TSPrizeCard";
@@ -70,6 +71,7 @@ const sponsorData = [
 export default function Prizes() {
   return (
     <>
+      <Navbar />
       <div
         className="bg-[#101010] flex flex-col min-h-screen
           px-4 md:px-10 lg:px-20 2xl:px-48 py-40"

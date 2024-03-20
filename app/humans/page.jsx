@@ -14,6 +14,7 @@ import nitya from "@/public/humansPage/nitya.png";
 import prajjwal from "@/public/humansPage/prajjwal.webp";
 
 import CircleAnimation from "@/components/CircleAnimation";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -137,6 +138,7 @@ export default function Team() {
   ];
   return (
     <>
+      <Navbar />
       <div
         className="bg-[#101010] flex flex-col min-h-screen
           px-4 md:px-10 lg:px-20 xl:px-10 2xl:px-48 py-40"

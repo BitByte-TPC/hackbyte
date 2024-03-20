@@ -12,12 +12,24 @@ import StatisticCard from "@/components/StatisticCard";
 import NewsLetter from "@/components/NewsLetter";
 
 import CircleAnimation from "@/components/CircleAnimation";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import Timer from "@/components/Timer";
+import ThemeTitle from "@/components/ThemeTitle";
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
     <Icon className="w-7 h-7 text-white transition ease-in-out delay-150 hover:scale-125 duration-300" />
   </a>
+);
+
+const Strip = () => (
+  <div className="bg-[#FAF8ED] text-black px-3 py-2 flex justify-center items-center gap-4">
+    <span className="font-semibold text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem]">
+      Hurry Up! Registrations closing in
+    </span>
+    <Timer />
+  </div>
 );
 
 export default function Home() {
@@ -85,6 +97,8 @@ export default function Home() {
 
   return (
     <>
+      <Strip />
+      <Navbar />
       <div
         className="relative flex flex-col min-h-fit
           p-4 pt-20 md:pt-32 md:px-12 xl:px-20 md:py-4"
@@ -94,19 +108,7 @@ export default function Home() {
             pt-16 gap-4 xl:pt-12 lg:gap-0"
         >
           <div className="flex flex-col items-start w-full lg:w-1/2">
-            <p
-              className="text-[#FAF8ED] text-[1.25rem] md:text-[1.5rem] 
-                font-medium uppercase"
-            >
-              This year&apos;s theme :{" "}
-            </p>
-            <p
-              className="text-[#FAF8ED] text-[2.375rem] md:text-[3rem] 
-                font-medium leading-[1.2] md:leading-[1.1]"
-            >
-              Digital Anonymity
-              <br /> Unleashed
-            </p>
+            <ThemeTitle />
           </div>
           <div className="flex flex-col items-start gap-3 w-full lg:items-end lg:w-1/2">
             <p

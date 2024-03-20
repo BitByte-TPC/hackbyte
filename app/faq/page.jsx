@@ -6,6 +6,7 @@ import {
 } from "@/components/ui/accordion";
 import TextAnimation from "@/components/TextAnimation";
 import CircleAnimation from "@/components/CircleAnimation";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -70,6 +71,7 @@ export default function FAQ() {
 
   return (
     <>
+      <Navbar />
       <div
         className="bg-[#101010] flex flex-col min-h-screen
           p-4 md:pb-64 lg:px-0 md:pt-24 pt-16"
