@@ -18,6 +18,7 @@ import Taipy from "@/public/partnersPage/taipy.webp";
 import Godaddy from "@/public/partnersPage/Godaddy.webp";
 
 import CircleAnimation from "@/components/CircleAnimation";
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -138,6 +139,7 @@ const inKindSponsorsData = [
 const Partners = () => {
   return (
     <>
+      <Navbar />
       <div
         className="bg-[#101010] flex flex-col items-center min-h-screen 
           lg:px-20 px-4 py-48"

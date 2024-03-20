@@ -1,3 +1,4 @@
+import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CircleAnimation from "@/components/CircleAnimation";
 import TextAnimation from "@/components/TextAnimation";
@@ -23,6 +24,7 @@ export const metadata = {
 export default function Contact() {
   return (
     <>
+      <Navbar />
       <div
         className="bg-[#101010] flex flex-col min-h-screen
           p-4 md:pb-64 lg:px-0 md:pt-24 pt-16"

@@ -32,33 +32,29 @@ export default function Timer() {
 
   return (
     <div
-      className="flex justify-center items-center gap-3 md:gap-6 py-3 px-10 
-        border-2 border-[rgba(255,255,255,0.6)] rounded-[9.375rem]"
-      style={{
-        background:
-          "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
-      }}
+      className="flex justify-center items-center gap-3 md:gap-4 lg:gap-6 py-3 px-3 md:px-8 lg:px-10 
+        border-2 border-[rgba(255,255,255,0.6)] rounded-[9.375rem] h-12 bg-[#363636]"
     >
       <div className="flex justify-center items-start">
-        <p className="text-[#FAF8ED] text-[2rem] xl:text-[4rem] font-normal">
+        <p className="text-[#FAF8ED] text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] font-normal">
           {days}
           <span>D</span>
         </p>
       </div>
       <div className="flex justify-center items-start">
-        <p className="text-[#FAF8ED] text-[2rem] xl:text-[4rem] font-normal">
+        <p className="text-[#FAF8ED] text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] font-normal">
           {hours}
           <span>H</span>
         </p>
       </div>
       <div className="flex justify-center items-start">
-        <p className="text-[#FAF8ED] text-[2rem] xl:text-[4rem] font-normal">
+        <p className="text-[#FAF8ED] text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] font-normal">
           {minutes}
           <span>M</span>
         </p>
       </div>
       <div className="flex justify-center items-start">
-        <p className="text-[#FAF8ED] text-[2rem] xl:text-[4rem] font-normal">
+        <p className="text-[#FAF8ED] text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem] font-normal">
           {seconds}
           <span>S</span>
         </p>

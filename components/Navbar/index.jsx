@@ -81,7 +81,7 @@ export default function Navbar() {
           <img
             src="https://s3.amazonaws.com/logged-assets/trust-badge/2024/mlh-trust-badge-2024-white.svg"
             alt="Major League Hacking 2024 Hackathon Season"
-            className="w-full"
+            className="w-full hover:scale-110 transition-all duration-300 ease-in-out"
           />
         </a>
 
