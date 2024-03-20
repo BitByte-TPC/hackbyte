@@ -31,17 +31,17 @@ const PrizeCard = ({ amount, category, default_bg, hover_bg }) => {
         <Tilt options={defaultOptions}>
           <div
             className="flex flex-col justify-center items-center py-[7.25rem] 
-              rounded-[1rem] border border-[#FFFAEF]"
+              rounded-[8px] border border-[#FFFAEF]"
             style={{
               "--default-gradient": default_bg,
               "--hover-gradient": hover_bg,
               background: "var(--default-gradient)",
             }}
             onMouseEnter={(e) =>
-              (e.target.style.background = "var(--hover-gradient)")
+              (e.currentTarget.style.background = "var(--hover-gradient)")
             }
             onMouseLeave={(e) =>
-              (e.target.style.background = "var(--default-gradient)")
+              (e.currentTarget.style.background = "var(--default-gradient)")
             }
           >
             <p
