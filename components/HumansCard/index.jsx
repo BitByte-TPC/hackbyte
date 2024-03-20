@@ -10,23 +10,22 @@ import {
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
-    <Icon className="w-7 h-7 text-white transition ease-in-out delay-150 hover:scale-125 duration-300" />
+    <Icon
+      className="w-7 h-7 text-white transition ease-in-out delay-150 
+        hover:scale-125 duration-300"
+    />
   </a>
 );
 
-const HumansCard = ({ index, Name, role, profilepic, linkenin, twitter, github }) => {
-  const defaultOptions = {
-    reverse: false,
-    max: 8,
-    perspective: 1000,
-    scale: 1.02,
-    speed: 1000,
-    transition: true,
-    axis: null,
-    reset: true,
-    easing: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
-  };
-
+const HumansCard = ({
+  index,
+  name,
+  role,
+  profilepic,
+  linkedin,
+  twitter,
+  github,
+}) => {
   const defaultGradient =
     "radial-gradient(100% at center, #363636 100%, #1A1A1A 27%)";
 
@@ -50,10 +49,8 @@ const HumansCard = ({ index, Name, role, profilepic, linkenin, twitter, github }
         viewport={{ once: true }}
       >
         <div
-          className="w-[260px]shadow text-white rounded-[8px] flex flex-col gap-3"
-          style={{
-            background: defaultGradient,
-          }}
+          className="w-[260px] shadow text-white rounded-[8px] flex flex-col gap-3"
+          style={{ background: defaultGradient }}
         >
           <Image
             src={profilepic}
@@ -63,23 +60,14 @@ const HumansCard = ({ index, Name, role, profilepic, linkenin, twitter, github }
           />
 
           <div className="w-full flex flex-col gap-2 rounded-b-[8px] p-1">
-            <p className="sm:text-2xl text-xl text-white">{Name}</p>
+            <p className="sm:text-2xl text-xl text-white">{name}</p>
             <p className="text-[#D1CAC7] sm:text-xl text-lg leading-9 font-[Inter]">
               {role}
             </p>
             <div className="flex gap-6 py-2">
-              <SocialMediaIcon
-                href={linkenin}
-                Icon={LinkedInLogoIcon}
-              />
-              <SocialMediaIcon
-                href={twitter}
-                Icon={TwitterLogoIcon}
-              />
-              <SocialMediaIcon
-                href={github}
-                Icon={GitHubLogoIcon}
-              />
+              <SocialMediaIcon href={linkedin} Icon={LinkedInLogoIcon} />
+              <SocialMediaIcon href={twitter} Icon={TwitterLogoIcon} />
+              <SocialMediaIcon href={github} Icon={GitHubLogoIcon} />
             </div>
           </div>
         </div>
