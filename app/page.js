@@ -162,7 +162,7 @@ export default function Home() {
                 <img
                   src="/iiitdmjLogo.svg"
                   alt="IIITDMJ Logo"
-                  className="w-[5.5rem] h-[2rem]"
+                  className="w-[6rem] h-[3rem]"
                 />
               </div>
             </div>

@@ -12,6 +12,7 @@ const navigationItems = [
   { label: "Gallery", href: "/gallery" },
   { label: "Partners", href: "/partners" },
   { label: "Prizes", href: "/prizes" },
+  { label: "Schedule", href: "/schedule" },
   { label: "Humans", href: "/humans" },
   { label: "FAQs", href: "/faq" },
   { label: "Contact", href: "/contact" },
@@ -31,7 +32,7 @@ const NavItem = ({ label, href }) => {
         {pathname === href && (
           <motion.span
             layoutId="bubble"
-            className="absolute inset-0 z-10 bg-[#FFFFFF1A]  mix-blend-difference"
+            className="absolute inset-0 z-10 bg-[#FFFFFF1A] mix-blend-difference"
             style={{ borderRadius: 9999 }}
             transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
             key={label}
@@ -57,7 +58,7 @@ export default function Navbar() {
             src={HBMobileLogo}
             alt="Hackathon-Mobile-Logo"
             className="block absolute h-12 w-24 top-7 lg:h-16 lg:w-40 lg:top-9
-              lg:left-[10px] xl:left-[30px]"
+             md:left-[35px] lg:left-[30px] xl:left-[50px]"
             priority
           />
         </Link>
