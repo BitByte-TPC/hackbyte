@@ -1,7 +1,9 @@
+import Navbar from "@/components/Navbar";
+import Timer from "@/components/Timer";
+import ThemeTitle from "@/components/ThemeTitle";
 import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import { HackbyteLogo } from "@/components/HackbyteLogo";
-import Image from "next/image";
 import {
   TwitterLogoIcon,
   InstagramLogoIcon,
@@ -12,10 +14,7 @@ import StatisticCard from "@/components/StatisticCard";
 import NewsLetter from "@/components/NewsLetter";
 
 import CircleAnimation from "@/components/CircleAnimation";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import Timer from "@/components/Timer";
-import ThemeTitle from "@/components/ThemeTitle";
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
@@ -24,7 +23,10 @@ const SocialMediaIcon = ({ Icon, href }) => (
 );
 
 const Strip = () => (
-  <div className="bg-[#FAF8ED] text-black px-3 py-2 flex justify-center items-center gap-4">
+  <div
+    className="flex justify-center items-center gap-4 bg-[#FAF8ED] text-black 
+      px-3 py-2"
+  >
     <span className="font-semibold text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem]">
       Hurry Up! Registrations closing in
     </span>

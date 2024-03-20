@@ -9,6 +9,7 @@ import HBMobileLogo from "@/public/HBMobileLogo.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
+  { label: "Home", href: "/" },
   { label: "Gallery", href: "/gallery" },
   { label: "Partners", href: "/partners" },
   { label: "Prizes", href: "/prizes" },
@@ -32,7 +33,7 @@ const NavItem = ({ label, href }) => {
         {pathname === href && (
           <motion.span
             layoutId="bubble"
-            className="absolute inset-0 z-10 bg-[#FFFFFF1A] mix-blend-difference"
+            className="absolute inset-0 z-10 bg-[#FFFFFF1A]  mix-blend-difference"
             style={{ borderRadius: 9999 }}
             transition={{ type: "spring", bounce: 0.2, duration: 0.6 }}
             key={label}
@@ -53,15 +54,14 @@ export default function Navbar() {
   return (
     <>
       <nav className="absolute z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
-        <Link href="/">
-          <Image
-            src={HBMobileLogo}
-            alt="Hackathon-Mobile-Logo"
-            className="block absolute h-12 w-24 top-7 lg:h-16 lg:w-40 lg:top-9
-             md:left-[35px] lg:left-[30px] xl:left-[50px]"
-            priority
-          />
-        </Link>
+        <Image
+          src={HBMobileLogo}
+          alt="Hackathon-Mobile-Logo"
+          className="xl:hidden"
+          width={"6rem"}
+          height={"3rem"}
+          priority
+        />
         <div
           className="hidden h-10 xl:flex xl:justify-center xl:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
@@ -109,8 +109,8 @@ export default function Navbar() {
       >
         <div
           className="flex flex-col self-end space-y-8 text-lg text-[#9d9d9d] 
-          font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] bg-[#090909]
-          bg-opacity-80"
+            font-medium uppercase p-8 border-1 border-[#222] rounded-[2rem] 
+            bg-[#090909] bg-opacity-80"
         >
           {navigationItems.map(({ label, href }) => (
             <Link

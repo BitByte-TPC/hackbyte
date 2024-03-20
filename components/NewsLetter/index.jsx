@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { db } from "@/app/firebase/config";
 import { collection, addDoc, getDocs, query, where } from "firebase/firestore";
@@ -9,45 +9,6 @@ import { ToastContainer, toast } from "react-toastify";
 export default function NewsLetter() {
   const [email, setEmail] = useState("");
   const dbInstance = collection(db, "subscribers");
-  const [mousePosition, setMousePosition] = useState({
-    x: 0,
-    y: 0,
-  });
-  const [cursorVariant, setCursorVariant] = useState("default");
-
-  useEffect(() => {
-    const mouseMove = (e) => {
-      setMousePosition({
-        x: e.clientX,
-        y: e.clientY,
-      });
-    };
-
-    window.addEventListener("mousemove", mouseMove);
-
-    return () => {
-      window.removeEventListener("mousemove", mouseMove);
-    };
-  }, []);
-
-  const variants = {
-    default: {
-      x: mousePosition.x - 16,
-      y: mousePosition.y - 16,
-      display: "none",
-    },
-    text: {
-      height: 120,
-      width: 120,
-      x: mousePosition.x - 75,
-      y: mousePosition.y - 75,
-      backgroundColor: "yellow",
-      mixBlendMode: "difference",
-    },
-  };
-
-  const textEnter = () => setCursorVariant("text");
-  const textLeave = () => setCursorVariant("default");
 
   function notify(message) {
     toast(message, {
@@ -104,13 +65,10 @@ export default function NewsLetter() {
       <div className="absolute top-[-9rem] sm:top-[-6rem] w-full flex justify-center">
         <div
           className="w-full flex flex-col justify-between items-start gap-8 
-            sm:w-[80%] mx-4 px-3 py-10 md:p-10 lg:p-16 bg-gray-50 rounded-2xl shadow md:flex-row"
+            sm:w-[80%] mx-4 px-3 py-10 md:p-10 lg:p-16 bg-gray-50 rounded-2xl 
+            shadow md:flex-row"
         >
-          <div
-            className="max-w-xl flex-col justify-start items-start gap-3 inline-flex"
-            onMouseEnter={textEnter}
-            onMouseLeave={textLeave}
-          >
+          <div className="max-w-xl flex-col justify-start items-start gap-3 inline-flex">
             <div
               className="self-stretch text-gray-900 text-3xl md:text-2xl lg:text-3xl 
                 font-medium font-['Clash Grotesk'] leading-8"
@@ -119,16 +77,11 @@ export default function NewsLetter() {
             </div>
             <div
               className="self-stretch text-slate-600 text-lg md:text-base lg:text-xl 
-              font-normal font-['Inter'] leading-[1.75rem]"
+                font-normal font-['Inter'] leading-[1.75rem]"
             >
               Sign up to receive updates on our latest events.
             </div>
           </div>
-          <motion.div
-            className="cursor"
-            variants={variants}
-            animate={cursorVariant}
-          />
 
           <div className="flex flex-col justify-start items-start gap-4 lg:flex-row w-full xl:max-w-md">
             <div className="w-full md:max-w-lg flex-col justify-start items-start gap-1.5 inline-flex">
