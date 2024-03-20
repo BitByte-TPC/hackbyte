@@ -143,8 +143,8 @@ export default function NewsLetter() {
             </div>
             <motion.button
               className="w-full lg:w-32 flex justify-center items-center bg-black 
-                    text-white text-[1.125rem] font-medium px-8 py-3 rounded-none 
-                    hover:bg-black hover:text-white"
+                text-white text-[1.125rem] font-medium px-8 py-3 rounded-none 
+                hover:bg-black hover:text-white"
               style={{
                 boxShadow:
                   "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",

@@ -49,12 +49,12 @@ const HumansCard = ({
         viewport={{ once: true }}
       >
         <div
-          className="w-[260px] shadow text-white rounded-[8px] flex flex-col gap-3"
+          className="flex flex-col gap-3 w-[260px] shadow text-white"
           style={{ background: defaultGradient }}
         >
           <Image
             src={profilepic}
-            className="rounded-[8px] outline-none w-[260px] h-[320px]"
+            className="outline-none w-[260px] h-[320px]"
             placeholder="blur"
             alt="Profile Picture"
           />

@@ -10,7 +10,6 @@ import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Partners", href: "/partners" },
   { label: "Prizes", href: "/prizes" },
