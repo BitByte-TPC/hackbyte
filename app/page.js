@@ -23,22 +23,22 @@ const SocialMediaIcon = ({ Icon, href }) => (
 export default function Home() {
   const statisticsData = [
     {
-      number: "1500+",
+      number: 1500,
       label: "Registrations",
       description: "1500+ registrations from across the country.",
     },
     {
-      number: "500+",
+      number: 500,
       label: "Offline Participants",
       description: "500+ participants joined the offline hackathon!",
     },
     {
-      number: "100+",
+      number: 100,
       label: "Volunteers",
       description: "To help you, get the best out of HackByte.",
     },
     {
-      number: "120+",
+      number: 120,
       label: "Projects",
       description: "Innovative submissions from various domains.",
     },
