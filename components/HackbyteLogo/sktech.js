@@ -51,7 +51,7 @@ export default class Sketch {
     this.renderer.setSize(this.width, this.height);
     this.renderer.setClearColor(0xffffff, 0);
     this.renderer.physicallyCorrectLights = true;
-    this.renderer.domElement.style.position = "fixed";
+    this.renderer.domElement.style.position = "absolute";
     this.renderer.domElement.style.top = "0";
     this.renderer.domElement.style.left = "0";
     this.container.appendChild(this.renderer.domElement);

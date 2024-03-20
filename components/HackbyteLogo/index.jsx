@@ -34,7 +34,7 @@ const HackbyteLogo = () => {
       />
       <div
         // className="absolute min-w-[15rem] w-[70%] 2xl:max-w-[32rem] max-w-[30rem]"
-        className="fixed top-0 -z-[1] left-0 w-full h-full"
+        className="absolute top-0 -z-[1] left-0 w-full h-full"
         style={{
           backgroundColor: "#000",
           backgroundImage: "url(/background.png)",

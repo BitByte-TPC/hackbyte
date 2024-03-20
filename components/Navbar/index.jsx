@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="absolute w-full flex items-center xl:justify-center px-4 pt-8">
+      <nav className="absolute z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
         <Image
           src={HBMobileLogo}
           alt="Hackathon-Mobile-Logo"
@@ -103,7 +103,7 @@ export default function Navbar() {
 
       <div
         id="menu"
-        className={`absolute top-0 bottom-0 left-0 ${
+        className={`absolute z-[1] top-0 bottom-0 left-0 ${
           isMenuOpen ? "block" : "hidden"
         } w-full min-h-screen py-1 pt-40 px-8 backdrop-blur-lg`}
       >
