@@ -29,3 +29,17 @@ scrollbar-thumb {
   background-color: rgba(127, 125, 125, 0.5);
   border-radius: 10px;
 }
+
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: #fff;
+  transition: 0.1s;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  mix-blend-mode: difference;
+}

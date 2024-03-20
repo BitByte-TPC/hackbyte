@@ -1,14 +1,12 @@
-import badgebundle from "@/public/badgebundle.svg";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import TextAnimation from "@/components/TextAnimation";
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
-import TextAnimation from "@/components/TextAnimation";
-import Image from "next/image";
 
 export const metadata = {
   title: "FAQ | HackByte",
@@ -74,26 +72,34 @@ export default function FAQ() {
     <>
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          p-4 md:pb-48 lg:px-0 md:pt-24 pt-16"
+          p-4 md:pb-64 lg:px-0 md:pt-24 pt-16"
       >
-        <div className="flex justify-between pt-16 md:pt-12 md:pl-8 xl:pl-20">
-          <div className="flex flex-col items-start gap-8">
-            <TextAnimation text={"Everything <br> you need to know!"} />
-            <div
-              className="max-w-[650px] xl:max-w-[700px] text-[#c3c3c3] font-['Inter'] 
-              text-xl font-normal leading-[2.125rem] md:text-2xl"
-            >
-              Let us help you become even greater at what you do. Fill out the
-              following form and we will get back to you in the next 24 hours.
+        <div
+          className="w-full h-full flex flex-col gap-24 px-4 pt-20 
+            md:px-8 xl:px-20 2xl:px-40"
+        >
+          <div
+            className="flex flex-col justify-between items-start sm:items-center 
+              gap-12 md:gap-0 md:flex-row"
+          >
+            <div className="flex flex-col items-start gap-8">
+              <TextAnimation text="Everything you need to know!" />
+              <p
+                className="w-full text-[#C3C3C3] font-['Inter'] font-normal 
+                  text-[1.25rem] sm:max-w-[32rem] lg:max-w-[40rem] xl:max-w-[50rem] 
+                  2xl:max-w-[55rem] md:text-[1rem] xl:text-[1.5rem]"
+              >
+                Hacker Experience is what we prioritize! Have questions, need
+                assistance, or just want to connect? Feel free to reach out!
+              </p>
             </div>
-          </div>
 
-          <Image
-            src={badgebundle}
-            alt=""
-            className="hidden lg:w-80 lg:h-[400px] xl:w-[400px] xl:h-[520px] lg:block"
-            priority
-          />
+            <img
+              className="w-44 h-44 md:hidden lg:block xl:h-60 xl:w-60"
+              src="/getInTouchImage.svg"
+              alt="Get in touch"
+            />
+          </div>
         </div>
 
         <div

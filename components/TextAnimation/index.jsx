@@ -12,11 +12,11 @@ export default function TextAnimation({ text }) {
           animate={{ opacity: 1 }}
           transition={{
             duration: 0.25,
-            delay: i / 10
+            delay: i / 10,
           }}
           key={i}
-          className="max-w-[840px] text-[#f5f0d8] text-[4rem] font-normal 
-            leading-[5rem] tracking-tighter md:text-[8rem] lg:text-[6rem] 
+          className="max-w-[840px] text-[#f5f0d8] text-[4rem] 
+            font-normal leading-[5rem] tracking-tighter md:text-[8rem] lg:text-[6rem] 
             xl:text-[9.5rem] md:leading-[100%] md:tracking-normal"
         >
           {el === "<br>" ? <br /> : el}{" "}

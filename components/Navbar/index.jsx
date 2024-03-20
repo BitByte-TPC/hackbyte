@@ -9,7 +9,6 @@ import HBMobileLogo from "@/public/HBMobileLogo.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
-  { label: "About", href: "/about" },
   { label: "Gallery", href: "/gallery" },
   { label: "Partners", href: "/partners" },
   { label: "Prizes", href: "/prizes" },
@@ -52,18 +51,18 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="absolute w-full flex items-center lg:justify-center px-4 pt-8">
+      <nav className="absolute z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
         <Link href="/">
           <Image
             src={HBMobileLogo}
-            alt="HackByte Logo"
+            alt="Hackathon-Mobile-Logo"
             className="block absolute h-12 w-24 top-7 lg:h-16 lg:w-40 lg:top-9
               lg:left-[10px] xl:left-[30px]"
             priority
           />
         </Link>
         <div
-          className="hidden h-10 lg:flex lg:justify-center lg:items-center 
+          className="hidden h-10 xl:flex xl:justify-center xl:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
             bg-opacity-60 backdrop-blur-xl space-x-2"
         >
@@ -74,7 +73,7 @@ export default function Navbar() {
         <a
           id="mlh-trust-badge"
           className="block absolute top-0 w-[10%] z-10000 max-w-[65px] min-w-[60px] 
-            right-[100px] md:right-[120px] lg:right-[30px] xl:right-[80px]"
+            right-[100px] md:right-[120px] xl:right-[80px]"
           href="https://mlh.io/na?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2024-season&utm_content=white"
           target="_blank"
         >
@@ -85,11 +84,11 @@ export default function Navbar() {
           />
         </a>
 
-        <div className="flex items-center justify-end w-full lg:hidden">
+        <div className="flex items-center justify-end w-full xl:hidden">
           <button
             id="menu-btn"
             type="button"
-            className={`z-40 hamburger lg:hidden focus:outline-none ${
+            className={`z-40 hamburger xl:hidden focus:outline-none ${
               isMenuOpen ? classes.open : ""
             } ${classes.hamburger}`}
             onClick={() => setMenuOpen(!isMenuOpen)}
@@ -103,7 +102,7 @@ export default function Navbar() {
 
       <div
         id="menu"
-        className={`absolute top-0 bottom-0 left-0 ${
+        className={`absolute z-[1] top-0 bottom-0 left-0 ${
           isMenuOpen ? "block" : "hidden"
         } w-full min-h-screen py-1 pt-40 px-8 backdrop-blur-lg`}
       >

@@ -2,7 +2,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SponsorCard from "@/components/ui/cards";
 
 import mlh from "@/public/partnersPage/mlh.webp";
-import github from "@/public/partnersPage/github.webp";
+import github from "@/public/partnersPage/github.png";
 import postman from "@/public/partnersPage/postman.webp";
 import godspeed from "@/public/partnersPage/godspeed.webp";
 import devfolio from "@/public/partnersPage/devfolio.webp";
@@ -10,6 +10,12 @@ import edubard from "@/public/partnersPage/edubard.webp";
 import bobble from "@/public/partnersPage/bobble.webp";
 import wolfram from "@/public/partnersPage/wolfram.webp";
 import balsamiq from "@/public/partnersPage/balsamiq.webp";
+import Nextgen from "@/public/partnersPage/Nextgen.webp";
+import Finlatics from "@/public/partnersPage/Finlatics.webp";
+import Mongodb from "@/public/partnersPage/Mongodb.webp";
+import Auth0 from "@/public/partnersPage/Auth0.webp";
+import Taipy from "@/public/partnersPage/taipy.webp";
+import Godaddy from "@/public/partnersPage/Godaddy.webp";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
@@ -33,75 +39,101 @@ export const metadata = {
   },
 };
 
-const NormalSponsors = () => {
-  return (
-    <>
-      <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
-        <SponsorCard
-          sponsor={"MLH"}
-          category={"Platform Partner"}
-          sponsorimgsrc={mlh}
-          site="https://mlh.io"
-        />
-        <SponsorCard
-          sponsor={"Github"}
-          category={"Gold Sponsor"}
-          sponsorimgsrc={github}
-          site="https://github.com"
-        />
-        <SponsorCard
-          sponsor={"Postman"}
-          category={"Gold Sponsor"}
-          sponsorimgsrc={postman}
-          site="https://community.postman.com"
-        />
-        <SponsorCard
-          sponsor={"Bobble Fan Store"}
-          category={"Merch Partner"}
-          sponsorimgsrc={bobble}
-          site="https://fanstore.bobble.ai"
-        />
-        <SponsorCard
-          sponsor={"Godspeed Systems"}
-          category={"Silver Sponsor"}
-          sponsorimgsrc={godspeed}
-          site="https://godspeed.systems"
-        />
-        <SponsorCard
-          sponsor={"Devfolio"}
-          category={"Platform Partner"}
-          sponsorimgsrc={devfolio}
-          site="https://devfolio.co"
-        />
-      </div>
-    </>
-  );
-};
+const normalSponsorsData = [
+  {
+    sponsor: "MLH",
+    category: "Platform Partner",
+    sponsorimgsrc: mlh,
+    site: "https://mlh.io",
+  },
+  {
+    sponsor: "GitHub",
+    category: "Gold Sponsor",
+    sponsorimgsrc: github,
+    site: "https://gh.io/hackbyte2",
+  },
+  {
+    sponsor: "Postman",
+    category: "Gold Sponsor",
+    sponsorimgsrc: postman,
+    site: "https://community.postman.com",
+  },
+  {
+    sponsor: "Bobble Fan Store",
+    category: "Merch Partner",
+    sponsorimgsrc: bobble,
+    site: "https://fanstore.bobble.ai",
+  },
+  {
+    sponsor: "Godspeed Systems",
+    category: "Silver Sponsor",
+    sponsorimgsrc: godspeed,
+    site: "https://godspeed.systems",
+  },
+  {
+    sponsor: "Devfolio",
+    category: "Platform Partner",
+    sponsorimgsrc: devfolio,
+    site: "https://devfolio.co",
+  },
+  {
+    sponsor: "NextGen",
+    category: "Bronze Sponsor",
+    sponsorimgsrc: Nextgen,
+    site: "https://nextgenglobalhub.github.io/opensourcecohort/",
+  },
+  {
+    sponsor: "Auth0",
+    category: "Track Sponsor",
+    sponsorimgsrc: Auth0,
+    site: "http://hackp.ac/auth0",
+  },
+  {
+    sponsor: "Taipy",
+    category: "Track Sponsor",
+    sponsorimgsrc: Taipy,
+    site: "https://hackp.ac/taipy-gettingstarted",
+  },
+  {
+    sponsor: "Go Daddy Registry",
+    category: "Track Sponsor",
+    sponsorimgsrc: Godaddy,
+    site: "http://hackp.ac/godaddyregistry",
+  },
+];
 
-const InKindSponsors = () => {
-  return (
-    <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
-      <SponsorCard
-        sponsor={"Balsamiq"}
-        category={"Community Sponsor"}
-        sponsorimgsrc={balsamiq}
-        site="https://balsamiq.com"
-      />
-      <SponsorCard
-        sponsor={"Edubard"}
-        category={"Media Partner"}
-        sponsorimgsrc={edubard}
-        site="https://edubard.in"
-      />
-      <SponsorCard
-        sponsor={"Wolfram"}
-        category={"Community Sponsor"}
-        sponsorimgsrc={wolfram}
-        site="https://www.wolfram.com/wolfram-one/"
-      />
-    </div>
-  );
-};
+const inKindSponsorsData = [
+  {
+    sponsor: "Balsamiq",
+    category: "Community Sponsor",
+    sponsorimgsrc: balsamiq,
+    site: "https://balsamiq.com",
+  },
+  {
+    sponsor: "Edubard",
+    category: "Media Partner",
+    sponsorimgsrc: edubard,
+    site: "https://edubard.in",
+  },
+  {
+    sponsor: "Wolfram",
+    category: "Community Sponsor",
+    sponsorimgsrc: wolfram,
+    site: "https://www.wolfram.com/wolfram-one/",
+  },
+  {
+    sponsor: "MongoDB",
+    category: "Community Sponsor",
+    sponsorimgsrc: Mongodb,
+    site: "https://www.mongodb.com/",
+  },
+  {
+    sponsor: "Finlatics",
+    category: "Community Sponsor",
+    sponsorimgsrc: Finlatics,
+    site: "https://www.finlatics.com/",
+  },
+];
 
 const Partners = () => {
   return (
@@ -129,10 +161,18 @@ const Partners = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="Sponsors">
-            <NormalSponsors />
+            <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
+              {normalSponsorsData.map((sponsor, index) => {
+                return <SponsorCard key={index} index={index} {...sponsor} />;
+              })}
+            </div>
           </TabsContent>
           <TabsContent value="InKind Sponsors">
-            <InKindSponsors />
+            <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
+              {inKindSponsorsData.map((sponsor, index) => {
+                return <SponsorCard key={index} index={index} {...sponsor} />;
+              })}
+            </div>
           </TabsContent>
         </Tabs>
       </div>
