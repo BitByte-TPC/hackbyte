@@ -9,7 +9,6 @@ import HBMobileLogo from "@/public/HBMobileLogo.svg";
 import { AnimatePresence, motion } from "framer-motion";
 
 const navigationItems = [
-  { label: "Home", href: "/" },
   { label: "Gallery", href: "/gallery" },
   { label: "Partners", href: "/partners" },
   { label: "Prizes", href: "/prizes" },
@@ -53,14 +52,15 @@ export default function Navbar() {
   return (
     <>
       <nav className="absolute z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
-        <Image
-          src={HBMobileLogo}
-          alt="Hackathon-Mobile-Logo"
-          className="xl:hidden"
-          width={"6rem"}
-          height={"3rem"}
-          priority
-        />
+        <Link href="/">
+          <Image
+            src={HBMobileLogo}
+            alt="Hackathon-Mobile-Logo"
+            className="block absolute h-12 w-24 top-7 lg:h-16 lg:w-40 lg:top-9
+              lg:left-[10px] xl:left-[30px]"
+            priority
+          />
+        </Link>
         <div
           className="hidden h-10 xl:flex xl:justify-center xl:items-center 
             px-3 py-8 rounded-full border-2 border-solid border-gray-800 
