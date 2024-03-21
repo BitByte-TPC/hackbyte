@@ -12,6 +12,8 @@ import eshaan from "@/public/humansPage/eshaan.jpg";
 import prajwal from "@/public/humansPage/prajwal.png";
 import nitya from "@/public/humansPage/nitya.png";
 import prajjwal from "@/public/humansPage/prajjwal.webp";
+import divaynsh_t from "@/public/humansPage/divyansh_t.jpeg";
+import priyansh_m from "@/public/humansPage/priyansh_m.JPG";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Navbar from "@/components/Navbar";
