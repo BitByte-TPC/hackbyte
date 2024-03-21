@@ -171,7 +171,13 @@ export default function Home() {
               </div>
             </div>
           </div>
-          <div className="hidden lg:flex gap-4">
+          <div className="hidden lg:flex flex-col items-end gap-4">
+            <p
+              className="text-[#FAF8ED] text-[1rem] xl:text-[1.25rem] 
+                font-semibold text-right"
+            >
+              We Think to Innovate
+            </p>
             <div className="flex gap-6">
               <SocialMediaIcon
                 href="https://www.instagram.com/hackbyte.tpc/"

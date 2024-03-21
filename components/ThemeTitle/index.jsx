@@ -46,19 +46,12 @@ const ThemeTitle = () => {
   return (
     <>
       <p
-        className="text-[#FAF8ED] text-[1.25rem] md:text-[1.5rem] 
-      font-medium uppercase"
-      >
-        This year&apos;s theme :{" "}
-      </p>
-      <p
-        className="text-[#FAF8ED] text-[2.375rem] md:text-[3rem] 
-      font-medium leading-[1.2] md:leading-[1.1]"
+        className="text-[#FAF8ED] text-[2.375rem] font-medium leading-[1.2] 
+          lg:leading-[1.1] lg:text-[3rem]"
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
       >
-        Digital Anonymity
-        <br /> Unleashed
+        This year&apos;s theme <br /> unveils in April ...
       </p>
       <motion.div
         className="cursor"
