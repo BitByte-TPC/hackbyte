@@ -9,6 +9,7 @@ const ThemeTitle = () => {
     y: 0,
   });
   const [cursorVariant, setCursorVariant] = useState("default");
+  const [display, setDisplay] = useState("block");
 
   useEffect(() => {
     const mouseMove = (e) => {
@@ -25,10 +26,15 @@ const ThemeTitle = () => {
     };
   }, []);
 
+  useEffect(() => {
+    setDisplay(window.innerWidth < 450 ? "none" : "block");
+  }, []);
+
   const variants = {
     default: {
       x: mousePosition.x - 16,
       y: mousePosition.y - 16,
+      display: display,
     },
     text: {
       height: 120,
