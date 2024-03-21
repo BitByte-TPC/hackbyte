@@ -3,7 +3,8 @@ import HumansCard from "@/components/HumansCard";
 import priyansh from "@/public/humansPage/priyansh.jpg";
 import bhavik from "@/public/humansPage/bhavik.jpg";
 import vansh from "@/public/humansPage/vansh.jpeg";
-import aditya_raj from "@/public/humansPage/aditya_raj.jpg";
+import aditya from "@/public/humansPage/aditya.jpg";
+import tushir from "@/public/humansPage/tushir.jpeg";
 import divyansh from "@/public/humansPage/divyansh.jpeg";
 import aryan from "@/public/humansPage/aryan.jpg";
 import deepanshu from "@/public/humansPage/deepanshu.jpg";
@@ -40,6 +41,14 @@ export const metadata = {
 export default function Team() {
   const HumansData = [
     {
+      name: "Bhavik Agrawal",
+      role: "Event Coordinator",
+      profilepic: bhavik,
+      linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
+      twitter: "https://twitter.com/BhavikAgarwal13",
+      github: "https://github.com/Bhavik-ag",
+    },
+    {
       name: "Priyansh Mehta",
       role: "Organizer",
       profilepic: priyansh,
@@ -48,12 +57,12 @@ export default function Team() {
       github: "https://github.com/Priyansh61",
     },
     {
-      name: "Bhavik Agrawal",
-      role: "Event Coordinator",
-      profilepic: bhavik,
-      linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
-      twitter: "https://twitter.com/BhavikAgarwal13",
-      github: "https://github.com/Bhavik-ag",
+      name: "Divyansh Tripathi",
+      role: "Organizer",
+      profilepic: divyansh,
+      linkedin: "https://www.linkedin.com/in/tdivyansh/",
+      twitter: "https://twitter.com/theoden42",
+      github: "https://github.com/theoden42",
     },
     {
       name: "Vansh Mittal",
@@ -66,18 +75,18 @@ export default function Team() {
     {
       name: "Aditya Raj",
       role: "Design Lead",
-      profilepic: aditya_raj,
+      profilepic: aditya,
       linkedin: "https://www.linkedin.com/in/contactadityaraj/",
       twitter: "#",
       github: "#",
     },
     {
-      name: "Divyansh Tripathi",
-      role: "Organizer",
-      profilepic: divyansh,
-      linkedin: "https://www.linkedin.com/in/tdivyansh/",
-      twitter: "https://twitter.com/theoden42",
-      github: "https://github.com/theoden42",
+      name: "Varun Singh",
+      role: "Registrations Lead",
+      profilepic: varun,
+      linkedin: "https://www.linkedin.com/in/varun-singh-018242224/",
+      twitter: "#",
+      github: "https://github.com/varun7singh",
     },
     {
       name: "Deepanshu Singh",
@@ -96,12 +105,12 @@ export default function Team() {
       github: "https://github.com/sambhavgupta0705",
     },
     {
-      name: "Varun Singh",
-      role: "Registrations Lead",
-      profilepic: varun,
-      linkedin: "https://www.linkedin.com/in/varun-singh-018242224/",
-      twitter: "#",
-      github: "https://github.com/varun7singh",
+      name: "Tushir Sahu",
+      role: "Organizer",
+      profilepic: tushir,
+      linkedin: "https://www.linkedin.com/in/tushir-sahu-b95549205/",
+      twitter: "https://twitter.com/Tushir_Sahu",
+      github: "https://github.com/TushirSahu",
     },
     {
       name: "Prajjwal Kapoor",
@@ -117,15 +126,7 @@ export default function Team() {
       profilepic: aryan,
       linkedin: "https://linkedin.com/in/aryan1113",
       twitter: "https://twitter.com/aisehiaryan",
-      github: "#",
-    },
-    {
-      name: "Nitya Tiwari",
-      role: "Organizer",
-      profilepic: nitya,
-      linkedin: "https://www.linkedin.com/in/nitya-tiwari-960797229/",
-      twitter: "https://twitter.com/nityatiwariii",
-      github: "#",
+      github: "https://github.com/aryan1113",
     },
     {
       name: "Prajwal Rayal",
@@ -139,9 +140,16 @@ export default function Team() {
       name: "Manoj Panjwani",
       role: "Organizer",
       profilepic: manoj,
-      linkedin:
-        "https://www.linkedin.com/in/manojpanjwani03?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+      linkedin: "https://www.linkedin.com/in/manojpanjwani03/",
       twitter: "#",
+      github: "#",
+    },
+    {
+      name: "Nitya Tiwari",
+      role: "Organizer",
+      profilepic: nitya,
+      linkedin: "https://www.linkedin.com/in/nitya-tiwari-960797229/",
+      twitter: "https://twitter.com/nityatiwariii",
       github: "#",
     },
   ];

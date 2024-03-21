@@ -6,13 +6,13 @@ import { GridImage, BannerImage } from "@/components/ImageGrid";
 export const metadata = {
   title: "Gallery | HackByte",
   description:
-    "Explore the gallery showcasing memorable moments from past HackByte events at IIITDMJ. View images and photos from previous hackathons and experience the innovation and excitement of the coding community.",
+    "Discover memorable moments from past HackByte events at IIITDMJ, explore images, and feel the excitement of the coding community.",
   keywords:
     "Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech, Gallery, Photos, Videos, Past Events, Previous Events",
   openGraph: {
     title: "Gallery | HackByte",
     description:
-      "Explore the gallery showcasing memorable moments from past HackByte events at IIITDMJ. View images and photos from previous hackathons and experience the innovation and excitement of the coding community.",
+      "Discover memorable moments from past HackByte events at IIITDMJ, explore images, and feel the excitement of the coding community.",
     url: "https://hackbyte.in/gallery",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
