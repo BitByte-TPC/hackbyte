@@ -41,6 +41,14 @@ export const metadata = {
 export default function Team() {
   const HumansData = [
     {
+      name: "Priyansh Mehta",
+      role: "Organizer",
+      profilepic:priyansh_m,
+      linkedin: "https://www.linkedin.com/in/Priyansh61/",
+      twitter: "https://twitter.com/Priyansh_61",
+      github: "https://github.com/Priyansh61",
+    },
+    {
       name: "Bhavik Agrawal",
       role: "Event Coordinator",
       profilepic: bhavik,
@@ -71,14 +79,6 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/tdivyansh/",
       twitter: "https://twitter.com/theoden42",
       github: "https://github.com/theoden42",
-    },
-   {
-      name: "Priyansh Mehta",
-      role: "Organizer",
-      profilepic:priyansh_m,
-      linkedin: "https://www.linkedin.com/in/Priyansh61/",
-      twitter: "https://twitter.com/Priyansh_61",
-      github: "https://github.com/Priyansh61",
     },
     {
       name: "Sambhav Gupta",
