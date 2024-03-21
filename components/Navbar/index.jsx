@@ -57,7 +57,7 @@ export default function Navbar() {
         <Image
           src={HBMobileLogo}
           alt="Hackathon-Mobile-Logo"
-          className="xl:hidden"
+          className="md:hidden"
           width={"6rem"}
           height={"3rem"}
           priority
