@@ -218,7 +218,7 @@ export default function Home() {
               <div className="flex flex-col items-start gap-3">
                 <p
                   className="self-stretch text-center text-[#7A7A7A] text-sm md:text-sm 
-                    lg:text-base font-semibold font-['Inter'] leading-normal"
+                    lg:text-base font-semibold leading-normal"
                 >
                   Opportunities for Participants
                 </p>
@@ -285,7 +285,7 @@ export default function Home() {
             <div className="flex flex-col gap-4">
               <p
                 className=" text-black text-4xl lg:text-5xl font-medium 
-                font-['Clash Grotesk'] leading-[2.75rem] tracking-tighter"
+                  leading-[2.75rem] tracking-tighter"
               >
                 Join our mailing list!
               </p>
@@ -355,8 +355,8 @@ export default function Home() {
         >
           <p
             className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
-          text-white font-normal font-['Clash Grotesk'] md:leading-[8rem] 
-            lg:leading-[10rem] tracking-tighter md:tracking-[-0.2rem]"
+          text-white font-normal md:leading-[8rem] lg:leading-[10rem] 
+            tracking-tighter md:tracking-[-0.2rem]"
           >
             Empower
             <br /> Your Digital

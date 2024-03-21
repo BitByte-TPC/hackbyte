@@ -88,6 +88,7 @@ export default function Navbar() {
         <div className="flex items-center justify-end w-full xl:hidden">
           <button
             id="menu-btn"
+            aria-label="Toggle Menu"
             type="button"
             className={`z-40 hamburger xl:hidden focus:outline-none ${
               isMenuOpen ? classes.open : ""

@@ -1,7 +1,7 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
 import banner from "@/public/galleryPage/banner.jpg";
 import { GridImage, BannerImage } from "@/components/ImageGrid";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Gallery | HackByte",

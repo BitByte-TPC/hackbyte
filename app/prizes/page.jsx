@@ -215,8 +215,8 @@ export default function Prizes() {
         >
           <p
             className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
-              text-white font-normal font-['Clash Grotesk'] md:leading-[8rem] 
-                lg:leading-[10rem] tracking-tighter md:tracking-[-0.2rem]"
+            text-white font-normal md:leading-[8rem] lg:leading-[10rem] 
+            tracking-tighter md:tracking-[-0.2rem]"
           >
             Empower
             <br /> Your Digital

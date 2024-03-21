@@ -21,8 +21,8 @@ export default function CountAnimation({ targetValue }) {
       },
       {
         root: null,
-        rootMargin: '0px',
-        threshold: 1
+        rootMargin: "0px",
+        threshold: 1,
       }
     );
 

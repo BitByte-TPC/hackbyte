@@ -8,7 +8,7 @@
     <url>
         <loc>https://hackbyte.in/gallery</loc>
         <lastmod>2024-03-09</lastmod>
-        <priority>0.6</priority>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://hackbyte.in/partners</loc>
@@ -27,8 +27,8 @@
     </url>
     <url>
         <loc>https://hackbyte.in/humans</loc>
-        <lastmod>2024-03-20</lastmod>
-        <priority>0.6</priority>
+        <lastmod>2024-03-22</lastmod>
+        <priority>0.5</priority>
     </url>
     <url>
         <loc>https://hackbyte.in/faq</loc>
@@ -38,6 +38,6 @@
     <url>
         <loc>https://hackbyte.in/contact</loc>
         <lastmod>2024-03-18</lastmod>
-        <priority>0.6</priority>
+        <priority>0.8</priority>
     </url>
 </urlset>

@@ -71,13 +71,13 @@ export default function NewsLetter() {
           <div className="max-w-xl flex-col justify-start items-start gap-3 inline-flex">
             <div
               className="self-stretch text-gray-900 text-3xl md:text-2xl lg:text-3xl 
-                font-medium font-['Clash Grotesk'] leading-8"
+                font-medium leading-8"
             >
               Join our newsletter
             </div>
             <div
               className="self-stretch text-slate-600 text-lg md:text-base lg:text-xl 
-                font-normal font-['Inter'] leading-[1.75rem]"
+                font-normal leading-[1.75rem]"
             >
               Sign up to receive updates on our latest events.
             </div>

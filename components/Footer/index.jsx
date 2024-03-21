@@ -32,7 +32,7 @@ const Footer = () => {
             <Link
               href={href}
               key={label}
-              className="text-white text-lg font-normal font-['Clash Grotesk'] leading-5 md:leading-normal tracking-wide md:tracking-tight hover:text-stone-400 relative after:content-[''] after:bg-stone-400 after:h-[1px] after:w-0 after:left-0 after:bottom-[-4px] after:absolute after:duration-300 hover:after:w-full"
+              className="text-white text-lg font-normal leading-5 md:leading-normal tracking-wide md:tracking-tight hover:text-stone-400 relative after:content-[''] after:bg-stone-400 after:h-[1px] after:w-0 after:left-0 after:bottom-[-4px] after:absolute after:duration-300 hover:after:w-full"
             >
               {label}
             </Link>
@@ -57,7 +57,10 @@ const Footer = () => {
           />
         </div>
       </div>
-      <p className="text-stone-400 text-lg font-normal font-['Clash Grotesk'] leading-normal tracking-tight pt-12 mb-8">
+      <p
+        className="text-stone-400 text-lg font-normal leading-normal 
+          tracking-tight pt-12 mb-8"
+      >
         © 2024 Hackbyte, All rights reserved
       </p>
     </div>

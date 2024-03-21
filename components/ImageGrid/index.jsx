@@ -1,4 +1,5 @@
 import Image from "next/image";
+
 import img1 from "@/public/galleryPage/img1.webp";
 import img2 from "@/public/galleryPage/img2.webp";
 import img3 from "@/public/galleryPage/img3.webp";

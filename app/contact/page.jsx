@@ -84,7 +84,7 @@ export default function Contact() {
                 className=" hover:scale-110 hover:rotate-[360deg] transition-all duration-1000 ease-in-out"
               />
               <div className="flex flex-col items-start gap-3">
-                <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
+                <p className="text-white text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Train
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
@@ -108,7 +108,7 @@ export default function Contact() {
                 className=" hover:scale-110 hover:rotate-[360deg] transition-all duration-1000 ease-in-out"
               />
               <div className="flex flex-col items-start gap-5">
-                <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
+                <p className="text-white text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Air
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
@@ -136,7 +136,7 @@ export default function Contact() {
                 className=" hover:scale-110 hover:rotate-[360deg] transition-all duration-1000 ease-in-out"
               />
               <div className="flex flex-col items-start gap-5">
-                <p className="text-white font-['Inter'] text-[1.125rem] font-[600] md:text-[1.25rem]">
+                <p className="text-white text-[1.125rem] font-[600] md:text-[1.25rem]">
                   By Bus
                 </p>
                 <p className="text-[#D1CAC7] font-['Inter'] text-[1rem] font-normal md:text-[1.125rem]">
@@ -193,8 +193,8 @@ export default function Contact() {
         >
           <p
             className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
-              text-white font-normal font-['Clash Grotesk'] md:leading-[8rem] 
-                lg:leading-[10rem] tracking-tighter md:tracking-[-0.2rem]"
+              text-white font-normal md:leading-[8rem] lg:leading-[10rem] 
+              tracking-tighter md:tracking-[-0.2rem]"
           >
             Empower
             <br /> Your Digital
