@@ -12,8 +12,8 @@ import eshaan from "@/public/humansPage/eshaan.jpg";
 import prajwal from "@/public/humansPage/prajwal.png";
 import nitya from "@/public/humansPage/nitya.png";
 import prajjwal from "@/public/humansPage/prajjwal.webp";
-import divaynsh_t from "@/public/humansPage/divyansh_t.jpeg";
-import priyansh_m from "@/public/humansPage/priyansh_m.JPG";
+import divyansh_t from "@/public/humansPage/divyansh_t.jpeg";
+import priyansh_m from "@/public/humansPage/priyansh_m.jpg";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Navbar from "@/components/Navbar";
@@ -97,14 +97,6 @@ export default function Team() {
       github: "https://github.com/varun7singh",
     },
     {
-      name: "Aryan Pandey",
-      role: "Organizer",
-      profilepic: aryan,
-      linkedin: "https://linkedin.com/in/aryan1113",
-      twitter: "https://twitter.com/aisehiaryan",
-      github: "#",
-    },
-    {
       name: "Prajjwal Kapoor",
       role: "Organizer",
       profilepic: prajjwal,
@@ -113,11 +105,11 @@ export default function Team() {
       github: "https://github.com/prajjwalkapoor",
     },
     {
-      name: "Eshaan Modi",
+      name: "Aryan Pandey",
       role: "Organizer",
-      profilepic: eshaan,
-      linkedin: "https://www.linkedin.com/in/eshaan-modi-a9a602253/",
-      twitter: "#",
+      profilepic: aryan,
+      linkedin: "https://linkedin.com/in/aryan1113",
+      twitter: "https://twitter.com/aisehiaryan",
       github: "#",
     },
     {
