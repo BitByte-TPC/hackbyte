@@ -53,7 +53,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="absolute z-[2] w-full flex items-center xl:justify-center px-4 pt-8">
+      <nav className="absolute w-full flex items-center xl:justify-center px-4 pt-8">
         <Image
           src={HBMobileLogo}
           alt="Hackathon-Mobile-Logo"
