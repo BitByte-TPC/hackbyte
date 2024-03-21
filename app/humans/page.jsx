@@ -1,19 +1,18 @@
 import HumansCard from "@/components/HumansCard";
 
+import priyansh from "@/public/humansPage/priyansh.jpg";
 import bhavik from "@/public/humansPage/bhavik.jpg";
 import vansh from "@/public/humansPage/vansh.jpeg";
-import aditya_raj from "@/public/humansPage/aditya_raj.webp";
+import aditya_raj from "@/public/humansPage/aditya_raj.jpg";
+import divyansh from "@/public/humansPage/divyansh.jpeg";
 import aryan from "@/public/humansPage/aryan.jpg";
 import deepanshu from "@/public/humansPage/deepanshu.jpg";
 import sambhav from "@/public/humansPage/sambhav.jpg";
 import varun from "@/public/humansPage/varun.jpg";
-import manoj from "@/public/humansPage/manoj.jpg";
-import eshaan from "@/public/humansPage/eshaan.jpg";
+import manoj from "@/public/humansPage/manoj.jpeg";
 import prajwal from "@/public/humansPage/prajwal.png";
 import nitya from "@/public/humansPage/nitya.png";
-import prajjwal from "@/public/humansPage/prajjwal.webp";
-import divyansh_t from "@/public/humansPage/divyansh_t.jpeg";
-import priyansh_m from "@/public/humansPage/priyansh_m.jpg";
+import prajjwal from "@/public/humansPage/prajjwal.jpg";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Navbar from "@/components/Navbar";
@@ -43,7 +42,7 @@ export default function Team() {
     {
       name: "Priyansh Mehta",
       role: "Organizer",
-      profilepic:priyansh_m,
+      profilepic: priyansh,
       linkedin: "https://www.linkedin.com/in/Priyansh61/",
       twitter: "https://twitter.com/Priyansh_61",
       github: "https://github.com/Priyansh61",
@@ -72,13 +71,21 @@ export default function Team() {
       twitter: "#",
       github: "#",
     },
-     {
+    {
       name: "Divyansh Tripathi",
       role: "Organizer",
-      profilepic: divyansh_t,
+      profilepic: divyansh,
       linkedin: "https://www.linkedin.com/in/tdivyansh/",
       twitter: "https://twitter.com/theoden42",
       github: "https://github.com/theoden42",
+    },
+    {
+      name: "Deepanshu Singh",
+      role: "PR & Marketing Lead",
+      profilepic: deepanshu,
+      linkedin: "https://www.linkedin.com/in/sdeepanshu17/",
+      twitter: "https://twitter.com/sdeepanshu17",
+      github: "#",
     },
     {
       name: "Sambhav Gupta",
@@ -127,14 +134,6 @@ export default function Team() {
       linkedin: "http://linkedin.com/in/prajwal-rayal",
       twitter: "https://twitter.com/rayalprajwal",
       github: "https://github.com/PrajwalRayal",
-    },
-    {
-      name: "Deepanshu Singh",
-      role: "PR & Marketing Lead",
-      profilepic: deepanshu,
-      linkedin: "https://www.linkedin.com/in/sdeepanshu17/",
-      twitter: "https://twitter.com/sdeepanshu17",
-      github: "#",
     },
     {
       name: "Manoj Panjwani",
