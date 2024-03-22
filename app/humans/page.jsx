@@ -2,6 +2,7 @@ import HumansCard from "@/components/HumansCard";
 
 import priyansh from "@/public/humansPage/priyansh.jpg";
 import bhavik from "@/public/humansPage/bhavik.jpg";
+import samyak from "@/public/humansPage/samyak.jpeg";
 import vansh from "@/public/humansPage/vansh.jpeg";
 import aditya from "@/public/humansPage/aditya.jpg";
 import tushir from "@/public/humansPage/tushir.jpeg";
@@ -47,6 +48,14 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
       twitter: "https://twitter.com/BhavikAgarwal13",
       github: "https://github.com/Bhavik-ag",
+    },
+    {
+      name: "Samyak Bhargava",
+      role: "Event Coordinator",
+      profilepic: samyak,
+      linkedin: "https://www.linkedin.com/in/sammybh6/",
+      twitter: "#",
+      github: "https://github.com/sammybh6",
     },
     {
       name: "Priyansh Mehta",
@@ -168,7 +177,7 @@ export default function Team() {
             >
               <p
                 className="w-full text-[#C3C3C3] font-[Inter] 
-                text-center font-normal text-[1.25rem] tracking-[0.0625rem]"
+                  text-center font-normal text-[1.25rem] tracking-[0.0625rem]"
               >
                 THE TEAM
               </p>
