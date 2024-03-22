@@ -1,5 +1,8 @@
+import Navbar from "@/components/Navbar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SponsorCard from "@/components/ui/cards";
+
+import logitech from "@/public/partnersPage/logitech.png";
 
 import mlh from "@/public/partnersPage/mlh.webp";
 import github from "@/public/partnersPage/github.png";
@@ -18,7 +21,6 @@ import Taipy from "@/public/partnersPage/taipy.webp";
 import Godaddy from "@/public/partnersPage/Godaddy.webp";
 
 import CircleAnimation from "@/components/CircleAnimation";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -41,6 +43,12 @@ export const metadata = {
 };
 
 const normalSponsorsData = [
+  {
+    sponsor: "Logitech",
+    category: "Title Sponsor",
+    sponsorimgsrc: logitech,
+    site: "https://www.logitech.com",
+  },
   {
     sponsor: "MLH",
     category: "Platform Partner",
@@ -151,13 +159,15 @@ const Partners = () => {
           <TabsList className="mb-16 w-[19rem] min-w-[321px]:w-80 sm:w-[488px]">
             <TabsTrigger
               value="Sponsors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl text-xl leading-7"
+              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
+                text-xl leading-7"
             >
               Sponsors
             </TabsTrigger>
             <TabsTrigger
               value="InKind Sponsors"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl text-xl leading-7"
+              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
+                text-xl leading-7"
             >
               In Kind Sponsors
             </TabsTrigger>

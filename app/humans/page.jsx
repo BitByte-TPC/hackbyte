@@ -3,18 +3,19 @@ import HumansCard from "@/components/HumansCard";
 import priyansh from "@/public/humansPage/priyansh.jpg";
 import bhavik from "@/public/humansPage/bhavik.jpg";
 import samyak from "@/public/humansPage/samyak.jpeg";
+import divyansh from "@/public/humansPage/divyansh.jpeg";
 import vansh from "@/public/humansPage/vansh.jpeg";
 import aditya from "@/public/humansPage/aditya.jpg";
-import tushir from "@/public/humansPage/tushir.jpeg";
-import divyansh from "@/public/humansPage/divyansh.jpeg";
-import aryan from "@/public/humansPage/aryan.jpg";
+import varun from "@/public/humansPage/varun.jpg";
 import deepanshu from "@/public/humansPage/deepanshu.jpg";
 import sambhav from "@/public/humansPage/sambhav.jpg";
-import varun from "@/public/humansPage/varun.jpg";
-import manoj from "@/public/humansPage/manoj.jpeg";
-import prajwal from "@/public/humansPage/prajwal.png";
-import nitya from "@/public/humansPage/nitya.png";
+import tushir from "@/public/humansPage/tushir.jpeg";
+import aish from "@/public/humansPage/aish.png";
 import prajjwal from "@/public/humansPage/prajjwal.jpg";
+import aryan from "@/public/humansPage/aryan.jpg";
+import prajwal from "@/public/humansPage/prajwal.png";
+import manoj from "@/public/humansPage/manoj.jpeg";
+import nitya from "@/public/humansPage/nitya.png";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Navbar from "@/components/Navbar";
@@ -120,6 +121,14 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/tushir-sahu-b95549205/",
       twitter: "https://twitter.com/Tushir_Sahu",
       github: "https://github.com/TushirSahu",
+    },
+    {
+      name: "Aishwarya Saxena",
+      role: "Organizer",
+      profilepic: aish,
+      linkedin: "https://www.linkedin.com/in/aishwarya-saxena-05713618b/",
+      twitter: "#",
+      github: "#",
     },
     {
       name: "Prajjwal Kapoor",
