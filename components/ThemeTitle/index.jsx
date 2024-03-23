@@ -57,7 +57,7 @@ const ThemeTitle = () => {
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
       >
-        This year&apos;s theme <br /> unveils in April ...
+       Be a part of the Innovation, April 5-7
       </p>
       <motion.div
         className="cursor"
