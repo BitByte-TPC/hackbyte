@@ -27,7 +27,7 @@ const Strip = () => (
     className="flex justify-center items-center gap-4 bg-[#FAF8ED] text-black 
       px-3 py-2"
   >
-    <span className="font-semibold text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem]">
+    <span className="font-medium text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem]">
       Hurry Up! Registrations closing in
     </span>
     <Timer />
@@ -239,32 +239,30 @@ export default function Home() {
             </div>
 
             <div
-              className="inline-flex flex-col py-[3rem] px-[2.275rem] rounded-[8px] 
-                border-2 border-[rgba(255,255,255,0.6)]"
+              className="inline-flex flex-col py-[3rem] px-[2.275rem] rounded-[8px] border-2 border-[rgba(255,255,255,0.6)]"
               style={{
                 background:
                   "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #363636 0%, rgba(26, 26, 26, 0.27) 100%)",
               }}
             >
-              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8">
+              <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-8 md:gap-12 xl:gap-8">
                 {aboutData.map((item, index) => (
-                  <div key={index} className="flex flex-col items-center gap-5">
+                  <div
+                    key={index}
+                    className={`flex flex-col items-center gap-5 ${
+                      index >= 3 ? "xl:mt-9" : ""
+                    }`}
+                  >
                     <img
                       className="w-10 h-10 lg:w-12 lg:h-12"
                       src={item.imgSrc}
                       alt={`Image ${index + 1}`}
                     />
                     <div className="flex flex-col items-center gap-1">
-                      <p
-                        className="text-center text-[#D1CAC7] font-medium text-lg 
-                          lg:text-xl"
-                      >
+                      <p className="text-center text-[#D1CAC7] font-medium text-lg lg:text-xl">
                         {item.title}
                       </p>
-                      <p
-                        className="text-center text-[#D1CAC7] font-medium 
-                          leading-normal text-base md:text-sm lg:text-base"
-                      >
+                      <p className="text-center text-[#D1CAC7] font-medium leading-normal text-base md:text-sm lg:text-base">
                         {item.description}
                       </p>
                     </div>

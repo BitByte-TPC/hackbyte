@@ -33,12 +33,10 @@ const HackbyteLogo = () => {
         priority
       />
       <div
-        className="absolute top-0 -z-[1] left-0 w-full h-full"
+        className="w-full h-full absolute top-0 -z-[1] left-0 bg-cover bg-fixed"
         style={{
           backgroundColor: "#000",
           backgroundImage: "url(/background.png)",
-          backgroundAttachment: "fixed",
-          backgroundSize: "cover",
         }}
         id="canvasContainer"
         ref={containerRef}
@@ -47,7 +45,7 @@ const HackbyteLogo = () => {
         data-strength="0.18"
       >
         <img
-          src={"/hackbyte.png"}
+          src="/hackbyte.png"
           alt="HackByte Logo"
           id="hackbyteLogo"
           className="invisible"
