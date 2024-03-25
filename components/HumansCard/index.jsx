@@ -7,6 +7,7 @@ import {
   LinkedInLogoIcon,
   GitHubLogoIcon,
 } from "@radix-ui/react-icons";
+import behanceLogo from "../../public/behanceLogo.svg";
 
 const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
@@ -69,7 +70,18 @@ const HumansCard = ({
             <div className="flex gap-6 py-2">
               <SocialMediaIcon href={linkedin} Icon={LinkedInLogoIcon} />
               <SocialMediaIcon href={twitter} Icon={TwitterLogoIcon} />
-              <SocialMediaIcon href={github} Icon={GitHubLogoIcon} />
+              {name !== "Aditya Raj" && (
+                <SocialMediaIcon href={github} Icon={GitHubLogoIcon} />
+              )}
+              {name === "Aditya Raj" && (
+                <a href="https://www.behance.net/adi_ux" target="_blank">
+                  <Image
+                    src={behanceLogo}
+                    className="w-7 h-7"
+                    alt="Behance Logo"
+                  />
+                </a>
+              )}
             </div>
           </div>
         </div>

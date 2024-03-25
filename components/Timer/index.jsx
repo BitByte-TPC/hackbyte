@@ -9,7 +9,7 @@ export default function Timer() {
     seconds: 0,
   });
 
-  const deadline = "2024-03-26T00:00:00";
+  const deadline = "2024-03-28T00:00:00";
 
   useEffect(() => {
     const updateTimeLeft = () => {
