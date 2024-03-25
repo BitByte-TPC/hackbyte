@@ -1,5 +1,8 @@
+import Navbar from "@/components/Navbar";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import HumansCard from "@/components/HumansCard";
 
+// Organizers
 import priyansh from "@/public/humansPage/priyansh.jpg";
 import bhavik from "@/public/humansPage/bhavik.jpg";
 import samyak from "@/public/humansPage/samyak.jpeg";
@@ -10,15 +13,21 @@ import varun from "@/public/humansPage/varun.jpg";
 import deepanshu from "@/public/humansPage/deepanshu.jpg";
 import sambhav from "@/public/humansPage/sambhav.jpg";
 import tushir from "@/public/humansPage/tushir.jpeg";
-import aish from "@/public/humansPage/aish.png";
+import aish from "@/public/humansPage/aish.jpg";
 import prajjwal from "@/public/humansPage/prajjwal.jpg";
 import aryan from "@/public/humansPage/aryan.jpg";
-import prajwal from "@/public/humansPage/prajwal.png";
+import prajwal from "@/public/humansPage/prajwal.jpg";
 import manoj from "@/public/humansPage/manoj.jpeg";
-import nitya from "@/public/humansPage/nitya.png";
+import nitya from "@/public/humansPage/nitya.jpg";
+
+// Mentors
+import manan from "@/public/humansPage/manan.jpg";
+import priyansh_garg from "@/public/humansPage/priyansh_garg.jpeg";
+import khushi from "@/public/humansPage/khushi.jpg";
+import sanskriti from "@/public/humansPage/sanskriti.jpg";
+import aanchal from "@/public/humansPage/aanchal.jpeg";
 
 import CircleAnimation from "@/components/CircleAnimation";
-import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -41,7 +50,7 @@ export const metadata = {
 };
 
 export default function Team() {
-  const HumansData = [
+  const organizerData = [
     {
       name: "Bhavik Agrawal",
       role: "Event Coordinator",
@@ -92,7 +101,7 @@ export default function Team() {
     },
     {
       name: "Varun Singh",
-      role: "Registrations Lead",
+      role: "Organizer",
       profilepic: varun,
       linkedin: "https://www.linkedin.com/in/varun-singh-018242224/",
       twitter: "#",
@@ -171,6 +180,45 @@ export default function Team() {
       github: "#",
     },
   ];
+
+  const mentorData = [
+    {
+      name: "Aanchal Mishra",
+      profilepic: aanchal,
+      linkedin: "https://www.linkedin.com/in/mishra-aanchal/",
+      twitter: "https://twitter.com/Aanchalmishra__",
+      github: "https://github.com/mishra-aanchal",
+    },
+    {
+      name: "Priyansh Garg",
+      profilepic: priyansh_garg,
+      linkedin: "https://www.linkedin.com/in/priyansh3133/",
+      twitter: "https://twitter.com/priyansh3133",
+      github: "https://github.com/garg3133",
+    },
+    {
+      name: "Manan Jethwani",
+      profilepic: manan,
+      linkedin: "https://www.linkedin.com/in/manan-jethwani/",
+      twitter: "https://twitter.com/manan_jethwani",
+      github: "https://github.com/mananjethwani",
+    },
+    {
+      name: "Khushi Trivedi",
+      profilepic: khushi,
+      linkedin: "https://www.linkedin.com/in/trivedi-khushi/",
+      twitter: "https://twitter.com/KhushiT113/",
+      github: "https://github.com/trivedi-khushi",
+    },
+    {
+      name: "Sanskriti Harmukh",
+      profilepic: sanskriti,
+      linkedin: "https://www.linkedin.com/in/sanskriti-harmukh/",
+      twitter: "https://x.com/Senzkriti",
+      github: "https://github.com/SanskritiHarmukh",
+    },
+  ];
+
   return (
     <>
       <Navbar />
@@ -193,30 +241,55 @@ export default function Team() {
             </div>
             <p
               className="text-[#F5F0D8] text-center text-[2.5rem] font-normal 
-                md:text-[4rem] xl:text-[5rem] xl:leading-[6.25rem] xl:tracking-[-0.1rem]"
+                md:text-[4rem] xl:text-[5rem] md:leading-[4.5rem] xl:leading-[5.25rem]"
             >
               Meet the humans of
               <br /> Hackbyte 2.0
             </p>
           </div>
-          <p
-            className="w-full lg:max-w-[80%] text-[#F5F0D8] font-[Inter] 
-              text-center font-normal text-[1.25rem] "
-          >
-            We're a small team that loves to create great experiences and make
-            meaningful connections between builders and customers. Join our
-            remote ream!
-          </p>
         </div>
 
-        <div
-          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-            place-content-center place-items-center gap-10 pt-20"
+        <Tabs
+          defaultValue="Organizers"
+          className="flex flex-col justify-center items-center text-white mt-4 md:mt-12"
         >
-          {HumansData.map((human, index) => (
-            <HumansCard key={index} index={index} {...human} />
-          ))}
-        </div>
+          <TabsList className="mb-8 md:mb-16 w-[19rem] min-w-[321px]:w-80 sm:w-[488px]">
+            <TabsTrigger
+              value="Organizers"
+              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
+                text-xl leading-7"
+            >
+              Organizers
+            </TabsTrigger>
+            <TabsTrigger
+              value="Mentors"
+              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
+                text-xl leading-7"
+            >
+              Mentors
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent value="Organizers">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+                place-content-center place-items-center gap-10"
+            >
+              {organizerData.map((human, index) => (
+                <HumansCard key={index} index={index} {...human} />
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value="Mentors">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+                place-content-center place-items-center gap-10"
+            >
+              {mentorData.map((human, index) => (
+                <HumansCard key={index} index={index} {...human} />
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
       </div>
       <div className="bg-black w-full h-full py-24 lg:py-40">
         <div

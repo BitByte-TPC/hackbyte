@@ -61,9 +61,11 @@ const HumansCard = ({
 
           <div className="w-full flex flex-col gap-2 rounded-b-[8px] p-1">
             <p className="sm:text-2xl text-xl text-white">{name}</p>
-            <p className="text-[#D1CAC7] sm:text-xl text-lg leading-9 font-[Inter]">
-              {role}
-            </p>
+            {role && (
+              <p className="font-[Inter] text-[#D1CAC7] text-lg sm:text-xl leading-9">
+                {role}
+              </p>
+            )}
             <div className="flex gap-6 py-2">
               <SocialMediaIcon href={linkedin} Icon={LinkedInLogoIcon} />
               <SocialMediaIcon href={twitter} Icon={TwitterLogoIcon} />

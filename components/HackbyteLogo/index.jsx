@@ -45,7 +45,7 @@ const HackbyteLogo = () => {
         data-strength="0.18"
       >
         <img
-          src="/hackbyte11.png"
+          src="/hackbyte.png"
           alt="HackByte Logo"
           id="hackbyteLogo"
           className="invisible"
