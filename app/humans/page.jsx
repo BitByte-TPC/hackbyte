@@ -13,6 +13,7 @@ import varun from "@/public/humansPage/varun.jpg";
 import deepanshu from "@/public/humansPage/deepanshu.jpg";
 import sambhav from "@/public/humansPage/sambhav.jpg";
 import tushir from "@/public/humansPage/tushir.jpeg";
+import aman from "@/public/humansPage/aman.jpeg";
 import aish from "@/public/humansPage/aish.jpg";
 import prajjwal from "@/public/humansPage/prajjwal.jpg";
 import aryan from "@/public/humansPage/aryan.jpg";
@@ -132,6 +133,14 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/tushir-sahu-b95549205/",
       twitter: "https://twitter.com/Tushir_Sahu",
       github: "https://github.com/TushirSahu",
+    },
+    {
+      name: "Aman Srivastava",
+      role: "Organizer",
+      profilepic: aman,
+      linkedin: "https://www.linkedin.com/in/aman-srivastava-16726822a/",
+      twitter: "#",
+      github: "#",
     },
     {
       name: "Aishwarya Saxena",
