@@ -26,8 +26,8 @@ import priyansh_garg from "@/public/humansPage/priyansh_garg.jpeg";
 import khushi from "@/public/humansPage/khushi.jpg";
 import sanskriti from "@/public/humansPage/sanskriti.jpg";
 import aanchal from "@/public/humansPage/aanchal.jpeg";
-import siddhant from "@/public/humansPage/Siddhant.jpeg";
-import sagar from "@/public/humansPage/Sagar.jpg";
+import siddhant from "@/public/humansPage/siddhant.jpeg";
+import sagar from "@/public/humansPage/sagar.jpg";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
@@ -220,21 +220,19 @@ export default function Team() {
       github: "https://github.com/SanskritiHarmukh",
     },
     {
-      name : "Sagar Uprety",
-      profilepic : sagar,
-      linkedin : "https://www.linkedin.com/in/sagar-uprety/",
-      twitter : "https://twitter.com/SagarUprety9",
-      github  : "https://github.com/sagar-uprety",
+      name: "Sagar Uprety",
+      profilepic: sagar,
+      linkedin: "https://www.linkedin.com/in/sagar-uprety/",
+      twitter: "https://twitter.com/SagarUprety9",
+      github: "https://github.com/sagar-uprety",
     },
     {
-      name : "Siddhant Khare",
-      profilepic : siddhant,
-      linkedin : "https://www.linkedin.com/in/siddhantkhare24/",
-      twitter : "https://twitter.com/Siddhant_K_code",
-      github  : "https://github.com/Siddhant-K-code",
+      name: "Siddhant Khare",
+      profilepic: siddhant,
+      linkedin: "https://www.linkedin.com/in/siddhantkhare24/",
+      twitter: "https://twitter.com/Siddhant_K_code",
+      github: "https://github.com/Siddhant-K-code",
     },
-
-
   ];
 
   return (
