@@ -26,6 +26,8 @@ import priyansh_garg from "@/public/humansPage/priyansh_garg.jpeg";
 import khushi from "@/public/humansPage/khushi.jpg";
 import sanskriti from "@/public/humansPage/sanskriti.jpg";
 import aanchal from "@/public/humansPage/aanchal.jpeg";
+import siddhant from "@/public/humansPage/Siddhant.jpeg";
+import sagar from "@/public/humansPage/Sagar.jpg";
 
 import CircleAnimation from "@/components/CircleAnimation";
 import Footer from "@/components/Footer";
@@ -190,11 +192,11 @@ export default function Team() {
       github: "https://github.com/mishra-aanchal",
     },
     {
-      name: "Priyansh Garg",
-      profilepic: priyansh_garg,
-      linkedin: "https://www.linkedin.com/in/priyansh3133/",
-      twitter: "https://twitter.com/priyansh3133",
-      github: "https://github.com/garg3133",
+      name: "Khushi Trivedi",
+      profilepic: khushi,
+      linkedin: "https://www.linkedin.com/in/trivedi-khushi/",
+      twitter: "https://twitter.com/KhushiT113/",
+      github: "https://github.com/trivedi-khushi",
     },
     {
       name: "Manan Jethwani",
@@ -204,11 +206,11 @@ export default function Team() {
       github: "https://github.com/mananjethwani",
     },
     {
-      name: "Khushi Trivedi",
-      profilepic: khushi,
-      linkedin: "https://www.linkedin.com/in/trivedi-khushi/",
-      twitter: "https://twitter.com/KhushiT113/",
-      github: "https://github.com/trivedi-khushi",
+      name: "Priyansh Garg",
+      profilepic: priyansh_garg,
+      linkedin: "https://www.linkedin.com/in/priyansh3133/",
+      twitter: "https://twitter.com/priyansh3133",
+      github: "https://github.com/garg3133",
     },
     {
       name: "Sanskriti Harmukh",
@@ -217,6 +219,22 @@ export default function Team() {
       twitter: "https://x.com/Senzkriti",
       github: "https://github.com/SanskritiHarmukh",
     },
+    {
+      name : "Sagar Uprety",
+      profilepic : sagar,
+      linkedin : "https://www.linkedin.com/in/sagar-uprety/",
+      twitter : "https://twitter.com/SagarUprety9",
+      github  : "https://github.com/sagar-uprety",
+    },
+    {
+      name : "Siddhant Khare",
+      profilepic : siddhant,
+      linkedin : "https://www.linkedin.com/in/siddhantkhare24/",
+      twitter : "https://twitter.com/Siddhant_K_code",
+      github  : "https://github.com/Siddhant-K-code",
+    },
+
+
   ];
 
   return (
