@@ -39,7 +39,7 @@ export default function RootLayout({ children }) {
           `}
         </Script>
       </head>
-      <body className={"overflow-x-hidden"}>{children}</body>
+      <body>{children}</body>
     </html>
   );
 }
