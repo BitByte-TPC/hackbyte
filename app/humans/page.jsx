@@ -250,17 +250,10 @@ export default function Team() {
         </div>
 
         <Tabs
-          defaultValue="Organizers"
+          defaultValue="Mentors"
           className="flex flex-col justify-center items-center text-white mt-4 md:mt-12"
         >
           <TabsList className="mb-8 md:mb-16 w-[19rem] min-w-[321px]:w-80 sm:w-[488px]">
-            <TabsTrigger
-              value="Organizers"
-              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
-                text-xl leading-7"
-            >
-              Organizers
-            </TabsTrigger>
             <TabsTrigger
               value="Mentors"
               className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
@@ -268,23 +261,30 @@ export default function Team() {
             >
               Mentors
             </TabsTrigger>
-          </TabsList>
-          <TabsContent value="Organizers">
-            <div
-              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
-                place-content-center place-items-center gap-10"
+            <TabsTrigger
+              value="Organizers"
+              className="sm:p-4 p-2 sm:w-60 w-40 min-[300px]:text-lg sm:text-2xl 
+                text-xl leading-7"
             >
-              {organizerData.map((human, index) => (
-                <HumansCard key={index} index={index} {...human} />
-              ))}
-            </div>
-          </TabsContent>
+              Organizers
+            </TabsTrigger>
+          </TabsList>
           <TabsContent value="Mentors">
             <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
                 place-content-center place-items-center gap-10"
             >
               {mentorData.map((human, index) => (
+                <HumansCard key={index} index={index} {...human} />
+              ))}
+            </div>
+          </TabsContent>
+          <TabsContent value="Organizers">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+                place-content-center place-items-center gap-10"
+            >
+              {organizerData.map((human, index) => (
                 <HumansCard key={index} index={index} {...human} />
               ))}
             </div>

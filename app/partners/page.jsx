@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SponsorCard from "@/components/ui/cards";
 
-import logitech from "@/public/partnersPage/logitech.png";
+import logitech from "@/public/partnersPage/logitech.jpg";
 
 import mlh from "@/public/partnersPage/mlh.webp";
 import github from "@/public/partnersPage/github.png";

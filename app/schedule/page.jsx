@@ -221,7 +221,7 @@ export default function Schedule() {
           <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col justify-center items-center h-[300px] md:h-[400px] 
+                className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
                   gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
                   rounded-[8px] border border-[#E5FFF1]"
                 style={{
@@ -319,7 +319,7 @@ export default function Schedule() {
           <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col justify-center items-center h-[300px] md:h-[400px] 
+                className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
                   gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
                   rounded-[8px] border border-[#E5FFF1]"
                 style={{
@@ -416,7 +416,7 @@ export default function Schedule() {
           <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col justify-center items-center h-[300px] md:h-[400px] 
+                className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
                   gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
                   rounded-[8px] border border-[#FFFAEF]"
                 style={{
