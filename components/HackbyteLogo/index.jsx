@@ -45,12 +45,7 @@ const HackbyteLogo = () => {
         data-mouse="0.25"
         data-strength="0.23"
       >
-        <img
-          src="/hackbyte.png"
-          alt="HackByte Logo"
-          id="hackbyteLogo"
-          className="invisible absolute"
-        />
+        <img src="/hackbyte.png" alt="HackByte Logo" id="hackbyteLogo" />
       </div>
     </div>
   );

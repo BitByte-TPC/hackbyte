@@ -44,7 +44,7 @@ export default class Sketch {
     this.width = this.container.offsetWidth;
     this.height = this.container.offsetHeight;
     this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
-    this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+    this.renderer.setPixelRatio(1.8);
     this.renderer.setSize(this.width, this.height);
     this.renderer.setClearColor(0xffffff, 0);
     this.renderer.physicallyCorrectLights = true;

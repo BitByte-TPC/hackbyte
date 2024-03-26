@@ -1,5 +1,6 @@
 #hackbyteLogo {
-  width: auto !important;
-  height: auto !important;
-  max-width: none !important;
+    width: auto !important;
+    height: auto !important;
+    max-width:none !important;
+    display: none;
 }
