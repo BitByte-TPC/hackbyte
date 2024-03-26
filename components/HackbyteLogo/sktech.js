@@ -1,28 +1,25 @@
 import * as THREE from "three";
+
 const fragment = `
 uniform float time;
 uniform float progress;
 uniform sampler2D uDataTexture;
 uniform sampler2D uTexture;
 
-
 uniform vec4 resolution;
 varying vec2 vUv;
 varying vec3 vPosition;
 float PI = 3.141592653589793238;
 void main()	{
-	vec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);
-	vec4 color = texture2D(uTexture,newUV);
-	vec4 offset = texture2D(uDataTexture,vUv);
-	gl_FragColor = vec4(vUv,0.0,1.);
+	// vec2 newUV = (vUv - vec2(0.5))*resolution.zw + vec2(0.5);
+	// vec4 color = texture2D(uTexture,newUV);
+	 vec4 offset = texture2D(uDataTexture,vUv);
+	// gl_FragColor = vec4(vUv,0.0,1.);
 	// gl_FragColor = vec4(offset.r,0.,0.,1.);
 	// gl_FragColor = color;
-	gl_FragColor = texture2D(uTexture,newUV - 0.02*offset.rg);
-	// gl_FragColor = offset;
-
+	gl_FragColor = texture2D(uTexture,vUv - 0.02*offset.rg);
 }
 `;
-
 const vertex = `
 uniform float time;
 varying vec2 vUv;
@@ -34,7 +31,6 @@ void main() {
   gl_Position = projectionMatrix * modelViewMatrix * vec4( position, 1.0 );
 }
 `;
-
 function clamp(number, min, max) {
   return Math.max(min, Math.min(number, max));
 }
@@ -42,38 +38,44 @@ function clamp(number, min, max) {
 export default class Sketch {
   constructor(options) {
     this.scene = new THREE.Scene();
+
     this.container = options.dom;
     this.img = this.container.querySelector("img");
     this.width = this.container.offsetWidth;
     this.height = this.container.offsetHeight;
-    this.renderer = new THREE.WebGLRenderer({ alpha: true, antialias: true });
+    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true });
     this.renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     this.renderer.setSize(this.width, this.height);
     this.renderer.setClearColor(0xffffff, 0);
     this.renderer.physicallyCorrectLights = true;
+    this.renderer.outputEncoding = THREE.sRGBEncoding;
     this.renderer.domElement.style.position = "absolute";
     this.renderer.domElement.style.top = "0";
     this.renderer.domElement.style.left = "0";
     this.container.appendChild(this.renderer.domElement);
+
+    var light = new THREE.AmbientLight(0xffffff);
+    light.position.set(-100, 200, 100);
+    this.scene.add(light);
+
+    this.camera = new THREE.PerspectiveCamera(
+      70,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      100
+    );
+
     var frustumSize = 1;
     var aspect = window.innerWidth / window.innerHeight;
-    this.camera = new THREE.OrthographicCamera(
-      frustumSize / -2,
-      frustumSize / 2,
-      frustumSize / 2,
-      frustumSize / -2,
-      -1000,
-      1000
-    );
-    // this.camera = new THREE.PerspectiveCamera(
-    //   75,
-    //   this.width / this.height,
-    //   0.1,
+    // this.camera = new THREE.OrthographicCamera(
+    //   frustumSize / -2,
+    //   frustumSize / 2,
+    //   frustumSize / 2,
+    //   frustumSize / -2,
+    //   -1000,
     //   1000
     // );
-    // this.controls = new OrbitControls(this.camera, this.renderer.domElement);
-    // this.controls.update();
-    this.camera.position.set(0, 0, 0.75);
+    this.camera.position.set(0, 0, 2);
 
     this.time = 0;
 
@@ -218,10 +220,10 @@ export default class Sketch {
       fragmentShader: fragment,
     });
 
-    this.geometry = new THREE.PlaneGeometry(0.53, 0.44, 1, 1);
+    this.geometry = new THREE.PlaneGeometry(2.3, 1.45, 1, 1);
+
     this.plane = new THREE.Mesh(this.geometry, this.material);
-    this.plane.material.side = THREE.DoubleSide;
-    this.plane.position.set(0, -0.09, 0);
+    this.plane.position.set(0, -0.25, 0);
     this.scene.add(this.plane);
   }
 
@@ -231,7 +233,6 @@ export default class Sketch {
       data[i] *= this.settings.relaxation;
       data[i + 1] *= this.settings.relaxation;
     }
-
     let gridMouseX = this.size * this.mouse.x;
     let gridMouseY = this.size * (1 - this.mouse.y);
     let maxDist = this.size * this.settings.mouse;
@@ -267,7 +268,6 @@ export default class Sketch {
     }
     this.time += 0.05;
     this.updateDataTexture();
-    this.material.uniforms.time.value = this.time;
     requestAnimationFrame(this.render.bind(this));
     this.renderer.render(this.scene, this.camera);
   }

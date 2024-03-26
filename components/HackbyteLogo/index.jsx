@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import Sketch from "./sktech";
 import Image from "next/image";
 import hackbyteLogo from "@/public/hackbyteLogo.png";
+import "./style.css";
 
 const HackbyteLogo = () => {
   const containerRef = useRef(null);
@@ -42,13 +43,13 @@ const HackbyteLogo = () => {
         ref={containerRef}
         data-grid="30"
         data-mouse="0.25"
-        data-strength="0.18"
+        data-strength="0.23"
       >
         <img
           src="/hackbyte.png"
           alt="HackByte Logo"
           id="hackbyteLogo"
-          className="invisible"
+          className="invisible absolute"
         />
       </div>
     </div>
