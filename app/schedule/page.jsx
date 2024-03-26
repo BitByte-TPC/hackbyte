@@ -221,8 +221,9 @@ export default function Schedule() {
           <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col items-center gap-6 md:gap-8 px-4 py-8 md:px-8 
-                  md:py-16 cursor-pointer rounded-[8px] border border-[#E5F1FF]"
+                className="flex flex-col justify-center items-center h-[300px] md:h-[400px] 
+                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
+                  rounded-[8px] border border-[#E5FFF1]"
                 style={{
                   background:
                     "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
@@ -251,7 +252,7 @@ export default function Schedule() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    Day 1 summary title
+                    Ideate and finalize your project
                   </p>
                 </div>
 
@@ -259,9 +260,8 @@ export default function Schedule() {
                   className="text-[#D1CAC7] font-[Inter] text-center font-normal 
                     text-[1rem] md:text[1.125rem]"
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Facere labore tempore iste expedita dolores dignissimos
-                  tempora, veritatis impedit ratione mollitia.
+                  Meet and network with fellow hackers, shortlist the techstack
+                  your team will be working on
                 </p>
               </div>
             </DialogTrigger>
@@ -319,8 +319,9 @@ export default function Schedule() {
           <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col items-center gap-6 md:gap-8 px-4 py-8 md:px-8 
-                  md:py-16 cursor-pointer rounded-[8px] border border-[#E5FFF1]"
+                className="flex flex-col justify-center items-center h-[300px] md:h-[400px] 
+                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
+                  rounded-[8px] border border-[#E5FFF1]"
                 style={{
                   background:
                     "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 255, 183, 0.10) 0%, rgba(109, 217, 156, 0.02) 100%)",
@@ -349,7 +350,7 @@ export default function Schedule() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    Day 2 summary title
+                    Coffee, mini events and yes, the MVP
                   </p>
                 </div>
 
@@ -357,9 +358,8 @@ export default function Schedule() {
                   className="text-[#D1CAC7] font-[Inter] text-center font-normal 
                     text-[1rem] md:text[1.125rem]"
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Facere labore tempore iste expedita dolores dignissimos
-                  tempora, veritatis impedit ratione mollitia.
+                  Seek help from mentors to make an MVP, along with some really
+                  cool workshop sessions 👀
                 </p>
               </div>
             </DialogTrigger>
@@ -416,8 +416,9 @@ export default function Schedule() {
           <Dialog>
             <DialogTrigger>
               <div
-                className="flex flex-col items-center gap-6 md:gap-8 px-4 py-8 md:px-8 
-                  md:py-16 cursor-pointer rounded-[8px] border border-[#FFFAEF]"
+                className="flex flex-col justify-center items-center h-[300px] md:h-[400px] 
+                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
+                  rounded-[8px] border border-[#FFFAEF]"
                 style={{
                   background:
                     "radial-gradient(129.97% 124.9% at 0% 6.52%, #38351C 0%, rgba(56, 53, 28, 0.17) 100%)",
@@ -446,7 +447,7 @@ export default function Schedule() {
                       WebkitTextFillColor: "transparent",
                     }}
                   >
-                    Day 3 summary title
+                    The Final Sprint
                   </p>
                 </div>
 
@@ -454,9 +455,8 @@ export default function Schedule() {
                   className="text-[#D1CAC7] font-[Inter] text-center font-normal 
                     text-[1rem] md:text[1.125rem]"
                 >
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Facere labore tempore iste expedita dolores dignissimos
-                  tempora, veritatis impedit ratione mollitia.
+                  Improve upon the MVP, polish your elevator pitch and submit
+                  your project on Devfolio with documentation
                 </p>
               </div>
             </DialogTrigger>
