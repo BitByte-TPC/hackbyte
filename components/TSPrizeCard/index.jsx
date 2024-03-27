@@ -72,7 +72,7 @@ const TSPrizeCard = ({
               (e.currentTarget.style.background = "var(--default-gradient)")
             }
           >
-            <Image src={logo} alt={alt} className="w-45 h-30" />
+            <Image src={logo} alt={alt} width={300} height={150} />
 
             <div className="flex flex-col items-start gap-4">
               <p
