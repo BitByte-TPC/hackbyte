@@ -4,7 +4,15 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { Tilt } from "react-tilt";
 
-const TSPrizeCard = ({ index, logo, alt, title, supportText, description }) => {
+const TSPrizeCard = ({
+  index,
+  logo,
+  alt,
+  title,
+  supportText,
+  description,
+  docLink,
+}) => {
   const defaultOptions = {
     reverse: false,
     max: 10,
@@ -42,9 +50,12 @@ const TSPrizeCard = ({ index, logo, alt, title, supportText, description }) => {
         viewport={{ once: true }}
       >
         <Tilt options={defaultOptions}>
-          <div
-            className="flex flex-col items-center gap-6 md:gap-12 p-4 rounded-[8px] 
-              border border-[rgba(255,255,255,0.5)] md:p-8 lg:min-h-[490px]"
+          <a
+            href={docLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex flex-col items-center cursor-pointer gap-6 md:gap-12 p-4 
+              md:p-8 rounded-[8px] border border-[rgba(255,255,255,0.5)] lg:min-h-[490px]"
             style={{
               "--default-gradient": defaultGradient,
               "--hover-gradient": hoverGradient,
@@ -89,7 +100,7 @@ const TSPrizeCard = ({ index, logo, alt, title, supportText, description }) => {
                 </p>
               </div>
             </div>
-          </div>
+          </a>
         </Tilt>
       </motion.div>
     </>

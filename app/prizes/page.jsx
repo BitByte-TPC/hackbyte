@@ -3,6 +3,7 @@ import bestGirls from "@/public/prizesPage/best_girls.png";
 
 // Sponsor Logos
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
+import godSpeedLogo from "@/public/prizesPage/godSpeedLogo.png";
 import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
 import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
 import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
@@ -43,6 +44,16 @@ const sponsorData = [
       "MongoDB Atlas takes the leading modern database and makes it accessible in the cloud! Get started with a $50 credit for students or sign up for the Atlas free forever tier (no credit card required).",
   },
   {
+    logo: godSpeedLogo,
+    alt: "GodSpeed",
+    title: "Innovative use of Godspeed Systems",
+    supportText: "Godspeed Swag pack",
+    description:
+      "Unleash your creativity with Godspeed ! Make use of any offering that Godspeed provides to bring your ideas to life. This category welcomes truly silly and fun submissions, so feel free to dream big and get ridiculously creative!",
+    docLink:
+      "https://docs.google.com/document/d/15YHM6PuHMMrMLNhDJt_PxEELtkW_QXnlAubIQ9mFTFg/edit",
+  },
+  {
     logo: godaddyLogo,
     alt: "GoDaddy",
     title: "Best Domain Name from GoDaddy Registry",
@@ -74,7 +85,7 @@ export default function Prizes() {
       <Navbar />
       <div
         className="bg-[#101010] flex flex-col min-h-screen
-          px-4 md:px-10 lg:px-20 2xl:px-48 py-40"
+          px-4 md:px-10 lg:px-20 2xl:px-32 py-40"
       >
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex flex-col items-center gap-4">
