@@ -6,7 +6,8 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import TextAnimation from "@/components/TextAnimation";
-import CircleAnimation from "@/components/CircleAnimation";
+
+import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -163,7 +164,7 @@ export default function FAQ() {
             <br /> Odyssey!
           </p>
 
-          <CircleAnimation />
+          <FooterAnimation />
         </div>
       </div>
       <Footer />

@@ -1,3 +1,8 @@
+import Navbar from "@/components/Navbar";
+import PrizeCard from "@/components/PrizeCard";
+import TSPrizeCard from "@/components/TSPrizeCard";
+import Image from "next/image";
+
 import bestBeginner from "@/public/prizesPage/best_beginner.png";
 import bestGirls from "@/public/prizesPage/best_girls.png";
 
@@ -5,15 +10,12 @@ import bestGirls from "@/public/prizesPage/best_girls.png";
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
 import godSpeedLogo from "@/public/prizesPage/godSpeedLogo.png";
 import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
+import virtualProtocolLogo from "@/public/prizesPage/virtualProtocolLogo.png";
 import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
 import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
 
-import Image from "next/image";
-import CircleAnimation from "@/components/CircleAnimation";
-import Navbar from "@/components/Navbar";
+import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
-import PrizeCard from "@/components/PrizeCard";
-import TSPrizeCard from "@/components/TSPrizeCard";
 
 export const metadata = {
   title: "Prizes | HackByte",
@@ -60,6 +62,16 @@ const sponsorData = [
     supportText: "Hack from Home Kit",
     description:
       "GoDaddy Registry is giving you everything you need to be the best hacker no matter where you are. Register your domain name with GoDaddy Registry for a chance to win a Hack from Home Kit!",
+  },
+  {
+    logo: virtualProtocolLogo,
+    alt: "Virtual Protocol",
+    title: "Best AI use case",
+    supportText: "Cash Prize of 15k",
+    description:
+      "Create an AI-driven solution revolutionizing Gaming, Social, or Digital Entertainment. Utilize Gen AI to enrich UX, simplify content creation, boost social interaction, or innovate entertainment experiences.",
+    docLink:
+      "https://docs.google.com/document/d/1ReAl3V-HbWDOqwfxRar0dn_IxAGD4wEFTKTtgXayWEs/edit?usp=sharing",
   },
   {
     logo: auth0Logo,
@@ -234,7 +246,7 @@ export default function Prizes() {
             <br /> Odyssey!
           </p>
 
-          <CircleAnimation />
+          <FooterAnimation />
         </div>
       </div>
       <Footer />

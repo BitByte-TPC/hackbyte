@@ -3,24 +3,25 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import SponsorCard from "@/components/ui/cards";
 
 import logitech from "@/public/partnersPage/logitech.jpg";
-
 import mlh from "@/public/partnersPage/mlh.webp";
-import github from "@/public/partnersPage/github.png";
-import postman from "@/public/partnersPage/postman.webp";
-import godspeed from "@/public/partnersPage/godspeed.webp";
-import devfolio from "@/public/partnersPage/devfolio.webp";
-import edubard from "@/public/partnersPage/edubard.webp";
+import github from "@/public/partnersPage/github.jpg";
+import postman from "@/public/partnersPage/postman.jpg";
 import bobble from "@/public/partnersPage/bobble.webp";
-import wolfram from "@/public/partnersPage/wolfram.webp";
-import balsamiq from "@/public/partnersPage/balsamiq.webp";
-import Nextgen from "@/public/partnersPage/Nextgen.webp";
-import Finlatics from "@/public/partnersPage/Finlatics.webp";
-import Mongodb from "@/public/partnersPage/Mongodb.webp";
-import Auth0 from "@/public/partnersPage/Auth0.webp";
-import Taipy from "@/public/partnersPage/taipy.webp";
-import Godaddy from "@/public/partnersPage/Godaddy.webp";
+import godspeed from "@/public/partnersPage/godSpeed.jpg";
+import devfolio from "@/public/partnersPage/devfolio.webp";
+import virtualProtocol from "@/public/partnersPage/virtualProtocol.jpg";
+import nextgen from "@/public/partnersPage/nextgen.webp";
+import auth0 from "@/public/partnersPage/auth0.webp";
+import taipy from "@/public/partnersPage/taipy.webp";
+import godaddy from "@/public/partnersPage/godaddy.webp";
 
-import CircleAnimation from "@/components/CircleAnimation";
+import balsamiq from "@/public/partnersPage/balsamiq.webp";
+import edubard from "@/public/partnersPage/edubard.webp";
+import wolfram from "@/public/partnersPage/wolfram.webp";
+import mongodb from "@/public/partnersPage/mongodb.webp";
+import finlatics from "@/public/partnersPage/finlatics.webp";
+
+import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -86,27 +87,33 @@ const normalSponsorsData = [
     site: "https://devfolio.co",
   },
   {
+    sponsor: "Virtual Protocol",
+    category: "Bronze Sponsor",
+    sponsorimgsrc: virtualProtocol,
+    site: "https://www.virtuals.io/",
+  },
+  {
     sponsor: "NextGen",
     category: "Bronze Sponsor",
-    sponsorimgsrc: Nextgen,
+    sponsorimgsrc: nextgen,
     site: "https://nextgenglobalhub.github.io/opensourcecohort/",
   },
   {
     sponsor: "Auth0",
     category: "Track Sponsor",
-    sponsorimgsrc: Auth0,
+    sponsorimgsrc: auth0,
     site: "http://hackp.ac/auth0",
   },
   {
     sponsor: "Taipy",
     category: "Track Sponsor",
-    sponsorimgsrc: Taipy,
+    sponsorimgsrc: taipy,
     site: "https://hackp.ac/taipy-gettingstarted",
   },
   {
     sponsor: "Go Daddy Registry",
     category: "Track Sponsor",
-    sponsorimgsrc: Godaddy,
+    sponsorimgsrc: godaddy,
     site: "http://hackp.ac/godaddyregistry",
   },
 ];
@@ -133,13 +140,13 @@ const inKindSponsorsData = [
   {
     sponsor: "MongoDB",
     category: "Community Sponsor",
-    sponsorimgsrc: Mongodb,
+    sponsorimgsrc: mongodb,
     site: "https://www.mongodb.com/",
   },
   {
     sponsor: "Finlatics",
     category: "Community Sponsor",
-    sponsorimgsrc: Finlatics,
+    sponsorimgsrc: finlatics,
     site: "https://www.finlatics.com/",
   },
 ];
@@ -204,7 +211,7 @@ const Partners = () => {
             <br /> Odyssey!
           </p>
 
-          <CircleAnimation />
+          <FooterAnimation />
         </div>
       </div>
 

@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import Link from "next/link";
 
-import CircleAnimation from "@/components/CircleAnimation";
+import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 export default function NotFound() {
@@ -67,7 +67,7 @@ export default function NotFound() {
             <br /> Odyssey!
           </p>
 
-          <CircleAnimation />
+          <FooterAnimation />
         </div>
       </div>
       <Footer />

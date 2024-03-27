@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
-import Footer from "@/components/Footer";
-import CircleAnimation from "@/components/CircleAnimation";
 import TextAnimation from "@/components/TextAnimation";
+
+import FooterAnimation from "@/components/FooterAnimation";
+import Footer from "@/components/Footer";
 
 export const metadata = {
   title: "Contact | HackByte",
@@ -201,7 +202,7 @@ export default function Contact() {
             <br /> Odyssey!
           </p>
 
-          <CircleAnimation />
+          <FooterAnimation />
         </div>
       </div>
       <Footer />

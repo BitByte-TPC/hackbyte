@@ -30,7 +30,7 @@ import aanchal from "@/public/humansPage/aanchal.jpeg";
 import siddhant from "@/public/humansPage/siddhant.jpeg";
 import sagar from "@/public/humansPage/sagar.jpg";
 
-import CircleAnimation from "@/components/CircleAnimation";
+import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -331,7 +331,7 @@ export default function Team() {
             <br /> Odyssey!
           </p>
 
-          <CircleAnimation />
+          <FooterAnimation />
         </div>
       </div>
       <Footer />

@@ -13,7 +13,7 @@ import {
 import StatisticCard from "@/components/StatisticCard";
 import NewsLetter from "@/components/NewsLetter";
 
-import CircleAnimation from "@/components/CircleAnimation";
+import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 const SocialMediaIcon = ({ Icon, href }) => (
@@ -361,7 +361,7 @@ export default function Home() {
             <br /> Odyssey!
           </p>
 
-          <CircleAnimation />
+          <FooterAnimation />
         </div>
       </div>
       <Footer />

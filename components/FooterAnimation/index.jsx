@@ -10,7 +10,7 @@ const images = [
   "/footer/img4.svg",
 ];
 
-export default function CircleAnimation() {
+export default function FooterAnimation() {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
