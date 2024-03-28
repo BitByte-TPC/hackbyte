@@ -13,6 +13,7 @@ import godaddyLogo from "@/public/prizesPage/godaddyLogo.svg";
 import virtualProtocolLogo from "@/public/prizesPage/virtualProtocolLogo.png";
 import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
 import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
+import wolframLogo from "@/public/prizesPage/wolframLogo.png";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
@@ -88,6 +89,14 @@ const sponsorData = [
     supportText: "Wireless Headphones",
     description:
       "Taipy empowers Python developers with rapid web app creation, simplifying UI design and backend integration. Win Wireless Headphones & website feature by incorporating Taipy into your hackathon project!",
+  },
+  {
+    logo: wolframLogo,
+    alt: "Wolfram",
+    title: "The Top 7 teams",
+    supportText: "The Wolfram Award",
+    description:
+      "Each member of the top 7 teams will receive The Wolfram Award, which includes a one-year subscription to Wolfram|One Personal Edition and Wolfram|Alpha Pro, worth $375. This is an exclusive opportunity for participants to gain access to powerful computational tools and resources for their future projects and endeavors.",
   },
 ];
 

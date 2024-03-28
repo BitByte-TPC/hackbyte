@@ -157,8 +157,23 @@ const Partners = () => {
       <Navbar />
       <div
         className="bg-[#101010] flex flex-col items-center min-h-screen 
-          lg:px-20 px-4 py-48"
+          lg:px-20 px-4 py-40"
       >
+        <div className="flex flex-col items-center gap-4 mb-12">
+          <p className="text-[#F5F0D8] text-[2rem] font-normal md:text-[5rem]">
+            Partners
+          </p>
+          <div className="flex flex-col items-center gap-3 md:gap-4">
+            <p
+              className="w-full lg:max-w-[80%] text-[#C3C3C3] font-[Inter] 
+                text-center font-normal text-[1.25rem] md:text-[1.5rem]"
+            >
+              We are proud to collaborate with visionary organizations that share our passion for innovation and technology. 
+              These esteemed partners play a crucial role in making our hackathon a success
+            </p>
+          </div>
+        </div>
+
         <Tabs
           defaultValue="Sponsors"
           className="flex flex-col justify-center items-center text-white"

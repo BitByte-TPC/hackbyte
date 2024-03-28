@@ -71,8 +71,10 @@ const TSPrizeCard = ({
             onMouseLeave={(e) =>
               (e.currentTarget.style.background = "var(--default-gradient)")
             }
-          >
-            <Image src={logo} alt={alt} />
+          > 
+            <div style={{width: "100%"}}>
+              <Image src={logo} alt={alt} style={{objectFit: "contain", width: "100%"}}  />
+            </div>
 
             <div className="flex flex-col items-start gap-4">
               <p
