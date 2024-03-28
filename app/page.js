@@ -1,5 +1,4 @@
 import Navbar from "@/components/Navbar";
-import Timer from "@/components/Timer";
 import ThemeTitle from "@/components/ThemeTitle";
 import { Button } from "@/components/ui/button";
 import { ArrowTopRightIcon } from "@radix-ui/react-icons";
@@ -20,18 +19,6 @@ const SocialMediaIcon = ({ Icon, href }) => (
   <a href={href} target="_blank">
     <Icon className="w-7 h-7 text-white transition ease-in-out delay-150 hover:scale-125 duration-300" />
   </a>
-);
-
-const Strip = () => (
-  <div
-    className="flex justify-center items-center gap-4 bg-[#FAF8ED] text-black 
-      px-3 py-2"
-  >
-    <span className="font-medium text-[1rem] sm:text-[1.25rem] lg:text-[1.5rem]">
-      Hurry Up! Registrations closing in
-    </span>
-    <Timer />
-  </div>
 );
 
 export default function Home() {
@@ -99,7 +86,6 @@ export default function Home() {
 
   return (
     <div className="overflow-x-hidden">
-      <Strip />
       <Navbar />
       <div
         className="relative flex flex-col min-h-fit
@@ -120,20 +106,19 @@ export default function Home() {
               Join us at IIIT Jabalpur
               <br /> for a full in-person experience.
             </p>
-            <a href="https://hackbyte2.devfolio.co/" target="_blank">
-              <Button
-                size="sm"
-                className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium uppercase 
+            <Button
+              size="sm"
+              disabled
+              className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium uppercase 
                 p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 transition-transform ease-in-out duration-300"
-                style={{
-                  boxShadow:
-                    "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
-                }}
-              >
-                Register Now
-                <ArrowTopRightIcon className="w-5 h-5 ml-1" />
-              </Button>
-            </a>
+              style={{
+                boxShadow:
+                  "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
+              }}
+            >
+              Registration Closed
+              <ArrowTopRightIcon className="w-5 h-5 ml-1" />
+            </Button>
           </div>
         </div>
 
