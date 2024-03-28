@@ -15,10 +15,10 @@ const TSPrizeCard = ({
 }) => {
   const defaultOptions = {
     reverse: false,
-    max: 10,
+    max: 4,
     perspective: 1000,
     scale: 1.02,
-    speed: 1000,
+    speed: 200,
     transition: true,
     axis: null,
     reset: true,
@@ -71,9 +71,13 @@ const TSPrizeCard = ({
             onMouseLeave={(e) =>
               (e.currentTarget.style.background = "var(--default-gradient)")
             }
-          > 
-            <div style={{width: "100%"}}>
-              <Image src={logo} alt={alt} style={{objectFit: "contain", width: "100%"}}  />
+          >
+            <div style={{ width: "100%" }}>
+              <Image
+                src={logo}
+                alt={alt}
+                style={{ objectFit: "contain", width: "100%" }}
+              />
             </div>
 
             <div className="flex flex-col items-start gap-4">

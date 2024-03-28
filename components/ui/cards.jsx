@@ -8,10 +8,10 @@ import { Tilt } from "react-tilt";
 const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
   const defaultOptions = {
     reverse: false,
-    max: 8,
+    max: 4,
     perspective: 1000,
     scale: 1.02,
-    speed: 1000,
+    speed: 200,
     transition: true,
     axis: null,
     reset: true,
@@ -45,8 +45,7 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
         <a href={site} target="_blank" rel="noreferrer">
           <Tilt options={defaultOptions}>
             <div
-              className="w-[295px] min-w-[306px] xl:w-[350px]  
-                shadow text-white rounded-[8px]"
+              className="w-full shadow text-white rounded-[8px]"
               style={{
                 "--default-gradient": defaultGradient,
                 "--hover-gradient": hoverGradient,
@@ -60,8 +59,7 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
             >
               <Image
                 src={sponsorimgsrc}
-                className="rounded-t-[8px] w-[306px] h-[181px] xl:w-[350px] 
-                  xl:h-[207px] outline-none"
+                className="w-full h-[181px] xl:h-[207px] rounded-t-[8px] outline-none"
                 placeholder="blur"
               />
               <div

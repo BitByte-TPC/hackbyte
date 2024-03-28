@@ -5,10 +5,10 @@ import { Tilt } from "react-tilt";
 const PrizeCard = ({ amount, category, default_bg, hover_bg }) => {
   const defaultOptions = {
     reverse: false,
-    max: 8,
+    max: 4,
     perspective: 1000,
     scale: 1.02,
-    speed: 1000,
+    speed: 200,
     transition: true,
     axis: null,
     reset: true,

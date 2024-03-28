@@ -1,8 +1,8 @@
 import Navbar from "@/components/Navbar";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import TitleSponsorCard from "@/components/TitleSponsorCard";
 import SponsorCard from "@/components/ui/cards";
 
-import logitech from "@/public/partnersPage/logitech.jpg";
 import mlh from "@/public/partnersPage/mlh.webp";
 import github from "@/public/partnersPage/github.jpg";
 import postman from "@/public/partnersPage/postman.jpg";
@@ -10,9 +10,9 @@ import bobble from "@/public/partnersPage/bobble.webp";
 import godspeed from "@/public/partnersPage/godSpeed.jpg";
 import devfolio from "@/public/partnersPage/devfolio.webp";
 import virtualProtocol from "@/public/partnersPage/virtualProtocol.jpg";
-import nextgen from "@/public/partnersPage/nextgen.webp";
+import nextgen from "@/public/partnersPage/nextgen.jpg";
 import auth0 from "@/public/partnersPage/auth0.webp";
-import taipy from "@/public/partnersPage/taipy.webp";
+import taipy from "@/public/partnersPage/taipy.jpg";
 import godaddy from "@/public/partnersPage/godaddy.webp";
 
 import balsamiq from "@/public/partnersPage/balsamiq.webp";
@@ -44,12 +44,6 @@ export const metadata = {
 };
 
 const normalSponsorsData = [
-  {
-    sponsor: "Logitech",
-    category: "Title Sponsor",
-    sponsorimgsrc: logitech,
-    site: "https://www.logitech.com",
-  },
   {
     sponsor: "MLH",
     category: "Platform Partner",
@@ -157,7 +151,7 @@ const Partners = () => {
       <Navbar />
       <div
         className="bg-[#101010] flex flex-col items-center min-h-screen 
-          lg:px-20 px-4 py-40"
+          px-6 md:px-16 lg:px-20 2xl:px-32 py-40"
       >
         <div className="flex flex-col items-center gap-4 mb-12">
           <p className="text-[#F5F0D8] text-[2rem] font-normal md:text-[5rem]">
@@ -168,8 +162,9 @@ const Partners = () => {
               className="w-full lg:max-w-[80%] text-[#C3C3C3] font-[Inter] 
                 text-center font-normal text-[1.25rem] md:text-[1.5rem]"
             >
-              We are proud to collaborate with visionary organizations that share our passion for innovation and technology. 
-              These esteemed partners play a crucial role in making our hackathon a success
+              We are proud to collaborate with visionary organizations that
+              share our passion for innovation and technology. These esteemed
+              partners play a crucial role in making our hackathon a success
             </p>
           </div>
         </div>
@@ -195,14 +190,24 @@ const Partners = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="Sponsors">
-            <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
-              {normalSponsorsData.map((sponsor, index) => {
-                return <SponsorCard key={index} index={index} {...sponsor} />;
-              })}
+            <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
+              <TitleSponsorCard />
+
+              <div
+                className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 
+                  md:grid-cols-2 xl:grid-cols-3 gap-8 xl:gap-12"
+              >
+                {normalSponsorsData.map((sponsor, index) => {
+                  return <SponsorCard key={index} index={index} {...sponsor} />;
+                })}
+              </div>
             </div>
           </TabsContent>
           <TabsContent value="InKind Sponsors">
-            <div className="flex flex-wrap justify-center gap-8 xl:gap-12 pt-8">
+            <div
+              className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+                gap-8 xl:gap-12"
+            >
               {inKindSponsorsData.map((sponsor, index) => {
                 return <SponsorCard key={index} index={index} {...sponsor} />;
               })}
