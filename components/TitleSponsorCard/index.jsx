@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import logitech from "@/public/partnersPage/logitech.jpg";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Tilt } from "react-tilt";
 
 export default function TitleSponsorCard() {
+  const [isHovered, setIsHovered] = useState(false);
   const defaultOptions = {
     reverse: false,
     max: 4,
@@ -37,32 +39,34 @@ export default function TitleSponsorCard() {
             "--default-gradient": defaultGradient,
             "--hover-gradient": hoverGradient,
           }}
-          onMouseEnter={(e) =>
-            (e.currentTarget.style.background = "var(--hover-gradient)")
-          }
-          onMouseLeave={(e) =>
-            (e.currentTarget.style.background = "var(--default-gradient)")
-          }
+          onMouseEnter={(e) => {
+            e.currentTarget.style.background = "var(--hover-gradient)";
+            setIsHovered(true);
+          }}
+          onMouseLeave={(e) => {
+            e.currentTarget.style.background = "var(--default-gradient)";
+            setIsHovered(false);
+          }}
         >
           <Image
             className="w-full md:w-[300px] lg:w-[350px] xl:w-[450px] rounded-t-[8px] 
-                md:rounded-r-none md:rounded-l-[8px]"
+              md:rounded-r-none md:rounded-l-[8px]"
             src={logitech}
             alt="Logitech"
             placeholder="blur"
           />
           <div
             className="flex flex-col justify-center items-start px-4 
-            xl:px-8 py-8 md:py-4 gap-2 rounded-b-[8px] md:rounded-l-none 
-            md:rounded-r-[8px] border-x border-b md:border-l-0 md:border-y 
-            md:border-r border-[#FFFAEF]"
+              xl:px-8 py-8 md:py-4 gap-2 rounded-b-[8px] md:rounded-l-none 
+              md:rounded-r-[8px] border-x border-b md:border-l-0 md:border-y 
+              md:border-r border-[#FFFAEF]"
           >
             <div className="w-full flex justify-between items-center">
               <p className="text-[1.25rem] md:text-[1.5rem]">Logitech</p>
               <div className="hover:bg-[#1B1B1B] mt-1 p-1">
                 <ArrowRightIcon
-                  className="w-6 h-6 md:w-8 md:h-8 p-[2px] hover:-rotate-45 
-                transition-transform duration-300 ease-in-out"
+                  className={`w-6 h-6 lg:w-8 lg:h-8 p-[2px] transition-transform 
+                    duration-300 ease-in-out ${isHovered ? "-rotate-45" : ""}`}
                 />
               </div>
             </div>

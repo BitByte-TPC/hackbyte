@@ -1,11 +1,13 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { Tilt } from "react-tilt";
 
 const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
+  const [isHovered, setIsHovered] = useState(false);
   const defaultOptions = {
     reverse: false,
     max: 4,
@@ -50,12 +52,14 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
                 "--default-gradient": defaultGradient,
                 "--hover-gradient": hoverGradient,
               }}
-              onMouseEnter={(e) =>
-                (e.currentTarget.style.background = "var(--hover-gradient)")
-              }
-              onMouseLeave={(e) =>
-                (e.currentTarget.style.background = "var(--default-gradient)")
-              }
+              onMouseEnter={(e) => {
+                e.currentTarget.style.background = "var(--hover-gradient)";
+                setIsHovered(true);
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.background = "var(--default-gradient)";
+                setIsHovered(false);
+              }}
             >
               <Image
                 src={sponsorimgsrc}
@@ -74,8 +78,8 @@ const SponsorCard = ({ index, sponsor, category, sponsorimgsrc, site }) => {
                 </div>
                 <div className="hover:bg-[#1B1B1B] mt-1 p-1">
                   <ArrowRightIcon
-                    className="w-6 h-6 p-[2px] hover:-rotate-45 
-                    transition-transform duration-300 ease-in-out"
+                    className={`w-6 h-6 p-[2px] transition-transform duration-300 
+                      ease-in-out ${isHovered ? "-rotate-45" : ""}`}
                   />
                 </div>
               </div>
