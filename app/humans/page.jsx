@@ -29,6 +29,8 @@ import sanskriti from "@/public/humansPage/sanskriti.jpg";
 import aanchal from "@/public/humansPage/aanchal.jpeg";
 import siddhant from "@/public/humansPage/siddhant.jpeg";
 import sagar from "@/public/humansPage/sagar.jpg";
+import yashika from "@/public/humansPage/yashika.jpeg";
+import vedant from "@/public/humansPage/vedant.jpeg";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
@@ -242,6 +244,20 @@ export default function Team() {
       twitter: "https://twitter.com/Siddhant_K_code",
       github: "https://github.com/Siddhant-K-code",
     },
+    {
+      name: "Vedant Jain",
+      profilepic: vedant,
+      linkedin: "https://www.linkedin.com/in/vedant-jain-781006145",
+      twitter: "https://twitter.com/vedantj_03",
+      github: "https://vedant-jain03.github.io/portfolio/",
+    },
+    {
+      name: "Yashika Jotwani",
+      profilepic: yashika,
+      linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7",
+      twitter: "https://twitter.com/yashika_jotwani",
+      github: "https://github.com/yashikajotwani12",
+    }
   ];
 
   return (
