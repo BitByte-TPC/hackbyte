@@ -1,10 +1,26 @@
 import Navbar from "@/components/Navbar";
 import PrizeCard from "@/components/PrizeCard";
 import TSPrizeCard from "@/components/TSPrizeCard";
+import LogitechTrackCard from "@/components/LogitechTrackCard";
 import Image from "next/image";
 
 import bestBeginner from "@/public/prizesPage/best_beginner.png";
 import bestGirls from "@/public/prizesPage/best_girls.png";
+
+import leftLeaf from "@/public/schedulePage/leftLeaf.svg";
+import rightLeaf from "@/public/schedulePage/rightLeaf.svg";
+import mxKeyboard from "@/public/prizesPage/mxKeyboard.jpg";
+import mxMouse1 from "@/public/prizesPage/mxMouse1.png";
+import mxMouse2 from "@/public/prizesPage/mxMouse2.png";
+
+import img1 from "@/public/prizesPage/img1.svg";
+import img2 from "@/public/prizesPage/img2.svg";
+import img3 from "@/public/prizesPage/img3.svg";
+import img4 from "@/public/prizesPage/img4.svg";
+import prizeImg1 from "@/public/prizesPage/prizeImg1.png";
+import prizeImg2 from "@/public/prizesPage/prizeImg2.png";
+import prizeImg3 from "@/public/prizesPage/prizeImg3.png";
+import prizeImg4 from "@/public/prizesPage/prizeImg4.png";
 
 // Sponsor Logos
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
@@ -100,9 +116,60 @@ const sponsorData = [
   },
 ];
 
+const logitechTracksData = [
+  {
+    imgSrc: img1,
+    title: "Blind Type",
+    description: "How synchronized is your team ? Get to know here!",
+    modalDescription:
+      "Played in team of two, one person is blindfolded and the other one has to speak out the text and the blindfolded one types it. The team with most WordsPerMinute wins.",
+    prize: "Logitech G402 Hyperion Fury",
+    prizeImg: prizeImg1,
+    borderColor: "#E5F1FF",
+    bgColor:
+      "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(255, 209, 233, 0.10) 0%, rgba(255, 212, 234, 0.02) 100%)",
+  },
+  {
+    imgSrc: img2,
+    title: "Trending Tweet",
+    description: "Share your best moments at HackByte with the world!",
+    modalDescription:
+      "Tweet about the most fun and intersting moments during HackByte, tag HackByte and Logitech. The one with the maximum engagement gets Logitech vouchers.",
+    prize: "Logitech G102",
+    prizeImg: prizeImg2,
+    borderColor: "#E5F1FF",
+    bgColor:
+      "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
+  },
+  {
+    imgSrc: img3,
+    title: "Stress Buster",
+    description: "Take a break from bug fixing and relax with us for a while!",
+    modalDescription:
+      "Tensed about finding that bug in your code? Join us for the fun game and get charged up!! The game would be recorded ans a reel would be made from the bes moments during the game.",
+    prize: "Logitech M240",
+    prizeImg: prizeImg3,
+    borderColor: "#E5FFF1",
+    bgColor:
+      "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 255, 183, 0.10) 0%, rgba(109, 217, 156, 0.02) 100%)",
+  },
+  {
+    imgSrc: img4,
+    title: "Snap It if You Can",
+    description: "Happiness knows no bounds when you're at HackByte!",
+    modalDescription:
+      "A short insta pause game, we'll explain you this in subsequent announcements",
+    prize: "Logitech G300s",
+    prizeImg: prizeImg4,
+    borderColor: "#FFFAEF",
+    bgColor:
+      "radial-gradient(129.97% 124.9% at 0% 6.52%, #38351C 0%, rgba(56, 53, 28, 0.17) 100%)",
+  },
+];
+
 export default function Prizes() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar />
       <div
         className="bg-[#101010] flex flex-col min-h-screen
@@ -214,6 +281,112 @@ export default function Prizes() {
           </div>
         </div>
 
+        {/* Logitech Tracks Section */}
+        <div className="w-full flex flex-col pt-24">
+          <div className="flex flex-col items-center gap-4 md:gap-6">
+            <p
+              className="text-[#F5F0D8] text-center font-normal text-[2.25rem] 
+                md:text-[5rem] leading-10 md:leading-[5rem] xl:leading-[4.5rem]"
+            >
+              Exclusive Tracks by Logitech
+            </p>
+            <p
+              className="w-full xl:max-w-[70%] text-[#C3C3C3] font-[Inter] 
+                text-center font-normal text-[1.25rem] md:text-[1.5rem]"
+            >
+              Get to interact and learn more about the amazing{" "}
+              <span className="font-semibold">Master Series</span> by Logitech
+              and win amazing prizes along the way!
+            </p>
+          </div>
+
+          <div
+            className="mt-[3rem] md:mt-[4.5rem] px-[1rem] md:px-[3.5rem] py-[4.5rem] 
+              rounded-[8px] border-2 border-[rgba(255,255,255,0.5)]"
+            style={{
+              background:
+                "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)",
+            }}
+          >
+            <div className="flex flex-col items-center gap-6 md:gap-8">
+              <div className="flex justify-center items-center gap-0">
+                <Image
+                  src={leftLeaf}
+                  alt="leaf"
+                  className="w-12 h-12 md:w-auto md:h-auto"
+                />
+                <p
+                  className="text-white text-center font-medium text-[1.75rem] md:text-[3rem] 
+                    lg:text-[4.125rem]"
+                  style={{
+                    textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
+                  }}
+                >
+                  Macro Challenge
+                </p>
+                <Image
+                  src={rightLeaf}
+                  alt="leaf"
+                  className="w-12 h-12 md:w-auto md:h-auto"
+                />
+              </div>
+
+              <p
+                className="w-full xl:max-w-[85%] text-[#EAECF0] text-center font-normal text-[1.25rem] 
+                  md:text-[1.5rem]"
+              >
+                Enter Logitech's Smart Action Hack challenge: automate tasks
+                with a keystroke using MX Master series and Logi Options+ to win
+                MX Master 3s and MX Keys S! 🚀
+              </p>
+
+              <div className="hidden lg:flex items-center gap-8">
+                <Image
+                  src={mxKeyboard}
+                  alt="keyboard"
+                  className="w-[21.25rem] h-[6.25rem]"
+                  placeholder="blur"
+                />
+                <Image
+                  src={mxMouse1}
+                  alt="mouse"
+                  className="w-[7.5rem] h-[9.5rem]"
+                  placeholder="blur"
+                />
+                <Image
+                  src={mxMouse2}
+                  alt="mouse"
+                  className="w-[7.5rem] h-[9.5rem]"
+                  placeholder="blur"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center">
+            <div className="my-[4.5rem] rounded-full border border-[#D1CAC7] px-4 py-1">
+              <p
+                className="w-full text-[#C3C3C3] font-[Inter] text-center font-normal 
+                  text-[1.25rem] md:text-[1.5rem]"
+              >
+                Explore more tracks by Logitech
+              </p>
+            </div>
+
+            <div className="w-full flex flex-col items-center">
+              <div
+                className="w-full lg:max-w-[90%] xl:max-w-[70%] grid grid-cols-1 
+                  md:grid-cols-2 gap-8 xl:gap-12"
+              >
+                {logitechTracksData.map((card, index) => (
+                  <LogitechTrackCard key={index} {...card} />
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Sponsor Tracks Section */}
         <div className="w-full flex flex-col pt-24">
           <div className="flex flex-col items-center gap-4 md:gap-6">
             <p className="text-[#F5F0D8] text-[2.25rem] font-normal md:text-[5rem]">
@@ -259,6 +432,6 @@ export default function Prizes() {
         </div>
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
