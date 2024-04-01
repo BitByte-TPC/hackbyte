@@ -31,6 +31,7 @@ import siddhant from "@/public/humansPage/siddhant.jpeg";
 import sagar from "@/public/humansPage/sagar.jpg";
 import yashika from "@/public/humansPage/yashika.jpeg";
 import vedant from "@/public/humansPage/vedant.jpeg";
+import chaitanya from "@/public/humansPage/chaitanaya.png";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
@@ -201,6 +202,13 @@ export default function Team() {
       linkedin: "https://www.linkedin.com/in/mishra-aanchal/",
       twitter: "https://twitter.com/Aanchalmishra__",
       github: "https://github.com/mishra-aanchal",
+    },
+    {
+      name: "Chaitanya Rai",
+      profilepic: chaitanya,
+      linkedin: "https://www.linkedin.com/in/chaitanya-rai/",
+      twitter: "https://twitter.com/Chaitanyarai19",
+      github: "https://github.com/chaitanyarai19/",
     },
     {
       name: "Khushi Trivedi",
