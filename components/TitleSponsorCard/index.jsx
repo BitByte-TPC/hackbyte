@@ -74,9 +74,9 @@ export default function TitleSponsorCard() {
               Title Sponsor
             </p>
             <p className="text-[#EAECF0] font-normal font-[Inter] text-[1rem] md:text[1.125rem]">
-              Join us to explore the innovative world of Logitech, interact with
-              cutting edge peripherals through a dedicated booth and wait did we
-              tell you about the amazing prizes ✨
+              The MX Master Series is expertly designed for users, empowering
+              coders to unleash productivity and optimize performance during
+              intense coding marathons.
             </p>
           </div>
         </div>
