@@ -36,9 +36,9 @@ export default function Contact() {
         >
           <div
             className="flex flex-col justify-between items-start sm:items-center 
-              gap-12 md:gap-0 md:flex-row"
+              gap-12 md:gap-0 md:flex-row md:items-start"
           >
-            <div className="flex flex-col items-start gap-8">
+            <div className="flex flex-col items-start gap-8 w-fit">
               <TextAnimation text="How can we help you? " />
               <p
                 className="w-full text-[#C3C3C3] font-['Inter'] font-normal 
@@ -50,11 +50,9 @@ export default function Contact() {
               </p>
             </div>
 
-            <img
-              className="w-44 h-44 md:hidden lg:block xl:h-60 xl:w-60"
-              src="/getInTouchImage.svg"
-              alt="Get in touch"
-            />
+            <div className="md:hidden lg:block lg:pt-8">
+              <FooterAnimation />
+            </div>
           </div>
 
           <div className="flex flex-col items-start gap-8 md:gap-12">
