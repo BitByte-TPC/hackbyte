@@ -9,6 +9,7 @@ import {
   LinkedInLogoIcon,
   DiscordLogoIcon,
 } from "@radix-ui/react-icons";
+import Link from "next/link";
 import StatisticCard from "@/components/StatisticCard";
 import NewsLetter from "@/components/NewsLetter";
 
@@ -106,19 +107,21 @@ export default function Home() {
               Join us at IIIT Jabalpur
               <br /> for a full in-person experience.
             </p>
-            <Button
-              size="sm"
-              disabled
-              className="bg-[#FAF8ED] text-black text-[1.125rem] font-medium uppercase 
-                p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 transition-transform ease-in-out duration-300"
-              style={{
-                boxShadow:
-                  "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
-              }}
-            >
-              Registration Closed
-              <ArrowTopRightIcon className="w-5 h-5 ml-1" />
-            </Button>
+            <Link href="/prizes#logitech-tracks" passHref>
+              <Button
+                size="sm"
+                className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold p-6 
+                rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 
+                transition-transform ease-in-out duration-300"
+                style={{
+                  boxShadow:
+                    "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
+                }}
+              >
+                Explore Logitech Tracks
+                <ArrowTopRightIcon className="w-5 h-5 ml-1" />
+              </Button>
+            </Link>
           </div>
         </div>
 

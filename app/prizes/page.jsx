@@ -174,7 +174,7 @@ const logitechTracksData = [
 
 export default function Prizes() {
   return (
-    <div className="overflow-x-hidden">
+    <>
       <Navbar />
       <div
         className="bg-[#101010] flex flex-col min-h-screen
@@ -287,7 +287,7 @@ export default function Prizes() {
         </div>
 
         {/* Logitech Tracks Section */}
-        <div className="w-full flex flex-col pt-24">
+        <div id="logitech-tracks" className="w-full flex flex-col pt-24">
           <div className="flex flex-col items-center gap-4 md:gap-6">
             <p
               className="text-[#F5F0D8] text-center font-normal text-[2.25rem] 
@@ -428,6 +428,6 @@ export default function Prizes() {
         </div>
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
