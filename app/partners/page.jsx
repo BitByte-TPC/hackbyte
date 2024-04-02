@@ -20,7 +20,7 @@ import edubard from "@/public/partnersPage/edubard.webp";
 import wolfram from "@/public/partnersPage/wolfram.webp";
 import mongodb from "@/public/partnersPage/mongodb.webp";
 import finlatics from "@/public/partnersPage/finlatics.webp";
-
+import jdoodle from "@/public/partnersPage/jdoodle.png";
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
@@ -142,6 +142,12 @@ const inKindSponsorsData = [
     category: "Community Sponsor",
     sponsorimgsrc: finlatics,
     site: "https://www.finlatics.com/",
+  },
+  {
+    sponsor: "JDoodle",
+    category: "Community Sponsor",
+    sponsorimgsrc: jdoodle,
+    site: "https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HackByte+Sponsorship+2024&utm_id=HackByte+2.0",
   },
 ];
 
