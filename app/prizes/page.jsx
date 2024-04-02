@@ -17,10 +17,9 @@ import img1 from "@/public/prizesPage/img1.svg";
 import img2 from "@/public/prizesPage/img2.svg";
 import img3 from "@/public/prizesPage/img3.svg";
 import img4 from "@/public/prizesPage/img4.svg";
-import prizeImg1 from "@/public/prizesPage/prizeImg1.png";
-import prizeImg2 from "@/public/prizesPage/prizeImg2.png";
+import prizeImg1 from "@/public/prizesPage/K950.png";
 import prizeImg3 from "@/public/prizesPage/prizeImg3.png";
-import prizeImg4 from "@/public/prizesPage/prizeImg4.png";
+import pop from "@/public/prizesPage/pop.webp";
 
 // Sponsor Logos
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
@@ -30,6 +29,7 @@ import virtualProtocolLogo from "@/public/prizesPage/virtualProtocolLogo.png";
 import auth0Logo from "@/public/prizesPage/auth0Logo.svg";
 import taipyLogo from "@/public/prizesPage/taipyLogo.svg";
 import wolframLogo from "@/public/prizesPage/wolframLogo.png";
+import postmanLogo from "@/public/prizesPage/postmanLogo.jpg";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
@@ -54,6 +54,16 @@ export const metadata = {
 };
 
 const sponsorData = [
+  {
+    logo: postmanLogo,
+    alt: "Postman",
+    title: "Best Api design and use of postman to generate docs",
+    supportText: "Postman Swag Kit",
+    description:
+      "Every day millions of developers do amazing things with APIs, together. The Postman platform includes a comprehensive set of tools that help accelerate the API lifecycle-from design, testing, documentation, and mocking to the sharing and discoverability of your APIs.",
+      docLink:
+      "https://docs.google.com/document/d/1TXbfdm_3N70MC3S43Yuhl_p2LDFoXMuO5ha8WfAETpc/edit?usp=sharing",
+  },
   {
     logo: mongodbLogo,
     alt: "MongoDB",
@@ -123,7 +133,7 @@ const logitechTracksData = [
     description: "How synchronized is your team ? Get to know here!",
     modalDescription:
       "Played in team of two, one person is blindfolded and the other one has to speak out the text and the blindfolded one types it. The team with most WordsPerMinute wins.",
-    prize: "Logitech G402 Hyperion Fury",
+    prize: "K950 Wireless Keyboard",
     prizeImg: prizeImg1,
     borderColor: "#E5F1FF",
     bgColor:
@@ -135,8 +145,8 @@ const logitechTracksData = [
     description: "Share your best moments at HackByte with the world!",
     modalDescription:
       "Tweet about the most fun and intersting moments during HackByte, tag HackByte and Logitech. The one with the maximum engagement gets Logitech vouchers.",
-    prize: "Logitech G102",
-    prizeImg: prizeImg2,
+    prize: "Logitech POP Mouse",
+    prizeImg: pop,
     borderColor: "#E5F1FF",
     bgColor:
       "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
@@ -159,8 +169,8 @@ const logitechTracksData = [
     description: "Happiness knows no bounds when you're at HackByte!",
     modalDescription:
       "A short insta pause game, we'll explain you this in subsequent announcements",
-    prize: "Logitech G300s",
-    prizeImg: prizeImg4,
+    prize: "Logitech POP Mouse",
+    prizeImg: pop,
     borderColor: "#FFFAEF",
     bgColor:
       "radial-gradient(129.97% 124.9% at 0% 6.52%, #38351C 0%, rgba(56, 53, 28, 0.17) 100%)",
