@@ -20,14 +20,9 @@ export default function TitleSponsorCard() {
     easing: "cubic-bezier(0.175, 0.885, 0.32, 1.275)",
   };
 
-  const defaultGradient =
-    "radial-gradient(100% at center, #363636 100%, #1A1A1A 27%)";
-  const hoverGradient =
-    "radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)";
-
   return (
     <a
-      href="https://www.logitech.com"
+      href="https://www.logitech.com/en-in/mx/master-series.html"
       target="_blank"
       rel="noreferrer"
       className="w-full xl:max-w-[95%] 2xl:max-w-[90%] flex justify-center"
@@ -36,15 +31,13 @@ export default function TitleSponsorCard() {
         <div
           className="flex flex-col md:flex-row shadow rounded-[8px]"
           style={{
-            "--default-gradient": defaultGradient,
-            "--hover-gradient": hoverGradient,
+            background:
+              "radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)",
           }}
           onMouseEnter={(e) => {
-            e.currentTarget.style.background = "var(--hover-gradient)";
             setIsHovered(true);
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.background = "var(--default-gradient)";
             setIsHovered(false);
           }}
         >
@@ -62,7 +55,9 @@ export default function TitleSponsorCard() {
               md:border-r border-[#FFFAEF]"
           >
             <div className="w-full flex justify-between items-center">
-              <p className="text-[1.25rem] md:text-[1.5rem]">Logitech</p>
+              <p className="font-medium text-[2rem] xl:text-[2.25rem]">
+                Logitech
+              </p>
               <div className="hover:bg-[#1B1B1B] mt-1 p-1">
                 <ArrowRightIcon
                   className={`w-6 h-6 lg:w-8 lg:h-8 p-[2px] transition-transform 

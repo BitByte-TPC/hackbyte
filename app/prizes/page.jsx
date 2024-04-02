@@ -1,4 +1,6 @@
 import Navbar from "@/components/Navbar";
+import { Button } from "@/components/ui/button";
+import { ArrowTopRightIcon } from "@radix-ui/react-icons";
 import PrizeCard from "@/components/PrizeCard";
 import TSPrizeCard from "@/components/TSPrizeCard";
 import LogitechTrackCard from "@/components/LogitechTrackCard";
@@ -9,17 +11,14 @@ import bestGirls from "@/public/prizesPage/best_girls.png";
 
 import leftLeaf from "@/public/schedulePage/leftLeaf.svg";
 import rightLeaf from "@/public/schedulePage/rightLeaf.svg";
-import mxKeyboard from "@/public/prizesPage/mxKeyboard.jpg";
-import mxMouse1 from "@/public/prizesPage/mxMouse1.png";
-import mxMouse2 from "@/public/prizesPage/mxMouse2.png";
 
 import img1 from "@/public/prizesPage/img1.svg";
 import img2 from "@/public/prizesPage/img2.svg";
 import img3 from "@/public/prizesPage/img3.svg";
 import img4 from "@/public/prizesPage/img4.svg";
-import prizeImg1 from "@/public/prizesPage/K950.png";
-import prizeImg3 from "@/public/prizesPage/prizeImg3.png";
-import pop from "@/public/prizesPage/pop.webp";
+import prizeImg1 from "@/public/prizesPage/prizeImg1.webp";
+import prizeImg2 from "@/public/prizesPage/prizeImg2.webp";
+import prizeImg3 from "@/public/prizesPage/prizeImg3.webp";
 
 // Sponsor Logos
 import mongodbLogo from "@/public/prizesPage/mongodbLogo.svg";
@@ -61,7 +60,7 @@ const sponsorData = [
     supportText: "Postman Swag Kit",
     description:
       "Every day millions of developers do amazing things with APIs, together. The Postman platform includes a comprehensive set of tools that help accelerate the API lifecycle-from design, testing, documentation, and mocking to the sharing and discoverability of your APIs.",
-      docLink:
+    docLink:
       "https://docs.google.com/document/d/1TXbfdm_3N70MC3S43Yuhl_p2LDFoXMuO5ha8WfAETpc/edit?usp=sharing",
   },
   {
@@ -130,8 +129,7 @@ const logitechTracksData = [
   {
     imgSrc: img1,
     title: "Blind Type",
-    description: "How synchronized is your team ? Get to know here!",
-    modalDescription:
+    description:
       "Played in team of two, one person is blindfolded and the other one has to speak out the text and the blindfolded one types it. The team with most WordsPerMinute wins.",
     prize: "K950 Wireless Keyboard",
     prizeImg: prizeImg1,
@@ -142,11 +140,10 @@ const logitechTracksData = [
   {
     imgSrc: img2,
     title: "Trending Tweet",
-    description: "Share your best moments at HackByte with the world!",
-    modalDescription:
-      "Tweet about the most fun and intersting moments during HackByte, tag HackByte and Logitech. The one with the maximum engagement gets Logitech vouchers.",
+    description:
+      "Tweet about the most fun and interesting moments during HackByte, tag HackByte and Logitech. The one with the maximum engagement gets the amazing POP Mouse.",
     prize: "Logitech POP Mouse",
-    prizeImg: pop,
+    prizeImg: prizeImg2,
     borderColor: "#E5F1FF",
     bgColor:
       "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
@@ -154,9 +151,8 @@ const logitechTracksData = [
   {
     imgSrc: img3,
     title: "Stress Buster",
-    description: "Take a break from bug fixing and relax with us for a while!",
-    modalDescription:
-      "Tensed about finding that bug in your code? Join us for the fun game and get charged up!! The game would be recorded ans a reel would be made from the bes moments during the game.",
+    description:
+      "Feeling tense about finding that bug in your code? Join us for a fun game to recharge! The best moments will be recorded and compiled into a reel.",
     prize: "Logitech M240",
     prizeImg: prizeImg3,
     borderColor: "#E5FFF1",
@@ -166,11 +162,10 @@ const logitechTracksData = [
   {
     imgSrc: img4,
     title: "Snap It if You Can",
-    description: "Happiness knows no bounds when you're at HackByte!",
-    modalDescription:
+    description:
       "A short insta pause game, we'll explain you this in subsequent announcements",
     prize: "Logitech POP Mouse",
-    prizeImg: pop,
+    prizeImg: prizeImg2,
     borderColor: "#FFFAEF",
     bgColor:
       "radial-gradient(129.97% 124.9% at 0% 6.52%, #38351C 0%, rgba(56, 53, 28, 0.17) 100%)",
@@ -311,7 +306,7 @@ export default function Prizes() {
           </div>
 
           <div
-            className="mt-[3rem] md:mt-[4.5rem] px-[1rem] md:px-[3.5rem] py-[4.5rem] 
+            className="mt-[4.5rem] px-[1rem] md:px-[3.5rem] py-[4.5rem] 
               rounded-[8px] border-2 border-[rgba(255,255,255,0.5)]"
             style={{
               background:
@@ -350,48 +345,39 @@ export default function Prizes() {
                 MX Master 3s and MX Keys S! 🚀
               </p>
 
-              <div className="hidden lg:flex items-center gap-8">
-                <Image
-                  src={mxKeyboard}
-                  alt="keyboard"
-                  className="w-[21.25rem] h-[6.25rem]"
-                  placeholder="blur"
-                />
-                <Image
-                  src={mxMouse1}
-                  alt="mouse"
-                  className="w-[7.5rem] h-[9.5rem]"
-                  placeholder="blur"
-                />
-                <Image
-                  src={mxMouse2}
-                  alt="mouse"
-                  className="w-[7.5rem] h-[9.5rem]"
-                  placeholder="blur"
-                />
-              </div>
+              <a href="https://forms.gle/xHMjGfZja8NxmneW9" target="_blank">
+                <Button
+                  size="sm"
+                  className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold 
+                    p-6 rounded-none hover:bg-[#FAF8ED] hover:text-black 
+                    hover:scale-105 transition-transform ease-in-out duration-300"
+                  style={{
+                    boxShadow:
+                      "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
+                  }}
+                >
+                  Submit your macro idea
+                  <ArrowTopRightIcon className="w-5 h-5 ml-1" />
+                </Button>
+              </a>
             </div>
           </div>
 
-          <div className="flex flex-col items-center">
-            <div className="my-[4.5rem] rounded-full border border-[#D1CAC7] px-4 py-1">
-              <p
-                className="w-full text-[#C3C3C3] font-[Inter] text-center font-normal 
-                  text-[1.25rem] md:text-[1.5rem]"
-              >
-                Explore more tracks by Logitech
-              </p>
-            </div>
+          <div className="flex flex-col items-center mt-[4.5rem]">
+            <p
+              className="text-[#F5F0D8] text-center font-normal text-[2.25rem] 
+                md:text-[5rem] leading-10 md:leading-[5rem] xl:leading-[4.5rem]"
+            >
+              Explore more tracks by Logitech
+            </p>
 
-            <div className="w-full flex flex-col items-center">
-              <div
-                className="w-full lg:max-w-[90%] xl:max-w-[70%] grid grid-cols-1 
-                  md:grid-cols-2 gap-8 xl:gap-12"
-              >
-                {logitechTracksData.map((card, index) => (
-                  <LogitechTrackCard key={index} {...card} />
-                ))}
-              </div>
+            <div
+              className="w-full grid grid-cols-1 xl:grid-cols-2 place-content-center 
+                place-items-center gap-8 xl:gap-12 mt-[4.5rem]"
+            >
+              {logitechTracksData.map((card, index) => (
+                <LogitechTrackCard key={index} {...card} />
+              ))}
             </div>
           </div>
         </div>
