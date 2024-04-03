@@ -153,7 +153,7 @@ const inKindSponsorsData = [
 
 const Partners = () => {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Navbar />
       <div
         className="bg-[#101010] flex flex-col items-center min-h-screen 
@@ -242,7 +242,7 @@ const Partners = () => {
       </div>
 
       <Footer />
-    </>
+    </div>
   );
 };
 
