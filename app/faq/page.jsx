@@ -9,6 +9,7 @@ import TextAnimation from "@/components/TextAnimation";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
+import "./page.css";
 
 export const metadata = {
   title: "FAQ | HackByte",
@@ -85,7 +86,7 @@ export default function FAQ() {
             className="flex flex-col justify-between items-start sm:items-center
             gap-12 md:gap-0 md:flex-row md:items-start"
           >
-            <div className="flex flex-col items-start gap-8 w-fit">
+            <div className="flex flex-col items-start gap-8">
               <TextAnimation text="Everything you need to know!" />
               <p
                 className="w-full text-[#C3C3C3] font-['Inter'] font-normal 
@@ -96,10 +97,11 @@ export default function FAQ() {
                 assistance, or just want to connect? Feel free to reach out!
               </p>
             </div>
-
-            <div className="md:hidden lg:block lg:pt-8">
-              <FooterAnimation />
-            </div>
+            <img
+              className="w-44 h-44 md:hidden lg:block xl:h-60 xl:w-60 rotatingContainer"
+              src="/getInTouchImage.svg"
+              alt="Get in touch"
+            />
           </div>
         </div>
 

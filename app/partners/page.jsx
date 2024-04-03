@@ -110,12 +110,6 @@ const normalSponsorsData = [
     sponsorimgsrc: godaddy,
     site: "http://hackp.ac/godaddyregistry",
   },
-  {
-    sponsor: "JDoodle",
-    category: "Sponsor",
-    sponsorimgsrc: jdoodle,
-    site: "https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HackByte+Sponsorship+2024&utm_id=HackByte+2.0",
-  },
 ];
 
 const inKindSponsorsData = [
@@ -148,6 +142,12 @@ const inKindSponsorsData = [
     category: "Community Sponsor",
     sponsorimgsrc: finlatics,
     site: "https://www.finlatics.com/",
+  },
+  {
+    sponsor: "JDoodle",
+    category: "Community Sponsor",
+    sponsorimgsrc: jdoodle,
+    site: "https://www.jdoodle.com/?utm_source=Event+Website&utm_medium=Event+Sponsorship&utm_campaign=HackByte+Sponsorship+2024&utm_id=HackByte+2.0",
   },
 ];
 
