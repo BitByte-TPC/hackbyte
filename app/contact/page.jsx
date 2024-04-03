@@ -3,6 +3,7 @@ import TextAnimation from "@/components/TextAnimation";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
+import "./page.css";
 
 export const metadata = {
   title: "Contact | HackByte",
@@ -36,7 +37,7 @@ export default function Contact() {
         >
           <div
             className="flex flex-col justify-between items-start sm:items-center 
-              gap-12 md:gap-0 md:flex-row"
+              gap-12 md:gap-0 md:flex-row md:items-start"
           >
             <div className="flex flex-col items-start gap-8">
               <TextAnimation text="How can we help you? " />
@@ -51,7 +52,7 @@ export default function Contact() {
             </div>
 
             <img
-              className="w-44 h-44 md:hidden lg:block xl:h-60 xl:w-60"
+              className="w-44 h-44 md:hidden lg:block xl:h-60 xl:w-60 rotatingContainer"
               src="/getInTouchImage.svg"
               alt="Get in touch"
             />
