@@ -12,7 +12,7 @@ import img9 from "@/public/galleryPage/img9.jpg";
 
 const GridImage = () => {
   return (
-    <div className="max-w-8xl mx-auto py-10">
+    <div className="max-w-8xl mx-auto py-16">
       <div className="flex flex-col gap-5 md:flex-row">
         <div className="flex flex-col gap-5">
           <div>

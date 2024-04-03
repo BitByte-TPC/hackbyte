@@ -27,21 +27,28 @@ const Gallery = () => {
     <>
       <Navbar />
       <div
-        className="bg-[#101010] flex flex-col min-h-screen pt-16 md:pt-24 p-4 
-          lg:px-12 pb-24"
+        className="bg-[#101010] flex flex-col min-h-screen p-4 md:px-8 lg:px-12 
+          pt-40 pb-24"
       >
-        <div className="flex flex-col justify-center items-center pt-20">
-          <div
-            className="text-[#FAF8ED] text-center font-medium text-[2.375rem] 
-              leading-[1.2] lg:leading-[1.1] lg:text-[3rem]"
-          >
-            2023 (HACKBYTE)
+        <div className="w-full flex flex-col gap-6">
+          <div className="flex flex-col items-center gap-4">
+            <p className="text-[#F5F0D8] font-normal text-[2.25rem] md:text-[5rem]">
+              Gallery
+            </p>
+            <p
+              className="w-full xl:max-w-[75%] text-[#C3C3C3] font-[Inter] 
+                text-center font-normal text-[1.25rem] md:text-[1.5rem]"
+            >
+              Explore our gallery of memorable moments from HackByte events at
+              IIITDMJ. Immerse in the vibrant coding community, witness
+              innovation, and get inspired.
+            </p>
           </div>
         </div>
 
         <GridImage />
 
-        <div className="flex flex-col justify-center items-center my-4 xl:my-12">
+        <div className="flex flex-col justify-center items-center my-4 xl:my-8">
           <div
             className="text-[#FAF8ED] text-center font-medium text-[2.375rem]
               leading-[1.2] lg:leading-[1.1] lg:text-[3rem]"

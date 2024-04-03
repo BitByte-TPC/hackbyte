@@ -318,21 +318,21 @@ export default function Prizes() {
                 <Image
                   src={leftLeaf}
                   alt="leaf"
-                  className="w-12 h-12 md:w-auto md:h-auto"
+                  className="w-10 h-10 md:w-16 md:h-16 lg:w-auto lg:h-auto"
                 />
                 <p
-                  className="text-white text-center font-medium text-[1.75rem] md:text-[3rem] 
-                    lg:text-[4.125rem]"
+                  className="text-white text-center font-medium text-[1.125rem] md:text-[2.25rem] 
+                    lg:text-[3rem]"
                   style={{
                     textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
                   }}
                 >
-                  Macro Challenge
+                  Logitech Macro Challenge
                 </p>
                 <Image
                   src={rightLeaf}
                   alt="leaf"
-                  className="w-12 h-12 md:w-auto md:h-auto"
+                  className="w-10 h-10 md:w-16 md:h-16 lg:w-auto lg:h-auto"
                 />
               </div>
 
