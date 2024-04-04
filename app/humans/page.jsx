@@ -22,16 +22,20 @@ import manoj from "@/public/humansPage/manoj.jpeg";
 import nitya from "@/public/humansPage/nitya.jpg";
 
 // Mentors
+import aanchal from "@/public/humansPage/aanchal.jpeg";
+import khushi from "@/public/humansPage/khushi.jpg";
 import manan from "@/public/humansPage/manan.jpg";
 import priyansh_garg from "@/public/humansPage/priyansh_garg.jpeg";
-import khushi from "@/public/humansPage/khushi.jpg";
+import akshat from "@/public/humansPage/akshat.jpg";
 import sanskriti from "@/public/humansPage/sanskriti.jpg";
-import aanchal from "@/public/humansPage/aanchal.jpeg";
-import siddhant from "@/public/humansPage/siddhant.jpeg";
-import sagar from "@/public/humansPage/sagar.jpg";
 import yashika from "@/public/humansPage/yashika.jpeg";
+import sagar from "@/public/humansPage/sagar.jpg";
+import siddhant from "@/public/humansPage/siddhant.jpeg";
 import vedant from "@/public/humansPage/vedant.jpeg";
-import chaitanya from "@/public/humansPage/chaitanaya.png";
+import ashu from "@/public/humansPage/ashu.jpg";
+import ashish from "@/public/humansPage/ashish.jpg";
+import gautam from "@/public/humansPage/gautam.jpg";
+import chaitanya from "@/public/humansPage/chaitanaya.jpg";
 
 import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
@@ -204,13 +208,6 @@ export default function Team() {
       github: "https://github.com/mishra-aanchal",
     },
     {
-      name: "Chaitanya Rai",
-      profilepic: chaitanya,
-      linkedin: "https://www.linkedin.com/in/chaitanya-rai/",
-      twitter: "https://twitter.com/Chaitanyarai19",
-      github: "https://github.com/chaitanyarai19/",
-    },
-    {
       name: "Khushi Trivedi",
       profilepic: khushi,
       linkedin: "https://www.linkedin.com/in/trivedi-khushi/",
@@ -232,11 +229,25 @@ export default function Team() {
       github: "https://github.com/garg3133",
     },
     {
+      name: "Akshat Virmani",
+      profilepic: akshat,
+      linkedin: "https://www.linkedin.com/in/akshatvirmani/",
+      twitter: "https://twitter.com/VirmaniAkshat",
+      github: "https://github.com/akshatvirmani",
+    },
+    {
       name: "Sanskriti Harmukh",
       profilepic: sanskriti,
       linkedin: "https://www.linkedin.com/in/sanskriti-harmukh/",
       twitter: "https://x.com/Senzkriti",
       github: "https://github.com/SanskritiHarmukh",
+    },
+    {
+      name: "Yashika Jotwani",
+      profilepic: yashika,
+      linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7",
+      twitter: "https://twitter.com/yashika_jotwani",
+      github: "https://github.com/yashikajotwani12",
     },
     {
       name: "Sagar Uprety",
@@ -260,12 +271,33 @@ export default function Team() {
       github: "https://vedant-jain03.github.io/portfolio/",
     },
     {
-      name: "Yashika Jotwani",
-      profilepic: yashika,
-      linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7",
-      twitter: "https://twitter.com/yashika_jotwani",
-      github: "https://github.com/yashikajotwani12",
-    }
+      name: "Ashu Kumar",
+      profilepic: ashu,
+      linkedin: "https://www.linkedin.com/in/ashu-kr/",
+      twitter: "https://twitter.com/AshuKr40",
+      github: "https://github.com/Ashu-kumar40",
+    },
+    {
+      name: "Ashish Chanchal",
+      profilepic: ashish,
+      linkedin: "https://www.linkedin.com/in/ashishchanchal",
+      twitter: "https://x.com/_ashishchanchal",
+      github: "https://github.com/Ashish-chanchal",
+    },
+    {
+      name: "Gautam Manak",
+      profilepic: gautam,
+      linkedin: "https://www.linkedin.com/in/gautammanak1/",
+      twitter: "https://twitter.com/gautammanak02",
+      github: "https://github.com/GAUTAMMANAK1",
+    },
+    {
+      name: "Chaitanya Rai",
+      profilepic: chaitanya,
+      linkedin: "https://www.linkedin.com/in/chaitanya-rai/",
+      twitter: "https://twitter.com/Chaitanyarai19",
+      github: "https://github.com/chaitanyarai19/",
+    },
   ];
 
   return (

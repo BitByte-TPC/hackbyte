@@ -52,46 +52,46 @@ export default function Schedule() {
     },
     {
       event: "Opening Ceremony",
-      time: "5:30 PM - 6:00 PM",
-      duration: "30mins",
+      time: "5:15 PM - 6:30 PM",
+      duration: "75mins",
     },
     {
-      event: "Keynote",
+      event: "Logitech Keynote",
       time: "6:00 PM - 6:30 PM",
       duration: "30mins",
     },
     {
-      event: "Dinner",
-      time: "7:00 PM - 8:00 PM",
-      duration: "60mins",
-    },
-    {
       event: "Hacking Begins",
-      time: "8:00 PM",
+      time: "7:00 PM",
       duration: "NA",
     },
     {
-      event: "Workshop 1",
-      time: "12:00 PM - 1:00 AM",
+      event: "Dinner",
+      time: "9:30 PM - 10:30 PM",
       duration: "60mins",
     },
   ];
 
   const day2 = [
     {
-      event: "Mentorship Round 1",
-      time: "1:30AM",
-      duration: "30mins",
+      event: "Logitech Workshop",
+      time: "12:00 AM - 1:00 AM",
+      duration: "60mins",
     },
     {
-      event: "Late Night Event",
-      time: "2:00 AM - 2:45 AM",
-      duration: "45mins",
+      event: "Mentorship Round 1",
+      time: "1:30AM",
+      duration: "NA",
     },
     {
       event: "Checkpoint 1/4",
-      time: "3:30 AM",
-      duration: "30mins",
+      time: "2:00 AM",
+      duration: "NA",
+    },
+    {
+      event: "Logitech Event-Blind Type and Postman Trivia",
+      time: "2:00 AM - 3:00 AM",
+      duration: "60mins",
     },
     {
       event: "Midnight Snack",
@@ -100,13 +100,23 @@ export default function Schedule() {
     },
     {
       event: "Breakfast",
-      time: "7:00 AM - 8:00 AM",
+      time: "7:30 AM - 8:30 AM",
       duration: "60mins",
     },
     {
-      event: "GitHub Copilot + Codespaces session",
+      event: "Virtual Protocol Session",
+      time: "9:15 AM - 9:45 AM",
+      duration: "30mins",
+    },
+    {
+      event: "GitHub Copilot by Sagar",
       time: "10:15 AM - 11:00 AM",
       duration: "45mins",
+    },
+    {
+      event: "Postman Trivia and Logitech Event-Blind Type",
+      time: "11:00 AM - 12:00 PM",
+      duration: "60mins",
     },
     {
       event: "Lunch",
@@ -114,24 +124,24 @@ export default function Schedule() {
       duration: "60mins",
     },
     {
-      event: "Logitech Workshop",
-      time: "2:00 PM",
-      duration: "60mins",
-    },
-    {
       event: "Checkpoint 2/4",
-      time: "3:00 PM",
-      duration: "30mins",
+      time: "2:00 PM",
+      duration: "NA",
     },
     {
-      event: "GitHub Copilot + Codespaces session",
-      time: "4:00 PM",
-      duration: "60mins",
+      event: "Judging Round 1",
+      time: "2:00 PM - 4:00 PM",
+      duration: "120mins",
+    },
+    {
+      event: "Codespaces session by Sanskriti",
+      time: "4:00 PM - 5:30 PM",
+      duration: "90mins",
     },
     {
       event: "Dinner",
-      time: "7:00 PM - 8:00 PM",
-      duration: "60mins",
+      time: "7:00 PM - 8:15 PM",
+      duration: "75mins",
     },
     {
       event: "Checkpoint 3/4",
@@ -142,19 +152,24 @@ export default function Schedule() {
 
   const day3 = [
     {
-      event: "Menorship Round 2",
-      time: "12:30 AM",
+      event: "Postman session by Aanchal",
+      time: "12:00 AM - 1:00 AM",
       duration: "60mins",
     },
     {
-      event: "Late Night Event",
-      time: "2:00 AM - 2:45 AM",
-      duration: "45mins",
+      event: "Menorship Round 2",
+      time: "1:00 AM",
+      duration: "NA",
+    },
+    {
+      event: "Games",
+      time: "2:00 AM - 3:00 AM",
+      duration: "60mins",
     },
     {
       event: "Checkpoint 4/4",
       time: "3:00 AM",
-      duration: "30mins",
+      duration: "NA",
     },
     {
       event: "Midnight Snack",
@@ -163,18 +178,18 @@ export default function Schedule() {
     },
     {
       event: "Soft Deadline",
-      time: "6:30 AM",
+      time: "5:30 AM",
       duration: "NA",
     },
     {
       event: "Hard Deadline",
-      time: "8:00 AM",
+      time: "7:00 AM",
       duration: "NA",
     },
     {
       event: "Breakfast",
-      time: "8:30 AM",
-      duration: "90mins",
+      time: "7:30 AM - 8:30 AM",
+      duration: "60mins",
     },
     {
       event: "Judging Round 2",
@@ -183,13 +198,13 @@ export default function Schedule() {
     },
     {
       event: "Lunch",
-      time: "12:00 PM",
-      duration: "60mins",
+      time: "12:00 PM - 1:10 PM",
+      duration: "70mins",
     },
     {
       event: "Closing Ceremony",
       time: "2:15 PM",
-      duration: "90mins",
+      duration: "NA",
     },
   ];
 
