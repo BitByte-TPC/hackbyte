@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import classes from "./index.module.css";
 import Link from "next/link";
@@ -50,6 +50,14 @@ const NavItem = ({ label, href }) => {
 
 export default function Navbar() {
   const [isMenuOpen, setMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isMenuOpen) {
+      document.body.classList.add("overflow-hidden");
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [isMenuOpen]);
 
   return (
     <>

@@ -1,6 +1,8 @@
 import Navbar from "@/components/Navbar";
 import banner from "@/public/galleryPage/banner.jpg";
 import { GridImage, BannerImage } from "@/components/ImageGrid";
+
+import FooterAnimation from "@/components/FooterAnimation";
 import Footer from "@/components/Footer";
 
 export const metadata = {
@@ -26,10 +28,7 @@ const Gallery = () => {
   return (
     <>
       <Navbar />
-      <div
-        className="bg-[#101010] flex flex-col min-h-screen p-4 md:px-8 lg:px-12 
-          pt-40 pb-24"
-      >
+      <div className="bg-[#101010] flex flex-col min-h-screen p-4 md:px-8 lg:px-12 py-40">
         <div className="w-full flex flex-col gap-6">
           <div className="flex flex-col items-center gap-4">
             <p className="text-[#F5F0D8] font-normal text-[2.25rem] md:text-[5rem]">
@@ -63,6 +62,24 @@ const Gallery = () => {
               <BannerImage imgsrc={banner} />
             </div>
           </div>
+        </div>
+      </div>
+      <div className="bg-black w-full h-full py-24 lg:py-40">
+        <div
+          className="flex flex-col justify-between gap-20 md:flex-row 
+          px-4 md:px-8 xl:px-20 2xl:px-40"
+        >
+          <p
+            className="max-w-3xl text-6xl md:text-[5.5rem] lg:text-[7rem] xl:text-[9rem] 
+              text-white font-normal md:leading-[8rem] lg:leading-[10rem] 
+              tracking-tighter md:tracking-[-0.2rem]"
+          >
+            Empower
+            <br /> Your Digital
+            <br /> Odyssey!
+          </p>
+
+          <FooterAnimation />
         </div>
       </div>
       <Footer />
