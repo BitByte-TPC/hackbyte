@@ -51,14 +51,17 @@ const ThemeTitle = () => {
 
   return (
     <>
+      <p className="text-[#FAF8ED] text-[1.25rem] md:text-[1.5rem] font-medium uppercase">
+        This year&apos;s theme :{" "}
+      </p>
       <p
-        className="text-[#FAF8ED] text-[2.375rem] font-medium leading-[1.2] 
-          lg:leading-[1.1] lg:text-[3rem]"
+        className="text-[#FAF8ED] text-[2.375rem] md:text-[3rem] 
+          font-medium leading-[1.2] md:leading-[1.1]"
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
       >
-        Be a part of the
-        <br /> Innovation, April 5-7
+        Digital Anonymity
+        <br /> Unleashed
       </p>
       <motion.div
         className="cursor"
