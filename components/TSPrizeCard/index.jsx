@@ -55,7 +55,8 @@ const TSPrizeCard = ({
             target="_blank"
             rel="noopener noreferrer"
             className="flex flex-col items-center cursor-pointer gap-6 md:gap-12 p-4 
-              md:p-8 rounded-[8px] border border-[rgba(255,255,255,0.5)] md:min-h-[500px]"
+              md:p-8 rounded-[8px] border border-[rgba(255,255,255,0.5)] 
+              min-[820px]:min-h-[500px] lg:min-h-[490px]"
             style={{
               "--default-gradient": defaultGradient,
               "--hover-gradient": hoverGradient,

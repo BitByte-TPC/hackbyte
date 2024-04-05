@@ -13,8 +13,8 @@ export default function LogitechTrackCard({
 }) {
   return (
     <div
-      className="relative flex flex-col justify-center items-center gap-6 md:gap-8 px-3 
-        md:px-12 py-8 md:py-16 rounded-[8px] border-2 xl:min-h-[750px]"
+      className="relative w-full flex flex-col justify-center items-center gap-6 md:gap-8 
+        px-3 md:px-12 py-8 md:py-16 rounded-[8px] border-2 xl:min-h-[750px]"
       style={{
         borderColor: borderColor,
         background: bgColor,

@@ -240,8 +240,9 @@ export default function Schedule() {
             <DialogTrigger>
               <div
                 className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
-                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
-                  rounded-[8px] border border-[#E5FFF1]"
+                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer rounded-[8px] 
+                  border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
+                  duration-200 ease-in-out"
                 style={{
                   background:
                     "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 188, 255, 0.10) 0%, rgba(109, 160, 217, 0.02) 100%)",
@@ -249,16 +250,25 @@ export default function Schedule() {
               >
                 <div className="flex flex-col items-center gap-4">
                   <div className="flex justify-center items-center gap-0">
-                    <Image src={leftLeaf} alt="leaf" />
+                    <Image
+                      src={leftLeaf}
+                      alt="leaf"
+                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                    />
                     <p
-                      className="text-white text-center font-medium text-[4.125rem]"
+                      className="text-white text-center font-medium text-[3rem] 
+                        lg:text-[4.125rem]"
                       style={{
                         textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
                       }}
                     >
                       Day 1
                     </p>
-                    <Image src={rightLeaf} alt="leaf" />
+                    <Image
+                      src={rightLeaf}
+                      alt="leaf"
+                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                    />
                   </div>
                   <p
                     className="font-medium text-[1rem] md:text-[1.5rem]"
@@ -338,8 +348,9 @@ export default function Schedule() {
             <DialogTrigger>
               <div
                 className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
-                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
-                  rounded-[8px] border border-[#E5FFF1]"
+                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer rounded-[8px] 
+                  border border-[#E5FFF1] hover:scale-[1.01] transition-transform 
+                  duration-200 ease-in-out"
                 style={{
                   background:
                     "radial-gradient(355.69% 132.99% at 0% 6.53%, rgba(128, 255, 183, 0.10) 0%, rgba(109, 217, 156, 0.02) 100%)",
@@ -347,16 +358,25 @@ export default function Schedule() {
               >
                 <div className="flex flex-col items-center gap-4">
                   <div className="flex justify-center items-center gap-0">
-                    <Image src={leftLeaf} alt="leaf" />
+                    <Image
+                      src={leftLeaf}
+                      alt="leaf"
+                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                    />
                     <p
-                      className="text-white text-center font-medium text-[4.125rem]"
+                      className="text-white text-center font-medium text-[3rem] 
+                        lg:text-[4.125rem]"
                       style={{
                         textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
                       }}
                     >
                       Day 2
                     </p>
-                    <Image src={rightLeaf} alt="leaf" />
+                    <Image
+                      src={rightLeaf}
+                      alt="leaf"
+                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                    />
                   </div>
                   <p
                     className="font-medium text-[1rem] md:text-[1.5rem]"
@@ -435,8 +455,9 @@ export default function Schedule() {
             <DialogTrigger>
               <div
                 className="flex flex-col justify-start items-center h-[300px] md:h-[400px] 
-                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer 
-                  rounded-[8px] border border-[#FFFAEF]"
+                  gap-6 md:gap-8 px-4 py-8 md:px-8 md:py-16 cursor-pointer rounded-[8px] 
+                  border border-[#FFFAEF] hover:scale-[1.01] transition-transform 
+                  duration-200 ease-in-out"
                 style={{
                   background:
                     "radial-gradient(129.97% 124.9% at 0% 6.52%, #38351C 0%, rgba(56, 53, 28, 0.17) 100%)",
@@ -444,16 +465,25 @@ export default function Schedule() {
               >
                 <div className="flex flex-col items-center gap-4">
                   <div className="flex justify-center items-center gap-0">
-                    <Image src={leftLeaf} alt="leaf" />
+                    <Image
+                      src={leftLeaf}
+                      alt="leaf"
+                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                    />
                     <p
-                      className="text-white text-center font-medium text-[4.125rem]"
+                      className="text-white text-center font-medium text-[3rem] 
+                        lg:text-[4.125rem]"
                       style={{
                         textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
                       }}
                     >
                       Day 3
                     </p>
-                    <Image src={rightLeaf} alt="leaf" />
+                    <Image
+                      src={rightLeaf}
+                      alt="leaf"
+                      className="w-12 h-12 md:w-16 md:h-16 lg:w-auto lg:h-auto"
+                    />
                   </div>
                   <p
                     className="font-medium text-[1rem] md:text-[1.5rem]"

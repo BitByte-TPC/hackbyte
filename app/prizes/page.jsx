@@ -56,10 +56,10 @@ const sponsorData = [
   {
     logo: postmanLogo,
     alt: "Postman",
-    title: "Best Api design and use of postman to generate docs",
+    title: "Best API Design and use of postman for docs",
     supportText: "Postman Swag Kit",
     description:
-      "Every day millions of developers do amazing things with APIs, together. The Postman platform includes a comprehensive set of tools that help accelerate the API lifecycle-from design, testing, documentation, and mocking to the sharing and discoverability of your APIs.",
+      "Postman offers a complete toolkit for the API lifecycle, accelerating design, testing, documentation, and sharing among millions of developers.",
     docLink:
       "https://docs.google.com/document/d/1TXbfdm_3N70MC3S43Yuhl_p2LDFoXMuO5ha8WfAETpc/edit?usp=sharing",
   },
@@ -121,7 +121,7 @@ const sponsorData = [
     title: "The Top 7 teams",
     supportText: "The Wolfram Award",
     description:
-      "Each member of the top 7 teams will receive The Wolfram Award, which includes a one-year subscription to Wolfram|One Personal Edition and Wolfram|Alpha Pro, worth $375. This is an exclusive opportunity for participants to gain access to powerful computational tools and resources for their future projects and endeavors.",
+      "Each member of the top 7 teams will receive the Wolfram Award, which includes a one-year subscription to Wolfram | One Personal Edition and Wolfram | Alpha Pro, worth $375.",
   },
 ];
 
@@ -321,8 +321,8 @@ export default function Prizes() {
                   className="w-10 h-10 md:w-16 md:h-16 lg:w-auto lg:h-auto"
                 />
                 <p
-                  className="text-white text-center font-medium text-[1.125rem] md:text-[2.25rem] 
-                    lg:text-[3rem]"
+                  className="text-white text-center font-medium text-[1.125rem] 
+                    md:text-[2.25rem] lg:text-[3rem]"
                   style={{
                     textShadow: "0px 0px 100px rgba(242, 210, 59, 0.80)",
                   }}
@@ -399,7 +399,7 @@ export default function Prizes() {
           </div>
 
           <div
-            className="grid grid-cols-1 gap-6 md:gap-8 md:grid-cols-2 
+            className="grid grid-cols-1 gap-6 md:gap-8 min-[820px]:grid-cols-2 
               xl:grid-cols-3 pt-8 md:pt-16"
           >
             {sponsorData.map((sponsor, index) => (
