@@ -104,8 +104,9 @@ export default function Home() {
               className="text-[#FAF8ED] text-[1.25rem] font-medium text-left 
               lg:text-right lg:text-[1.5rem]"
             >
-              Join us at IIIT Jabalpur
-              <br /> for a full in-person experience.
+              Join us at IIIT Jabalpur, April
+              <br />
+              5-7 for an in-person hackathon.
             </p>
             <Link href="/prizes#logitech-tracks" passHref>
               <Button

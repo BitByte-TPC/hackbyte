@@ -52,9 +52,6 @@ const ThemeTitle = () => {
   return (
     <>
       <p className="text-[#FAF8ED] text-[1.25rem] md:text-[1.5rem] font-medium uppercase">
-        April 5-7
-      </p>
-      <p className="text-[#FAF8ED] text-[1.25rem] md:text-[1.5rem] font-medium uppercase">
         This year&apos;s theme :{" "}
       </p>
       <p
