@@ -183,7 +183,7 @@ export default function Prizes() {
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex flex-col items-center gap-4">
             <p className="text-[#F5F0D8] text-[2.25rem] font-normal md:text-[5rem]">
-              Prizes
+              Past Year Prizes
             </p>
             <div className="flex flex-col items-center gap-3 md:gap-4">
               <p

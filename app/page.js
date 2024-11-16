@@ -100,18 +100,18 @@ export default function Home() {
             <ThemeTitle />
           </div>
           <div className="flex flex-col items-start gap-3 w-full lg:items-end lg:w-1/2">
-            <p
+            <div
               className="text-[#FAF8ED] text-[1.25rem] font-medium text-left 
-              lg:text-right lg:text-[1.5rem]"
+              lg:text-right lg:text-[1.5rem] flex flex-col items-start"
             >
-              Join us at IIIT Jabalpur, April
-              <br />
-              5-7 for an in-person hackathon.
-            </p>
+              <p>Join us on 4th-6th April 2025, </p>
+              
+              <p>at IIIT Jabalpur for hackathon.</p>
+              
+            </div>
             <Link href="/prizes#logitech-tracks" passHref>
               <Button
-                size="sm"
-                className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold p-6 
+                className="bg-[#FAF8ED] text-black text-[1.5rem] font-semibold p-6 
                 rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 
                 transition-transform ease-in-out duration-300"
                 style={{
