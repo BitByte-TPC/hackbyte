@@ -79,7 +79,7 @@ export default function Navbar() {
             <NavItem key={label} label={label} href={href} />
           ))}
         </div>
-        <a
+        {/* <a
           id="mlh-trust-badge"
           className="block absolute top-0 w-[10%] z-10000 max-w-[65px] min-w-[60px] 
             right-[100px] md:right-[120px] xl:right-[80px]"
@@ -91,7 +91,7 @@ export default function Navbar() {
             alt="Major League Hacking 2024 Hackathon Season"
             className="w-full hover:scale-110 transition-all duration-300 ease-in-out"
           />
-        </a>
+        </a> */}
 
         <div className="flex items-center justify-end w-full xl:hidden">
           <button
