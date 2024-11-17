@@ -48,7 +48,7 @@ export default function FAQ() {
       content: "HackByte will be conducted in complete offline/in-person mode.",
     },
     {
-      title: "What is the venue for HackByte 2.0 ?",
+      title: "What is the venue for HackByte 3.0 ?",
       content:
         "IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
     },
