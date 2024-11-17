@@ -325,7 +325,7 @@ export default function Team() {
                 md:text-[4rem] xl:text-[5rem] md:leading-[4.5rem] xl:leading-[5.25rem]"
             >
               Meet the humans of
-              <br /> Hackbyte 3.0
+              <br /> Hackbyte 2.0
             </p>
           </div>
         </div>
