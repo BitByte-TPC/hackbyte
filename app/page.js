@@ -25,12 +25,12 @@ const SocialMediaIcon = ({ Icon, href }) => (
 export default function Home() {
   const statisticsData = [
     {
-      number: 1500,
+      number: 2400,
       label: "Registrations",
       description: "1500+ registrations from across the country.",
     },
     {
-      number: 500,
+      number: 400,
       label: "Offline Participants",
       description: "500+ participants joined the offline hackathon!",
     },
@@ -40,7 +40,7 @@ export default function Home() {
       description: "To help you, get the best out of HackByte.",
     },
     {
-      number: 120,
+      number: 100,
       label: "Projects",
       description: "Innovative submissions from various domains.",
     },
@@ -109,20 +109,6 @@ export default function Home() {
               <p>at IIIT Jabalpur for hackathon.</p>
               
             </div>
-            <Link href="/prizes#logitech-tracks" passHref>
-              <Button
-                className="bg-[#FAF8ED] text-black text-[1.5rem] font-semibold p-6 
-                rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 
-                transition-transform ease-in-out duration-300"
-                style={{
-                  boxShadow:
-                    "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
-                }}
-              >
-                Explore Logitech Tracks
-                <ArrowTopRightIcon className="w-5 h-5 ml-1" />
-              </Button>
-            </Link>
           </div>
         </div>
 
@@ -215,14 +201,14 @@ export default function Home() {
                   className="text-center text-[#F5F0D8] text-3xl lg:text-4xl 
                     font-medium leading-[44px]"
                 >
-                  Why participate in Hackbyte?
+                  Why participate in Hackbyte 3.0?
                 </p>
               </div>
               <p
                 className="text-center text-[#D1CAC7] text-lg lg:text-xl 
                   font-normal font-['Inter'] leading-[30px]"
               >
-                HackByte 2.0 promises a wonderful experience to the
+                HackByte 3.0 promises a wonderful experience to the
                 participants.
               </p>
             </div>
