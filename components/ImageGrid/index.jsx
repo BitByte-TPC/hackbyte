@@ -1,14 +1,14 @@
 import Image from "next/image";
 
 import img1 from "@/public/galleryPage/img1.webp";
-import img2 from "@/public/galleryPage/img2.webp";
+import img2 from "@/public/galleryPage/img2.webp"; 
 import img3 from "@/public/galleryPage/img3.webp";
 import img4 from "@/public/galleryPage/img4.webp";
-import img5 from "@/public/galleryPage/img5.jpg";
+import img5 from "@/public/galleryPage/img5.webp";
 import img6 from "@/public/galleryPage/img6.webp";
 import img7 from "@/public/galleryPage/img7.webp";
-import img8 from "@/public/galleryPage/img8.jpg";
-import img9 from "@/public/galleryPage/img9.jpg";
+import img8 from "@/public/galleryPage/img8.webp";
+import img9 from "@/public/galleryPage/img9.webp";
 
 const GridImage = () => {
   return (
@@ -34,7 +34,7 @@ const GridImage = () => {
           </div>
           <div>
             <Image
-              src={img5}
+              src={img4}
               alt="3"
               className="xl:w-[420px] xl:h-[530px] lg:w-[320px] w-[280px] h-[320px] rounded-xl object-cover"
               placeholder="blur"
@@ -62,7 +62,7 @@ const GridImage = () => {
           </div>
           <div>
             <Image
-              src={img4}
+              src={img5}
               alt="6"
               className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
@@ -82,7 +82,7 @@ const GridImage = () => {
           </div>
           <div>
             <Image
-              src={img3}
+              src={img2}
               alt="8"
               className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[280px] h-[200px] rounded-xl object-cover"
               placeholder="blur"
@@ -91,7 +91,7 @@ const GridImage = () => {
           </div>
           <div>
             <Image
-              src={img2}
+              src={img3}
               alt="9"
               className="xl:w-[420px] xl:h-[540px] lg:w-[320px] w-[280px] h-[320px] rounded-xl object-cover"
               placeholder="blur"

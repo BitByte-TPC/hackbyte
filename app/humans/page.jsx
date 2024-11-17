@@ -43,13 +43,13 @@ import Footer from "@/components/Footer";
 export const metadata = {
   title: "Humans | HackByte",
   description:
-    "Meet the team behind HackByte 2.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
+    "Meet the team behind HackByte 3.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
   keywords:
     "Humans, Team, Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech",
   openGraph: {
     title: "Humans | HackByte",
     description:
-      "Meet the team behind HackByte 2.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
+      "Meet the team behind HackByte 3.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
     url: "https://hackbyte.in/humans",
     images:
       "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
@@ -325,7 +325,7 @@ export default function Team() {
                 md:text-[4rem] xl:text-[5rem] md:leading-[4.5rem] xl:leading-[5.25rem]"
             >
               Meet the humans of
-              <br /> Hackbyte 2.0
+              <br /> Hackbyte 3.0
             </p>
           </div>
         </div>

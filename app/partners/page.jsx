@@ -161,7 +161,7 @@ const Partners = () => {
       >
         <div className="flex flex-col items-center gap-4 mb-12">
           <p className="text-[#F5F0D8] text-[2rem] font-normal md:text-[5rem]">
-            Previous Partners
+            Past Partners
           </p>
           <div className="flex flex-col items-center gap-3 md:gap-4">
             <p
