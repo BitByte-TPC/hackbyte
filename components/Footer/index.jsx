@@ -61,7 +61,7 @@ const Footer = () => {
         className="text-stone-400 text-lg font-normal leading-normal 
           tracking-tight pt-12 mb-8"
       >
-        © 2024 Hackbyte, All rights reserved
+        © 2025 Hackbyte, All rights reserved
       </p>
     </div>
   );

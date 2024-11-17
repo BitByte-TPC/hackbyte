@@ -27,12 +27,12 @@ export default function Home() {
     {
       number: 2400,
       label: "Registrations",
-      description: "1500+ registrations from across the country.",
+      description: "2400+ registrations from across the country.",
     },
     {
       number: 400,
       label: "Offline Participants",
-      description: "500+ participants joined the offline hackathon!",
+      description: "400+ participants joined the offline hackathon!",
     },
     {
       number: 100,
@@ -55,7 +55,7 @@ export default function Home() {
     },
     {
       imgSrc: "/aboutPage/img2.svg",
-      title: "Exciting Prices",
+      title: "Exciting Prizes",
       description:
         "Top 3 teams plus best projects of each domain will win prizes which will be disclosed soon!",
     },
@@ -113,6 +113,13 @@ export default function Home() {
         </div>
 
         <HackbyteLogo />
+        <div
+          className="text-[#FAF8ED] text-[1.25rem] font-medium text-center 
+          lg:text-[1.5rem] flex flex-col mt-0 lg:mt-16"
+        >
+          <p>Hackbyte 3.0 Coming soon! </p>
+              
+        </div>
 
         <div className="flex items-center justify-between gap-4 my-12">
           <div className="flex items-stretch">

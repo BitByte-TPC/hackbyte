@@ -31,7 +31,7 @@ export default function FAQ() {
   const data = [
     {
       title: "How do I register ?",
-      content: "Pre-registration will be opening in January 2024",
+      content: "Pre-registration will be opening in January 2025",
     },
     {
       title: "How many team members do I need ?",
