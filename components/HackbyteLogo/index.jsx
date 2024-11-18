@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import Sketch from "./sktech";
 import Image from "next/image";
-import hackbyteLogo from "@/public/hackbyteLogo.png";
+import hackbyteLogo from "@/public/hackbyte.png";
 import "./style.css";
 
 const HackbyteLogo = () => {
