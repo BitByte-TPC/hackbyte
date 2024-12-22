@@ -1,6 +1,150 @@
+import Image from "next/image";
+import { StaticImageData } from "next/image";
+import stats from "../public/stats.webp";
+import HeroSection from "@/components/herosection";
+import Header from "@/components/HomeHeader";
+import collborate from "../public/collaborate.webp";
+import mentorship from "../public/mentorship.webp";
+import recruit from "../public/recruit.webp";
+import medal from "../public/medal.webp";
+import workshop from "../public/workshop.png";
+
+const WhycardDetails = [
+  {
+    id: 1,
+    title: "Collaborate and Skill Up",
+    description:
+      "Connect with people, form a team, learn new skills and develop amazing projects!",
+    bgColor: "from-[#1ddf7a] to-[#006e2f]",
+    icon: collborate,
+    iconWidth: "xl:w-[280px] lg:w-[250px]",
+    iconTop: "xl:top-[-75px] md:top-[-50px]",
+  },
+  {
+    id: 2,
+    title: "Mentorship Sessions",
+    description:
+      "Get mentorship and guidance from prominent technocrats of the industry.",
+    bgColor: "from-[#ffdf64] to-[#d49500]",
+    icon: mentorship,
+    iconWidth: "lg:w-[220px]",
+    iconTop: "top-[-125px]",
+  },
+  {
+    id: 3,
+    title: "Recruitment Offers",
+    description:
+      "Best performers will get recruitment offers from prestigious companies.",
+    bgColor: "from-[#ffb17b] to-[#d35500]",
+    icon: recruit,
+    iconWidth: "xl:w-[200px] lg:w-[180px] md:w-[160px]",
+    iconTop: "top-[-110px]",
+  },
+  {
+    id: 4,
+    title: "Exciting Prizes!",
+    description:
+      "Top 3 teams plus best projects of each domain will win prizes which will be disclosed soon!",
+    bgColor: "from-[#7d4ea2] to-[#39187a]",
+    icon: medal,
+    iconWidth: "xl:w-[180px] lg:w-[170px] md:w-[140px]",
+    iconTop: "lg:top-[-120px] md:top-[-110px]",
+  },
+];
 
 export default function Home() {
+  interface WhyCardProps {
+    title: string;
+    description: string;
+    bgColor: string;
+    icon: StaticImageData;
+    iconWidth: string;
+    iconTop: string;
+  }
+  const WhyCard = ({
+    title,
+    description,
+    bgColor,
+    icon,
+    iconWidth,
+    iconTop,
+  }: WhyCardProps) => {
+    return (
+      <div
+        className={`xl:w-[600px] xl:h-[350px] lg:w-[400px] lg:h-[300px] md:w-[350px] md:h-[250px] px-8 xl:pt-[120px] lg:pt-24 md:pt-16 pb-8 bg-gradient-to-b ${bgColor} rounded-[32px] backdrop-blur-[100px] flex-col justify-start items-center gap-2.5 inline-flex relative`}
+      >
+        <div className="flex-col justify-start items-center gap-6 flex">
+          <div className="text-center text-white xl:text-4xl lg:text-2xl md:text-xl font-bold">
+            {title}
+          </div>
+          <div className="max-w-md text-center text-supporting-lightGray xl:text-2xl lg:text-xl md:text-lg font-medium">
+            {description}
+          </div>
+        </div>
+        <div
+          className={`absolute ${iconTop}`}
+          style={{
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          <Image src={icon} alt="Icon" className={iconWidth} />
+        </div>
+      </div>
+    );
+  };
+  
   return (
-    <>HomePage</>
+    <div className="overflow-x-hidden">
+      <Header />
+      <HeroSection />
+      <Image
+        src={stats}
+        alt="Stats"
+        className="rotate-[5deg] xl:mt-40 lg:mt-24 md:mt-20"
+      />
+      <div className="text-center text-supporting-lightGray lg:text-5xl md:text-4xl text-3xl font-bold leading-[64px] py-40">
+        Why Participate in Hackbyte 3.0?
+      </div>
+  
+      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-y-40 justify-items-center">
+        {WhycardDetails.map((card) => (
+          <WhyCard
+            key={card.id}
+            title={card.title}
+            description={card.description}
+            bgColor={card.bgColor}
+            icon={card.icon}
+            iconWidth={card.iconWidth}
+            iconTop={card.iconTop}
+          />
+        ))}
+      </div>
+
+      <div className="xl:w-[1250px] lg:w-[900px] md:w-[640px] xl:mx-32 md:mx-16 xl:mt-60 md:my-40 lg:pt-[120px] md:pt-[80px] xl:pb-32 pb-8 bg-gradient-to-b from-[#31a3f5] to-[#0027f5] rounded-[32px] backdrop-blur-[100px] flex-col justify-start items-center gap-2.5 flex relative">
+        <div
+          className="absolute xl:-top-[140px] lg:-top-[100px] md:-top-[80px]"
+          style={{
+            left: "50%",
+            transform: "translateX(-50%)",
+          }}
+        >
+          <Image
+            src={workshop}
+            alt="Icon"
+            className="xl:w-[250px] lg:w-48 md:w-40"
+          />
+        </div>
+        <div className="flex flex-col items-center gap-6">
+          <div className="text-center text-white xl:text-4xl md:text-3xl font-bold">
+            Engaging Workshops
+          </div>
+          <div className=" text-center text-supporting-lightGray xl:text-3xl lg:text-2xl md:text-xl font-medium">
+            Technical workshops and events like no-light event will keep the
+            participants engaged throughout.
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
