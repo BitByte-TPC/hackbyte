@@ -15,11 +15,9 @@ module.exports = {
   			secondary: mytheme.colors.secondary,
   			supporting: mytheme.colors.supporting
   		},
-  		borderRadius: {
-  			lg: 'var(--radius)',
-  			md: 'calc(var(--radius) - 2px)',
-  			sm: 'calc(var(--radius) - 4px)'
-  		}
+  		fontFamily: {
+  			'gotham': ['var(--font-gotham)']
+  		},
   	}
   },
   plugins: [import("tailwindcss-animate")],

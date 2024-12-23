@@ -31,7 +31,7 @@ const Gallery = () => {
             <div className=" text-white xl:text-[7rem] lg:text-[4rem] text-[56px] font-bold xl:leading-[140px]">
             HackByte 2.0 <br/>Highlights
             </div>
-            <div className=" max-w-[550px] xl:max-w-[750px] text-supporting-mediumGray xl:text-2xl text-lg font-medium leading-[33.60px]">
+            <div className=" max-w-[550px] xl:max-w-[770px] text-supporting-mediumGray xl:text-2xl text-lg font-medium leading-[33.60px]">
             Explore our gallery of memorable moments from HackByte 2.0 event at IIITDM Jabalpur.
             </div>
           </div>

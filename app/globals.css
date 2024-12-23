@@ -3,15 +3,15 @@
 @tailwind utilities;
 
 @layer base {
+  
   :root {
-    font-family: "Gotham", sans-serif;
     /* This is for the dotted bg */
     --dot-bg: #161616;
     --dot-color: #848282;
     --dot-size: 1px;
     --dot-space: 50px;
   }
-
+  
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -30,6 +30,7 @@
   }
 
   body {
+    @apply font-gotham;
     background: linear-gradient(
           90deg,
           var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),

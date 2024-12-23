@@ -3,11 +3,24 @@ import "./globals.css";
 // import Header from "@/components/MobileSidebar";
 import {Sidebar} from "@/components/sidebar";
 import Footer from "@/components/footer";
+import localFont from "next/font/local"
 
 export const metadata: Metadata = {
   title: "Hackbyte 3.0",
   description: "Hackbyte 3.0 is a flagship event of TPC of IIITDMJ.",
 };
+
+
+
+const gotham = localFont({
+  src: [
+    {
+      path: '../public/fonts/Gotham-Black.otf',
+      weight: '400'
+    },
+  ],
+  variable: '--font-gotham'
+})
 
 export default function RootLayout({
   children,
@@ -15,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${gotham.variable} font-sans`}>
       <body>
         {/* <Header /> */}
         <Sidebar />
