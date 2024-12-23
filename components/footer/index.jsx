@@ -17,7 +17,7 @@ const sidebarLinks = [
 
 const Footer = () => {
   return (
-    <div className="md:overflow-x-hidden">
+    <div className="md:overflow-x-hidden bg-[#161616] bg-[#161616]">
       <div className="flex justify-between items-start xl:mx-32 lg:mx-20 md:mx-16 mx-4">
         <Image
           src={Hackbyte3Logo}
