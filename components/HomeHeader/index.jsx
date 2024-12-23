@@ -19,7 +19,7 @@ const Header = () => {
           Our Theme
         </div>
       </div>
-      <div>
+      <div className="hidden md:block">
         <Sheet>
           <SheetTrigger>Open</SheetTrigger>
           <SheetContent>

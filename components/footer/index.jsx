@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Hackbyte3Logo from "../../public/Hackbyte3Logo.png";
-import linkedIn from "../../public/linkedin.svg";
-import instagram from "../../public/instagram.svg";
-import twitter from "../../public/twitter.svg";
-import discord from "../../public/discord.svg";
+import Hackbyte3Logo from "../../public/FooterLogo/Hackbyte3Logo.png";
+import linkedIn from "../../public/FooterLogo/linkedin.svg";
+import instagram from "../../public/FooterLogo/instagram.svg";
+import twitter from "../../public/FooterLogo/twitter.svg";
+import discord from "../../public/FooterLogo/discord.svg";
 
 const sidebarLinks = [
   { name: "Home", href: "/" },
@@ -18,11 +18,11 @@ const sidebarLinks = [
 const Footer = () => {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex justify-between items-start xl:mx-32 lg:mx-20 md:mx-16">
+      <div className="flex justify-between items-start xl:mx-32 lg:mx-20 md:mx-16 mx-4">
         <Image
           src={Hackbyte3Logo}
           alt="TPCLogo"
-          className="xl:w-[30rem] lg:w-[24rem] md:w-[20rem] w-[12rem]"
+          className="xl:w-[30rem] lg:w-[24rem] md:w-[20rem] w-[10rem]"
         />
         <div className="flex flex-col gap-2 justify-start items-end pt-16">
           <div className="text-right text-supporting-lightGray xl:text-5xl lg:text-4xl md:text-3xl text-xl font-bold">
