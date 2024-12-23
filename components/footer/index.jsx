@@ -17,7 +17,7 @@ const sidebarLinks = [
 
 const Footer = () => {
   return (
-    <div className="overflow-x-hidden">
+    <div className="md:overflow-x-hidden">
       <div className="flex justify-between items-start xl:mx-32 lg:mx-20 md:mx-16 mx-4">
         <Image
           src={Hackbyte3Logo}
@@ -69,7 +69,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="text-supporting-darkGray xl:text-lg md:text-base text-sm font-bold py-2 lg:pl-32 md:pl-16">
+      <div className="text-supporting-darkGray xl:text-lg md:text-base text-sm font-bold py-2 lg:pl-32 md:pl-16 pl-4">
         © 2025 Hackbyte, All rights reserved
       </div>
     </div>

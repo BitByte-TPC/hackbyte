@@ -7,21 +7,16 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/ui/sheet";
+import { Menu } from "lucide-react";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-start">
-      <div className="flex flex-col lg:px-16 md:px-8 py-12">
-        <div className="text-4xl font-bold text-supporting-lightGray">
-          Break the red tape
-        </div>
-        <div className="text-supporting-darkGray text-xl font-bold leading-7">
-          Our Theme
-        </div>
-      </div>
-      <div className="hidden md:block">
+    <>
+      <div className="p-4">
         <Sheet>
-          <SheetTrigger>Open</SheetTrigger>
+          <SheetTrigger>
+            <Menu color="white" className="bg-supporting-darkGray" />
+          </SheetTrigger>
           <SheetContent>
             <SheetHeader>
               <SheetTitle>Are you absolutely sure?</SheetTitle>
@@ -33,7 +28,7 @@ const Header = () => {
           </SheetContent>
         </Sheet>
       </div>
-    </div>
+    </>
   );
 };
 

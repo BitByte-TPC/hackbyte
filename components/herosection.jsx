@@ -10,41 +10,54 @@ import redtapeImg from "../public/HomePageLogo/Redtape.webp";
 const HeroSection = () => {
   return (
     <>
-      <Image src={redtapeImg} alt="Hackbyte 3.0" className=" -rotate-[5deg]" />
+      <div className="flex flex-col lg:px-16 md:px-8 px-4 pb-12 pt-4 md:pt-12">
+        <div className="text-4xl font-bold text-supporting-lightGray">
+          Break the red tape
+        </div>
+        <div className="text-supporting-darkGray text-xl font-bold leading-7">
+          Our Theme
+        </div>
+      </div>
+      <Image
+        src={redtapeImg}
+        alt="Hackbyte 3.0"
+        className=" -rotate-[5deg] md:w-full"
+        priority
+      />
 
-      <div className="flex justify-between lg:px-16 px-8 items-center lg:py-0 xl:pt-32 py-16 ">
-        <div className="flex justify-center gap-4 py-12">
+      <div className="flex flex-col md:flex-row justify-between lg:px-16 px-8 md:items-center lg:pt-32 md:pt-16 md:pb-16 pt-2 pb-4">
+        <div className="flex justify-end md:justify-center gap-4 md:py-12 pb-4 -rotate-[5deg] md:rotate-0">
           <Image
             src={linkedIn}
             alt="linkedIn"
-            className="w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
           />
           <Image
             src={instagram}
             alt="Instagram"
-            className="w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
           />
           <Image
             src={twitter}
             alt="Twitter"
-            className="w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
           />
           <Image
             src={discord}
             alt="Discord"
-            className="w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
           />
         </div>
-        <div className="flex lg:gap-16 gap-12">
+        <div className="flex lg:gap-16 md:gap-12 gap-14 rotate-[5deg] md:rotate-0">
           <Image
             src={tpclogo}
             alt="TPCLogo"
-            className="lg:w-[325px] w-[250px]"
+            className="lg:w-[325px] md:w-[250px] w-48"
           />
           <Image
             src={institutelogo}
             alt="InstituteLogo"
-            className="lg:w-[175px] w-[120px]"
+            className="lg:w-[175px] md:w-[120px] w-24"
           />
         </div>
       </div>

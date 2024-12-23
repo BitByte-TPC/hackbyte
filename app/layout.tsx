@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+// import Header from "@/components/MobileSidebar";
 import {Sidebar} from "@/components/sidebar";
 import Footer from "@/components/footer";
 
@@ -16,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
+        {/* <Header /> */}
         <Sidebar />
         {children}
         <Footer />
