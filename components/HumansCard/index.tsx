@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
 import {
 	TwitterLogoIcon,
@@ -8,15 +8,32 @@ import {
 	GitHubLogoIcon,
 } from "@radix-ui/react-icons";
 import behanceLogo from "../../public/behanceLogo.svg";
+import { IconProps } from "@radix-ui/react-icons/dist/types";
+import { ComponentType } from "react";
 
-const SocialMediaIcon = ({ Icon, href }) => (
-	<a href={href} target="_blank">
+interface SocialMediaIconProps {
+	Icon: ComponentType<IconProps>;
+	href: string;
+}
+
+const SocialMediaIcon = ({ Icon, href }: SocialMediaIconProps) => (
+	<a href={href} target="_blank" rel="noopener noreferrer">
 		<Icon
-			className="w-7 h-7 bg-[#161616] text-[#777777] transition ease-in-out delay-150 
-        hover:scale-125 duration-300"
+			className="w-7 h-7 bg-[#161616] text-supporting-darkGray transition ease-in-out delay-150 
+		hover:scale-125 duration-300"
 		/>
 	</a>
 );
+
+interface HumansCardProps {
+	index: number;
+	name: string;
+	role?: string;
+	profilepic: StaticImageData;
+	linkedin: string;
+	twitter: string;
+	github: string;
+}
 
 const HumansCard = ({
 	index,
@@ -26,7 +43,7 @@ const HumansCard = ({
 	linkedin,
 	twitter,
 	github,
-}) => {
+}: HumansCardProps) => {
 	const defaultGradient =
 		"radial-gradient(100% at center, #363636 100%, #1A1A1A 27%)";
 
@@ -63,7 +80,7 @@ const HumansCard = ({
 					<div className="w-full flex flex-col gap-2 rounded-b-[8px] p-1">
 						<p className="sm:text-xl text-lg text-white">{name}</p>
 						{role && (
-							<p className="font-bold text-[#BBBBBB] text-md sm:text-md leading-9">
+							<p className="font-bold text-supporting-mediumGray text-md sm:text-md leading-9">
 								{role}
 							</p>
 						)}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { StaticImageData } from "next/image";
 
 import galleryPageSticker from "@/public/gallerySticker.webp";
 import faqsPageSticker from "@/public/faqsSticker.webp";
@@ -22,7 +23,13 @@ const redirectingData = [
 	},
 ];
 
-const RedirectingCard = ({ title, link, image }) => {
+interface RedirectCardsProps {
+	title: string;
+	link: string;
+	image: StaticImageData;
+};
+
+const RedirectingCard = ({ title, link, image }: RedirectCardsProps) => {
 	return (
 		<a href={link}>
 			<div
@@ -45,11 +52,11 @@ const YetToBeDisclosed: React.FC = () => {
 			<h1 className="text-white lg:text-[64px] font-medium page-title">
 				Yet to be disclosed
 			</h1>
-			<p className="text-[#BBBBBB] lg:text-[24px]">
+			<p className="text-supporting-mediumGray lg:text-[24px]">
 				These details are not yet disclosed, so stay sharp.
 			</p>
 			<h3 className="text-white lg:text-[32px] lg:mt-[40px]">Meanwhile,</h3>
-			<p className="text-[#BBBBBB] lg:text-[24px] lg:mb-[40px]">
+			<p className="text-supporting-mediumGray lg:text-[24px] lg:mb-[40px]">
 				why don&apos;t you check these out!
 			</p>
 			<div className="flex lg:gap-[44px]">

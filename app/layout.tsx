@@ -16,7 +16,6 @@ const gotham = localFont({
   src: [
     {
       path: '../public/fonts/Gotham-Black.otf',
-      weight: '400'
     },
   ],
   variable: '--font-gotham'

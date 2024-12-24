@@ -326,7 +326,7 @@ const Humans = () => {
 							Meet the Humans
 							<br /> of HackByte
 						</h1>
-						<p className="text-[#BBBBBB] font-medium md:text-2xl text-lg">
+						<p className="text-supporting-darkGray font-medium md:text-2xl text-lg">
 							Hacker Experience is what we prioritize! Have questions, need
 							assistance, or just want to connect? Feel free to reach out!
 						</p>
@@ -341,21 +341,21 @@ const Humans = () => {
 					<TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start ">
 						<TabsTrigger
 							value="Organizers"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-[#BBBBBB]
+							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
 						>
 							Organizers
 						</TabsTrigger>
 						<TabsTrigger
 							value="Mentors"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-[#BBBBBB] 
+							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray 
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
 						>
 							Mentors
 						</TabsTrigger>
 						<TabsTrigger
 							value="Buddhe Log"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-[#BBBBBB]
+							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
 						>
 							Buddhe Log
