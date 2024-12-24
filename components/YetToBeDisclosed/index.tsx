@@ -47,7 +47,7 @@ const YetToBeDisclosed: React.FC = () => {
 	return (
 		<div
 			className="flex flex-col items-center justify-center text-center
-                rounded-[40px] lg:px-[88px] lg:pt-[44px] lg:pb-[88px]"
+                rounded-[40px] lg:pt-[22px] lg:pb-[66px] lg:mx-20 xl:mx-28 lg:my-10 border-2 border-[#333333] border-dashed"
 		>
 			<h1 className="text-white lg:text-[64px] font-medium page-title">
 				Yet to be disclosed

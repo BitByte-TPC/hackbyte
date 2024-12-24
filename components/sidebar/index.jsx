@@ -1,5 +1,5 @@
 "use client";
-import { Calendar, Handshake, House, Trophy, Users, Info, Image as Gallery } from "lucide-react";
+import { Calendar, Handshake, House, Trophy, Users, Info, Image as Gallery, Phone } from "lucide-react";
 const sidebarLinks = [
     { name: "Home", icon: <House />, href: "/" },
     { name: "Gallery", icon: <Gallery />, href: "/gallery" },
@@ -8,6 +8,7 @@ const sidebarLinks = [
     { name: "Schedule", icon: <Calendar />, href: "/schedule" },
     { name: "Humans", icon: <Users />, href: "/humans" },
     { name: "FAQ", icon: <Info />, href: "/faq" },
+    { name: "Contact", icon: <Phone />, href: "/contact" },
 ];
 
 export const Sidebar = () => {
