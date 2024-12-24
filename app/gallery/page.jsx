@@ -28,7 +28,7 @@ const Gallery = () => {
       <div className="flex flex-col min-h-screen p-4 px-2 md:px-8 lg:px-16 lg:pb-40 md:pb-28 pb-12">
         <div className="flex justify-between items-center gap-10 ">
           <div className="flex flex-col justify-center items-start gap-5 ">
-            <div className=" text-white xl:text-[7rem] lg:text-[4rem] text-[56px] font-bold xl:leading-[140px]">
+            <div className=" text-white xl:text-[7rem] lg:text-[4rem] text-[56px] font-black xl:leading-[140px]">
             HackByte 2.0 <br/>Highlights
             </div>
             <div className=" max-w-[550px] xl:max-w-[770px] text-supporting-mediumGray xl:text-2xl text-lg font-medium leading-[33.60px]">

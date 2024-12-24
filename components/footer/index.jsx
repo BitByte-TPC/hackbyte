@@ -69,7 +69,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="text-supporting-darkGray xl:text-lg md:text-base text-sm font-bold py-2 lg:pl-32 md:pl-16 pl-4">
+      <div className="text-supporting-darkGray font-medium xl:text-lg md:text-base text-sm py-2 lg:pl-32 md:pl-16 pl-4">
         © 2025 Hackbyte, All rights reserved
       </div>
     </div>

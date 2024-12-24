@@ -33,14 +33,14 @@ export default function Prizes() {
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between">
             <div className="flex flex-col items-start gap-2">
-              <p className="text-supporting-lightGray text-[3rem] md:text-[5rem] xl:text-[6rem] leading-tight">
+              <p className="text-supporting-lightGray text-[3rem] md:text-[5rem] xl:text-[6rem] leading-tight font-black">
                 Prizes for the <br />
                 Winners
               </p>
               <div className="flex flex-col items-start gap-3 md:gap-4">
                 <p
                   className="w-full lg:max-w-[85%] text-supporting-darkGray
-                text-[1rem] md:text-[1.5rem]"
+                text-[1rem] md:text-[1.5rem] font-medium"
                 >
                   Collaborate and innovate to build something awesome ! All
                   monetary prizes will be split equally among the winning team
