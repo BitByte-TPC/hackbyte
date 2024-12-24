@@ -17,7 +17,7 @@ interface SocialMediaIconProps {
 }
 
 const SocialMediaIcon = ({ Icon, href }: SocialMediaIconProps) => (
-	<a href={href} target="_blank" rel="noopener noreferrer">
+	<a href={href} target="_blank" rel="noopener noreferrer" title="Social Media Link">
 		<Icon
 			className="w-7 h-7 bg-[#161616] text-supporting-darkGray transition ease-in-out delay-150 
 		hover:scale-125 duration-300"
@@ -35,7 +35,7 @@ interface HumansCardProps {
 	github: string;
 }
 
-const HumansCard = ({
+const HumansCard: React.FC<HumansCardProps> = ({
 	index,
 	name,
 	role,
@@ -44,8 +44,6 @@ const HumansCard = ({
 	twitter,
 	github,
 }: HumansCardProps) => {
-	const defaultGradient =
-		"radial-gradient(100% at center, #363636 100%, #1A1A1A 27%)";
 
 	return (
 		<>
@@ -66,10 +64,7 @@ const HumansCard = ({
 				}}
 				viewport={{ once: true }}
 			>
-				<div
-					className="flex flex-col gap-3 p-[16px] shadow text-white justify-center items-center"
-					style={{ background: defaultGradient }}
-				>
+				<div className="flex flex-col gap-3 p-[16px] shadow text-white justify-center items-center">
 					<Image
 						src={profilepic}
 						className="w-[232px] h-[232px] outline-none object-cover rounded-[12px]"
@@ -90,7 +85,7 @@ const HumansCard = ({
 							{name !== "Aditya Raj" ? (
 								<SocialMediaIcon href={github} Icon={GitHubLogoIcon} />
 							) : (
-								<a href="https://www.behance.net/adi_ux" target="_blank">
+								<a href="https://www.behance.net/adi_ux" target="_blank" rel="noopener" title="Behance Profile">
 									<Image
 										src={behanceLogo}
 										className="w-7 h-7"
