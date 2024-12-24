@@ -3,6 +3,7 @@ import Image from "next/image";
 import SponsorCard from "@/components/SponsorCard";
 import hackbyte2Logo from "@/public/ImageGallery/HB2Logo.svg";
 
+import logitech from "@/public/partnersPage/logitech.jpg";
 // Sponsors
 import mlh from "@/public/partnersPage/mlh.webp";
 import github from "@/public/partnersPage/github.jpg";
@@ -150,11 +151,51 @@ const inKindSponsorsData = [
 	},
 ];
 
+const TitleSponsorCard: React.FC = () => {
+	return (
+		<a
+			href="https://www.logitech.com/en-in/mx/master-series.html"
+			target="_blank"
+			rel="noreferrer"
+			className="w-full xl:max-w-[95%] 2xl:max-w-[90%] flex justify-center"
+		>
+			<div className="flex flex-col md:flex-row">
+				<Image
+					className="w-full md:w-[300px] lg:w-[350px] xl:w-[42%]  rounded-t-[20px] 
+              md:rounded-r-none md:rounded-l-[20px]"
+					src={logitech}
+					alt="Logitech"
+					placeholder="blur"
+				/>
+				<div
+					className="flex flex-col justify-center items-start bg-[#4E2529] px-4 
+              xl:px-8 py-8 md:p-[40px] gap-2 rounded-b-[20px] md:rounded-l-none 
+              md:rounded-r-[20px]"
+				>
+					<p className="text-[#FF939E] font-bold text-[1.25rem] md:text-[1.5rem]">
+						Title Sponsor
+					</p>
+					<div className="w-full flex justify-between items-center">
+						<p className="font-medium text-white text-[2rem] xl:text-[4rem]">
+							Logitech
+						</p>
+					</div>
+					<p className="text-supporting-mediumGray font-medium text-[1rem] md:text[1.125rem]">
+						The MX Master Series is expertly designed for users, empowering
+						coders to unleash productivity and optimize performance during
+						intense coding marathons.
+					</p>
+				</div>
+			</div>
+		</a>
+	);
+};
+
 const PartnersPage = () => {
 	return (
 		<>
 			<div
-				className="flex flex-col min-h-screen lg:gap-[20px] 2xl:gap-[88px]
+				className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
           lg:pl-[154px] lg:pr-[70px] lg:pb-[92px] pt-[48px]"
 			>
 				<div className="flex gap-[40px]">
@@ -196,18 +237,21 @@ const PartnersPage = () => {
 						</TabsTrigger>
 					</TabsList>
 					<TabsContent value="Sponsors">
-						<div
-							className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+						<div className="w-full flex flex-col items-start gap-8 xl:gap-12">
+							<TitleSponsorCard />
+							<div
+								className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
                 gap-8 lg:gap-[44px]"
-						>
-							{normalSponsorsData.map((sponsor, index) => {
-								return <SponsorCard key={index} index={index} {...sponsor} />;
-							})}
+							>
+								{normalSponsorsData.map((sponsor, index) => {
+									return <SponsorCard key={index} index={index} {...sponsor} />;
+								})}
+							</div>
 						</div>
 					</TabsContent>
 					<TabsContent value="In Kind Sponsors">
 						<div
-							className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+							className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
                 gap-8 lg:gap-[44px]"
 						>
 							{inKindSponsorsData.map((sponsor, index) => {

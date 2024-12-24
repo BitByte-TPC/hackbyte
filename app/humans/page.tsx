@@ -317,7 +317,7 @@ const Humans = () => {
 	return (
 		<>
 			<div
-				className="flex flex-col min-h-screen lg:gap-[20px] 2xl:gap-[88px]
+				className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
           lg:pl-[154px] lg:pr-[70px] lg:pb-[92px] pt-[48px]"
 			>
 				<div className="flex gap-[40px]">
