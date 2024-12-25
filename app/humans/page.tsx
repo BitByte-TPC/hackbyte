@@ -3,7 +3,7 @@ import HumansCard from "@/components/HumansCard";
 import YetToBeDisclosed from "@/components/YetToBeDisclosed";
 import Image from "next/image";
 
-import humansSticker from "@/public/humansPage/humansSticker.webp";
+import humansSticker from "@/public/humansPage/humansSticker.svg";
 
 // Organizers
 import priyansh from "@/public/humansPage/priyansh.jpg";
@@ -317,12 +317,12 @@ const Humans = () => {
 	return (
 		<>
 			<div
-				className="flex flex-col min-h-screen lg:gap-[88px]
+				className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
           lg:pl-[154px] lg:pr-[70px] lg:pb-[92px] pt-[48px]"
 			>
 				<div className="flex gap-[40px]">
 					<div>
-						<h1 className="text-white font-bold text-5xl md:text-6xl lg:text-7xl xl:text-8xl mb-5">
+						<h1 className="text-white font-bold text-5xl xl:text-[80px] xl:leading-[6rem] mb-5">
 							Meet the Humans
 							<br /> of HackByte
 						</h1>
