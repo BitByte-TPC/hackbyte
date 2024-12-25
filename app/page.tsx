@@ -7,6 +7,7 @@ import mentorship from "../public/HomePageLogo/mentorship.webp";
 import recruit from "../public/HomePageLogo/recruit.webp";
 import medal from "../public/HomePageLogo/medal.webp";
 import workshop from "../public/HomePageLogo/workshop.png";
+import FAQSection from "@/components/faq/FaqSection"
 
 const WhycardDetails = [
   {
@@ -143,6 +144,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <FAQSection />
     </div>
   );
 }
