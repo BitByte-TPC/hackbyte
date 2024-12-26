@@ -204,7 +204,7 @@ const PartnersPage = () => {
 							Past Partners
 							<br /> who Supported
 						</h1>
-						<p className="text-[#BBBBBB] font-medium md:text-2xl text-lg">
+						<p className="text-supporting-mediumGray font-medium md:text-2xl text-lg">
 							We are proud to collaborate with visionary organizations that
 							share our passion for innovation and technology.
 						</p>
@@ -223,14 +223,14 @@ const PartnersPage = () => {
 					<TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start ">
 						<TabsTrigger
 							value="Sponsors"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-[#BBBBBB]
+							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
 						>
 							Sponsors
 						</TabsTrigger>
 						<TabsTrigger
 							value="In Kind Sponsors"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-[#BBBBBB]
+							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
 						>
 							In Kind Sponsors

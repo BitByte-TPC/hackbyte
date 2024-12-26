@@ -7,14 +7,14 @@ const sidebarLinks = [
     { name: "Prizes", icon: <Trophy />, href: "/prizes" },
     { name: "Schedule", icon: <Calendar />, href: "/schedule" },
     { name: "Humans", icon: <Users />, href: "/humans" },
-    { name: "FAQ", icon: <Info />, href: "/faq" },
+    { name: "FAQs", icon: <Info />, href: "/faq" },
     { name: "Contact", icon: <Phone />, href: "/contact" },
 ];
 
 export const Sidebar = () => {
   return (
     <div
-      className="fixed left-4 top-40 z-50 group flex flex-col py-2 transition-all duration-300 hover:w-52 w-16"
+      className="fixed left-4 top-32 z-50 group flex flex-col py-2 transition-all duration-300 hover:w-52 w-16"
       style={{
         borderRadius: "2rem",
         background: "rgba(34, 34, 34, 0.50)",
