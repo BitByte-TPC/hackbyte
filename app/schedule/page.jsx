@@ -13,7 +13,7 @@ const Schedule = () => {
                 Run of show for<br />
                 the Event
               </p>
-              <p className="w-full lg:max-w-[85%] text-supporting-darkGray text-[1rem] md:text-[1.5rem]">
+              <p className="w-full lg:max-w-[85%] text-supporting-mediumGray text-[1rem] md:text-[1.5rem]">
                 Join us for days packed with coding challenges and workshops.
                 Elevate your skills and collaborate with fellow hackers!
               </p>

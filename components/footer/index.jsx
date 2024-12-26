@@ -13,11 +13,12 @@ const sidebarLinks = [
   { name: "Schedule", href: "/schedule" },
   { name: "Humans", href: "/humans" },
   { name: "FAQs", href: "/faq" },
+  { name: "Contact", href: "/contact" },
 ];
 
 const Footer = () => {
   return (
-    <div className="md:overflow-x-hidden bg-[#161616] bg-[#161616]">
+    <div className="md:overflow-x-hidden bg-[#161616]">
       <div className="flex justify-between items-start xl:mx-32 lg:mx-20 md:mx-16 mx-4">
         <Image
           src={Hackbyte3Logo}

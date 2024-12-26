@@ -39,7 +39,7 @@ export default function Prizes() {
               </p>
               <div className="flex flex-col items-start gap-3 md:gap-4">
                 <p
-                  className="w-full lg:max-w-[85%] text-supporting-darkGray
+                  className="w-full lg:max-w-[85%] text-supporting-mediumGray
                 text-[1rem] md:text-[1.5rem] font-medium"
                 >
                   Collaborate and innovate to build something awesome ! All
@@ -101,7 +101,7 @@ export default function Prizes() {
                     Best Girls Team
                   </p>
                   <p
-                    className="text-supporting-mediumGray text-[1.25rem] 
+                    className="text-[#FFA5AE] font-semibold text-[1.25rem] 
                       text-center md:text-left"
                   >
                     Best performing All-Girls Team at HackByte
@@ -118,7 +118,7 @@ export default function Prizes() {
                     First Time Hacking?
                   </p>
                   <p
-                    className="text-supporting-mediumGray text-[1.25rem] 
+                    className="text-[#FFA5AE] font-medium text-[1.25rem] 
                       text-center md:text-left"
                   >
                     For freshmen and novices
@@ -132,7 +132,7 @@ export default function Prizes() {
         {/* Sponsor Tracks Section */}
         <div className="w-full flex flex-col pt-24">
           <div className="flex flex-col items-center gap-4 md:gap-6">
-            <p className="text-[#F5F0D8] text-[2.25rem] md:text-[5rem]">
+            <p className="text-supporting-lightGray text-[2.25rem] md:text-[5rem]">
               Sponsor Tracks
             </p>
             <p

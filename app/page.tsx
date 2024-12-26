@@ -1,12 +1,12 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import stats from "../public/HomePageLogo/stats.webp";
-import HeroSection from "@/components/herosection";
-import collborate from "../public/HomePageLogo/collaborate.webp";
-import mentorship from "../public/HomePageLogo/mentorship.webp";
-import recruit from "../public/HomePageLogo/recruit.webp";
-import medal from "../public/HomePageLogo/medal.webp";
-import workshop from "../public/HomePageLogo/workshop.png";
+import stats from "@/public/HomePageLogo/stats.webp";
+import HeroSection from "@/components/Herosection";
+import collborate from "@/public/HomePageLogo/collaborate.webp";
+import mentorship from "@/public/HomePageLogo/mentorship.webp";
+import recruit from "@/public/HomePageLogo/recruit.webp";
+import medal from "@/public/HomePageLogo/medal.webp";
+import workshop from "@/public/HomePageLogo/workshop.png";
 
 const WhycardDetails = [
   {

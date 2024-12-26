@@ -1,11 +1,11 @@
 import Image from "next/image";
-import linkedIn from "../public/FooterLogo/linkedin.svg";
-import instagram from "../public/FooterLogo/instagram.svg";
-import twitter from "../public/FooterLogo/twitter.svg";
-import discord from "../public/FooterLogo/discord.svg";
-import tpclogo from "../public/HomePageLogo/tpclogo.svg";
-import institutelogo from "../public/HomePageLogo/Institutelogo.svg";
-import redtapeImg from "../public/HomePageLogo/Redtape.webp";
+import linkedIn from "@/public/FooterLogo/linkedin.svg";
+import instagram from "@/public/FooterLogo/instagram.svg";
+import twitter from "@/public/FooterLogo/twitter.svg";
+import discord from "@/public/FooterLogo/discord.svg";
+import tpclogo from "@/public/HomePageLogo/tpclogo.svg";
+import institutelogo from "@/public/HomePageLogo/Institutelogo.svg";
+import redtapeImg from "@/public/HomePageLogo/Redtape.webp";
 
 const HeroSection = () => {
   return (

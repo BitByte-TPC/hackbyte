@@ -326,7 +326,7 @@ const Humans = () => {
 							Meet the Humans
 							<br /> of HackByte
 						</h1>
-						<p className="text-supporting-darkGray font-medium md:text-2xl text-lg">
+						<p className="text-supporting-mediumGray font-medium md:text-2xl text-lg">
 							Hacker Experience is what we prioritize! Have questions, need
 							assistance, or just want to connect? Feel free to reach out!
 						</p>
