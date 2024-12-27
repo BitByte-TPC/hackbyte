@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import stats from "@/public/HomePageLogo/stats.webp";
+import stats from "@/public/HomePageLogo/stats.png";
 import HeroSection from "@/components/Herosection";
 import collborate from "@/public/HomePageLogo/collaborate.webp";
 import mentorship from "@/public/HomePageLogo/mentorship.webp";
@@ -99,7 +99,7 @@ export default function Home() {
       <Image
         src={stats}
         alt="Stats"
-        className="rotate-[5deg] xl:mt-40 lg:mt-24 md:w-full"
+        className=" md:w-full"
       />
       <div className="text-center text-supporting-lightGray lg:text-5xl md:text-4xl text-2xl font-bold leading-[64px] md:py-40 py-20">
         Why Participate in Hackbyte 3.0?

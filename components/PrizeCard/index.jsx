@@ -32,7 +32,7 @@ const PrizeCard = ({ amount, category, default_bg, hover_bg, cupsrc }) => {
         {/* <Tilt options={defaultOptions}> */}
         <div
           className="flex flex-col justify-center items-center py-8 md:py-[7.25rem] 
-              rounded-[8px] border border-[#FFFAEF]"
+              rounded-[8px]"
           style={{
             "--default-gradient": default_bg,
             "--hover-gradient": hover_bg,

@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 @layer base {
-  
   :root {
     /* This is for the dotted bg */
     --dot-bg: #161616;
@@ -11,7 +10,7 @@
     --dot-size: 1.5px;
     --dot-space: 50px;
   }
-  
+
   ::-webkit-scrollbar {
     width: 10px;
   }
@@ -43,5 +42,10 @@
         )
         center / var(--dot-space) var(--dot-space),
       var(--dot-color);
+  }
+
+  .custom-border {
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23777' stroke-width='6' stroke-dasharray='6%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 40px;
   }
 }

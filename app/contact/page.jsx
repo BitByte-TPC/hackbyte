@@ -90,7 +90,7 @@ export default function ContactSection() {
             ></iframe>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:py-16 py-2">
             <Card className="bg-transparent border-none p-4 space-y-4">
               <div className="flex md:items-start items-center gap-6 md:flex-col flex-row">
                 <Train className="size-12 text-red-500 bg-red-500/30 p-2 rounded-lg" />

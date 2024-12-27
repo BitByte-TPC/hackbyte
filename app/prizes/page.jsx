@@ -93,7 +93,7 @@ export default function Prizes() {
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
               <div
                 className="flex flex-col items-center gap-4 md:gap-12 px-8 py-6 
-                  md:flex-row md:px-6 rounded-[8px] border border-[rgba(255,255,255,0.5)] bg-[#FF3044]"
+                  md:flex-row md:px-6 rounded-[8px] bg-[#FF3044]"
               >
                 <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
@@ -110,7 +110,7 @@ export default function Prizes() {
               </div>
               <div
                 className="flex flex-col items-center gap-4 md:gap-12 px-8 py-6 
-                  md:flex-row md:px-6 rounded-[8px] border border-[rgba(255,255,255,0.5)] bg-[#FF3044]"
+                  md:flex-row md:px-6 rounded-[8px] bg-[#FF3044]"
               >
                 <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
@@ -131,19 +131,9 @@ export default function Prizes() {
 
         {/* Sponsor Tracks Section */}
         <div className="w-full flex flex-col pt-24">
-          <div className="flex flex-col items-center gap-4 md:gap-6">
-            <p className="text-supporting-lightGray text-[2.25rem] md:text-[5rem]">
-              Sponsor Tracks
-            </p>
-            <p
-              className="w-full lg:max-w-[80%] text-supporting-mediumGray
-                text-center text-[1.25rem] md:text-[1.5rem]"
-            >
-              Explore our sponsor tracks and leverage their technologies to
-              bring your projects to life! All monetary prizes will be split
-              equally among the winning team members.
-            </p>
-          </div>
+          <p className="text-supporting-lightGray text-center text-[2.25rem] md:text-[5rem]">
+            Sponsor Tracks
+          </p>
           <YetToBeDisclosed />
         </div>
       </div>

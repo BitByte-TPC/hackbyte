@@ -41,353 +41,357 @@ import gautam from "@/public/humansPage/gautam.jpg";
 import chaitanya from "@/public/humansPage/chaitanaya.jpg";
 
 export const metadata = {
-	title: "Humans | HackByte",
-	description:
-		"Meet the team behind HackByte 3.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
-	keywords:
-		"Humans, Team, Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech",
-	openGraph: {
-		title: "Humans | HackByte",
-		description:
-			"Meet the team behind HackByte 3.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
-		url: "https://hackbyte.in/humans",
-		images:
-			"https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
-		siteName: "HackByte - IIITDMJ Hackathon",
-		type: "website",
-		locale: "en_US",
-	},
+  title: "Humans | HackByte",
+  description:
+    "Meet the team behind HackByte 3.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
+  keywords:
+    "Humans, Team, Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech",
+  openGraph: {
+    title: "Humans | HackByte",
+    description:
+      "Meet the team behind HackByte 3.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
+    url: "https://hackbyte.in/humans",
+    images:
+      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+    siteName: "HackByte - IIITDMJ Hackathon",
+    type: "website",
+    locale: "en_US",
+  },
 };
 
 const Humans = () => {
-	const organizerData = [
-		{
-			name: "Bhavik Agrawal",
-			role: "Event Coordinator",
-			profilepic: bhavik,
-			linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
-			twitter: "https://twitter.com/BhavikAgarwal13",
-			github: "https://github.com/Bhavik-ag",
-		},
-		{
-			name: "Samyak Bhargava",
-			role: "Event Coordinator",
-			profilepic: samyak,
-			linkedin: "https://www.linkedin.com/in/sammybh6/",
-			twitter: "#",
-			github: "https://github.com/sammybh6",
-		},
-		{
-			name: "Priyansh Mehta",
-			role: "Organizer",
-			profilepic: priyansh,
-			linkedin: "https://www.linkedin.com/in/Priyansh61/",
-			twitter: "https://twitter.com/Priyansh_61",
-			github: "https://github.com/Priyansh61",
-		},
-		{
-			name: "Divyansh Tripathi",
-			role: "Organizer",
-			profilepic: divyansh,
-			linkedin: "https://www.linkedin.com/in/tdivyansh/",
-			twitter: "https://twitter.com/theoden42",
-			github: "https://github.com/theoden42",
-		},
-		{
-			name: "Vansh Mittal",
-			role: "Web Lead",
-			profilepic: vansh,
-			linkedin: "https://www.linkedin.com/in/vansh-mittal-21869922a/",
-			twitter: "https://twitter.com/mittalvansh_11",
-			github: "https://github.com/mittalvansh",
-		},
-		{
-			name: "Aditya Raj",
-			role: "Design Lead",
-			profilepic: aditya,
-			linkedin: "https://www.linkedin.com/in/contactadityaraj/",
-			twitter: "#",
-			github: "#",
-		},
-		{
-			name: "Varun Singh",
-			role: "Organizer",
-			profilepic: varun,
-			linkedin: "https://www.linkedin.com/in/varun-singh-018242224/",
-			twitter: "#",
-			github: "https://github.com/varun7singh",
-		},
-		{
-			name: "Deepanshu Singh",
-			role: "PR & Marketing Lead",
-			profilepic: deepanshu,
-			linkedin: "https://www.linkedin.com/in/sdeepanshu17/",
-			twitter: "https://twitter.com/sdeepanshu17",
-			github: "#",
-		},
-		{
-			name: "Sambhav Gupta",
-			role: "Speaker & Workshop Lead",
-			profilepic: sambhav,
-			linkedin: "https://www.linkedin.com/in/sambhavgupta0705",
-			twitter: "https://x.com/sambhavgupta75",
-			github: "https://github.com/sambhavgupta0705",
-		},
-		{
-			name: "Tushir Sahu",
-			role: "Organizer",
-			profilepic: tushir,
-			linkedin: "https://www.linkedin.com/in/tushir-sahu-b95549205/",
-			twitter: "https://twitter.com/Tushir_Sahu",
-			github: "https://github.com/TushirSahu",
-		},
-		{
-			name: "Aman Srivastava",
-			role: "Organizer",
-			profilepic: aman,
-			linkedin: "https://www.linkedin.com/in/aman-srivastava-16726822a/",
-			twitter: "#",
-			github: "#",
-		},
-		{
-			name: "Aishwarya Saxena",
-			role: "Organizer",
-			profilepic: aish,
-			linkedin: "https://www.linkedin.com/in/aishwarya-saxena-05713618b/",
-			twitter: "#",
-			github: "#",
-		},
-		{
-			name: "Prajjwal Kapoor",
-			role: "Organizer",
-			profilepic: prajjwal,
-			linkedin: "https://www.linkedin.com/in/prajjwal-kapoor/",
-			twitter: "https://twitter.com/the_prajjwal",
-			github: "https://github.com/prajjwalkapoor",
-		},
-		{
-			name: "Aryan Pandey",
-			role: "Organizer",
-			profilepic: aryan,
-			linkedin: "https://linkedin.com/in/aryan1113",
-			twitter: "https://twitter.com/aisehiaryan",
-			github: "https://github.com/aryan1113",
-		},
-		{
-			name: "Prajwal Rayal",
-			role: "Organizer",
-			profilepic: prajwal,
-			linkedin: "http://linkedin.com/in/prajwal-rayal",
-			twitter: "https://twitter.com/rayalprajwal",
-			github: "https://github.com/PrajwalRayal",
-		},
-		{
-			name: "Manoj Panjwani",
-			role: "Organizer",
-			profilepic: manoj,
-			linkedin: "https://www.linkedin.com/in/manojpanjwani03/",
-			twitter: "#",
-			github: "#",
-		},
-		{
-			name: "Nitya Tiwari",
-			role: "Organizer",
-			profilepic: nitya,
-			linkedin: "https://www.linkedin.com/in/nitya-tiwari-960797229/",
-			twitter: "https://twitter.com/nityatiwariii",
-			github: "#",
-		},
-	];
+  const organizerData = [
+    {
+      name: "Bhavik Agrawal",
+      role: "Event Coordinator",
+      profilepic: bhavik,
+      linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
+      twitter: "https://twitter.com/BhavikAgarwal13",
+      github: "https://github.com/Bhavik-ag",
+    },
+    {
+      name: "Samyak Bhargava",
+      role: "Event Coordinator",
+      profilepic: samyak,
+      linkedin: "https://www.linkedin.com/in/sammybh6/",
+      twitter: "#",
+      github: "https://github.com/sammybh6",
+    },
+    {
+      name: "Priyansh Mehta",
+      role: "Organizer",
+      profilepic: priyansh,
+      linkedin: "https://www.linkedin.com/in/Priyansh61/",
+      twitter: "https://twitter.com/Priyansh_61",
+      github: "https://github.com/Priyansh61",
+    },
+    {
+      name: "Divyansh Tripathi",
+      role: "Organizer",
+      profilepic: divyansh,
+      linkedin: "https://www.linkedin.com/in/tdivyansh/",
+      twitter: "https://twitter.com/theoden42",
+      github: "https://github.com/theoden42",
+    },
+    {
+      name: "Vansh Mittal",
+      role: "Web Lead",
+      profilepic: vansh,
+      linkedin: "https://www.linkedin.com/in/vansh-mittal-21869922a/",
+      twitter: "https://twitter.com/mittalvansh_11",
+      github: "https://github.com/mittalvansh",
+    },
+    {
+      name: "Aditya Raj",
+      role: "Design Lead",
+      profilepic: aditya,
+      linkedin: "https://www.linkedin.com/in/contactadityaraj/",
+      twitter: "#",
+      github: "#",
+    },
+    {
+      name: "Varun Singh",
+      role: "Organizer",
+      profilepic: varun,
+      linkedin: "https://www.linkedin.com/in/varun-singh-018242224/",
+      twitter: "#",
+      github: "https://github.com/varun7singh",
+    },
+    {
+      name: "Deepanshu Singh",
+      role: "PR & Marketing Lead",
+      profilepic: deepanshu,
+      linkedin: "https://www.linkedin.com/in/sdeepanshu17/",
+      twitter: "https://twitter.com/sdeepanshu17",
+      github: "#",
+    },
+    {
+      name: "Sambhav Gupta",
+      role: "Speaker & Workshop Lead",
+      profilepic: sambhav,
+      linkedin: "https://www.linkedin.com/in/sambhavgupta0705",
+      twitter: "https://x.com/sambhavgupta75",
+      github: "https://github.com/sambhavgupta0705",
+    },
+    {
+      name: "Tushir Sahu",
+      role: "Organizer",
+      profilepic: tushir,
+      linkedin: "https://www.linkedin.com/in/tushir-sahu-b95549205/",
+      twitter: "https://twitter.com/Tushir_Sahu",
+      github: "https://github.com/TushirSahu",
+    },
+    {
+      name: "Aman Srivastava",
+      role: "Organizer",
+      profilepic: aman,
+      linkedin: "https://www.linkedin.com/in/aman-srivastava-16726822a/",
+      twitter: "#",
+      github: "#",
+    },
+    {
+      name: "Aishwarya Saxena",
+      role: "Organizer",
+      profilepic: aish,
+      linkedin: "https://www.linkedin.com/in/aishwarya-saxena-05713618b/",
+      twitter: "#",
+      github: "#",
+    },
+    {
+      name: "Prajjwal Kapoor",
+      role: "Organizer",
+      profilepic: prajjwal,
+      linkedin: "https://www.linkedin.com/in/prajjwal-kapoor/",
+      twitter: "https://twitter.com/the_prajjwal",
+      github: "https://github.com/prajjwalkapoor",
+    },
+    {
+      name: "Aryan Pandey",
+      role: "Organizer",
+      profilepic: aryan,
+      linkedin: "https://linkedin.com/in/aryan1113",
+      twitter: "https://twitter.com/aisehiaryan",
+      github: "https://github.com/aryan1113",
+    },
+    {
+      name: "Prajwal Rayal",
+      role: "Organizer",
+      profilepic: prajwal,
+      linkedin: "http://linkedin.com/in/prajwal-rayal",
+      twitter: "https://twitter.com/rayalprajwal",
+      github: "https://github.com/PrajwalRayal",
+    },
+    {
+      name: "Manoj Panjwani",
+      role: "Organizer",
+      profilepic: manoj,
+      linkedin: "https://www.linkedin.com/in/manojpanjwani03/",
+      twitter: "#",
+      github: "#",
+    },
+    {
+      name: "Nitya Tiwari",
+      role: "Organizer",
+      profilepic: nitya,
+      linkedin: "https://www.linkedin.com/in/nitya-tiwari-960797229/",
+      twitter: "https://twitter.com/nityatiwariii",
+      github: "#",
+    },
+  ];
 
-	const mentorData = [
-		{
-			name: "Aanchal Mishra",
-			role: "",
-			profilepic: aanchal,
-			linkedin: "https://www.linkedin.com/in/mishra-aanchal/",
-			twitter: "https://twitter.com/Aanchalmishra__",
-			github: "https://github.com/mishra-aanchal",
-		},
-		{
-			name: "Khushi Trivedi",
-			role: "",
-			profilepic: khushi,
-			linkedin: "https://www.linkedin.com/in/trivedi-khushi/",
-			twitter: "https://twitter.com/KhushiT113/",
-			github: "https://github.com/trivedi-khushi",
-		},
-		{
-			name: "Manan Jethwani",
-			role: "",
-			profilepic: manan,
-			linkedin: "https://www.linkedin.com/in/manan-jethwani/",
-			twitter: "https://twitter.com/manan_jethwani",
-			github: "https://github.com/mananjethwani",
-		},
-		{
-			name: "Priyansh Garg",
-			role: "",
-			profilepic: priyansh_garg,
-			linkedin: "https://www.linkedin.com/in/priyansh3133/",
-			twitter: "https://twitter.com/priyansh3133",
-			github: "https://github.com/garg3133",
-		},
-		{
-			name: "Akshat Virmani",
-			role: "",
-			profilepic: akshat,
-			linkedin: "https://www.linkedin.com/in/akshatvirmani/",
-			twitter: "https://twitter.com/VirmaniAkshat",
-			github: "https://github.com/akshatvirmani",
-		},
-		{
-			name: "Sanskriti Harmukh",
-			role: "",
-			profilepic: sanskriti,
-			linkedin: "https://www.linkedin.com/in/sanskriti-harmukh/",
-			twitter: "https://x.com/Senzkriti",
-			github: "https://github.com/SanskritiHarmukh",
-		},
-		{
-			name: "Yashika Jotwani",
-			role: "",
-			profilepic: yashika,
-			linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7",
-			twitter: "https://twitter.com/yashika_jotwani",
-			github: "https://github.com/yashikajotwani12",
-		},
-		{
-			name: "Sagar Uprety",
-			role: "",
-			profilepic: sagar,
-			linkedin: "https://www.linkedin.com/in/sagar-uprety/",
-			twitter: "https://twitter.com/SagarUprety9",
-			github: "https://github.com/sagar-uprety",
-		},
-		{
-			name: "Siddhant Khare",
-			role: "",
-			profilepic: siddhant,
-			linkedin: "https://www.linkedin.com/in/siddhantkhare24/",
-			twitter: "https://twitter.com/Siddhant_K_code",
-			github: "https://github.com/Siddhant-K-code",
-		},
-		{
-			name: "Vedant Jain",
-			role: "",
-			profilepic: vedant,
-			linkedin: "https://www.linkedin.com/in/vedant-jain-781006145",
-			twitter: "https://twitter.com/vedantj_03",
-			github: "https://vedant-jain03.github.io/portfolio/",
-		},
-		{
-			name: "Ashu Kumar",
-			role: "",
-			profilepic: ashu,
-			linkedin: "https://www.linkedin.com/in/ashu-kr/",
-			twitter: "https://twitter.com/AshuKr40",
-			github: "https://github.com/Ashu-kumar40",
-		},
-		{
-			name: "Ashish Chanchal",
-			role: "",
-			profilepic: ashish,
-			linkedin: "https://www.linkedin.com/in/ashishchanchal",
-			twitter: "https://x.com/_ashishchanchal",
-			github: "https://github.com/Ashish-chanchal",
-		},
-		{
-			name: "Gautam Manak",
-			role: "",
-			profilepic: gautam,
-			linkedin: "https://www.linkedin.com/in/gautammanak1/",
-			twitter: "https://twitter.com/gautammanak02",
-			github: "https://github.com/GAUTAMMANAK1",
-		},
-		{
-			name: "Chaitanya Rai",
-			role: "",
-			profilepic: chaitanya,
-			linkedin: "https://www.linkedin.com/in/chaitanya-rai/",
-			twitter: "https://twitter.com/Chaitanyarai19",
-			github: "https://github.com/chaitanyarai19/",
-		},
-	];
+  const mentorData = [
+    {
+      name: "Aanchal Mishra",
+      role: "",
+      profilepic: aanchal,
+      linkedin: "https://www.linkedin.com/in/mishra-aanchal/",
+      twitter: "https://twitter.com/Aanchalmishra__",
+      github: "https://github.com/mishra-aanchal",
+    },
+    {
+      name: "Khushi Trivedi",
+      role: "",
+      profilepic: khushi,
+      linkedin: "https://www.linkedin.com/in/trivedi-khushi/",
+      twitter: "https://twitter.com/KhushiT113/",
+      github: "https://github.com/trivedi-khushi",
+    },
+    {
+      name: "Manan Jethwani",
+      role: "",
+      profilepic: manan,
+      linkedin: "https://www.linkedin.com/in/manan-jethwani/",
+      twitter: "https://twitter.com/manan_jethwani",
+      github: "https://github.com/mananjethwani",
+    },
+    {
+      name: "Priyansh Garg",
+      role: "",
+      profilepic: priyansh_garg,
+      linkedin: "https://www.linkedin.com/in/priyansh3133/",
+      twitter: "https://twitter.com/priyansh3133",
+      github: "https://github.com/garg3133",
+    },
+    {
+      name: "Akshat Virmani",
+      role: "",
+      profilepic: akshat,
+      linkedin: "https://www.linkedin.com/in/akshatvirmani/",
+      twitter: "https://twitter.com/VirmaniAkshat",
+      github: "https://github.com/akshatvirmani",
+    },
+    {
+      name: "Sanskriti Harmukh",
+      role: "",
+      profilepic: sanskriti,
+      linkedin: "https://www.linkedin.com/in/sanskriti-harmukh/",
+      twitter: "https://x.com/Senzkriti",
+      github: "https://github.com/SanskritiHarmukh",
+    },
+    {
+      name: "Yashika Jotwani",
+      role: "",
+      profilepic: yashika,
+      linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7",
+      twitter: "https://twitter.com/yashika_jotwani",
+      github: "https://github.com/yashikajotwani12",
+    },
+    {
+      name: "Sagar Uprety",
+      role: "",
+      profilepic: sagar,
+      linkedin: "https://www.linkedin.com/in/sagar-uprety/",
+      twitter: "https://twitter.com/SagarUprety9",
+      github: "https://github.com/sagar-uprety",
+    },
+    {
+      name: "Siddhant Khare",
+      role: "",
+      profilepic: siddhant,
+      linkedin: "https://www.linkedin.com/in/siddhantkhare24/",
+      twitter: "https://twitter.com/Siddhant_K_code",
+      github: "https://github.com/Siddhant-K-code",
+    },
+    {
+      name: "Vedant Jain",
+      role: "",
+      profilepic: vedant,
+      linkedin: "https://www.linkedin.com/in/vedant-jain-781006145",
+      twitter: "https://twitter.com/vedantj_03",
+      github: "https://vedant-jain03.github.io/portfolio/",
+    },
+    {
+      name: "Ashu Kumar",
+      role: "",
+      profilepic: ashu,
+      linkedin: "https://www.linkedin.com/in/ashu-kr/",
+      twitter: "https://twitter.com/AshuKr40",
+      github: "https://github.com/Ashu-kumar40",
+    },
+    {
+      name: "Ashish Chanchal",
+      role: "",
+      profilepic: ashish,
+      linkedin: "https://www.linkedin.com/in/ashishchanchal",
+      twitter: "https://x.com/_ashishchanchal",
+      github: "https://github.com/Ashish-chanchal",
+    },
+    {
+      name: "Gautam Manak",
+      role: "",
+      profilepic: gautam,
+      linkedin: "https://www.linkedin.com/in/gautammanak1/",
+      twitter: "https://twitter.com/gautammanak02",
+      github: "https://github.com/GAUTAMMANAK1",
+    },
+    {
+      name: "Chaitanya Rai",
+      role: "",
+      profilepic: chaitanya,
+      linkedin: "https://www.linkedin.com/in/chaitanya-rai/",
+      twitter: "https://twitter.com/Chaitanyarai19",
+      github: "https://github.com/chaitanyarai19/",
+    },
+  ];
 
-	return (
-		<>
-			<div
-				className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
-          lg:pl-[154px] lg:pr-[70px] lg:pb-[92px] pt-[48px]"
-			>
-				<div className="flex gap-[40px]">
-					<div>
-						<h1 className="text-white font-bold text-5xl xl:text-[80px] xl:leading-[6rem] mb-5">
-							Meet the Humans
-							<br /> of HackByte
-						</h1>
-						<p className="text-supporting-mediumGray font-medium md:text-2xl text-lg">
-							Hacker Experience is what we prioritize! Have questions, need
-							assistance, or just want to connect? Feel free to reach out!
-						</p>
-					</div>
-					<Image src={humansSticker} alt="Humans Sticker" />
-				</div>
+  return (
+    <>
+      <div
+        className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
+          lg:px-16 lg:pb-[92px] pt-[48px] px-4"
+      >
+        <div className="flex md:gap-[40px]">
+          <div>
+            <h1 className="text-white font-bold text-[28px] xl:text-[80px] xl:leading-[6rem] mb-5">
+              Meet the Humans
+              <br /> of HackByte
+            </h1>
+            <p className="text-supporting-mediumGray font-medium lg:text-2xl md:text-xl text-sm">
+              Hacker Experience is what we prioritize! Have questions, need
+              assistance, or just want to connect? Feel free to reach out!
+            </p>
+          </div>
+          <Image
+            src={humansSticker}
+            alt="Humans Sticker"
+            className="lg:w-auto md:w-64 w-32"
+          />
+        </div>
 
-				<Tabs
-					defaultValue="Organizers"
-					className="flex flex-col justify-center mt-4 md:mt-12"
-				>
-					<TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start ">
-						<TabsTrigger
-							value="Organizers"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
+        <Tabs
+          defaultValue="Organizers"
+          className="flex flex-col justify-center mt-4 md:mt-12"
+        >
+          <TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start ">
+            <TabsTrigger
+              value="Organizers"
+              className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
-						>
-							Organizers
-						</TabsTrigger>
-						<TabsTrigger
-							value="Mentors"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray 
+            >
+              Organizers
+            </TabsTrigger>
+            <TabsTrigger
+              value="Mentors"
+              className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray 
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
-						>
-							Mentors
-						</TabsTrigger>
-						<TabsTrigger
-							value="Buddhe Log"
-							className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
+            >
+              Mentors
+            </TabsTrigger>
+            <TabsTrigger
+              value="Buddhe Log"
+              className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
-						>
-							Buddhe Log
-						</TabsTrigger>
-					</TabsList>
-					<TabsContent value="Organizers">
-						<div
-							className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+            >
+              Buddhe Log
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent value="Organizers">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
                 place-content-center place-items-center gap-10"
-						>
-							{organizerData.map((human, index) => (
-								<HumansCard key={index} index={index} {...human} />
-							))}
-						</div>
-					</TabsContent>
+            >
+              {organizerData.map((human, index) => (
+                <HumansCard key={index} index={index} {...human} />
+              ))}
+            </div>
+          </TabsContent>
           <TabsContent value="Mentors">
-						<YetToBeDisclosed />
-					</TabsContent>
-					<TabsContent value="Buddhe Log">
-						<div
-							className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+            <YetToBeDisclosed />
+          </TabsContent>
+          <TabsContent value="Buddhe Log">
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
                 place-content-center place-items-center"
-						>
-							{mentorData.map((human, index) => (
-								<HumansCard key={index} index={index} {...human} />
-							))}
-						</div>
-					</TabsContent>
-				</Tabs>
-			</div>
-		</>
-	);
+            >
+              {mentorData.map((human, index) => (
+                <HumansCard key={index} index={index} {...human} />
+              ))}
+            </div>
+          </TabsContent>
+        </Tabs>
+      </div>
+    </>
+  );
 };
 
 export default Humans;

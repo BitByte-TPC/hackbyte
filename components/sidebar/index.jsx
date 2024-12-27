@@ -45,7 +45,7 @@ export const Sidebar = () => {
           <a
             key={link.name}
             href={link.href}
-            className={`flex items-center space-x-4 text-lg p-2 w-44 rounded-[2.5rem] h-12 hover:shadow-[0_4px_40px_rgba(0,0,0,0.10)] hover:backdrop-blur-[20px] hover:bg-[#4E2529] hover:text-white hover:pl-3 ${
+            className={`flex items-center space-x-4 text-lg p-2 w-12 group-hover:w-44 rounded-[2.5rem] h-12 hover:shadow-[0_4px_40px_rgba(0,0,0,0.10)] hover:backdrop-blur-[20px] hover:bg-[#4E2529] hover:text-white hover:pl-3 ${
               selectedName === link.name ? "text-white" : ""
             }`}
           >

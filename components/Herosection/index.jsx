@@ -5,12 +5,12 @@ import twitter from "@/public/FooterLogo/twitter.svg";
 import discord from "@/public/FooterLogo/discord.svg";
 import tpclogo from "@/public/HomePageLogo/tpclogo.svg";
 import institutelogo from "@/public/HomePageLogo/Institutelogo.svg";
-import redtapeImg from "@/public/HomePageLogo/Redtape.webp";
+import redtapeImg from "@/public/HomePageLogo/Redtape.png";
 
 const HeroSection = () => {
   return (
     <>
-      <div className="flex flex-col lg:px-16 md:px-8 px-4 pb-12 pt-4 md:pt-12">
+      <div className="flex flex-col lg:px-16 md:px-8 px-4 pb-12 pt-4 md:pt-12 absolute">
         <div className="text-4xl font-bold text-supporting-lightGray">
           Break the red tape
         </div>
@@ -18,15 +18,31 @@ const HeroSection = () => {
           Our Theme
         </div>
       </div>
-      <Image
-        src={redtapeImg}
-        alt="Hackbyte 3.0"
-        className=" -rotate-[5deg] md:w-full"
-        priority
-      />
+      <div className="relative">
+        <Image
+          src={redtapeImg}
+          alt="Hackbyte 3.0"
+          className=" md:w-full pt-20 md:pt-12"
+          priority
+        />
+        <div className="max-w-[300px] absolute xl:top-40 xl:right-20 lg:top-32 lg:right-12 top-28 md:right-6 right-0 rotate-[-5deg]">
+          <div class="text-[#ff97a1] md:text-lg lg:text-xl text-xs font-light xl:text-2xl md:leading-7">
+            Join us from
+            <br />
+          </div>
+          <div class="text-white text-sm md:text-xl lg:text-2xl xl:text-3xl md:leading-[33.60px] max-w-32 md:max-w-64">
+            4th-6th April 2025,
+          </div>
+          <div class="text-[#ff97a1] text-xs md:text-lg lg:text-xl xl:text-2xl md:leading-7">
+            at IIITDM Jabalpur
+            <br />
+            for hackathon.
+          </div>
+        </div>
+      </div>
 
-      <div className="flex flex-col md:flex-row justify-between lg:px-16 px-8 md:items-center lg:pt-32 md:pt-16 md:pb-16 pt-2 pb-4">
-        <div className="flex justify-end md:justify-center gap-4 md:py-12 pb-4 -rotate-[5deg] md:rotate-0">
+      <div className="flex flex-col md:flex-row justify-between lg:px-16 px-8 md:pb-16 md: pb-4">
+        <div className="flex justify-end md:justify-center gap-4 md:pt-4 -rotate-[5deg] md:rotate-0">
           <Image
             src={linkedIn}
             alt="linkedIn"
