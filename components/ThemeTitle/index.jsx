@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import CountDownAnim from "../CountDownAnim";
 
 const ThemeTitle = () => {
   const [mousePosition, setMousePosition] = useState({
@@ -51,17 +52,17 @@ const ThemeTitle = () => {
 
   return (
     <>
-      <p className="text-[#FAF8ED] text-[1.25rem] md:text-[1.5rem] font-medium uppercase">
-        This year&apos;s theme :{" "}
+      <p className="text-[#FAF8ED] text-[1.25rem] tracking-widest md:text-[1.5rem] font-medium uppercase translate-x-2">
+        Revealing soon :{" "}
       </p>
-      <p
+      <div
         className="text-[#FAF8ED] text-[2.375rem] md:text-[3rem] 
           font-medium leading-[1.2] md:leading-[1.1]"
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
       >
-        To be revealed Soon!
-      </p>
+        <CountDownAnim targetDate="2025-01-07T00:00:00" />
+      </div>
 
       <motion.div
         className="cursor"

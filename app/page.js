@@ -100,15 +100,14 @@ export default function Home() {
             <ThemeTitle />
           </div>
           <div className="flex flex-col items-start gap-3 w-full lg:items-end lg:w-1/2">
-            <div
+            <p
               className="text-[#FAF8ED] text-[1.25rem] font-medium text-left 
-              lg:text-right lg:text-[1.5rem] flex flex-col items-start"
+              lg:text-right lg:text-[1.5rem] translate-x-2"
             >
-              <p>Join us on 4th-6th April 2025, </p>
-              
-              <p>at IIIT Jabalpur for hackathon.</p>
-              
-            </div>
+              Join us on 4th-6th April 2025, <br/>
+               at IIIT Jabalpur for the hackathon.{" "}
+            </p>
+
           </div>
         </div>
 
@@ -139,9 +138,9 @@ export default function Home() {
             >
               <div className="flex justify-center items-center">
                 <img
-                  src="/iiitdmjLogo.svg"
+                  src="/iiitdmjLogo.png"
                   alt="IIITDMJ Logo"
-                  className="w-[6rem] h-[3rem]"
+                  className="object-contain h-[2.5rem]"
                 />
               </div>
             </div>
