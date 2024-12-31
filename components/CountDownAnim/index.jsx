@@ -8,7 +8,7 @@ import { useState, useEffect } from 'react';
 
 const useCountdown = (targetDate) => {
   const calculateTimeLeft = () => {
-    const difference = +new Date(targetDate) - +new Date();
+    const difference = new Date(targetDate) - new Date();
     let timeLeft = {};
 
     if (difference > 0) {
@@ -31,7 +31,7 @@ const useCountdown = (targetDate) => {
     }, 1000);
 
     return () => clearTimeout(timer);
-  });
+  }, [timeLeft]);
 
   return timeLeft;
 };
