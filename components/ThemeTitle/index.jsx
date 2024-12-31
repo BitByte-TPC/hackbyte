@@ -60,7 +60,8 @@ const ThemeTitle = () => {
         onMouseEnter={textEnter}
         onMouseLeave={textLeave}
       >
-        To be revealed Soon!
+        Digital Anonymity
+        <br /> Unleashed
       </p>
 
       <motion.div

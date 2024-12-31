@@ -100,15 +100,29 @@ export default function Home() {
             <ThemeTitle />
           </div>
           <div className="flex flex-col items-start gap-3 w-full lg:items-end lg:w-1/2">
-            <div
+            <p
               className="text-[#FAF8ED] text-[1.25rem] font-medium text-left 
-              lg:text-right lg:text-[1.5rem] flex flex-col items-start"
+              lg:text-right lg:text-[1.5rem]"
             >
-              <p>Join us on 4th-6th April 2025, </p>
-              
-              <p>at IIIT Jabalpur for hackathon.</p>
-              
-            </div>
+              Join us at IIIT Jabalpur, April
+              <br />
+              5-7 for an in-person hackathon.
+            </p>
+            <Link href="/prizes#logitech-tracks" passHref>
+              <Button
+                size="sm"
+                className="bg-[#FAF8ED] text-black text-[1.125rem] font-semibold p-6 
+                rounded-none hover:bg-[#FAF8ED] hover:text-black hover:scale-105 
+                transition-transform ease-in-out duration-300"
+                style={{
+                  boxShadow:
+                    "0px 1px 1px 0px rgba(0, 0, 0, 0.12), 0px 0px 0px 1px rgba(103, 110, 118, 0.16), 0px 2px 5px 0px rgba(103, 110, 118, 0.08)",
+                }}
+              >
+                Explore Logitech Tracks
+                <ArrowTopRightIcon className="w-5 h-5 ml-1" />
+              </Button>
+            </Link>
           </div>
         </div>
 
