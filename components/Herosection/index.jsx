@@ -5,7 +5,8 @@ import twitter from "@/public/FooterLogo/twitter.svg";
 import discord from "@/public/FooterLogo/discord.svg";
 import tpclogo from "@/public/HomePageLogo/tpclogo.svg";
 import institutelogo from "@/public/HomePageLogo/Institutelogo.svg";
-import redtapeImg from "@/public/HomePageLogo/Redtape.png";
+import redtapeImg from "@/public/HomePageLogo/Redtape1.svg";
+import HB3Logo from "@/public/HomePageLogo/HB3Logo.svg";
 
 const HeroSection = () => {
   return (
@@ -21,19 +22,24 @@ const HeroSection = () => {
       <div className="relative">
         <Image
           src={redtapeImg}
-          alt="Hackbyte 3.0"
-          className=" md:w-full pt-20 md:pt-12"
+          alt="Redtape"
+          className=" md:w-full pt-16"
           priority
         />
-        <div className="max-w-[300px] absolute xl:top-40 xl:right-20 lg:top-32 lg:right-12 top-28 md:right-6 right-0 rotate-[-5deg]">
-          <div class="text-[#ff97a1] md:text-lg lg:text-xl text-xs font-light xl:text-2xl md:leading-7">
+        <Image
+          src={HB3Logo}
+          alt="Hackbyte 3.0"
+          className="w-[140px] md:w-[250px] lg:w-[350px] xl:w-[500px] absolute top-[67%] md:top-[57%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
+        />
+        <div className="max-w-[300px] absolute xl:top-40 xl:right-20 lg:top-32 lg:right-12 top-24 md:right-6 right-0 rotate-[-5deg]">
+          <div className="text-[#ff97a1] md:text-lg lg:text-xl text-xs font-light xl:text-2xl md:leading-7">
             Join us from
             <br />
           </div>
-          <div class="text-white text-sm md:text-xl lg:text-2xl xl:text-3xl md:leading-[33.60px] max-w-32 md:max-w-64">
+          <div className="text-white text-sm md:text-xl lg:text-2xl xl:text-3xl md:leading-[33.60px] max-w-32 md:max-w-64">
             4th-6th April 2025,
           </div>
-          <div class="text-[#ff97a1] text-xs md:text-lg lg:text-xl xl:text-2xl md:leading-7">
+          <div className="text-[#ff97a1] text-xs md:text-lg lg:text-xl xl:text-2xl md:leading-7">
             at IIITDM Jabalpur
             <br />
             for hackathon.

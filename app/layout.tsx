@@ -24,6 +24,9 @@ const gotham = localFont({
     {
       path: "../public/fonts/Gotham-Black.otf",
     },
+    {
+      path: "../public/fonts/Gotham-Light.otf",
+    }
   ],
   variable: "--font-gotham",
 });

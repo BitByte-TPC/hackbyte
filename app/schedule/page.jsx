@@ -14,7 +14,10 @@ const Schedule = () => {
                 <br />
                 the Event
               </div>
-              <p className="w-full lg:max-w-[85%] text-supporting-mediumGray text-sm md:text-lg">
+              <p
+                className="w-full lg:max-w-[85%] text-supporting-mediumGray
+                text-[1rem] md:text-[1.5rem] font-medium"
+              >
                 Join us for days packed with coding challenges and workshops.
                 Elevate your skills and collaborate with fellow hackers!
               </p>

@@ -237,7 +237,7 @@ const PartnersPage = () => {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="Sponsors">
-            <div className="w-full flex flex-col items-start gap-8 xl:gap-12">
+            <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
               <TitleSponsorCard />
               <div
                 className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
@@ -249,7 +249,7 @@ const PartnersPage = () => {
               </div>
             </div>
           </TabsContent>
-          <TabsContent value="In Kind Sponsors">
+          <TabsContent value="In Kind Sponsors" className="flex justify-center">
             <div
               className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
                 gap-8 lg:gap-[44px]"

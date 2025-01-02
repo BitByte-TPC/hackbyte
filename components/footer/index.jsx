@@ -18,7 +18,7 @@ const sidebarLinks = [
 
 const Footer = () => {
   return (
-    <div className="md:overflow-x-hidden bg-[#161616]">
+    <div className="md:overflow-hidden bg-[#161616]">
       <div className="flex justify-between items-start xl:mx-32 lg:mx-20 md:mx-16 mx-4">
         <Image
           src={Hackbyte3Logo}
@@ -36,12 +36,12 @@ const Footer = () => {
       </div>
 
       <div className="flex flex-col md:flex-row justify-between items-end md:items-center xl:px-32 lg:px-16 px-4 mt-8 bg-red-500 rotate-3">
-        <div className="flex flex-wrap lg:gap-4 gap-2 md:my-4 hover:items-start text-supporting-lightGray">
+        <div className="flex flex-wrap lg:gap-4 xl:gap-8 gap-2 md:my-4 hover:items-start text-supporting-lightGray">
           {sidebarLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="lg:text-base text-[14px] p-2 rounded-[2.5rem] font-bold leading-snug hover:text-[#4E2529]"
+              className="lg:text-base text-[14px] p-2 rounded-[2.5rem] font-bold leading-snug hover:-rotate-6 transition-all duration-300"
             >
               <span>{link.name}</span>
             </a>

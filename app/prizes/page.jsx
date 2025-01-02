@@ -46,14 +46,14 @@ export default function Prizes() {
                   monetary prizes will be split equally among the winning team
                   members.
                 </p>
-                <div className="rounded-full border bg-[#333333] border-[#D1CAC7] px-4 py-1">
+                {/* <div className="rounded-full border bg-[#333333] border-[#D1CAC7] px-4 py-1">
                   <p
                     className="w-full text-supporting-mediumGray
                   text-center text-[1rem] md:text-[1.5rem]"
                   >
                     Winners will also get MLH winner pins 🌟
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
             <Image

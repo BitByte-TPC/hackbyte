@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { StaticImageData } from "next/image";
-import stats from "@/public/HomePageLogo/stats.png";
+import stats from "@/public/HomePageLogo/redtape2.png";
 import HeroSection from "@/components/Herosection";
 import collborate from "@/public/HomePageLogo/collaborate.webp";
 import mentorship from "@/public/HomePageLogo/mentorship.webp";
@@ -96,11 +96,32 @@ export default function Home() {
   return (
     <div className="md:overflow-hidden">
       <HeroSection />
-      <Image
-        src={stats}
-        alt="Stats"
-        className=" md:w-full"
-      />
+      <div className="relative">
+        <Image src={stats} alt="Stats" className=" md:w-full" />
+        <div className="w-full flex justify-evenly rotate-[5deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+          <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">2437</div>
+            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Registrations</div>
+            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">2400+ registrations from across the country.</div>
+          </div>
+          <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">420</div>
+            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Registrations</div>
+            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">2400+ registrations from across the country.</div>
+          </div>
+          <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">100+</div>
+            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Volunteers</div>
+            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">To help you, get the best out of HackByte.</div>
+          </div>
+          <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">100+</div>
+            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Projects</div>
+            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">Innovative submissions from various domains.</div>
+          </div>
+        </div>
+      </div>
+
       <div className="text-center text-supporting-lightGray lg:text-5xl md:text-4xl text-2xl font-bold leading-[64px] md:py-40 py-20">
         Why Participate in Hackbyte 3.0?
       </div>
