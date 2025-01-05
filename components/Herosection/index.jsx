@@ -31,8 +31,8 @@ const HeroSection = () => {
           alt="Hackbyte 3.0"
           className="w-[140px] md:w-[250px] lg:w-[350px] xl:w-[500px] absolute top-[67%] md:top-[57%] left-1/2 transform -translate-x-1/2 -translate-y-1/2"
         />
-        <div className="max-w-[300px] absolute xl:top-40 xl:right-20 lg:top-32 lg:right-12 top-24 md:right-6 right-0 rotate-[-5deg]">
-          <div className="text-[#ff97a1] md:text-lg lg:text-xl text-xs font-light xl:text-2xl md:leading-7">
+        <div className="max-w-[300px] absolute xl:top-40 xl:right-20 lg:top-32 lg:right-12 top-24 md:right-6 right-0 rotate-[-5deg] font-bold">
+          <div className="text-[#ff97a1] md:text-lg lg:text-xl text-xs xl:text-2xl md:leading-7">
             Join us from
             <br />
           </div>

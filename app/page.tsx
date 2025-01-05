@@ -1,98 +1,92 @@
 import Image from "next/image";
-import { StaticImageData } from "next/image";
 import stats from "@/public/HomePageLogo/redtape2.png";
 import HeroSection from "@/components/Herosection";
-import collborate from "@/public/HomePageLogo/collaborate.webp";
-import mentorship from "@/public/HomePageLogo/mentorship.webp";
-import recruit from "@/public/HomePageLogo/recruit.webp";
-import medal from "@/public/HomePageLogo/medal.webp";
-import workshop from "@/public/HomePageLogo/workshop.png";
+import whyParticipate from "@/public/HomePageLogo/whyParticipate.webp";
+import g1 from "@/public/HomePageLogo/g1.svg";
+import g2 from "@/public/HomePageLogo/g2.svg";
+import g3 from "@/public/HomePageLogo/g3.svg";
+import g4 from "@/public/HomePageLogo/g4.svg";
+import g5 from "@/public/HomePageLogo/g5.svg";
+import g6 from "@/public/HomePageLogo/g6.svg";
+import g7 from "@/public/HomePageLogo/g7.svg";
+import g8 from "@/public/HomePageLogo/g8.svg";
+import g9 from "@/public/HomePageLogo/g9.svg";
 
-const WhycardDetails = [
-  {
-    id: 1,
-    title: "Collaborate and Skill Up",
-    description:
-      "Connect with people, form a team, learn new skills and develop amazing projects!",
-    bgColor: "from-[#1ddf7a] to-[#006e2f]",
-    icon: collborate,
-    iconWidth: "xl:w-[280px] lg:w-[250px]",
-    iconTop: "xl:top-[-75px] top-[-50px]",
-  },
-  {
-    id: 2,
-    title: "Mentorship Sessions",
-    description:
-      "Get mentorship and guidance from prominent technocrats of the industry.",
-    bgColor: "from-[#ffdf64] to-[#d49500]",
-    icon: mentorship,
-    iconWidth: "lg:w-[220px]",
-    iconTop: "top-[-125px]",
-  },
-  {
-    id: 3,
-    title: "Recruitment Offers",
-    description:
-      "Best performers will get recruitment offers from prestigious companies.",
-    bgColor: "from-[#ffb17b] to-[#d35500]",
-    icon: recruit,
-    iconWidth: "xl:w-[200px] lg:w-[180px] w-[160px]",
-    iconTop: "top-[-110px]",
-  },
-  {
-    id: 4,
-    title: "Exciting Prizes!",
-    description:
-      "Top 3 teams plus best projects of each domain will win prizes which will be disclosed soon!",
-    bgColor: "from-[#7d4ea2] to-[#39187a]",
-    icon: medal,
-    iconWidth: "xl:w-[180px] lg:w-[170px] w-[140px]",
-    iconTop: "lg:top-[-120px] top-[-110px]",
-  },
-];
+interface GuidlinesCard {
+  title: string;
+  description: string;
+  icon: string;
+}
 
 export default function Home() {
-  interface WhyCardProps {
-    title: string;
-    description: string;
-    bgColor: string;
-    icon: StaticImageData;
-    iconWidth: string;
-    iconTop: string;
-  }
-  const WhyCard = ({
-    title,
-    description,
-    bgColor,
-    icon,
-    iconWidth,
-    iconTop,
-  }: WhyCardProps) => {
+  const Guidelines = [
+    {
+      icon: g1,
+      title: "Register with Ease",
+      description:
+        "Pre-registration opens January 2025—no red tape, just one click away!",
+    },
+    {
+      icon: g2,
+      title: "No Prerequisites",
+      description:
+        "Anyone can join, no prerequisites—just bring your creativity!",
+    },
+    {
+      icon: g3,
+      title: "Form Team",
+      description:
+        "Go solo or team up with 2-4 members; join our Discord to find teammates and get the latest updates!",
+    },
+    {
+      icon: g4,
+      title: "Flexible Teams",
+      description:
+        "Add teammates later by submitting an individual application, and they’ll be added once approved.",
+    },
+    {
+      icon: g5,
+      title: "Zero Fees, Full Perks",
+      description: "No cost to participate, plus free meals and accommodation.",
+    },
+    {
+      icon: g6,
+      title: "Free Food",
+      description:
+        "Enjoy complimentary meals, water, and coffee throughout the event.",
+    },
+    {
+      icon: g7,
+      title: "In-person Event",
+      description: "HackByte 3.0 is an in-person / offline hackathon event.",
+    },
+    {
+      icon: g8,
+      title: "Hassle-Free Stay",
+      description:
+        "Shared hall accommodations with mattresses—simple and sorted.",
+    },
+    {
+      icon: g9,
+      title: "Venue",
+      description:
+        "IIITDM Jabalpur awaits—explore the campus and bring ideas to life.",
+    },
+  ];
+
+  function GuidelinesCard({ title, description, icon }: GuidlinesCard) {
     return (
-      <div
-        className={`xl:w-[600px] xl:h-[350px] lg:w-[400px] lg:h-[300px] md:w-[350px] md:h-[250px] mx-8 md:mx-0  px-8 xl:pt-[120px] lg:pt-24 pt-16 pb-8 bg-gradient-to-b ${bgColor} rounded-[32px] backdrop-blur-[100px] flex-col justify-start items-center gap-2.5 inline-flex relative`}
-      >
-        <div className="flex-col justify-start items-center gap-6 flex">
-          <div className="text-center text-white xl:text-4xl lg:text-2xl text-xl font-bold">
-            {title}
-          </div>
-          <div className="max-w-md text-center text-supporting-lightGray xl:text-2xl lg:text-xl md:text-lg font-medium">
+      <div className="card flex gap-4 items-start ">
+        <Image src={icon} alt="Icon" className="xl:w-20 md:w-16 pt-1" />
+        <div className="flex flex-col justify-center gap-2">
+          <div className="xl:text-3xl lg:text-2xl text-xl text-white font-bold">{title}</div>
+          <div className="text-sm lg:text-base xl:text-lg font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
             {description}
           </div>
         </div>
-        <div
-          className={`absolute ${iconTop}`}
-          style={{
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <Image src={icon} alt="Icon" className={iconWidth} />
-        </div>
       </div>
     );
-  };
-
+  }
   return (
     <div className="md:overflow-hidden">
       <HeroSection />
@@ -100,66 +94,78 @@ export default function Home() {
         <Image src={stats} alt="Stats" className=" md:w-full" />
         <div className="w-full flex justify-evenly rotate-[5deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">2437</div>
-            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Registrations</div>
-            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">2400+ registrations from across the country.</div>
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">
+              2437
+            </div>
+            <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
+              Registrations
+            </div>
+            <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
+              2400+ registrations from across the country.
+            </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">420</div>
-            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Registrations</div>
-            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">2400+ registrations from across the country.</div>
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">
+              420
+            </div>
+            <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
+              Registrations
+            </div>
+            <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
+              2400+ registrations from across the country.
+            </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">100+</div>
-            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Volunteers</div>
-            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">To help you, get the best out of HackByte.</div>
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">
+              100+
+            </div>
+            <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
+              Volunteers
+            </div>
+            <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
+              To help you, get the best out of HackByte.
+            </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">100+</div>
-            <div className="text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">Projects</div>
-            <div className="text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">Innovative submissions from various domains.</div>
+            <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">
+              100+
+            </div>
+            <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
+              Projects
+            </div>
+            <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
+              Innovative submissions from various domains.
+            </div>
           </div>
         </div>
       </div>
 
-      <div className="text-center text-supporting-lightGray lg:text-5xl md:text-4xl text-2xl font-bold leading-[64px] md:py-40 py-20">
-        Why Participate in Hackbyte 3.0?
-      </div>
-      <div className="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-2 gap-y-40 justify-items-center">
-        {WhycardDetails.map((card) => (
-          <WhyCard
-            key={card.id}
-            title={card.title}
-            description={card.description}
-            bgColor={card.bgColor}
-            icon={card.icon}
-            iconWidth={card.iconWidth}
-            iconTop={card.iconTop}
-          />
-        ))}
-      </div>
-      <div className="xl:w-[1250px] lg:w-[900px] md:w-[640px] xl:mx-32 md:mx-16 mx-8 xl:mt-60 my-20 mt-40 lg:pt-[120px] pt-[80px] xl:pb-32 pb-8 bg-gradient-to-b from-[#31a3f5] to-[#0027f5] rounded-[32px] backdrop-blur-[100px] flex-col justify-start items-center gap-2.5 flex relative">
-        <div
-          className="absolute xl:-top-[140px] lg:-top-[100px] -top-[80px]"
-          style={{
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <Image
-            src={workshop}
-            alt="Icon"
-            className="xl:w-[250px] lg:w-48 w-40"
-          />
+      {/* Why Participate */}
+      <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-20">
+        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
+          Why Participate in Hackbyte 3.0?
         </div>
-        <div className="flex flex-col items-center gap-6">
-          <div className="text-center text-white xl:text-4xl md:text-3xl text-xl font-bold">
-            Engaging Workshops
-          </div>
-          <div className=" text-center text-supporting-lightGray xl:text-3xl lg:text-2xl md:text-xl px-2 font-medium">
-            Technical workshops and events like no-light event will keep the
-            participants engaged throughout.
-          </div>
+        <Image
+          src={whyParticipate}
+          alt="Why Participate"
+          className="xl:w-[800px] lg:w-[700px] md:w-[500px] w-[300px]"
+        />
+      </div>
+
+      {/* Guidelines */}
+      <div className="flex flex-col items-center gap-4 md:gap-16">
+        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
+          Guidelines for Hackbyte 3.0
+        </div>
+        <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4">
+          {Guidelines.map((item, index) => (
+            <GuidelinesCard
+              key={index}
+              title={item.title}
+              description={item.description}
+              icon={item.icon}
+            />
+          ))}
         </div>
       </div>
     </div>

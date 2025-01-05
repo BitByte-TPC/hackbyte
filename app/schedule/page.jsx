@@ -9,14 +9,14 @@ const Schedule = () => {
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between items-center md:items-start">
             <div className="flex flex-col items-start gap-2">
-              <div className="text-supporting-lightGray text-[2rem] lg:text-[4rem] xl:text-[6rem] leading-tight">
+              <div className="text-supporting-lightGray text-[2rem] md:text-[3rem] lg:text-[4rem] xl:text-[6rem] leading-tight font-black">
                 Run of show for
                 <br />
                 the Event
               </div>
               <p
                 className="w-full lg:max-w-[85%] text-supporting-mediumGray
-                text-[1rem] md:text-[1.5rem] font-medium"
+                text-[1rem] lg:text-[1.5rem] font-medium"
               >
                 Join us for days packed with coding challenges and workshops.
                 Elevate your skills and collaborate with fellow hackers!

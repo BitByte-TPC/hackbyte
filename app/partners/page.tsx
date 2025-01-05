@@ -176,7 +176,7 @@ const TitleSponsorCard: React.FC = () => {
             Title Sponsor
           </p>
           <div className="w-full flex justify-between items-center">
-            <p className="font-medium text-white text-[2rem] xl:text-[4rem]">
+            <p className="font-black text-white text-[2rem] xl:text-[4rem]">
               Logitech
             </p>
           </div>
@@ -200,7 +200,7 @@ const PartnersPage = () => {
       >
         <div className="flex md:gap-[40px]">
           <div>
-            <h1 className="text-white font-bold text-[28px] md:text-5xl lg:text-7xl xl:text-[80px] xl:leading-[6rem] mb-5">
+            <h1 className="text-white font-black text-[28px] md:text-5xl lg:text-7xl xl:text-[80px] xl:leading-[6rem] mb-5">
               Past Partners
               <br /> who Supported
             </h1>

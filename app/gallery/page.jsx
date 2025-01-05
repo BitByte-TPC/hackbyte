@@ -46,7 +46,7 @@ const Gallery = () => {
 
         <div className="flex flex-col justify-center items-center my-4 xl:my-8">
           <div
-            className="text-[#FAF8ED] text-center font-medium text-[2.375rem]
+            className="text-[#FAF8ED] text-center font-bold text-[2.375rem]
               leading-[1.2] lg:leading-[1.1] lg:text-[3rem]"
           >
             COMMITTEE <span>CREW</span>

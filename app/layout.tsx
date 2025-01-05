@@ -13,19 +13,24 @@ export const metadata: Metadata = {
 const gotham = localFont({
   src: [
     {
-      path: "../public/fonts/Gotham-Book.otf",
-    },
-    {
       path: "../public/fonts/Gotham-Bold.otf",
+      weight: "bold",
     },
     {
       path: "../public/fonts/Gotham-Medium.otf",
+      weight: "500",
     },
     {
       path: "../public/fonts/Gotham-Black.otf",
+      weight: "900",
     },
     {
       path: "../public/fonts/Gotham-Light.otf",
+      weight: "300",
+    },
+    {
+      path: "../public/fonts/Gotham-Book.otf",
+      weight: "normal",
     }
   ],
   variable: "--font-gotham",

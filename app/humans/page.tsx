@@ -35,7 +35,7 @@ const Humans = () => {
       >
         <div className="flex md:gap-[40px]">
           <div>
-            <h1 className="text-white font-bold text-[28px] xl:text-[80px] xl:leading-[6rem] mb-5">
+            <h1 className="text-white font-black text-[28px] xl:text-[80px] xl:leading-[6rem] mb-5">
               Meet the Humans
               <br /> of HackByte
             </h1>

@@ -29,7 +29,7 @@ const Footer = () => {
           <div className="text-right text-supporting-lightGray xl:text-5xl lg:text-4xl md:text-3xl text-xl font-bold">
             Hack the Protocol
           </div>
-          <div className="text-right text-supporting-darkGray xl:text-4xl lg:text-3xl md:text-2xl text-lg font-normal">
+          <div className="text-right text-supporting-mediumGray xl:text-4xl lg:text-3xl md:text-2xl text-lg font-normal">
             Break the red tape
           </div>
         </div>
@@ -70,7 +70,7 @@ const Footer = () => {
           />
         </div>
       </div>
-      <div className="text-supporting-darkGray font-medium xl:text-lg md:text-base text-sm py-2 lg:pl-32 md:pl-16 pl-4">
+      <div className="text-supporting-darkGray font-bold xl:text-lg md:text-base text-sm py-2 lg:pl-32 md:pl-16 pl-4">
         © 2025 Hackbyte, All rights reserved
       </div>
     </div>

@@ -58,7 +58,7 @@ export default function FAQSection() {
         <div className="grid md:grid-cols-[2fr,1fr] gap-8 items-center">
           <div className="space-y-6 animate-in fade-in duration-500">
             <div className="flex">
-              <h1 className="text-[42px] md:text-6xl lg:text-8xl font-bold tracking-tighter leading-tight max-w-64 md:max-w-3xl">
+              <h1 className="text-[42px] md:text-6xl lg:text-8xl font-black leading-tight max-w-64 md:max-w-3xl">
                 Everything you need to know!
               </h1>
               <div className="w-32 h-32 md:hidden relative mx-auto">
@@ -109,7 +109,7 @@ export default function FAQSection() {
                 value={`item-${index}`}
                 className="border-b border-gray-800"
               >
-                <AccordionTrigger className="text-lg md:text-xl xl:text-2xl text-supporting-mediumGray hover:text-white transition-colors text-left pr-4">
+                <AccordionTrigger className="text-lg md:text-xl xl:text-2xl text-supporting-mediumGray hover:text-white transition-colors text-left pr-4 font-bold">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-lg xl:text-xl text-supporting-mediumGray">

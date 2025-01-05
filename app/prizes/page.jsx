@@ -33,14 +33,14 @@ export default function Prizes() {
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between">
             <div className="flex flex-col items-start gap-2">
-              <p className="text-supporting-lightGray text-[3rem] md:text-[5rem] xl:text-[6rem] leading-tight font-black">
+              <p className="text-supporting-lightGray text-[3rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] leading-tight font-black">
                 Prizes for the <br />
                 Winners
               </p>
               <div className="flex flex-col items-start gap-3 md:gap-4">
                 <p
                   className="w-full lg:max-w-[85%] text-supporting-mediumGray
-                text-[1rem] md:text-[1.5rem] font-medium"
+                text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] font-medium"
                 >
                   Collaborate and innovate to build something awesome ! All
                   monetary prizes will be split equally among the winning team
@@ -59,7 +59,7 @@ export default function Prizes() {
             <Image
               src={medal}
               alt="Medal"
-              className="w-[300px] h-[300px] hidden md:block"
+              className="w-[300px] h-[300px] md:w-[240px] md:h-[240px] lg:w-[300px] lg:h-[300px] hidden md:block"
             />
           </div>
 
@@ -131,8 +131,8 @@ export default function Prizes() {
 
         {/* Sponsor Tracks Section */}
         <div className="w-full flex flex-col pt-24">
-          <p className="text-supporting-lightGray text-center text-[2.25rem] md:text-[5rem]">
-            Sponsor Tracks
+          <p className="text-supporting-lightGray text-center text-[2.25rem] md:text-[5rem] font-black">
+            Sponsored Tracks
           </p>
           <YetToBeDisclosed />
         </div>

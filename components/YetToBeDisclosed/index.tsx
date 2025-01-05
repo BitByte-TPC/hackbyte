@@ -36,8 +36,8 @@ const RedirectingCard = ({ title, link, image }: RedirectCardsProps) => {
         className="bg-[#333333] rounded-[22px] flex flex-col gap-2 items-center justify-center
                       p-[16px] shadow-lg"
       >
-        <Image src={image} alt={title} className="md:w-auto w-48 " />
-        <h3 className="text-white lg:text-[40px]">{title}</h3>
+        <Image src={image} alt={title} className="w-48 " />
+        <div className="text-white lg:text-[40px] font-bold">{title}</div>
       </div>
     </a>
   );
@@ -49,14 +49,14 @@ const YetToBeDisclosed: React.FC = () => {
       className="flex flex-col gap-4 items-center justify-center
                 rounded-[40px] py-16 custom-border mt-4"
     >
-      <div className="text-white lg:text-[64px] text-2xl font-medium page-title">
+      <div className="text-white lg:text-[64px] text-2xl page-title font-black">
         Yet to be disclosed
       </div>
-      <div className="text-supporting-mediumGray text-base md:text-lg lg:text-[24px]">
+      <div className="text-supporting-mediumGray text-base md:text-lg lg:text-[24px] font-medium">
         These details are not yet disclosed, so stay sharp.
       </div>
-      <div className="text-white lg:text-[32px] text-xl">Meanwhile,</div>
-      <div className="text-supporting-mediumGray lg:text-[24px] lg:mb-[40px] mb-4">
+      <div className="text-white lg:text-[32px] text-xl font-bold">Meanwhile,</div>
+      <div className="text-supporting-mediumGray lg:text-[24px] lg:mb-[40px] mb-4 font-medium">
         why don&apos;t you check these out!
       </div>
       <div className="flex md:flex-row flex-col gap-4 lg:gap-[44px]">

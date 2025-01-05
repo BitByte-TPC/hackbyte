@@ -11,7 +11,7 @@ export default function ContactSection() {
         <div className="flex items-start justify-between pb-8 md:pb-16">
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <h1 className="text-[42px] md:text-6xl lg:text-8xl font-bold tracking-tighter leading-tight">
+              <h1 className="text-[42px] md:text-6xl lg:text-8xl font-black leading-tight">
                 How can we
                 <br />
                 Help you?
@@ -19,26 +19,26 @@ export default function ContactSection() {
               <div className="block md:hidden">
                 <Image
                   src={phoneImg}
-                  alt=""
+                  alt="phone"
                   height={100}
                   width={100}
                 />
               </div>
             </div>
 
-            <p className="text-supporting-mediumGray text-xl font-medium max-w-lg md:max-w-xl lg:max-w-2xl">
+            <p className="text-supporting-mediumGray text-xl font-medium max-w-lg md:max-w-xl lg:max-w-2xl xl:maw-w-3xl">
               Hacker Experience is what we prioritize! Have questions, need
               assistance, or just want to connect? Feel free to reach out!
             </p>
           </div>
           <div className="hidden md:block mx-auto">
-            <Image src={phoneImg} alt=""  className="md:w-[168px] lg:w-[200px] xl:w-[220px]" />
+            <Image src={phoneImg} alt="phone"  className="md:w-[168px] lg:w-[200px] xl:w-[220px]" />
           </div>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
           <div className="space-y-2">
-            <h2 className="text-3xl md:text-4xl font-semibold">Call Us</h2>
+            <h2 className="text-3xl md:text-4xl font-black">Call Us</h2>
             <div className="flex flex-col md:flex-row gap-8 text-supporting-mediumGray font-medium">
               <div>
                 <p>+91 98692 61132</p>
@@ -56,7 +56,7 @@ export default function ContactSection() {
           </div>
 
           <div className="space-y-2">
-            <h2 className="text-3xl md:text-4xl font-semibold">Mail Us</h2>
+            <h2 className="text-3xl md:text-4xl font-black">Mail Us</h2>
             <div className="space-y-1 flex flex-col text-supporting-mediumGray font-medium">
               <Link target="_blank" href={"mailto:thepeople@iiitdmj.ac.in"}>
                 theprogclub@iiitdmj.ac.in
@@ -68,7 +68,7 @@ export default function ContactSection() {
           </div>
 
           <div className="space-y-2 col-span-2 md:col-span-1">
-            <h2 className="text-3xl md:text-4xl font-semibold">Address</h2>
+            <h2 className="text-3xl md:text-4xl font-black">Address</h2>
             <p className="text-base text-supporting-mediumGray font-medium">
               IIITDM Jabalpur, Near Dumna Airport,
               <br /> Jabalpur, Madhya Pradesh 482005
@@ -77,7 +77,7 @@ export default function ContactSection() {
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl font-bold">Reaching IIITDM Jabalpur</h2>
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-black">Reaching IIITDM Jabalpur</h2>
           <div className="aspect-video w-full rounded-3xl overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.4774721298!2d80.02231931544636!3d23.176386884867444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1a0fb6a97d%3A0x44020f94f795d69f!2sIIITDM%20Jabalpur!5e0!3m2!1sen!2sin!4v1629789876543!5m2!1sen!2sin"
@@ -94,7 +94,7 @@ export default function ContactSection() {
             <Card className="bg-transparent border-none p-4 space-y-4">
               <div className="flex md:items-start items-center gap-6 md:flex-col flex-row">
                 <Train className="size-12 text-red-500 bg-red-500/30 p-2 rounded-lg" />
-                <h3 className="font-semibold text-2xl text-primary-white">
+                <h3 className="font-black text-2xl text-primary-white">
                   By Train
                 </h3>
               </div>
@@ -111,7 +111,7 @@ export default function ContactSection() {
             <Card className="bg-transparent border-none p-4 space-y-4">
               <div className="flex md:items-start items-center gap-6 md:flex-col flex-row">
                 <Plane className="size-12 text-red-500 bg-red-500/30 p-2 rounded-lg" />
-                <h3 className="font-semibold text-2xl text-primary-white">
+                <h3 className="font-black text-2xl text-primary-white">
                   By Flight
                 </h3>
               </div>
@@ -128,7 +128,7 @@ export default function ContactSection() {
             <Card className="bg-transparent border-none p-4 space-y-4">
               <div className="flex md:items-start items-center gap-6 md:flex-col flex-row">
                 <Bus className="size-12 text-red-500 bg-red-500/30 p-2 rounded-lg" />
-                <h3 className="font-semibold text-2xl text-primary-white">
+                <h3 className="font-black text-2xl text-primary-white">
                   By Bus
                 </h3>
               </div>

@@ -56,7 +56,7 @@ const HumansCard: React.FC<HumansCardProps> = ({
         />
 
         <div className="w-full flex flex-col gap-2 rounded-b-[8px] p-1">
-          <p className="sm:text-xl text-lg text-white">{name}</p>
+          <p className="sm:text-xl text-lg text-white font-bold">{name}</p>
           {role && (
             <p className="font-bold text-supporting-mediumGray text-md sm:text-md leading-9">
               {role}
