@@ -1,6 +1,7 @@
 import Image from "next/image";
 import stats from "@/public/HomePageLogo/redtape2.png";
 import HeroSection from "@/components/Herosection";
+import Newsletter from "@/components/Newsletter";
 import whyParticipate from "@/public/HomePageLogo/whyParticipate.webp";
 import g1 from "@/public/HomePageLogo/g1.svg";
 import g2 from "@/public/HomePageLogo/g2.svg";
@@ -79,7 +80,9 @@ export default function Home() {
       <div className="card flex gap-4 items-start ">
         <Image src={icon} alt="Icon" className="xl:w-20 md:w-16 pt-1" />
         <div className="flex flex-col justify-center gap-2">
-          <div className="xl:text-3xl lg:text-2xl text-xl text-white font-bold">{title}</div>
+          <div className="xl:text-3xl lg:text-2xl text-xl text-white font-bold">
+            {title}
+          </div>
           <div className="text-sm lg:text-base xl:text-lg font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
             {description}
           </div>
@@ -167,6 +170,13 @@ export default function Home() {
             />
           ))}
         </div>
+      </div>
+
+      <div className="flex flex-col items-center gap-4 md:gap-16 pt-4 lg:pt-8 xl:pb-12 pb-8 md:pb-16">
+        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px] pb-4 md:pb-8 lg:pb-16">
+          Join our Newsletter
+        </div>
+        <Newsletter />
       </div>
     </div>
   );

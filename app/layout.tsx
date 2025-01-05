@@ -3,6 +3,8 @@ import "./globals.css";
 // import Header from "@/components/MobileSidebar";
 import { Sidebar } from "@/components/sidebar";
 import Footer from "@/components/footer";
+import { Toaster } from "@/components/ui/toaster";
+
 import localFont from "next/font/local";
 
 export const metadata: Metadata = {
@@ -48,6 +50,7 @@ export default function RootLayout({
         <Sidebar />
         {children}
         <Footer />
+        <Toaster />
       </body>
     </html>
   );
