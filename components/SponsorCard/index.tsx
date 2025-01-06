@@ -58,7 +58,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({
         viewport={{ once: true }}
       >
         <a href={site} target="_blank" rel="noreferrer" key={index}>
-          <div className="w-full text-white hover:scale-105 duration-300">
+          <div className="w-full text-white hover:scale-105 duration-300 max-w-[400px]">
             <Image
               src={sponsorimgsrc}
               className="w-full h-[181px] xl:h-[216px] rounded-t-[20px] outline-none"

@@ -55,14 +55,14 @@ const HumansCard: React.FC<HumansCardProps> = ({
           alt="Profile Picture"
         />
 
-        <div className="w-full flex flex-col gap-2 rounded-b-[8px] p-1">
+        <div className="w-full flex flex-col gap-2 rounded-b-[8px]">
           <p className="sm:text-xl text-lg text-white font-bold">{name}</p>
           {role && (
             <p className="font-bold text-supporting-mediumGray text-md sm:text-md leading-9">
               {role}
             </p>
           )}
-          <div className="flex gap-6 py-2">
+          <div className="flex gap-6">
             <SocialMediaIcon href={linkedin} Icon={LinkedInLogoIcon} />
             <SocialMediaIcon href={twitter} Icon={TwitterLogoIcon} />
             {name !== "Aditya Raj" ? (

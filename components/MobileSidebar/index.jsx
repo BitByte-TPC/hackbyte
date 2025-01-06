@@ -73,7 +73,7 @@ const MobileSidebar = () => {
     <>
       <div
         ref={scope}
-        className="backdrop-blur-xl bg-[#222222]   h-[46px] w-[46px] top-14 left-3 fixed rounded-[32px] z-10"
+        className="backdrop-blur-xl bg-[#222222] h-[48px] w-[48px] top-5 right-4 fixed rounded-[32px] z-10"
       >
         {open ? (
           <Image

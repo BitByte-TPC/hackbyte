@@ -29,7 +29,7 @@ export const metadata = {
 export default function Prizes() {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex flex-col min-h-screen px-4 md:px-10 lg:px-20 2xl:px-32 pt-4 md:pt-16 pb-40">
+      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-20 min-[1540px]:px-32 pt-4 md:pt-16 pb-40">
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between">
             <div className="flex flex-col items-start gap-2">
@@ -39,7 +39,7 @@ export default function Prizes() {
               </p>
               <div className="flex flex-col items-start gap-3 md:gap-4">
                 <p
-                  className="w-full lg:max-w-[85%] text-supporting-mediumGray
+                  className="w-full xl:max-w-[85%] text-supporting-mediumGray
                 text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] font-medium"
                 >
                   Collaborate and innovate to build something awesome ! All
@@ -59,7 +59,7 @@ export default function Prizes() {
             <Image
               src={medal}
               alt="Medal"
-              className="w-[300px] h-[300px] md:w-[240px] md:h-[240px] lg:w-[300px] lg:h-[300px] hidden md:block"
+              className="w-[300px] h-[300px] md:w-[200px] md:h-[200px] lg:w-[300px] lg:h-[300px] hidden md:block"
             />
           </div>
 
@@ -97,11 +97,11 @@ export default function Prizes() {
               >
                 <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
-                  <p className="text-[#fff] text-[2rem] font-normal">
+                  <p className="text-[#fff] text-[2rem] font-bold">
                     Best Girls Team
                   </p>
                   <p
-                    className="text-[#FFA5AE] font-semibold text-[1.25rem] 
+                    className="text-[#FFA5AE] font-normal text-[1.25rem] 
                       text-center md:text-left"
                   >
                     Best performing All-Girls Team at HackByte
@@ -114,11 +114,11 @@ export default function Prizes() {
               >
                 <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
-                  <p className="text-[#fff] text-[2rem] font-normal">
+                  <p className="text-[#fff] text-[2rem] font-bold">
                     First Time Hacking?
                   </p>
                   <p
-                    className="text-[#FFA5AE] font-medium text-[1.25rem] 
+                    className="text-[#FFA5AE] font-normal text-[1.25rem] 
                       text-center md:text-left"
                   >
                     For freshmen and novices
@@ -131,7 +131,7 @@ export default function Prizes() {
 
         {/* Sponsor Tracks Section */}
         <div className="w-full flex flex-col pt-24">
-          <p className="text-supporting-lightGray text-center text-[2.25rem] md:text-[5rem] font-black">
+          <p className="text-supporting-lightGray text-center text-[2.25rem] md:text-[3.5rem] lg:text-[5rem] font-black">
             Sponsored Tracks
           </p>
           <YetToBeDisclosed />

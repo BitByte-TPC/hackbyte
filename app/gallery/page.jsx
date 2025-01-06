@@ -25,21 +25,22 @@ export const metadata = {
 const Gallery = () => {
   return (
     <>
-      <div className="flex flex-col min-h-screen p-4 px-2 md:px-8 lg:px-16 lg:pb-40 md:pb-28 pb-12">
-        <div className="flex justify-between items-center gap-10 ">
-          <div className="flex flex-col justify-center items-start gap-5 ">
-            <div className=" text-white xl:text-[7rem] lg:text-[4rem] text-[56px] font-black xl:leading-[140px]">
+      <div className="flex flex-col min-h-screen p-4 px-2 md:px-16 lg:px-24 xl:px-28 lg:pb-40 md:pb-28 pb-12">
+        <div className="flex flex-col items-start gap-5 ">
+          <div className="flex justify-between items-center w-full">
+            <div className=" text-white xl:text-[6rem] lg:text-[4.2rem] text-[56px] font-black xl:leading-[140px]">
             HackByte 2.0 <br/>Highlights
             </div>
-            <div className=" max-w-[550px] xl:max-w-[770px] text-supporting-mediumGray xl:text-2xl text-lg font-medium leading-[33.60px]">
-            Explore our gallery of memorable moments from HackByte 2.0 event at IIITDM Jabalpur.
-            </div>
-          </div>
             <Image
-              className="xl:w-[420px] lg:w-80 md:w-64 hidden md:block"
+              className="xl:w-[420px] lg:w-80 md:w-56 hidden md:block"
               src={HB2Logo}
               alt="HackByte 2.0 Logo"
             />
+            
+          </div>
+          <div className=" max-w-[600px] lg:max-w-[650px] xl:max-w-[800px] text-supporting-mediumGray xl:text-2xl lg:text-xl text-lg font-medium leading-[33.60px]">
+            Explore our gallery of memorable moments from HackByte 2.0 event at IIITDM Jabalpur.
+            </div>
         </div>
 
         <GridImage />

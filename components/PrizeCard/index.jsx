@@ -47,13 +47,13 @@ const PrizeCard = ({ amount, category, default_bg, hover_bg, cupsrc }) => {
         >
             <Image src={cupsrc} alt="" width={96} height={96} />
           <p
-            className="text-white font-[500] text-[3rem] leading-[4rem] 
+            className="text-white font-black text-[3rem] leading-[4rem] 
                 md:text-[4rem] md:leading-[6rem]"
           >
             {amount}
           </p>
           <p
-            className="text-[rgba(255,255,255,0.66)] font-[500]
+            className="text-[rgba(255,255,255,0.66)] font-normal
                 text-[1.5rem] md:text-[2rem]"
           >
             {category}

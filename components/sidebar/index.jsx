@@ -11,14 +11,14 @@ import {
 } from "lucide-react";
 import { useState, useEffect } from "react";
 const sidebarLinks = [
-  { name: "Home", icon: <House />, href: "/" },
-  { name: "Gallery", icon: <Gallery />, href: "/gallery" },
-  { name: "Partners", icon: <Handshake />, href: "/partners" },
-  { name: "Prizes", icon: <Trophy />, href: "/prizes" },
-  { name: "Schedule", icon: <Calendar />, href: "/schedule" },
-  { name: "Humans", icon: <Users />, href: "/humans" },
-  { name: "FAQs", icon: <Info />, href: "/faq" },
-  { name: "Contact", icon: <Phone />, href: "/contact" },
+  { name: "Home", icon: <House className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/" },
+  { name: "Gallery", icon: <Gallery className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/gallery" },
+  { name: "Partners", icon: <Handshake className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/partners" },
+  { name: "Prizes", icon: <Trophy className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/prizes" },
+  { name: "Schedule", icon: <Calendar className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/schedule" },
+  { name: "Humans", icon: <Users className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/humans" },
+  { name: "FAQs", icon: <Info className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/faq" },
+  { name: "Contact", icon: <Phone className="w-auto min-[1540px]:w-64 min-[1540px]:h-64" />, href: "/contact" },
 ];
 
 export const Sidebar = () => {
@@ -32,7 +32,7 @@ export const Sidebar = () => {
 
   return (
     <div
-      className="fixed left-4 top-[50%] translate-y-[-50%] z-50 group flex flex-col lg:py-2 transition-all duration-300 hover:w-52 lg:w-16"
+      className="fixed md:left-2 lg:left-4 top-[50%] translate-y-[-50%] z-50 group flex flex-col lg:py-2 transition-all duration-300 hover:w-52 lg:w-16"
       style={{
         borderRadius: "2rem",
         background: "rgba(34, 34, 34, 0.50)",
@@ -40,7 +40,7 @@ export const Sidebar = () => {
         backdropFilter: "blur(20px)",
       }}
     >
-      <div className="flex flex-col gap-4 my-2 lg:my-4 hover:items-start pl-1 lg:pl-2 text-supporting-darkGray">
+      <div className="flex flex-col gap-4 xl:gap-4 min-[1540px]:gap-6 my-2 lg:my-4 hover:items-start pl-1 lg:pl-2 text-supporting-darkGray">
         {sidebarLinks.map((link) => (
           <a
             key={link.name}

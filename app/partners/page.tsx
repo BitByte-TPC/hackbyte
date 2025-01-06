@@ -157,7 +157,7 @@ const TitleSponsorCard: React.FC = () => {
       href="https://www.logitech.com/en-in/mx/master-series.html"
       target="_blank"
       rel="noreferrer"
-      className="w-full xl:max-w-[95%] 2xl:max-w-[90%] flex justify-center"
+      className="w-full xl:max-w-[95%] min-[1540px]:max-w-[90%] flex justify-center"
     >
       <div className="flex flex-col md:flex-row">
         <Image
@@ -196,31 +196,31 @@ const PartnersPage = () => {
     <>
       <div
         className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
-          lg:px-16 lg:pb-[92px] pt-[48px] px-4"
+          lg:px-16 xl:px-28 lg:pb-[92px] pt-[48px] px-4"
       >
-        <div className="flex md:gap-[40px]">
-          <div>
-            <h1 className="text-white font-black text-[28px] md:text-5xl lg:text-7xl xl:text-[80px] xl:leading-[6rem] mb-5">
+        <div className="flex flex-col gap-5 md:pl-16 lg:pl-0">
+          <div className="flex justify-between items-center">
+            <div className="text-white font-black text-[28px] md:text-5xl lg:text-[4.2rem] xl:text-[80px] xl:leading-[6rem]">
               Past Partners
               <br /> who Supported
-            </h1>
-            <p className="text-supporting-mediumGray font-medium md:text-xl lg:text-2xl text-sm">
-              We are proud to collaborate with visionary organizations that
-              share our passion for innovation and technology.
-            </p>
+            </div>
+            <Image
+              src={hackbyte2Logo}
+              className="xl:w-auto lg:w-72 md:w-60 w-32"
+              alt="HackByte 2.0 Logo"
+            />
           </div>
-          <Image
-            src={hackbyte2Logo}
-            className="mt-[-80px] xl:w-auto lg:w-72 md:w-60 w-32"
-            alt="HackByte 2.0 Logo"
-          />
+          <p className="text-supporting-mediumGray font-medium md:text-xl lg:text-2xl text-sm max-w-[600px] lg:max-w-[700px] xl:max-w-[800px]">
+            We are proud to collaborate with visionary organizations that share
+            our passion for innovation and technology.
+          </p>
         </div>
 
         <Tabs
           defaultValue="Sponsors"
           className="flex flex-col justify-center mt-4 md:mt-12"
         >
-          <TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start ">
+          <TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start md:px-16 lg:px-0">
             <TabsTrigger
               value="Sponsors"
               className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
@@ -240,8 +240,8 @@ const PartnersPage = () => {
             <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
               <TitleSponsorCard />
               <div
-                className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
-                gap-8 lg:gap-[44px]"
+                className="w-full xl:max-w-[95%] min-[1540px]:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+                gap-8 lg:gap-[44px] md:px-8 lg:px-0"
               >
                 {normalSponsorsData.map((sponsor, index) => {
                   return <SponsorCard key={index} index={index} {...sponsor} />;
@@ -251,7 +251,7 @@ const PartnersPage = () => {
           </TabsContent>
           <TabsContent value="In Kind Sponsors" className="flex justify-center">
             <div
-              className="w-full xl:max-w-[95%] 2xl:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+              className="w-full xl:max-w-[95%] min-[1540px]:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
                 gap-8 lg:gap-[44px]"
             >
               {inKindSponsorsData.map((sponsor, index) => {

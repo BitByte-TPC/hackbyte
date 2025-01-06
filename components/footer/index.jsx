@@ -19,35 +19,35 @@ const sidebarLinks = [
 const Footer = () => {
   return (
     <div className="md:overflow-hidden bg-[#161616]">
-      <div className="flex justify-between items-start xl:mx-32 lg:mx-20 md:mx-16 mx-4">
+      <div className="flex flex-col-reverse md:flex-row md:justify-between items-start md:items-start xl:mx-32 lg:mx-20 md:mx-12 mx-4 gap-6 md:gap-0">
         <Image
           src={Hackbyte3Logo}
           alt="TPCLogo"
-          className="xl:w-[30rem] lg:w-[24rem] md:w-[20rem] w-[10rem]"
+          className="min-[1540px]:w-[38rem] xl:w-[30rem] lg:w-[24rem] w-[20rem] pt-4"
         />
-        <div className="flex flex-col gap-2 justify-start items-end pt-16">
-          <div className="text-right text-supporting-lightGray xl:text-5xl lg:text-4xl md:text-3xl text-xl font-bold">
+        <div className="flex flex-col gap-2 justify-start items-start md:items-end pt-8 md:pt-16">
+          <div className="text-right text-supporting-lightGray min-[1540px]:text-6xl xl:text-5xl text-4xl font-bold">
             Hack the Protocol
           </div>
-          <div className="text-right text-supporting-mediumGray xl:text-4xl lg:text-3xl md:text-2xl text-lg font-normal">
+          <div className="text-right text-supporting-mediumGray min-[1540px]:text-5xl xl:text-4xl text-3xl font-normal">
             Break the red tape
           </div>
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-end md:items-center xl:px-32 lg:px-16 px-4 mt-8 bg-red-500 rotate-3">
-        <div className="flex flex-wrap lg:gap-4 xl:gap-8 gap-2 md:my-4 hover:items-start text-supporting-lightGray">
+      <div className="flex flex-col md:flex-row justify-between items-end md:items-center xl:px-32 lg:px-16 px-2 mt-8 bg-red-500 rotate-3">
+        <div className="flex flex-wrap lg:gap-4 min-[1540px]:gap-12 xl:gap-8 gap-1 md:my-4 hover:items-start text-supporting-lightGray">
           {sidebarLinks.map((link) => (
             <a
               key={link.name}
               href={link.href}
-              className="lg:text-base text-[14px] p-2 rounded-[2.5rem] font-bold leading-snug hover:-rotate-6 transition-all duration-300"
+              className="min-[1540px]:text-lg lg:text-base text-[14px] p-2 rounded-[2.5rem] font-bold leading-snug hover:-rotate-6 transition-all duration-300"
             >
               <span>{link.name}</span>
             </a>
           ))}
         </div>
-        <div className="flex md:gap-4 gap-2 items-center md:static absolute top-12 right-4">
+        <div className="flex md:gap-4 gap-2 min-[1540px]:gap-8 items-center md:static absolute top-12 right-4">
           <Image
             src={linkedIn}
             alt="linkedIn"

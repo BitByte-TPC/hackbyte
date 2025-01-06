@@ -4,8 +4,8 @@ import YetToBeDisclosed from "@/components/YetToBeDisclosed";
 import Image from "next/image";
 
 import humansSticker from "@/public/humansPage/humansSticker.svg";
-import { MentorsData } from "@/data/mentorsData";
-import { EldersData } from "@/data/eldersData";
+import { OrganizersData } from "@/data/organizersData";
+import { FamilyData } from "@/data/familyData";
 
 export const metadata = {
   title: "Humans | HackByte",
@@ -31,14 +31,14 @@ const Humans = () => {
     <>
       <div
         className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
-          lg:px-16 lg:pb-[92px] pt-[48px] px-4"
+          md:px-16 xl:px-28 lg:pb-[92px] pt-[48px] px-4"
       >
-        <div className="flex md:gap-[40px]">
+        <div className="flex lg:gap-[40px]">
           <div>
-            <h1 className="text-white font-black text-[28px] xl:text-[80px] xl:leading-[6rem] mb-5">
+            <div className="text-white font-black text-[28px] md:text-[2.9rem] lg:text-[3.9rem] xl:text-[80px] xl:leading-[6rem] mb-5">
               Meet the Humans
               <br /> of HackByte
-            </h1>
+            </div>
             <p className="text-supporting-mediumGray font-medium lg:text-2xl md:text-xl text-sm">
               Hacker Experience is what we prioritize! Have questions, need
               assistance, or just want to connect? Feel free to reach out!
@@ -47,7 +47,7 @@ const Humans = () => {
           <Image
             src={humansSticker}
             alt="Humans Sticker"
-            className="lg:w-auto md:w-64 w-32"
+            className="lg:w-auto md:w-56 w-32"
           />
         </div>
 
@@ -75,28 +75,36 @@ const Humans = () => {
               className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
             >
-              Elders
+              Our family
             </TabsTrigger>
           </TabsList>
           <TabsContent value="Organizers">
-            <YetToBeDisclosed />
+            <div
+              className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
+                place-content-center place-items-center gap-10"
+            >
+              {OrganizersData.map((human, index) => (
+                <HumansCard key={index} index={index} {...human} />
+              ))}
+            </div>
           </TabsContent>
           <TabsContent value="Mentors">
-            <div
+            {/* <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
                 place-content-center place-items-center gap-10"
             >
               {MentorsData.map((human, index) => (
                 <HumansCard key={index} index={index} {...human} />
               ))}
-            </div>
+            </div> */}
+            <YetToBeDisclosed />
           </TabsContent>
           <TabsContent value="Elders">
             <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
                 place-content-center place-items-center"
             >
-              {EldersData.map((human, index) => (
+              {FamilyData.map((human, index) => (
                 <HumansCard key={index} index={index} {...human} />
               ))}
             </div>

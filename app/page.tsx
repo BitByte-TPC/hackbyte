@@ -2,7 +2,7 @@ import Image from "next/image";
 import stats from "@/public/HomePageLogo/redtape2.png";
 import HeroSection from "@/components/Herosection";
 import Newsletter from "@/components/Newsletter";
-import whyParticipate from "@/public/HomePageLogo/whyParticipate.webp";
+import whyParticipate from "@/public/HomePageLogo/whyParticipate.png";
 import g1 from "@/public/HomePageLogo/g1.svg";
 import g2 from "@/public/HomePageLogo/g2.svg";
 import g3 from "@/public/HomePageLogo/g3.svg";
@@ -83,10 +83,10 @@ export default function Home() {
       <div className="card flex gap-4 items-start ">
         <Image src={icon} alt="Icon" className="xl:w-20 md:w-16 pt-1" />
         <div className="flex flex-col justify-center gap-2">
-          <div className="xl:text-3xl lg:text-2xl text-xl text-white font-bold">
+          <div className="min-[1540px]:text-4xl xl:text-3xl lg:text-2xl text-xl text-white font-bold">
             {title}
           </div>
-          <div className="text-sm lg:text-base xl:text-lg font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
+          <div className="text-base lg:text-base xl:text-lg min-[1540px]:text-xl font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
             {description}
           </div>
         </div>
@@ -109,7 +109,7 @@ export default function Home() {
         />
       </div>
       <div className="relative sm:mt-0 mt-28 sm:block hidden">
-        <Image src={stats} alt="Stats" className=" md:w-full" />
+        <Image src={stats} alt="Stats" className=" md:w-full md:scale-125 lg:scale-100" />
         <div className="w-full flex justify-evenly rotate-[5deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
             <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">
@@ -159,23 +159,23 @@ export default function Home() {
       </div>
 
       {/* Why Participate */}
-      <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-20">
-        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl sm:text-2xl text-4xl font-bold leading-[64px] text-center">
+      <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-16">
+        <div className=" text-supporting-lightGray lg:text-5xl min-[1540px]:text-7xl xl:text-6xl md:text-4xl sm:text-2xl text-4xl font-bold leading-[64px] text-center">
           Why Participate in Hackbyte 3.0?
         </div>
         <Image
           src={whyParticipate}
           alt="Why Participate"
-          className="xl:w-[800px] lg:w-[700px] md:w-[500px] w-[300px]"
+          className="min-[1540px]:w-[900px] xl:w-[800px] lg:w-[700px] md:w-[500px] w-[350px] pt-4 md:pt-0"
         />
       </div>
 
       {/* Guidelines */}
       <div className="flex flex-col items-center gap-4 md:gap-16">
-        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
+        <div className=" text-supporting-lightGray lg:text-5xl min-[1540px]:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
           Guidelines for Hackbyte 3.0
         </div>
-        <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4">
+        <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4 min-[1540px]:place-items-center">
           {Guidelines.map((item, index) => (
             <GuidelinesCard
               key={index}
@@ -188,7 +188,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center gap-4 md:gap-16 pt-4 lg:pt-8 xl:pb-12 pb-8 md:pb-16">
-        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px] pb-4 md:pb-8 lg:pb-16">
+        <div className=" text-supporting-lightGray lg:text-5xl min-[1540px]:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px] pb-4 md:pb-8 lg:pb-16">
           Join our Newsletter
         </div>
         <Newsletter />

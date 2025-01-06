@@ -12,18 +12,18 @@ const HeroSection = () => {
   return (
     <>
       <div className="flex flex-col lg:px-16 md:px-8 px-4 pb-12 pt-4 md:pt-12 absolute">
-        <div className="text-4xl font-bold text-supporting-lightGray">
+        <div className="text-3xl md:text-4xl xl:text-5xl min-[1540px]:text-6xl font-bold text-supporting-lightGray">
           Break the red tape
         </div>
-        <div className="text-supporting-darkGray text-xl font-bold leading-7">
+        <div className="text-supporting-darkGray text-xl xl:text-2xl min-[1540px]:text-3xl font-bold leading-7">
           Our Theme
         </div>
       </div>
-      <div className="relative">
+      <div className="relative md:my-32 lg:my-0 min-[1540px]:my-16">
         <Image
           src={redtapeImg}
           alt="Redtape"
-          className=" md:w-full sm:pt-16 sm:scale-100 scale-[2] pt-40"
+          className=" md:w-full md:pt-16  lg:scale-100 md:scale-[1.3] scale-[2] pt-40"
           priority
         />
         <Image
@@ -31,18 +31,18 @@ const HeroSection = () => {
           alt="Hackbyte 3.0"
           className=" w-[250px] sm:w-[140px] md:w-[250px] lg:w-[350px] xl:w-[500px] absolute top-[98%] sm:top-[57%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
         />
-        <div className="max-w-[300px] absolute xl:top-40 xl:right-20 lg:top-32 lg:right-12 sm:top-24 sm:mt-0 mt-44 md:right-6 right-0 sm:rotate-[-5deg] font-bold pr-8">
-          <div className="sm:text-[#ff97a1] text-white/50 sm:text-lg lg:text-xl text-xl xl:text-2xl md:leading-7 sm:text-start text-end">
+        <div className="max-w-[300px] absolute min-[1540px]:top-48 xl:top-40 xl:right-20 md:top-32 lg:right-12 sm:top-24 sm:mt-0 mt-44 right-0 sm:rotate-[-5deg] font-bold pr-8">
+          <div className="sm:text-[#ff97a1] text-white/50 sm:text-lg lg:text-xl text-xl min-[1540px]:text-3xl xl:text-2xl md:leading-7 sm:text-start text-end">
             Join us from
             <br />
           </div>
-          <div className="text-white text-2xl sm:text-sm md:text-xl lg:text-2xl xl:text-3xl md:leading-[33.60px] max-w-[80vw] sm:max-w-32 md:max-w-64 ">
+          <div className="text-white text-2xl sm:text-sm md:text-xl lg:text-2xl min-[1540px]:text-4xl xl:text-3xl md:leading-[33.60px] max-w-[80vw] sm:max-w-32 md:max-w-64 ">
             4th-6th April 2025,
           </div>
           <div className="sm:text-[#ff97a1] text-white/50 text-lg sm:text-xs md:text-lg lg:text-xl xl:text-2xl md:leading-7 sm:text-start text-end">
             at IIITDM Jabalpur
             <br />
-            for hackathon.
+            for hackathon
           </div>
         </div>
       </div>
