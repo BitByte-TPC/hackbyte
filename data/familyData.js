@@ -1,22 +1,22 @@
-import priyansh from "@/public/humansPage/family/priyansh.jpg";
-import bhavik from "@/public/humansPage/family/bhavik.jpg";
-import samyak from "@/public/humansPage/family/samyak.jpeg";
-import divyansh from "@/public/humansPage/family/divyansh.jpeg";
-import vansh from "@/public/humansPage/family/vansh.jpeg";
-import aditya from "@/public/humansPage/family/aditya.jpg";
-import varun from "@/public/humansPage/family/varun.jpg";
-import deepanshu from "@/public/humansPage/family/deepanshu.jpg";
-import sambhav from "@/public/humansPage/family/sambhav.jpg";
-import tushir from "@/public/humansPage/family/tushir.jpeg";
-import aman from "@/public/humansPage/family/aman.jpeg";
-import aish from "@/public/humansPage/family/aish.jpg";
-import prajjwal from "@/public/humansPage/family/prajjwal.jpg";
-import aryan from "@/public/humansPage/family/aryan.jpg";
-import prajwal from "@/public/humansPage/family/prajwal.jpg";
-import manoj from "@/public/humansPage/family/manoj.jpeg";
-import nitya from "@/public/humansPage/family/nitya.jpg";
+import priyansh from "@/public/humansPage/priyansh.jpg";
+import bhavik from "@/public/humansPage/bhavik.jpg";
+import samyak from "@/public/humansPage/samyak.jpeg";
+import divyansh from "@/public/humansPage/divyansh.jpeg";
+import vansh from "@/public/humansPage/vansh.jpeg";
+import aditya from "@/public/humansPage/aditya.jpg";
+import varun from "@/public/humansPage/varun.jpg";
+import deepanshu from "@/public/humansPage/deepanshu.jpg";
+import sambhav from "@/public/humansPage/sambhav.jpg";
+import tushir from "@/public/humansPage/tushir.jpeg";
+import aman from "@/public/humansPage/aman.jpeg";
+import aish from "@/public/humansPage/aish.jpg";
+import prajjwal from "@/public/humansPage/prajjwal.jpg";
+import aryan from "@/public/humansPage/aryan.jpg";
+import prajwal from "@/public/humansPage/prajwal.jpg";
+import manoj from "@/public/humansPage/manoj.jpeg";
+import nitya from "@/public/humansPage/nitya.jpg";
 
-export const familyData = [
+export const FamilyData = [
   {
     name: "Bhavik Agrawal",
     profilepic: bhavik,

@@ -1,17 +1,17 @@
-// import aanchal from "@/public/humansPage/mentors/aanchal.jpeg";
-import khushi from "@/public/humansPage/mentors/khushi.jpg";
-import manan from "@/public/humansPage/mentors/manan.jpg";
-import priyansh_garg from "@/public/humansPage/mentors/priyansh_garg.jpeg";
-import akshat from "@/public/humansPage/mentors/akshat.jpg";
-import sanskriti from "@/public/humansPage/mentors/sanskriti.jpg";
-import yashika from "@/public/humansPage/mentors/yashika.jpeg";
-// import sagar from "@/public/humansPage/mentors/sagar.jpg";
-import siddhant from "@/public/humansPage/mentors/siddhant.jpeg";
-import vedant from "@/public/humansPage/mentors/vedant.jpeg";
-import ashu from "@/public/humansPage/mentors/ashu.jpg";
-import ashish from "@/public/humansPage/mentors/ashish.jpg";
-import gautam from "@/public/humansPage/mentors/gautam.jpg";
-import chaitanya from "@/public/humansPage/mentors/chaitanaya.jpg";
+// import aanchal from "@/public/humansPage/aanchal.jpeg";
+import khushi from "@/public/humansPage/khushi.jpg";
+import manan from "@/public/humansPage/manan.jpg";
+import priyansh_garg from "@/public/humansPage/priyansh_garg.jpeg";
+import akshat from "@/public/humansPage/akshat.jpg";
+import sanskriti from "@/public/humansPage/sanskriti.jpg";
+import yashika from "@/public/humansPage/yashika.jpeg";
+// import sagar from "@/public/humansPage/sagar.jpg";
+import siddhant from "@/public/humansPage/siddhant.jpeg";
+import vedant from "@/public/humansPage/vedant.jpeg";
+import ashu from "@/public/humansPage/ashu.jpg";
+import ashish from "@/public/humansPage/ashish.jpg";
+import gautam from "@/public/humansPage/gautam.jpg";
+import chaitanya from "@/public/humansPage/chaitanaya.jpg";
 
 export const MentorsData = [
     // {
