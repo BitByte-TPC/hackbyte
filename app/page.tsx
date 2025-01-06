@@ -12,6 +12,9 @@ import g6 from "@/public/HomePageLogo/g6.svg";
 import g7 from "@/public/HomePageLogo/g7.svg";
 import g8 from "@/public/HomePageLogo/g8.svg";
 import g9 from "@/public/HomePageLogo/g9.svg";
+import bottomstats from "@/public/upper.svg";
+import topstats from "@/public/lower.svg";
+
 
 interface GuidlinesCard {
   title: string;
@@ -93,7 +96,19 @@ export default function Home() {
   return (
     <div className="md:overflow-hidden">
       <HeroSection />
-      <div className="relative">
+      <div className="sm:hidden w-screen mt-28">
+        <Image
+        src={bottomstats}
+        alt="bottomstats"
+        className="w-screen"
+        />
+        <Image
+        src={topstats}
+        alt="topstats"
+        className="w-screen"
+        />
+      </div>
+      <div className="relative sm:mt-0 mt-28 sm:block hidden">
         <Image src={stats} alt="Stats" className=" md:w-full" />
         <div className="w-full flex justify-evenly rotate-[5deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
@@ -145,7 +160,7 @@ export default function Home() {
 
       {/* Why Participate */}
       <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-20">
-        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
+        <div className=" text-supporting-lightGray lg:text-5xl xl:text-6xl md:text-4xl sm:text-2xl text-4xl font-bold leading-[64px] text-center">
           Why Participate in Hackbyte 3.0?
         </div>
         <Image
