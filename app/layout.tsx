@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
-// import Header from "@/components/MobileSidebar";
+import MobileSidebar from "@/components/MobileSidebar";
 import { Sidebar } from "@/components/sidebar";
 import Footer from "@/components/footer";
 import { Toaster } from "@/components/ui/toaster";
@@ -46,8 +46,13 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${gotham.variable} font-sans`}>
       <body>
-        {/* <Header /> */}
-        <Sidebar />
+        {/* <Sidebar /> */}
+        <div className="sm:block hidden">
+          <Sidebar />
+        </div>
+        <div className="sm:hidden">
+          <MobileSidebar/>
+        </div>
         {children}
         <Footer />
         <Toaster />
