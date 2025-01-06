@@ -1,20 +1,20 @@
-import priyansh from "@/public/humansPage/Family/priyansh.jpg";
-import bhavik from "@/public/humansPage/Family/bhavik.jpg";
-import samyak from "@/public/humansPage/Family/samyak.jpeg";
-import divyansh from "@/public/humansPage/Family/divyansh.jpeg";
-import vansh from "@/public/humansPage/Family/vansh.jpeg";
-import aditya from "@/public/humansPage/Family/aditya.jpg";
-import varun from "@/public/humansPage/Family/varun.jpg";
-import deepanshu from "@/public/humansPage/Family/deepanshu.jpg";
-import sambhav from "@/public/humansPage/Family/sambhav.jpg";
-import tushir from "@/public/humansPage/Family/tushir.jpeg";
-import aman from "@/public/humansPage/Family/aman.jpeg";
-import aish from "@/public/humansPage/Family/aish.jpg";
-import prajjwal from "@/public/humansPage/Family/prajjwal.jpg";
-import aryan from "@/public/humansPage/Family/aryan.jpg";
-import prajwal from "@/public/humansPage/Family/prajwal.jpg";
-import manoj from "@/public/humansPage/Family/manoj.jpeg";
-import nitya from "@/public/humansPage/Family/nitya.jpg";
+import priyansh from "@/public/HumansPage/Family/priyansh.jpg";
+import bhavik from "@/public/HumansPage/Family/bhavik.jpg";
+import samyak from "@/public/HumansPage/Family/samyak.jpeg";
+import divyansh from "@/public/HumansPage/Family/divyansh.jpeg";
+import vansh from "@/public/HumansPage/Family/vansh.jpeg";
+import aditya from "@/public/HumansPage/Family/aditya.jpg";
+import varun from "@/public/HumansPage/Family/varun.jpg";
+import deepanshu from "@/public/HumansPage/Family/deepanshu.jpg";
+import sambhav from "@/public/HumansPage/Family/sambhav.jpg";
+import tushir from "@/public/HumansPage/Family/tushir.jpeg";
+import aman from "@/public/HumansPage/Family/aman.jpeg";
+import aish from "@/public/HumansPage/Family/aish.jpg";
+import prajjwal from "@/public/HumansPage/Family/prajjwal.jpg";
+import aryan from "@/public/HumansPage/Family/aryan.jpg";
+import prajwal from "@/public/HumansPage/Family/prajwal.jpg";
+import manoj from "@/public/HumansPage/Family/manoj.jpeg";
+import nitya from "@/public/HumansPage/Family/nitya.jpg";
 
 export const FamilyData = [
   {

@@ -1,15 +1,15 @@
-import Pratik from "@/public/HumansPage/organizers/pratik.webp";
-import Eshaan from "@/public/HumansPage/organizers/eshaan.jpg";
-import Joyee from "@/public/HumansPage/organizers/joyee.jpg";
-import Aditya from "@/public/HumansPage/organizers/Aditya_Gupta.jpg";
-import Akshay from "@/public/HumansPage/organizers/akshay.jpg";
-import Divyansh from "@/public/HumansPage/organizers/divyansh.webp";
-import Uttara from "@/public/HumansPage/organizers/uttara.webp";
-import Rishi from "@/public/HumansPage/organizers/Rishi.jpg";
-import paloju from "@/public/HumansPage/organizers/paloju.webp";
-import revathy from "@/public/HumansPage/organizers/revathy.jpg";
-import jyotsna from "@/public/HumansPage/organizers/jyotsna.webp";
-import samriddhi from "@/public/HumansPage/organizers/samriddhi.jpg";
+import Pratik from "@/public/HumansPage/Organizers/pratik.webp";
+import Eshaan from "@/public/HumansPage/Organizers/eshaan.jpg";
+import Joyee from "@/public/HumansPage/Organizers/joyee.jpg";
+import Aditya from "@/public/HumansPage/Organizers/Aditya_Gupta.jpg";
+import Akshay from "@/public/HumansPage/Organizers/akshay.jpg";
+import Divyansh from "@/public/HumansPage/Organizers/divyansh.webp";
+import Uttara from "@/public/HumansPage/Organizers/uttara.webp";
+import Rishi from "@/public/HumansPage/Organizers/Rishi.jpg";
+import paloju from "@/public/HumansPage/Organizers/paloju.webp";
+import revathy from "@/public/HumansPage/Organizers/revathy.jpg";
+import jyotsna from "@/public/HumansPage/Organizers/jyotsna.webp";
+import samriddhi from "@/public/HumansPage/Organizers/samriddhi.jpg";
 
 export const OrganizersData = [
   {
