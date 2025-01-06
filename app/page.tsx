@@ -94,7 +94,7 @@ export default function Home() {
     );
   }
   return (
-    <div className="md:overflow-hidden">
+    <div className="overflow-hidden">
       <HeroSection />
       <div className="sm:hidden w-screen mt-28">
         <Image
