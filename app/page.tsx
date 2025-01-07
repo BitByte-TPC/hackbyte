@@ -83,10 +83,10 @@ export default function Home() {
       <div className="card flex gap-4 items-start ">
         <Image src={icon} alt="Icon" className="xl:w-20 md:w-16 pt-1" />
         <div className="flex flex-col justify-center gap-2">
-          <div className="min-[1540px]:text-4xl xl:text-3xl lg:text-2xl text-xl text-white font-bold">
+          <div className="monitor:text-4xl xl:text-3xl lg:text-2xl text-xl text-white font-bold">
             {title}
           </div>
-          <div className="text-base lg:text-base xl:text-lg min-[1540px]:text-xl font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
+          <div className="text-base lg:text-base xl:text-lg monitor:text-xl font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
             {description}
           </div>
         </div>
@@ -160,22 +160,22 @@ export default function Home() {
 
       {/* Why Participate */}
       <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-16">
-        <div className=" text-supporting-lightGray lg:text-5xl min-[1540px]:text-7xl xl:text-6xl md:text-4xl sm:text-2xl text-4xl font-bold leading-[64px] text-center">
+        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl sm:text-2xl text-4xl font-bold leading-[64px] text-center">
           Why Participate in Hackbyte 3.0?
         </div>
         <Image
           src={whyParticipate}
           alt="Why Participate"
-          className="min-[1540px]:w-[900px] xl:w-[800px] lg:w-[700px] md:w-[500px] w-[350px] pt-4 md:pt-0"
+          className="monitor:w-[900px] xl:w-[800px] lg:w-[700px] md:w-[500px] w-[350px] pt-4 md:pt-0"
         />
       </div>
 
       {/* Guidelines */}
       <div className="flex flex-col items-center gap-4 md:gap-16">
-        <div className=" text-supporting-lightGray lg:text-5xl min-[1540px]:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
+        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
           Guidelines for Hackbyte 3.0
         </div>
-        <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4 min-[1540px]:place-items-center">
+        <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4 monitor:place-items-center">
           {Guidelines.map((item, index) => (
             <GuidelinesCard
               key={index}
@@ -188,7 +188,7 @@ export default function Home() {
       </div>
 
       <div className="flex flex-col items-center gap-4 md:gap-16 pt-4 lg:pt-8 xl:pb-12 pb-8 md:pb-16">
-        <div className=" text-supporting-lightGray lg:text-5xl min-[1540px]:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px] pb-4 md:pb-8 lg:pb-16">
+        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px] pb-4 md:pb-8 lg:pb-16">
           Join our Newsletter
         </div>
         <Newsletter />

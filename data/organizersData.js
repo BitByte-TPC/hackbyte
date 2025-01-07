@@ -15,7 +15,7 @@ export const OrganizersData = [
   {
     name: "Eshaan Modi",
     profilepic: Eshaan,
-    linkedin: "www.linkedin.com/in/eshaan-modi-a9a602253",
+    linkedin: "https://www.linkedin.com/in/eshaan-modi-a9a602253",
     github: "https://github.com/NightFury742",
     twitter: "#",
     role: "Organizer",
@@ -66,6 +66,7 @@ export const OrganizersData = [
     linkedin: "",
     github: "",
     twitter: "#",
+    role: "Organizer",
   },
   {
     name: "Divyansh Bisht",
@@ -92,7 +93,7 @@ export const OrganizersData = [
     twitter: "#",
   },
   {
-    name: "Revathy S",
+    name: "Revathy Raj",
     profilepic: revathy,
     linkedin: "",
     github: "",
@@ -100,7 +101,7 @@ export const OrganizersData = [
     twitter: "#",
   },
   {
-    name: "Jyotsna",
+    name: "Jyotsna Tripathi",
     profilepic: jyotsna,
     linkedin: "",
     github: "",

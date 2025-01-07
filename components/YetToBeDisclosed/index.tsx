@@ -13,7 +13,7 @@ const redirectingData = [
   },
   {
     title: "FAQS",
-    link: "/faqs",
+    link: "/faq",
     image: faqsPageSticker,
   },
   {
@@ -52,7 +52,7 @@ const YetToBeDisclosed: React.FC = () => {
       <div className="text-white lg:text-[64px] text-2xl page-title font-black">
         Yet to be disclosed
       </div>
-      <div className="text-supporting-mediumGray text-base md:text-lg lg:text-[24px] font-medium">
+      <div className="text-supporting-mediumGray text-base md:text-lg lg:text-[24px] font-medium text-center">
         These details are not yet disclosed, so stay sharp.
       </div>
       <div className="text-white lg:text-[32px] text-xl font-bold">Meanwhile,</div>

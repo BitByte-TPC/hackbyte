@@ -25,10 +25,10 @@ export const metadata = {
 const Gallery = () => {
   return (
     <>
-      <div className="flex flex-col min-h-screen p-4 px-2 md:px-16 lg:px-24 xl:px-28 lg:pb-40 md:pb-28 pb-12">
+      <div className="flex flex-col min-h-screen p-4 px-2 md:px-16 lg:px-24 xl:px-28 lg:pb-40 md:pb-28 pb-12 xl:pt-[48px]">
         <div className="flex flex-col items-start gap-5 ">
           <div className="flex justify-between items-center w-full">
-            <div className=" text-white xl:text-[6rem] lg:text-[4.2rem] text-[56px] font-black xl:leading-[140px]">
+            <div className=" text-white xl:text-[6rem] lg:text-[4.2rem] text-[56px] font-black xl:leading-tight">
             HackByte 2.0 <br/>Highlights
             </div>
             <Image

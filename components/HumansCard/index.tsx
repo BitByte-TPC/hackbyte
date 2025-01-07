@@ -7,6 +7,7 @@ import {
 import behanceLogo from "../../public/behanceLogo.svg";
 import { IconProps } from "@radix-ui/react-icons/dist/types";
 import { ComponentType } from "react";
+import Link from "next/link";
 
 interface SocialMediaIconProps {
   Icon: ComponentType<IconProps>;
@@ -14,7 +15,7 @@ interface SocialMediaIconProps {
 }
 
 const SocialMediaIcon = ({ Icon, href }: SocialMediaIconProps) => (
-  <a
+  <Link
     href={href}
     target="_blank"
     rel="noopener noreferrer"
@@ -24,7 +25,7 @@ const SocialMediaIcon = ({ Icon, href }: SocialMediaIconProps) => (
       className="w-7 h-7 bg-[#161616] text-supporting-darkGray transition ease-in-out delay-150 
 		hover:scale-125 duration-300"
     />
-  </a>
+  </Link>
 );
 
 interface HumansCardProps {

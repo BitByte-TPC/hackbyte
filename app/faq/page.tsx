@@ -77,7 +77,7 @@ export default function FAQSection() {
           />
         </div>
       </div>
-      <div className="max-w-7xl mx-auto grid md:grid-cols-[1fr,2fr] gap-12">
+      <div className="max-w-7xl mx-auto grid md:grid-cols-1 lg:grid-cols-[1fr,2fr] gap-12">
         <div className="space-y-8 animate-in duration-500 delay-300">
           <h1 className="text-6xl md:text-7xl lg:text-8xl font-black tracking-tighter animate-in duration-500">
             FAQs
@@ -101,7 +101,7 @@ export default function FAQSection() {
           </div>
         </div>
 
-        <div className="animate-in fade-in duration-500 delay-500">
+        <div className="animate-in fade-in duration-500 delay-500 md:h-[750px] lg:h-[760px] xl:h-[800px]">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
               <AccordionItem

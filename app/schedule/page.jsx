@@ -5,7 +5,7 @@ import schedule from "@/public/schedule.png";
 const Schedule = () => {
   return (
     <>
-      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-20 xl:px-32 pt-4 md:pt-16 pb-40">
+      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-20 xl:px-28 pt-4 md:pt-16 xl:pt-12 pb-40">
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between items-center md:items-start">
             <div className="flex flex-col items-start gap-2">

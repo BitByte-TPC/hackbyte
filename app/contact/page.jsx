@@ -6,7 +6,7 @@ import phoneImg from "@/public/Contact/phone.png";
 
 export default function ContactSection() {
   return (
-    <div className="w-full text-primary-white p-6 md:p-12 lg:p-16 md:py-16">
+    <div className="w-full text-primary-white p-6 md:p-12 lg:p-20 md:py-16">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="flex items-start justify-between pb-8 md:pb-16">
           <div className="space-y-4">
@@ -58,11 +58,8 @@ export default function ContactSection() {
           <div className="space-y-2">
             <h2 className="text-3xl md:text-4xl font-black">Mail Us</h2>
             <div className="space-y-1 flex flex-col text-supporting-mediumGray font-medium">
-              <Link target="_blank" href={"mailto:thepeople@iiitdmj.ac.in"}>
+              <Link target="_blank" href={"mailto:theprogclub@iiitdmj.ac.in"}>
                 theprogclub@iiitdmj.ac.in
-              </Link>
-              <Link target="_blank" href={"mailto:iiitdmj@iiitdmj.ac.in"}>
-                bitbyte@iiitdmj.ac.in
               </Link>
             </div>
           </div>

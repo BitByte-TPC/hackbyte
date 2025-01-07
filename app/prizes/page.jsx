@@ -29,7 +29,7 @@ export const metadata = {
 export default function Prizes() {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-20 min-[1540px]:px-32 pt-4 md:pt-16 pb-40">
+      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-28 monitor:px-32 md:pt-16 pb-40 xl:pt-[48px]">
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between">
             <div className="flex flex-col items-start gap-2">
@@ -66,7 +66,7 @@ export default function Prizes() {
           <div className="flex flex-col gap-6 md:gap-8">
             <div className="grid grid-cols-1">
               <PrizeCard
-                amount="INR 25K"
+                amount="INR 35K"
                 category="1st prize- Gold"
                 cupsrc={cup1}
                 default_bg="#FFAE0C"
@@ -76,14 +76,14 @@ export default function Prizes() {
 
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
               <PrizeCard
-                amount="INR 15K"
+                amount="INR 25K"
                 category="2nd prize- Silver"
                 cupsrc={cup2}
                 default_bg="#999999"
                 // hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
               />
               <PrizeCard
-                amount="INR 10K"
+                amount="INR 15K"
                 category="3rd prize- Bronze"
                 cupsrc={cup3}
                 default_bg="#D76835"

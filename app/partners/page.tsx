@@ -157,7 +157,7 @@ const TitleSponsorCard: React.FC = () => {
       href="https://www.logitech.com/en-in/mx/master-series.html"
       target="_blank"
       rel="noreferrer"
-      className="w-full xl:max-w-[95%] min-[1540px]:max-w-[90%] flex justify-center"
+      className="w-full xl:max-w-[95%] monitor:max-w-[90%] flex justify-center md:px-8 lg:px-0"
     >
       <div className="flex flex-col md:flex-row">
         <Image
@@ -198,15 +198,15 @@ const PartnersPage = () => {
         className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
           lg:px-16 xl:px-28 lg:pb-[92px] pt-[48px] px-4"
       >
-        <div className="flex flex-col gap-5 md:pl-16 lg:pl-0">
+        <div className="flex flex-col gap-5 md:pl-12 lg:pl-0">
           <div className="flex justify-between items-center">
-            <div className="text-white font-black text-[28px] md:text-5xl lg:text-[4.2rem] xl:text-[80px] xl:leading-[6rem]">
+            <div className="text-white font-black text-[28px] md:text-5xl lg:text-[4.2rem] xl:text-[96px] xl:leading-tight">
               Past Partners
               <br /> who Supported
             </div>
             <Image
               src={hackbyte2Logo}
-              className="xl:w-auto lg:w-72 md:w-60 w-32"
+              className="xl:w-[420px] lg:w-72 md:w-60 w-32"
               alt="HackByte 2.0 Logo"
             />
           </div>
@@ -220,7 +220,7 @@ const PartnersPage = () => {
           defaultValue="Sponsors"
           className="flex flex-col justify-center mt-4 md:mt-12"
         >
-          <TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start md:px-16 lg:px-0">
+          <TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start md:px-12 lg:px-0">
             <TabsTrigger
               value="Sponsors"
               className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
@@ -240,7 +240,7 @@ const PartnersPage = () => {
             <div className="w-full flex flex-col items-center gap-8 xl:gap-12">
               <TitleSponsorCard />
               <div
-                className="w-full xl:max-w-[95%] min-[1540px]:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+                className="w-full xl:max-w-[95%] monitor:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
                 gap-8 lg:gap-[44px] md:px-8 lg:px-0"
               >
                 {normalSponsorsData.map((sponsor, index) => {
@@ -251,7 +251,7 @@ const PartnersPage = () => {
           </TabsContent>
           <TabsContent value="In Kind Sponsors" className="flex justify-center">
             <div
-              className="w-full xl:max-w-[95%] min-[1540px]:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+              className="w-full xl:max-w-[95%] monitor:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
                 gap-8 lg:gap-[44px]"
             >
               {inKindSponsorsData.map((sponsor, index) => {
