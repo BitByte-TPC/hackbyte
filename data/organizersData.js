@@ -100,12 +100,4 @@ export const OrganizersData = [
     role: "Organizer",
     twitter: "#",
   },
-  {
-    name: "Jyotsna Tripathi",
-    profilepic: jyotsna,
-    linkedin: "",
-    github: "",
-    role: "Organizer",
-    twitter: "#",
-  },
 ];
