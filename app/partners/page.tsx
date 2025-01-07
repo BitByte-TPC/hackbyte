@@ -196,21 +196,21 @@ const PartnersPage = () => {
     <>
       <div
         className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
-          lg:px-16 xl:px-28 lg:pb-[92px] pt-[48px] px-4"
+          lg:px-16 xl:px-28 lg:pb-[92px] pt-[32px] md:pt-[48px] px-4"
       >
         <div className="flex flex-col gap-5 md:pl-12 lg:pl-0">
           <div className="flex justify-between items-center">
-            <div className="text-white font-black text-[28px] md:text-5xl lg:text-[4.2rem] xl:text-[96px] xl:leading-tight">
+            <div className="text-white font-black text-[36px] xs:text-[42px] md:text-5xl lg:text-[4.2rem] xl:text-[96px] xl:leading-tight">
               Past Partners
               <br /> who Supported
             </div>
             <Image
               src={hackbyte2Logo}
-              className="xl:w-[420px] lg:w-72 md:w-60 w-32"
+              className="hidden md:block xl:w-[420px] lg:w-72 md:w-60 w-32"
               alt="HackByte 2.0 Logo"
             />
           </div>
-          <p className="text-supporting-mediumGray font-medium md:text-xl lg:text-2xl text-sm max-w-[600px] lg:max-w-[700px] xl:max-w-[800px]">
+          <p className="text-supporting-mediumGray font-medium md:text-xl lg:text-2xl text-lg xs:text-md max-w-[600px] lg:max-w-[700px] xl:max-w-[800px]">
             We are proud to collaborate with visionary organizations that share
             our passion for innovation and technology.
           </p>

@@ -6,7 +6,7 @@ import phoneImg from "@/public/Contact/phone.png";
 
 export default function ContactSection() {
   return (
-    <div className="w-full text-primary-white p-6 md:p-12 lg:p-20 md:py-16">
+    <div className="w-full text-primary-white p-6 md:p-12 lg:p-20 md:py-16 pt-[32px] sm:pt-[48px]">
       <div className="max-w-7xl mx-auto space-y-12">
         <div className="flex items-start justify-between pb-8 md:pb-16">
           <div className="space-y-4">
@@ -22,11 +22,12 @@ export default function ContactSection() {
                   alt="phone"
                   height={100}
                   width={100}
+                  className="hidden sm:block"
                 />
               </div>
             </div>
 
-            <p className="text-supporting-mediumGray text-xl font-medium max-w-lg md:max-w-xl lg:max-w-2xl xl:maw-w-3xl">
+            <p className="text-supporting-mediumGray xxs:text-lg md:text-xl font-medium max-w-lg md:max-w-xl lg:max-w-2xl xl:maw-w-3xl">
               Hacker Experience is what we prioritize! Have questions, need
               assistance, or just want to connect? Feel free to reach out!
             </p>
@@ -36,10 +37,10 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="space-y-2">
             <h2 className="text-3xl md:text-4xl font-black">Call Us</h2>
-            <div className="flex flex-col md:flex-row gap-8 text-supporting-mediumGray font-medium">
+            <div className="flex flex-row gap-8 text-supporting-mediumGray font-medium">
               <div>
                 <p>+91 98692 61132</p>
                 <p className="text-base text-supporting-mediumGray font-medium">
@@ -55,7 +56,7 @@ export default function ContactSection() {
             </div>
           </div>
 
-          <div className="space-y-2">
+          <div className="space-y-2 hidden ">
             <h2 className="text-3xl md:text-4xl font-black">Mail Us</h2>
             <div className="space-y-1 flex flex-col text-supporting-mediumGray font-medium">
               <Link target="_blank" href={"mailto:theprogclub@iiitdmj.ac.in"}>

@@ -53,18 +53,13 @@ const faqs = [
 
 export default function FAQSection() {
   return (
-    <div className="min-h-screen text-primary-white p-6 md:p-12 lg:p-16 md:py-16">
+    <div className="min-h-screen text-primary-white p-6 md:p-12 lg:p-16 md:py-16 pt-[32px] sm:pt-[48px]">
       <div className="max-w-7xl mx-auto mb-24 md:mb-32">
         <div className="grid md:grid-cols-[2fr,1fr] gap-8 items-center">
           <div className="space-y-6 animate-in fade-in duration-500">
-            <div className="flex">
-              <h1 className="text-[42px] md:text-6xl lg:text-8xl font-black leading-tight max-w-64 md:max-w-3xl">
-                Everything you need to know!
-              </h1>
-              <div className="w-32 h-32 md:hidden relative mx-auto">
-                <Image src={faq} alt="" height={120} width={140} />
-              </div>
-            </div>
+            <h1 className="text-[42px] md:text-6xl lg:text-8xl font-black leading-tight max-w-64 md:max-w-3xl">
+              Everything you need to know!
+            </h1>
             <p className="text-supporting-mediumGray text-lg md:text-xl lg:text-xl xl:text-2xl font-medium md:max-w-lg lg:max-w-3xl">
               Hacker Experience is what we prioritize! Have questions, need
               assistance, or just want to connect? Feel free to reach out!
@@ -88,7 +83,9 @@ export default function FAQSection() {
             </p>
             <div className="text-2xl font-bold">OR</div>
             <div className="space-y-2">
-              <p className="text-supporting-mediumGray">Think we missed something?</p>
+              <p className="text-supporting-mediumGray">
+                Think we missed something?
+              </p>
               <p className="text-supporting-mediumGray">Reach out at</p>
               <a
                 href="mailto:theprogclub@iiitdmj.ac.in"
@@ -109,10 +106,10 @@ export default function FAQSection() {
                 value={`item-${index}`}
                 className="border-b border-gray-800"
               >
-                <AccordionTrigger className="text-lg md:text-xl xl:text-2xl text-supporting-mediumGray hover:text-white transition-colors text-left pr-4 font-bold">
+                <AccordionTrigger className="text-base sm:text-lg md:text-xl xl:text-2xl text-supporting-mediumGray hover:text-white transition-colors text-left pr-4 font-bold">
                   {faq.question}
                 </AccordionTrigger>
-                <AccordionContent className="text-lg xl:text-xl text-supporting-mediumGray">
+                <AccordionContent className="text-base sm:text-lg  xl:text-xl text-supporting-mediumGray">
                   {faq.answer}
                 </AccordionContent>
               </AccordionItem>

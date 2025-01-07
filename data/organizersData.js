@@ -8,7 +8,6 @@ import Uttara from "@/public/humansPage/uttara.webp";
 import Rishi from "@/public/humansPage/Rishi.jpg";
 import paloju from "@/public/humansPage/paloju.webp";
 import revathy from "@/public/humansPage/revathy.jpg";
-import jyotsna from "@/public/humansPage/jyotsna.webp";
 import samriddhi from "@/public/humansPage/samriddhi.jpg";
 
 export const OrganizersData = [

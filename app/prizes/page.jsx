@@ -29,11 +29,11 @@ export const metadata = {
 export default function Prizes() {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-28 monitor:px-32 md:pt-16 pb-40 xl:pt-[48px]">
+      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-28 monitor:px-32 md:pt-16 pb-40 pt-[32px] xl:pt-[48px]">
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between">
             <div className="flex flex-col items-start gap-2">
-              <p className="text-supporting-lightGray text-[3rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] leading-tight font-black">
+              <p className="text-supporting-lightGray text-[36px] xs:text-[3rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] leading-tight font-black">
                 Prizes for the <br />
                 Winners
               </p>
@@ -92,12 +92,12 @@ export default function Prizes() {
             </div>
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
               <div
-                className="flex flex-col items-center gap-4 md:gap-12 px-8 py-6 
+                className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
                   md:flex-row md:px-6 rounded-[8px] bg-[#FF3044]"
               >
                 <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
-                  <p className="text-[#fff] text-[2rem] font-bold">
+                  <p className="text-[#fff] text-[1.5rem] xs:text-[2rem] font-bold">
                     Best Girls Team
                   </p>
                   <p
@@ -109,12 +109,12 @@ export default function Prizes() {
                 </div>
               </div>
               <div
-                className="flex flex-col items-center gap-4 md:gap-12 px-8 py-6 
+                className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
                   md:flex-row md:px-6 rounded-[8px] bg-[#FF3044]"
               >
                 <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
-                  <p className="text-[#fff] text-[2rem] font-bold">
+                  <p className="text-[#fff] text-[1.5rem] xs:text-[2rem] font-bold">
                     First Time Hacking?
                   </p>
                   <p

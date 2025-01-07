@@ -160,19 +160,19 @@ export default function Home() {
 
       {/* Why Participate */}
       <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-16">
-        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl sm:text-2xl text-4xl font-bold leading-[64px] text-center">
+        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl sm:text-2xl text-3xl xs:text-4xl font-bold leading-[48px] xs:leading-[64px] text-center">
           Why Participate in Hackbyte 3.0?
         </div>
         <Image
           src={whyParticipate}
           alt="Why Participate"
-          className="monitor:w-[900px] xl:w-[800px] lg:w-[700px] md:w-[500px] w-[350px] pt-4 md:pt-0"
+          className="monitor:w-[900px] xl:w-[800px] lg:w-[700px] md:w-[500px] w-[350px] pt-4 md:pt-0 px-2 xs:px-0"
         />
       </div>
 
       {/* Guidelines */}
       <div className="flex flex-col items-center gap-4 md:gap-16">
-        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px]">
+        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-center text-3xl xs:text-2xl font-bold leading-[48px] xs:leading-[64px]">
           Guidelines for Hackbyte 3.0
         </div>
         <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4 monitor:place-items-center">

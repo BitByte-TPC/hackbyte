@@ -29,7 +29,7 @@ const HeroSection = () => {
         <Image
           src={HB3Logo}
           alt="Hackbyte 3.0"
-          className=" w-[250px] sm:w-[140px] md:w-[250px] lg:w-[350px] xl:w-[500px] absolute top-[98%] sm:top-[57%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
+          className=" w-[200px] xs:w-[250px] sm:w-[140px] md:w-[250px] lg:w-[350px] xl:w-[500px] absolute top-[105%] xs:top-[98%] sm:top-[57%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 "
         />
         <div className="max-w-[300px] absolute monitor:top-48 xl:top-40 xl:right-20 md:top-32 lg:right-12 sm:top-24 sm:mt-0 mt-44 right-0 sm:rotate-[-5deg] font-bold pr-8">
           <div className="sm:text-[#ff97a1] text-white/50 sm:text-lg lg:text-xl text-xl monitor:text-3xl xl:text-2xl md:leading-7 sm:text-start text-end">
@@ -47,7 +47,7 @@ const HeroSection = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between lg:px-16 px-8 md:pb-16 md: pb-4 sm:mt-0 mt-14">
+      <div className="flex flex-col md:flex-row justify-between lg:px-16 px-2 xs:px-8 md:pb-16 md: pb-4 sm:mt-0 mt-14">
         <div className="hidden justify-end md:justify-center gap-4 md:pt-4 -rotate-[5deg] md:rotate-0 sm:flex ">
           <Image
             src={linkedIn}
@@ -70,7 +70,7 @@ const HeroSection = () => {
             className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
           />
         </div>
-        <div className="flex lg:gap-16 md:gap-12 gap-14 rotate-[0deg] md:rotate-0 sm:mt-0 mt-72 sm:justify-start justify-end">
+        <div className="flex lg:gap-16 md:gap-12 gap-3 xs:gap-14 rotate-[0deg] md:rotate-0 sm:mt-0 mt-72 sm:justify-start justify-end">
           <Image
             src={tpclogo}
             alt="TPCLogo"

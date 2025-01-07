@@ -31,15 +31,15 @@ const Humans = () => {
     <>
       <div
         className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
-          md:px-16 xl:px-28 lg:pb-[92px] xl:pt-[48px] px-4"
+          md:px-16 xl:px-28 lg:pb-[92px] xl:pt-[48px] pt-[32px] px-4"
       >
         <div className="flex lg:gap-[40px]">
           <div>
-            <div className="text-white font-black text-[28px] md:text-[2.9rem] lg:text-[3.9rem] xl:text-[80px] xl:leading-[6rem] mb-5">
+            <div className="text-white font-black text-[36px] xs:text-[42px] md:text-[2.9rem] lg:text-[3.9rem] xl:text-[80px] xl:leading-[6rem] mb-5">
               Meet the Humans
               <br /> of HackByte
             </div>
-            <p className="text-supporting-mediumGray font-medium lg:text-2xl md:text-xl text-sm">
+            <p className="text-supporting-mediumGray font-medium lg:text-2xl md:text-xl text-lg">
               Hacker Experience is what we prioritize! Have questions, need
               assistance, or just want to connect? Feel free to reach out!
             </p>
@@ -47,7 +47,7 @@ const Humans = () => {
           <Image
             src={humansSticker}
             alt="Humans Sticker"
-            className="lg:w-auto md:w-56 w-32"
+            className="lg:w-auto md:w-56 w-32 hidden md:block"
           />
         </div>
 
@@ -58,21 +58,21 @@ const Humans = () => {
           <TabsList className="bg-transparent mb-5 md:mb-11 flex justify-start ">
             <TabsTrigger
               value="Organizers"
-              className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
+              className="sm:text-xl text-md font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
             >
               Organizers
             </TabsTrigger>
             <TabsTrigger
               value="Mentors"
-              className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray 
+              className="sm:text-xl text-md font-bold text-supporting-mediumGray 
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
             >
               Mentors
             </TabsTrigger>
             <TabsTrigger
               value="Elders"
-              className="sm:text-xl text-md min-[300px]:text-lg font-bold text-supporting-mediumGray
+              className="sm:text-xl text-md font-bold text-supporting-mediumGray
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
             >
               Our family
