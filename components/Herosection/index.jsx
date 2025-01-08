@@ -49,26 +49,34 @@ const HeroSection = () => {
 
       <div className="flex flex-col md:flex-row justify-between lg:px-16 px-2 xs:px-8 md:pb-16 md: pb-4 sm:mt-0 mt-14">
         <div className="hidden justify-end md:justify-center gap-4 md:pt-4 -rotate-[5deg] md:rotate-0 sm:flex ">
-          <Image
-            src={linkedIn}
-            alt="linkedIn"
-            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
-          />
-          <Image
-            src={instagram}
-            alt="Instagram"
-            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
-          />
-          <Image
-            src={twitter}
-            alt="Twitter"
-            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
-          />
-          <Image
-            src={discord}
-            alt="Discord"
-            className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
-          />
+        <a href="https://www.linkedin.com/company/bitbyte-tpc">
+            <Image
+              src={linkedIn}
+              alt="linkedIn"
+              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            />
+          </a>
+          <a href="https://www.instagram.com/bitbyte.tpc">
+            <Image
+              src={instagram}
+              alt="Instagram"
+              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            />
+          </a>
+          <a href="https://twitter.com/BitByte_IIITDMJ">
+            <Image
+              src={twitter}
+              alt="Twitter"
+              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            />
+          </a>
+          <a href="https://discord.gg/TEATaaK9">
+            <Image
+              src={discord}
+              alt="Discord"
+              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            />
+          </a>
         </div>
         <div className="flex lg:gap-16 md:gap-12 gap-3 xs:gap-14 rotate-[0deg] md:rotate-0 sm:mt-0 mt-72 sm:justify-start justify-end">
           <Image
