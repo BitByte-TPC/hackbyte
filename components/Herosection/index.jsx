@@ -82,7 +82,7 @@ const HeroSection = () => {
             <Image
               src={milaap}
               alt="Discord"
-              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md mt-1"
+              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md"
             />
           </a>
         </div>
