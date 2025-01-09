@@ -1,0 +1,6 @@
+# Allow all crawlers to crawl all pages
+User-agent: *
+Disallow: /notfound
+
+# Specify the path to the sitemap
+Sitemap: https://hackbyte.in/sitemap.xml

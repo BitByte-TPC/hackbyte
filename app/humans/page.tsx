@@ -1,10 +1,10 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import HumansCard from "@/components/HumansCard";
-import YetToBeDisclosed from "@/components/YetToBeDisclosed";
 import Image from "next/image";
 
 import humansSticker from "@/public/humansPage/humansSticker.svg";
 import { OrganizersData } from "@/data/organizersData";
+import { MentorsData } from "@/data/mentorsData";
 import { FamilyData } from "@/data/familyData";
 
 export const metadata = {
@@ -64,11 +64,11 @@ const Humans = () => {
               Organizers
             </TabsTrigger>
             <TabsTrigger
-              value="Mentors"
+              value="Past Mentors"
               className="sm:text-xl text-md font-bold text-supporting-mediumGray 
                          sm:py-2 sm:px-5 p-2 rounded-[8px]"
             >
-              Mentors
+              Past Mentors
             </TabsTrigger>
             <TabsTrigger
               value="Elders"
@@ -88,16 +88,15 @@ const Humans = () => {
               ))}
             </div>
           </TabsContent>
-          <TabsContent value="Mentors">
-            {/* <div
+          <TabsContent value="Past Mentors">
+            <div
               className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 
                 place-content-center place-items-center gap-10"
             >
               {MentorsData.map((human, index) => (
                 <HumansCard key={index} index={index} {...human} />
               ))}
-            </div> */}
-            <YetToBeDisclosed />
+            </div>
           </TabsContent>
           <TabsContent value="Elders">
             <div

@@ -3,6 +3,7 @@ import linkedIn from "@/public/FooterLogo/linkedin.svg";
 import instagram from "@/public/FooterLogo/instagram.svg";
 import twitter from "@/public/FooterLogo/twitter.svg";
 import discord from "@/public/FooterLogo/discord.svg";
+import milaap from "@/public/FooterLogo/milaap.svg";
 import tpclogo from "@/public/HomePageLogo/tpclogo.svg";
 import institutelogo from "@/public/HomePageLogo/Institutelogo.svg";
 import redtapeImg from "@/public/HomePageLogo/Redtape1.svg";
@@ -75,6 +76,13 @@ const HeroSection = () => {
               src={discord}
               alt="Discord"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            />
+          </a>
+          <a href="https://milaap.org/fundraisers/support-hackbyte-3-0">
+            <Image
+              src={milaap}
+              alt="Discord"
+              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md mt-1"
             />
           </a>
         </div>

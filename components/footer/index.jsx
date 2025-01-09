@@ -4,6 +4,7 @@ import linkedIn from "../../public/FooterLogo/linkedin.svg";
 import instagram from "../../public/FooterLogo/instagram.svg";
 import twitter from "../../public/FooterLogo/twitter.svg";
 import discord from "../../public/FooterLogo/discord.svg";
+import milaap from "../../public/FooterLogo/milaap.svg";
 
 const sidebarLinks = [
   { name: "Home", href: "/" },
@@ -35,8 +36,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="flex flex-col md:flex-row justify-between items-end md:items-center xl:px-32 lg:px-16 px-0 mt-8 bg-[#FF3044] rotate-3">
-        <div className="flex flex-wrap lg:gap-4 monitor:gap-12 xl:gap-8 gap-0 md:my-4 hover:items-start text-supporting-lightGray">
+      <div className="flex flex-col md:flex-row justify-between items-end md:items-center xl:px-32 lg:px-10 md:px-1 px-0 mt-8 bg-[#FF3044] rotate-3">
+        <div className="flex flex-wrap justify-evenly xs:justify-start lg:gap-4 monitor:gap-12 xl:gap-8 gap-0 md:my-4 hover:items-start text-supporting-lightGray">
           {sidebarLinks.map((link) => (
             <a
               key={link.name}
@@ -47,7 +48,7 @@ const Footer = () => {
             </a>
           ))}
         </div>
-        <div className="flex md:gap-4 gap-8 xs:gap-2 monitor:gap-8 xxs:w-full md:w-auto xxs:justify-center xs:justify-end items-center md:static xs:absolute top-11 right-4">
+        <div className="flex md:gap-4 gap-8 xs:gap-2 monitor:gap-8 xxs:w-full md:w-auto xxs:justify-evenly xs:justify-end items-center md:static xs:absolute top-11 right-4">
           <a href="https://www.linkedin.com/company/bitbyte-tpc">
             <Image
               src={linkedIn}
@@ -74,6 +75,13 @@ const Footer = () => {
               src={discord}
               alt="Discord"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
+            />
+          </a>
+          <a href="https://milaap.org/fundraisers/support-hackbyte-3-0">
+            <Image
+              src={milaap}
+              alt="Discord"
+              className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md"
             />
           </a>
         </div>
