@@ -10,6 +10,16 @@ import localFont from "next/font/local";
 export const metadata: Metadata = {
   title: "Hackbyte 3.0",
   description: "Hackbyte 3.0 is a flagship event of TPC of IIITDMJ.",
+  keywords: "hackathon, IIITDMJ, hackbyte, coding, programming, tech",
+  openGraph: {
+    title: "HackByte - IIITDMJ Hackathon",
+    description:
+      "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
+    url: "https://hackbyte.in",
+    siteName: "HackByte - IIITDMJ Hackathon",
+    locale: "en_US",
+    type: "website",
+  }
 };
 
 const gotham = localFont({

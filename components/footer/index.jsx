@@ -5,6 +5,7 @@ import instagram from "../../public/FooterLogo/instagram.svg";
 import twitter from "../../public/FooterLogo/twitter.svg";
 import discord from "../../public/FooterLogo/discord.svg";
 import milaap from "../../public/FooterLogo/milaap.svg";
+import Link from "next/link";
 
 const sidebarLinks = [
   { name: "Home", href: "/" },
@@ -39,51 +40,51 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row justify-between items-end md:items-center xl:px-32 lg:px-10 md:px-1 px-0 mt-8 bg-[#FF3044] rotate-3">
         <div className="flex flex-wrap justify-evenly xs:justify-start lg:gap-4 monitor:gap-12 xl:gap-8 gap-0 md:my-4 hover:items-start text-supporting-lightGray">
           {sidebarLinks.map((link) => (
-            <a
+            <Link
               key={link.name}
               href={link.href}
               className="monitor:text-lg lg:text-base text-[14px] p-2 rounded-[2.5rem] font-bold leading-snug hover:-rotate-6 transition-all duration-300"
             >
               <span>{link.name}</span>
-            </a>
+            </Link>
           ))}
         </div>
         <div className="flex md:gap-4 gap-8 xs:gap-2 monitor:gap-8 xxs:w-full md:w-auto xxs:justify-evenly xs:justify-end items-center md:static xs:absolute top-11 right-4">
-          <a href="https://www.linkedin.com/company/bitbyte-tpc">
+          <Link href="https://www.linkedin.com/company/bitbyte-tpc">
             <Image
               src={linkedIn}
               alt="linkedIn"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://www.instagram.com/bitbyte.tpc">
+          </Link>
+          <Link href="https://www.instagram.com/bitbyte.tpc">
             <Image
               src={instagram}
               alt="Instagram"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://twitter.com/BitByte_IIITDMJ">
+          </Link>
+          <Link href="https://twitter.com/BitByte_IIITDMJ">
             <Image
               src={twitter}
               alt="Twitter"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://discord.gg/TEATaaK9">
+          </Link>
+          <Link href="https://discord.gg/TEATaaK9">
             <Image
               src={discord}
               alt="Discord"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://milaap.org/fundraisers/support-hackbyte-3-0">
+          </Link>
+          <Link href="https://milaap.org/fundraisers/support-hackbyte-3-0">
             <Image
               src={milaap}
               alt="Discord"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md"
             />
-          </a>
+          </Link>
         </div>
       </div>
       <div className="text-supporting-darkGray font-bold xl:text-lg md:text-base text-sm py-2 lg:pl-32 md:pl-16 pl-4">

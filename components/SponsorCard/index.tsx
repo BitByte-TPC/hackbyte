@@ -2,6 +2,7 @@
 
 import Image, { StaticImageData } from "next/image";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 interface SponsorCardProps {
   index: number;
@@ -57,7 +58,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({
         }}
         viewport={{ once: true }}
       >
-        <a href={site} target="_blank" rel="noreferrer" key={index}>
+        <Link href={site} target="_blank" rel="noreferrer" key={index}>
           <div className="w-full text-white hover:scale-105 duration-300 max-w-[400px]">
             <Image
               src={sponsorimgsrc}
@@ -80,7 +81,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({
               </div>
             </div>
           </div>
-        </a>
+        </Link>
       </motion.div>
     </>
   );

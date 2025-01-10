@@ -4,6 +4,22 @@ import Image from "next/image";
 import Link from "next/link";
 import phoneImg from "@/public/Contact/phone.png";
 
+export const metadata = {
+  title: "Contact | HackByte",
+  description:
+    "Connect with us at HackByte! Reach out for assistance, questions, or just to say hello. Find information on reaching IIIT Jabalpur, including travel options.",
+  keywords: "contact, hackbyte, reach us, get in touch",
+  openGraph: {
+    title: "Contact | HackByte",
+    description:
+      "Connect with us at HackByte! Reach out for assistance, questions, or just to say hello. Find information on reaching IIIT Jabalpur, including travel options.",
+    url: "https://hackbyte.in/contact",
+    siteName: "HackByte - IIITDMJ Hackathon",
+    type: "website",
+    locale: "en_US",
+  },
+};
+
 export default function ContactSection() {
   return (
     <div className="w-full text-primary-white p-6 md:p-12 lg:p-20 md:py-16 pt-[32px] sm:pt-[48px]">

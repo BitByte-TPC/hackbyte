@@ -69,7 +69,7 @@ const HumansCard: React.FC<HumansCardProps> = ({
             {name !== "Aditya Raj" ? (
               <SocialMediaIcon href={github} Icon={GitHubLogoIcon} />
             ) : (
-              <a
+              <Link
                 href="https://www.behance.net/adi_ux"
                 target="_blank"
                 rel="noopener"
@@ -80,7 +80,7 @@ const HumansCard: React.FC<HumansCardProps> = ({
                   className="w-7 h-7"
                   alt="Behance Logo"
                 />
-              </a>
+              </Link>
             )}
           </div>
         </div>

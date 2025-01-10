@@ -14,8 +14,6 @@ export const metadata = {
     description:
       "Discover memorable moments from past HackByte events at IIITDMJ, explore images, and feel the excitement of the coding community.",
     url: "https://hackbyte3.vercel.app",
-    images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",

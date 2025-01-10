@@ -23,26 +23,24 @@ import wolfram from "@/public/partnersPage/wolfram.webp";
 import mongodb from "@/public/partnersPage/mongodb.webp";
 import finlatics from "@/public/partnersPage/finlatics.webp";
 import jdoodle from "@/public/partnersPage/jdoodle.png";
+import Link from "next/link";
 
 export const metadata = {
   title: "Partners | HackByte",
   description:
-    "Explore the invaluable support from our esteemed sponsors and partners at HackByte - the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+    "Explore the invaluable support from our esteemed sponsors and partners at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
   keywords:
     "Sponsors, Partners, Hackathon, IIITDMJ, Hackbyte, Coding, Programming, Tech, Collaboration, Innovation, Community Support, Technology Events",
   openGraph: {
     title: "Partners | HackByte",
     description:
-      "Explore the invaluable support from our esteemed sponsors and partners at HackByte - the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
+      "Explore the invaluable support from our esteemed sponsors and partners at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
     url: "https://hackbyte.in/partners",
-    images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",
   },
 };
-
 const normalSponsorsData = [
   {
     sponsor: "MLH",
@@ -153,7 +151,7 @@ const inKindSponsorsData = [
 
 const TitleSponsorCard: React.FC = () => {
   return (
-    <a
+    <Link
       href="https://www.logitech.com/en-in/mx/master-series.html"
       target="_blank"
       rel="noreferrer"
@@ -187,7 +185,7 @@ const TitleSponsorCard: React.FC = () => {
           </p>
         </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

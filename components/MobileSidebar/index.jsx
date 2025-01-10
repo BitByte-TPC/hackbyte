@@ -14,6 +14,7 @@ import {
 } from "lucide-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
+import Link from "next/link";
 const sidebarLinks = [
   { name: "Home", icon: <House />, href: "/" },
   { name: "Gallery", icon: <Gallery />, href: "/gallery" },
@@ -88,7 +89,7 @@ const MobileSidebar = () => {
         {open && (
           <div className="flex-col justify-between h-full p-5 pt-14 flex overflow-hidden">
             {sidebarLinks.map((link) => (
-              <a
+              <Link
                 key={link.name}
                 href={link.href}
                 className={`flex gap-5  ${
@@ -97,7 +98,7 @@ const MobileSidebar = () => {
               >
                 {link.icon}
                 {fullyopen && <span className="">{link.name}</span>}
-              </a>
+              </Link>
             ))}
           </div>
         )}

@@ -2,6 +2,23 @@ import YetToBeDisclosed from "@/components/YetToBeDisclosed";
 import Image from "next/image";
 import schedule from "@/public/schedule.png";
 
+export const metadata = {
+  title: "Schedule | HackByte",
+  description:
+    "Check out the schedule for HackByte! Stay updated with the timeline of events and activities happening during IIIT Jabalpur's hackathon.",
+  keywords:
+    "Hackathon schedule, Timeline, Events, IIITDMJ, Hackbyte, Coding, Programming, Tech",
+  openGraph: {
+    title: "Schedule | HackByte",
+    description:
+      "Check out the schedule for HackByte! Stay updated with the timeline of events and activities happening during IIIT Jabalpur's hackathon.",
+    url: "https://hackbyte.in/schedule",
+    siteName: "HackByte - IIITDMJ Hackathon",
+    type: "website",
+    locale: "en_US",
+  },
+};
+
 const Schedule = () => {
   return (
     <>

@@ -8,6 +8,7 @@ import tpclogo from "@/public/HomePageLogo/tpclogo.svg";
 import institutelogo from "@/public/HomePageLogo/Institutelogo.svg";
 import redtapeImg from "@/public/HomePageLogo/Redtape1.svg";
 import HB3Logo from "@/public/HomePageLogo/HB3Logo.svg";
+import Link from "next/link";
 
 const HeroSection = () => {
   return (
@@ -50,41 +51,41 @@ const HeroSection = () => {
 
       <div className="flex flex-col md:flex-row justify-between lg:px-16 px-2 xs:px-8 md:pb-16 md: pb-4 sm:mt-0 mt-14">
         <div className="hidden justify-end md:justify-center gap-4 md:pt-4 -rotate-[5deg] md:rotate-0 sm:flex ">
-        <a href="https://www.linkedin.com/company/bitbyte-tpc">
+        <Link href="https://www.linkedin.com/company/bitbyte-tpc">
             <Image
               src={linkedIn}
               alt="linkedIn"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://www.instagram.com/bitbyte.tpc">
+          </Link>
+          <Link href="https://www.instagram.com/bitbyte.tpc">
             <Image
               src={instagram}
               alt="Instagram"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://twitter.com/BitByte_IIITDMJ">
+          </Link>
+          <Link href="https://twitter.com/BitByte_IIITDMJ">
             <Image
               src={twitter}
               alt="Twitter"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://discord.gg/TEATaaK9">
+          </Link>
+          <Link href="https://discord.gg/TEATaaK9">
             <Image
               src={discord}
               alt="Discord"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
-          </a>
-          <a href="https://milaap.org/fundraisers/support-hackbyte-3-0">
+          </Link>
+          <Link href="https://milaap.org/fundraisers/support-hackbyte-3-0">
             <Image
               src={milaap}
               alt="Discord"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md"
             />
-          </a>
+          </Link>
         </div>
         <div className="flex lg:gap-16 md:gap-12 gap-3 xs:gap-14 rotate-[0deg] md:rotate-0 sm:mt-0 mt-72 sm:justify-start justify-end">
           <Image

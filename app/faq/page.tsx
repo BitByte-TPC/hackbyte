@@ -7,6 +7,23 @@ import {
   AccordionTrigger,
 } from "@/components/ui/accordion";
 import faq from "@/public/Faq/question_mark.png";
+import Link from "next/link";
+
+export const metadata = {
+  title: "FAQ | HackByte",
+  description: "Frequently asked questions about HackByte.",
+  keywords: "FAQ, HackByte, IIITDMJ, Hackathon",
+  openGraph: {
+    title: "FAQ | HackByte",
+    description: "Frequently asked questions about HackByte.",
+    url: "https://hackbyte.in/faq",
+    images:
+      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+    siteName: "HackByte - IIITDMJ Hackathon",
+    type: "website",
+    locale: "en_US",
+  },
+};
 
 const faqs = [
   {
@@ -87,13 +104,13 @@ export default function FAQSection() {
                 Think we missed something?
               </p>
               <p className="text-supporting-mediumGray">Reach out at</p>
-              <a
+              <Link
                 href="mailto:theprogclub@iiitdmj.ac.in"
                 className="inline-flex items-center gap-2 text-white hover:text-supporting-mediumGray transition-colors"
               >
                 <Mail className="w-5 h-5" />
                 theprogclub@iiitdmj.ac.in
-              </a>
+              </Link>
             </div>
           </div>
         </div>
