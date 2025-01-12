@@ -1,11 +1,8 @@
-import PrizeCard from "@/components/PrizeCard";
+import PrizeSection from "@/components/PrizeSection";
 import Image from "next/image";
 import YetToBeDisclosed from "@/components/YetToBeDisclosed";
 import medal from "@/public/HomePageLogo/medal.webp";
-import cup1 from "@/public/cup1.svg";
-import cup2 from "@/public/cup2.svg";
-import cup3 from "@/public/cup3.svg";
-import cup4 from "@/public/cup4.svg";
+import cup4 from "@/public/cup4 (2).svg";
 
 export const metadata = {
   title: "Prizes | HackByte",
@@ -63,39 +60,16 @@ export default function Prizes() {
             />
           </div>
 
-          <div className="flex flex-col gap-6 md:gap-8">
-            <div className="grid grid-cols-1">
-              <PrizeCard
-                amount="INR 35K"
-                category="1st prize- Gold"
-                cupsrc={cup1}
-                default_bg="#FFAE0C"
-                // hover_bg="radial-gradient(116.96% 115.94% at 9.81% 9.24%, #383300 0%, rgba(56, 50, 0, 0.17) 100%)"
-              />
-            </div>
-
-            <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
-              <PrizeCard
-                amount="INR 25K"
-                category="2nd prize- Silver"
-                cupsrc={cup2}
-                default_bg="#999999"
-                // hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
-              />
-              <PrizeCard
-                amount="INR 15K"
-                category="3rd prize- Bronze"
-                cupsrc={cup3}
-                default_bg="#D76835"
-                // hover_bg="radial-gradient(371.89% 134.33% at 3.21% 1.26%,rgba(255, 255, 255, 0.07) 0%,rgba(217, 217, 217, 0.00) 100%)"
-              />
+          <div className="flex flex-col gap-6 md:gap-8 mt-14">
+            <div>
+              <PrizeSection/>
             </div>
             <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
               <div
                 className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
-                  md:flex-row md:px-6 rounded-[8px] bg-[#FF3044]"
+                  md:flex-row md:px-6 rounded-3xl bg-[#451C20]"
               >
-                <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
+                <Image src={cup4} alt="cup" className="w-[4.7rem] h-[4.7rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
                   <p className="text-[#fff] text-[1.5rem] xs:text-[2rem] font-bold">
                     Best Girls Team
@@ -107,12 +81,12 @@ export default function Prizes() {
                     Best performing All-Girls Team at HackByte
                   </p>
                 </div>
-              </div>
+              </div>      
               <div
                 className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
-                  md:flex-row md:px-6 rounded-[8px] bg-[#FF3044]"
+                  md:flex-row md:px-6 rounded-3xl bg-[#451C20]"
               >
-                <Image src={cup4} alt="cup" className="w-[6.5rem] h-[6.5rem]" />
+                <Image src={cup4} alt="cup" className="w-[4.7rem] h-[4.7rem]" />
                 <div className="w-full flex flex-col items-center md:items-start gap-2">
                   <p className="text-[#fff] text-[1.5rem] xs:text-[2rem] font-bold">
                     First Time Hacking?
