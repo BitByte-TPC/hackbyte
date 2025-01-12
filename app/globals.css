@@ -44,6 +44,9 @@
       var(--dot-color);
   }
 
+  .clip-trapezium {
+    clip-path: polygon(25% 0, 75% 0, 100% 100%, 0% 100%);
+  }
   .custom-border {
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='40' ry='40' stroke='%23777' stroke-width='6' stroke-dasharray='6%2c 20' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
     border-radius: 40px;
