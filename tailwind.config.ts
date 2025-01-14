@@ -52,12 +52,21 @@ module.exports = {
           "0%": { transform: "translateX(15%)" },
           "100%": { transform: "translateX(0)" },
         },
+        shrug: {
+          '0%': { transform: 'translateZ(10px) scale(1.2) rotate(0deg)' },
+          '20%': { transform: 'translateZ(10px) rotate(-8deg) scale(1.2)' },
+          '40%': { transform: 'translateZ(10px) rotate(-3deg) scale(1.2)' },
+          '60%': { transform: 'translateZ(10px) rotate(3deg) scale(1.2)' },
+          '80%': { transform: 'translateZ(10px) rotate(8deg) scale(1.2)' },
+          '100%': { transform: 'translateZ(10px) scale(1.2) rotate(0deg)' }, // Matches 0% for seamless looping
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         "slide-right": "slide-right 500ms ease-out",
         "slide-left": "slide-left 500ms ease-out",
+        "shrug": "shrug 0.5s ease-in-out 2",
       },
     },
   },
