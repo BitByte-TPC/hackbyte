@@ -14,6 +14,8 @@ export const metadata = {
     description:
       "Discover memorable moments from past HackByte events at IIITDMJ, explore images, and feel the excitement of the coding community.",
     url: "https://hackbyte3.vercel.app",
+    images:
+      "https://res.cloudinary.com/dlsqbiwug/image/upload/v1736876616/Frame_463_zdbkgu.png",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",
@@ -27,18 +29,19 @@ const Gallery = () => {
         <div className="flex flex-col items-start gap-5 ">
           <div className="flex justify-between items-center w-full">
             <div className=" text-white xl:text-[6rem] lg:text-[4.2rem] text-[36px] xs:text-[48px] font-black xl:leading-tight">
-            HackByte 2.0 <br/>Highlights
+              HackByte 2.0 <br />
+              Highlights
             </div>
             <Image
               className="xl:w-[420px] lg:w-80 md:w-56 hidden md:block"
               src={HB2Logo}
               alt="HackByte 2.0 Logo"
             />
-            
           </div>
           <div className=" max-w-[600px] lg:max-w-[650px] xl:max-w-[800px] text-supporting-mediumGray xl:text-2xl lg:text-xl text-lg font-medium leading-[33.60px]">
-            Explore our gallery of memorable moments from HackByte 2.0 event at IIITDM Jabalpur.
-            </div>
+            Explore our gallery of memorable moments from HackByte 2.0 event at
+            IIITDM Jabalpur.
+          </div>
         </div>
 
         <GridImage />

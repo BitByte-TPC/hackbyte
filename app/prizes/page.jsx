@@ -16,7 +16,7 @@ export const metadata = {
       "Discover the exciting prizes at HackByte! Explore the rewards, recognition, and opportunities awaiting you. Connect with us for more information on IIIT Jabalpur's hackathon.",
     url: "https://hackbyte.in/prizes",
     images:
-      "https://res.cloudinary.com/drtmfrghg/image/upload/v1708016443/opengraph-image_vkiopn.jpg",
+      "https://res.cloudinary.com/dlsqbiwug/image/upload/v1736876616/Frame_463_zdbkgu.png",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",
@@ -26,12 +26,12 @@ export const metadata = {
 export default function Prizes() {
   return (
     <div className="overflow-x-hidden">
-      <div className="flex flex-col min-h-screen px-4 md:px-16 lg:px-28 monitor:px-32 md:pt-16 pb-40 pt-[32px] xl:pt-[48px]">
+      <div className="flex flex-col min-h-screen md:pt-16 pb-40 pt-[32px] xl:pt-[48px]">
         <div className="w-full flex flex-col gap-10 md:gap-16">
-          <div className="flex justify-between">
+          <div className="flex justify-between px-4 md:px-16 lg:px-28 monitor:px-32">
             <div className="flex flex-col items-start gap-2">
-              <p className="text-supporting-lightGray text-[36px] xs:text-[3rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] leading-tight font-black">
-                Prizes for the <br />
+              <p className="text-supporting-lightGray text-[36px] xs:text-[3rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] leading-tight font-black max-w-[95%]">
+                Prizes for the
                 Winners
               </p>
               <div className="flex flex-col items-start gap-3 md:gap-4">
@@ -61,10 +61,8 @@ export default function Prizes() {
           </div>
 
           <div className="flex flex-col gap-6 md:gap-8 mt-14">
-            <div>
-              <PrizeSection/>
-            </div>
-            <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2">
+            <PrizeSection />
+            <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2 px-4 md:px-16 lg:px-28 monitor:px-32">
               <div
                 className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
                   md:flex-row md:px-6 rounded-3xl bg-[#451C20]"
@@ -81,7 +79,7 @@ export default function Prizes() {
                     Best performing All-Girls Team at HackByte
                   </p>
                 </div>
-              </div>      
+              </div>
               <div
                 className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
                   md:flex-row md:px-6 rounded-3xl bg-[#451C20]"
@@ -104,7 +102,7 @@ export default function Prizes() {
         </div>
 
         {/* Sponsor Tracks Section */}
-        <div className="w-full flex flex-col pt-24">
+        <div className="w-full flex flex-col pt-24 px-4 md:px-16 lg:px-28 monitor:px-32">
           <p className="text-supporting-lightGray text-center text-[2.25rem] md:text-[3.5rem] lg:text-[5rem] font-black">
             Sponsored Tracks
           </p>

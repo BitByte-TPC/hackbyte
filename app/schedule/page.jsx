@@ -13,6 +13,8 @@ export const metadata = {
     description:
       "Check out the schedule for HackByte! Stay updated with the timeline of events and activities happening during IIIT Jabalpur's hackathon.",
     url: "https://hackbyte.in/schedule",
+    images:
+      "https://res.cloudinary.com/dlsqbiwug/image/upload/v1736876616/Frame_463_zdbkgu.png",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",

@@ -36,6 +36,8 @@ export const metadata = {
     description:
       "Explore the invaluable support from our esteemed sponsors and partners at HackByte – the premier hackathon hosted by IIITDMJ. Discover their contributions and partnerships, playing a pivotal role in empowering the coding community.",
     url: "https://hackbyte.in/partners",
+    images:
+      "https://res.cloudinary.com/dlsqbiwug/image/upload/v1736876616/Frame_463_zdbkgu.png",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",

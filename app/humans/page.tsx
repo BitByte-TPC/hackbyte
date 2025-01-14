@@ -18,6 +18,8 @@ export const metadata = {
     description:
       "Meet the team behind HackByte 3.0! Discover the faces and roles of the passionate individuals who are working tirelessly to make the hackathon a grand success. Join us and be a part of the team!",
     url: "https://hackbyte.in/humans",
+    images:
+      "https://res.cloudinary.com/dlsqbiwug/image/upload/v1736876616/Frame_463_zdbkgu.png",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",
@@ -29,7 +31,7 @@ const Humans = () => {
     <>
       <div
         className="flex flex-col min-h-screen lg:gap-[20px] 3xl:gap-[88px]
-          md:px-16 xl:px-28 lg:pb-[92px] xl:pt-[48px] pt-[32px] px-4"
+          md:px-16 xl:px-28 lg:pb-[92px] md:pt-16 xl:pt-12 pt-[32px] px-4"
       >
         <div className="flex lg:gap-[40px]">
           <div>

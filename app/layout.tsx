@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import MobileSidebar from "@/components/MobileSidebar";
 import { Sidebar } from "@/components/sidebar";
@@ -16,10 +17,12 @@ export const metadata: Metadata = {
     description:
       "HackByte is the IIITDMJ's student-run hackathon, which centers on bringing developers and problem solvers from different foundations together and enables them to develop projects that can bring out an impact.",
     url: "https://hackbyte.in",
+    images:
+      "https://res.cloudinary.com/dlsqbiwug/image/upload/v1736876616/Frame_463_zdbkgu.png",
     siteName: "HackByte - IIITDMJ Hackathon",
     locale: "en_US",
     type: "website",
-  }
+  },
 };
 
 const gotham = localFont({
@@ -43,7 +46,7 @@ const gotham = localFont({
     {
       path: "../public/fonts/Gotham-Book.otf",
       weight: "normal",
-    }
+    },
   ],
   variable: "--font-gotham",
 });
@@ -55,13 +58,27 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${gotham.variable} font-sans`}>
+      <head>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=G-50RJG4PPLT"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-50RJG4PPLT');
+          `}
+        </Script>
+      </head>
       <body>
         {/* <Sidebar /> */}
         <div className="sm:block hidden">
           <Sidebar />
         </div>
         <div className="sm:hidden">
-          <MobileSidebar/>
+          <MobileSidebar />
         </div>
         {children}
         <Footer />

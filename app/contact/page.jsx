@@ -14,6 +14,8 @@ export const metadata = {
     description:
       "Connect with us at HackByte! Reach out for assistance, questions, or just to say hello. Find information on reaching IIIT Jabalpur, including travel options.",
     url: "https://hackbyte.in/contact",
+    images:
+      "https://res.cloudinary.com/dlsqbiwug/image/upload/v1736876616/Frame_463_zdbkgu.png",
     siteName: "HackByte - IIITDMJ Hackathon",
     type: "website",
     locale: "en_US",
@@ -49,7 +51,11 @@ export default function ContactSection() {
             </p>
           </div>
           <div className="hidden md:block mx-auto">
-            <Image src={phoneImg} alt="phone"  className="md:w-[168px] lg:w-[200px] xl:w-[220px]" />
+            <Image
+              src={phoneImg}
+              alt="phone"
+              className="md:w-[168px] lg:w-[200px] xl:w-[220px]"
+            />
           </div>
         </div>
 
@@ -91,7 +97,9 @@ export default function ContactSection() {
         </div>
 
         <div className="space-y-6">
-          <h2 className="text-3xl md:text-4xl xl:text-5xl font-black">Reaching IIITDM Jabalpur</h2>
+          <h2 className="text-3xl md:text-4xl xl:text-5xl font-black">
+            Reaching IIITDM Jabalpur
+          </h2>
           <div className="aspect-video w-full rounded-3xl overflow-hidden">
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3668.4774721298!2d80.02231931544636!3d23.176386884867444!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3981ae1a0fb6a97d%3A0x44020f94f795d69f!2sIIITDM%20Jabalpur!5e0!3m2!1sen!2sin!4v1629789876543!5m2!1sen!2sin"
