@@ -49,16 +49,20 @@ const HeroSection = () => {
       </div>
       {/* This btn is for the Desktop view */}
       <div className="hidden sm:flex justify-center md:justify-end md:mr-8 lg:mr-16 md:-mt-24 lg:-mt-12 xl:-mt-20 mb-8">
-            <div className="px-6 xl:px-8 py-2 xl:py-3 bg-white rounded-[55px] text-[#383435] font-bold text-[28px] xl:text-[32px] hover:bg-supporting-darkGray hover:text-white z-10 hover:cursor-not-allowed">
-              Registrations soon!
+        
+            <div className="px-6 xl:px-8 py-2 xl:py-3 bg-white rounded-[55px] text-[#FF3044] font-bold text-[28px] xl:text-[32px] hover:bg-black hover:text-white z-10 hover:cursor-pointer">
+            <a href="https://hackbyte3.devfolio.co/">Register Now!</a>
             </div>
+            
           </div>
         <div className="flex flex-col gap-8 justify-center md:gap-0 md:flex-row md:justify-between lg:px-16 px-2 xs:px-8 md:pb-16 md: pb-4 sm:mt-0 mt-40">
           {/* This is the btn for the Mobile view */}
           <div className="sm:hidden flex justify-center md:justify-end md:mr-8 lg:mr-16 md:-mt-24 lg:-mt-12 xl:-mt-20 mb-8">
-            <div className="px-6 xl:px-8 py-2 xl:py-3 bg-white rounded-[55px] text-[#383435] font-bold text-[28px] xl:text-[32px] hover:bg-supporting-darkGray hover:text-white z-10 hover:cursor-not-allowed">
-              Registrations soon!
+          
+            <div className="px-6 xl:px-8 py-2 xl:py-3 bg-white rounded-[55px] text-[#FF3044] font-bold text-[28px] xl:text-[32px] hover:bg-black hover:text-white z-10 hover:cursor-pointer">
+            <a href="https://hackbyte3.devfolio.co/">Register Now!</a>
             </div>
+          
           </div>
           <div className="flex justify-evenly md:justify-center gap-4 md:pt-4">
             <Link href="https://www.linkedin.com/company/bitbyte-tpc">
@@ -68,21 +72,21 @@ const HeroSection = () => {
                 className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all ease-in-out duration-300 cursor-pointer"
               />
             </Link>
-            <Link href="https://www.instagram.com/bitbyte.tpc">
+            <Link href="https://www.instagram.com/hackbyte.tpc">
               <Image
                 src={instagram}
                 alt="Instagram"
                 className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all ease-in-out duration-300 cursor-pointer"
               />
             </Link>
-            <Link href="https://twitter.com/BitByte_IIITDMJ">
+            <Link href="https://x.com/HackbyteTPC">
               <Image
                 src={twitter}
                 alt="Twitter"
                 className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all ease-in-out duration-300 cursor-pointer"
               />
             </Link>
-            <Link href="https://discord.gg/TEATaaK9">
+            <Link href="https://discord.gg/6RDuTPnAME">
               <Image
                 src={discord}
                 alt="Discord"
@@ -92,7 +96,7 @@ const HeroSection = () => {
             <Link href="https://milaap.org/fundraisers/support-hackbyte-3-0">
               <Image
                 src={milaap}
-                alt="Discord"
+                alt="Milaap"
                 className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all ease-in-out duration-300 cursor-pointer rounded-md"
               />
             </Link>

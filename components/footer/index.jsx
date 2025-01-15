@@ -57,21 +57,21 @@ const Footer = () => {
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
           </Link>
-          <Link href="https://www.instagram.com/bitbyte.tpc">
+          <Link href="https://www.instagram.com/hackbyte.tpc">
             <Image
               src={instagram}
               alt="Instagram"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
           </Link>
-          <Link href="https://twitter.com/BitByte_IIITDMJ">
+          <Link href="https://x.com/HackbyteTPC">
             <Image
               src={twitter}
               alt="Twitter"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer"
             />
           </Link>
-          <Link href="https://discord.gg/TEATaaK9">
+          <Link href="https://discord.gg/6RDuTPnAME">
             <Image
               src={discord}
               alt="Discord"
@@ -81,7 +81,7 @@ const Footer = () => {
           <Link href="https://milaap.org/fundraisers/support-hackbyte-3-0">
             <Image
               src={milaap}
-              alt="Discord"
+              alt="Milaap"
               className="w-6 md:w-7 xl:w-8 hover:scale-110 transition-all duration-300 cursor-pointer rounded-md"
             />
           </Link>
