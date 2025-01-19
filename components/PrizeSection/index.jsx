@@ -38,7 +38,7 @@ const PrizeSection = () => {
         duration: 1,
       },
     }}
-    className="flex flex-col items-center justify-center mt-28"
+    className="flex flex-col items-center justify-center mt-28 order-2 sm:order-1"
   >
     <div className="flex flex-col items-center justify-center xl:w-[460px]">
       <div>
@@ -54,7 +54,7 @@ const PrizeSection = () => {
     </div>
     <div className="absolute flex flex-col items-center justify-center gap-3 mb-8 sm:mb-24">
       <Image src={cup2} className="w-14" alt="cup"/>
-      <p className="font-gotham lg:text-5xl text-5xl md:text-4xl sm:text-3xl font-extrabold text-white">INR 15K</p>
+      <p className="font-gotham lg:text-5xl text-5xl md:text-4xl sm:text-3xl font-extrabold text-white">INR 25K</p>
       <p className="font-gotham lg:text-2xl text-2xl md:text-xl sm:text-lg font-extrabold text-supporting-mediumGray">2nd Prize - Silver</p>
     </div>
   </motion.div>
@@ -71,7 +71,7 @@ const PrizeSection = () => {
         duration: 1,
       },
     }}
-    className=" flex flex-col items-center justify-center sm:-ml-14 lg:-ml-20"
+    className=" flex flex-col items-center justify-center sm:-ml-14 lg:-ml-20 order-1 sm:order-2"
   >
     <div className="flex flex-col items-center justify-center xl:w-[560px]">
       <div>
@@ -89,7 +89,7 @@ const PrizeSection = () => {
     
     <div className="absolute flex flex-col items-center justify-center gap-3 mb-8 sm:mb-40">
       <Image src={cup1} className="w-14" alt="cup"/>
-      <p className="font-gotham md:text-5xl text-6xl sm:text-4xl  font-extrabold text-white">INR 25K</p>
+      <p className="font-gotham md:text-5xl text-6xl sm:text-4xl  font-extrabold text-white">INR 35K</p>
       <p className="font-gotham lg:text-2xl md:text-xl text-xl font-extrabold text-[#FFAE0C]">1st Prize - Gold</p>
     </div>
   </motion.div>
@@ -106,7 +106,7 @@ const PrizeSection = () => {
         duration: 1,
       },
     }}
-    className=" flex flex-col items-center justify-center sm:-ml-14 lg:-ml-20 mt-28"
+    className=" flex flex-col items-center justify-center sm:-ml-14 lg:-ml-20 mt-28 order-3 sm:order-3"
   >
     <div className="flex flex-col items-center justify-center xl:w-[460px]">
       <div>
@@ -123,7 +123,7 @@ const PrizeSection = () => {
     </div>
     <div className="absolute flex flex-col items-center justify-center gap-3 mb-8 sm:mb-24">
       <Image src={cup3} className="w-14" alt="cup"/>
-      <p className="font-gotham lg:text-5xl text-5xl md:text-4xl sm:text-3xl font-extrabold text-white">INR 10K</p>
+      <p className="font-gotham lg:text-5xl text-5xl md:text-4xl sm:text-3xl font-extrabold text-white">INR 15K</p>
       <p className="font-gotham lg:text-2xl text-2xl md:text-xl sm:text-lg font-extrabold text-[#D76835]">3rd Prize - Bronze</p>
     </div>
   </motion.div>
