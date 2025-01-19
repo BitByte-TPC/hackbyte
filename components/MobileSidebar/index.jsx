@@ -15,6 +15,7 @@ import {
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 const sidebarLinks = [
   { name: "Home", icon: <House />, href: "/" },
   { name: "Gallery", icon: <Gallery />, href: "/gallery" },
@@ -27,17 +28,10 @@ const sidebarLinks = [
 ];
 
 const MobileSidebar = () => {
-  const [selectedName, setSelectedName] = useState("Home");
   const [fullyopen, setFullyopen] = useState(false);
   const [open, setOpen] = useState(false);
   const [scope, animate] = useAnimate();
-
-  useEffect(() => {
-    setSelectedName(
-      sidebarLinks.find((link) => link.href === window.location.pathname).name
-    );
-    console.log(selectedName);
-  }, []);
+  const pathname = usePathname();
 
   useEffect(() => {
     const animateSidebar = async () => {
@@ -93,7 +87,7 @@ const MobileSidebar = () => {
                 key={link.name}
                 href={link.href}
                 className={`flex gap-5  ${
-                  selectedName === link.name ? "text-white" : "text-white/40"
+                  pathname === link.href ? "text-white" : "text-white/40"
                 }`}
               >
                 {link.icon}
