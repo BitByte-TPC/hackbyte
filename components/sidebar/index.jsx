@@ -10,6 +10,7 @@ import {
   Phone,
 } from "lucide-react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { useState, useEffect } from "react";
 const sidebarLinks = [
   { name: "Home", icon: <House className="w-auto h-auto monitor:w-8 monitor:h-8" />, href: "/" },
@@ -23,13 +24,8 @@ const sidebarLinks = [
 ];
 
 export const Sidebar = () => {
-  const [selectedName, setSelectedName] = useState("Home");
-
-  useEffect(() => {
-    setSelectedName(
-      sidebarLinks.find((link) => link.href === window.location.pathname).name
-    );
-  }, []);
+  const pathname = usePathname();
+  console.log(pathname);
 
   return (
     <div
@@ -47,7 +43,7 @@ export const Sidebar = () => {
             key={link.name}
             href={link.href}
             className={`flex items-center space-x-4 text-lg p-2 w-12 group-hover:w-44 rounded-[2.5rem] h-10 xl:h-12 hover:shadow-[0_4px_40px_rgba(0,0,0,0.10)] hover:backdrop-blur-[20px] hover:bg-[#4E2529] hover:text-white hover:pl-3 hover:scale-105 transition duration-300 ease-in-out ${
-              selectedName === link.name ? "text-white font-bold" : ""
+              pathname === link.href ? "text-white font-bold" : ""
             }`}
           >
             {link.icon}
