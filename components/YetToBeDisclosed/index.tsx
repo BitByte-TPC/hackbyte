@@ -37,8 +37,8 @@ const RedirectingCard = ({ title, link, image }: RedirectCardsProps) => {
         className="bg-[#333333] rounded-[22px] flex flex-col gap-2 items-center justify-center
                       p-[16px] shadow-lg"
       >
-        <Image src={image} alt={title} className="w-48 " />
-        <div className="text-white lg:text-[40px] font-bold">{title}</div>
+        <Image src={image} alt={title} className=" max-w-48 md:max-w-36 lg:max-w-48" />
+        <div className="text-white text-lg lg:text-[40px] font-bold">{title}</div>
       </div>
     </Link>
   );

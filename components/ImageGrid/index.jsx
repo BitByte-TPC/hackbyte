@@ -26,7 +26,9 @@ const GridImage = async () => {
   return (
     <div className="max-w-8xl mx-auto py-16">
       <div className="flex flex-col gap-5 md:flex-row">
-        <div className="flex flex-col gap-5 items-center">
+        {/* This has been temporarily commented out until all sets of images have been added. */}
+
+        {/* <div className="flex flex-col gap-5 items-center">
           <ClientCarousel
             images={carousels[0].images}
             duration={carousels[0].duration}
@@ -78,6 +80,90 @@ const GridImage = async () => {
             duration={carousels[8].duration}
             className="xl:w-[420px] xl:h-[540px] lg:w-[320px] w-[320px] h-[320px]"
           />
+        </div> */}
+        <div className="flex flex-col gap-5 items-center">
+          <div>
+            <Image
+              src={img6}
+              alt="1"
+              className="xl:w-[420px] xl:h-[300px] lg:w-[320px] w-[320px] rounded-xl object-cover"
+              placeholder="blur"
+              priority
+            />
+          </div>
+          <div>
+            <Image
+              src={img7}
+              alt="2"
+              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
+              placeholder="blur"
+            />
+          </div>
+          <div>
+            <Image
+              src={img4}
+              alt="3"
+              className="xl:w-[420px] xl:h-[530px] lg:w-[320px] w-[320px] h-[320px] rounded-xl object-cover"
+              placeholder="blur"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-5 items-center">
+          <div>
+            <Image
+              src={img8}
+              alt="4"
+              className="xl:w-[420px] xl:h-[520px] lg:w-[320px] w-[320px] h-[320px] rounded-xl object-cover"
+              placeholder="blur"
+              priority
+            />
+          </div>
+          <div>
+            <Image
+              src={img9}
+              alt="5"
+              className="xl:w-[420px] xl:h-[300px] lg:w-[320px] w-[320px] rounded-xl object-cover"
+              placeholder="blur"
+            />
+          </div>
+          <div>
+            <Image
+              src={img5}
+              alt="6"
+              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
+              placeholder="blur"
+            />
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-5 items-center">
+          <div>
+            <Image
+              src={img1}
+              alt="7"
+              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
+              placeholder="blur"
+              priority
+            />
+          </div>
+          <div>
+            <Image
+              src={img2}
+              alt="8"
+              className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
+              placeholder="blur"
+              priority
+            />
+          </div>
+          <div>
+            <Image
+              src={img3}
+              alt="9"
+              className="xl:w-[420px] xl:h-[540px] lg:w-[320px] w-[320px] h-[320px] rounded-xl object-cover"
+              placeholder="blur"
+            />
+          </div>
         </div>
       </div>
     </div>

@@ -28,9 +28,8 @@ const Schedule = () => {
         <div className="w-full flex flex-col gap-10 md:gap-16">
           <div className="flex justify-between items-center md:items-start">
             <div className="flex flex-col items-start gap-2">
-              <div className="text-supporting-lightGray text-[36px] xs:text-[42px] lg:text-[4rem] xl:text-[6rem] leading-tight font-black">
+              <div className="text-supporting-lightGray text-[36px] xs:text-[42px] lg:text-[4rem] xl:text-[6rem] leading-tight font-black max-w-[95%] md:max-w-[85%] lg:max-w-[95%]">
                 Run of show for
-                <br />
                 the Event
               </div>
               <p

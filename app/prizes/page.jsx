@@ -27,7 +27,7 @@ export default function Prizes() {
   return (
     <div className="overflow-x-hidden">
       <div className="flex flex-col min-h-screen md:pt-16 pb-40 pt-[32px] xl:pt-[48px]">
-        <div className="w-full flex flex-col gap-10 md:gap-16">
+        <div className="w-full flex flex-col gap-10 md:gap-0">
           <div className="flex justify-between px-4 md:px-16 lg:px-28 monitor:px-32">
             <div className="flex flex-col items-start gap-2">
               <p className="text-supporting-lightGray text-[36px] xs:text-[3rem] md:text-[3.5rem] lg:text-[5rem] xl:text-[6rem] leading-tight font-black max-w-[95%]">
@@ -37,7 +37,7 @@ export default function Prizes() {
               <div className="flex flex-col items-start gap-3 md:gap-4">
                 <p
                   className="w-full xl:max-w-[85%] text-supporting-mediumGray
-                text-[1rem] md:text-[1.2rem] lg:text-[1.5rem] font-medium"
+                md:text-xl lg:text-2xl text-lg xs:text-md font-medium"
                 >
                   Collaborate and innovate to build something awesome ! All
                   monetary prizes will be split equally among the winning team
@@ -60,11 +60,11 @@ export default function Prizes() {
             />
           </div>
 
-          <div className="flex flex-col gap-6 md:gap-8 mt-14">
+          <div className="flex flex-col gap-6 md:gap-8 sm:mt-14">
             <PrizeSection />
-            <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2 px-4 md:px-16 lg:px-28 monitor:px-32">
+            <div className="grid grid-cols-1 gap-6 md:gap-8 lg:grid-cols-2 px-4 md:px-16 xl:px-28 monitor:px-32">
               <div
-                className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
+                className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-6 py-6 
                   md:flex-row md:px-6 rounded-3xl bg-[#451C20]"
               >
                 <Image src={cup4} alt="cup" className="w-[4.7rem] h-[4.7rem]" />
@@ -81,7 +81,7 @@ export default function Prizes() {
                 </div>
               </div>
               <div
-                className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-8 py-6 
+                className="flex flex-col items-center gap-4 md:gap-12 px-4 xs:px-6 py-6 
                   md:flex-row md:px-6 rounded-3xl bg-[#451C20]"
               >
                 <Image src={cup4} alt="cup" className="w-[4.7rem] h-[4.7rem]" />
