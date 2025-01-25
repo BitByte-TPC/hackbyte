@@ -124,13 +124,13 @@ export default function Home() {
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
             <div className="font-black text-xl md:text-4xl lg:text-6xl xl:text-7xl text-white">
-              420
+              412
             </div>
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
-              Registrations
+              Participants
             </div>
             <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
-              2400+ registrations from across the country.
+              400+ participants joined the offline hackathon!
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
