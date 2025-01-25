@@ -1,5 +1,5 @@
 "use client";
-import { useAnimate } from "framer-motion";
+import { useAnimate } from "motion/react";
 import closesidebar from "@/public/closesidebar.svg";
 import opensidebar from "@/public/opensidebar.svg";
 import {

@@ -81,8 +81,8 @@ export default function ContactSection() {
           <div className="space-y-2 hidden ">
             <h2 className="text-3xl md:text-4xl font-black">Mail Us</h2>
             <div className="space-y-1 flex flex-col text-supporting-mediumGray font-medium">
-              <Link target="_blank" href={"mailto:theprogclub@iiitdmj.ac.in"}>
-                theprogclub@iiitdmj.ac.in
+              <Link target="_blank" href={"mailto:hackbyte@iiitdmj.ac.in"}>
+                hackbyte@iiitdmj.ac.in
               </Link>
             </div>
           </div>

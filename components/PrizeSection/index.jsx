@@ -1,5 +1,5 @@
 "use client";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Image from "next/image";
 import lamp_orange from "@/public/lamp_orange.svg";
 import lamp_white from "@/public/lamp_white.svg";

@@ -105,11 +105,11 @@ export default function FAQSection() {
               </p>
               <p className="text-supporting-mediumGray">Reach out at</p>
               <Link
-                href="mailto:theprogclub@iiitdmj.ac.in"
+                href="mailto:hackbyte@iiitdmj.ac.in"
                 className="inline-flex items-center gap-2 text-white hover:text-supporting-mediumGray transition-colors"
               >
                 <Mail className="w-5 h-5" />
-                theprogclub@iiitdmj.ac.in
+                hackbyte@iiitdmj.ac.in
               </Link>
             </div>
           </div>
