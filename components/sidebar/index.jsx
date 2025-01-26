@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { useState, useEffect } from "react";
+
 const sidebarLinks = [
   { name: "Home", icon: <House className="w-auto h-auto monitor:w-8 monitor:h-8" />, href: "/" },
   { name: "Gallery", icon: <Gallery className="w-auto h-auto monitor:w-8 monitor:h-8" />, href: "/gallery" },

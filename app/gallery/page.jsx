@@ -2,6 +2,7 @@ import banner from "@/public/ImageGallery/banner.jpg";
 import HB2Logo from "@/public/ImageGallery/HB2Logo.svg";
 import { GridImage, BannerImage } from "@/components/ImageGrid";
 import Image from "next/image";
+import AnimatedTitle from "@/components/AnimatedTitle";
 
 export const metadata = {
   title: "Gallery | HackByte",
@@ -51,7 +52,7 @@ const Gallery = () => {
             className="text-[#FAF8ED] text-center font-bold text-[2.375rem]
               leading-[1.2] lg:leading-[1.1] lg:text-[3rem]"
           >
-            COMMITTEE <span>CREW</span>
+            <AnimatedTitle>COMMITTEE <span>CREW</span></AnimatedTitle>
           </div>
         </div>
 

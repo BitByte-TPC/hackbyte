@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import HumansCard from "@/components/HumansCard";
 import Image from "next/image";
+import { MagicCard } from "@/components/ui/magic-card";
 
 import humansSticker from "@/public/humansPage/humansSticker.svg";
 import { OrganizersData } from "@/data/organizersData";
@@ -84,7 +85,13 @@ const Humans = () => {
                 place-content-center place-items-center gap-10"
             >
               {OrganizersData.map((human, index) => (
-                <HumansCard key={index} index={index} {...human} />
+                <MagicCard
+                  key={index}
+                  className="cursor-pointer flex-col items-center justify-center whitespace-nowrap"
+                  gradientColor="#D9D9D955"
+                >
+                  <HumansCard index={index} {...human} />
+                </MagicCard>
               ))}
             </div>
           </TabsContent>
@@ -94,7 +101,13 @@ const Humans = () => {
                 place-content-center place-items-center gap-10"
             >
               {MentorsData.map((human, index) => (
-                <HumansCard key={index} index={index} {...human} />
+                <MagicCard
+                  key={index}
+                  className="cursor-pointer flex-col items-center justify-center whitespace-nowrap"
+                  gradientColor="#D9D9D955"
+                >
+                  <HumansCard index={index} {...human} />
+                </MagicCard>
               ))}
             </div>
           </TabsContent>
@@ -104,7 +117,13 @@ const Humans = () => {
                 place-content-center place-items-center"
             >
               {FamilyData.map((human, index) => (
-                <HumansCard key={index} index={index} {...human} />
+                <MagicCard
+                  key={index}
+                  className="cursor-pointer flex-col items-center justify-center whitespace-nowrap"
+                  gradientColor="#D9D9D955"
+                >
+                  <HumansCard index={index} {...human} />
+                </MagicCard>
               ))}
             </div>
           </TabsContent>

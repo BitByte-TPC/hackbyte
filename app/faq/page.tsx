@@ -8,6 +8,7 @@ import {
 } from "@/components/ui/accordion";
 import faq from "@/public/Faq/question_mark.png";
 import Link from "next/link";
+import AnimatedTitle from "@/components/AnimatedTitle";
 
 export const metadata = {
   title: "FAQ | HackByte",
@@ -118,18 +119,19 @@ export default function FAQSection() {
         <div className="animate-in fade-in duration-500 delay-500 md:h-[750px] lg:h-[760px] xl:h-[800px]">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem
-                key={index}
-                value={`item-${index}`}
-                className="border-b border-gray-800"
-              >
-                <AccordionTrigger className="text-base sm:text-lg md:text-xl xl:text-2xl text-supporting-mediumGray hover:text-white transition-colors text-left pr-4 font-bold">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-base sm:text-lg  xl:text-xl text-supporting-mediumGray">
-                  {faq.answer}
-                </AccordionContent>
-              </AccordionItem>
+              <AnimatedTitle key={index}>
+                <AccordionItem
+                  value={`item-${index}`}
+                  className="border-b border-gray-800"
+                >
+                  <AccordionTrigger className="text-base sm:text-lg md:text-xl xl:text-2xl text-supporting-mediumGray hover:text-white transition-colors text-left pr-4 font-bold">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-base sm:text-lg  xl:text-xl text-supporting-mediumGray">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              </AnimatedTitle>
             ))}
           </Accordion>
         </div>

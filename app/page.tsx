@@ -14,13 +14,45 @@ import g8 from "@/public/HomePageLogo/g8.svg";
 import g9 from "@/public/HomePageLogo/g9.svg";
 import bottomstats from "@/public/upper.svg";
 import topstats from "@/public/lower.svg";
+import * as motion from "motion/react-client";
+import AnimatedTitle from "@/components/AnimatedTitle";
 
 
 interface GuidlinesCard {
   title: string;
   description: string;
   icon: string;
+  index: number;
 }
+
+function GuidelinesCard({ title, description, icon, index }: GuidlinesCard) {
+  // Define animation variants based on index
+ const animationVariants = {
+   hidden: { opacity: 0, x: index % 2 === 0 ? -50 : 50 },
+   visible: { opacity: 1, x: 0 },
+ };
+
+ return (
+   <motion.div
+     className="card flex gap-4 items-start"
+     initial="hidden"
+     whileInView="visible"
+     viewport={{ once: true }}
+     transition={{ duration: 0.5, delay: 0.2 }}
+     variants={animationVariants}
+   >
+       <Image src={icon} alt="Icon" className="xl:w-20 md:w-16 pt-1" />
+       <div className="flex flex-col justify-center gap-2">
+         <div className="monitor:text-4xl xl:text-3xl lg:text-2xl text-xl text-white font-bold">
+           {title}
+         </div>
+         <div className="text-base lg:text-base xl:text-lg monitor:text-xl font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
+           {description}
+         </div>
+       </div>
+     </motion.div>
+   );
+ }
 
 export default function Home() {
   const Guidelines = [
@@ -78,21 +110,6 @@ export default function Home() {
     },
   ];
 
-  function GuidelinesCard({ title, description, icon }: GuidlinesCard) {
-    return (
-      <div className="card flex gap-4 items-start ">
-        <Image src={icon} alt="Icon" className="xl:w-20 md:w-16 pt-1" />
-        <div className="flex flex-col justify-center gap-2">
-          <div className="monitor:text-4xl xl:text-3xl lg:text-2xl text-xl text-white font-bold">
-            {title}
-          </div>
-          <div className="text-base lg:text-base xl:text-lg monitor:text-xl font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
-            {description}
-          </div>
-        </div>
-      </div>
-    );
-  }
   return (
     <div className="overflow-hidden">
       <HeroSection />
@@ -161,7 +178,7 @@ export default function Home() {
       {/* Why Participate */}
       <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-16">
         <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl sm:text-2xl text-3xl xs:text-4xl font-bold leading-[48px] xs:leading-[64px] text-center">
-          Why Participate in Hackbyte 3.0?
+          <AnimatedTitle>Why Participate in Hackbyte 3.0?</AnimatedTitle>
         </div>
         <Image
           src={whyParticipate}
@@ -173,7 +190,7 @@ export default function Home() {
       {/* Guidelines */}
       <div className="flex flex-col items-center gap-4 md:gap-16">
         <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-center text-3xl xs:text-2xl font-bold leading-[48px] xs:leading-[64px]">
-          Guidelines for Hackbyte 3.0
+          <AnimatedTitle>Guidelines for Hackbyte 3.0</AnimatedTitle>
         </div>
         <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4 monitor:place-items-center">
           {Guidelines.map((item, index) => (
@@ -182,6 +199,7 @@ export default function Home() {
               title={item.title}
               description={item.description}
               icon={item.icon}
+              index={index}
             />
           ))}
         </div>
@@ -189,7 +207,7 @@ export default function Home() {
 
       <div className="flex flex-col items-center gap-4 md:gap-16 pt-4 lg:pt-8 xl:pb-12 pb-8 md:pb-16">
         <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold leading-[64px] pb-4 md:pb-8 lg:pb-16">
-          Join our Newsletter
+          <AnimatedTitle>Join our Newsletter</AnimatedTitle>
         </div>
         <Newsletter />
       </div>

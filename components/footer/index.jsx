@@ -6,6 +6,7 @@ import twitter from "../../public/FooterLogo/twitter.svg";
 import discord from "../../public/FooterLogo/discord.svg";
 import milaap from "../../public/FooterLogo/milaap.svg";
 import Link from "next/link";
+import AnimatedTitle from "../AnimatedTitle";
 
 const sidebarLinks = [
   { name: "Home", href: "/" },
@@ -29,10 +30,10 @@ const Footer = () => {
         />
         <div className="flex flex-col gap-2 justify-start items-start md:items-end pt-8 md:pt-16 w-full">
           <div className="text-right text-supporting-lightGray monitor:text-6xl xl:text-5xl text-3xl xs:text-4xl font-bold w-full">
-            Hack the Protocol
+            <AnimatedTitle>Hack the Protocol</AnimatedTitle>
           </div>
           <div className="text-right text-supporting-mediumGray monitor:text-5xl xl:text-4xl text-2xl xs:text-3xl font-normal w-full">
-            Break the red tape
+            <AnimatedTitle>Break the red tape</AnimatedTitle>
           </div>
         </div>
       </div>

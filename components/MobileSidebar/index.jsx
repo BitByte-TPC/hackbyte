@@ -90,7 +90,7 @@ const MobileSidebar = () => {
           scope.current = el; // For animations
           sidebarRef.current = el; // For outside click detection
         }}
-        className="backdrop-blur-xl bg-[#222222] h-[48px] w-[48px] top-5 right-4 fixed rounded-[32px] z-10"
+        className="backdrop-blur-xl bg-[#222222] h-[48px] w-[48px] top-5 right-4 fixed rounded-[32px] z-50"
         style={{
           background: "rgba(34, 34, 34, 0.50)",
           boxShadow: "0px 0px 80px 0px rgba(0, 0, 0, 0.15)",

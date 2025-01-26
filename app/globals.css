@@ -5,10 +5,7 @@
 @layer base {
   :root {
     /* This is for the dotted bg */
-    --dot-bg: #161616;
-    --dot-color: #848282;
-    --dot-size: 1.5px;
-    --dot-space: 50px;
+    background-color: #161616;
   }
 
   ::-webkit-scrollbar {
@@ -30,18 +27,7 @@
 
   body {
     @apply font-gotham;
-    background: linear-gradient(
-          90deg,
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      linear-gradient(
-          var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
-          transparent 1%
-        )
-        center / var(--dot-space) var(--dot-space),
-      var(--dot-color);
+    overflow: hidden;
   }
 
   .clip-trapezium {

@@ -1,8 +1,6 @@
-"use client";
-
 import Image, { StaticImageData } from "next/image";
-import { motion } from "framer-motion";
 import Link from "next/link";
+import AnimatedTitle from "@/components/AnimatedTitle";
 
 interface SponsorCardProps {
   index: number;
@@ -47,19 +45,9 @@ const SponsorCard: React.FC<SponsorCardProps> = ({
 
   return (
     <>
-      <motion.div
-        className="card"
-        initial={{ opacity: 0 }}
-        whileInView={{
-          opacity: 1,
-          transition: {
-            duration: 1,
-          },
-        }}
-        viewport={{ once: true }}
-      >
+      <AnimatedTitle delay={0.2} viewport={true}>
         <Link href={site} target="_blank" rel="noreferrer" key={index}>
-          <div className="w-full text-white hover:scale-105 duration-300 max-w-[400px]">
+          <div className="w-full text-white hover:scale-105 transition-all ease-in-out duration-300 max-w-[400px]">
             <Image
               src={sponsorimgsrc}
               className="w-full h-[181px] xl:h-[216px] rounded-t-[20px] outline-none"
@@ -82,7 +70,7 @@ const SponsorCard: React.FC<SponsorCardProps> = ({
             </div>
           </div>
         </Link>
-      </motion.div>
+      </AnimatedTitle>
     </>
   );
 };
