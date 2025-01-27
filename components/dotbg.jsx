@@ -9,7 +9,7 @@ const InteractiveBackground = ({ children }) => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    let cw = window.innerWidth + 10;
+    let cw = window.innerWidth -50;
     let ch = window.innerHeight;
     canvas.width = cw;
     canvas.height = ch;
@@ -131,10 +131,10 @@ const InteractiveBackground = ({ children }) => {
           left: 0,
           width: "100%",
           height: "100%",
-          zIndex: -1,
+          zIndex: -100,
           pointerEvents: "none",
         }}
-        className="px-12 py-8"
+        className="sm:px-12 py-8 px-1"
       />
       {children}
     </div>

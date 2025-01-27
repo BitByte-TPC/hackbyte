@@ -241,7 +241,7 @@ const PartnersPage = () => {
               <TitleSponsorCard />
               <div
                 className="w-full xl:max-w-[95%] monitor:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
-                gap-8 lg:gap-[44px] md:px-8 lg:px-0"
+                gap-8 lg:gap-[44px] md:px-8 lg:px-0 place-items-center"
               >
                 {normalSponsorsData.map((sponsor, index) => {
                   return <SponsorCard key={index} index={index} {...sponsor} />;

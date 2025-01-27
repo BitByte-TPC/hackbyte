@@ -52,7 +52,7 @@ const Gallery = () => {
             className="text-[#FAF8ED] text-center font-bold text-[2.375rem]
               leading-[1.2] lg:leading-[1.1] lg:text-[3rem]"
           >
-            <AnimatedTitle>COMMITTEE <span>CREW</span></AnimatedTitle>
+            <AnimatedTitle viewport={true}>COMMITTEE <span>CREW</span></AnimatedTitle>
           </div>
         </div>
 
