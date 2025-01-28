@@ -31,9 +31,8 @@ const faqs = [
     answer: "Pre-registration will be opening in January 2025",
   },
   {
-    question: "How many team members do I need ?",
-    answer:
-      "You can participate only in teams of 2 to 4 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
+    "question": "How many team members do I need?",
+    "answer": "You can participate only in teams of 2 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team."
   },
   {
     question: "How much are the participation fees?",
