@@ -32,9 +32,8 @@ const faqs = [
     answer: "Pre-registration will be opening in January 2025",
   },
   {
-    question: "How many team members do I need ?",
-    answer:
-      "You can participate individually or in teams of 2 to 4 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
+    "question": "How many team members do I need?",
+    "answer": "You can participate only in teams of 2 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team."
   },
   {
     question: "How much are the participation fees?",
@@ -67,6 +66,10 @@ const faqs = [
     answer:
       "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team.",
   },
+  {
+    question: "Can we bring a pre-built project to the hackathon?",
+    answer: "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
+  }
 ];
 
 export default function FAQSection() {
