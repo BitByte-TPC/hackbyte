@@ -66,6 +66,10 @@ const faqs = [
     answer:
       "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team.",
   },
+  {
+    question: "Can we bring a pre-built project to the hackathon?",
+    answer: "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
+  }
 ];
 
 export default function FAQSection() {
