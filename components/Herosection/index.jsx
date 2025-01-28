@@ -58,7 +58,7 @@ const HeroSection = () => {
           </div>
         <div className="flex flex-col gap-8 justify-center md:gap-0 md:flex-row md:justify-between lg:px-16 px-2 xs:px-8 md:pb-16 md: pb-4 sm:mt-0 mt-40">
           {/* This is the btn for the Mobile view */}
-          <div className="sm:hidden flex justify-center md:justify-end md:mr-8 lg:mr-16 md:-mt-24 lg:-mt-12 xl:-mt-20 mb-8 -z-10">
+          <div className="sm:hidden flex justify-center md:justify-end md:mr-8 lg:mr-16 md:-mt-24 lg:-mt-12 xl:-mt-20 mb-8 z-10">
           
           <PulsatingButton className="px-6 xl:px-8 py-2 xl:py-3 bg-white text-[#FF3044] font-bold text-[28px] xl:text-[32px] hover:bg-black hover:text-white z-10 hover:cursor-pointer"><a href="https://hackbyte3.devfolio.co/">Register Now!</a></PulsatingButton>
           
