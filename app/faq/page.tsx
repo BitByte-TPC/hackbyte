@@ -33,7 +33,7 @@ const faqs = [
   {
     question: "How many team members do I need ?",
     answer:
-      "You can participate individually or in teams of 2 to 4 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
+      "You can participate only in teams of 2 to 4 members. If you are participating in the hackathon individually and looking for a team, we will help you in connecting to other individual participants to get you a team.",
   },
   {
     question: "How much are the participation fees?",
