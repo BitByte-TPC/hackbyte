@@ -25,7 +25,6 @@ const sidebarLinks = [
 
 export const Sidebar = () => {
   const pathname = usePathname();
-  console.log(pathname);
 
   return (
     <div

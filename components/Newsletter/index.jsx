@@ -21,7 +21,6 @@ export default function Newsletter() {
       const res = await axios.post(`${host}/api/subscribe`, { email });
 
       const data = res.data;
-      console.log(data);
 
       if (data.success) {
         setEmail("");

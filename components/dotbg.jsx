@@ -9,7 +9,7 @@ const InteractiveBackground = ({ children }) => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const ctx = canvas.getContext("2d");
-    let cw = window.innerWidth -50;
+    let cw = window.innerWidth;
     let ch = window.innerHeight;
     canvas.width = cw;
     canvas.height = ch;
@@ -122,7 +122,7 @@ const InteractiveBackground = ({ children }) => {
   }, []);
 
   return (
-    <div style={{ position: "relative", height: "100vh", width: "100vw" }}>
+    <div style={{ position: "relative", width: "100vw" }}>
       <canvas
         ref={canvasRef}
         style={{
