@@ -58,6 +58,7 @@ export const FamilyData = [
     linkedin: "https://www.linkedin.com/in/contactadityaraj/",
     twitter: "#",
     github: "#",
+    behance: "https://www.behance.net/adi_ux",
   },
   {
     name: "Varun Singh",

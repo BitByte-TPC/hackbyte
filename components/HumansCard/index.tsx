@@ -36,6 +36,7 @@ interface HumansCardProps {
   linkedin: string;
   twitter: string;
   github: string;
+  behance?: string;
 }
 
 const HumansCard: React.FC<HumansCardProps> = ({
@@ -45,6 +46,7 @@ const HumansCard: React.FC<HumansCardProps> = ({
   linkedin,
   twitter,
   github,
+  behance
 }: HumansCardProps) => {
   return (
     <>
@@ -66,11 +68,11 @@ const HumansCard: React.FC<HumansCardProps> = ({
           <div className="flex gap-6">
             <SocialMediaIcon href={linkedin} Icon={LinkedInLogoIcon} />
             <SocialMediaIcon href={twitter} Icon={TwitterLogoIcon} />
-            {name !== "Aditya Raj" ? (
+            { !behance ? (
               <SocialMediaIcon href={github} Icon={GitHubLogoIcon} />
             ) : (
               <Link
-                href="https://www.behance.net/adi_ux"
+                href={behance}
                 target="_blank"
                 rel="noopener"
                 title="Behance Profile"
