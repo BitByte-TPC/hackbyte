@@ -12,7 +12,7 @@ import localFont from "next/font/local";
 export const metadata: Metadata = {
   title: "Hackbyte 3.0",
   description: "Hackbyte 3.0 is a flagship event of TPC of IIITDMJ.",
-  keywords: "hackathon, IIITDMJ, hackbyte, coding, programming, tech",
+  keywords: "MLH, hackathon, IIITDMJ, hackbyte, coding, programming, tech",
   openGraph: {
     title: "HackByte - IIITDMJ Hackathon",
     description:
