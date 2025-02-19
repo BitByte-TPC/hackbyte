@@ -69,9 +69,12 @@ const faqs = [
   },
   {
     question: "Can we bring a pre-built project to the hackathon?",
-    answer:
-      "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
+    answer: "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
   },
+  {
+    question: "Do projects need to be related to the theme?",
+    answer: "No. We want to encourage open innovation, so you're free to choose any idea you're passionate about and build something meaningful."
+  }
 ];
 
 export default function FAQSection() {
