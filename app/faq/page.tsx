@@ -9,6 +9,7 @@ import {
 import faq from "@/public/Faq/question_mark.png";
 import Link from "next/link";
 import AnimatedTitle from "@/components/AnimatedTitle";
+import DiscordCard from "@/components/DiscordCard";
 
 export const metadata = {
   title: "FAQ | HackByte",
@@ -69,12 +70,14 @@ const faqs = [
   },
   {
     question: "Can we bring a pre-built project to the hackathon?",
-    answer: "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
+    answer:
+      "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
   },
   {
     question: "Do projects need to be related to the theme?",
-    answer: "No. We want to encourage open innovation, so you're free to choose any idea you're passionate about and build something meaningful."
-  }
+    answer:
+      "No. We want to encourage open innovation, so you're free to choose any idea you're passionate about and build something meaningful.",
+  },
 ];
 
 export default function FAQSection() {
@@ -153,6 +156,14 @@ export default function FAQSection() {
             ))}
           </Accordion>
         </div>
+      </div>
+      <div className="flex flex-col items-center gap-4 md:gap-16 pt-4 lg:pt-8 xl:pb-12 pb-8 md:pb-16 mt-8 md:my-20 xl:my-32">
+        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold pb-4 md:pb-8 lg:pb-16 text-center">
+          <AnimatedTitle viewport={true}>
+            Join our Discord Community
+          </AnimatedTitle>
+        </div>
+        <DiscordCard />
       </div>
     </div>
   );
