@@ -9,6 +9,14 @@ import Rishi from "@/public/humansPage/Rishi.jpg";
 import paloju from "@/public/humansPage/paloju.webp";
 import revathy from "@/public/humansPage/revathy.jpg";
 import samriddhi from "@/public/humansPage/samriddhi.jpg";
+import samaksh from "@/public/humansPage/samaksh.webp";
+import agrim from "@/public/humansPage/agrim.webp";
+import shreyans from "@/public/humansPage/shreyans.webp";
+import rishikesh from "@/public/humansPage/rishikesh.webp";
+import aarav from "@/public/humansPage/aarav.webp";
+import jyotsna from "@/public/humansPage/jyotsna.webp";
+import rahul from "@/public/humansPage/rahul.webp";
+
 
 export const OrganizersData = [
   {
@@ -99,5 +107,63 @@ export const OrganizersData = [
     role: "Organizer",
     twitter: "#",
     behance: "https://www.behance.net/rajrevathyn"
+  },
+  {
+    name: "Samaksh Agarwal",
+    profilepic: samaksh,
+    linkedin: "https://www.linkedin.com/in/samaksh1agarwal",
+    github: "https://github.com/SamakshAgarwal1112",
+    role: "Organizer",
+    twitter: "https://x.com/SamakshAgg1112",
+  },
+  {
+    name: "Rahul R Nadkarni",
+    profilepic: rahul,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/rahul-r-nadkarni/",
+    twitter: "https://x.com/irahul_r_n",
+    github: "#",
+    behance: "https://rahulrn.framer.website"
+  },
+  {
+    name: "Jyotsna Tripathi",
+    profilepic: jyotsna,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/jyotsna-tripathi-a5a35723b/",
+    twitter: "#",
+    github: "#",
+    behance: "https://www.behance.net/jyotsnatripathi2"
+  },
+  {
+    name: "Agrim Gupta",
+    profilepic: agrim,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/agrim-gupta-203570265/",
+    twitter: "https://x.com/agrxmm?t=0YJDgJnjrjtaLSL0ow9OUw&s=09",
+    github: "https://github.com/Agrim2112",
+  },
+  {
+    name: "Shreyans Katariya",
+    profilepic: shreyans,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/shreyans-katariya-blue/",
+    twitter: "https://x.com/Shreyans79111",
+    github: "https://github.com/Shreyans2004",
+  },
+  {
+    name: "Rishikesh Kuppala",
+    profilepic: rishikesh,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/rishikesh-kuppala/",
+    twitter: "https://x.com/Rishike89765470",
+    github: "https://github.com/RISHIKESHk07",
+  },
+  {
+    name: "Aarav Jain",
+    profilepic: aarav,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/aarav-jain-094a77258/",
+    twitter: "#",
+    github: "https://github.com/aarav0012",
   },
 ];
