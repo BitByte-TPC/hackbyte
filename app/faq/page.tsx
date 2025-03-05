@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, ClipboardList } from "lucide-react";
+import { Mail } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
