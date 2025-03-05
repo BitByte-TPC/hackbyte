@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail } from "lucide-react";
+import { Mail, ClipboardList } from "lucide-react";
 import {
   Accordion,
   AccordionContent,
@@ -9,6 +9,7 @@ import {
 import faq from "@/public/Faq/question_mark.png";
 import Link from "next/link";
 import AnimatedTitle from "@/components/AnimatedTitle";
+import DiscordCard from "@/components/DiscordCard";
 
 export const metadata = {
   title: "FAQ | HackByte",
@@ -32,8 +33,9 @@ const faqs = [
     answer: "Pre-registration will be opening in January 2025",
   },
   {
-    "question": "How many team members do I need?",
-    "answer": "You can participate only in teams of 2 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team."
+    question: "How many team members do I need?",
+    answer:
+      "You can participate only in teams of 2 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team.",
   },
   {
     question: "How much are the participation fees?",
@@ -68,12 +70,14 @@ const faqs = [
   },
   {
     question: "Can we bring a pre-built project to the hackathon?",
-    answer: "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
+    answer:
+      "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
   },
   {
     question: "Do projects need to be related to the theme?",
-    answer: "No. We want to encourage open innovation, so you're free to choose any idea you're passionate about and build something meaningful."
-  }
+    answer:
+      "No. We want to encourage open innovation, so you're free to choose any idea you're passionate about and build something meaningful.",
+  },
 ];
 
 export default function FAQSection() {
@@ -120,6 +124,16 @@ export default function FAQSection() {
                 hackbyte@iiitdmj.ac.in
               </Link>
             </div>
+            <p className="text-supporting-mediumGray">
+              We follow the MLH Code of Conduct.
+            </p>
+            <Link
+              href="https://mail.mlh.io/e/c/eyJlbWFpbF9pZCI6ImRnU2lwd2tCQU11SERzcUhEZ0dWSHZKeG9wTzFtUmNmM3Rad01CST0iLCJocmVmIjoiaHR0cHM6Ly9tbGguaW8vY29kZS1vZi1jb25kdWN0P3V0bV9jYW1wYWlnbj1NZW1iZXIrRXZlbnQrLStPbmJvYXJkaW5nK1JlbWluZGVyXHUwMDI2dXRtX2NvbnRlbnQ9T25ib2FyZGluZytOZWVkZWRcdTAwMjZ1dG1fbWVkaXVtPUVtYWlsXHUwMDI2dXRtX3NvdXJjZT1DdXN0b21lci5pbyIsImludGVybmFsIjoiYTJhNzA5MDdmYTllMDFjYjg3MGUiLCJsaW5rX2lkIjo0MzE1fQ/516fa2299b66f1a1234c527d474494f98067ddaf9622617db3ae85da8f3d985b"
+              className="inline-flex items-center gap-2 text-white hover:text-supporting-mediumGray transition-colors"
+            >
+              <ClipboardList className="w-5 h-5" />
+              Code of Conduct
+            </Link>
           </div>
         </div>
 
@@ -142,6 +156,14 @@ export default function FAQSection() {
             ))}
           </Accordion>
         </div>
+      </div>
+      <div className="flex flex-col items-center gap-4 md:gap-16 pt-4 lg:pt-8 xl:pb-12 pb-8 md:pb-16 mt-8 md:my-20 xl:my-32">
+        <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-2xl font-bold pb-4 md:pb-8 lg:pb-16 text-center">
+          <AnimatedTitle viewport={true}>
+            Join our Discord Community
+          </AnimatedTitle>
+        </div>
+        <DiscordCard />
       </div>
     </div>
   );
