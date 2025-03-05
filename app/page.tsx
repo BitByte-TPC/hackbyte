@@ -16,6 +16,8 @@ import bottomstats from "@/public/upper.svg";
 import topstats from "@/public/lower.svg";
 import * as motion from "motion/react-client";
 import AnimatedTitle from "@/components/AnimatedTitle";
+import Link from "next/link";
+import { ClipboardList } from "lucide-react";
 
 interface GuidlinesCard {
   title: string;
@@ -203,6 +205,33 @@ export default function Home() {
               index={index}
             />
           ))}
+          <motion.div
+            className="card flex gap-4 items-start"
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.2 }}
+            variants= {{
+              hidden: { opacity: 0, x: 9 % 2 === 0 ? -50 : 50 },
+              visible: { opacity: 1, x: 0 },
+            }}
+          >
+            <div className="flex flex-col justify-center gap-2">
+              <div className="monitor:text-4xl xl:text-3xl lg:text-2xl text-xl text-white font-bold">
+              We follow the MLH Code of Conduct
+              </div>
+              <div className="text-base lg:text-base xl:text-lg monitor:text-xl font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
+                <Link
+                  href="https://mail.mlh.io/e/c/eyJlbWFpbF9pZCI6ImRnU2lwd2tCQU11SERzcUhEZ0dWSHZKeG9wTzFtUmNmM3Rad01CST0iLCJocmVmIjoiaHR0cHM6Ly9tbGguaW8vY29kZS1vZi1jb25kdWN0P3V0bV9jYW1wYWlnbj1NZW1iZXIrRXZlbnQrLStPbmJvYXJkaW5nK1JlbWluZGVyXHUwMDI2dXRtX2NvbnRlbnQ9T25ib2FyZGluZytOZWVkZWRcdTAwMjZ1dG1fbWVkaXVtPUVtYWlsXHUwMDI2dXRtX3NvdXJjZT1DdXN0b21lci5pbyIsImludGVybmFsIjoiYTJhNzA5MDdmYTllMDFjYjg3MGUiLCJsaW5rX2lkIjo0MzE1fQ/516fa2299b66f1a1234c527d474494f98067ddaf9622617db3ae85da8f3d985b"
+                  className="inline-flex items-center gap-2 text-white hover:text-supporting-mediumGray transition-colors"
+                  target="_blank"
+                >
+                  <ClipboardList className="w-5 h-5" />
+                  Code of Conduct
+                </Link>
+              </div>
+            </div>
+          </motion.div>
         </div>
       </div>
 
