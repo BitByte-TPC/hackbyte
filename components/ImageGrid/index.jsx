@@ -177,7 +177,7 @@ const GridImage = () => {
             transform: `translateX(-${currentIndex * 100}%)`,
           }}
         >
-          <div className="flex flex-col gap-5 md:flex-row">
+          <div className="flex justify-center flex-col gap-5 md:flex-row">
             <div className="flex flex-col gap-5 items-center">
               <div>
                 <Image
@@ -272,7 +272,7 @@ const GridImage = () => {
             transform: `translateX(-${currentIndex * 100}%)`,
           }}
         >
-          <div className="flex flex-col gap-5 md:flex-row">
+          <div className="flex justify-center flex-col gap-5 md:flex-row">
             <div className="flex flex-col gap-5 items-center">
               <div>
                 <Image
@@ -367,7 +367,7 @@ const GridImage = () => {
             transform: `translateX(-${currentIndex * 100}%)`,
           }}
         >
-          <div className="flex flex-col gap-5 md:flex-row">
+          <div className="flex justify-center flex-col gap-5 md:flex-row">
             <div className="flex flex-col gap-5 items-center">
               <div>
                 <Image

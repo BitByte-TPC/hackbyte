@@ -14,7 +14,6 @@ import agrim from "@/public/humansPage/agrim.webp";
 import shreyans from "@/public/humansPage/shreyans.webp";
 import rishikesh from "@/public/humansPage/rishikesh.webp";
 import aarav from "@/public/humansPage/aarav.webp";
-import jyotsna from "@/public/humansPage/jyotsna.webp";
 import rahul from "@/public/humansPage/rahul.webp";
 
 
@@ -124,15 +123,6 @@ export const OrganizersData = [
     twitter: "https://x.com/irahul_r_n",
     github: "#",
     behance: "https://rahulrn.framer.website"
-  },
-  {
-    name: "Jyotsna Tripathi",
-    profilepic: jyotsna,
-    role: "Organizer",
-    linkedin: "https://www.linkedin.com/in/jyotsna-tripathi-a5a35723b/",
-    twitter: "#",
-    github: "#",
-    behance: "https://www.behance.net/jyotsnatripathi2"
   },
   {
     name: "Agrim Gupta",
