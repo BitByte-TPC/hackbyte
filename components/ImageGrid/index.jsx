@@ -1,7 +1,7 @@
 "use client";
-import { ArrowRight, ArrowLeft } from 'lucide-react';
+import { ArrowRight, ArrowLeft } from "lucide-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import img1 from "@/public/ImageGallery/img1.webp";
 import img2 from "@/public/ImageGallery/img2.webp";
 import img3 from "@/public/ImageGallery/img3.webp";
@@ -48,6 +48,14 @@ const GridImage = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const totalSlides = 3;
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
+    }, 4000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   const goToNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % totalSlides);
   };
@@ -64,120 +72,28 @@ const GridImage = () => {
       } bg-white/40 backdrop-blur-sm hover:bg-white/80 rounded-full p-2 shadow-lg transition-all z-10 flex items-center justify-center`}
     >
       {direction === "left" ? (
-        <ArrowLeft className='h-8 w-8' />
+        <ArrowLeft className="h-8 w-8" />
       ) : (
-        <ArrowRight className='h-8 w-8' />
+        <ArrowRight className="h-8 w-8" />
       )}
     </button>
   );
 
-  const Imagegrid = () => {
-    return (
-      <div
-        className="w-full flex-shrink-0  mx-auto py-16 bg-pink-300/300"
-        style={{
-          transform: `translateX(-${currentIndex * 100}%)`,
-        }}
-      >
-        <div className="flex flex-col gap-5 md:flex-row">
-          <div className="flex flex-col gap-5 items-center">
-            <div>
-              <Image
-                src={img6}
-                alt="1"
-                className="xl:w-[420px] xl:h-[300px] lg:w-[320px] w-[320px] rounded-xl object-cover"
-                placeholder="blur"
-                priority
-              />
-            </div>
-            <div>
-              <Image
-                src={img7}
-                alt="2"
-                className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
-                placeholder="blur"
-              />
-            </div>
-            <div>
-              <Image
-                src={img4}
-                alt="3"
-                className="xl:w-[420px] xl:h-[530px] lg:w-[320px] w-[320px] h-[320px] rounded-xl object-cover"
-                placeholder="blur"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-5 items-center">
-            <div>
-              <Image
-                src={img8}
-                alt="4"
-                className="xl:w-[420px] xl:h-[520px] lg:w-[320px] w-[320px] h-[320px] rounded-xl object-cover"
-                placeholder="blur"
-                priority
-              />
-            </div>
-            <div>
-              <Image
-                src={img9}
-                alt="5"
-                className="xl:w-[420px] xl:h-[300px] lg:w-[320px] w-[320px] rounded-xl object-cover"
-                placeholder="blur"
-              />
-            </div>
-            <div>
-              <Image
-                src={img5}
-                alt="6"
-                className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
-                placeholder="blur"
-              />
-            </div>
-          </div>
-
-          <div className="flex flex-col gap-5 items-center">
-            <div>
-              <Image
-                src={img1}
-                alt="7"
-                className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
-                placeholder="blur"
-                priority
-              />
-            </div>
-            <div>
-              <Image
-                src={img2}
-                alt="8"
-                className="xl:w-[420px] xl:h-[280px] lg:w-[320px] w-[320px] rounded-xl object-cover"
-                placeholder="blur"
-                priority
-              />
-            </div>
-            <div>
-              <Image
-                src={img3}
-                alt="9"
-                className="xl:w-[420px] xl:h-[540px] lg:w-[320px] w-[320px] h-[320px] rounded-xl object-cover"
-                placeholder="blur"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    );
-  };
-
   return (
     <>
-      <div className="bg-blue-500/500 w-8xl mx-auto flex relative overflow-hidden ">
-        <div className="w-full flex-shrink-0  mx-auto py-16 bg-pink-300/300 transition-transform duration-500 ease-in-out"
+      <div className="w-8xl mx-auto flex relative overflow-hidden transform-gpu">
+        <div
+          className="w-full flex-shrink-0 flex justify-center items-center  mx-auto py-16 bg-pink-300/300 transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
+            transition: "transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+            willChange: "transform",
+            perspective: "1000px",
+            backfaceVisibility: "hidden",
+            opacity: "1",
           }}
         >
-          <div className="flex justify-center flex-col gap-5 md:flex-row">
+          <div className="inline-flex flex-col gap-5 md:flex-row w-auto bg-blue-500/500">
             <div className="flex flex-col gap-5 items-center">
               <div>
                 <Image
@@ -265,14 +181,18 @@ const GridImage = () => {
           </div>
         </div>
 
-
-
-        <div className="w-full flex-shrink-0  mx-auto py-16 bg-pink-300/300 transition-transform duration-500 ease-in-out"
+        <div
+          className="w-full flex-shrink-0 flex justify-center items-center  mx-auto py-16 bg-pink-300/300 transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
+            transition: "transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+            willChange: "transform",
+            perspective: "1000px",
+            backfaceVisibility: "hidden",
+            opacity: "1",
           }}
         >
-          <div className="flex justify-center flex-col gap-5 md:flex-row">
+          <div className="inline-flex flex-col gap-5 md:flex-row w-auto bg-blue-500/500">
             <div className="flex flex-col gap-5 items-center">
               <div>
                 <Image
@@ -360,14 +280,18 @@ const GridImage = () => {
           </div>
         </div>
 
-
-
-        <div className="w-full flex-shrink-0  mx-auto py-16 bg-pink-300/300 transition-transform duration-500 ease-in-out"
+        <div
+          className="w-full flex-shrink-0 flex justify-center items-center  mx-auto py-16 bg-pink-300/300 transition-transform duration-500 ease-in-out"
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
+            transition: "transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)",
+            willChange: "transform",
+            perspective: "1000px",
+            backfaceVisibility: "hidden",
+            opacity: "1",
           }}
         >
-          <div className="flex justify-center flex-col gap-5 md:flex-row">
+          <div className="inline-flex flex-col gap-5 md:flex-row w-auto bg-blue-500/500">
             <div className="flex flex-col gap-5 items-center">
               <div>
                 <Image
@@ -454,18 +378,10 @@ const GridImage = () => {
             </div>
           </div>
         </div>
-        {currentIndex > 0 && (
+
         <ArrowButton direction="left" onClick={goToPrev} />
-        )}
-      
-        {/* Show right arrow only when not on last slide */}
-        {currentIndex < totalSlides - 1 && (
-          <ArrowButton direction="right" onClick={goToNext} />
-        )}
+        <ArrowButton direction="right" onClick={goToNext} />
       </div>
-      
-
-
     </>
   );
 };
