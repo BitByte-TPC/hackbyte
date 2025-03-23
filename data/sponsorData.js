@@ -7,6 +7,11 @@ import wasp from "@/public/partnersPage/wasp.png";
 import nitric from "@/public/partnersPage/nitric.png";
 import devdock from "@/public/partnersPage/devdock.png";
 import endlessDomains from "@/public/partnersPage/EndlessDomains.png";
+import mongoDB from "@/public/partnersPage/mongodb.png";
+import midnight from "@/public/partnersPage/midnight.png";
+import cloudflare from "@/public/partnersPage/cloudflare.png";
+import googlecloud from "@/public/partnersPage/googlecloud.png";
+import unsloth from "@/public/partnersPage/unsloth.png";
 
 // In Kind Sponsors
 import codecrafters from "@/public/partnersPage/codecrafters.jpg";
@@ -68,6 +73,36 @@ export const normalSponsorsData = [
     category: "Bronze Sponsor",
     sponsorimgsrc: endlessDomains,
     site: "https://endlessdomains.io/",
+  },
+  {
+    sponsor: "Unsloth",
+    category: "Bronze Sponsor",
+    sponsorimgsrc: unsloth,
+    site: "https://unsloth.ai/",
+  },
+  {
+    sponsor: "Mongo DB",
+    category: "Track Sponsor",
+    sponsorimgsrc: mongoDB,
+    site: "https://www.mongodb.com/",
+  },
+  {
+    sponsor: "Midnight",
+    category: "Track Sponsor",
+    sponsorimgsrc: midnight,
+    site: "https://midnight.network/",
+  },
+  {
+    sponsor: "Cloudflare",
+    category: "Track Sponsor",
+    sponsorimgsrc: cloudflare,
+    site: "https://www.cloudflare.com/",
+  },
+  {
+    sponsor: "Google Cloud",
+    category: "Track Sponsor",
+    sponsorimgsrc: googlecloud,
+    site: "https://cloud.google.com/apis",
   },
 ];
 
