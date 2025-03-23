@@ -1,8 +1,9 @@
 import PrizeSection from "@/components/PrizeSection";
 import Image from "next/image";
-import YetToBeDisclosed from "@/components/YetToBeDisclosed";
 import medal from "@/public/HomePageLogo/medal.webp";
 import cup4 from "@/public/prizesPageLogo/cup4 (2).svg";
+import { sponsorTrackPrizesData } from "../../data/sponsorTrackPrizesData";
+import TrackPrizeCard from "@/components/TrackPrizeCard";
 
 export const metadata = {
   title: "Prizes | HackByte",
@@ -103,10 +104,23 @@ export default function Prizes() {
 
         {/* Sponsor Tracks Section */}
         <div className="w-full flex flex-col pt-24 px-4 md:px-16 lg:px-28 monitor:px-32">
-          <p className="text-supporting-lightGray text-center text-[2.25rem] md:text-[3.5rem] lg:text-[5rem] font-black">
+          <p className="text-supporting-lightGray text-[2.25rem] md:text-[3.5rem] lg:text-[5rem] font-black">
             Sponsored Tracks
           </p>
-          <YetToBeDisclosed />
+          <p
+            className="w-full xl:max-w-[85%] text-supporting-mediumGray
+          md:text-xl lg:text-2xl text-lg xs:text-md font-medium mb-8 sm:mb-12"
+          >
+            Explore our sponsor tracks and leverage their technologies to bring your projects to life! All monetary prizes will be split equally among the winning team members.
+          </p>
+          <div
+            className="w-full xl:max-w-[95%] monitor:max-w-[90%] grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 
+              gap-8 lg:gap-[44px]"
+          >
+            {sponsorTrackPrizesData.map((sponsor, index) => {
+              return <TrackPrizeCard key={index} index={index} {...sponsor} />;
+            })}
+          </div>
         </div>
       </div>
     </div>
