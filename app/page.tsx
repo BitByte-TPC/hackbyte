@@ -62,7 +62,7 @@ export default function Home() {
       icon: g1,
       title: "Register with Ease",
       description:
-        "Pre-registration opens January 2025—no red tape, just one click away!",
+        "Pre-registration opens Shortly—no red tape, just one click away!",
     },
     {
       icon: g2,
@@ -96,7 +96,7 @@ export default function Home() {
     {
       icon: g7,
       title: "In-person Event",
-      description: "HackByte 3.0 is an in-person / offline hackathon event.",
+      description: "HackByte 4.0 is an in-person / offline hackathon event.",
     },
     {
       icon: g8,
@@ -127,16 +127,16 @@ export default function Home() {
         />
         <div className="w-full flex justify-evenly rotate-[5deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <CountAnimation targetValue={2437} />
+            <CountAnimation targetValue={5040} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Registrations
             </div>
             <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
-              2400+ registrations from across the country.
+              5000+ registrations from across the country.
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={412} />
+          <CountAnimation targetValue={425} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Participants
             </div>
@@ -145,7 +145,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={150} />
+          <CountAnimation targetValue={100} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Volunteers
             </div>
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={100} />
+          <CountAnimation targetValue={120} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Projects
             </div>

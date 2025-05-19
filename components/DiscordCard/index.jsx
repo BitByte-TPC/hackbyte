@@ -3,6 +3,8 @@ import HB3Logo from "@/public/HomePageLogo/HB3Logo.svg";
 import discord from "@/public/FooterLogo/discord.svg";
 import * as motion from "motion/react-client";
 import Link from "next/link";
+import HB4Logo from "@/public/HB4Logo.png";
+
 
 export default function DiscordCard() {
   return (
@@ -87,7 +89,7 @@ export default function DiscordCard() {
           </ul>
 
           <Image
-            src={HB3Logo}
+            src={HB4Logo}
             alt="HackByte 4.0 Logo"
             className="mt-12 monitor:mt-0 md:w-40 lg:w-48 monitor:w-72 xl:w-64 hidden md:block"
           />
