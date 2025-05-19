@@ -1,11 +1,14 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import Image from "next/image";
 import SponsorCard from "@/components/SponsorCard";
-import HB3Logo from "@/public/HB3Logo.png";
+
 import webdock from "@/public/partnersPage/webdock.png";
 import benq from "@/public/partnersPage/benq.png";
 import { inKindSponsorsData, normalSponsorsData } from "@/data/sponsorData";
 import TitleSponsorCard from "@/components/TitleSponsorCard";
+import HB4Logo from "@/public/HB4Logo.png";
+
+
 
 export const metadata = {
   title: "Partners | HackByte",
@@ -62,9 +65,9 @@ const PartnersPage = () => {
               </p>
             </div>
             <Image
-              src={HB3Logo}
+              src={HB4Logo}
               className="hidden md:block xl:w-[380px] lg:w-72 md:w-64 w-32"
-              alt="HackByte 3.0 Logo"
+              alt="HackByte 4.0 Logo"
             />
           </div>
         </div>
