@@ -29,7 +29,7 @@ export const metadata = {
 const faqs = [
   {
     question: "How do I register ?",
-    answer: "Pre-registration will be opening in January 2025",
+    answer: "Pre-registration will begin Shortly. Stay tuned for updates!",
   },
   {
     question: "How many team members do I need?",
@@ -46,7 +46,7 @@ const faqs = [
     answer: "HackByte will be conducted in complete offline/in-person mode.",
   },
   {
-    question: "What is the venue for HackByte 3.0 ?",
+    question: "What is the venue for HackByte 4.0 ?",
     answer:
       "IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
   },
