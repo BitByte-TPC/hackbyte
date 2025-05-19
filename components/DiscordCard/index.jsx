@@ -48,7 +48,7 @@ export default function DiscordCard() {
         </div>
         <p className="text-[#161616] mb-4 md:mb-0 text-sm xs:text-base md:text-xl lg:text-2xl monitor:text-3xl font-normal max-w-full md:max-w-[90%] leading-[140%]">
           To stay up-to-date with{" "}
-          <span className="font-bold">HackByte 3.0</span>, consider joining our
+          <span className="font-bold">HackByte 4.0</span>, consider joining our
           discord.
           <span className="hidden lg:inline">
             {" "}
@@ -88,7 +88,7 @@ export default function DiscordCard() {
 
           <Image
             src={HB3Logo}
-            alt="HackByte 3.0 Logo"
+            alt="HackByte 4.0 Logo"
             className="mt-12 monitor:mt-0 md:w-40 lg:w-48 monitor:w-72 xl:w-64 hidden md:block"
           />
         </div>

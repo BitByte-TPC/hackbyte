@@ -145,7 +145,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={100} />
+          <CountAnimation targetValue={150} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Volunteers
             </div>
@@ -169,7 +169,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-4 md:gap-16 md:py-28 py-16">
         <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl sm:text-2xl text-3xl xs:text-4xl font-bold leading-[48px] xs:leading-[64px] text-center">
           <AnimatedTitle viewport={true}>
-            Why Participate in Hackbyte 3.0?
+            Why Participate in Hackbyte 4.0?
           </AnimatedTitle>
         </div>
         <AnimatedTitle viewport={true}>
@@ -185,7 +185,7 @@ export default function Home() {
       <div className="flex flex-col items-center gap-4 md:gap-16">
         <div className=" text-supporting-lightGray lg:text-5xl monitor:text-7xl xl:text-6xl md:text-4xl text-center text-3xl xs:text-2xl font-bold leading-[48px] xs:leading-[64px]">
           <AnimatedTitle viewport={true}>
-            Guidelines for Hackbyte 3.0
+            Guidelines for Hackbyte 4.0
           </AnimatedTitle>
         </div>
         <div className="w-full grid md:grid-cols-2 grid-cols-1 gap-y-20 xl:gap-x-28 lg:gap-x-16 gap-x-4 py-8 md:py-16 xl:px-28 lg:px-16 px-4 monitor:place-items-center">

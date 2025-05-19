@@ -9,6 +9,9 @@ import discord from "../../public/FooterLogo/discord.svg";
 import milaap from "../../public/FooterLogo/milaap.svg";
 import Link from "next/link";
 import AnimatedTitle from "../AnimatedTitle";
+import HB4Logo from "../../public/FooterLogo/HB4Logo.png";
+
+
 
 const sidebarLinks = [
   { name: "Home", href: "/" },
@@ -27,21 +30,13 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row md:justify-between items-start md:items-start xl:mx-32 md:mx-12 mx-4 gap-6 md:gap-0 mt-12 mb-20">
         <div className="flex items-center justify-center py-4 px-2 md:px-6 mt-6 w-full">
           <Image
-            src={Hackbyte3Logo}
+            src={HB4Logo}
             alt="HackByte 3.0"
             className="xxs:h-16 xs:h-20 md:h-32 w-auto"
           />
 
-          <div className="h-20 w-px bg-gray-500 mx-4"></div>
-          <div className="flex flex-col w-full">
-            <div className="text-white text-base font-semibold">
-              Powered by
-            </div>
-            <div className="flex items-center space-x-2 md:space-x-4 text-white">
-              <Image src={webdock} alt="Webdock" className="xxs:h-4 xs:h-6 md:h-12" />
-              <Image src={benq} alt="BenQ" className="xxs:h-7 xs:h-8 md:h-14" />
-            </div>
-          </div>
+          
+         
         </div>
         <div className="flex flex-col gap-2 justify-start items-start md:items-end pt-8 md:pt-16 w-full">
           <div className="text-right text-supporting-lightGray monitor:text-6xl xl:text-5xl text-3xl xs:text-4xl font-bold w-full">
