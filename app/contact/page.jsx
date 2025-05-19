@@ -60,7 +60,7 @@ export default function ContactSection() {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="space-y-2">
+          {/* <div className="space-y-2">
             <h2 className="text-3xl md:text-4xl font-black">Call Us</h2>
             <div className="flex flex-row gap-8 text-supporting-mediumGray font-medium">
               <div>
@@ -76,7 +76,7 @@ export default function ContactSection() {
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
 
           <div className="space-y-2 hidden ">
             <h2 className="text-3xl md:text-4xl font-black">Mail Us</h2>
