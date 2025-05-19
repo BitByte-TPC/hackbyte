@@ -53,7 +53,7 @@ const PartnersPage = () => {
           <div className="grid md:grid-cols-[auto,1fr] grid-cols-1 place-items-end items-start">
             <div className="flex flex-col gap-4 md:gap-8">
               <div className="text-white font-gotham font-black text-[36px] xs:text-[42px] md:text-5xl lg:text-[4.2rem] xl:text-[96px] xl:leading-tight">
-                Our Partners
+                Our Past Partners
                 <br /> who Supported
               </div>
               <p className="text-supporting-mediumGray font-medium md:text-xl lg:text-2xl text-lg xs:text-md max-w-[500px] lg:max-w-[700px] xl:max-w-[800px]">
