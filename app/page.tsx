@@ -1,30 +1,32 @@
-import Image from "next/image";
-import stats from "@/public/HomePageLogo/redtape2.png";
-import HeroSection from "@/components/Herosection";
-import DiscordCard from "@/components/DiscordCard";
-import whyParticipate from "@/public/HomePageLogo/whyParticipate.png";
-import g1 from "@/public/HomePageLogo/g1.svg";
-import g2 from "@/public/HomePageLogo/g2.svg";
-import g3 from "@/public/HomePageLogo/g3.svg";
-import g4 from "@/public/HomePageLogo/g4.svg";
-import g5 from "@/public/HomePageLogo/g5.svg";
-import g6 from "@/public/HomePageLogo/g6.svg";
-import g7 from "@/public/HomePageLogo/g7.svg";
-import g8 from "@/public/HomePageLogo/g8.svg";
-import g9 from "@/public/HomePageLogo/g9.svg";
-import g10 from "@/public/HomePageLogo/g10.svg";
-import bottomstats from "@/public/upper.svg";
-import topstats from "@/public/lower.svg";
-import * as motion from "motion/react-client";
-import AnimatedTitle from "@/components/AnimatedTitle";
-import CountAnimation from "@/components/CountAnimation";
-import Link from "next/link";
+import Image from "next/image"
+import stats from "@/public/HomePageLogo/redtape2.png"
+// import HeroSection from "@/components/Herosection"
+import DiscordCard from "@/components/DiscordCard"
+import whyParticipate from "@/public/HomePageLogo/whyParticipate.png"
+import g1 from "@/public/HomePageLogo/g1.svg"
+import g2 from "@/public/HomePageLogo/g2.svg"
+import g3 from "@/public/HomePageLogo/g3.svg"
+import g4 from "@/public/HomePageLogo/g4.svg"
+import g5 from "@/public/HomePageLogo/g5.svg"
+import g6 from "@/public/HomePageLogo/g6.svg"
+import g7 from "@/public/HomePageLogo/g7.svg"
+import g8 from "@/public/HomePageLogo/g8.svg"
+import g9 from "@/public/HomePageLogo/g9.svg"
+import g10 from "@/public/HomePageLogo/g10.svg"
+import bottomstats from "@/public/upper.svg"
+import topstats from "@/public/lower.svg"
+import * as motion from "motion/react-client"
+import AnimatedTitle from "@/components/AnimatedTitle"
+import CountAnimation from "@/components/CountAnimation"
+import Link from "next/link"
+import HB4Form from "@/components/HB4Form"
+import hackbyte4logo from "@/public/HB4Logo.png"
 
 interface GuidlinesCard {
-  title: string;
-  description: string;
-  icon: string;
-  index: number;
+  title: string
+  description: string
+  icon: string
+  index: number
 }
 
 function GuidelinesCard({ title, description, icon, index }: GuidlinesCard) {
@@ -32,7 +34,7 @@ function GuidelinesCard({ title, description, icon, index }: GuidlinesCard) {
   const animationVariants = {
     hidden: { opacity: 0, x: index % 2 === 0 ? -50 : 50 },
     visible: { opacity: 1, x: 0 },
-  };
+  }
 
   return (
     <motion.div
@@ -53,7 +55,7 @@ function GuidelinesCard({ title, description, icon, index }: GuidlinesCard) {
         </div>
       </div>
     </motion.div>
-  );
+  )
 }
 
 export default function Home() {
@@ -110,11 +112,42 @@ export default function Home() {
       description:
         "IIITDM Jabalpur awaits—explore the campus and bring ideas to life.",
     },
-  ];
+  ]
 
   return (
     <div className="overflow-hidden">
-      <HeroSection />
+      {/* <HeroSection /> */}
+      <div className="space-y-4 pt-28">
+        <h2 className="text-3xl md:text-4xl xl:text-5xl monitor:text-6xl font-bold text-supporting-lightGray text-center">
+          Can't wait for Hackbyte 4.0?
+        </h2>
+        <h5 className="text-xl md:text-2xl xl:text-3xl monitor:text-4xl font-bold text-supporting-lightGray text-center">
+          Get notified as soon as we are live!
+        </h5>
+        <div className="flex p-8 md:p-12 xm:p-24 gap-16 flex-col md:flex-row">
+          <div className="w-full">
+            <div className="relative size-[400px] mx-auto">
+              <Image
+                src={hackbyte4logo}
+                fill
+                alt="hb4logo"
+                className="object-contain"
+              />
+            </div>
+
+            <h3 className="text-xl md:text-2xl xl:text-3xl monitor:text-4xl font-bold text-supporting-lightGray text-center">
+              We are <span className="text-red-400">coming back</span> with a
+              brand new{" "}
+              <span className="font-mono border rounded bg-white/10">
+                Theme
+              </span>
+              , new <span className="uppercase">determination</span> and lots of
+              new <span className="">Surprises🎁</span>!
+            </h3>
+          </div>
+          <HB4Form />
+        </div>
+      </div>
       <div className="sm:hidden w-screen mt-28">
         <Image src={bottomstats} alt="bottomstats" className="w-screen" />
         <Image src={topstats} alt="topstats" className="w-screen" />
@@ -136,7 +169,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={425} />
+            <CountAnimation targetValue={425} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Participants
             </div>
@@ -145,7 +178,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={100} />
+            <CountAnimation targetValue={100} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Volunteers
             </div>
@@ -154,7 +187,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={105} />
+            <CountAnimation targetValue={105} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Projects
             </div>
@@ -204,7 +237,7 @@ export default function Home() {
             whileInView="visible"
             viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            variants= {{
+            variants={{
               hidden: { opacity: 0, x: 9 % 2 === 0 ? -50 : 50 },
               visible: { opacity: 1, x: 0 },
             }}
@@ -212,16 +245,18 @@ export default function Home() {
             <Image src={g10} alt="Icon" className="xl:w-20 md:w-16 pt-1" />
             <div className="flex flex-col justify-center gap-2">
               <div className="monitor:text-4xl xl:text-3xl lg:text-2xl text-xl text-white font-bold">
-              Safe and Secure
+                Safe and Secure
               </div>
               <div className="text-base lg:text-base xl:text-lg monitor:text-xl font-normal text-supporting-darkGray md:max-w-64 lg:max-w-[500px] leading-[1.5rem]">
-                We follow the MLH <Link
+                We follow the MLH{" "}
+                <Link
                   href="https://mail.mlh.io/e/c/eyJlbWFpbF9pZCI6ImRnU2lwd2tCQU11SERzcUhEZ0dWSHZKeG9wTzFtUmNmM3Rad01CST0iLCJocmVmIjoiaHR0cHM6Ly9tbGguaW8vY29kZS1vZi1jb25kdWN0P3V0bV9jYW1wYWlnbj1NZW1iZXIrRXZlbnQrLStPbmJvYXJkaW5nK1JlbWluZGVyXHUwMDI2dXRtX2NvbnRlbnQ9T25ib2FyZGluZytOZWVkZWRcdTAwMjZ1dG1fbWVkaXVtPUVtYWlsXHUwMDI2dXRtX3NvdXJjZT1DdXN0b21lci5pbyIsImludGVybmFsIjoiYTJhNzA5MDdmYTllMDFjYjg3MGUiLCJsaW5rX2lkIjo0MzE1fQ/516fa2299b66f1a1234c527d474494f98067ddaf9622617db3ae85da8f3d985b"
                   className="underline decoration-white/60"
                   target="_blank"
                 >
                   Code of Conduct
-                </Link> for a inclusive, and secure environment for everyone
+                </Link>{" "}
+                for a inclusive, and secure environment for everyone
               </div>
             </div>
           </motion.div>
@@ -237,5 +272,5 @@ export default function Home() {
         <DiscordCard />
       </div>
     </div>
-  );
+  )
 }
