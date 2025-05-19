@@ -127,12 +127,12 @@ export default function Home() {
         />
         <div className="w-full flex justify-evenly rotate-[5deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <CountAnimation targetValue={5040} />
+            <CountAnimation targetValue={5154} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Registrations
             </div>
             <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
-              5000+ registrations from across the country.
+              5100+ registrations from across the country.
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
@@ -154,7 +154,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-          <CountAnimation targetValue={120} />
+          <CountAnimation targetValue={105} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Projects
             </div>
