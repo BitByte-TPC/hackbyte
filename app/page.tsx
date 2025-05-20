@@ -119,7 +119,7 @@ export default function Home() {
       {/* <HeroSection /> */}
       <div className="space-y-4 pt-28">
         <h2 className="text-3xl md:text-4xl xl:text-5xl monitor:text-6xl font-bold text-supporting-lightGray text-center">
-          Can't wait for Hackbyte 4.0?
+          Can&apos;t wait for Hackbyte 4.0?
         </h2>
         <h5 className="text-xl md:text-2xl xl:text-3xl monitor:text-4xl font-bold text-supporting-lightGray text-center">
           Get notified as soon as we are live!
