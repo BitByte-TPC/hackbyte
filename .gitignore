@@ -42,3 +42,7 @@ next-env.d.ts
 
 # misc
 .vscode
+
+# pnpm
+.pnpm-store/
+.pnpm/

@@ -148,9 +148,54 @@ export default function Home() {
           <HB4Form />
         </div>
       </div>
-      <div className="sm:hidden w-screen mt-28">
-        <Image src={bottomstats} alt="bottomstats" className="w-screen" />
-        <Image src={topstats} alt="topstats" className="w-screen" />
+      <div className="sm:hidden w-screen mt-28 flex flex-col gap-52 mb-14">
+        <div className="relative">
+          <Image src={stats} alt="bottomstats" className="w-screen scale-[2.6] xs:scale-[1.8]" />
+          <div className="w-full flex justify-evenly absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-6 ">
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={3670} />
+              <div className="font-bold text-sm text-white">
+                Registrations
+              </div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                3600+ registrations from across the country.
+              </div>
+            </div>
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={417} />
+              <div className="font-bold text-sm text-white">
+                Participants
+              </div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                400+ participants joined the offline hackathon!
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div className="relative">
+          <Image src={stats} alt="bottomstats" className="w-screen scale-[2.6] xs:scale-[1.8] -rotate-12" />
+          <div className="w-full flex flex-wrap justify-evenly absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-6">
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={100} />
+              <div className="font-bold text-sm text-white">
+                Volunteers
+              </div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                To help you, get the best out of HackByte.
+              </div>
+            </div>
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={108} />
+              <div className="font-bold text-sm text-white">
+                Projects
+              </div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                Innovative submissions from various domains.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="relative sm:mt-0 mt-28 sm:block hidden">
         <Image
@@ -160,16 +205,16 @@ export default function Home() {
         />
         <div className="w-full flex justify-evenly rotate-[5deg] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <CountAnimation targetValue={5154} />
+            <CountAnimation targetValue={3670} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Registrations
             </div>
             <div className="font-bold text-xs md:text-base lg:text-lg xl:text-xl text-[#FFC1C7]">
-              5100+ registrations from across the country.
+              3600+ registrations from across the country.
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <CountAnimation targetValue={425} />
+            <CountAnimation targetValue={417} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Participants
             </div>
@@ -187,7 +232,7 @@ export default function Home() {
             </div>
           </div>
           <div className="max-w-[90px] md:max-w-[250px] text-center flex flex-col items-center gap-2 lg:gap-4">
-            <CountAnimation targetValue={105} />
+            <CountAnimation targetValue={108} />
             <div className="font-bold text-xs md:text-2xl lg:text-3xl xl:text-4xl text-white">
               Projects
             </div>
