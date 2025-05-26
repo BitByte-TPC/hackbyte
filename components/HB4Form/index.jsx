@@ -9,12 +9,18 @@ import { Button } from "@/components/ui/button"
 import {
   Form,
   FormControl,
-  FormDescription,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
 } from "@/components/ui/form"
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectValue,
+  SelectTrigger,
+} from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Card, CardContent } from "@/components/ui/card"
@@ -150,6 +156,8 @@ const HB4Form = () => {
                     <FormControl>
                       <Input
                         className="bg-white/70 text-black placeholder:text-black/50"
+                        type="number"
+                        inputMode="numeric"
                         placeholder="Insert your age"
                         {...field}
                       />
@@ -228,13 +236,51 @@ const HB4Form = () => {
                     <FormLabel>
                       Level of Study<span className="text-red-500">*</span>
                     </FormLabel>
-                    <FormControl>
-                      <Input
-                        className="bg-white/70 text-black placeholder:text-black/50"
-                        placeholder="Enter your level of study"
-                        {...field}
-                      />
-                    </FormControl>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger className="bg-white/70 text-black">
+                          <SelectValue className="bg-white/70 text-black" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        <SelectItem value="less_than_high_school">
+                          Less than Secondary / High School
+                        </SelectItem>
+                        <SelectItem value="high_school">
+                          Secondary / High School
+                        </SelectItem>
+                        <SelectItem value="undergrad_2yr">
+                          Undergraduate University (2 year - community college
+                          or similar)
+                        </SelectItem>
+                        <SelectItem value="undergrad_3yr">
+                          Undergraduate University (3+ year)
+                        </SelectItem>
+                        <SelectItem value="graduate">
+                          Graduate University (Masters, Professional, Doctoral,
+                          etc)
+                        </SelectItem>
+                        <SelectItem value="bootcamp">
+                          Code School / Bootcamp
+                        </SelectItem>
+                        <SelectItem value="vocational">
+                          Other Vocational / Trade Program or Apprenticeship
+                        </SelectItem>
+                        <SelectItem value="post_doctorate">
+                          Post Doctorate
+                        </SelectItem>
+                        <SelectItem value="other">Other</SelectItem>
+                        <SelectItem value="not_a_student">
+                          I&apos;m not currently a student
+                        </SelectItem>
+                        <SelectItem value="prefer_not_to_answer">
+                          Prefer not to answer
+                        </SelectItem>
+                      </SelectContent>
+                    </Select>
                     <FormMessage />
                   </FormItem>
                 )}
