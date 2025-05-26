@@ -1,17 +1,15 @@
-import Image from "next/image";
-import Hackbyte3Logo from "../../public/FooterLogo/Hackbyte3Logo.png";
-import webdock from "../../public/FooterLogo/webdock_footer_logo.svg";
-import benq from "../../public/FooterLogo/benq_footer_logo.svg";
-import linkedIn from "../../public/FooterLogo/linkedin.svg";
-import instagram from "../../public/FooterLogo/instagram.svg";
-import twitter from "../../public/FooterLogo/twitter.svg";
-import discord from "../../public/FooterLogo/discord.svg";
-import milaap from "../../public/FooterLogo/milaap.svg";
-import Link from "next/link";
-import AnimatedTitle from "../AnimatedTitle";
-import HB4Logo from "../../public/FooterLogo/HB4Logo.png";
-
-
+import Image from "next/image"
+import Hackbyte3Logo from "../../public/FooterLogo/Hackbyte3Logo.png"
+import webdock from "../../public/FooterLogo/webdock_footer_logo.svg"
+import benq from "../../public/FooterLogo/benq_footer_logo.svg"
+import linkedIn from "../../public/FooterLogo/linkedin.svg"
+import instagram from "../../public/FooterLogo/instagram.svg"
+import twitter from "../../public/FooterLogo/twitter.svg"
+import discord from "../../public/FooterLogo/discord.svg"
+import milaap from "../../public/FooterLogo/milaap.svg"
+import Link from "next/link"
+import AnimatedTitle from "../AnimatedTitle"
+import hackbyte4logo from "@/public/HB4Logo.svg"
 
 const sidebarLinks = [
   { name: "Home", href: "/" },
@@ -22,7 +20,7 @@ const sidebarLinks = [
   { name: "Humans", href: "/humans" },
   { name: "FAQs", href: "/faq" },
   { name: "Contact", href: "/contact" },
-];
+]
 
 const Footer = () => {
   return (
@@ -30,20 +28,26 @@ const Footer = () => {
       <div className="flex flex-col md:flex-row md:justify-between items-start md:items-start xl:mx-32 md:mx-12 mx-4 gap-6 md:gap-0 mt-12 mb-20">
         <div className="flex items-center justify-center py-4 px-2 md:px-6 mt-6 w-full">
           <Image
-            src={HB4Logo}
+            src={hackbyte4logo}
             alt="HackByte 3.0"
-            className="xxs:h-16 xs:h-20 md:h-32 w-auto"
+            className="xxs:h-32 xs:h-40 md:h-64 w-auto"
           />
 
-          
-         
-        </div>
-        <div className="flex flex-col gap-2 justify-start items-start md:items-end pt-8 md:pt-16 w-full">
-          <div className="text-right text-supporting-lightGray monitor:text-6xl xl:text-5xl text-3xl xs:text-4xl font-bold w-full">
-            <AnimatedTitle viewport={true}>Hack the Protocol</AnimatedTitle>
-          </div>
-          <div className="text-right text-supporting-mediumGray monitor:text-5xl xl:text-4xl text-2xl xs:text-3xl font-normal w-full">
-            <AnimatedTitle viewport={true}>Break the red tape</AnimatedTitle>
+          <div className="h-40 w-px bg-gray-500 mx-4 hidden md:block"></div>
+          <div className="flex-col hidden md:flex">
+            <div className="text-white text-5xl font-semibold mb-1">
+              Will be back with
+            </div>
+            <div className="items-center text-white text-xl">
+              <p>
+                A Brand new <span className="text-red-500">Theme</span>
+              </p>
+              <p>
+                Stronger{" "}
+                <span className="uppercase font-bold">Determination</span>
+              </p>
+              <p>Cool Surprises🎁!</p>
+            </div>
           </div>
         </div>
       </div>
@@ -102,7 +106,7 @@ const Footer = () => {
         © 2025 Hackbyte, All rights reserved
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

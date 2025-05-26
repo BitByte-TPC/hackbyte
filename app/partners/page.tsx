@@ -1,14 +1,12 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import Image from "next/image";
-import SponsorCard from "@/components/SponsorCard";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import Image from "next/image"
+import SponsorCard from "@/components/SponsorCard"
 
-import webdock from "@/public/partnersPage/webdock.png";
-import benq from "@/public/partnersPage/benq.png";
-import { inKindSponsorsData, normalSponsorsData } from "@/data/sponsorData";
-import TitleSponsorCard from "@/components/TitleSponsorCard";
-import HB4Logo from "@/public/HB4Logo.png";
-
-
+import webdock from "@/public/partnersPage/webdock.png"
+import benq from "@/public/partnersPage/benq.png"
+import { inKindSponsorsData, normalSponsorsData } from "@/data/sponsorData"
+import TitleSponsorCard from "@/components/TitleSponsorCard"
+import HB3Logo from "@/public/HB3Logo.png"
 
 export const metadata = {
   title: "Partners | HackByte",
@@ -27,7 +25,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
   },
-};
+}
 
 const PartnersPage = () => {
   const TitleSponsors = [
@@ -45,7 +43,7 @@ const PartnersPage = () => {
       imageSrc: benq,
       link: "https://www.benq.com/en-in/campaign/best-coding-monitor-for-programmers.html?utm_source=event&utm_medium=referral&utm_campaign=wed_programming_webtraffic_others_programming%20series_hackbyte_traffic_202504",
     },
-  ];
+  ]
   return (
     <>
       <div
@@ -65,7 +63,7 @@ const PartnersPage = () => {
               </p>
             </div>
             <Image
-              src={HB4Logo}
+              src={HB3Logo}
               className="hidden md:block xl:w-[380px] lg:w-72 md:w-64 w-32"
               alt="HackByte 4.0 Logo"
             />
@@ -105,7 +103,7 @@ const PartnersPage = () => {
                 gap-8 lg:gap-[44px] md:px-8 lg:px-0 place-items-center"
               >
                 {normalSponsorsData.map((sponsor, index) => {
-                  return <SponsorCard key={index} index={index} {...sponsor} />;
+                  return <SponsorCard key={index} index={index} {...sponsor} />
                 })}
               </div>
             </div>
@@ -116,14 +114,14 @@ const PartnersPage = () => {
                 gap-8 lg:gap-[44px]"
             >
               {inKindSponsorsData.map((sponsor, index) => {
-                return <SponsorCard key={index} index={index} {...sponsor} />;
+                return <SponsorCard key={index} index={index} {...sponsor} />
               })}
             </div>
           </TabsContent>
         </Tabs>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default PartnersPage;
+export default PartnersPage

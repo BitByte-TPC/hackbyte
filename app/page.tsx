@@ -20,7 +20,7 @@ import AnimatedTitle from "@/components/AnimatedTitle"
 import CountAnimation from "@/components/CountAnimation"
 import Link from "next/link"
 import HB4Form from "@/components/HB4Form"
-import hackbyte4logo from "@/public/HB4Logo.png"
+import hackbyte4logo from "@/public/HB4Logo.svg"
 
 interface GuidlinesCard {
   title: string
@@ -126,7 +126,7 @@ export default function Home() {
         </h5>
         <div className="flex p-8 md:p-12 xm:p-24 gap-16 flex-col md:flex-row">
           <div className="w-full">
-            <div className="relative size-[400px] mx-auto">
+            <div className="relative size-[400px] mx-auto hidden md:block">
               <Image
                 src={hackbyte4logo}
                 fill
