@@ -25,6 +25,7 @@ import { Input } from "@/components/ui/input"
 import { Checkbox } from "@/components/ui/checkbox"
 import { Card, CardContent } from "@/components/ui/card"
 import axios from "axios"
+import countryData from "./country.json"
 
 // Define form schema with Zod
 const formSchema = z.object({
@@ -41,8 +42,7 @@ const formSchema = z.object({
   linkedinUrl: z
     .string()
     .url({ message: "Valid LinkedIn URL is required" })
-    .optional()
-    .or(z.literal("")),
+    .includes("linkedin.com", { message: "Invalid linkedin URL" }),
 
   // MLH Checkboxes
   mlhCodeOfConduct: z.literal(true, {
@@ -295,13 +295,23 @@ const HB4Form = () => {
                       Country of Residence
                       <span className="text-red-500">*</span>
                     </FormLabel>
-                    <FormControl>
-                      <Input
-                        className="bg-white/70 text-black placeholder:text-black/50"
-                        placeholder="Enter your country of residence"
-                        {...field}
-                      />
-                    </FormControl>
+                    <Select
+                      onValueChange={field.onChange}
+                      defaultValue={field.value}
+                    >
+                      <FormControl>
+                        <SelectTrigger className="bg-white/70 text-black">
+                          <SelectValue className="bg-white/70 text-black" />
+                        </SelectTrigger>
+                      </FormControl>
+                      <SelectContent>
+                        {countryData.map(({ Name }) => (
+                          <SelectItem value={Name} key={Name}>
+                            {Name}
+                          </SelectItem>
+                        ))}
+                      </SelectContent>
+                    </Select>
                     <FormMessage />
                   </FormItem>
                 )}
@@ -311,7 +321,9 @@ const HB4Form = () => {
                 name="linkedinUrl"
                 render={({ field }) => (
                   <FormItem>
-                    <FormLabel>LinkedIn URL</FormLabel>
+                    <FormLabel>
+                      LinkedIn URL <span className="text-red-500">*</span>
+                    </FormLabel>
                     <FormControl>
                       <Input
                         className="bg-white/70 text-black placeholder:text-black/50"
@@ -327,7 +339,7 @@ const HB4Form = () => {
 
             {/* MLH Checkboxes */}
             <div className="space-y-6">
-              <h2 className="text-xl font-semibold">MLH Agreement</h2>
+              <h2 className="text-xl font-semibold">MLH Checkboxes</h2>
               <p className="text-sm text-muted-foreground">
                 We are currently in the process of partnering with MLH. The
                 following 3 checkboxes are for this partnership. If we do not
