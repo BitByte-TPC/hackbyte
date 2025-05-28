@@ -1,12 +1,12 @@
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import HumansCard from "@/components/HumansCard";
-import Image from "next/image";
-import { MagicCard } from "@/components/ui/magic-card";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import HumansCard from "@/components/HumansCard"
+import Image from "next/image"
+import { MagicCard } from "@/components/ui/magic-card"
 
-import humansSticker from "@/public/humansPage/humansSticker.svg";
-import { OrganizersData } from "@/data/organizersData";
-import { MentorsData } from "@/data/mentorsData";
-import { FamilyData } from "@/data/familyData";
+import humansSticker from "@/public/humansPage/humansSticker.svg"
+import { OrganizersData } from "@/data/organizersData"
+import { MentorsData } from "@/data/mentorsData"
+import { FamilyData } from "@/data/familyData"
 
 export const metadata = {
   title: "Humans | HackByte",
@@ -25,7 +25,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
   },
-};
+}
 
 const Humans = () => {
   return (
@@ -38,7 +38,7 @@ const Humans = () => {
           <div>
             <div className="text-white font-black text-[36px] xs:text-[42px] md:text-[2.9rem] lg:text-[3.9rem] xl:text-[80px] xl:leading-[6rem] mb-5">
               Meet the Humans
-              <br /> of HackByte
+              <br /> of HackByte 3.0
             </div>
             <p className="text-supporting-mediumGray font-medium lg:text-2xl md:text-xl text-lg">
               Hacker Experience is what we prioritize! Have questions, need
@@ -130,7 +130,7 @@ const Humans = () => {
         </Tabs>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default Humans;
+export default Humans
