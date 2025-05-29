@@ -117,6 +117,29 @@ export default function Home() {
   return (
     <div className="overflow-hidden">
       {/* <HeroSection /> */}
+      <div className="relative">
+        <a
+          id="mlh-trust-badge"
+          style={{
+            display: "block",
+            maxWidth: "100px",
+            minWidth: "60px",
+            position: "absolute",
+            right: "50px",
+            top: 0,
+            width: "10%",
+            zIndex: 10000,
+          }}
+          href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
+          target="_blank"
+        >
+          <img
+            src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+            alt="Major League Hacking 2026 Hackathon Season"
+            style={{ width: "100%" }}
+          />
+        </a>
+      </div>
       <div className="space-y-4 pt-28">
         <h2 className="text-3xl md:text-4xl xl:text-5xl monitor:text-6xl font-bold text-supporting-lightGray text-center">
           Can&apos;t wait for Hackbyte 4.0?

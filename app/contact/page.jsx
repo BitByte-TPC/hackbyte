@@ -1,8 +1,8 @@
-import { Card } from "@/components/ui/card";
-import { Train, Plane, Bus } from "lucide-react";
-import Image from "next/image";
-import Link from "next/link";
-import phoneImg from "@/public/Contact/phone.png";
+import { Card } from "@/components/ui/card"
+import { Train, Plane, Bus } from "lucide-react"
+import Image from "next/image"
+import Link from "next/link"
+import phoneImg from "@/public/Contact/phone.png"
 
 export const metadata = {
   title: "Contact | HackByte",
@@ -20,7 +20,7 @@ export const metadata = {
     type: "website",
     locale: "en_US",
   },
-};
+}
 
 export default function ContactSection() {
   return (
@@ -88,6 +88,16 @@ export default function ContactSection() {
           </div>
 
           <div className="space-y-2 col-span-2 md:col-span-1">
+            <h2 className="text-3xl md:text-4xl font-black">Email us at:</h2>
+            <a
+              href="mailto:hackbyte@iiitdmj.ac.in"
+              className="text-xl text-blue-400 underline font-medium"
+            >
+              hackbyte@iiitdmj.ac.in
+            </a>
+          </div>
+
+          <div className="space-y-2 col-span-2 md:col-span-1">
             <h2 className="text-3xl md:text-4xl font-black">Address</h2>
             <p className="text-base text-supporting-mediumGray font-medium">
               IIITDM Jabalpur, Near Dumna Airport,
@@ -96,7 +106,7 @@ export default function ContactSection() {
           </div>
         </div>
 
-        <div className="space-y-6">
+        {/* <div className="space-y-6">
           <h2 className="text-3xl md:text-4xl xl:text-5xl font-black">
             Reaching IIITDM Jabalpur
           </h2>
@@ -164,8 +174,8 @@ export default function ContactSection() {
               </p>
             </Card>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
-  );
+  )
 }

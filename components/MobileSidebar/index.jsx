@@ -1,7 +1,7 @@
-"use client";
-import { useAnimate } from "motion/react";
-import closesidebar from "@/public/closesidebar.svg";
-import opensidebar from "@/public/opensidebar.svg";
+"use client"
+import { useAnimate } from "motion/react"
+import closesidebar from "@/public/closesidebar.svg"
+import opensidebar from "@/public/opensidebar.svg"
 import {
   Calendar,
   Handshake,
@@ -11,47 +11,47 @@ import {
   Info,
   Image as Gallery,
   Phone,
-} from "lucide-react";
-import Image from "next/image";
-import { useState, useEffect, useRef } from "react";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
+} from "lucide-react"
+import Image from "next/image"
+import { useState, useEffect, useRef } from "react"
+import Link from "next/link"
+import { usePathname } from "next/navigation"
 const sidebarLinks = [
   { name: "Home", icon: <House />, href: "/" },
   { name: "Gallery", icon: <Gallery />, href: "/gallery" },
   { name: "Partners", icon: <Handshake />, href: "/partners" },
-  { name: "Prizes", icon: <Trophy />, href: "/prizes" },
-  { name: "Schedule", icon: <Calendar />, href: "/schedule" },
+  // { name: "Prizes", icon: <Trophy />, href: "/prizes" },
+  // { name: "Schedule", icon: <Calendar />, href: "/schedule" },
   { name: "Humans", icon: <Users />, href: "/humans" },
   { name: "FAQs", icon: <Info />, href: "/faq" },
   { name: "Contact", icon: <Phone />, href: "/contact" },
-];
+]
 
 const MobileSidebar = () => {
-  const [fullyopen, setFullyopen] = useState(false);
-  const [open, setOpen] = useState(false);
-  const [scope, animate] = useAnimate();
-  const pathname = usePathname();
-  const sidebarRef = useRef(null);
-  const ishome = pathname === "/";
+  const [fullyopen, setFullyopen] = useState(false)
+  const [open, setOpen] = useState(false)
+  const [scope, animate] = useAnimate()
+  const pathname = usePathname()
+  const sidebarRef = useRef(null)
+  const ishome = pathname === "/"
 
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (sidebarRef.current && !sidebarRef.current.contains(event.target)) {
-        setOpen(false);
+        setOpen(false)
       }
-    };
+    }
 
     if (open) {
-      document.addEventListener("mousedown", handleClickOutside);
+      document.addEventListener("mousedown", handleClickOutside)
     } else {
-      document.removeEventListener("mousedown", handleClickOutside);
+      document.removeEventListener("mousedown", handleClickOutside)
     }
 
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [open]);
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [open])
 
   useEffect(() => {
     const animateSidebar = async () => {
@@ -60,13 +60,13 @@ const MobileSidebar = () => {
           scope.current,
           { height: "400px", width: "65px", borderRadius: "32px" },
           { duration: 0.3 }
-        );
+        )
         await animate(
           scope.current,
           { width: "170px", borderRadius: "32px" },
           { delay: 0.3 }
-        );
-        setFullyopen(true);
+        )
+        setFullyopen(true)
       } else {
         await animate(
           scope.current,
@@ -76,20 +76,20 @@ const MobileSidebar = () => {
             stiffness: 90,
             damping: 15,
           }
-        );
-        setFullyopen(false);
+        )
+        setFullyopen(false)
       }
-    };
+    }
 
-    animateSidebar();
-  }, [open, animate, scope]);
+    animateSidebar()
+  }, [open, animate, scope])
 
   return (
     <>
       <div
         ref={(el) => {
-          scope.current = el; // For animations
-          sidebarRef.current = el; // For outside click detection
+          scope.current = el // For animations
+          sidebarRef.current = el // For outside click detection
         }}
         className={`backdrop-blur-xl bg-[#222222] h-[48px] w-[48px] fixed rounded-[32px] z-50 ${
           ishome ? "left-4 top-5 " : "right-4 top-5"
@@ -133,7 +133,7 @@ const MobileSidebar = () => {
         )}
       </div>
     </>
-  );
-};
+  )
+}
 
-export default MobileSidebar;
+export default MobileSidebar
