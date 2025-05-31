@@ -181,7 +181,7 @@ export default function Home() {
               <CountAnimation targetValue={5134} />
               <div className="font-bold text-sm text-white">Registrations</div>
               <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
-                3600+ registrations from across the country.
+                5100+ registrations from across the country.
               </div>
             </div>
             <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
