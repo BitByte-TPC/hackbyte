@@ -145,7 +145,8 @@ export default function Home() {
           Can&apos;t wait for Hackbyte 4.0?
         </h2>
         <h5 className="text-xl md:text-2xl xl:text-3xl monitor:text-4xl font-bold text-supporting-lightGray text-center">
-          Get notified as soon as we are live!
+          Tentative dates are here!{" "}
+          <span className="text-red-400">April 3-5, 2026</span>!
         </h5>
         <div className="flex p-8 md:p-12 xm:p-24 gap-16 flex-col md:flex-row">
           <div className="w-full">
