@@ -13,8 +13,6 @@ import g7 from "@/public/HomePageLogo/g7.svg"
 import g8 from "@/public/HomePageLogo/g8.svg"
 import g9 from "@/public/HomePageLogo/g9.svg"
 import g10 from "@/public/HomePageLogo/g10.svg"
-import bottomstats from "@/public/upper.svg"
-import topstats from "@/public/lower.svg"
 import * as motion from "motion/react-client"
 import AnimatedTitle from "@/components/AnimatedTitle"
 import CountAnimation from "@/components/CountAnimation"
@@ -172,9 +170,54 @@ export default function Home() {
           <HB4Form />
         </div>
       </div>
-      <div className="sm:hidden w-screen mt-28">
-        <Image src={bottomstats} alt="bottomstats" className="w-screen" />
-        <Image src={topstats} alt="topstats" className="w-screen" />
+      <div className="sm:hidden w-screen mt-28 flex flex-col gap-52 mb-14">
+        <div className="relative">
+          <Image
+            src={stats}
+            alt="bottomstats"
+            className="w-screen scale-[2.6] xs:scale-[1.8]"
+          />
+          <div className="w-full flex justify-evenly absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-6 ">
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={5134} />
+              <div className="font-bold text-sm text-white">Registrations</div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                5100+ registrations from across the country.
+              </div>
+            </div>
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={425} />
+              <div className="font-bold text-sm text-white">Participants</div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                400+ participants joined the offline hackathon!
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="relative">
+          <Image
+            src={stats}
+            alt="bottomstats"
+            className="w-screen scale-[2.6] xs:scale-[1.8] -rotate-12"
+          />
+          <div className="w-full flex flex-wrap justify-evenly absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 -rotate-6">
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={100} />
+              <div className="font-bold text-sm text-white">Volunteers</div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                To help you, get the best out of HackByte.
+              </div>
+            </div>
+            <div className="w-[40%] text-center flex flex-col items-center mb-4 scale-150">
+              <CountAnimation targetValue={105} />
+              <div className="font-bold text-sm text-white">Projects</div>
+              <div className="font-bold text-xs text-[#FFC1C7] max-w-[70%]">
+                Innovative submissions from various domains.
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div className="relative sm:mt-0 mt-28 sm:block hidden">
         <Image
