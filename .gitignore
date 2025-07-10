@@ -42,3 +42,9 @@ next-env.d.ts
 
 # misc
 .vscode
+
+# pnpm
+pnpm-lock.yaml
+
+.yarn/*
+!.yarn/patches
