@@ -8,6 +8,7 @@ import tpclogo from "@/public/HomePageLogo/tpclogo.svg";
 import institutelogo from "@/public/HomePageLogo/Institutelogo.svg";
 import redtapeImg from "@/public/HomePageLogo/Redtape1.svg";
 import HB3_powered_logo from "@/public/HB3_powered_logo.png";
+import HB4Logo from "@/public/HB4_unpowered_logo.svg"
 import Link from "next/link";
 import BannerAnim from "@/components/BannerAnim";
 // import { PulsatingButton } from "@/components/ui/pulsating-button";
@@ -28,6 +29,19 @@ const HeroSection = () => {
                 Our Theme
               </div>
             </div>
+           <a
+          id="mlh-trust-badge"
+          href="https://mlh.io/apac?utm_source=apac-hackathon&utm_medium=TrustBadge&utm_campaign=2026-season&utm_content=white"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="right-4 top-0 z-[10000] block w-[15%] max-w-[80px] min-w-[50px] absolute"
+        >
+          <img
+          src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
+          alt="Major League Hacking 2025 Hackathon Season"
+          className="w-full"
+          />
+        </a>
           </div>
         </div>
         <div className="relative md:my-32 lg:my-0 monitor:my-16">
@@ -42,8 +56,8 @@ const HeroSection = () => {
               priority
             />
             <Image
-              src={HB3_powered_logo}
-              alt="Hackbyte 3.0"
+              src={HB4Logo}
+              alt="Hackbyte 4.0"
               className="w-[200px] xs:w-[250px] sm:w-[140px] md:w-[250px] lg:w-[350px] xl:w-[500px] absolute top-[95%] xs:top-[90%] sm:top-[57%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 rotate-[5deg]"
             />
             <div className="max-w-[300px] absolute monitor:top-48 xl:top-40 xl:right-20 md:top-32 lg:right-12 sm:top-24 sm:mt-0 mt-44 right-0 sm:rotate-[-5deg] font-bold pr-8 hidden sm:block">
