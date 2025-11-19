@@ -38,7 +38,7 @@ const HeroSection = () => {
         >
           <img
           src="https://s3.amazonaws.com/logged-assets/trust-badge/2026/mlh-trust-badge-2026-white.svg"
-          alt="Major League Hacking 2025 Hackathon Season"
+          alt="Major League Hacking 2026 Hackathon Season"
           className="w-full"
           />
         </a>
