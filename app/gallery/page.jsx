@@ -1,5 +1,6 @@
 import banner from "@/public/ImageGallery/banner.jpg";
 import HB3Logo from "@/public/HB3Logo.png";
+import HB4Logo from "@/public/HB4Logo.png";
 import { GridImage, BannerImage } from "@/components/ImageGrid";
 import Image from "next/image";
 import AnimatedTitle from "@/components/AnimatedTitle";
@@ -35,7 +36,7 @@ const Gallery = () => {
             </div>
             <Image
               className="xl:w-[420px] lg:w-80 md:w-56 hidden md:block"
-              src={HB3Logo}
+              src={HB4Logo}
               alt="HackByte 3.0 Logo"
             />
           </div>
