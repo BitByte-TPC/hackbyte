@@ -10,7 +10,8 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/prospectus",
-        destination: "https://drive.google.com/file/d/1I5ZFxc1wKfJIN8JRd-9YV2HmfQkOblrr/view",
+        destination:
+          "https://drive.google.com/file/d/1Zu56vhpSGQQDViqBLSbrVxeTxNf2F9Wl/view",
         permanent: false,
       },
     ];
