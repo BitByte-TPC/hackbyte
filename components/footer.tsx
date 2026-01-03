@@ -49,12 +49,12 @@ export function Footer() {
               <li className="text-center">
                 <Link href="/humans">Humans</Link>
               </li>
-              <li className="text-center">
+              {/* <li className="text-center">
                 <Link href="/schedule">Schedule</Link>
               </li>
               <li className="text-center">
                 <Link href="/prizes">Prizes</Link>
-              </li>
+              </li> */}
               <li className="text-center">
                 <Link href="/sponsors">Partners</Link>
               </li>
@@ -118,7 +118,7 @@ export function Footer() {
           {/*copyright*/}
           <div>
             <p className="text-[#D9D9D9] font-bold opacity-51 text-lg font-gotham max-sm:top-45 max-sm:absolute max-sm:bottom-0 max-sm:text-sm max-sm:block max-sm:w-full max-sm:left-0 text-center">
-              @2025 Hackbyte, All rights reserved
+              @2026 Hackbyte, All rights reserved
             </p>
           </div>
         </div>
