@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-    --background: #ffffff;
-    --foreground: #171717;
+    --foreground: #ffffff;
+    --background: linear-gradient(206deg, #4E0088 13.13%, #180029 86.33%);
 }
 
 /* Lenis Smooth Scroll */
@@ -36,7 +36,7 @@ html.lenis body {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: #0a0a0a;
+        --background: linear-gradient(206deg, #4E0088 13.13%, #4E0088 13.33%);
         --foreground: #ededed;
     }
 }

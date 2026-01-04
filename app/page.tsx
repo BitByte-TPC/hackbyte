@@ -9,7 +9,7 @@ export default function Home() {
       <Hero />
       <StatsSection />
       <WhyParticipate />
-      <MailingList />
+        <MailingList />
     </main>
   );
 }
