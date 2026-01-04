@@ -56,7 +56,7 @@ export function Footer() {
                 <Link href="/prizes">Prizes</Link>
               </li>
               <li className="text-center">
-                <Link href="/partners">Partners</Link>
+                <Link href="/sponsors">Partners</Link>
               </li>
               <li className="text-center">
                 <Link href="/gallery">Gallery</Link>

@@ -15,7 +15,7 @@ export default function FaqPage() {
 		{
 			question: "How many team members do I need?",
 			answer:
-				"You can participate only in teams of 2 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team.",
+				"You can participate only in teams of 3 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team.",
 		},
 		{
 			question: "How much are the participation fees?",

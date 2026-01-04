@@ -31,19 +31,22 @@ const kanit = Kanit({
 export const metadata: Metadata = {
   metadataBase: new URL('https://hackbyte.in'),
   title: {
-    default: "HackByte 3.0 | IIITDMJ Hackathon",
-    template: "%s | HackByte 3.0"
+    default: "HackByte 4.0 | IIITDMJ Hackathon",
+    template: "%s | HackByte 4.0"
   },
   description: "HackByte is IIITDMJ's student-run hackathon. Join us for 3 days of coding, innovation, and fun. April 3-5, 2026.",
+  icons: {
+    icon: '/favicon.ico',
+    },
   keywords: ["Hackathon", "IIITDMJ", "Coding", "HackByte", "Jabalpur", "Tech Event"],
   openGraph: {
-    title: "HackByte 3.0 | IIITDMJ Hackathon",
+    title: "HackByte 4.0 | IIITDMJ Hackathon",
     description: "Join us for 3 days of coding, innovation, and fun at IIITDM Jabalpur.",
     url: 'https://hackbyte.in',
     siteName: 'HackByte',
     images: [
       {
-        url: '/hackbyte_home_page.jpg',
+        url: '/hackbyte_home_page.png',
         width: 1200,
         height: 630,
       },

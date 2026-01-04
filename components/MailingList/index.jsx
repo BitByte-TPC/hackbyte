@@ -6,32 +6,45 @@ import FadeInView from "@/components/FadeInView";
 const MailingList = () => {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const [error, setError] = useState(""); // NEW
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const handleSubscribe = async () => {
-  if (!email) return;
+    const trimmedEmail = email.trim();
+
+    // NEW: validation + user feedback
+    if (!trimmedEmail) {
+      setError("Please enter your email address.");
+      return;
+    }
+    if (!emailRegex.test(trimmedEmail)) {
+      setError("Please enter a valid email address.");
+      return;
+    }
+
+    setError("");
 
     const formData = new FormData();
-    formData.append("entry.1008749988", email);
+    formData.append("entry.1008749988", trimmedEmail);
 
     try {
       await fetch(
-        // Removed the '/e/' from the URL below
         "https://docs.google.com/forms/d/1APq2vApbi9Aysa-h_9cKiNxl2o77UnOojfVztmgdUDc/formResponse",
         {
           method: "POST",
           body: formData,
-          mode: "no-cors", // This is crucial, explained below
+          mode: "no-cors",
         }
       );
-      
-      // Since 'no-cors' is opaque, we assume success if no error was thrown
+
       setEmail("");
       setSubmitted(true);
     } catch (error) {
       console.error("Form submission failed", error);
+      setError("Something went wrong. Please try again.");
     }
   };
-
 
   return (
     <div className="w-full min-h-screen relative bg-[linear-gradient(206deg,_#4E0088_13.13%,_#180029_86.33%)] overflow-hidden flex flex-col items-center justify-center py-20">
@@ -62,6 +75,7 @@ const MailingList = () => {
 
       
       <div className="absolute top-0 md:top-[-90px] left-[5%] md:left-[100px] z-10 pt-10 md:pt-16 pointer-events-none">
+
         <FadeInView className="relative w-[100px] h-[100px] md:w-[210px] md:h-[210px] rotate-[-147]">
           <Image
               src="/MailingList/siren.svg"
@@ -138,15 +152,17 @@ const MailingList = () => {
                             alt="bullet"
                             className="w-2 h-2 md:w-5 md:h-5"
                           />
-                      </div>
-                      <span
-                        className={`text-[#6b21a8] text-[4vw] md:text-xl leading-tight font-poppins ${i === 2 ? "font-[900]" : "font-[400]"}`}
-                      >
-                        {text}
-                      </span>
-                    </li>
-                  ))}
-                </ul>
+                        </div>
+                        <span
+                          className={`text-[#6b21a8] text-[4vw] md:text-xl leading-tight font-poppins ${
+                            i === 2 ? "font-[900]" : "font-[400]"
+                          }`}
+                        >
+                          {text}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
 
                   <div className="flex-shrink-0 relative w-[60px] h-[60px] mr-1 md:w-[120px] md:h-[80px]">
                     <Image
@@ -163,22 +179,27 @@ const MailingList = () => {
         </div>
 
         {/* Email Input Form */}
-          <div className="w-full max-w-[850px] mt-17 md:mt-8 relative">
-            <div className="mx-1 relative rounded-[24px] md:rounded-full p-[5px] bg-[#7A00D4] shadow-[0_10px_0_rgba(0,0,0,0.35)]">
-              <div
-                className="relative
+        <div className="w-full max-w-[850px] mt-17 md:mt-8 relative">
+          <div className="mx-1 relative rounded-[24px] md:rounded-full p-[5px] bg-[#7A00D4] shadow-[0_10px_0_rgba(0,0,0,0.35)]">
+            <div
+              className="relative
                 flex flex-col md:flex-row
                 bg-white
                 rounded-[24px] md:rounded-full
                 p-2 px-4 py-5 md:p-0
                 gap-2 md:gap-0"
-              >
-                <input
-                  type="email"
-                  placeholder="Enter your email here"
-                  value={email}
-                  onChange={(e) => setEmail(e.target.value)}
-                  className="
+            >
+              <input
+                type="email"
+                placeholder="Enter your email here"
+                value={email}
+                onChange={(e) => {
+                  setEmail(e.target.value);
+                  setError(""); // NEW: clear error on typing
+                  setSubmitted(false); // NEW: allow resubscribe after edits
+                }}
+                aria-invalid={Boolean(error)} // NEW
+                className="
                     w-full
                     h-12 md:h-20
                     px-4 md:px-0
@@ -192,11 +213,19 @@ const MailingList = () => {
                     placeholder:text-gray-400
                     font-light
                     font-kanit"
-                />
-                <button
+              />
+
+              {/* NEW: error message */}
+              {error ? (
+                <p className="md:absolute md:left-10 md:top-full md:mt-2 text-sm text-red-200">
+                  {error}
+                </p>
+              ) : null}
+
+              <button
                 onClick={handleSubscribe}
                 disabled={submitted}
-                  className="
+                className="
                     w-full md:w-auto
                     h-12 md:h-16
                     px-6 md:px-10
@@ -211,12 +240,13 @@ const MailingList = () => {
                     md:active:scale-90
                     shadow-[0_4px_0_rgba(0,0,0,0.25)]
                     md:absolute md:right-2 md:top-1/2 md:-translate-y-1/2"
-                >
-                  {submitted ? "Done!" : "Subscribe"}
-                </button>
-              </div>
+
+              >
+                {submitted ? "Subscribed" : "Subscribe"}
+              </button>
             </div>
           </div>
+        </div>
       </div>
     </div>
   );

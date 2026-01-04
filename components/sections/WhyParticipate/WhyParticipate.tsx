@@ -111,9 +111,9 @@ export default function WhyParticipate() {
             <Image
               src={alert}
               alt="workshops"
-              width={150}
-              height={150}
-              className="absolute bottom-27 left-170 max-sm:bottom-30 max-sm:left-10 max-sm:w-[80px] max-sm:h-[80px]"
+              width={120}
+              height={120}
+              className="absolute bottom-25 left-170 max-sm:bottom-30 max-sm:left-10 max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
           <div className="relative w-screen h-[600px] shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-3">

@@ -108,7 +108,7 @@ const Hero = () => {
 
 			{/* Register Button */}
 			<div className={`absolute flex bg-pink-500/500 md:-right-5 right-10 sm:bottom-32 bottom-50 font-kanit h-40 w-[27vw] z-20`}>
-				<Link href="https://hackbyte4.devfolio.co" className={`absolute text-[#62009B] lg:w-80 md:w-70 sm:w-65 w-55 p-5 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] md:h-16 sm:h-14 h-10 rounded-full border-[#FFD620] border-4 md:text-3xl text-2xl font-extrabold flex items-center justify-center bottom-0 hover:bg-[#FFC300B8] hover:border-[#FFD620] transition-colors duration-300 cursor-pointer z-20`}>
+				<Link href="https://docs.google.com/forms/d/e/1FAIpQLSfwHsEnJUOyrFbkAuG4Zeo9Sqn6q1Gcukf6o3D5670Es4SDRQ/viewform" className={`absolute text-[#62009B] lg:w-80 md:w-70 sm:w-65 w-55 p-5 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] md:h-16 sm:h-14 h-10 rounded-full border-[#FFD620] border-4 md:text-3xl text-2xl font-extrabold flex items-center justify-center bottom-0 hover:bg-[#FFC300B8] hover:border-[#FFD620] transition-colors duration-300 cursor-pointer z-20`}>
 					REGISTER NOW
 				</Link>
 
