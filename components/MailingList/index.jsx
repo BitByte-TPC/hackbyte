@@ -104,7 +104,7 @@ const MailingList = () => {
       >
         <div className="relative w-full max-w-[850px] px-2">
           {/* Main Card */}
-          <FadeInView delay={0.8}>
+          <FadeInView delay={0.1}>
             <div className="relative w-full z-20 bg-[linear-gradient(97deg,_#570089_-1.22%,_#A200FF_49.96%,_#210035_142.76%)] border-[4px] md:border-[11px] border-white rounded-[20px] p-2 md:p-3 shadow-2xl">
               {/* Bandaid decoration */}
               <div className="absolute bottom-0 right-0 translate-x-[35%] translate-y-[43%] md:top-0 md:left-0 md:-translate-x-[40%] md:-translate-y-[35%] w-[200px] md:w-[clamp(370px,8vw,100px)] aspect-[2.2/1] z-30 pointer-events-none transform rotate-[-33.74]">
