@@ -32,7 +32,7 @@ export default function WhyParticipate() {
 
   return (
     <div className="w-full h-full z-10 gap-0 flex-col justify-between flex m-0 flex-col" ref={containerRef}>
-      <div className="w-full z-10 -mb-139 max-sm:-mb-20 max-sm:z-50">
+      <div className="w-full z-10 -mb-139 max-sm:-mb-20 max-sm:z-50 max-md:-mb-100">
           <Image
             src={shards}
             alt="glass design"
@@ -46,7 +46,7 @@ export default function WhyParticipate() {
           <Image
             src={scrollDown}
             alt="scroll down"
-            className="relative mx-auto bottom-150 animate-bounce max-sm:w-[25px] max-sm:h-[28px] max-sm:-top-18"
+            className="relative mx-auto bottom-150 animate-bounce max-sm:w-[25px] max-sm:h-[28px] max-sm:-top-18 max-md:w-[30px] max-lg:h-[36px]"
           />
       </div>
       <div 

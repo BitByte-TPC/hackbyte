@@ -26,7 +26,11 @@ async function StatsSection() {
   ];
 
   return (
-    <section className="relative h-[50vh] md:h-[60vh] lg:h-[80vh] max-h-[90vh] w-full overflow-visible bg-black">
+    <section className="relative h-[50vh] md:h-[60vh] lg:h-[80vh] max-h-[90vh] w-full overflow-visible bg-black -mb-40 max-sm:-mb-10"
+      style={{
+        backgroundImage:"url(/stats-bg.svg)"
+      }}
+    >
       <div className="w-full h-32 absolute top-[10vw] z-10">
         <Image
           src="/stats-upper-2.svg"
@@ -36,7 +40,7 @@ async function StatsSection() {
           height={100}
         />
       </div>
-      <div className="w-full h-full absolute z-0 overflow-hidden">
+      {/* <div className="w-full h-full absolute z-0 overflow-hidden">
         <Image
           src="/stats-bg.svg"
           alt="glass design"
@@ -44,7 +48,7 @@ async function StatsSection() {
           width={100}
           height={100}
         />
-      </div>
+      </div> */}
 
       <div className="relative z-20 size-full flex justify-center items-center px-4 font-kanit">
       <FadeInView delay={0.2}>

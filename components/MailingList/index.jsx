@@ -49,42 +49,47 @@ const MailingList = () => {
   return (
     <div className="w-full min-h-screen relative bg-[linear-gradient(206deg,_#4E0088_13.13%,_#180029_86.33%)] overflow-hidden flex flex-col items-center justify-center py-20">
       {/* Lightning Left - no animation (decorative background) */}
-      <div className="absolute top-[5px] md:top-[-180px] left-[-5%] md:left-[-40px] w-[50vw] md:w-[620px] aspect-square z-0 pointer-events-none">
-        <Image
+      <FadeInView className={"absolute top-[5px] md:top-[-180px] left-[-5%] md:left-[-40px] w-[50vw] md:w-[620px] aspect-square z-0 pointer-events-none"}>
+      <div className="">
+        
+          <Image
           src="/MailingList/lightning_left.svg"
           alt="lightning-effect"
           fill
           className="object-contain"
         />
       </div>
+      </FadeInView>
 
       {/* Lightning Right - no animation (decorative background) */}
-      <div className="absolute top-[-25px] md:top-[-190px] right-[-5%] md:right-[-10px] w-[50vw] md:w-[620px] aspect-square z-0 pointer-events-none">
-        <Image
+      <FadeInView className="absolute top-[-25px] md:top-[-190px] right-[-5%] md:right-[-10px] w-[50vw] md:w-[620px] aspect-square z-0 pointer-events-none">
+        <div className="">
+          <Image
           src="/MailingList/lightning_right.svg"
           alt="lightning-effect"
           fill
           className="object-contain"
         />
       </div>
+      </FadeInView>
 
-      {/* Siren Icon */}
+      
       <div className="absolute top-0 md:top-[-90px] left-[5%] md:left-[100px] z-10 pt-10 md:pt-16 pointer-events-none">
-        <FadeInView delay={0.1}>
-          <div className="relative w-[100px] h-[100px] md:w-[210px] md:h-[210px] rotate-[-147]">
-            <Image
+
+        <FadeInView className="relative w-[100px] h-[100px] md:w-[210px] md:h-[210px] rotate-[-147]">
+          <Image
               src="/MailingList/siren.svg"
               alt="soundhorn-svg"
               fill
               className="object-contain origin-center"
             />
-          </div>
         </FadeInView>
       </div>
+      
+      {/* Siren Icon */}
 
       {/* Join Newsletter Header */}
-      <div className="absolute top-[50px] md:top-[50px] left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[93px] z-20 w-[90%] md:w-[800px] h-[150px] md:h-[240px] pointer-events-none">
-        <FadeInView delay={0.1}>
+        <FadeInView delay={0.5} className="absolute top-[50px] md:top-[50px] left-1/2 -translate-x-1/2 md:translate-x-0 md:left-[93px] z-20 w-[90%] md:w-[800px] h-[150px] md:h-[240px] pointer-events-none">
           <Image
             src="/MailingList/join_newsletter.svg"
             alt="Join Our Newsletter"
@@ -92,7 +97,7 @@ const MailingList = () => {
             className="object-contain rotate-[-4deg] drop-shadow-[0_2.878px_0_rgba(0,0,0,0.25)]"
           />
         </FadeInView>
-      </div>
+      
 
       <div
         className={`mt-[140px] md:mt-[250px] w-full flex flex-col items-center px-4 md:px-6 relative z-30 font-kanit`}
@@ -159,9 +164,9 @@ const MailingList = () => {
                     ))}
                   </ul>
 
-                  <div className="flex-shrink-0 relative w-[60px] h-[60px] mr-1 md:w-[140px] md:h-[100px]">
+                  <div className="flex-shrink-0 relative w-[60px] h-[60px] mr-1 md:w-[120px] md:h-[80px]">
                     <Image
-                      src="/hb4_warpped.svg"
+                      src="/hbb4.svg"
                       alt="HB 4.0 Logo"
                       fill
                       className="object-contain scale-150"
@@ -235,6 +240,7 @@ const MailingList = () => {
                     md:active:scale-90
                     shadow-[0_4px_0_rgba(0,0,0,0.25)]
                     md:absolute md:right-2 md:top-1/2 md:-translate-y-1/2"
+
               >
                 {submitted ? "Subscribed" : "Subscribe"}
               </button>

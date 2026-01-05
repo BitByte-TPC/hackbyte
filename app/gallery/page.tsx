@@ -3,6 +3,8 @@ import { GalleryGrid } from "@/components/gallery-grid"
 import { RedBand } from "@/components/header-red-band"
 import FadeInView from "@/components/FadeInView"
 import Image from "next/image"
+import { ScrollingBackground } from "../../components/sections/WhyParticipate/ScrollingBackground";
+import bg from "../../components/sections/WhyParticipate/assets/bg.png";
 
 export default function Gallery() {
   return (
@@ -55,13 +57,6 @@ export default function Gallery() {
 
       <div className="h-[100px] lg:h-[200px] w-full relative z-0">
         <div className="relative w-full h-[150%]">
-          <Image
-            src="/Gallery/White Streaks.svg"
-            alt="Gallery Bottom Design"
-            fill
-            className="w-full object-cover"
-            priority
-          />
         </div>
       </div>
 
@@ -77,13 +72,11 @@ export default function Gallery() {
             />
           </div>
           <div className="absolute size-full -z-10">
-            <Image
-              src="/Gallery/scrolling bg.png"
-              alt="Footer Ornament Background"
-              fill
-              className="w-full object-cover opacity-50"
-              priority
-            />
+            <ScrollingBackground 
+              imageUrl={bg.src} 
+              speed={40}
+              direction="diagonal" 
+          />
           </div>
           <div className="h-[200px] lg:h-[350px] w-full max-w-[90%] lg:max-w-2xl border-4 border-white rounded-3xl bg-black relative overflow-hidden">
             <Image

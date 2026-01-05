@@ -33,17 +33,18 @@ export const useHorizontalScroll = ({
         scrollTrigger: {
           trigger: containerRef.current,
           pin: true,
-          start: "bottom bottom",
-          end: () => "+=" + window.innerWidth * totalSections*3,
+          start: "64% center",
+          end: () => "+=" + window.innerWidth * totalSections * 1,
           scrub: 1,
           snap: {
             snapTo: 1 / totalSections,
-            duration: { min: 0.1, max: 0.2 },
-            delay: 0,
-            ease: "power2.out",
+            duration: 1,
+            delay: 1,
+            ease: "power1.out",
             inertia: false,
           },
           invalidateOnRefresh: true,
+          pinSpacing: true,
         },
       });
     }, containerRef);
