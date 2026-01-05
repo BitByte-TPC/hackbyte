@@ -147,7 +147,7 @@ export default function HumansPage() {
 
         {/* Toggle Button */}
         <FadeInView delay={0.15} yOffset={20} className="w-full">
-          <div className="w-full flex items-start justify-start sm:pt-50 pt-15 z-20 px-8 md:px-20">
+          <div className="w-full flex items-start justify-start sm:pt-50 pt-15 z-100 px-8 md:px-20">
             <div className="flex items-center bg-[#3D1A5C] rounded-full border border-purple-700/50 h-8 md:h-10">
               <button
                 onClick={() => setActiveTab("organizers")}

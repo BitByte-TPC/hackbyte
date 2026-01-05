@@ -10,14 +10,21 @@ const Hero = () => {
 			{/* MLH Badge */}
 			<div className="absolute sm:w-33 w-20 top-0 sm:right-18 right-6 z-20 h-80">
 				<FadeInView delay={0.3} yOffset={-30}>
-					<Image
-						src="/mlh-badge.svg"
-						alt="MLH badge"
-						width={132}
-						height={320}
-						className="object-contain object-top w-full h-full"
-						priority
-					/>
+					<a
+					href="https://mlh.io/seasons/2026/events"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="MLH 2026 Events"
+					>
+						<Image
+							src="/mlh-badge.svg"
+							alt="MLH badge"
+							width={132}
+							height={320}
+							className="object-contain object-top w-full h-full"
+							priority
+						/>
+					</a>
 				</FadeInView>
 			</div>
 
