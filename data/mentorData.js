@@ -155,6 +155,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/siddharth-shivkumar/?originalSubdomain=in",
     twitter: "https://x.com/Siddharthshivkr",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Vedant Jain",
@@ -163,6 +164,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/vedant-jain-781006145/",
     twitter: "https://x.com/vedantj_03",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Sabhya Saini",
@@ -171,6 +173,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/sabhya-saini-9a4958122/",
     twitter: "https://x.com/sabhya_saini",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Sanskriti Harmukh",
@@ -179,6 +182,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/sanskriti-harmukh",
     twitter: "https://x.com/Senzkriti",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Bhavishya Pandit",
@@ -187,6 +191,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/bhavishya-pandit/",
     twitter: "https://x.com/BhavishyaP9",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Mitesh Kumar",
@@ -195,6 +200,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/mitesh-kumar-b0818b143/",
     twitter: "https://x.com/itnmitesh",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Jay Gala",
@@ -203,6 +209,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/jaykishorgala",
     twitter: "https://www.twitter.com/jaygala223",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Yashika Jotwani",
@@ -211,6 +218,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7/",
     twitter: "https://x.com/yashika_jotwani",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Hridyesh Gupta",
@@ -219,6 +227,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/hridyesh-gupta/",
     twitter: "#",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Gaurav Mishra",
@@ -227,6 +236,7 @@ export const mentorss = [
     linkedin: "https://linkedin.com/GMishx",
     twitter: "https://x.com/GMishx",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Siddhant Khare",
@@ -235,6 +245,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/siddhantkhare24/",
     twitter: "https://x.com/Siddhant_K_code",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Pratham More",
@@ -243,6 +254,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/pratham-m-7688571b5/",
     twitter: "#",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Saket Patel",
@@ -251,6 +263,7 @@ export const mentorss = [
     linkedin: "https://linkedin.com/in/saketsm",
     twitter: "#",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Nitin Mane",
@@ -259,6 +272,7 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/nitingmane/",
     twitter: "https://x.com/mnitin59",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Sushant Kumar",
@@ -267,6 +281,7 @@ export const mentorss = [
     linkedin: "https://linkedin.com/its-sushant",
     twitter: "https://x.com/Sushant6186002",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Agamya Samuel",
@@ -275,6 +290,7 @@ export const mentorss = [
     linkedin: "#",
     twitter: "#",
     github: "#",
+    role: "Mentor"
   },
   {
     name: "Kaushlendra Pratap Singh",
@@ -283,5 +299,6 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/kaushl2208/",
     twitter: "https://x.com/Kaushl2208",
     github: "#",
+    role: "Mentor"
   },
 ];

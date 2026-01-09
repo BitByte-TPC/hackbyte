@@ -27,7 +27,7 @@ export const famm = [
     linkedin: "https://www.linkedin.com/in/eshaan-modi-a9a602253",
     github: "https://github.com/NightFury742",
     twitter: "https://x.com/eshaan_modi",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: " Aditya Kumar Gupta",
@@ -35,7 +35,7 @@ export const famm = [
     linkedin: "https://www.linkedin.com/in/aditya-kumar-gupta-b52a9426b",
     github: "https://github.com/Adi8712",
     twitter: "https://x.com/KumarAdity61683",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Rishi Godre",
@@ -43,7 +43,7 @@ export const famm = [
     linkedin: "www.linkedin.com/in/rishi-godre-31323624b",
     github: "#",
     twitter: "https://x.com/rishi_godre?s=09",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Pratik Solanki",
@@ -51,7 +51,7 @@ export const famm = [
     linkedin: "https://www.linkedin.com/in/pratik-solanki-a140a7257/",
     github: "https://github.com/Pratik2026",
     twitter: "#",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Joyee Biswas",
@@ -59,7 +59,7 @@ export const famm = [
     linkedin: " https://www.linkedin.com/in/joyee-biswas-807b53258",
     github: "https://github.com/Joyee2004 ",
     twitter: "https://x.com/joyee6biswas",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Akshay Behl",
@@ -67,7 +67,7 @@ export const famm = [
     linkedin: "https://www.linkedin.com/in/akshay-behl-450661258/",
     github: "https://github.com/Captain-T2004",
     twitter: "https://x.com/akshay01571747",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Samriddhi Sharma",
@@ -75,7 +75,7 @@ export const famm = [
     linkedin: "https://www.linkedin.com/in/samriddhi-sharma-b07b81254",
     github: "https://github.com/Samriddhi-35",
     twitter: "https://x.com/_heyyysam_",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Divyansh Bisht",
@@ -83,7 +83,7 @@ export const famm = [
     linkedin: "https://www.linkedin.com/in/divyansh-bisht-1294b1264/ ",
     github: "https://github.com/dcoder13",
     twitter: "https://x.com/Heybooguesswha1",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Uttara Kamat",
@@ -91,14 +91,14 @@ export const famm = [
     linkedin: "https://www.linkedin.com/in/uttara-kamat/",
     github: "https://github.com/idlidosa1206",
     twitter: "https://x.com/uttaraaaa_?s=09",
-    role: "Organizer",
+    role: "Family",
   },
   {
     name: "Akash Paloju",
     image: paloju,
     linkedin: "https://www.linkedin.com/in/akash-paloju",
     github: "https://github.com/AkashPaloju",
-    role: "Organizer",
+    role: "Family",
     twitter: "https://x.com/Akash_Paloju",
   },
   {
@@ -106,7 +106,7 @@ export const famm = [
     image: revathy,
     linkedin: "http://www.linkedin.com/in/revathy-raj-n-662187272",
     github: "",
-    role: "Organizer",
+    role: "Family",
     twitter: "#",
     behance: "https://www.behance.net/rajrevathyn"
   },
@@ -115,13 +115,13 @@ export const famm = [
     image: samaksh,
     linkedin: "https://www.linkedin.com/in/samaksh1agarwal",
     github: "https://github.com/SamakshAgarwal1112",
-    role: "Organizer",
+    role: "Family",
     twitter: "https://x.com/SamakshAgg1112",
   },
   {
     name: "Rahul R Nadkarni",
     image: rahul,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/rahul-r-nadkarni/",
     twitter: "https://x.com/irahul_r_n",
     github: "#",
@@ -130,7 +130,7 @@ export const famm = [
   {
     name: "Agrim Gupta",
     image: agrim,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/agrim-gupta-203570265/",
     twitter: "https://x.com/agrxmm?t=0YJDgJnjrjtaLSL0ow9OUw&s=09",
     github: "https://github.com/Agrim2112",
@@ -138,7 +138,7 @@ export const famm = [
   {
     name: "Shreyans Katariya",
     image: shreyans,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/shreyans-katariya-blue/",
     twitter: "https://x.com/Shreyans79111",
     github: "https://github.com/Shreyans2004",
@@ -146,7 +146,7 @@ export const famm = [
   {
     name: "Rishikesh Kuppala",
     image: rishikesh,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/rishikesh-kuppala/",
     twitter: "https://x.com/Rishike89765470",
     github: "https://github.com/RISHIKESHk07",
@@ -154,7 +154,7 @@ export const famm = [
   {
     name: "Aarav Jain",
     image: aarav,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/aarav-jain-094a77258/",
     twitter: "#",
     github: "https://github.com/aarav0012",
@@ -162,7 +162,7 @@ export const famm = [
   {
     name: "Kushagra Gupta",
     image: kush,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/kushagra-gupta-22b73324a/",
     twitter: "https://x.com/https://x.com/Kushdapush5",
     github: "https://github.com/Kushdapush",
@@ -170,7 +170,7 @@ export const famm = [
   {
     name: "Dhruv Parmar",
     image: dhruv,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/dhruv-parmar-61b31226b/",
     twitter: "#",
     github: "https://github.com/REC-1104",
@@ -178,7 +178,7 @@ export const famm = [
   {
     name: "Abhijay Rawat",
     image: abhijay,
-    role: "Organizer",
+    role: "Family",
     linkedin: "https://www.linkedin.com/in/abhijayrawat/",
     twitter: "#",
     github: "https://github.com/abhijayrawat",

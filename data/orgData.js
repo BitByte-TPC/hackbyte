@@ -28,6 +28,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/om-thorat/",
     twitter: "https://x.com/ProbablyOm",
     github: "https://github.com/Om-Thorat",
+    role: "Organizer",
   },
   {
     name: "Ayush Saksena",
@@ -35,6 +36,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/ayush-saksena/",
     twitter: "https://x.com/_ayushsaksena",
     github: "https://github.com/ayushsaksena30",
+    role: "Organizer",
   },
   {
     name: "Hemang Mishra",
@@ -42,6 +44,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/hemangmishra",
     twitter: "https://x.com/HemangMishra10",
     github: "https://github.com/hemang-mishra",
+    role: "Organizer",
   },
   {
     name: "Abhijeet W",
@@ -49,6 +52,7 @@ export const organizerss = [
     linkedin: "https://linkedin.com/in/abhijeetw",
     twitter: "https://x.com/abhijeetw035",
     github: "https://github.com/abhijeetw035",
+    role: "Organizer",
   },
   {
     name: "Tanmay Deobhankar",
@@ -56,6 +60,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/tanmay-deobhankar/",
     twitter: "https://x.com/tanmay9982?s=21",
     github: "https://github.com/Zapper9982",
+    role: "Organizer",
   },
   {
     name: "Sarthak Yeole",
@@ -63,6 +68,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/sarthak-yeole-399a93297/",
     twitter: "https://x.com/Sarthak_256",
     github: "https://github.com/sarthakyeole",
+    role: "Organizer",
   },
   {
     name: "Sujal Agrawal",
@@ -70,6 +76,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/sujal-agrawal-823959296",
     twitter: "https://x.com/AgrawalSujal182",
     github: "https://github.com/Agrawal-Sujal",
+    role: "Organizer",
   },
   {
     name: "Vaibhav Sahu",
@@ -77,6 +84,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/vaibhav-sahu-93664a28a/",
     twitter: "https://x.com/Vaibhav02971972",
     github: "https://github.com/Vaibhavsahu2810",
+    role: "Organizer",
   },
   {
     name: "Harshil",
@@ -84,6 +92,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/harshil13/",
     twitter: "https://x.com/harshiill_13",
     github: "https://github.com/harshiill",
+    role: "Organizer",
   },
   {
     name: "Prince Deepak Siddharth",
@@ -91,6 +100,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/prince-deepak-siddharth-1b1476288/",
     twitter: "#",
     github: "https://github.com/prince-deepak-siddharth",
+    role: "Organizer",
   },
   {
     name: "Kshitij Patel",
@@ -98,6 +108,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/kshitij-patel-a2665328b/",
     twitter: "https://x.com/Kshitij_patel54",
     github: "https://github.com/Kshitij054",
+    role: "Organizer",
   },
   {
     name: "Ashika Jain",
@@ -105,6 +116,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/ashika5",
     twitter: "https://x.com/AshikaJain6434",
     github: "https://github.com/Ashika2005",
+    role: "Organizer",
   },
   {
     name: "Vishal Painjane",
@@ -112,6 +124,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/vishal-painjane/",
     twitter: "https://x.com/vishal_painjane",
     github: "https://github.com/VishalPainjane",
+    role: "Organizer",
   },
   {
     name: "Tanishka Nibariya",
@@ -119,6 +132,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/tanishka-nibariya-4390a428b/",
     twitter: "https://x.com/tanishkaa89",
     github: "https://github.com/tanishkaa08",
+    role: "Organizer",
   },
   {
     name: "Safal Tripathi",
@@ -126,6 +140,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/safal-tripathi-47311823a/",
     twitter: "https://x.com/iamsafal10",
     github: "https://github.com/iamsafal10",
+    role: "Organizer",
   },
   {
     name: "Mariam Eqbal",
@@ -133,6 +148,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/mariam-eqbal",
     twitter: "https://x.com/xmwriam",
     github: "https://github.com/xmwriam",
+    role: "Organizer",
   },
   {
     name: "Divyanshu Singh",
@@ -140,6 +156,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/divyanshu-singh-856696290/",
     twitter: "https://x.com/Divi_Hectic4u",
     github: "https://github.com/DIVI-Hectic4U",
+    role: "Organizer",
   },
   {
     name: "Shounak Patil",
@@ -147,6 +164,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/shounak-patil/",
     twitter: "https://x.com/PatilShounak",
     github: "https://github.com/shounakpatil",
+    role: "Organizer",
   },
   {
     name: "Kumar S Shalabh",
@@ -154,6 +172,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/kumar-sshalabh-629341203/",
     twitter: "#",
     behance: "https://konokrossda.framer.website/",
+    role: "Organizer",
   },
   {
     name: "Ayush Narsian",
@@ -161,6 +180,7 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/ayushnarsian/",
     twitter: "https://x.com/NarsianAyush",
     github: "https://github.com/AyushNarsian",
+    role: "Organizer",
   },
   {
     name: "Tanmay Wani",
@@ -168,5 +188,6 @@ export const organizerss = [
     linkedin: "https://www.linkedin.com/in/tanmay-wani-5029062b0",
     twitter: "https://x.com/tanny1357",
     github: "https://github.com/tanny1357",
+    role: "Organizer",
   },
 ];
