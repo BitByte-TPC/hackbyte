@@ -1,140 +1,186 @@
-import priyansh from "@/public/Humans/family/priyansh.webp";
-import bhavik from "@/public/Humans/family/bhavik.webp";
-import samyak from "@/public/Humans/family/samyak.webp";
-import divyansh from "@/public/Humans/family/divyansh.webp";
-import vansh from "@/public/Humans/family/vansh.webp";
-import aditya from "@/public/Humans/family/aditya.webp";
-import varun from "@/public/Humans/family/varun.webp";
-import deepanshu from "@/public/Humans/family/deepanshu.webp";
-import sambhav from "@/public/Humans/family/sambhav.webp";
-import tushir from "@/public/Humans/family/tushir.webp";
-import aman from "@/public/Humans/family/aman.webp";
-import aish from "@/public/Humans/family/aish.webp";
-import prajjwal from "@/public/Humans/family/prajjwal.webp";
-import aryan from "@/public/Humans/family/aryan.webp";
-import prajwal from "@/public/Humans/family/prajwal.webp";
-import manoj from "@/public/Humans/family/manoj.webp";
-import nitya from "@/public/Humans/family/nitya.webp";
+import Pratik from "@/public/Humans/pratik.webp";
+import Eshaan from "@/public/Humans/eshaan.webp";
+import Joyee from "@/public/Humans/joyee.webp";
+import Aditya from "@/public/Humans/Aditya_Gupta.webp";
+import Akshay from "@/public/Humans/akshay.webp";
+import Divyansh from "@/public/Humans/divyansh.webp";
+import Uttara from "@/public/Humans/uttara.webp";
+import Rishi from "@/public/Humans/Rishi.webp";
+import paloju from "@/public/Humans/paloju.webp";
+import revathy from "@/public/Humans/revathy.webp";
+import samriddhi from "@/public/Humans/samriddhi.webp";
+import samaksh from "@/public/Humans/samaksh.webp";
+import agrim from "@/public/Humans/agrim.webp";
+import shreyans from "@/public/Humans/shreyans.webp";
+import rishikesh from "@/public/Humans/rishikesh.webp";
+import aarav from "@/public/Humans/aarav.webp";
+import rahul from "@/public/Humans/rahul.webp";
+import kush from "@/public/Humans/kushagra.webp";
+import dhruv from "@/public/Humans/dhruv.webp";
+import abhijay from "@/public/Humans/abhijay.webp";
+
 
 export const famm = [
   {
-    name: "Bhavik Agrawal",
-    image: bhavik,
-    linkedin: "https://www.linkedin.com/in/bhavikagarwal2001/",
-    twitter: "https://twitter.com/BhavikAgarwal13",
-    github: "https://github.com/Bhavik-ag",
+    name: "Eshaan Modi",
+    image: Eshaan,
+    linkedin: "https://www.linkedin.com/in/eshaan-modi-a9a602253",
+    github: "https://github.com/NightFury742",
+    twitter: "https://x.com/eshaan_modi",
+    role: "Organizer",
   },
   {
-    name: "Samyak Bhargava",
-    image: samyak,
-    linkedin: "https://www.linkedin.com/in/sammybh6/",
-    twitter: "#",
-    github: "https://github.com/sammybh6",
+    name: " Aditya Kumar Gupta",
+    image: Aditya,
+    linkedin: "https://www.linkedin.com/in/aditya-kumar-gupta-b52a9426b",
+    github: "https://github.com/Adi8712",
+    twitter: "https://x.com/KumarAdity61683",
+    role: "Organizer",
   },
   {
-    name: "Priyansh Mehta",
-    image: priyansh,
-    linkedin: "https://www.linkedin.com/in/Priyansh61/",
-    twitter: "https://twitter.com/Priyansh_61",
-    github: "https://github.com/Priyansh61",
-  },
-  {
-    name: "Divyansh Tripathi",
-    image: divyansh,
-    linkedin: "https://www.linkedin.com/in/tdivyansh/",
-    twitter: "https://twitter.com/theoden42",
-    github: "https://github.com/theoden42",
-  },
-  {
-    name: "Vansh Mittal",
-    image: vansh,
-    linkedin: "https://www.linkedin.com/in/vansh-mittal-21869922a/",
-    twitter: "https://twitter.com/mittalvansh_11",
-    github: "https://github.com/mittalvansh",
-  },
-  {
-    name: "Aditya Raj",
-    image: aditya,
-    linkedin: "https://www.linkedin.com/in/contactadityaraj/",
-    twitter: "#",
+    name: "Rishi Godre",
+    image: Rishi,
+    linkedin: "www.linkedin.com/in/rishi-godre-31323624b",
     github: "#",
-    behance: "https://www.behance.net/adi_ux",
+    twitter: "https://x.com/rishi_godre?s=09",
+    role: "Organizer",
   },
   {
-    name: "Varun Singh",
-    image: varun,
-    linkedin: "https://www.linkedin.com/in/varun-singh-018242224/",
+    name: "Pratik Solanki",
+    image: Pratik,
+    linkedin: "https://www.linkedin.com/in/pratik-solanki-a140a7257/",
+    github: "https://github.com/Pratik2026",
     twitter: "#",
-    github: "https://github.com/varun7singh",
+    role: "Organizer",
   },
   {
-    name: "Deepanshu Singh",
-    image: deepanshu,
-    linkedin: "https://www.linkedin.com/in/sdeepanshu17/",
-    twitter: "https://twitter.com/sdeepanshu17",
-    github: "#",
+    name: "Joyee Biswas",
+    image: Joyee,
+    linkedin: " https://www.linkedin.com/in/joyee-biswas-807b53258",
+    github: "https://github.com/Joyee2004 ",
+    twitter: "https://x.com/joyee6biswas",
+    role: "Organizer",
   },
   {
-    name: "Sambhav Gupta",
-    image: sambhav,
-    linkedin: "https://www.linkedin.com/in/sambhavgupta0705",
-    twitter: "https://x.com/sambhavgupta75",
-    github: "https://github.com/sambhavgupta0705",
+    name: "Akshay Behl",
+    image: Akshay,
+    linkedin: "https://www.linkedin.com/in/akshay-behl-450661258/",
+    github: "https://github.com/Captain-T2004",
+    twitter: "https://x.com/akshay01571747",
+    role: "Organizer",
   },
   {
-    name: "Tushir Sahu",
-    image: tushir,
-    linkedin: "https://www.linkedin.com/in/tushir-sahu-b95549205/",
-    twitter: "https://twitter.com/Tushir_Sahu",
-    github: "https://github.com/TushirSahu",
+    name: "Samriddhi Sharma",
+    image: samriddhi,
+    linkedin: "https://www.linkedin.com/in/samriddhi-sharma-b07b81254",
+    github: "https://github.com/Samriddhi-35",
+    twitter: "https://x.com/_heyyysam_",
+    role: "Organizer",
   },
   {
-    name: "Aman Srivastava",
-    image: aman,
-    linkedin: "https://www.linkedin.com/in/aman-srivastava-16726822a/",
+    name: "Divyansh Bisht",
+    image: Divyansh,
+    linkedin: "https://www.linkedin.com/in/divyansh-bisht-1294b1264/ ",
+    github: "https://github.com/dcoder13",
+    twitter: "https://x.com/Heybooguesswha1",
+    role: "Organizer",
+  },
+  {
+    name: "Uttara Kamat",
+    image: Uttara,
+    linkedin: "https://www.linkedin.com/in/uttara-kamat/",
+    github: "https://github.com/idlidosa1206",
+    twitter: "https://x.com/uttaraaaa_?s=09",
+    role: "Organizer",
+  },
+  {
+    name: "Akash Paloju",
+    image: paloju,
+    linkedin: "https://www.linkedin.com/in/akash-paloju",
+    github: "https://github.com/AkashPaloju",
+    role: "Organizer",
+    twitter: "https://x.com/Akash_Paloju",
+  },
+  {
+    name: "Revathy Raj",
+    image: revathy,
+    linkedin: "http://www.linkedin.com/in/revathy-raj-n-662187272",
+    github: "",
+    role: "Organizer",
     twitter: "#",
-    github: "#",
+    behance: "https://www.behance.net/rajrevathyn"
   },
   {
-    name: "Aishwarya Saxena",
-    image: aish,
-    linkedin: "https://www.linkedin.com/in/aishwarya-saxena-05713618b/",
+    name: "Samaksh Agarwal",
+    image: samaksh,
+    linkedin: "https://www.linkedin.com/in/samaksh1agarwal",
+    github: "https://github.com/SamakshAgarwal1112",
+    role: "Organizer",
+    twitter: "https://x.com/SamakshAgg1112",
+  },
+  {
+    name: "Rahul R Nadkarni",
+    image: rahul,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/rahul-r-nadkarni/",
+    twitter: "https://x.com/irahul_r_n",
+    github: "#",
+    behance: "https://rahulrn.framer.website"
+  },
+  {
+    name: "Agrim Gupta",
+    image: agrim,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/agrim-gupta-203570265/",
+    twitter: "https://x.com/agrxmm?t=0YJDgJnjrjtaLSL0ow9OUw&s=09",
+    github: "https://github.com/Agrim2112",
+  },
+  {
+    name: "Shreyans Katariya",
+    image: shreyans,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/shreyans-katariya-blue/",
+    twitter: "https://x.com/Shreyans79111",
+    github: "https://github.com/Shreyans2004",
+  },
+  {
+    name: "Rishikesh Kuppala",
+    image: rishikesh,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/rishikesh-kuppala/",
+    twitter: "https://x.com/Rishike89765470",
+    github: "https://github.com/RISHIKESHk07",
+  },
+  {
+    name: "Aarav Jain",
+    image: aarav,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/aarav-jain-094a77258/",
     twitter: "#",
-    github: "#",
+    github: "https://github.com/aarav0012",
   },
   {
-    name: "Prajjwal Kapoor",
-    image: prajjwal,
-    linkedin: "https://www.linkedin.com/in/prajjwal-kapoor/",
-    twitter: "https://twitter.com/the_prajjwal",
-    github: "https://github.com/prajjwalkapoor",
+    name: "Kushagra Gupta",
+    image: kush,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/kushagra-gupta-22b73324a/",
+    twitter: "https://x.com/https://x.com/Kushdapush5",
+    github: "https://github.com/Kushdapush",
   },
   {
-    name: "Aryan Pandey",
-    image: aryan,
-    linkedin: "https://linkedin.com/in/aryan1113",
-    twitter: "https://twitter.com/aisehiaryan",
-    github: "https://github.com/aryan1113",
-  },
-  {
-    name: "Prajwal Rayal",
-    image: prajwal,
-    linkedin: "http://linkedin.com/in/prajwal-rayal",
-    twitter: "https://twitter.com/rayalprajwal",
-    github: "https://github.com/PrajwalRayal",
-  },
-  {
-    name: "Manoj Panjwani",
-    image: manoj,
-    linkedin: "https://www.linkedin.com/in/manojpanjwani03/",
+    name: "Dhruv Parmar",
+    image: dhruv,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/dhruv-parmar-61b31226b/",
     twitter: "#",
-    github: "#",
+    github: "https://github.com/REC-1104",
   },
   {
-    name: "Nitya Tiwari",
-    image: nitya,
-    linkedin: "https://www.linkedin.com/in/nitya-tiwari-960797229/",
-    twitter: "https://twitter.com/nityatiwariii",
-    github: "#",
+    name: "Abhijay Rawat",
+    image: abhijay,
+    role: "Organizer",
+    linkedin: "https://www.linkedin.com/in/abhijayrawat/",
+    twitter: "#",
+    github: "https://github.com/abhijayrawat",
   },
 ];

@@ -2,7 +2,7 @@
 import { useState, useMemo } from "react"
 import HumanCard from "@/components/HumansCard/Card"
 import Image from "next/image"
-import { organizerss } from "@/data/orgData.js"
+import {organizerss} from "@/data/orgData"
 import { mentorss } from "@/data/mentorData"
 import { famm } from "@/data/famData"
 import FadeInView from "@/components/FadeInView"
