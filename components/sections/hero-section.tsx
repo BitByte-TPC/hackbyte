@@ -184,6 +184,15 @@ const Hero = () => {
 							priority
 						/>
 					</Link>
+					<Link href="https://whatsapp.com/channel/0029Vb712h5J3juqIsG6Ah3y" className="relative w-6 h-6">
+						<Image
+							src="/whatsapp.png"
+							alt="LinkedIn"
+							fill
+							className="object-contain"
+							priority
+						/>
+					</Link>
 				</div>
 
 
