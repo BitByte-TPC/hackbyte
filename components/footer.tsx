@@ -12,8 +12,6 @@ export function Footer() {
     >
       {/*socials tape*/}
       <div className=" relative flex flex-row w-full justify-between items-center h-[216px] bg-[#62009b] border-white border-t-12 border-b-12 px-8 max-sm:h-[230px] max-sm:border-b-3 max-sm:border-t-3 max-sm:items-start max-sm:px-4 max-sm:inline-block">
-
-
         <Image
           src="/HbSmallLogo.svg"
           alt="Hackbyte logo"
@@ -107,6 +105,19 @@ export function Footer() {
                   <Image
                     src="/discord.svg"
                     alt="discord"
+                    width={38}
+                    height={38}
+                    className="max-sm:w-[25px] max-sm:h-[25px]"
+                  />
+                </Link>
+              </li>
+              <li>
+                <Link
+                  href="https://whatsapp.com/channel/0029Vb712h5J3juqIsG6Ah3y"
+                >
+                  <Image
+                    src="/whatsapp.png"
+                    alt="whatsapp"
                     width={38}
                     height={38}
                     className="max-sm:w-[25px] max-sm:h-[25px]"
