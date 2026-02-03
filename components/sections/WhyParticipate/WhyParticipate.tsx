@@ -86,9 +86,9 @@ export default function WhyParticipate() {
 
         <div
           ref={sliderRef}
-          className="relative z-10 h-full flex flex-row w-max items-center"
+          className="relative z-10 h-full flex flex-row items-center pl-[20vw] pr-[20vw]"
         >
-          <div className="relative w-screen h-141.5 shrink-0 flex flex-col items-center justify-center p-10 z-20 max-sm:h-[450px]">
+          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-10 z-20 max-sm:h-[450px]">
             <Image src={collab} alt="collaborate" className="inline-block" />
             <Image
               src={alert}
@@ -98,7 +98,7 @@ export default function WhyParticipate() {
               className="absolute bottom-27 left-170 max-sm:bottom-30 max-sm:left-12 max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
-          <div className="relative w-screen h-141.5 shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-2">
+          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-2">
             <Image src={prizes} alt="prizes" className="inline-block" />
             <Image
               src={alert}
@@ -106,7 +106,7 @@ export default function WhyParticipate() {
               className="absolute w-[120px] h-[120px] bottom-27 left-170 max-sm:bottom-30 max-sm:left-8 max-sm:w-[80px] max-sm:h-[80px]" 
             />
           </div>
-          <div className="relative w-screen h-141.5 shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-3">
+          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-3">
             <Image src={workshops} alt="workshops" className="inline-block" />
             <Image
               src={alert}
@@ -116,7 +116,7 @@ export default function WhyParticipate() {
               className="absolute bottom-25 left-170 max-sm:bottom-30 max-sm:left-10 max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
-          <div className="relative w-screen h-[600px] shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-3">
+          <div className="relative w-[60vw] h-[600px] shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-3">
             <Image src={mentorship} alt="mentorship" className="inline-block" />
             <Image
               src={alert}
@@ -126,7 +126,7 @@ export default function WhyParticipate() {
               className="absolute bottom-27 left-170 max-sm:bottom-30 max-sm:left-9 max-sm:w-[80px] max-sm:h-[80px]"
             />
           </div>
-          <div className="relative w-screen h-141.5 shrink-0 flex flex-col items-center justify-center p-8  max-sm:h-[450px] max-sm:-top-6">
+          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-8  max-sm:h-[450px] max-sm:-top-6">
             <Image src={recruitment} alt="collaborate" className="inline-block" />
           </div>
         </div>
