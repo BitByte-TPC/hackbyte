@@ -48,7 +48,9 @@ export function Footer() {
                 <Link href="/humans">Humans</Link>
               </li>
               <li className="text-center">
-                <Link href="/schedule">Schedule</Link>
+                <Link href="https://hackbyte4.devfolio.co/schedule">
+                  Schedule
+                </Link>
               </li>
               <li className="text-center">
                 <Link href="/prizes">Prizes</Link>
