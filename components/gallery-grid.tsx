@@ -1,6 +1,9 @@
-import Image from "next/image"
+"use client"
 
-const images = [
+import Image from "next/image"
+import { useEffect, useRef } from "react"
+
+const allImages = [
   "1.jpg",
   "2.jpg",
   "3.jpg",
@@ -12,45 +15,131 @@ const images = [
   "9.jpg",
   "10.jpg",
   "11.jpg",
+  "hack 5th-01.jpg",
+  "hack 5th-02.jpg",
+  "hack 5th-03.jpg",
+  "hack 5th-04.jpg",
+  "hack 5th-05.jpg",
+  "hack 5th-06.jpg",
+  "hack 5th-07.jpg",
+  "hack 5th-08.jpg",
+  "hack 5th-09.jpg",
+  "hack 5th-10.jpg",
+  "hack 5th-11.jpg",
+  "hack 5th-12.jpg",
+  "hack 5th-13.jpg",
+  "hack 5th-14.jpg",
+  "hack 5th-16.jpg",
+  "hack 5th-17.jpg",
+  "hack 5th-23.jpg",
+  "hack 5th-24.jpg",
+  "hack 5th-33.jpg",
+  "hack 5th-40.jpg",
 ]
 
-export function GalleryGrid() {
-  // Define layout patterns for each image (row-span and col-span)
-  const layout = [
-    { img: "1.jpg", rows: 2, cols: 1 }, // Tall left
-    { img: "2.jpg", rows: 1, cols: 1 }, // Small top middle
-    { img: "3.jpg", rows: 1, cols: 1 }, // Small top right
-    { img: "4.jpg", rows: 1, cols: 1 }, // Small middle
-    { img: "5.jpg", rows: 2, cols: 1 }, // Tall middle (increased height)
-    { img: "6.jpg", rows: 1, cols: 1 }, // Small middle right
-    { img: "7.jpg", rows: 2, cols: 1 }, // Small bottom left
-    { img: "8.jpg", rows: 1, cols: 1 }, // Small bottom middle
-    { img: "9.jpg", rows: 1, cols: 1 }, // Small bottom
-  ]
+// Split images into 3 columns
+const column1 = allImages.filter((_, i) => i % 3 === 0)
+const column2 = allImages.filter((_, i) => i % 3 === 1)
+const column3 = allImages.filter((_, i) => i % 3 === 2)
+
+interface MarqueeColumnProps {
+  images: string[]
+  speed: number
+  direction: "up" | "down"
+}
+
+function MarqueeColumn({ images, speed, direction }: MarqueeColumnProps) {
+  const scrollRef = useRef<HTMLDivElement>(null)
+  const isPausedRef = useRef(false)
+
+  useEffect(() => {
+    const scrollElement = scrollRef.current
+    if (!scrollElement) return
+
+    let animationId: number
+    let scrollPosition = direction === "down" ? 0 : scrollElement.scrollHeight / 2
+
+    const animate = () => {
+      if (!scrollElement) return
+
+      if (!isPausedRef.current) {
+        if (direction === "down") {
+          scrollPosition += speed
+          if (scrollPosition >= scrollElement.scrollHeight / 2) {
+            scrollPosition = 0
+          }
+        } else {
+          scrollPosition -= speed
+          if (scrollPosition <= 0) {
+            scrollPosition = scrollElement.scrollHeight / 2
+          }
+        }
+
+        scrollElement.scrollTop = scrollPosition
+      }
+
+      animationId = requestAnimationFrame(animate)
+    }
+
+    animationId = requestAnimationFrame(animate)
+
+    return () => {
+      if (animationId) {
+        cancelAnimationFrame(animationId)
+      }
+    }
+  }, [speed, direction])
+
+  // Duplicate images for seamless loop
+  const duplicatedImages = [...images, ...images]
 
   return (
-    <div className="w-full md:max-w-[80%] mx-auto pt-2">
-      <div className="grid grid-cols-3 auto-rows-[100px] md:auto-rows-[250px] gap-1">
-        {layout.map((item, i) => (
+    <div
+      ref={scrollRef}
+      className="h-[600px] md:h-[800px] overflow-hidden relative hide-scrollbar"
+      style={{ scrollbarWidth: "none" }}
+      onMouseEnter={() => isPausedRef.current = true}
+      onMouseLeave={() => isPausedRef.current = false}
+    >
+      <div className="flex flex-col gap-4">
+        {duplicatedImages.map((img, idx) => (
           <div
-            key={i}
-            className="relative overflow-hidden rounded-lg md:rounded-3xl border-4 border-[#3B005E]"
-            style={{
-              gridRowEnd: `span ${item.rows}`,
-              gridColumnEnd: `span ${item.cols}`,
-            }}
+            key={`${img}-${idx}`}
+            className="relative w-full h-[200px] md:h-[300px] overflow-hidden rounded-lg md:rounded-2xl border-4 border-[#3B005E] flex-shrink-0"
           >
             <Image
-              src={`/Gallery/${item.img}`}
-              alt={`Gallery image ${i + 1}`}
+              src={`/Gallery/${img}`}
+              alt={`Gallery image ${img}`}
               fill
               className="object-cover"
-              sizes="(max-width: 768px) 50vw,
-                     (max-width: 1024px) 33vw,
-                     25vw"
+              sizes="33vw"
+              loading="lazy"
+              placeholder="blur"
+              blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
             />
           </div>
         ))}
+      </div>
+    </div>
+  )
+}
+
+export function GalleryGrid() {
+  return (
+    <div className="w-full mx-auto pt-2">
+      <style jsx global>{`
+        .hide-scrollbar::-webkit-scrollbar {
+          display: none;
+        }
+        .hide-scrollbar {
+          -ms-overflow-style: none;
+          scrollbar-width: none;
+        }
+      `}</style>
+      <div className="grid grid-cols-3 gap-2 md:gap-4">
+        <MarqueeColumn images={column1} speed={0.5} direction="up" />
+        <MarqueeColumn images={column2} speed={0.8} direction="down" />
+        <MarqueeColumn images={column3} speed={0.6} direction="up" />
       </div>
     </div>
   )
