@@ -146,7 +146,7 @@ export default function HumansPage() {
         </div>
 
         {/* Toggle Button */}
-        <FadeInView delay={0.15} yOffset={20} className="w-full">
+        <FadeInView delay={0.15} yOffset={20} className="w-full relative z-20">
           <div className="w-full flex items-start justify-start sm:pt-50 pt-15 z-100 px-8 md:px-20">
             <div className="flex items-center bg-[#3D1A5C] rounded-full border border-purple-700/50 h-8 md:h-10">
               <button
@@ -186,7 +186,7 @@ export default function HumansPage() {
         </FadeInView>
 
         {/* Content based on active tab */}
-        <div className="mt-12 w-screen">
+        <div className="mt-12 w-screen relative z-20">
           {activeTab === "organizers" && organizersGrid}
           {activeTab === "mentors" && mentorsGrid}
           {activeTab === "family" && familyGrid}
