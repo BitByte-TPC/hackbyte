@@ -5,6 +5,7 @@ import GlassNavBar from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { ViewTransitions } from 'next-view-transitions'
 import SmoothScroll from "@/components/SmoothScroll";
+import ScrollToTop from "@/components/ScrollToTop";
 
 const poppins = Poppins({
   subsets: ["latin"],
@@ -72,6 +73,7 @@ export default function RootLayout({
           className={`${geistSans.variable} ${geistMono.variable} ${kanit.variable} ${poppins.className} antialiased overflow-x-hidden bg-black`}
         >
           <SmoothScroll>
+            <ScrollToTop />
             <GlassNavBar />
             {children}
             <Footer />
