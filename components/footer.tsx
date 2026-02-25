@@ -17,7 +17,7 @@ export function Footer() {
           alt="Hackbyte logo"
           width={500}
           height={300}
-          className="z-20 relative left-24 max-sm:w-[200px] max-sm:h-[100px] max-sm:-left-15 max-sm:-top-10"
+          className="z-20 relative left-18 max-sm:w-[200px] max-sm:h-[100px] max-sm:-left-15 max-sm:-top-10"
         />
         <div className="flex flex-col items-end gap-6 p-4 max-sm:pr-0 max-sm:pl-0 max-sm:w-full">
           {/*pages*/}
