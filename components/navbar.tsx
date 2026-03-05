@@ -46,13 +46,13 @@ const NAV_ITEMS = [
     icon: Trophy,
     href: "/prizes",
   },
-  // {
-  //   id: "calendar",
-  //   label: "Schedule",
-  //   activeIcon: "/Calendar.svg",
-  //   icon: Calendar,
-  //   href: "/schedule",
-  // },
+  {
+    id: "calendar",
+    label: "Timeline",
+    activeIcon: "/Calendar.svg",
+    icon: Calendar,
+    href: "/timeline",
+  },
   {
     id: "humans",
     label: "Humans",
