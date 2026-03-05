@@ -8,57 +8,81 @@ import FadeInView from "@/components/FadeInView";
 
 export default function FaqPage() {
 	const faqs = [
-		{
-			question: "How do I register ?",
-			answer: "Pre-registration will begin Shortly. Stay tuned for updates!",
-		},
-		{
-			question: "How many team members do I need?",
-			answer:
-				"You can participate only in teams of 3 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team.",
-		},
-		{
-			question: "How much are the participation fees?",
-			answer:
-				"Participation is absolutely free inclusive of food and accomodation. Isnt that great? So register ASAP!!",
-		},
-		{
-			question: "Will the Hackathon be in person or online ?",
-			answer: "HackByte will be conducted in complete offline/in-person mode.",
-		},
-		{
-			question: "What is the venue for HackByte 4.0 ?",
-			answer:
-				"IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
-		},
-		{
-			question: "What are the prerequisites to participate in this hackathon ?",
-			answer:
-				"No prerequisites are required to participate in this hackathon. This event is open to participants of all skill levels.",
-		},
-		{
-			question:
-				"Is the food and accommodation provided free of charge or are there any associated costs ?",
-			answer:
-				"We've got you covered when it comes to food, water, and coffee – they're on us. However, any additional snacks can be purchased separately. As for accommodation, we will provide arrangements similar to those found in other hackathons, which typically involve a set of mattresses in a common hall.",
-		},
-		{
-			question:
-				"Can my friend join our team after we have already submitted the application for review ?",
-			answer:
-				"Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team.",
-		},
-		{
-			question: "Can we bring a pre-built project to the hackathon?",
-			answer:
-				"No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
-		},
-		{
-			question: "Do projects need to be related to the theme?",
-			answer:
-				"No. We want to encourage open innovation, so you're free to choose any idea you're passionate about and build something meaningful.",
-		},
-	];
+    {
+      question: "How do I register ?",
+      answer: (
+        <p>
+          Apply directly through our Devfolio page here:
+          <a
+            href="https://hackbyte4.devfolio.co/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500"
+          >
+            {" "}
+            https://hackbyte4.devfolio.co
+          </a>
+          <br />
+          Stuck on registration? Watch our quick guide:
+          <a
+            href="https://youtu.be/l-uHuOxPOLU?si=8IFIMyK_mjQbpnNw"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-500"
+          >
+            {" "}
+            https://youtu.be/l-uHuOxPOLU?si=8IFIMyK_mjQbpnNw
+          </a>
+        </p>
+      ),
+    },
+    {
+      question: "How many team members do I need?",
+      answer:
+        "You can participate only in teams of 3 to 4 members. If you are interested in participating in the hackathon but do not have a team, we will assist you in connecting with other individual participants to form a team.",
+    },
+    {
+      question: "How much are the participation fees?",
+      answer:
+        "Participation is absolutely free inclusive of food and accomodation. Isnt that great? So register ASAP!!",
+    },
+    {
+      question: "Will the Hackathon be in person or online ?",
+      answer: "HackByte will be conducted in complete offline/in-person mode.",
+    },
+    {
+      question: "What is the venue for HackByte 4.0 ?",
+      answer:
+        "IIITDM Jabalpur, explore our beautiful campus while thinking about innovating some crazy thing.",
+    },
+    {
+      question: "What are the prerequisites to participate in this hackathon ?",
+      answer:
+        "No prerequisites are required to participate in this hackathon. This event is open to participants of all skill levels.",
+    },
+    {
+      question:
+        "Is the food and accommodation provided free of charge or are there any associated costs ?",
+      answer:
+        "We've got you covered when it comes to food, water, and coffee – they're on us. However, any additional snacks can be purchased separately. As for accommodation, we will provide arrangements similar to those found in other hackathons, which typically involve a set of mattresses in a common hall.",
+    },
+    {
+      question:
+        "Can my friend join our team after we have already submitted the application for review ?",
+      answer:
+        "Yes, your friend can join the team by submitting an individual application. Once both your friend's individual application and your team's application are accepted, you will be able to add your friend to the team.",
+    },
+    {
+      question: "Can we bring a pre-built project to the hackathon?",
+      answer:
+        "No, participants are not allowed to bring pre-built projects to the hackathon. All work must be started from scratch after the hackathon begins to ensure fairness",
+    },
+    {
+      question: "Do projects need to be related to the theme?",
+      answer:
+        "No. We want to encourage open innovation, so you're free to choose any idea you're passionate about and build something meaningful.",
+    },
+  ]
 
 	const [openIndex, setOpenIndex] = useState<number | null>(0);
 
