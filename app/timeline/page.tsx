@@ -454,7 +454,7 @@ export default function TimelinePage() {
 	];
 
 	return (
-    <div className="w-screen min-h-svh overflow-x-hidden bg-[#3F0063] relative">
+    <div className="w-screen min-h-svh overflow-x-hidden bg-[url('/bg%20texture%20prizes.svg'),radial-gradient(circle_at_center,#A823DC_0%,#3F0063_70%)] relative">
       <div className="absolute top-0 right-0 w-[30%] h-auto z-30 pointer-events-none">
         <Image
           src="/corner_cracks.svg"
@@ -479,10 +479,8 @@ export default function TimelinePage() {
 
       {/* Hero Section with Background */}
       <div className="mt-[20vh] sm:h-[20vh] w-screen relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#3F0063]"></div>
 
         <div className="absolute inset-0 flex items-center justify-center z-20 px-4">
-          <FadeInView duration={0.8}>
             <div className="text-center">
               <h1 className="font-kanit text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold text-white mb-4">
                 TIMELINE
@@ -490,13 +488,12 @@ export default function TimelinePage() {
               <p className="text-lg sm:text-xl text-white/80 font-poppins">
                 HackByte 4.0 Schedule • April 3-5, 2026
               </p>
-            </div>
-          </FadeInView>
+          </div>
         </div>
       </div>
 
       {/* Main Content Section with Textured Background */}
-      <div className="min-h-screen w-screen bg-[url('/bg%20texture%20prizes.svg'),radial-gradient(circle_at_center,#A823DC_0%,#3F0063_70%)] bg-cover bg-center bg-no-repeat relative pt-20 sm:pt-24 pb-20">
+      <div className="min-h-screen w-screen bg-cover bg-center bg-no-repeat relative pt-20 sm:pt-24 pb-20">
         <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <FadeInView duration={0.8}>
             {/* Day selector */}
@@ -525,81 +522,81 @@ export default function TimelinePage() {
             <div className="max-w-5xl mx-auto">
               <div className="space-y-4 sm:space-y-6">
                 {schedule[selectedDay].events.map((event, index) => {
-					if(event.type !== "Public") {
-						return null; // Skip non-public events
-					} else {
-						return (
-						<FadeInView key={index} delay={0.03 * index}>
-							<div
-							className={`relative backdrop-blur-lg rounded-2xl p-5 sm:p-6 border-2 shadow-xl transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl ${
-								event.type === "Public"
-								? "bg-blue-600/20 border-blue-400/40 hover:border-blue-400/60 hover:bg-blue-600/25"
-								: event.type === "Internal"
-									? "bg-purple-600/20 border-purple-400/40 hover:border-purple-400/60 hover:bg-purple-600/25"
-									: "bg-pink-600/20 border-pink-400/40 hover:border-pink-400/60 hover:bg-pink-600/25"
-							}`}
-							>
-							{/* Type Badge */}
-							<div className="absolute -top-3 right-4 sm:right-6">
-								<span
-								className={`px-3 sm:px-4 py-1 rounded-full text-xs font-bold shadow-lg ${
-									event.type === "Public"
-									? "bg-blue-500 text-white"
-									: event.type === "Internal"
-										? "bg-purple-500 text-white"
-										: "bg-pink-500 text-white"
-								}`}
-								>
-								{event.type}
-								</span>
-							</div>
+                  if (event.type !== "Public") {
+                    return null // Skip non-public events
+                  } else {
+                    return (
+                      <FadeInView key={index} delay={0.03 * index}>
+                        <div
+                          className={`relative backdrop-blur-lg rounded-2xl p-5 sm:p-6 border-2 shadow-xl transition-all duration-300 hover:scale-[1.01] hover:shadow-2xl ${
+                            event.type === "Public"
+                              ? "bg-blue-600/20 border-blue-400/40 hover:border-blue-400/60 hover:bg-blue-600/25"
+                              : event.type === "Internal"
+                                ? "bg-purple-600/20 border-purple-400/40 hover:border-purple-400/60 hover:bg-purple-600/25"
+                                : "bg-pink-600/20 border-pink-400/40 hover:border-pink-400/60 hover:bg-pink-600/25"
+                          }`}
+                        >
+                          {/* Type Badge */}
+                          <div className="absolute -top-3 right-4 sm:right-6">
+                            <span
+                              className={`px-3 sm:px-4 py-1 rounded-full text-xs font-bold shadow-lg ${
+                                event.type === "Public"
+                                  ? "bg-blue-500 text-white"
+                                  : event.type === "Internal"
+                                    ? "bg-purple-500 text-white"
+                                    : "bg-pink-500 text-white"
+                              }`}
+                            >
+                              {event.type}
+                            </span>
+                          </div>
 
-							<div className="flex flex-col sm:flex-row gap-4">
-								{/* Time */}
-								<div className="shrink-0 sm:w-40">
-								<div className="font-kanit text-2xl sm:text-3xl font-bold text-white">
-									{event.time}
-								</div>
-								{event.endTime && (
-									<div className="text-white/70 text-sm font-poppins mt-1">
-									to {event.endTime}
-									</div>
-								)}
-								</div>
+                          <div className="flex flex-col sm:flex-row gap-4">
+                            {/* Time */}
+                            <div className="shrink-0 sm:w-40">
+                              <div className="font-kanit text-2xl sm:text-3xl font-bold text-white">
+                                {event.time}
+                              </div>
+                              {event.endTime && (
+                                <div className="text-white/70 text-sm font-poppins mt-1">
+                                  to {event.endTime}
+                                </div>
+                              )}
+                            </div>
 
-								{/* Event Details */}
-								<div className="flex-1">
-								<h3 className="font-kanit text-lg sm:text-xl font-bold text-white mb-2">
-									{event.title}
-								</h3>
-								<div className="flex flex-wrap gap-3 mb-2">
-									<span className="inline-flex items-center text-sm font-poppins text-white/90 bg-white/10 px-3 py-1 rounded-full">
-									<svg
-										className="w-4 h-4 mr-1.5"
-										fill="currentColor"
-										viewBox="0 0 20 20"
-									>
-										<path
-										fillRule="evenodd"
-										d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
-										clipRule="evenodd"
-										/>
-									</svg>
-									{event.venue}
-									</span>
-								</div>
-								{event.notes && (
-									<p className="text-white/80 text-sm sm:text-base font-poppins mt-3 leading-relaxed">
-									{event.notes}
-									</p>
-								)}
-								</div>
-							</div>
-							</div>
-						</FadeInView>
-						)
-					}
-				})}
+                            {/* Event Details */}
+                            <div className="flex-1">
+                              <h3 className="font-kanit text-lg sm:text-xl font-bold text-white mb-2">
+                                {event.title}
+                              </h3>
+                              <div className="flex flex-wrap gap-3 mb-2">
+                                <span className="inline-flex items-center text-sm font-poppins text-white/90 bg-white/10 px-3 py-1 rounded-full">
+                                  <svg
+                                    className="w-4 h-4 mr-1.5"
+                                    fill="currentColor"
+                                    viewBox="0 0 20 20"
+                                  >
+                                    <path
+                                      fillRule="evenodd"
+                                      d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z"
+                                      clipRule="evenodd"
+                                    />
+                                  </svg>
+                                  {event.venue}
+                                </span>
+                              </div>
+                              {event.notes && (
+                                <p className="text-white/80 text-sm sm:text-base font-poppins mt-3 leading-relaxed">
+                                  {event.notes}
+                                </p>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </FadeInView>
+                    )
+                  }
+                })}
               </div>
             </div>
           </FadeInView>
