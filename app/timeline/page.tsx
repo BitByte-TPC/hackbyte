@@ -57,7 +57,7 @@ export default function TimelinePage() {
 					title: "Registration and Reporting",
 					venue: "Front of LHTC",
 					type: "Public",
-					notes: "Ensure smooth entry of participants and guests",
+					notes: "",
 				},
 				{
 					time: "3:30 PM",
@@ -74,14 +74,6 @@ export default function TimelinePage() {
 					venue: "Auditorium, LHTC",
 					type: "Internal",
 					notes: "Mic arrangements, Projector setup, Emcees should be present",
-				},
-				{
-					time: "4:45 PM",
-					endTime: "5:00 PM",
-					title: "Setting the audience at the venue for session",
-					venue: "Auditorium, LHTC",
-					type: "Public",
-					notes: "Give first preference to visiting participants",
 				},
 				{
 					time: "4:50 PM",
@@ -136,7 +128,7 @@ export default function TimelinePage() {
 					title: "Participants move to L104/L105 and settle",
 					venue: "Auditorium, LHTC",
 					type: "Public",
-					notes: "Explain the theme and sponsor tracks",
+					notes: "Explanation of the theme and sponsor tracks",
 				},
 				{
 					time: "7:00 PM",
@@ -175,7 +167,7 @@ export default function TimelinePage() {
 					title: "HACKING",
 					venue: "L104/L105",
 					type: "Public",
-					notes: "Check the list of participants, Verify their final entry",
+					notes: "Verifying all participant's final entry",
 				},
 			],
 		},
@@ -203,7 +195,7 @@ export default function TimelinePage() {
 					title: "Midnight Snack",
 					venue: "LHTC",
 					type: "Public",
-					notes: "Keep in mind the snacking arrangements of guests",
+					notes: "",
 				},
 				{
 					time: "2:45 AM",
@@ -358,7 +350,7 @@ export default function TimelinePage() {
 					title: "Midnight Snack",
 					venue: "L104/L105",
 					type: "Public",
-					notes: "Make announcements for snacks and queue up participants for orderly collection",
+					notes: "",
 				},
 				{
 					time: "4:00 AM",
@@ -447,7 +439,7 @@ export default function TimelinePage() {
 					title: "IceBreaker Event",
 					venue: "Auditorium, LHTC",
 					type: "Public",
-					notes: "Just try to keep the rest of the audience engaged to not feel bored",
+					notes: "",
 				},
 				{
 					time: "2:30 PM",
