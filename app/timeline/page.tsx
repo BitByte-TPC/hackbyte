@@ -307,7 +307,7 @@ export default function TimelinePage() {
 					title: "SLOT 3 - Github Workshop",
 					venue: "L104/L105",
 					type: "Public",
-					notes: "Check mic and required resources(1 hour each hall)",
+					notes: "",
 				},
 				{
 					time: "7:30 PM",
