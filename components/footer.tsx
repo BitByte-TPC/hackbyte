@@ -11,7 +11,7 @@ export function Footer() {
       }}
     >
       {/*socials tape*/}
-      <div className=" relative flex flex-row w-full justify-between items-center h-[216px] bg-[#62009b] border-white border-t-12 border-b-12 px-8 max-sm:h-[230px] max-sm:border-b-3 max-sm:border-t-3 max-sm:items-start max-sm:px-4 max-sm:inline-block">
+      <div className=" relative flex flex-row w-full justify-between items-center h-[300px] 2xl:h-[216px] bg-[#62009b] border-white border-t-12 border-b-12 px-8 max-sm:h-[230px] max-sm:border-b-3 max-sm:border-t-3 max-sm:items-start max-sm:px-4 max-sm:inline-block">
         <Image
           src="/HbSmallLogo.svg"
           alt="Hackbyte logo"
@@ -21,9 +21,12 @@ export function Footer() {
         />
         <div className="flex flex-col items-end gap-6 p-4 max-sm:pr-0 max-sm:pl-0 max-sm:w-full">
           {/*pages*/}
-          <div>
+          <div className="md:max-w-[500px] lg:max-w-none">
             <ul
-              className="relative flex flex-row gap-6 justify-around text-white font-bold font-gotham text-lg 
+              className="relative flex flex-row flex-wrap gap-6 justify-end text-white font-bold font-gotham text-lg 
+                            md:gap-x-3 md:gap-y-2 md:text-sm
+                            lg:gap-5 lg:text-base
+                            xl:gap-6 xl:text-lg
                             max-sm:text-[70%]
                             max-sm:grid
                             max-sm:grid-cols-4
@@ -64,8 +67,8 @@ export function Footer() {
             </ul>
           </div>
           {/*socials*/}
-          <div className="flex flex-row gap-10 justify-between items-center max-sm:flex-col max-sm:gap-4 max-sm:w-full max-sm:absolute max-sm:left-2 max-sm:top-18">
-            <p className="text-white text-6xl font-extrabold font-kanit max-sm:text-3xl max-sm:block">
+          <div className="flex flex-row gap-10 justify-between items-center md:flex-col md:items-end md:gap-4 lg:flex-row lg:gap-8 max-sm:flex-col max-sm:gap-4 max-sm:w-full max-sm:absolute max-sm:left-2 max-sm:top-18">
+            <p className="text-white text-6xl font-extrabold font-kanit md:text-4xl lg:text-5xl xl:text-6xl max-sm:text-3xl max-sm:block">
               Follow our socials
             </p>
             <ul className="flex flex-row gap-6 justify-between items-center">
