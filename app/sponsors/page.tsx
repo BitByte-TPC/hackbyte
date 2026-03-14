@@ -243,7 +243,7 @@ export default function SponsorsPage() {
 	// Memoize sponsor grids to avoid recalculation
 	const sponsorGrid = useMemo(() => (
 		<div className="flex gap-20 flex-col">
-			<div className="flex items-center -mt-20 sm:mt-15 w-screen sm:justify-between md:flex-col flex-col lg:flex-col md:gap-20 xl:gap-0 -gap-30 xl:flex-row md:px-90 lg:px-18 xl:px-35 px-0">
+			<div className="flex items-center justify-center -mt-20 sm:mt-15 w-screen md:flex-col flex-col lg:flex-col md:gap-20 xl:gap-0 -gap-30 xl:flex-row md:px-90 lg:px-18 xl:px-35 px-0">
 				{title_sponsors.map((sponsor) => (
 					<TitleSponsorCard
 						key={sponsor.name}
