@@ -65,6 +65,13 @@ const sponsors = [
 		site: "https://aisquare.studio/",
 		stickerimgsrc: "silver_sponser.svg",
 	},
+	{
+		name: "HackCulture",
+		category: "Silver Sponsor",
+		sponsorimgsrc: "/hackculture.png",
+		site: "https://hackculture.io/",
+		stickerimgsrc: "silver_sponser.svg",
+	},
 	// {
 	// 	name: "Aasthi",
 	// 	category: "Bronze Sponsor",
