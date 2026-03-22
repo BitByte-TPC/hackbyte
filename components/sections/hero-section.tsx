@@ -1,20 +1,29 @@
 "use client";
 
+import { useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import FadeInView from "@/components/FadeInView";
+import RealityGlitch from "@/components/RealityGlitch/index "
+import CursorCracks from "@/components/CursorCracks";
 
 const Hero = () => {
+	const heroRef = useRef<HTMLDivElement>(null);
+
 	return (
-		<div className="h-screen w-screen bg-linear-to-tr flex items-center justify-center text-white font-sans overflow-hidden">
+		<div ref={heroRef} className="relative h-screen w-screen bg-linear-to-tr flex items-center justify-center text-white font-sans overflow-hidden cursor-none">
+			{/* Interactive glass-crack effect on hero background */}
+			<RealityGlitch targetRef={heroRef} />
+			{/* Cursor-following cracks */}
+			<CursorCracks targetRef={heroRef} />
 			{/* MLH Badge */}
 			<div className="absolute sm:w-33 w-20 top-0 sm:right-18 right-6 z-20 h-80">
 				<FadeInView delay={0.3} yOffset={-30}>
 					<a
-						href="https://mlh.io/seasons/2026/events"
-						target="_blank"
-						rel="noopener noreferrer"
-						aria-label="MLH 2026 Events"
+					href="https://mlh.io/seasons/2026/events"
+					target="_blank"
+					rel="noopener noreferrer"
+					aria-label="MLH 2026 Events"
 					>
 						<Image
 							src="/mlh-badge.svg"
@@ -79,15 +88,6 @@ const Hero = () => {
 								priority
 							/>
 						</Link>
-						<Link href="https://whatsapp.com/channel/0029Vb712h5J3juqIsG6Ah3y" className="relative w-8 h-8">
-							<Image
-								src="/whatsapp.png"
-								alt="WhatsApp"
-								fill
-								className="object-contain"
-								priority
-							/>
-						</Link>
 					</div>
 					<h2 className="text-white text-stroke-brand-thick font-extrabold text-4xl">
 						Our Theme
@@ -99,17 +99,17 @@ const Hero = () => {
 			</div>
 
 			{/* Main Logo */}
-			<div className="relative md:h-[105vh] sm:h-[85vh] h-[65vh] sm:top-4 -top-3 -left-5 aspect-video z-0">
-				{/* <FadeInView delay={0.1} duration={0.8} yOffset={40}> */}
-				<Image
-					src="/Main Page Broken Effect logo.svg"
-					alt="Broken effect background"
-					fill
-					className="object-contain"
-					priority
-				/>
-				{/* </FadeInView> */}
-			</div>
+			<FadeInView delay={0.1} duration={0.8} yOffset={40}>
+				  <div className="relative md:h-[105vh] sm:h-[85vh] h-[65vh] sm:top-4 -top-3 -left-5 aspect-video z-10">
+					<Image
+						src="/Main Page Broken Effect logo.svg"
+						alt="Broken effect background"
+						fill
+						className="object-contain"
+						priority
+					/>
+				</div>
+			</FadeInView>
 
 			{/* Background - no animation */}
 			<div className="w-screen h-[105vh] absolute -top-2 -z-30">
@@ -123,8 +123,8 @@ const Hero = () => {
 			</div>
 
 			{/* Register Button */}
-			<div className={`absolute flex bg-pink-500/500 md:-right-5 right-10 sm:bottom-32 bottom-50 font-kanit h-40 w-[27vw] z-20`}>
-				<Link href="https://hackbyte4.devfolio.co" className={`absolute text-[#62009B] lg:w-80 md:w-70 sm:w-65 w-55 p-5 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] md:h-16 sm:h-14 h-10 rounded-full border-[#FFD620] border-4 md:text-3xl text-2xl font-extrabold flex items-center justify-center bottom-0 hover:bg-[#FFC300B8] hover:border-[#FFD620] transition-colors duration-300 cursor-pointer z-20`}>
+			<div className={`absolute flex bg-pink-500/500 md:-right-5 right-10 sm:bottom-32 bottom-50 font-kanit h-40 w-[27vw] z-20`} style={{ pointerEvents: 'auto' }}>
+				<Link href="https://hackbyte4.devfolio.co" style={{ pointerEvents: 'auto' }} className={`absolute text-[#62009B] lg:w-80 md:w-70 sm:w-65 w-55 p-5 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] md:h-16 sm:h-14 h-10 rounded-full border-[#FFD620] border-4 md:text-3xl text-2xl font-extrabold flex items-center justify-center bottom-0 hover:bg-[#FFC300B8] hover:border-[#FFD620] transition-colors duration-300 cursor-pointer z-50`}>
 					REGISTER NOW
 				</Link>
 
@@ -188,15 +188,6 @@ const Hero = () => {
 						<Image
 							src="/discord.svg"
 							alt="Discord"
-							fill
-							className="object-contain"
-							priority
-						/>
-					</Link>
-					<Link href="https://whatsapp.com/channel/0029Vb712h5J3juqIsG6Ah3y" className="relative w-7 h-7">
-						<Image
-							src="/whatsapp.png"
-							alt="WhatsApp"
 							fill
 							className="object-contain"
 							priority
