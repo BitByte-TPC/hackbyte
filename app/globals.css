@@ -2,7 +2,7 @@
 
 :root {
     --foreground: #ffffff;
-    --background: linear-gradient(206deg, #4E0088 13.13%, #180029 86.33%);
+    --background: black;
     overflow-x: hidden;
 }
 
@@ -37,7 +37,7 @@ html.lenis body {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --background: linear-gradient(206deg, #4E0088 13.13%, #4E0088 13.33%);
+        --background: black;
         --foreground: #ededed;
     }
 }
