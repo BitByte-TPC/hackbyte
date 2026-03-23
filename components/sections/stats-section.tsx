@@ -34,21 +34,21 @@ async function StatsSection() {
             alt="sparkles"
             width={40}
             height={40}
-            className="absolute left-30 top-25 max-sm:left-[8%] max-sm:top-[20] z-30 max-sm:w-[20px] max-sm:h-[20px] max-md:left-[10%] max-md:top-[50] max-md:w-[20px] max-md:h-[20px] max-lg:left-[3%] max-lg:top-[62] max-lg:w-[30]"
+            className="absolute left-30 top-25 max-sm:left-[8%] max-sm:top-[20] z-30 max-sm:w-[20px] max-sm:h-[20px] max-md:left-[10%] max-md:top-[50] max-md:w-[20px] max-md:h-[20px] max-lg:left-[3%] max-lg:top-[62] max-lg:w-[30] animate-sparkle-1"
           />
           <Image
             src="/sparkles.svg"
             alt="sparkles"
             width={60}
             height={50}
-            className="absolute left-45 top-25 max-sm:left-[12%] max-sm:top-[22] z-30 max-sm:w-[30px] max-sm:h-[20px] max-md:left-[12%] max-md:top-[55] max-md:w-[40px] max-md:h-[30px] max-lg:left-[12%] max-lg:top-[32] max-lg:w-[50]"
+            className="absolute left-45 top-25 max-sm:left-[12%] max-sm:top-[22] z-30 max-sm:w-[30px] max-sm:h-[20px] max-md:left-[12%] max-md:top-[55] max-md:w-[40px] max-md:h-[30px] max-lg:left-[12%] max-lg:top-[32] max-lg:w-[50] animate-sparkle-2"
           />
           <Image
             src="/sparkles.svg"
             alt="sparkles"
             width={50}
             height={40}
-            className="absolute left-15 top-32 max-sm:left-[3%] max-sm:top-[30] z-30 max-sm:w-[20px] max-sm:h-[20px] max-md:left-[5%] max-md:top-[65] max-md:w-[20px] max-md:h-[20px] max-lg:left-[6%] max-lg:top-[32] max-lg:w-[40]"
+            className="absolute left-15 top-32 max-sm:left-[3%] max-sm:top-[30] z-30 max-sm:w-[20px] max-sm:h-[20px] max-md:left-[5%] max-md:top-[65] max-md:w-[20px] max-md:h-[20px] max-lg:left-[6%] max-lg:top-[32] max-lg:w-[40] animate-sparkle-3"
           />
           <Image
             src="/homePrizeBanner2.svg"

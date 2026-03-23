@@ -111,6 +111,23 @@ body {
     to { opacity: 0; }
 }
 
+@keyframes sparkle {
+  0%, 100% { opacity: 0.5; transform: scale(0.8) rotate(0deg); }
+  50% { opacity: 1; transform: scale(1.1) rotate(10deg); }
+}
+
+.animate-sparkle-1 {
+  animation: sparkle 1.5s infinite ease-in-out;
+}
+
+.animate-sparkle-2 {
+  animation: sparkle 1.8s infinite ease-in-out 0.4s;
+}
+
+.animate-sparkle-3 {
+  animation: sparkle 2.1s infinite ease-in-out 0.8s;
+}
+
 @keyframes fade-in {
     from { opacity: 0; }
     to { opacity: 1; }
