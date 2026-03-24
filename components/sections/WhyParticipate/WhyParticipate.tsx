@@ -1,75 +1,47 @@
 "use client";
 
 import { useRef } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
-import { useHorizontalScroll } from "./useHorizontalScroll";
 import { ScrollingBackground } from "./ScrollingBackground";
 
 //image imports
 import bg from "./assets/bg.png";
-import whyParticipate from "./assets/why-paricipate.svg";
-import hb4 from "./assets/hb4.svg";
-import collab from "./assets/collab.png";
-import shards from "./assets/stats-bottom.svg"
-import prizes from "./assets/prizes.png";
-import workshops from "./assets/workshops.png";
-import mentorship from "./assets/mentorship.png";
-import recruitment from "./assets/recruitment.png";
-import alert from "./assets/Alert.svg";
-import scrollDown from "./assets/scroll-down.svg";
-import crack from "./assets/crack.svg"
+import collab from "./assets/collab.svg";
+import prizes from "./assets/prizes.svg";
+import workshops from "./assets/workshops.svg";
+import mentorship from "./assets/mentorship.svg";
+import recruitment from "./assets/recruitment.svg";
+
 import brokenNormal from "./assets/brokenNormal.svg"
 
+const cards = [
+  { src: collab, alt: "collaborate and skill up", className: "relative z-10 w-150 -left-50 max-sm:w-46 max-sm:-left-11" },
+  { src: prizes, alt: "win exciting prizes", className: "relative z-10 left-40 -top-30 w-150 max-sm:w-46 max-sm:left-16 max-sm:-top-9" },
+  { src: workshops, alt: "engaging workshops", className: "relative z-9 w-150 -left-50 -top-85 max-sm:w-46 max-sm:-left-11 max-sm:-top-26" },
+  { src: mentorship, alt: "attend mentor sessions", className: "relative z-8 left-40 -top-138 w-150 max-sm:w-46 max-sm:left-16 max-sm:-top-42" },
+  { src: recruitment, alt: "recruitment offers", className: "relative z-7 w-150 -left-50 -top-170 max-sm:w-46 max-sm:-left-11 max-sm:-top-51" },
+];
+
 export default function WhyParticipate() {
-  const containerRef = useRef<HTMLDivElement>(null);
-  const sliderRef = useRef<HTMLDivElement>(null);
-
-  useHorizontalScroll({
-    containerRef,
-    sliderRef,
-    cardCount: 5,
-  });
-
   return (
-    <div className="w-full h-full z-10 gap-0 flex-col justify-between flex m-0 flex-col" ref={containerRef}>
-      <div className="w-full z-10 -mb-139 max-sm:-mb-20 max-sm:z-50 max-md:-mb-100">
-          <Image
-            src={shards}
-            alt="glass design"
-            className="w-full z-50 max-sm:hidden"
-          />
-          <Image
+    <div className="w-full h-full z-10 gap-0 flex relative flex-col m-0">
+      <Image
             src={brokenNormal}
             alt="broken normal"
-            className="w-full z-50 hidden max-sm:inline-block"
+            className="w-full z-50"
           />
-          <Image
-            src={scrollDown}
-            alt="scroll down"
-            className="relative mx-auto bottom-150 animate-bounce max-sm:w-[25px] max-sm:h-[28px] max-sm:-top-18 max-md:w-[30px] max-lg:h-[36px]"
-          />
-      </div>
-      <div 
-        className="relative w-full flex flex-row justify-around shrink-0 -mb-75 max-sm:flex-col max-sm:-mb-10" 
-        style={{ 
-          background: "linear-gradient(90deg, rgba(43, 8, 69, 1) 0%, #450079 100%)",
-        }}
-      >
+      <div className="w-full h-80 relative flex flex-col xl:-top-38 max-md:-top-28 max-sm:-top-12 max-sm:h-60 lg:-top-32" style={{background: "linear-gradient(180deg, #2E0050 0%, #450079 100%)"}}>
         <Image
-          src={whyParticipate}
+          src="/newParticipate.svg"
+          width={400}
+          height={300}
           alt="Why Participate?"
-          className="relative inline-block w-[55%] z-10 left-50 -top-20 max-sm:left-0 max-sm:top-0 max-sm:mt-10 max-sm:mx-auto max-sm:w-[90%] max-sm:-mb-5"
+          className="block xl:w-[70%] mx-auto p-10 max-sm:p-2 max-sm:mt-8 max-sm:w-[280px] lg:w-[800px] lg:mt-5 xl:mt-0"
         />
-        <Image
-          src={crack}
-          alt="crack"
-          className="absolute hidden max-sm:inline-block w-[60%] left-[24%] top-[20%] z-10"
-        />
-        <Image src={hb4} alt="hackbyte 4.0 logo" className="relative inline-block z-10 w-[30%] h-[80%] -top-16 max-sm:top-0 max-sm:w-[35%] max-sm:left-10 max-sm:mx-auto "/>
       </div>
-      {/*Scroll ref*/}
       <section
-        className="relative min-h-[500px] -full h-full overflow-hidden border-t-white border-t-12 border-b-white border-b-12 p-0 max-sm:h-[450px]"
+        className="relative min-h-125 h-full max-h-250 overflow-hidden border-t-white border-t-12 border-b-white border-b-12 p-0 -top-38 -mb-38 max-sm:min-h-50 max-sm:max-h-82"
         style={{
           background: "linear-gradient(180deg, #8A00DA 0%, #BA45E8 100%)",
         }}
@@ -83,58 +55,28 @@ export default function WhyParticipate() {
               direction="diagonal" 
           />
         </div>
-
-        <div
-          ref={sliderRef}
-          className="relative z-10 h-full flex flex-row items-center pl-[20vw] pr-[20vw]"
-        >
-          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-10 z-20 max-sm:h-[450px]">
-            <Image src={collab} alt="collaborate" className="inline-block" />
-            <Image
-              src={alert}
-              alt="Collaborate"
-              width={120}
-              height={120}
-              className="absolute bottom-27 left-170 max-sm:bottom-30 max-sm:left-12 max-sm:w-[80px] max-sm:h-[80px]"
-            />
-          </div>
-          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-2">
-            <Image src={prizes} alt="prizes" className="inline-block" />
-            <Image
-              src={alert}
-              alt="prizes"
-              className="absolute w-[120px] h-[120px] bottom-27 left-170 max-sm:bottom-30 max-sm:left-8 max-sm:w-[80px] max-sm:h-[80px]" 
-            />
-          </div>
-          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-3">
-            <Image src={workshops} alt="workshops" className="inline-block" />
-            <Image
-              src={alert}
-              alt="workshops"
-              width={120}
-              height={120}
-              className="absolute bottom-25 left-170 max-sm:bottom-30 max-sm:left-10 max-sm:w-[80px] max-sm:h-[80px]"
-            />
-          </div>
-          <div className="relative w-[60vw] h-[600px] shrink-0 flex flex-col items-center justify-center p-8 max-sm:h-[450px] max-sm:-top-3">
-            <Image src={mentorship} alt="mentorship" className="inline-block" />
-            <Image
-              src={alert}
-              alt="Collaborate"
-              width={120}
-              height={120}
-              className="absolute bottom-27 left-170 max-sm:bottom-30 max-sm:left-9 max-sm:w-[80px] max-sm:h-[80px]"
-            />
-          </div>
-          <div className="relative w-[60vw] h-141.5 shrink-0 flex flex-col items-center justify-center p-8  max-sm:h-[450px] max-sm:-top-6">
-            <Image src={recruitment} alt="collaborate" className="inline-block" />
-          </div>
+        <div className="relative flex flex-col w-full h-full items-center">
+          {cards.map((card, index) => (
+            <motion.div
+              key={index}
+              className={card.className} 
+              initial={{ opacity: 0, y: 30 }} 
+              whileInView={{ opacity: 1, y: 0 }} 
+              viewport={{ once: true, margin: "-50px" }} 
+              transition={{ 
+                duration: 0.6, 
+                delay: index * 0.15, 
+                ease: "easeOut" 
+              }}
+            >
+              <Image
+                src={card.src}
+                alt={card.alt}
+                className="w-full h-auto"
+              />
+            </motion.div>
+          ))}
         </div>
-        <Image
-          src={scrollDown}
-          alt="scroll down"
-          className="absolute left-1/2 z-30 bottom-5 w-[38px] h-[42px] animate-bounce"
-        />
       </section>
     </div>
   );
