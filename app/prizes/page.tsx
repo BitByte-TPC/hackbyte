@@ -6,9 +6,9 @@ import { useState } from "react"
 import FadeInView from "@/components/FadeInView"
 
 export default function PrizesPage() {
-	const [expandedCards, setExpandedCards] = useState({})
+	const [expandedCards, setExpandedCards] = useState<Record<number, boolean>>({})
 
-	const toggleCard = (index) => {
+	const toggleCard = (index: number) => {
 		setExpandedCards(prev => ({
 			...prev,
 			[index]: !prev[index]
