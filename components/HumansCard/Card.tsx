@@ -4,6 +4,7 @@ import {
   LinkedInLogoIcon,
   TwitterLogoIcon,
   GitHubLogoIcon,
+  InstagramLogoIcon
 } from "@radix-ui/react-icons";
 import beLogo from "@/public/behanceLogo.svg"
 
@@ -15,6 +16,7 @@ interface HumanCardProps {
   twitter?: string;
   github?: string;
   behance?: string;
+  instagram?: string;
 }
 
 export default function HumanCard({
@@ -24,6 +26,7 @@ export default function HumanCard({
   linkedin,
   twitter,
   github,
+  instagram,
   behance
 }: HumanCardProps) {
   return (
@@ -62,6 +65,11 @@ export default function HumanCard({
           {twitter && (
             <Link href={twitter} target="_blank">
               <TwitterLogoIcon className="w-[1em] h-[1em]" />
+            </Link>
+          )}
+          {instagram && (
+            <Link href={instagram} target="_blank">
+              <InstagramLogoIcon className="w-[1em] h-[1em]" />
             </Link>
           )}
           {github && (
