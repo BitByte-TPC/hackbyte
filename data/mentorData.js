@@ -376,13 +376,6 @@ export const mentorss = [
     instagram: "https://www.instagram.com/toukirkhan__/",
   },
   {
-    name: "Naman Bansal",
-    role: "Mentor",
-    linkedin: "https://www.linkedin.com/in/namanbansal013/",
-    twitter: "https://x.com/namanbansal0013",
-    instagram: "https://www.instagram.com/namanbansal013/",
-  },
-  {
     name: "Neelu Gupta",
     role: "Mentor",
     image: neeluGupta,
@@ -404,30 +397,5 @@ export const mentorss = [
     image: aishwaryaNathani,
     linkedin: "https://www.linkedin.com/in/aishwarya-nathani/",
     instagram: "https://www.instagram.com/x.aishu/",
-  },
-  {
-    name: "Aniket Vishwakarma",
-    role: "Mentor",
-    linkedin: "https://linkedin.com/in/aniketvish0",
-    twitter: "https://x.com/aniketvish0",
-    instagram: "https://www.instagram.com/anii_.ket/",
-  },
-  {
-    name: "Ritesh KD",
-    role: "Mentor",
-    linkedin: "https://www.linkedin.com/in/ritesh-kd-285a73325",
-    instagram: "https://www.instagram.com/riteshuncut/",
-  },
-  {
-    name: "Manju Charan",
-    role: "Mentor",
-    linkedin: "https://www.linkedin.com/in/manju-charan-b3839b211/",
-  },
-  {
-    name: "Nishit Samundre",
-    role: "Mentor",
-    linkedin: "https://www.linkedin.com/in/nishit-samundre-864743275/",
-    twitter: "https://x.com/edcellsac95110",
-    instagram: "https://www.instagram.com/nishit_._17/",
   },
 ]
