@@ -20,6 +20,7 @@ import avinalKumar from "@/public/Humans/mentors/Avinal Kumar.jpg";
 import harshitSingh from "@/public/Humans/mentors/Harshit Singh.jpeg";
 import jayGala from "@/public/Humans/mentors/Jay Gala.jpeg";
 import miteshKumar from "@/public/Humans/mentors/Mitesh Kumar.jpeg";
+import namanBansal from "@/public/Humans/mentors/Naman Bansal.png";
 import neeluGupta from "@/public/Humans/mentors/Neelu Gupta.jpeg";
 import nikhilMankani from "@/public/Humans/mentors/Nikhil Mankani.jpeg";
 import siddhantKhare from "@/public/Humans/mentors/Siddhant Khare.jpg";
@@ -374,6 +375,14 @@ export const mentorss = [
     linkedin: "https://www.linkedin.com/in/toukirkhan/",
     twitter: "https://x.com/toukirkhan__",
     instagram: "https://www.instagram.com/toukirkhan__/",
+  },
+  {
+    name: "Naman Bansal",
+    role: "Mentor",
+    image: namanBansal,
+    linkedin: "https://www.linkedin.com/in/namanbansal013/",
+    twitter: "https://x.com/namanbansal0013",
+    instagram: "https://www.instagram.com/namanbansal013/",
   },
   {
     name: "Neelu Gupta",
