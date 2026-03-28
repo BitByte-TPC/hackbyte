@@ -13,23 +13,20 @@
 // import gautam from "@/public/humansPage/Mentors/gautam.jpg";
 // import chaitanya from "@/public/humansPage/Mentors/chaitanaya.jpg";
 
-import sabhya from "@/public/Humans/mentors/sabhya.webp";
-import sanskriti from "@/public/Humans/mentors/sanskriti.webp";
-import bhavishya from "@/public/Humans/mentors/bhavishya.webp";
-import vedant_j from "@/public/Humans/mentors/vedant_j.webp";
-import yashika from "@/public/Humans/mentors/yashika.webp";
-import jay from "@/public/Humans/mentors/jay.webp";
-import mitesh from "@/public/Humans/mentors/mitesh.webp";
-import nitin from "@/public/Humans/mentors/nitin.webp";
-import siddhant from "@/public/Humans/mentors/siddhant.webp";
-import saket from "@/public/Humans/mentors/saket.webp";
-import pratham from "@/public/Humans/mentors/pratham.webp";
-import kaushlendra from "@/public/Humans/mentors/kaushlendra.webp";
-import sushant from "@/public/Humans/mentors/sushant.webp";
-import gaurav from "@/public/Humans/mentors/gaurav.webp";
-import hridyesh from "@/public/Humans/mentors/hridyesh.webp";
-import agamya from "@/public/Humans/mentors/agamya.webp";
-import siddharth from "@/public/Humans/mentors/siddharth.webp";
+import sanidhya from "@/public/Humans/mentors/Sanidhya.jpg";
+import aishwaryaNathani from "@/public/Humans/mentors/Aishwarya Nathani.jpg";
+import anjanaSankar from "@/public/Humans/mentors/Anjana Sankar.jpg";
+import avinalKumar from "@/public/Humans/mentors/Avinal Kumar.jpg";
+import harshitSingh from "@/public/Humans/mentors/Harshit Singh.jpeg";
+import jayGala from "@/public/Humans/mentors/Jay Gala.jpeg";
+import miteshKumar from "@/public/Humans/mentors/Mitesh Kumar.jpeg";
+import namanBansal from "@/public/Humans/mentors/Naman Bansal.png";
+import neeluGupta from "@/public/Humans/mentors/Neelu Gupta.jpeg";
+import nikhilMankani from "@/public/Humans/mentors/Nikhil Mankani.jpeg";
+import siddhantKhare from "@/public/Humans/mentors/Siddhant Khare.jpg";
+import toukirKhan from "@/public/Humans/mentors/Mohd Toukir Khan.jpg";
+import vedantJain from "@/public/Humans/mentors/Vedant Jain.jpeg";
+import ajwadShaikh from "@/public/Humans/mentors/Ajwad Shaikh.jpg";
 
 export const mentorss = [
   //Hackbyte 2.0 Mentors
@@ -148,157 +145,266 @@ export const mentorss = [
   // },
 
   // Hackbyte 3.0 Mentors
+  // {
+  //   name: "Siddharth Shivkumar",
+  //   role: "",
+  //   image: siddharth,
+  //   linkedin: "https://www.linkedin.com/in/siddharth-shivkumar/?originalSubdomain=in",
+  //   twitter: "https://x.com/Siddharthshivkr",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Vedant Jain",
+  //   role: "",
+  //   image: vedant_j,
+  //   linkedin: "https://www.linkedin.com/in/vedant-jain-781006145/",
+  //   twitter: "https://x.com/vedantj_03",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Sabhya Saini",
+  //   role: "",
+  //   image: sabhya,
+  //   linkedin: "https://www.linkedin.com/in/sabhya-saini-9a4958122/",
+  //   twitter: "https://x.com/sabhya_saini",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Sanskriti Harmukh",
+  //   role: "",
+  //   image: sanskriti,
+  //   linkedin: "https://www.linkedin.com/in/sanskriti-harmukh",
+  //   twitter: "https://x.com/Senzkriti",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Bhavishya Pandit",
+  //   role: "",
+  //   image: bhavishya,
+  //   linkedin: "https://www.linkedin.com/in/bhavishya-pandit/",
+  //   twitter: "https://x.com/BhavishyaP9",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Mitesh Kumar",
+  //   role: "",
+  //   image: mitesh,
+  //   linkedin: "https://www.linkedin.com/in/mitesh-kumar-b0818b143/",
+  //   twitter: "https://x.com/itnmitesh",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Jay Gala",
+  //   role: "",
+  //   image: jay,
+  //   linkedin: "https://www.linkedin.com/in/jaykishorgala",
+  //   twitter: "https://www.twitter.com/jaygala223",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Yashika Jotwani",
+  //   role: "",
+  //   image: yashika,
+  //   linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7/",
+  //   twitter: "https://x.com/yashika_jotwani",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Hridyesh Gupta",
+  //   role: "",
+  //   image: hridyesh,
+  //   linkedin: "https://www.linkedin.com/in/hridyesh-gupta/",
+  //   twitter: "#",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Gaurav Mishra",
+  //   role: "",
+  //   image: gaurav,
+  //   linkedin: "https://linkedin.com/GMishx",
+  //   twitter: "https://x.com/GMishx",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Siddhant Khare",
+  //   role: "",
+  //   image: siddhant,
+  //   linkedin: "https://www.linkedin.com/in/siddhantkhare24/",
+  //   twitter: "https://x.com/Siddhant_K_code",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Pratham More",
+  //   role: "",
+  //   image: pratham,
+  //   linkedin: "https://www.linkedin.com/in/pratham-m-7688571b5/",
+  //   twitter: "#",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Saket Patel",
+  //   role: "",
+  //   image: saket,
+  //   linkedin: "https://linkedin.com/in/saketsm",
+  //   twitter: "#",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Nitin Mane",
+  //   role: "",
+  //   image: nitin,
+  //   linkedin: "https://www.linkedin.com/in/nitingmane/",
+  //   twitter: "https://x.com/mnitin59",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Sushant Kumar",
+  //   role: "",
+  //   image: sushant,
+  //   linkedin: "https://linkedin.com/its-sushant",
+  //   twitter: "https://x.com/Sushant6186002",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Agamya Samuel",
+  //   role: "",
+  //   image: agamya,
+  //   linkedin: "#",
+  //   twitter: "#",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+  // {
+  //   name: "Kaushlendra Pratap Singh",
+  //   role: "",
+  //   image: kaushlendra,
+  //   linkedin: "https://www.linkedin.com/in/kaushl2208/",
+  //   twitter: "https://x.com/Kaushl2208",
+  //   github: "#",
+  //   role: "Mentor"
+  // },
+
+  // Hackbyte 4.0 Mentors
   {
-    name: "Siddharth Shivkumar",
-    role: "",
-    image: siddharth,
-    linkedin: "https://www.linkedin.com/in/siddharth-shivkumar/?originalSubdomain=in",
-    twitter: "https://x.com/Siddharthshivkr",
-    github: "#",
-    role: "Mentor"
+    name: "Sanidhya",
+    role: "Mentor",
+    image: sanidhya,
+    linkedin: "https://www.linkedin.com/in/sanidhyagoel18/",
+    twitter: "https://x.com/SanidhyaGoel18",
+    instagram: "https://www.instagram.com/sanidhyagoel1805/",
+  },
+  {
+    name: "Anjana Sankar",
+    role: "Mentor",
+    image: anjanaSankar,
+    linkedin: "https://www.linkedin.com/in/anjana-sankar-1ba508243/",
+    instagram: "https://www.instagram.com/_nj_n_rue/",
   },
   {
     name: "Vedant Jain",
-    role: "",
-    image: vedant_j,
+    role: "Mentor",
+    image: vedantJain,
     linkedin: "https://www.linkedin.com/in/vedant-jain-781006145/",
     twitter: "https://x.com/vedantj_03",
-    github: "#",
-    role: "Mentor"
-  },
-  {
-    name: "Sabhya Saini",
-    role: "",
-    image: sabhya,
-    linkedin: "https://www.linkedin.com/in/sabhya-saini-9a4958122/",
-    twitter: "https://x.com/sabhya_saini",
-    github: "#",
-    role: "Mentor"
-  },
-  {
-    name: "Sanskriti Harmukh",
-    role: "",
-    image: sanskriti,
-    linkedin: "https://www.linkedin.com/in/sanskriti-harmukh",
-    twitter: "https://x.com/Senzkriti",
-    github: "#",
-    role: "Mentor"
-  },
-  {
-    name: "Bhavishya Pandit",
-    role: "",
-    image: bhavishya,
-    linkedin: "https://www.linkedin.com/in/bhavishya-pandit/",
-    twitter: "https://x.com/BhavishyaP9",
-    github: "#",
-    role: "Mentor"
-  },
-  {
-    name: "Mitesh Kumar",
-    role: "",
-    image: mitesh,
-    linkedin: "https://www.linkedin.com/in/mitesh-kumar-b0818b143/",
-    twitter: "https://x.com/itnmitesh",
-    github: "#",
-    role: "Mentor"
+    instagram: "https://www.instagram.com/mai_vedant/",
   },
   {
     name: "Jay Gala",
-    role: "",
-    image: jay,
-    linkedin: "https://www.linkedin.com/in/jaykishorgala",
-    twitter: "https://www.twitter.com/jaygala223",
-    github: "#",
-    role: "Mentor"
-  },
-  {
-    name: "Yashika Jotwani",
-    role: "",
-    image: yashika,
-    linkedin: "https://www.linkedin.com/in/yashika-jotwani-03a0061b7/",
-    twitter: "https://x.com/yashika_jotwani",
-    github: "#",
-    role: "Mentor"
-  },
-  {
-    name: "Hridyesh Gupta",
-    role: "",
-    image: hridyesh,
-    linkedin: "https://www.linkedin.com/in/hridyesh-gupta/",
-    twitter: "#",
-    github: "#",
-    role: "Mentor"
-  },
-  {
-    name: "Gaurav Mishra",
-    role: "",
-    image: gaurav,
-    linkedin: "https://linkedin.com/GMishx",
-    twitter: "https://x.com/GMishx",
-    github: "#",
-    role: "Mentor"
+    role: "Mentor",
+    image: jayGala,
+    linkedin: "https://www.linkedin.com/in/jaykishorgala/",
+    twitter: "https://x.com/jaygala223",
   },
   {
     name: "Siddhant Khare",
-    role: "",
-    image: siddhant,
+    role: "Mentor",
+    image: siddhantKhare,
     linkedin: "https://www.linkedin.com/in/siddhantkhare24/",
     twitter: "https://x.com/Siddhant_K_code",
-    github: "#",
-    role: "Mentor"
+    instagram: "https://www.instagram.com/siddhant_says/",
   },
   {
-    name: "Pratham More",
-    role: "",
-    image: pratham,
-    linkedin: "https://www.linkedin.com/in/pratham-m-7688571b5/",
-    twitter: "#",
-    github: "#",
-    role: "Mentor"
+    name: "Ajwad Shaikh",
+    role: "Mentor",
+    image: ajwadShaikh,
+    linkedin: "https://linkedin.com/in/ajwad-shaikh",
+    twitter: "https://x.com/AjwadShaikh3",
+    instagram: "https://www.instagram.com/hash.include_ajwad_/",
   },
   {
-    name: "Saket Patel",
-    role: "",
-    image: saket,
-    linkedin: "https://linkedin.com/in/saketsm",
-    twitter: "#",
-    github: "#",
-    role: "Mentor"
+    name: "Avinal Kumar",
+    role: "Mentor",
+    image: avinalKumar,
+    linkedin: "https://linkedin.com/in/avinal",
+    twitter: "https://x.com/Avinal_",
   },
   {
-    name: "Nitin Mane",
-    role: "",
-    image: nitin,
-    linkedin: "https://www.linkedin.com/in/nitingmane/",
-    twitter: "https://x.com/mnitin59",
-    github: "#",
-    role: "Mentor"
+    name: "Harshit Singh",
+    role: "Mentor",
+    image: harshitSingh,
+    linkedin: "https://www.linkedin.com/in/helios1101/",
+    twitter: "https://x.com/helios1101",
   },
   {
-    name: "Sushant Kumar",
-    role: "",
-    image: sushant,
-    linkedin: "https://linkedin.com/its-sushant",
-    twitter: "https://x.com/Sushant6186002",
-    github: "#",
-    role: "Mentor"
+    name: "Mitesh Kumar",
+    role: "Mentor",
+    image: miteshKumar,
+    linkedin: "https://www.linkedin.com/in/mitesh-kumar-b0818b143/",
+    twitter: "https://x.com/itnmitesh",
+    instagram: "https://www.instagram.com/itnmitesh/",
   },
   {
-    name: "Agamya Samuel",
-    role: "",
-    image: agamya,
-    linkedin: "#",
-    twitter: "#",
-    github: "#",
-    role: "Mentor"
+    name: "Mohd Toukir Khan",
+    role: "Mentor",
+    image: toukirKhan,
+    linkedin: "https://www.linkedin.com/in/toukirkhan/",
+    twitter: "https://x.com/toukirkhan__",
+    instagram: "https://www.instagram.com/toukirkhan__/",
   },
   {
-    name: "Kaushlendra Pratap Singh",
-    role: "",
-    image: kaushlendra,
-    linkedin: "https://www.linkedin.com/in/kaushl2208/",
-    twitter: "https://x.com/Kaushl2208",
-    github: "#",
-    role: "Mentor"
+    name: "Naman Bansal",
+    role: "Mentor",
+    image: namanBansal,
+    linkedin: "https://www.linkedin.com/in/namanbansal013/",
+    twitter: "https://x.com/namanbansal0013",
+    instagram: "https://www.instagram.com/namanbansal013/",
   },
-];
+  {
+    name: "Neelu Gupta",
+    role: "Mentor",
+    image: neeluGupta,
+    linkedin: "https://www.linkedin.com/in/neelu-gupta/",
+    twitter: "https://x.com/gptneelu",
+    instagram: "https://www.instagram.com/neeu97/",
+  },
+  {
+    name: "Nikhil Mankani",
+    role: "Mentor",
+    image: nikhilMankani,
+    linkedin: "https://www.linkedin.com/in/nikhilmankani/",
+    twitter: "https://x.com/niksm07",
+    instagram: "https://www.instagram.com/niksm07/",
+  },
+  {
+    name: "Aishwarya Nathani",
+    role: "Mentor",
+    image: aishwaryaNathani,
+    linkedin: "https://www.linkedin.com/in/aishwarya-nathani/",
+    instagram: "https://www.instagram.com/x.aishu/",
+  },
+]
