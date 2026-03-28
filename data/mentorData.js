@@ -13,23 +13,19 @@
 // import gautam from "@/public/humansPage/Mentors/gautam.jpg";
 // import chaitanya from "@/public/humansPage/Mentors/chaitanaya.jpg";
 
-import sabhya from "@/public/Humans/mentors/sabhya.webp";
-import sanskriti from "@/public/Humans/mentors/sanskriti.webp";
-import bhavishya from "@/public/Humans/mentors/bhavishya.webp";
-import vedant_j from "@/public/Humans/mentors/vedant_j.webp";
-import yashika from "@/public/Humans/mentors/yashika.webp";
-import jay from "@/public/Humans/mentors/jay.webp";
-import mitesh from "@/public/Humans/mentors/mitesh.webp";
-import nitin from "@/public/Humans/mentors/nitin.webp";
-import siddhant from "@/public/Humans/mentors/siddhant.webp";
-import saket from "@/public/Humans/mentors/saket.webp";
-import pratham from "@/public/Humans/mentors/pratham.webp";
-import kaushlendra from "@/public/Humans/mentors/kaushlendra.webp";
-import sushant from "@/public/Humans/mentors/sushant.webp";
-import gaurav from "@/public/Humans/mentors/gaurav.webp";
-import hridyesh from "@/public/Humans/mentors/hridyesh.webp";
-import agamya from "@/public/Humans/mentors/agamya.webp";
-import siddharth from "@/public/Humans/mentors/siddharth.webp";
+import sanidhya from "@/public/Humans/mentors/Sanidhya.jpg";
+import aishwaryaNathani from "@/public/Humans/mentors/Aishwarya Nathani.jpg";
+import anjanaSankar from "@/public/Humans/mentors/Anjana Sankar.jpg";
+import avinalKumar from "@/public/Humans/mentors/Avinal Kumar.jpg";
+import harshitSingh from "@/public/Humans/mentors/Harshit Singh.jpeg";
+import jayGala from "@/public/Humans/mentors/Jay Gala.jpeg";
+import miteshKumar from "@/public/Humans/mentors/Mitesh Kumar.jpeg";
+import neeluGupta from "@/public/Humans/mentors/Neelu Gupta.jpeg";
+import nikhilMankani from "@/public/Humans/mentors/Nikhil Mankani.jpeg";
+import siddhantKhare from "@/public/Humans/mentors/Siddhant Khare.jpg";
+import toukirKhan from "@/public/Humans/mentors/Mohd Toukir Khan.jpg";
+import vedantJain from "@/public/Humans/mentors/Vedant Jain.jpeg";
+import ajwadShaikh from "@/public/Humans/mentors/Ajwad Shaikh.jpg";
 
 export const mentorss = [
   //Hackbyte 2.0 Mentors
@@ -306,6 +302,7 @@ export const mentorss = [
   {
     name: "Sanidhya",
     role: "Mentor",
+    image: sanidhya,
     linkedin: "https://www.linkedin.com/in/sanidhyagoel18/",
     twitter: "https://x.com/SanidhyaGoel18",
     instagram: "https://www.instagram.com/sanidhyagoel1805/",
@@ -313,13 +310,14 @@ export const mentorss = [
   {
     name: "Anjana Sankar",
     role: "Mentor",
+    image: anjanaSankar,
     linkedin: "https://www.linkedin.com/in/anjana-sankar-1ba508243/",
     instagram: "https://www.instagram.com/_nj_n_rue/",
   },
   {
     name: "Vedant Jain",
     role: "Mentor",
-    image: vedant_j,
+    image: vedantJain,
     linkedin: "https://www.linkedin.com/in/vedant-jain-781006145/",
     twitter: "https://x.com/vedantj_03",
     instagram: "https://www.instagram.com/mai_vedant/",
@@ -327,14 +325,14 @@ export const mentorss = [
   {
     name: "Jay Gala",
     role: "Mentor",
-    image: jay,
+    image: jayGala,
     linkedin: "https://www.linkedin.com/in/jaykishorgala/",
     twitter: "https://x.com/jaygala223",
   },
   {
     name: "Siddhant Khare",
     role: "Mentor",
-    image: siddhant,
+    image: siddhantKhare,
     linkedin: "https://www.linkedin.com/in/siddhantkhare24/",
     twitter: "https://x.com/Siddhant_K_code",
     instagram: "https://www.instagram.com/siddhant_says/",
@@ -342,6 +340,7 @@ export const mentorss = [
   {
     name: "Ajwad Shaikh",
     role: "Mentor",
+    image: ajwadShaikh,
     linkedin: "https://linkedin.com/in/ajwad-shaikh",
     twitter: "https://x.com/AjwadShaikh3",
     instagram: "https://www.instagram.com/hash.include_ajwad_/",
@@ -349,19 +348,21 @@ export const mentorss = [
   {
     name: "Avinal Kumar",
     role: "Mentor",
+    image: avinalKumar,
     linkedin: "https://linkedin.com/in/avinal",
     twitter: "https://x.com/Avinal_",
   },
   {
     name: "Harshit Singh",
     role: "Mentor",
+    image: harshitSingh,
     linkedin: "https://www.linkedin.com/in/helios1101/",
     twitter: "https://x.com/helios1101",
   },
   {
     name: "Mitesh Kumar",
     role: "Mentor",
-    image: mitesh,
+    image: miteshKumar,
     linkedin: "https://www.linkedin.com/in/mitesh-kumar-b0818b143/",
     twitter: "https://x.com/itnmitesh",
     instagram: "https://www.instagram.com/itnmitesh/",
@@ -369,6 +370,7 @@ export const mentorss = [
   {
     name: "Mohd Toukir Khan",
     role: "Mentor",
+    image: toukirKhan,
     linkedin: "https://www.linkedin.com/in/toukirkhan/",
     twitter: "https://x.com/toukirkhan__",
     instagram: "https://www.instagram.com/toukirkhan__/",
@@ -383,6 +385,7 @@ export const mentorss = [
   {
     name: "Neelu Gupta",
     role: "Mentor",
+    image: neeluGupta,
     linkedin: "https://www.linkedin.com/in/neelu-gupta/",
     twitter: "https://x.com/gptneelu",
     instagram: "https://www.instagram.com/neeu97/",
@@ -390,6 +393,7 @@ export const mentorss = [
   {
     name: "Nikhil Mankani",
     role: "Mentor",
+    image: nikhilMankani,
     linkedin: "https://www.linkedin.com/in/nikhilmankani/",
     twitter: "https://x.com/niksm07",
     instagram: "https://www.instagram.com/niksm07/",
@@ -397,6 +401,7 @@ export const mentorss = [
   {
     name: "Aishwarya Nathani",
     role: "Mentor",
+    image: aishwaryaNathani,
     linkedin: "https://www.linkedin.com/in/aishwarya-nathani/",
     instagram: "https://www.instagram.com/x.aishu/",
   },
