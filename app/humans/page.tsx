@@ -172,12 +172,12 @@ export default function HumansPage() {
 
         {/* Toggle Button */}
         <FadeInView delay={0.15} yOffset={20} className="w-full relative z-20">
-          <div className="w-full flex items-start justify-start sm:pt-50 pt-15 z-100 px-8 md:px-20">
-            <div className="flex items-center bg-[#3D1A5C] rounded-full border border-purple-700/50 h-8 md:h-10">
+          <div className="w-full flex items-start justify-start sm:pt-50 pt-15 z-100 px-4 sm:px-8 md:px-20 overflow-x-auto">
+            <div className="flex items-center bg-[#3D1A5C] rounded-full border border-purple-700/50 h-8 md:h-10 gap-0 whitespace-nowrap">
               <button
                 onClick={() => setActiveTab("organizers")}
                 aria-pressed={activeTab === "organizers"}
-                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "organizers"
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "organizers"
                     ? "bg-[#9E00F9] text-white shadow-lg"
                     : "bg-transparent text-purple-300 hover:text-white"
                   }`}
@@ -186,9 +186,20 @@ export default function HumansPage() {
               </button>
 
               <button
+                onClick={() => setActiveTab("speakers")}
+                aria-pressed={activeTab === "speakers"}
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "speakers"
+                    ? "bg-[#9E00F9] text-white shadow-lg"
+                    : "bg-transparent text-purple-300 hover:text-white"
+                  }`}
+              >
+                Speakers
+              </button>
+
+              <button
                 onClick={() => setActiveTab("mentors")}
                 aria-pressed={activeTab === "mentors"}
-                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "mentors"
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "mentors"
                     ? "bg-[#9E00F9] text-white shadow-lg"
                     : "bg-transparent text-purple-300 hover:text-white"
                   }`}
@@ -199,23 +210,12 @@ export default function HumansPage() {
               <button
                 onClick={() => setActiveTab("family")}
                 aria-pressed={activeTab === "family"}
-                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "family"
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "family"
                     ? "bg-[#9E00F9] text-white shadow-lg"
                     : "bg-transparent text-purple-300 hover:text-white"
                   }`}
               >
                 Family
-              </button>
-
-              <button
-                onClick={() => setActiveTab("speakers")}
-                aria-pressed={activeTab === "speakers"}
-                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "speakers"
-                    ? "bg-[#9E00F9] text-white shadow-lg"
-                    : "bg-transparent text-purple-300 hover:text-white"
-                  }`}
-              >
-                Speakers
               </button>
             </div>
           </div>

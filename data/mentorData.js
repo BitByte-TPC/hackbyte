@@ -373,7 +373,7 @@ export const mentorss = [
     role: "Mentor",
     image: toukirKhan,
     linkedin: "https://www.linkedin.com/in/toukirkhan/",
-    twitter: "https://x.com/toukirkhan",
+    twitter: "https://x.com/toukirkhan_",
     instagram: "https://www.instagram.com/toukirkhan__/",
   },
   {
