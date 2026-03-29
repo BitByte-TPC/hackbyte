@@ -66,6 +66,13 @@ const sponsors = [
         stickerimgsrc: "silver_sponser.svg",
     },
     {
+        name: "Superplane",
+        category: "Silver Sponsor",
+        sponsorimgsrc: "/superplane.png",
+        site: "https://superplane.com/",
+        stickerimgsrc: "silver_sponser.svg",
+    },
+    {
         name: "HackCulture",
         category: "Platform Partner",
         sponsorimgsrc: "/hackculture.png",
