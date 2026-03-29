@@ -5,11 +5,12 @@ import Image from "next/image"
 import {organizerss} from "@/data/orgData"
 import { mentorss } from "@/data/mentorData"
 import { famm } from "@/data/famData"
+import { pseakerss } from "@/data/pseakersData"
 import FadeInView from "@/components/FadeInView"
 
 export default function HumansPage() {
   const [activeTab, setActiveTab] =
-    useState<"organizers" | "mentors" | "family">("organizers")
+    useState<"organizers" | "mentors" | "family" | "speakers">("organizers")
 
   const organizersGrid = useMemo(
     () => (
@@ -78,6 +79,30 @@ export default function HumansPage() {
             px-8"
       >
         {famm.map((p, i) => (
+          <FadeInView key={p.name} delay={0.02 * i} yOffset={30}>
+            <HumanCard {...p} />
+          </FadeInView>
+        ))}
+      </div>
+    ),
+    []
+  )
+
+  const speakersGrid = useMemo(
+    () => (
+      <div
+        className="grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-y-16
+            gap-x-12
+            max-w-[300px]
+            md:max-w-[1400px]
+            mx-auto
+            px-8"
+      >
+        {pseakerss.map((p, i) => (
           <FadeInView key={p.name} delay={0.02 * i} yOffset={30}>
             <HumanCard {...p} />
           </FadeInView>
@@ -181,6 +206,17 @@ export default function HumansPage() {
               >
                 Family
               </button>
+
+              <button
+                onClick={() => setActiveTab("speakers")}
+                aria-pressed={activeTab === "speakers"}
+                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "speakers"
+                    ? "bg-[#9E00F9] text-white shadow-lg"
+                    : "bg-transparent text-purple-300 hover:text-white"
+                  }`}
+              >
+                Speakers
+              </button>
             </div>
           </div>
         </FadeInView>
@@ -190,6 +226,7 @@ export default function HumansPage() {
           {activeTab === "organizers" && organizersGrid}
           {activeTab === "mentors" && mentorsGrid}
           {activeTab === "family" && familyGrid}
+          {activeTab === "speakers" && speakersGrid}
         </div>
       </div>
     </div>
