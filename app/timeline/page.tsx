@@ -125,9 +125,9 @@ export default function TimelinePage() {
           type: "Everyone",
         },
         {
-          time: "9:00 AM",
-          endTime: "10:00 AM",
-          title: "MLH Workshop",
+          time: "10:30 AM",
+          endTime: "11:30 AM",
+          title: "Fireside Chat",
           venue: "L104/L105",
           type: "Everyone",
         },
@@ -159,8 +159,8 @@ export default function TimelinePage() {
         },
         {
           time: "6:00 PM",
-          endTime: "7:00 PM",
-          title: "GitHub Workshop",
+          endTime: "8:00 PM",
+          title: "GitHub + MLH Workshop",
           venue: "L104/L105",
           type: "Public",
         },
