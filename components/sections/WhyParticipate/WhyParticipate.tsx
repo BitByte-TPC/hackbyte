@@ -4,6 +4,7 @@ import { useRef } from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { ScrollingBackground } from "./ScrollingBackground";
+import FadeInView from "@/components/FadeInView";
 
 //image imports
 import bg from "./assets/bg.png";
@@ -32,20 +33,21 @@ export default function WhyParticipate() {
             className="w-full z-50"
           />
       <div className="w-full h-80 relative flex flex-col xl:-top-38 max-md:-top-28 max-sm:-top-12 max-sm:h-60 lg:-top-32" style={{background: "linear-gradient(180deg, #2E0050 0%, #450079 100%)"}}>
-        <Image
-          src="/newParticipate.svg"
-          width={400}
-          height={300}
-          alt="Why Participate?"
-          className="block xl:w-[70%] mx-auto p-10 max-sm:p-2 max-sm:mt-8 max-sm:w-[280px] lg:w-[800px] lg:mt-5 xl:mt-0"
-        />
+        <FadeInView>
+            <Image
+            src="/newParticipate.svg"
+            width={400}
+            height={300}
+            alt="Why Participate?"
+            className="block xl:w-[70%] mx-auto p-10 max-sm:p-2 max-sm:mt-8 max-sm:w-[280px] lg:w-[800px] lg:mt-5 xl:mt-0"
+          />
+        </FadeInView>
       </div>
       <section
         className="relative min-h-125 h-full max-h-250 overflow-hidden border-t-white border-t-12 border-b-white border-b-12 p-0 -top-38 -mb-38 max-sm:min-h-50 max-sm:max-h-82"
         style={{
           background: "linear-gradient(180deg, #8A00DA 0%, #BA45E8 100%)",
         }}
-
       >
         {/* Animated texture*/}
         <div className="absolute inset-0 pointer-events-none opacity-60 z-0">
@@ -72,7 +74,7 @@ export default function WhyParticipate() {
               <Image
                 src={card.src}
                 alt={card.alt}
-                className="w-full h-auto"
+                className="w-full h-auto" // The Image fills the motion wrapper
               />
             </motion.div>
           ))}

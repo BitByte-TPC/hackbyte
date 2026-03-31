@@ -5,8 +5,8 @@ import gsap from "gsap";
 
 interface ScrollingBackgroundProps {
   imageUrl: string;
-  direction?: "left" | "right" | "diagonal"; // Added some spicy options
-  speed?: number; // Duration in seconds
+  direction?: "left" | "right" | "diagonal";
+  speed?: number; 
 }
 
 export const ScrollingBackground = ({
@@ -15,6 +15,7 @@ export const ScrollingBackground = ({
   speed = 60,
 }: ScrollingBackgroundProps) => {
   const containerRef = useRef<HTMLDivElement>(null);
+  const bgRef = useRef<HTMLDivElement>(null);
   const [bgSize, setBgSize] = useState<{ w: number; h: number } | null>(null);
 
   useEffect(() => {
@@ -27,11 +28,12 @@ export const ScrollingBackground = ({
   }, [imageUrl]);
 
   useEffect(() => {
-    if (!containerRef.current || !bgSize) return;
+    if (!bgRef.current || !bgSize) return;
 
     let xEnd = 0;
     let yEnd = 0;
 
+  
     if (direction === "diagonal") {
       xEnd = bgSize.w;
       yEnd = bgSize.h;
@@ -42,13 +44,18 @@ export const ScrollingBackground = ({
     }
 
     const ctx = gsap.context(() => {
-      gsap.to(containerRef.current, {
-        backgroundPosition: `${xEnd}px ${yEnd}px`,
-        ease: "none",
-        repeat: -1,
-        duration: speed,
-        overwrite: true,
-      });
+      gsap.fromTo(
+        bgRef.current,
+        { x: 0, y: 0 },
+        {
+          x: xEnd,
+          y: yEnd,
+          ease: "none",
+          repeat: -1,
+          duration: speed,
+          force3D: true, 
+        }
+      );
     }, containerRef);
 
     return () => ctx.revert();
@@ -57,13 +64,26 @@ export const ScrollingBackground = ({
   return (
     <div
       ref={containerRef}
-      className="absolute inset-0 pointer-events-none"
-      style={{
-        backgroundImage: `url(${imageUrl})`,
-        backgroundRepeat: "repeat",
-        backgroundSize: "auto", 
-        opacity: 0.3,
-      }}
-    />
+      className="absolute inset-0 pointer-events-none overflow-hidden"
+      style={{ zIndex: -10 }} 
+    >
+      
+      {bgSize && (
+        <div
+          ref={bgRef}
+          style={{
+            position: "absolute",
+            top: -bgSize.h,
+            left: -bgSize.w,
+            width: `calc(100% + ${bgSize.w * 2}px)`,
+            height: `calc(100% + ${bgSize.h * 2}px)`,
+            backgroundImage: `url(${imageUrl})`,
+            backgroundRepeat: "repeat",
+            opacity: 0.3,
+            willChange: "transform",
+          }}
+        />
+      )}
+    </div>
   );
 };
