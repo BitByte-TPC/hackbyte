@@ -5,11 +5,12 @@ import Image from "next/image"
 import {organizerss} from "@/data/orgData"
 import { mentorss } from "@/data/mentorData"
 import { famm } from "@/data/famData"
+import { pseakerss } from "@/data/pseakersData"
 import FadeInView from "@/components/FadeInView"
 
 export default function HumansPage() {
   const [activeTab, setActiveTab] =
-    useState<"organizers" | "mentors" | "family">("organizers")
+    useState<"organizers" | "mentors" | "family" | "speakers">("organizers")
 
   const organizersGrid = useMemo(
     () => (
@@ -87,6 +88,30 @@ export default function HumansPage() {
     []
   )
 
+  const speakersGrid = useMemo(
+    () => (
+      <div
+        className="grid
+            grid-cols-1
+            sm:grid-cols-2
+            lg:grid-cols-3
+            gap-y-16
+            gap-x-12
+            max-w-[300px]
+            md:max-w-[1400px]
+            mx-auto
+            px-8"
+      >
+        {pseakerss.map((p, i) => (
+          <FadeInView key={p.name} delay={0.02 * i} yOffset={30}>
+            <HumanCard {...p} />
+          </FadeInView>
+        ))}
+      </div>
+    ),
+    []
+  )
+
   return (
     <div className="w-screen min-h-svh overflow-x-hidden">
       <div className="-z-10 sm:h-[95vh] h-[35vh] w-screen relative overflow-hidden">
@@ -147,12 +172,12 @@ export default function HumansPage() {
 
         {/* Toggle Button */}
         <FadeInView delay={0.15} yOffset={20} className="w-full relative z-20">
-          <div className="w-full flex items-start justify-start sm:pt-50 pt-15 z-100 px-8 md:px-20">
-            <div className="flex items-center bg-[#3D1A5C] rounded-full border border-purple-700/50 h-8 md:h-10">
+          <div className="w-full flex items-start justify-start sm:pt-50 pt-15 z-100 px-4 sm:px-8 md:px-20 overflow-x-auto">
+            <div className="flex items-center bg-[#3D1A5C] rounded-full border border-purple-700/50 h-8 md:h-10 gap-0 whitespace-nowrap">
               <button
                 onClick={() => setActiveTab("organizers")}
                 aria-pressed={activeTab === "organizers"}
-                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "organizers"
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "organizers"
                     ? "bg-[#9E00F9] text-white shadow-lg"
                     : "bg-transparent text-purple-300 hover:text-white"
                   }`}
@@ -161,9 +186,20 @@ export default function HumansPage() {
               </button>
 
               <button
+                onClick={() => setActiveTab("speakers")}
+                aria-pressed={activeTab === "speakers"}
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "speakers"
+                    ? "bg-[#9E00F9] text-white shadow-lg"
+                    : "bg-transparent text-purple-300 hover:text-white"
+                  }`}
+              >
+                Speakers
+              </button>
+
+              <button
                 onClick={() => setActiveTab("mentors")}
                 aria-pressed={activeTab === "mentors"}
-                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "mentors"
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "mentors"
                     ? "bg-[#9E00F9] text-white shadow-lg"
                     : "bg-transparent text-purple-300 hover:text-white"
                   }`}
@@ -174,7 +210,7 @@ export default function HumansPage() {
               <button
                 onClick={() => setActiveTab("family")}
                 aria-pressed={activeTab === "family"}
-                className={`px-6 md:px-8 h-full rounded-full font-semibold text-sm md:text-lg transition-all duration-300 ${activeTab === "family"
+                className={`px-3 sm:px-6 md:px-8 h-full rounded-full font-semibold text-xs sm:text-sm md:text-lg transition-all duration-300 ${activeTab === "family"
                     ? "bg-[#9E00F9] text-white shadow-lg"
                     : "bg-transparent text-purple-300 hover:text-white"
                   }`}
@@ -190,6 +226,7 @@ export default function HumansPage() {
           {activeTab === "organizers" && organizersGrid}
           {activeTab === "mentors" && mentorsGrid}
           {activeTab === "family" && familyGrid}
+          {activeTab === "speakers" && speakersGrid}
         </div>
       </div>
     </div>
