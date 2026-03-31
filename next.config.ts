@@ -20,6 +20,24 @@ const nextConfig: NextConfig = {
           "https://discord.com/invite/NTueHjdPn8",
         permanent: false,
       },
+      {
+        source: "/stdb",
+        destination:
+          "https://docs.google.com/document/d/19Vb6-k2Ue5xG6nN9nktWUaN5xXkLZRIp-hjFoAyuH8w/edit?usp=sharing",
+        permanent: false,
+      },
+      {
+        source: "/rovo",
+        destination:
+          "https://docs.google.com/document/d/15sBmYcxLwRdxDpXuqXzJyrfD1fCdKl1EUoIBUoPow-I/edit?usp=sharing",
+        permanent: false,
+      },
+      {
+        source: "/superplane",
+        destination:
+          "https://docs.google.com/document/d/141s4utWJOrSl40FPtqbYwcF3VbmuQ4ccCI9djJLHt7A/edit?usp=sharing",
+        permanent: false,
+      },
     ];
   },
 };
