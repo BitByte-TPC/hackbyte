@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-   async redirects() {
+  async redirects() {
     return [
       {
         source: "/aftermovie",
@@ -16,8 +16,13 @@ const nextConfig: NextConfig = {
       },
       {
         source: "/chat",
+        destination: "https://discord.com/invite/NTueHjdPn8",
+        permanent: false,
+      },
+      {
+        source: "/armoriq",
         destination:
-          "https://discord.com/invite/NTueHjdPn8",
+          "https://docs.google.com/document/d/1p8C4bNk7fKwBeMYhsrxQrYMvXzI3G7SjABFLX4c0ahg/edit?usp=sharing",
         permanent: false,
       },
       {
