@@ -19,7 +19,7 @@ const sponsors = [
     {
         name: "GitHub",
         category: "Gold Sponsor",
-        sponsorimgsrc: "/github.png",
+        sponsorimgsrc: "/github.jpg",
         site: "https://github.com/",
         stickerimgsrc: "gold_sponser.svg",
     },

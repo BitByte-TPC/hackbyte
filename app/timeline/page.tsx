@@ -113,7 +113,7 @@ export default function TimelinePage() {
         },
         {
           time: "4:30 AM",
-          title: "Checkpoint 1 / 4",
+          title: "Checkpoint 1 / 3",
           venue: "L104/L105",
           type: "Public",
         },
@@ -140,7 +140,7 @@ export default function TimelinePage() {
         },
         {
           time: "2:00 PM",
-          title: "Checkpoint 2 / 4",
+          title: "Checkpoint 2 / 3",
           venue: "L104/L105",
           type: "Public",
         },
@@ -171,12 +171,6 @@ export default function TimelinePage() {
           venue: "Mess",
           type: "Everyone",
         },
-        {
-          time: "10:30 PM",
-          title: "Checkpoint 3 / 4",
-          venue: "L104/L105",
-          type: "Public",
-        },
       ],
     },
     {
@@ -205,18 +199,18 @@ export default function TimelinePage() {
         },
         {
           time: "4:00 AM",
-          title: "Checkpoint 4 / 4",
+          title: "Checkpoint 3 / 3",
           venue: "L104/L105",
           type: "Public",
         },
         {
-          time: "6:30 AM",
+          time: "6:00 AM",
           title: "Soft Deadline",
           venue: "Online",
           type: "Public",
         },
         {
-          time: "7:30 AM",
+          time: "7:00 AM",
           title: "Hard Deadline — Coding Ends",
           venue: "Online",
           type: "Public",

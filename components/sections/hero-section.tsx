@@ -1,14 +1,87 @@
 "use client";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import FadeInView from "@/components/FadeInView";
 import RealityGlitch from "@/components/RealityGlitch/index "
 import CursorCracks from "@/components/CursorCracks";
 
+type CountdownState = {
+	days: string;
+	hours: string;
+	minutes: string;
+	seconds: string;
+	isLive: boolean;
+	isOver: boolean;
+};
+
+const INITIAL_COUNTDOWN: CountdownState = {
+	days: "00",
+	hours: "00",
+	minutes: "00",
+	seconds: "00",
+	isLive: false,
+	isOver: false,
+};
+
+const EVENT_START = new Date("2026-04-03T00:00:00+05:30").getTime();
+const EVENT_END = new Date("2026-04-05T23:59:59+05:30").getTime();
+
+const getCountdownState = (): CountdownState => {
+	const now = Date.now();
+
+	if (now >= EVENT_END) {
+		return {
+			days: "00",
+			hours: "00",
+			minutes: "00",
+			seconds: "00",
+			isLive: false,
+			isOver: true,
+		};
+	}
+
+	if (now >= EVENT_START) {
+		return {
+			days: "00",
+			hours: "00",
+			minutes: "00",
+			seconds: "00",
+			isLive: true,
+			isOver: false,
+		};
+	}
+
+	const diff = EVENT_START - now;
+	const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+	const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+	const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+	const seconds = Math.floor((diff % (1000 * 60)) / 1000);
+
+	return {
+		days: String(days).padStart(2, "0"),
+		hours: String(hours).padStart(2, "0"),
+		minutes: String(minutes).padStart(2, "0"),
+		seconds: String(seconds).padStart(2, "0"),
+		isLive: false,
+		isOver: false,
+	};
+};
+
 const Hero = () => {
 	const heroRef = useRef<HTMLDivElement>(null);
+	const [countdown, setCountdown] = useState<CountdownState>(INITIAL_COUNTDOWN);
+
+	useEffect(() => {
+		setCountdown(getCountdownState());
+
+		const timer = setInterval(() => {
+			setCountdown(getCountdownState());
+		}, 1000);
+
+		return () => clearInterval(timer);
+	}, []);
 
 	return (
 		<div ref={heroRef} className="relative h-screen w-screen bg-linear-to-tr flex items-center justify-center text-white font-sans overflow-hidden cursor-none">
@@ -122,21 +195,38 @@ const Hero = () => {
 				/>
 			</div>
 
-			{/* Register Button */}
+			{/* Event Countdown */}
 			<div className={`absolute flex bg-pink-500/500 md:-right-5 right-10 sm:bottom-32 bottom-50 font-kanit h-40 w-[27vw] z-20`} style={{ pointerEvents: 'auto' }}>
-				<Link href="https://hackbyte4.devfolio.co" style={{ pointerEvents: 'auto' }} className={`absolute text-[#62009B] lg:w-80 md:w-70 sm:w-65 w-55 p-5 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] md:h-16 sm:h-14 h-10 rounded-full border-[#FFD620] border-4 md:text-3xl text-2xl font-extrabold flex items-center justify-center bottom-0 hover:bg-[#FFC300B8] hover:border-[#FFD620] transition-colors duration-300 cursor-pointer z-50`}>
-					REGISTER NOW
-				</Link>
-
-				<div className="absolute h-full lg:w-30 top-4 sm:top-0 md:w-25 sm:w-20 w-15 lg:right-10 sm:-right-10 md:right-10 -right-8">
-					<Image
-						src="/exclamation_marks.svg"
-						alt="Exclamation marks decoration"
-						fill
-						className="object-contain"
-						priority
-					/>
+				<div className="absolute lg:w-80 md:w-70 sm:w-65 w-55 p-4 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] rounded-2xl border-[#FFD620] border-4 bottom-0 z-50 text-[#62009B]">
+					{countdown.isOver ? (
+						<div className="text-center md:text-2xl text-xl font-extrabold leading-tight">Event has ended</div>
+					) : countdown.isLive ? (
+						<div className="text-center md:text-2xl text-xl font-extrabold leading-tight">HackByte is live now!</div>
+					) : (
+						<>
+							<div className="text-center md:text-xl text-lg font-extrabold leading-tight">Event Starts In</div>
+							<div className="grid grid-cols-4 gap-1 pt-2 text-center">
+								<div>
+									<div className="md:text-2xl text-xl font-extrabold">{countdown.days}</div>
+									<div className="text-[10px] sm:text-xs font-bold">DAYS</div>
+								</div>
+								<div>
+									<div className="md:text-2xl text-xl font-extrabold">{countdown.hours}</div>
+									<div className="text-[10px] sm:text-xs font-bold">HRS</div>
+								</div>
+								<div>
+									<div className="md:text-2xl text-xl font-extrabold">{countdown.minutes}</div>
+									<div className="text-[10px] sm:text-xs font-bold">MIN</div>
+								</div>
+								<div>
+									<div className="md:text-2xl text-xl font-extrabold">{countdown.seconds}</div>
+									<div className="text-[10px] sm:text-xs font-bold">SEC</div>
+								</div>
+							</div>
+						</>
+					)}
 				</div>
+
 			</div>
 
 			{/* Date & Location */}

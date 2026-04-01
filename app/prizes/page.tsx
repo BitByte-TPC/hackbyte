@@ -120,6 +120,15 @@ Think of the possibilities… what will you build with the Google Gemini API thi
 			link: "https://mlh.link/gemini-quickstart"
 		},
 		{
+			name: "GitHub",
+			logo: "/github.jpg",
+			title: "Best use of GitHub",
+			prize: "Exclusive GitHub Shirts",
+			description: "Stand a chance to win exclusive GitHub Shirts in two simple steps. First by signing up for GitHub Global Campus and second by using a GitHub repository to host your hackathon project's code!",
+			fullDescription: `Stand a chance to win exclusive GitHub Shirts in two simple steps. First by signing up for GitHub Global Campus and second by using a GitHub repository to host your hackathon project's code!`,
+			link: "https://gh.io/hackbyte4026"
+		},
+		{
 			name: "MongoDB Atlas",
 			logo: "/mongodb.png",
 			title: "Best Use of MongoDB Atlas",
