@@ -46,18 +46,61 @@ Follow ArmorIQ on instagram @armoriq.ai and join their discord server.`
 			logo: "/spacetimedb.png",
 			title: "Best Real-time App / Game Backend",
 			prize: "$150",
-			description: "SpacetimeDB is a real-time backend framework and database for apps and games. LLMs go much further with SpacetimeDB...",
-			fullDescription: `SpacetimeDB is a real-time backend framework and database for apps and games. LLMs go much further with SpacetimeDB because it handles all the persistence, logic, deployment, and real-time sync in a single cohesive backend.`
+			description: "This track focuses on projects where SpacetimeDB is the core real-time backend, especially anything with live shared state, multiplayer interaction, or instant sync between users/agents/systems....",
+			fullDescription: `This track focuses on projects where SpacetimeDB is the core real-time backend, especially anything with live shared state, multiplayer interaction, or instant sync between users/agents/systems. 
+
+This makes it a great fit not just for games, but also for things like:
+• Chat/community apps
+• Collaborative tools
+• Social experiences
+• AI agent coordination
+• Live dashboards
+• Trading/financial-style apps
+• Auctions/marketplaces
+• Shared simulations
+• Multiplayer productivity tools
+• Stream/creator tools
+
+SpacetimeDB's docs position it around real-time subscriptions, transactional updates, and server-side logic running close to the data, which is why these kinds of apps fit well.
+
+Games are a very natural fit, but something like a real-time portfolio sim, prediction market, collaborative trading game, shared ops dashboard, multi-user planning tool, or AI systems coordinating in a persistent world state is equally valid. So it does not have to be a game. The main requirement is that SpacetimeDB is used meaningfully as the core backend, not just added on the side.
+
+A few cool examples already built with / around SpacetimeDB:
+• BitCraft Online / BitCraftPublic
+• Elegon
+• Pogly - a real-time collaborative stream overlay powered by SpacetimeDB
+• Official chat app tutorials/templates
+• Video chat app
+
+In summary: projects should use SpacetimeDB as the core real-time backend for multiplayer, collaborative, or live-state applications. Games are great, but not required.`
 		},
 		{
 			name: "Superplane",
 			logo: "/superplane.png",
 			title: "Best DevOps / AI Infra Project",
 			prize: "$150",
-			description: "Superplane is an AI-native DevOps control plane built for modern teams. It unifies workflows, deployments, and infrastructure...",
-			fullDescription: `Superplane is an AI-native DevOps control plane built for modern teams. It unifies workflows, deployments, infrastructure, and incidents into one system. Enables developers and AI agents to collaborate, automate operations, and ship faster without fragmented tools.
+			description: 'There is no fixed theme. Build whatever you want as long as it moves DevOps, platform engineering, or workflow automation forward...',
+			fullDescription: `There is no fixed theme. Build whatever you want as long as it moves DevOps, platform engineering, or workflow automation forward.
 
-Simplify your stack. Build and scale with confidence.`
+Choose your path:
+• Build on SuperPlane: Create Canvases that solve real problems in your stack
+• Build into SuperPlane: Add a feature, integration, or component to the platform
+• Or combine both: Extend the platform and show it in a working Canvas
+
+Getting started:
+• Github: github.com/superplanehq/superplane
+• Docs: https://hackbyte4.devfolio.co/docs.superplane.com
+• Hosted (fastest): https://hackbyte4.devfolio.co/app.superplane.com
+• Local development: https://github.com/superplanehq/superplane/blob/main/CONTRIBUTING.md
+• Connect local instance to real tools: https://github.com/superplanehq/superplane/blob/main/docs/contributing/connecting-to-3rdparty-services-from-development.md
+
+If you run locally without a tunnel, webhook-based integrations are very limited.
+
+Notes:
+• You do not need to fully integrate SuperPlane to qualify
+• We care more about problem-solving and workflow design than polish
+• Feedback on SuperPlane is a plus
+`
 		},
 		{
 			name: "Google Gemini",
@@ -291,7 +334,7 @@ Show us how you can innovate with Solana for a chance to win some cool prizes fo
 									
 									<div className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
 										{expandedCards[index] ? (
-											<div className="whitespace-pre-line">
+											<div className="whitespace-pre-line break-words">
 												{sponsor.fullDescription}
 											</div>
 										) : (
