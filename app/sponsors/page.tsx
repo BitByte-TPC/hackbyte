@@ -100,6 +100,27 @@ const sponsors = [
         site: "https://hajibasheer.com/",
         stickerimgsrc: "bronze_sponser.svg",
     },
+    {
+        name: "The Biryani Alchemy",
+        category: "Food Sponsor",
+        sponsorimgsrc: "/biryani.png",
+        site: "#",
+        stickerimgsrc: "bronze_sponser.svg",
+    },
+    {
+        name: "Roll Ricks",
+        category: "Food Sponsor",
+        sponsorimgsrc: "/rr.png",
+        site: "#",
+        stickerimgsrc: "bronze_sponser.svg",
+    },
+    {
+        name: "Onni Pizza",
+        category: "Food Sponsor",
+        sponsorimgsrc: "/onnipizza.png",
+        site: "#",
+        stickerimgsrc: "bronze_sponser.svg",
+    },
 ]
 
 const inKindSponsors = [
