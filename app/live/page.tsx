@@ -53,7 +53,7 @@ const HACKATHON_END = new Date("2026-04-05T07:00:00");
 // --- TIME MACHINE FOR TESTING ---
 // Change this value to simulate jumping forward in time (in milliseconds)
 // e.g., To jump ahead to April 3rd at 7:00 PM: new Date("2026-04-03T19:00:00").getTime() - Date.now()
-const TEST_OFFSET_MS = 0; 
+const TEST_OFFSET_MS = 0;
 // --------------------------------
 
 function formatTimeLeft(ms: number) {
