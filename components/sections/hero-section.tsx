@@ -25,7 +25,7 @@ const INITIAL_COUNTDOWN: CountdownState = {
 	isOver: false,
 };
 
-const EVENT_START = new Date("2026-04-03T00:00:00+05:30").getTime();
+const EVENT_START = new Date("2026-04-03T17:00:00+05:30").getTime();
 const EVENT_END = new Date("2026-04-05T23:59:59+05:30").getTime();
 
 const getCountdownState = (): CountdownState => {
@@ -93,10 +93,10 @@ const Hero = () => {
 			<div className="absolute sm:w-33 w-20 top-0 sm:right-18 right-6 z-20 h-80">
 				<FadeInView delay={0.3} yOffset={-30}>
 					<a
-					href="https://mlh.io/seasons/2026/events"
-					target="_blank"
-					rel="noopener noreferrer"
-					aria-label="MLH 2026 Events"
+						href="https://mlh.io/seasons/2026/events"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="MLH 2026 Events"
 					>
 						<Image
 							src="/mlh-badge.svg"
@@ -173,7 +173,7 @@ const Hero = () => {
 
 			{/* Main Logo */}
 			<FadeInView delay={0.1} duration={0.8} yOffset={40}>
-				  <div className="relative md:h-[105vh] sm:h-[85vh] h-[65vh] sm:top-4 -top-3 -left-5 aspect-video z-10">
+				<div className="relative md:h-[105vh] sm:h-[85vh] h-[65vh] sm:top-4 -top-3 -left-5 aspect-video z-10">
 					<Image
 						src="/Main Page Broken Effect logo.svg"
 						alt="Broken effect background"
