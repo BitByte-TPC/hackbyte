@@ -50,6 +50,12 @@ const flattenedEvents: EventData[] = [
 const HACKATHON_START = new Date("2026-04-03T19:00:00");
 const HACKATHON_END = new Date("2026-04-05T07:00:00");
 
+// --- TIME MACHINE FOR TESTING ---
+// Change this value to simulate jumping forward in time (in milliseconds)
+// e.g., To jump ahead to April 3rd at 7:00 PM: new Date("2026-04-03T19:00:00").getTime() - Date.now()
+const TEST_OFFSET_MS = 0; 
+// --------------------------------
+
 function formatTimeLeft(ms: number) {
   if (ms <= 0) return "00 : 00 : 00";
   const hours = Math.floor(ms / (1000 * 60 * 60));
@@ -59,10 +65,10 @@ function formatTimeLeft(ms: number) {
 }
 
 export default function LiveProjectorPage() {
-  const [now, setNow] = useState(new Date());
+  const [now, setNow] = useState(new Date(Date.now() + TEST_OFFSET_MS));
 
   useEffect(() => {
-    const interval = setInterval(() => setNow(new Date()), 1000);
+    const interval = setInterval(() => setNow(new Date(Date.now() + TEST_OFFSET_MS)), 1000);
     return () => clearInterval(interval);
   }, []);
 
@@ -76,6 +82,14 @@ export default function LiveProjectorPage() {
   const nextEventIndex = flattenedEvents.findIndex(e => e.dateObj.getTime() > now.getTime());
   const nextEvent = nextEventIndex !== -1 ? flattenedEvents[nextEventIndex] : null;
   const timeToNextEvent = nextEvent ? nextEvent.dateObj.getTime() - now.getTime() : 0;
+
+  // Find current event
+  // Automatically gets the event right before the 'next' event, or the last event if all are passed
+  const currentEvent = nextEventIndex > 0 
+    ? flattenedEvents[nextEventIndex - 1] 
+    : nextEventIndex === -1 
+      ? flattenedEvents[flattenedEvents.length - 1] 
+      : null;
 
   return (
     <div className="w-screen h-screen overflow-hidden bg-[url('/bg%20texture%20prizes.svg'),radial-gradient(circle_at_center,#7B1AA8_0%,#2A0045_55%,#160028_100%)] flex flex-col justify-center items-center relative text-white selection:bg-pink-500/30">
@@ -201,14 +215,32 @@ export default function LiveProjectorPage() {
             )}
           </div>
             
-          {/* Real-time Clock Box */}
-          <div className="flex flex-col items-center justify-center bg-white/5 border border-white/10 p-8 sm:p-10 rounded-[2.5rem] backdrop-blur-md shadow-2xl shadow-indigo-900/20 w-full min-w-0 overflow-hidden">
-             <span className="text-xs sm:text-sm lg:text-base font-poppins text-white/40 uppercase tracking-[0.2em] mb-2 truncate whitespace-nowrap">
-              Local Time
+          {/* Current Event Box */}
+          <div className="flex flex-col items-center justify-center bg-white/5 border border-white/10 p-8 sm:p-10 rounded-[2.5rem] backdrop-blur-md shadow-2xl shadow-indigo-900/20 w-full min-w-0 overflow-hidden relative group">
+            <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent opacity-50"></div>
+            <span className="text-xs sm:text-sm lg:text-base font-poppins text-indigo-300/80 uppercase tracking-[0.2em] mb-3 truncate whitespace-nowrap relative z-10">
+              Current Event
             </span>
-             <span className="font-mono tracking-tighter text-3xl sm:text-4xl lg:text-5xl font-semibold text-white/80 tabular-nums whitespace-nowrap truncate">
-               {now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: false })}
-             </span>
+            {currentEvent ? (
+              <div className="flex flex-col items-center min-w-0 relative z-10 w-full text-center">
+                <span className="font-kanit text-2xl sm:text-3xl lg:text-4xl font-semibold text-white/90 whitespace-nowrap truncate max-w-full mb-2">
+                  {currentEvent.title}
+                </span>
+                {currentEvent.venue && (
+                  <div className="flex items-center gap-2 text-white/50 text-sm sm:text-base lg:text-lg whitespace-nowrap truncate max-w-full">
+                    <svg className="w-4 h-4 sm:w-5 sm:h-5 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                    <span className="truncate">{currentEvent.venue}</span>
+                  </div>
+                )}
+              </div>
+            ) : (
+              <span className="font-kanit text-2xl sm:text-3xl lg:text-4xl font-semibold text-white/40 whitespace-nowrap truncate relative z-10">
+                {nextEventIndex === 0 ? "Hackathon Starting Soon" : "All Events Concluded"}
+              </span>
+            )}
           </div>
 
         </div>
