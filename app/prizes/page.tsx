@@ -14,6 +14,51 @@ export default function PrizesPage() {
 		}))
 	}
 
+	const renderTextWithLinks = (text: string) => {
+		const tokenPattern =
+			/(\[[^\]]+\]\(https?:\/\/[^\s)]+\)|https?:\/\/[^\s]+|(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(?:\/[^\s]*)?)/g
+
+		return text.split("\n").map((line, lineIndex, lines) => (
+			<span key={`line-${lineIndex}`}>
+				{line.split(tokenPattern).map((part, partIndex) => {
+					const md = part.match(/^\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)$/)
+					if (md) {
+						return (
+							<a
+								key={`md-${partIndex}`}
+								href={md[2]}
+								target="_blank"
+								rel="noopener noreferrer"
+								className="text-blue-300 hover:text-blue-200 underline underline-offset-2"
+							>
+								{md[1]}
+							</a>
+						)
+					}
+
+					const isUrlOrDomain =
+						/^(https?:\/\/[^\s]+|(?:[a-zA-Z0-9-]+\.)+[a-zA-Z]{2,}(?:\/[^\s]*)?)$/.test(part)
+
+					if (!isUrlOrDomain) return <span key={`txt-${partIndex}`}>{part}</span>
+
+					const href = part.startsWith("http") ? part : `https://${part}`
+					return (
+						<a
+							key={`url-${partIndex}`}
+							href={href}
+							target="_blank"
+							rel="noopener noreferrer"
+							className="text-blue-300 hover:text-blue-200 underline underline-offset-2 break-all"
+						>
+							{part}
+						</a>
+					)
+				})}
+				{lineIndex < lines.length - 1 && <br />}
+			</span>
+		))
+	}
+
 	const sponsorData = [
 		{
 			name: "ArmorIQ",
@@ -38,7 +83,7 @@ From developer copilots to system automation agents to domain-specific assistant
 
 Claw enables autonomy. Shield enforces trust. At HackByte, we plan to build both.
 
-Follow ArmorIQ on instagram @armoriq.ai and join their discord server.`
+Follow ArmorIQ on instagram [@armoriq.ai](https://www.instagram.com/armoriq.ai/) and join their discord server.`
 		},
 		{
 			name: "SpacetimeDB",
@@ -87,11 +132,11 @@ Choose your path:
 • Or combine both: Extend the platform and show it in a working Canvas
 
 Getting started:
-• Github: github.com/superplanehq/superplane
-• Docs: https://hackbyte4.devfolio.co/docs.superplane.com
-• Hosted (fastest): https://hackbyte4.devfolio.co/app.superplane.com
-• Local development: https://github.com/superplanehq/superplane/blob/main/CONTRIBUTING.md
-• Connect local instance to real tools: https://github.com/superplanehq/superplane/blob/main/docs/contributing/connecting-to-3rdparty-services-from-development.md
+• Github: [https://git.new/superplane-hackbyte](https://git.new/superplane-hackbyte)
+• Docs: [Superplane Docs](https://docs.superplane.com/)
+• Hosted (fastest): [Open Superplane App](https://app.superplane.com/login?redirect=%2F)
+• Local development: [Contributing Guide](https://github.com/superplanehq/superplane/blob/main/CONTRIBUTING.md)
+• Connect local instance to real tools: [3rd-party Services Setup](https://github.com/superplanehq/superplane/blob/main/docs/contributing/connecting-to-3rdparty-services-from-development.md)
 
 If you run locally without a tunnel, webhook-based integrations are very limited.
 
@@ -225,7 +270,14 @@ Don't:
 • Laptop screen photos
 • One-sentence descriptions
 • Undefined roles
-• Low-effort updates`,
+• Low-effort updates
+
+Download ROVO:
+• Website: [rovo-app.com](https://rovo-app.com)
+• Play Store: [Download on Google Play](https://play.google.com/store/apps/details?id=com.rovoapp&pcampaignid=web_share)
+• App Store: [Download on App Store](https://apps.apple.com/us/app/rovo-build-recruit-share/id6760100429)
+• Instagram: [@rovohq](https://www.instagram.com/rovohq)
+• LinkedIn: [@rovo](https://www.linkedin.com/company/rovo-thesocialmedia)`,
 			link: "https://rovo-app.com"
 		}
 	]
@@ -391,8 +443,8 @@ Don't:
 
 									<div className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
 										{expandedCards[index] ? (
-											<div className="whitespace-pre-line break-words">
-												{sponsor.fullDescription}
+											<div className="break-words">
+												{renderTextWithLinks(sponsor.fullDescription)}
 											</div>
 										) : (
 											<p>{sponsor.description}</p>
