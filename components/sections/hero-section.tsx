@@ -25,7 +25,7 @@ const INITIAL_COUNTDOWN: CountdownState = {
 	isOver: false,
 };
 
-const EVENT_START = new Date("2026-04-03T00:00:00+05:30").getTime();
+const EVENT_START = new Date("2026-04-03T17:00:00+05:30").getTime();
 const EVENT_END = new Date("2026-04-05T23:59:59+05:30").getTime();
 
 const getCountdownState = (): CountdownState => {
