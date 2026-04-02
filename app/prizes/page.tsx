@@ -1,4 +1,3 @@
-
 "use client"
 
 import Image from "next/image"
@@ -179,6 +178,55 @@ Build a prototype for supply chain, identity, or payments that can handle massiv
 
 Show us how you can innovate with Solana for a chance to win some cool prizes for you and each member of your team!`,
 			link: "https://mlh.link/solana"
+		},
+		{
+			name: "ROVO",
+			logo: "/rovo.png",
+			title: "Most Liked Project on ROVO",
+			prize: "₹25,000",
+			description:
+				"ROVO is a social platform for builders and startups. At HackByte 4.0, post your project and updates on ROVO — the team with the most liked project wins ₹25,000...",
+			fullDescription: `ROVO Track 2026 — HackByte 4.0
+
+ROVO is a social media platform built for startups and builders. Every team is encouraged to post their project on ROVO. The team with the most liked project wins ₹25,000 in cash.
+
+What is ROVO?
+A platform where builders showcase projects, recruit teammates, grow engagement with a global founder community, and get noticed by investors.
+
+How it works:
+1) Create a Project Post
+• One team member creates the project on ROVO
+• Use a clear, high-quality image/logo (no blurry laptop screenshots)
+• Describe what you are building, why you are building it, and how you are building it
+
+2) Build Your Team
+• One project per team
+• Invite teammates and define roles clearly
+
+3) Post Updates
+• Share meaningful progress: problems solved, pivots, milestones, and breakthroughs
+• Quality updates drive engagement, and engagement drives likes
+
+Why this matters:
+Beyond the ₹25,000 prize, your ROVO page is a live portfolio visible to founders and investors globally, creating collaboration and hiring opportunities.
+
+Bigger picture:
+ROVO also runs a rolling 3-month competition with a live leaderboard. Top projects can win $300–$500 plus an internship at ROVO.
+
+Post quality matters.
+
+Do:
+• Clear, relevant images/logos
+• Detailed descriptions (what, why, how)
+• Defined team roles
+• Regular, substantive updates
+
+Don't:
+• Laptop screen photos
+• One-sentence descriptions
+• Undefined roles
+• Low-effort updates`,
+			link: "https://rovo-app.com"
 		}
 	]
 
@@ -332,15 +380,15 @@ Show us how you can innovate with Solana for a chance to win some cool prizes fo
 											className="w-full h-full object-contain rounded-lg"
 										/>
 									</div>
-									
+
 									<h3 className="text-xl sm:text-2xl font-bold text-white mb-3 text-center">
 										{sponsor.title}
 									</h3>
-									
+
 									<div className="text-2xl font-bold text-purple-300 mb-4 text-center">
 										{sponsor.prize}
 									</div>
-									
+
 									<div className="text-gray-300 text-sm sm:text-base mb-4 leading-relaxed">
 										{expandedCards[index] ? (
 											<div className="whitespace-pre-line break-words">
@@ -350,15 +398,15 @@ Show us how you can innovate with Solana for a chance to win some cool prizes fo
 											<p>{sponsor.description}</p>
 										)}
 									</div>
-									
+
 									<div className="flex flex-col gap-2">
-										<button 
+										<button
 											onClick={() => toggleCard(index)}
 											className="text-purple-400 hover:text-purple-300 text-sm font-medium underline underline-offset-2 transition-colors self-start"
 										>
 											{expandedCards[index] ? 'Read less' : 'Read more'}
 										</button>
-										
+
 										{sponsor.link && (
 											<a
 												href={sponsor.link}
