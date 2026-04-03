@@ -21,7 +21,7 @@ const flattenedEvents: EventData[] = [
   { time: "6:45 PM", endTime: "7:00 PM", title: "Participants Move to Venue", venue: "L104/L105", type: "Public" as const, dateObj: new Date("2026-04-03T18:45:00") },
   { time: "7:00 PM", title: "Hacking Begins", venue: "L104/L105", type: "Public" as const, dateObj: new Date("2026-04-03T19:00:00") },
   { time: "9:00 PM", endTime: "10:00 PM", title: "Dinner", venue: "Mess", type: "Everyone" as const, dateObj: new Date("2026-04-03T21:00:00") },
-  
+
   { time: "12:00 AM", endTime: "1:30 AM", title: "Mentorship Round 1", venue: "L104/L105", type: "Public" as const, dateObj: new Date("2026-04-04T00:00:00") },
   { time: "1:45 AM", endTime: "2:30 AM", title: "Fun Event with Prizes!", venue: "L104/L105", type: "Public" as const, dateObj: new Date("2026-04-04T01:45:00") },
   { time: "2:45 AM", title: "Midnight Snack", venue: "LHTC", type: "Public" as const, dateObj: new Date("2026-04-04T02:45:00") },
@@ -85,15 +85,15 @@ export default function LiveProjectorPage() {
 
   // Find current event
   // Automatically gets the event right before the 'next' event, or the last event if all are passed
-  const currentEvent = nextEventIndex > 0 
-    ? flattenedEvents[nextEventIndex - 1] 
-    : nextEventIndex === -1 
-      ? flattenedEvents[flattenedEvents.length - 1] 
+  const currentEvent = nextEventIndex > 0
+    ? flattenedEvents[nextEventIndex - 1]
+    : nextEventIndex === -1
+      ? flattenedEvents[flattenedEvents.length - 1]
       : null;
 
   return (
-    <div className="w-screen h-screen overflow-hidden bg-[url('/bg%20texture%20prizes.svg'),radial-gradient(circle_at_center,#7B1AA8_0%,#2A0045_55%,#160028_100%)] flex flex-col justify-center items-center relative text-white selection:bg-pink-500/30">
-      
+    <div className="w-screen h-screen overflow-hidden bg-[url('/bg%20texture%20prizes.svg'),radial-gradient(circle_at_center,#7B1AA8_0%,#2A0045_55%,#160028_100%)] flex flex-col justify-center items-center relative text-white selection:bg-pink-500/30 py-8 pb-18">
+
       {/* Corner decorations */}
       <div className="absolute top-0 right-0 w-[40%] h-auto z-10 pointer-events-none opacity-50">
         <Image src="/corner_cracks.svg" alt="" width={1920} height={400} className="w-full h-auto object-cover object-top" priority />
@@ -103,7 +103,7 @@ export default function LiveProjectorPage() {
       </div>
 
       {/* Main Page Assets */}
-      <div className="absolute top-0 sm:right-18 right-6 z-20 h-40 sm:h-60 md:h-80 w-16 sm:w-24 md:w-32">
+      <div className="absolute top-0 sm:right-18 right-6 z-[80] h-40 sm:h-60 md:h-50 w-16 sm:w-24 md:w-32">
         <Image
           src="/mlh-badge.svg"
           alt="MLH badge"
@@ -112,7 +112,7 @@ export default function LiveProjectorPage() {
           priority
         />
       </div>
-      
+
       <div className="absolute w-full h-[105vh] top-0 left-0 -z-10 pointer-events-none opacity-40 mix-blend-screen">
         <Image
           src="/Main Page Broken Effect logo.svg"
@@ -124,27 +124,27 @@ export default function LiveProjectorPage() {
       </div>
 
       <div className="absolute bottom-6 z-20 flex justify-center w-full pointer-events-none">
-         <div className="relative h-12 w-48 sm:h-16 sm:w-64 md:h-20 md:w-80 opacity-70">
-           <Image
-             src="/tpc_and_iiit_logo.svg"
-             alt="TPC and IIITDM Jabalpur logos"
-             fill
-             className="object-contain"
-             priority
-           />
-         </div>
+        <div className="relative h-12 w-48 sm:h-16 sm:w-64 md:h-20 md:w-80 opacity-70">
+          <Image
+            src="/tpc_and_iiit_logo.svg"
+            alt="TPC and IIITDM Jabalpur logos"
+            fill
+            className="object-contain"
+            priority
+          />
+        </div>
       </div>
 
       <FadeInView duration={1} className="w-full h-full flex flex-col items-center justify-center p-8 z-20 gap-8">
-        
+
         {/* Top: Branding or Title */}
         <div className="absolute top-12 flex flex-col items-center gap-2 w-full max-w-lg px-8">
-           <h1 className="font-kanit text-4xl font-extrabold tracking-widest text-[#E3A3FF] uppercase whitespace-nowrap">HackByte 4.0 // Live</h1>
-           <div className="w-full h-px bg-gradient-to-r from-transparent via-[#E3A3FF]/50 to-transparent"></div>
+          {/* <h1 className="font-kanit text-4xl font-extrabold tracking-widest text-[#E3A3FF] uppercase whitespace-nowrap">HackByte 4.0 // Live</h1> */}
+          {/* <div className="w-full h-px bg-gradient-to-r from-transparent via-[#E3A3FF]/50 to-transparent"></div> */}
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[95vw] xl:max-w-[1400px] items-stretch mt-12 overflow-hidden flex-1 max-h-min">
-            
+
           {/* Main Countdown (Time left) - Spans 2 columns horizontally */}
           <div className="md:col-span-2 flex flex-col items-center justify-center bg-white/5 border border-white/10 py-12 px-6 sm:p-14 rounded-[2.5rem] backdrop-blur-md shadow-2xl shadow-purple-900/50 min-w-0 w-full overflow-hidden">
             <h2 className="text-xl sm:text-2xl lg:text-3xl font-poppins text-pink-300 font-semibold mb-6 uppercase tracking-[0.2em] opacity-80 whitespace-nowrap truncate max-w-full">
@@ -214,7 +214,7 @@ export default function LiveProjectorPage() {
               </span>
             )}
           </div>
-            
+
           {/* Current Event Box */}
           <div className="flex flex-col items-center justify-center bg-white/5 border border-white/10 p-8 sm:p-10 rounded-[2.5rem] backdrop-blur-md shadow-2xl shadow-indigo-900/20 w-full min-w-0 overflow-hidden relative group">
             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/10 to-transparent opacity-50"></div>
