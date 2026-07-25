@@ -199,7 +199,14 @@ const Hero = () => {
 			<div className={`absolute flex bg-pink-500/500 md:-right-5 right-10 sm:bottom-32 bottom-50 font-kanit h-40 w-[27vw] z-20`} style={{ pointerEvents: 'auto' }}>
 				<div className="absolute lg:w-80 md:w-70 sm:w-65 w-55 p-4 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] rounded-2xl border-[#FFD620] border-4 bottom-0 z-50 text-[#62009B]">
 					{countdown.isOver ? (
-						<div className="text-center md:text-2xl text-xl font-extrabold leading-tight">Event has ended</div>
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSeEv_zcGKLHWnEI-7nDFyXwx6MKBInPido--srtDmbfnnSA8A/viewform"
+							target="_blank"
+							rel="noopener noreferrer"
+							className="block text-center md:text-2xl text-xl font-extrabold leading-tight hover:underline"
+						>
+							Fill an Interest Form
+						</a>
 					) : countdown.isLive ? (
 						<div className="text-center md:text-2xl text-xl font-extrabold leading-tight">HackByte is live now!</div>
 					) : (
