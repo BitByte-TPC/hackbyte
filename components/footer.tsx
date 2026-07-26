@@ -13,10 +13,10 @@ export function Footer() {
       {/*socials tape*/}
       <div className=" relative flex flex-row w-full justify-between items-center h-[300px] 2xl:h-[216px] bg-[#62009b] border-white border-t-12 border-b-12 px-8 max-sm:h-[230px] max-sm:border-b-3 max-sm:border-t-3 max-sm:items-start max-sm:px-4 max-sm:inline-block">
         <Image
-          src="/HbSmallLogo.svg"
+          src="/hb5_logo.svg"
           alt="Hackbyte logo"
-          width={500}
-          height={300}
+          width={456}
+          height={309}
           className="z-20 relative left-16 max-sm:w-[200px] max-sm:h-[100px] max-sm:-left-15 max-sm:-top-10"
         />
         <div className="flex flex-col items-end gap-6 p-4 max-sm:pr-0 max-sm:pl-0 max-sm:w-full">

@@ -1,17 +1,18 @@
 import Image from "next/image";
+import CountUp from "../CountUp";
 import FadeInView from "../FadeInView";
 
 async function StatsSection() {
   const stats = [
     {
-      number: "5154",
+      number: "6329",
       label: "Registrations",
-      description: "5100+ registrations from across the country.",
+      description: "6300+ registrations from across the country.",
     },
     {
-      number: "425",
+      number: "453",
       label: "Participants",
-      description: "400+ participants joined the offline hackathon!",
+      description: "450+ participants joined the offline hackathon!",
     },
     {
       number: "100+",
@@ -19,7 +20,7 @@ async function StatsSection() {
       description: "To help you, get the best out of HackByte.",
     },
     {
-      number: "105",
+      number: "100+",
       label: "Projects",
       description: "Innovative submissions from various domains.",
     },
@@ -100,7 +101,7 @@ async function StatsSection() {
                   text-[32px] md:text-[81px]
                   leading-none"
                 >
-                  {stat.number}
+                  <CountUp value={stat.number} />
                 </div>
 
                 {/* Label */}
