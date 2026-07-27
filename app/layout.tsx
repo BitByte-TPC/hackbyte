@@ -32,8 +32,8 @@ const kanit = Kanit({
 export const metadata: Metadata = {
   metadataBase: new URL('https://hackbyte.in'),
   title: {
-    default: "HackByte 4.0 | IIITDMJ Hackathon",
-    template: "%s | HackByte 4.0"
+    default: "HackByte 5.0 | IIITDMJ Hackathon",
+    template: "%s | HackByte 5.0"
   },
   description: "HackByte is IIITDMJ's student-run hackathon. Join us for 3 days of coding, innovation, and fun. April 3-5, 2026.",
   icons: {
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     },
   keywords: ["Hackathon", "IIITDMJ", "Coding", "HackByte", "Jabalpur", "Tech Event"],
   openGraph: {
-    title: "HackByte 4.0 | IIITDMJ Hackathon",
+    title: "HackByte 5.0 | IIITDMJ Hackathon",
     description: "Join us for 3 days of coding, innovation, and fun at IIITDM Jabalpur.",
     url: 'https://hackbyte.in',
     siteName: 'HackByte',
