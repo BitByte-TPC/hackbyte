@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     default: "HackByte 5.0 | IIITDMJ Hackathon",
     template: "%s | HackByte 5.0"
   },
-  description: "HackByte is IIITDMJ's student-run hackathon. Join us for 3 days of coding, innovation, and fun. April 3-5, 2026.",
+  description: "HackByte is IIITDMJ's student-run hackathon. Join us for 3 days of coding, innovation, and fun. April 2-4, 2027.",
   icons: {
     icon: '/favicon.ico',
     },
