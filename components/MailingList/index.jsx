@@ -139,7 +139,7 @@ const MailingList = () => {
                 <div className="bg-white rounded-[24px] w-full mb-5 py-4 pt-0 px-5 md:py-12 md:px-10 flex flex-col md:flex-row justify-between items-center gap-8 md:gap-6 shadow-[0_3.18px_0_0_rgba(0,0,0,0.25)]">
                   <ul className="space-y-4 flex-1 w-full mt-5 md:mt-0">
                     {[
-                      "Be the first ones to register for HackByte 4.0",
+                      "Be the first ones to register for HackByte 5.0",
                       "Get updates about your application status",
                       "Get notified for exciting events!",
                     ].map((text, i) => (
@@ -166,8 +166,8 @@ const MailingList = () => {
 
                   <div className="flex-shrink-0 relative w-[60px] h-[60px] mr-1 md:w-[120px] md:h-[80px]">
                     <Image
-                      src="/hbb4.svg"
-                      alt="HB 4.0 Logo"
+                      src="/hbb5.svg"
+                      alt="HB 5.0 Logo"
                       fill
                       className="object-contain scale-150"
                     />

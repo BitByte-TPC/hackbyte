@@ -41,7 +41,7 @@ export default function TimelinePage() {
 
   const schedule: DaySchedule[] = [
     {
-      date: "03 April, 2026",
+      date: "02 April, 2027",
       day: "Friday",
       events: [
         {
@@ -88,7 +88,7 @@ export default function TimelinePage() {
       ],
     },
     {
-      date: "04 April, 2026",
+      date: "03 April, 2027",
       day: "Saturday",
       events: [
         {
@@ -174,7 +174,7 @@ export default function TimelinePage() {
       ],
     },
     {
-      date: "05 April, 2026",
+      date: "04 April, 2027",
       day: "Sunday",
       events: [
         {
@@ -310,7 +310,7 @@ export default function TimelinePage() {
             SCHEDULE
           </h1>
           <p className="text-center text-white/50 font-poppins text-base sm:text-lg mt-3 tracking-widest uppercase">
-            HackByte 4.0 &nbsp;·&nbsp; April 3–5, 2026
+            HackByte 5.0 &nbsp;·&nbsp; April 2–4, 2027
           </p>
         </FadeInView>
       </div>
@@ -347,7 +347,7 @@ export default function TimelinePage() {
                         : "text-white/30"
                     }`}
                   >
-                    2026
+                    2027
                   </span>
                 </div>
               </button>
