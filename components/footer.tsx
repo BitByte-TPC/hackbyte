@@ -17,13 +17,13 @@ export function Footer() {
           alt="Hackbyte logo"
           width={456}
           height={309}
-          className="z-20 relative left-16 max-sm:w-[200px] max-sm:h-[100px] max-sm:-left-15 max-sm:-top-10"
+          className="z-20 relative left-0 max-sm:w-[100px] max-sm:h-[100px] max-sm:-left-5 max-sm:-top-10 max-lg:w-[500px] max-lg:h-[250px] max-lg:-left-10 lg:w-[600px] lg:h-[300px]"
         />
         <div className="flex flex-col items-end gap-6 p-4 max-sm:pr-0 max-sm:pl-0 max-sm:w-full">
           {/*pages*/}
           <div className="md:max-w-[500px] lg:max-w-none">
             <ul
-              className="relative flex flex-row flex-wrap gap-6 justify-end text-white font-bold font-gotham text-lg 
+              className="relative flex flex-row flex-wrap gap-6 justify-end text-white font-bold font-gotham text-lg
                             md:gap-x-3 md:gap-y-2 md:text-sm
                             lg:gap-5 lg:text-base
                             xl:gap-6 xl:text-lg
@@ -67,7 +67,7 @@ export function Footer() {
             </ul>
           </div>
           {/*socials*/}
-          <div className="flex flex-row gap-10 justify-between items-center md:flex-col md:items-end md:gap-4 lg:flex-row lg:gap-8 max-sm:flex-col max-sm:gap-4 max-sm:w-full max-sm:absolute max-sm:left-2 max-sm:top-18">
+          <div className="flex flex-row gap-12 justify-between items-center md:flex-col md:items-end md:gap-4 lg:flex-row lg:gap-8 max-sm:flex-col max-sm:gap-4 max-sm:w-full max-sm:absolute max-sm:left-2 max-sm:top-18">
             <p className="text-white text-6xl font-extrabold font-kanit md:text-4xl lg:text-5xl xl:text-6xl max-sm:text-3xl max-sm:block">
               Follow our socials
             </p>
@@ -142,6 +142,14 @@ export function Footer() {
           </div>
           {/*copyright*/}
           <div>
+            <Link
+              href="https://github.com/MLH/mlh-policies/blob/main/code-of-conduct.md"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#D9D9D9] font-bold opacity-51 text-lg font-gotham max-sm:top-42 max-sm:absolute max-sm:bottom-0 max-sm:text-sm max-sm:block max-sm:w-full max-sm:left-0 max-sm:text-center text-right block hover:underline"
+            >
+              Code of Conduct
+            </Link>
             <p className="text-[#D9D9D9] font-bold opacity-51 text-lg font-gotham max-sm:top-45 max-sm:absolute max-sm:bottom-0 max-sm:text-sm max-sm:block max-sm:w-full max-sm:left-0 text-center">
               @2025 Hackbyte, All rights reserved
             </p>

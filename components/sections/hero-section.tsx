@@ -16,6 +16,26 @@ const Hero = () => {
 			<RealityGlitch targetRef={heroRef} />
 			{/* Cursor-following cracks */}
 			<CursorCracks targetRef={heroRef} />
+			{/* MLH Badge */}
+			<div className="absolute sm:w-33 w-20 top-0 sm:right-18 right-6 z-20 h-80">
+				<FadeInView delay={0.3} yOffset={-30}>
+					<a
+						href="https://mlh.io/seasons/2027/events"
+						target="_blank"
+						rel="noopener noreferrer"
+						aria-label="MLH 2027 Events"
+					>
+						<Image
+							src="/mlh-badge.svg"
+							alt="MLH badge"
+							width={132}
+							height={320}
+							className="object-contain object-top w-full h-full"
+							priority
+						/>
+					</a>
+				</FadeInView>
+			</div>
 			{/* Corner cracks - no animation (decorative) */}
 			<div className="absolute aspect-video right-0 z-0 top-0 h-100 bg-pink-400/400">
 				<Image
@@ -102,13 +122,13 @@ const Hero = () => {
 			</div>
 
 			{/* Interest Form */}
-			<div className={`absolute flex bg-pink-500/500 md:-right-5 right-10 sm:bottom-32 bottom-50 font-kanit h-40 w-[27vw] z-20`} style={{ pointerEvents: 'auto' }}>
-				<div className="absolute lg:w-80 md:w-70 sm:w-65 w-55 p-4 lg:right-35 md:right-28 sm:right-5 right-3 bg-[#FFEE00] rounded-2xl border-[#FFD620] border-4 bottom-0 z-50 text-[#62009B]">
+			<div className={`absolute flex bg-pink-500/500 md:-right-5 right-10 sm:bottom-32 bottom-60 font-kanit h-40 w-[27vw] z-20`} style={{ pointerEvents: 'auto' }}>
+				<div className="absolute lg:w-80 md:w-70 sm:w-60 w-60 md:p-4 sm:p-2 lg:right-35 md:right-28 max-sm:right-2 bg-[#FFEE00] rounded-2xl border-[#FFD620] border-4 bottom-0 z-50 text-[#62009B]">
 					<a
 						href="https://docs.google.com/forms/d/e/1FAIpQLSeEv_zcGKLHWnEI-7nDFyXwx6MKBInPido--srtDmbfnnSA8A/viewform"
 						target="_blank"
 						rel="noopener noreferrer"
-						className="block text-center md:text-2xl text-xl font-extrabold leading-tight hover:underline"
+						className="block text-center max-sm:text-sm md:text-xl font-extrabold leading-tight hover:underline"
 					>
 						Fill HB 5.0 Interest form
 					</a>
